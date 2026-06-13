@@ -44,3 +44,6 @@ Misc/
 # Test files
 test_*.py
 **/test_*.py
+
+# AI Temporary files
+data/ai_temp/
