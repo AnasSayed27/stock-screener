@@ -203,3 +203,91 @@ class PostmortemResponse(BaseModel):
     key_lessons: str = ""
     mistakes: str = ""
     date_created: str = ""
+
+
+# ---------------------------------------------------------------------------
+# AI Research Models
+# ---------------------------------------------------------------------------
+
+class AICitation(BaseModel):
+    page: Optional[int] = None         # AI-estimated page number
+    section: Optional[str] = None
+    document: Optional[str] = None     # which uploaded file
+    quote: Optional[str] = None        # relevant excerpt
+    citation_confidence: Optional[str] = None  # high, medium, or low
+
+class AIRedFlag(BaseModel):
+    category: str          # e.g., "Related-Party Transactions"
+    description: str       # what was found
+    evidence: str          # direct quote or reference from document
+    citation: Optional[AICitation] = None
+
+class AIRevenueSegment(BaseModel):
+    segment_name: str = Field(description="Name of the segment (e.g. Domestic, International, or specific product/service line)")
+    revenue_share: str = Field(description="Contribution or share of the segment (e.g. percentage like '45%' or value like '₹2,500 Cr')")
+
+class AIBusinessOverview(BaseModel):
+    company_overview: str = ""
+    revenue_segments: list[AIRevenueSegment] = Field(default_factory=list)
+    products_services: list[str] = Field(default_factory=list)
+    mgmt_priorities: list[str] = Field(default_factory=list)
+    competitive_advantages: list[str] = Field(default_factory=list)
+    growth_drivers: list[str] = Field(default_factory=list)
+    recent_developments: list[str] = Field(default_factory=list)
+    citations: list[AICitation] = Field(default_factory=list)
+    confidence: str = Field(default="medium", description="Confidence level: high, medium, or low")
+    disclaimer: str = "AI research from uploaded documents. Verify from primary sources."
+
+class AIGovernanceReport(BaseModel):
+    promoter_holding: Optional[str] = None
+    promoter_pledge: Optional[str] = None
+    auditor_details: Optional[str] = None
+    rpt_summary: Optional[str] = None
+    contingent_liabilities: Optional[str] = None
+    capital_allocation: Optional[str] = None
+    mgmt_compensation: Optional[str] = None
+    equity_dilution: Optional[str] = None
+    litigation: Optional[str] = None
+    red_flags: list[AIRedFlag] = Field(default_factory=list)
+    citations: list[AICitation] = Field(default_factory=list)
+    confidence: str = Field(default="medium", description="Confidence level: high, medium, or low")
+    disclaimer: str = "AI-extracted governance data. Always verify from annual report."
+
+class AIRiskAnalysis(BaseModel):
+    opportunities: list[str] = Field(default_factory=list)
+    mgmt_described_risks: list[str] = Field(default_factory=list)
+    ai_bull_case: list[str] = Field(default_factory=list)
+    ai_bear_case: list[str] = Field(default_factory=list)
+    industry_threats: list[str] = Field(default_factory=list)
+    customer_dependency: Optional[str] = None
+    geographic_dependency: Optional[str] = None
+    citations: list[AICitation] = Field(default_factory=list)
+    confidence: str = Field(default="medium", description="Confidence level: high, medium, or low")
+    disclaimer: str = "AI-generated risk analysis. Verify from primary sources."
+
+class AIThesisDraft(BaseModel):
+    why_interested: str = ""
+    what_would_make_me_wrong: str = ""
+    key_assumptions: list[str] = Field(default_factory=list)
+    sell_conditions: str = ""
+    major_risks: list[str] = Field(default_factory=list)
+    disclaimer: str = "AI-drafted thesis. Review and edit before saving."
+
+class AIAnswer(BaseModel):
+    answer: str = ""
+    citations: list[AICitation] = Field(default_factory=list)
+    confidence: str = Field(default="medium", description="Confidence level: high, medium, or low")
+    disclaimer: str = "AI answer based on uploaded documents only."
+
+class AIReportMeta(BaseModel):
+    """Metadata wrapper for saved reports."""
+    prompt_version: str = ""
+    model_name: str = ""
+    generation_config: dict = Field(default_factory=dict)
+    timestamp: str = ""
+    generated_at: str = "" # Keep for frontend compatibility
+    documents_used: list[str] = Field(default_factory=list)
+    ticker: str = ""
+    mode: str = ""
+    report: dict = Field(default_factory=dict)  # the actual response
+

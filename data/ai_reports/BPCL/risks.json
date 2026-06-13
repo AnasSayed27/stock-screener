@@ -1,0 +1,95 @@
+{
+  "prompt_version": "risk_prompt_v2",
+  "model_name": "gemini-3.1-flash-lite",
+  "generation_config": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "top_k": 20
+  },
+  "timestamp": "2026-06-12T06:06:59.002372",
+  "generated_at": "2026-06-12T06:06:59.002396",
+  "documents_used": [
+    "investor-presentation-q4-2025-26.pdf",
+    "bpcl-transcript-q4-investor-concall-d4352b.pdf",
+    "annual-report-2024-25-1f8f19.pdf"
+  ],
+  "ticker": "BPCL",
+  "mode": "risks",
+  "report": {
+    "opportunities": [
+      "Expansion of Bina refinery by 3.2 MMTPA with potential to expand to 45 MMTPA",
+      "Big bets on gas, petrochemicals, and green energy",
+      "Tripling gas footprint by FY29",
+      "10 GW renewable energy capacity by 2035",
+      "Digital energy ventures initiative to serve as an incubator for future unicorns",
+      "Potential to reduce crude import costs through a global crude oil trading desk"
+    ],
+    "mgmt_described_risks": [
+      "Geopolitical developments and supply chain challenges affecting manufacturing and delivery",
+      "Middle East conflicts impacting supply pricing and execution timelines",
+      "Heightened volatility in crude and product prices",
+      "Forex fluctuations",
+      "Cash flow challenges stemming from pricing restrictions",
+      "Uncertainty in the marketing side"
+    ],
+    "ai_bull_case": [
+      "Strong operational resilience demonstrated by high capacity utilization (116% in FY26) and premium gross refining margins",
+      "Strategic diversification into petrochemicals and green energy (RE, green hydrogen, biofuels) reduces reliance on traditional oil refining",
+      "Robust infrastructure network, including 3,962 km of pipelines and 25,323 retail outlets, provides a significant competitive moat",
+      "Strong financial performance with sustained growth in profit and prudent capital allocation guardrails"
+    ],
+    "ai_bear_case": [
+      "High dependency on crude oil imports (88.2% in FY25) exposes the company to global geopolitical risks and price volatility",
+      "Significant capital expenditure requirements (₹ 1.7 lakh crores) may pressure the balance sheet if cash flows are impacted by pricing restrictions",
+      "Exposure to 'hard to abate' sector emissions and potential regulatory risks associated with net-zero transitions",
+      "Potential for project delays and cost escalations in large-scale refinery and petrochemical projects"
+    ],
+    "industry_threats": [
+      "Global economic volatility and geopolitical risks impacting energy supply chains",
+      "Structural decline in gasoline and diesel demand in developed markets due to electrification",
+      "Increasing regulatory pressure regarding ESG compliance and carbon emissions",
+      "Intense competition in the retail fuel market"
+    ],
+    "customer_dependency": "The company serves a diverse industrial clientele of 8,000+ customers, including major sectors such as Army, Cement, Power, Railways, and Petrochemicals, indicating no single customer dependency.",
+    "geographic_dependency": "Operations are primarily in India, with upstream presence in 6 countries (Russia, Brazil, Mozambique, UAE, Indonesia, India).",
+    "citations": [
+      {
+        "page": 13,
+        "section": "Our strategic framework for FY24-FY29 to fuel growth",
+        "document": "Investor Presentation",
+        "quote": "Expansion of Bina refinery by 3.2 MMTPA underway",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 2,
+        "section": "Earnings Conference Call",
+        "document": "Q4 FY '26 Earnings Conference Call",
+        "quote": "There has been major disruption in the global energy supply chains with impact seen across all sectors and geographical segments.",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 4,
+        "section": "Earnings Conference Call",
+        "document": "Q4 FY '26 Earnings Conference Call",
+        "quote": "Additionally, recent Middle East conflicts have impacted supply pricing and execution time lines.",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 11,
+        "section": "Earnings Conference Call",
+        "document": "Q4 FY '26 Earnings Conference Call",
+        "quote": "So I mean, in that backdrop, I mean, and this is more of a hypothetical question. Is there any thought among OMCs to switch back to a regulated regime... there are severe under recoveries as far as our assessments go",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 66,
+        "section": "INDIAN OIL AND GAS SECTOR",
+        "document": "Annual Report 2024-25",
+        "quote": "India's reliance on imported crude oil and natural gas increased further in 2024-25, driven by strong demand and relatively stable domestic production. Crude oil import dependency reached a record 88.2%",
+        "citation_confidence": "high"
+      }
+    ],
+    "confidence": "high",
+    "disclaimer": "This analysis is based solely on the provided documents and does not constitute financial advice."
+  }
+}

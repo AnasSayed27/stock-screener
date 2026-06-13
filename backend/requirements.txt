@@ -4,3 +4,6 @@ yfinance>=0.2.31
 nselib>=2.5.0
 pandas>=2.0.0
 sse-starlette>=1.6.0
+google-genai>=1.0.0
+python-dotenv>=1.0.0
+python-multipart>=0.0.6

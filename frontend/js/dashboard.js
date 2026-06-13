@@ -24,7 +24,7 @@ async function renderDashboard() {
                 <div class="stat-card card-animated">
                     <span class="stat-icon">📊</span>
                     <div class="stat-value" id="stat-stocks">—</div>
-                    <div class="stat-label">Nifty 200 Stocks</div>
+                    <div class="stat-label" id="label-stocks">Nifty 500 Stocks</div>
                 </div>
                 <div class="stat-card card-animated">
                     <span class="stat-icon">📝</span>
@@ -68,8 +68,8 @@ async function renderDashboard() {
                 <div class="stats-grid" style="margin-bottom: 0;">
                     <div style="padding: 8px 0;">
                         <h4 style="color: var(--accent-cyan); margin-bottom: 6px;">① Screen</h4>
-                        <p class="text-muted" style="font-size: 13px; line-height: 1.7;">
-                            Run the screener to evaluate all Nifty 200 stocks against 11 fundamental quality criteria
+                        <p class="text-muted" style="font-size: 13px; line-height: 1.7;" id="how-screen-text">
+                            Run the screener to evaluate all Nifty 500 stocks against 11 fundamental quality criteria
                             inspired by value investing principles.
                         </p>
                     </div>
@@ -127,7 +127,25 @@ async function _loadDashboardStats() {
         document.getElementById('stat-postmortems').textContent = '—';
     }
 
-    // Stocks count — use a static approximation since we may not have a list endpoint
-    const statStocks = document.getElementById('stat-stocks');
-    if (statStocks) statStocks.textContent = '200';
+    // Stocks count — fetch dynamically from API
+    try {
+        const stocks = await apiFetch('/stocks');
+        const count = Array.isArray(stocks) ? stocks.length : 500;
+        const statStocks = document.getElementById('stat-stocks');
+        const labelStocks = document.getElementById('label-stocks');
+        const howScreenText = document.getElementById('how-screen-text');
+        
+        if (statStocks) statStocks.textContent = count;
+        if (labelStocks) {
+            labelStocks.textContent = `Nifty ${count} Stocks`;
+        }
+        if (howScreenText) {
+            howScreenText.innerHTML = `Run the screener to evaluate all Nifty ${count} stocks against 11 fundamental quality criteria inspired by value investing principles.`;
+        }
+    } catch (e) {
+        const statStocks = document.getElementById('stat-stocks');
+        if (statStocks) statStocks.textContent = '500';
+        const labelStocks = document.getElementById('label-stocks');
+        if (labelStocks) labelStocks.textContent = 'Nifty 500 Stocks';
+    }
 }

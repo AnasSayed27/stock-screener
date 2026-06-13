@@ -1,0 +1,109 @@
+{
+  "prompt_version": "business_prompt_v2",
+  "model_name": "gemini-3.1-flash-lite",
+  "generation_config": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "top_k": 20
+  },
+  "timestamp": "2026-06-11T18:46:46.124915",
+  "generated_at": "2026-06-11T18:46:46.124936",
+  "documents_used": [
+    "investor-presentation-q4-2025-26.pdf",
+    "bpcl-transcript-q4-investor-concall-d4352b.pdf",
+    "annual-report-2024-25-1f8f19.pdf"
+  ],
+  "ticker": "BPCL",
+  "mode": "business",
+  "report": {
+    "company_overview": "Bharat Petroleum Corporation Limited (BPCL) is a Fortune 500 integrated energy company in India, operating across the entire energy value chain. It is engaged in the refining of crude oil and marketing of petroleum products, with a robust presence in refining, marketing, and gas, and is actively expanding into petrochemicals, green energy, and digital ventures.",
+    "revenue_segments": [
+      {
+        "segment_name": "Petroleum products",
+        "revenue_share": "99.6%"
+      },
+      {
+        "segment_name": "Crude oil",
+        "revenue_share": "0.25%"
+      }
+    ],
+    "products_services": [
+      "High Speed Diesel",
+      "Motor Spirit",
+      "Liquid Petroleum Gas (LPG)",
+      "Aviation Fuel",
+      "Compressed Natural Gas (CNG)",
+      "Coke",
+      "Liquid Natural Gas (LNG)",
+      "Lubricants",
+      "Petrochemicals"
+    ],
+    "mgmt_priorities": [
+      "Nurturing the Core (Refining, Marketing, Upstream)",
+      "Future Big Bets (Gas, Petrochemicals, Green Energy, Non-fuel, Digital Ventures)",
+      "Moving towards net-zero emissions by 2040",
+      "Delivering shareholder returns",
+      "Disciplined project execution and prudent capital allocation"
+    ],
+    "competitive_advantages": [
+      "Best-in-class refining assets and operational performance",
+      "Strong retail assets and pioneer in marketing initiatives",
+      "Strategic pipeline networks connecting refineries to key markets",
+      "Long-term backward integration via BPRL",
+      "Strong brand value and loyalty programs"
+    ],
+    "growth_drivers": [
+      "Expansion of Bina refinery capacity",
+      "Diversification into petrochemicals (Ethylene cracker and Polypropylene projects)",
+      "Expansion of City Gas Distribution (CGD) footprint",
+      "Investment in green energy (Renewables, Green Hydrogen, Biofuels)",
+      "Digital transformation and innovation through 'Project Aspire'"
+    ],
+    "recent_developments": [
+      "Commissioned Dearomatized Solvent project at Mumbai refinery",
+      "Commissioned Krishnapatnam Hyderabad pipeline",
+      "Commissioned 1G and 2G ethanol plants at Bargarh",
+      "Progress on Bina Petrochemical and Refinery expansion project",
+      "Resolution of force majeure at Mozambique Offshore Area 1"
+    ],
+    "citations": [
+      {
+        "page": 4,
+        "section": "ABOUT BPCL",
+        "document": "Annual Report 2024-25",
+        "quote": "Bharat Petroleum, India’s second-largest public sector oil marketing and a Fortune 500 integrated energy company has established a robust presence across the entire energy value chain.",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 102,
+        "section": "II. Products/Services",
+        "document": "Annual Report 2024-25",
+        "quote": "Refining, Production, and Marketing of Petroleum and Petrochemical Products",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 5,
+        "section": "NURTURING THE CORE, FUTURE BIG BETS, MOVING TOWARDS NET-ZERO, DELIVERING SHAREHOLDER RETURNS",
+        "document": "Investor Presentation May 2026",
+        "quote": "Fueling the next wave of growth with a major investment push as part of “Project Aspire”",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 14,
+        "section": "Strong competitive moats leading to solid outcomes (1/3)",
+        "document": "Investor Presentation May 2026",
+        "quote": "Strong retail network of ~25k outlets, including 11k+ ROs on highways",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 4,
+        "section": "Chairman’s Message",
+        "document": "Annual Report 2024-25",
+        "quote": "The Bina Petrochemical and Refinery expansion project has achieved 23% progress against a planned schedule of 32% with INR4,700 crores incurred and INR25,400 crores already committed.",
+        "citation_confidence": "high"
+      }
+    ],
+    "confidence": "high",
+    "disclaimer": "This analysis is based solely on the provided documents. It does not constitute financial advice or recommendations."
+  }
+}

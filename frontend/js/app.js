@@ -57,7 +57,7 @@ function navigateTo(page, param) {
 }
 
 /* ============================================
-   MOBILE SIDEBAR
+   MOBILE SIDEBAR & COLLAPSIBLE SIDEBAR
    ============================================ */
 
 function _initMobileSidebar() {
@@ -88,6 +88,29 @@ function _closeMobileSidebar() {
     if (toggle) toggle.classList.remove('active');
 }
 
+function _initCollapsibleSidebar() {
+    const collapseBtn = document.getElementById('sidebar-collapse-btn');
+    const collapseIcon = document.getElementById('collapse-icon');
+    
+    if (collapseBtn) {
+        // Load preference from localStorage
+        const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
+        if (isCollapsed) {
+            document.body.classList.add('sidebar-collapsed');
+            if (collapseIcon) collapseIcon.textContent = '▶';
+        }
+        
+        collapseBtn.addEventListener('click', () => {
+            const willCollapse = !document.body.classList.contains('sidebar-collapsed');
+            document.body.classList.toggle('sidebar-collapsed', willCollapse);
+            localStorage.setItem('sidebar-collapsed', willCollapse ? 'true' : 'false');
+            if (collapseIcon) {
+                collapseIcon.textContent = willCollapse ? '▶' : '◀';
+            }
+        });
+    }
+}
+
 /* ============================================
    INITIALIZE
    ============================================ */
@@ -95,5 +118,6 @@ function _closeMobileSidebar() {
 window.addEventListener('hashchange', router);
 window.addEventListener('DOMContentLoaded', () => {
     _initMobileSidebar();
+    _initCollapsibleSidebar();
     router();
 });

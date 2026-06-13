@@ -103,6 +103,14 @@ CACHE_DIR = os.path.join(DATA_DIR, "cache")
 THESES_DIR = os.path.join(DATA_DIR, "theses")
 POSTMORTEMS_DIR = os.path.join(DATA_DIR, "postmortems")
 
+# ---------------------------------------------------------------------------
+# AI Research Module (optional — requires GEMINI_API_KEY in .env)
+# ---------------------------------------------------------------------------
+AI_ENABLED = bool(os.environ.get("GEMINI_API_KEY"))
+AI_MODEL = os.environ.get("AI_MODEL", "gemini-3.1-flash-lite")
+AI_TEMP_DIR = os.path.join(DATA_DIR, "ai_temp")
+AI_REPORTS_DIR = os.path.join(DATA_DIR, "ai_reports")
+
 # Ensure directories exist at import time
-for _d in (CACHE_DIR, THESES_DIR, POSTMORTEMS_DIR):
+for _d in (CACHE_DIR, THESES_DIR, POSTMORTEMS_DIR, AI_TEMP_DIR, AI_REPORTS_DIR):
     os.makedirs(_d, exist_ok=True)

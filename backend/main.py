@@ -10,6 +10,10 @@ from __future__ import annotations
 
 import os
 import sys
+import shutil
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # Ensure the backend directory is on sys.path so sibling modules
 # (analyzer, screener, etc.) can be imported regardless of cwd.
@@ -21,7 +25,7 @@ if _BACKEND_DIR not in sys.path:
 import logging
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Form, File, UploadFile, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
@@ -45,6 +49,8 @@ from thesis import (
     save_postmortem,
     save_thesis,
 )
+from config import AI_ENABLED, AI_MODEL, AI_TEMP_DIR
+from ai_research import upload_documents, analyze_documents, get_saved_reports, clear_session
 
 # ---------------------------------------------------------------------------
 # Logging setup
@@ -128,7 +134,7 @@ async def api_get_stocks():
 # ---------------------------------------------------------------------------
 
 @app.post("/api/screen", response_model=list[ScreenResult])
-async def api_screen(request: Optional[ScreenRequest] = None):
+async def api_screen(req: Request, request: Optional[ScreenRequest] = None):
     """
     Screen stocks and return quality-sorted results.
 
@@ -157,6 +163,9 @@ async def api_screen(request: Optional[ScreenRequest] = None):
     results: list[ScreenResult] = []
     total = len(tickers)
     for idx, ticker in enumerate(tickers, 1):
+        if await req.is_disconnected():
+            logger.info("Client disconnected. Aborting screening at %d/%d (%s)", idx, total, ticker)
+            break
         logger.info("Screening %d/%d: %s", idx, total, ticker)
         try:
             result = screen_stock(ticker)
@@ -254,3 +263,143 @@ async def api_create_postmortem(postmortem: PostmortemCreate):
 async def health():
     """Simple health-check endpoint."""
     return {"status": "ok", "message": "Stock Screener API is running"}
+
+
+# ---------------------------------------------------------------------------
+# AI Research Endpoints
+# ---------------------------------------------------------------------------
+
+@app.get("/api/ai/status")
+async def ai_status():
+    """Check if AI is configured and get active model."""
+    return {"enabled": AI_ENABLED, "model": AI_MODEL if AI_ENABLED else None}
+
+
+@app.post("/api/ai/upload")
+async def ai_upload(ticker: str = Form(...), files: list[UploadFile] = File(...)):
+    """Upload PDF documents for a ticker and send them to Gemini Files API."""
+    if not AI_ENABLED:
+        raise HTTPException(status_code=400, detail="AI Research assistant is not enabled.")
+
+    if not files:
+        raise HTTPException(status_code=400, detail="No files provided.")
+
+    # Get existing session files
+    from ai_research import get_session
+    session = get_session(ticker)
+    existing_files = session.get("documents_used", [])
+
+    # Calculate count of unique files (excluding replacements with the same name)
+    new_filenames = [f.filename for f in files]
+    unique_existing_files = [name for name in existing_files if name not in new_filenames]
+
+    if len(unique_existing_files) + len(files) > 3:
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                f"Maximum 3 files can be uploaded in a session. You currently have {len(existing_files)} file(s) "
+                f"in session. Uploading {len(files)} new file(s) would exceed the limit."
+            )
+        )
+
+    ticker_temp_dir = os.path.join(AI_TEMP_DIR, ticker)
+    os.makedirs(ticker_temp_dir, exist_ok=True)
+    saved_paths = []
+
+    for f in files:
+        if not f.filename.lower().endswith(".pdf"):
+            raise HTTPException(status_code=400, detail=f"File '{f.filename}' is not a PDF. Only PDFs are supported.")
+
+        file_path = os.path.join(ticker_temp_dir, f.filename)
+        try:
+            content = await f.read()
+            # 50MB limit validation
+            if len(content) > 50 * 1024 * 1024:
+                raise HTTPException(status_code=400, detail=f"File '{f.filename}' exceeds the 50MB size limit.")
+
+            with open(file_path, "wb") as out_file:
+                out_file.write(content)
+            saved_paths.append(file_path)
+        except HTTPException:
+            raise
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error saving file '{f.filename}': {str(e)}")
+
+    try:
+        result = upload_documents(ticker, saved_paths)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/ai/analyze")
+async def ai_analyze(request: dict):
+    """Run document analysis for a ticker in a specified mode."""
+    if not AI_ENABLED:
+        raise HTTPException(status_code=400, detail="AI Research assistant is not enabled.")
+
+    ticker = request.get("ticker")
+    mode = request.get("mode")
+
+    if not ticker or not mode:
+        raise HTTPException(status_code=400, detail="Missing 'ticker' or 'mode' in request body.")
+
+    context = request.get("context", {})
+
+    try:
+        result = analyze_documents(
+            mode=mode,
+            ticker=ticker,
+            context=context
+        )
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/ai/ask")
+async def ai_ask(request: dict):
+    """Free-form session-scoped Q&A based on uploaded documents."""
+    if not AI_ENABLED:
+        raise HTTPException(status_code=400, detail="AI Research assistant is not enabled.")
+
+    ticker = request.get("ticker")
+    question = request.get("question")
+
+    if not ticker or not question:
+        raise HTTPException(status_code=400, detail="Missing 'ticker' or 'question' in request body.")
+
+    try:
+        result = analyze_documents(
+            mode="qa",
+            ticker=ticker,
+            question=question
+        )
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/ai/reports/{ticker}")
+async def ai_get_saved(ticker: str):
+    """Get all saved reports for a ticker from local disk."""
+    try:
+        reports = get_saved_reports(ticker)
+        return reports
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.delete("/api/ai/session/{ticker}")
+async def ai_clear_session_route(ticker: str):
+    """Clear uploaded documents and active session references for a ticker."""
+    try:
+        result = clear_session(ticker)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+

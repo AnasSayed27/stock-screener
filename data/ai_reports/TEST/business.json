@@ -1,0 +1,28 @@
+{
+  "prompt_version": "business_prompt_v2",
+  "model_name": "gemini-3.1-flash-lite",
+  "generation_config": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "top_k": 20
+  },
+  "timestamp": "2026-06-11T18:39:55.965177",
+  "generated_at": "2026-06-11T18:39:55.965196",
+  "documents_used": [
+    "dummy_test.pdf"
+  ],
+  "ticker": "TEST",
+  "mode": "business",
+  "report": {
+    "company_overview": "Not found in provided documents.",
+    "revenue_segments": [],
+    "products_services": [],
+    "mgmt_priorities": [],
+    "competitive_advantages": [],
+    "growth_drivers": [],
+    "recent_developments": [],
+    "citations": [],
+    "confidence": "low",
+    "disclaimer": "The provided document is blank and contains no information regarding the company TEST."
+  }
+}

@@ -58,6 +58,19 @@ function renderScreener() {
     }
 }
 
+let _screenerAbortController = null;
+
+/**
+ * Cancel the active screening scan.
+ */
+function cancelScreening() {
+    if (_screenerAbortController) {
+        _screenerAbortController.abort();
+        _screenerAbortController = null;
+        showToast('Screening cancelled.', 'info');
+    }
+}
+
 /**
  * Run the stock screening scan.
  * @param {string} [ticker] - optional specific ticker to scan
@@ -68,20 +81,31 @@ async function runScreening(ticker) {
 
     if (!area) return;
 
-    // Show loading
+    // Show loading with a cancel button
     const universeLabel = document.getElementById('screener-universe')?.selectedOptions[0]?.text || 'Nifty 500';
-    area.innerHTML = getLoadingHTML(
-        ticker
-            ? `Analyzing ${ticker}… This may take a moment.`
-            : `Scanning all ${universeLabel} stocks… This may take a few minutes.`
-    );
+    area.innerHTML = `
+        ${getLoadingHTML(
+            ticker
+                ? `Analyzing ${ticker}… This may take a moment.`
+                : `Scanning all ${universeLabel} stocks… This may take a few minutes.`
+        )}
+        <div style="text-align: center; margin-top: -12px; margin-bottom: 24px;">
+            <button id="screener-cancel-btn" class="btn btn-secondary btn-sm" onclick="cancelScreening()">
+                ⏹️ Cancel Scan
+            </button>
+        </div>
+    `;
     if (btn) { btn.disabled = true; btn.innerHTML = '<span class="btn-icon">⏳</span> Scanning…'; }
+
+    _screenerAbortController = new AbortController();
 
     try {
         let data;
         if (ticker) {
             // Single stock analysis — wrap in array for table rendering
-            const result = await apiFetch(`/stock/${encodeURIComponent(ticker)}`);
+            const result = await apiFetch(`/stock/${encodeURIComponent(ticker)}`, {
+                signal: _screenerAbortController.signal
+            });
             data = [_mapAnalysisToScreenerRow(result, ticker)];
         } else {
             // Full screening — get selected universe
@@ -89,7 +113,8 @@ async function runScreening(ticker) {
             const universe = universeSelect ? universeSelect.value : 'nifty500';
             data = await apiFetch('/screen', {
                 method: 'POST',
-                body: JSON.stringify({ tickers: [], universe: universe })
+                body: JSON.stringify({ tickers: [], universe: universe }),
+                signal: _screenerAbortController.signal
             });
         }
 
@@ -106,6 +131,10 @@ async function runScreening(ticker) {
         renderScreenerTable(_screenerResults);
         showToast(`Screening complete — ${data.length} stock${data.length > 1 ? 's' : ''} analyzed.`, 'success');
     } catch (err) {
+        if (err.name === 'AbortError') {
+            area.innerHTML = getEmptyStateHTML('🔍', 'Screening Cancelled', 'The screening scan was cancelled by the user.');
+            return;
+        }
         area.innerHTML = `
             <div class="card" style="text-align: center; padding: 40px;">
                 <span style="font-size: 40px; display: block; margin-bottom: 12px;">⚠️</span>
@@ -116,6 +145,7 @@ async function runScreening(ticker) {
         `;
         showToast('Screening failed: ' + err.message, 'error');
     } finally {
+        _screenerAbortController = null;
         if (btn) { btn.disabled = false; btn.innerHTML = '<span class="btn-icon">🔍</span> Run Full Scan'; }
     }
 }

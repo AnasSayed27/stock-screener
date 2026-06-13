@@ -89,8 +89,8 @@ FALLBACK_STOCKS: list[dict[str, str]] = [
 # Nifty 500 stock list
 # ---------------------------------------------------------------------------
 
-def _fetch_from_nselib(func_name: str, fallback_label: str) -> list[dict[str, str]]:
-    """Generic helper to fetch index constituents from nselib."""
+def _fetch_from_nselib_raw(func_name: str) -> Optional[list[dict[str, str]]]:
+    """Helper to fetch raw index constituents from nselib without fallback."""
     try:
         from nselib import capital_market
         func = getattr(capital_market, func_name)
@@ -110,25 +110,65 @@ def _fetch_from_nselib(func_name: str, fallback_label: str) -> list[dict[str, st
                 logger.info("Fetched %d stocks from nselib (%s)", len(stocks), func_name)
                 return stocks
     except Exception as exc:
-        logger.warning("nselib %s failed, using fallback list: %s", func_name, exc)
+        logger.warning("nselib raw %s fetch failed: %s", func_name, exc)
+    return None
+
+
+def _fetch_from_nselib(func_name: str, fallback_label: str) -> list[dict[str, str]]:
+    """Generic helper to fetch index constituents from nselib with fallback."""
+    stocks = _fetch_from_nselib_raw(func_name)
+    if stocks:
+        return stocks
 
     logger.info("Using fallback stock list (%d stocks) for %s", len(FALLBACK_STOCKS), fallback_label)
     return list(FALLBACK_STOCKS)
 
+
 def get_nifty500_stocks() -> list[dict[str, str]]:
-    return _fetch_from_nselib('nifty500_equity_list', 'Nifty 500')
+    # 1. Try fetching nifty500_equity_list raw
+    stocks = _fetch_from_nselib_raw('nifty500_equity_list')
+    if stocks:
+        return stocks
+
+    # 2. If it fails, construct composite Nifty 500 by combining Nifty 50, Next 50, Midcap 150, and Smallcap 250
+    logger.info("nifty500_equity_list not found in nselib. Combining Nifty 50, Next 50, Midcap 150, and Smallcap 250...")
+    try:
+        combined = []
+        seen = set()
+        for func_name in ['nifty50_equity_list', 'niftynext50_equity_list', 'niftymidcap150_equity_list', 'niftysmallcap250_equity_list']:
+            part = _fetch_from_nselib_raw(func_name)
+            if part:
+                for s in part:
+                    sym = s["symbol"]
+                    if sym not in seen:
+                        seen.add(sym)
+                        combined.append(s)
+        if combined:
+            logger.info("Successfully constructed composite Nifty 500 with %d stocks", len(combined))
+            return combined
+    except Exception as e:
+        logger.warning("Failed to construct composite Nifty 500 list: %s", e)
+
+    # 3. Ultimate fallback
+    logger.info("Using fallback stock list (%d stocks) for Nifty 500", len(FALLBACK_STOCKS))
+    return list(FALLBACK_STOCKS)
+
 
 def get_nifty50_stocks() -> list[dict[str, str]]:
     return _fetch_from_nselib('nifty50_equity_list', 'Nifty 50')
 
+
 def get_niftymidcap150_stocks() -> list[dict[str, str]]:
     return _fetch_from_nselib('niftymidcap150_equity_list', 'Nifty Midcap 150')
+
 
 def get_niftynext50_stocks() -> list[dict[str, str]]:
     return _fetch_from_nselib('niftynext50_equity_list', 'Nifty Next 50')
 
+
 def get_niftysmallcap250_stocks() -> list[dict[str, str]]:
     return _fetch_from_nselib('niftysmallcap250_equity_list', 'Nifty Smallcap 250')
+
 
 def get_fno_stocks() -> list[dict[str, str]]:
     return _fetch_from_nselib('fno_equity_list', 'F&O Stocks')

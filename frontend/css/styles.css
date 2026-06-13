@@ -149,7 +149,7 @@ img { max-width: 100%; }
     display: flex;
     flex-direction: column;
     z-index: 100;
-    transition: transform var(--transition-base);
+    transition: transform var(--transition-base), width var(--transition-base);
 }
 
 .sidebar-header {
@@ -340,6 +340,7 @@ img { max-width: 100%; }
     min-height: 100vh;
     position: relative;
     z-index: 1;
+    transition: margin-left var(--transition-base);
 }
 
 /* ============================================
@@ -1801,3 +1802,201 @@ img { max-width: 100%; }
 
 .hidden { display: none !important; }
 .w-full { width: 100%; }
+
+/* ============================================
+   AI RESEARCH TAB STYLES
+   ============================================ */
+.ai-upload-zone {
+    border: 2px dashed var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.01);
+    transition: border-color var(--transition-base), background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.ai-upload-zone:hover, .ai-upload-zone.dragover {
+    border-color: var(--accent-cyan);
+    background: rgba(0, 212, 255, 0.02);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.15);
+}
+
+.ai-upload-zone.dragover span {
+    transform: scale(1.1);
+}
+
+.ai-action-card {
+    background: rgba(17, 24, 39, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    text-align: left;
+    transition: all var(--transition-base);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: inherit;
+    color: inherit;
+    width: 100%;
+}
+
+.ai-action-card:hover:not(:disabled) {
+    border-color: var(--accent-cyan);
+    box-shadow: var(--shadow-glow-cyan);
+    transform: translateY(-2px);
+}
+
+.ai-action-card:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ai-action-card.loading {
+    animation: aiPulse 1.5s infinite ease-in-out;
+    border-color: var(--accent-cyan);
+}
+
+@keyframes aiPulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.ai-action-icon {
+    font-size: 24px;
+}
+
+.ai-action-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.ai-action-desc {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.ai-result-card {
+    border-left: 3px solid var(--accent-cyan);
+}
+
+.ai-red-flag {
+    padding: 16px;
+    border-radius: var(--radius-md);
+    background: rgba(245, 158, 11, 0.02);
+    border: 1px solid rgba(245, 158, 11, 0.1);
+    border-left: 4px solid var(--color-warning);
+}
+
+.ai-citation-tag {
+    transition: background-color 0.2s;
+}
+
+.ai-citation-tag:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.ai-qa-bubble {
+    line-height: 1.5;
+    animation: fadeIn 0.25s ease;
+}
+
+.ai-qa-bubble p {
+    margin: 0;
+}
+
+.ai-qa-bubble.qa-user {
+    background: rgba(0, 212, 255, 0.1) !important;
+    border-color: rgba(0, 212, 255, 0.25) !important;
+    align-self: flex-end;
+}
+
+.ai-qa-bubble.qa-assistant {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-color: var(--border-light) !important;
+    align-self: flex-start;
+}
+
+.ai-qa-input input {
+    background: rgba(17, 24, 39, 0.65);
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.ai-qa-input input:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.25);
+}
+
+.ai-saved-report-item:hover {
+    border-color: var(--accent-cyan) !important;
+    background: rgba(0, 212, 255, 0.02) !important;
+}
+
+.typing-placeholder {
+    animation: aiPulse 1.2s infinite ease-in-out;
+}
+
+/* ============================================
+   COLLAPSIBLE SIDEBAR
+   ============================================ */
+body.sidebar-collapsed {
+    --sidebar-width: 72px;
+}
+
+/* Smooth transition for fading out elements */
+.logo-text,
+.logo-tagline,
+.nav-label,
+.sidebar-footer-text,
+.sidebar-footer {
+    transition: opacity var(--transition-base), visibility var(--transition-base), padding var(--transition-base), margin var(--transition-base);
+}
+
+body.sidebar-collapsed .logo-text,
+body.sidebar-collapsed .logo-tagline,
+body.sidebar-collapsed .nav-label,
+body.sidebar-collapsed .sidebar-footer {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+}
+
+body.sidebar-collapsed .logo {
+    justify-content: center;
+}
+
+body.sidebar-collapsed .sidebar-header {
+    padding: 28px 0 20px;
+    text-align: center;
+}
+
+body.sidebar-collapsed .nav-item {
+    justify-content: center;
+    padding: 12px 0;
+    border-left: none;
+}
+
+body.sidebar-collapsed .nav-icon {
+    margin: 0;
+}
+
+body.sidebar-collapsed .nav-item.active::before {
+    left: 0;
+    width: 4px;
+}

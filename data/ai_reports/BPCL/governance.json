@@ -1,0 +1,80 @@
+{
+  "prompt_version": "governance_prompt_v2",
+  "model_name": "gemini-3.1-flash-lite",
+  "generation_config": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "top_k": 20
+  },
+  "timestamp": "2026-06-11T18:44:59.950572",
+  "generated_at": "2026-06-11T18:44:59.950598",
+  "documents_used": [
+    "investor-presentation-q4-2025-26.pdf",
+    "bpcl-transcript-q4-investor-concall-d4352b.pdf",
+    "annual-report-2024-25-1f8f19.pdf"
+  ],
+  "ticker": "BPCL",
+  "mode": "governance",
+  "report": {
+    "promoter_holding": "The President of India holds 52.98% of the equity shares as of March 31, 2025.",
+    "promoter_pledge": "Not found in provided documents.",
+    "auditor_details": "M/s. M. M. Nissim & Co LLP and M/s. Manohar Chowdhry & Associates were appointed as Statutory Auditors for FY 2024-25. The auditors' report for FY 2024-25 does not contain any qualification, reservation, or adverse remark.",
+    "rpt_summary": "The company engages in various related party transactions, including purchases, sales, and loans. These are disclosed in Note 51 of the Standalone Financial Statements and Note 49 of the Consolidated Financial Statements. The company states these are conducted in the ordinary course of business on an arm's length basis.",
+    "contingent_liabilities": "As of March 31, 2025, contingent liabilities include claims against the Corporation not acknowledged as debts, primarily related to excise and customs matters (H 414.69 crore), service tax matters (H 1,352.71 crore), and sales tax/GST/VAT/entry tax matters (H 3,509.73 crore).",
+    "capital_allocation": "The company follows a prudent capital allocation approach, focusing on project execution, balance sheet strength, and sustainable returns. It targets a 12-15% threshold project IRR at the portfolio level and maintains a peak D/E ratio of 1.0 on a standalone basis.",
+    "mgmt_compensation": "Remuneration for Whole-time Directors is determined by the Government of India. Details for FY 2024-25 are provided in the Corporate Governance Report, showing total remuneration for the five Whole-time Directors as H 6,10,02,947.",
+    "equity_dilution": "The company issued bonus equity shares in June 2024 in the proportion of 1:1, increasing the paid-up equity share capital to 4,33,85,05,488 shares of H 10 each.",
+    "litigation": "The company is involved in various legal disputes, including tax-related matters (excise, customs, service tax, sales tax/GST/VAT) and environmental compliance cases, as detailed in Statement 2 of the Annual Report.",
+    "red_flags": [
+      {
+        "category": "Governance/Compliance",
+        "description": "The company failed to maintain the requisite number of Independent Directors and proper composition of various Board Committees for a significant portion of the financial year 2024-25.",
+        "evidence": "The company did not have the requisite number of Independent Directors and proper composition of Audit, Nomination & Remuneration, and Risk Management Committees for the period from November 12, 2024, to March 27, 2025.",
+        "citation": {
+          "page": 134,
+          "section": "Directors’ Report (Contd.)",
+          "document": "Annual Report 2024-25",
+          "quote": "The Company did not have requisite number of Independent Directors... during the period November 12, 2024 to March 27, 2025 as required under Section 149(4) of the Act; Proper constitution of the Audit Committee... during the period November 12, 2024 till March 27, 2025",
+          "citation_confidence": "high"
+        }
+      },
+      {
+        "category": "Litigation",
+        "description": "The company is involved in multiple ongoing legal cases related to environmental non-compliance and pollution allegations.",
+        "evidence": "The company is involved in several cases related to environmental non-compliance, including cases before the National Green Tribunal and the Supreme Court.",
+        "citation": {
+          "page": 120,
+          "section": "Business Responsibility and Sustainability Report (Contd.)",
+          "document": "Annual Report 2024-25",
+          "quote": "BPCL vs Shri Sant Dasganu Maharaj Shetkari Sangh (SLP- 2127/2015)... Case is pending before Hon’ble Supreme Court against the finding of NGT that BPCL has caused ground water pollution.",
+          "citation_confidence": "high"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "page": 99,
+        "section": "Distribution of share holding",
+        "document": "Annual Report 2024-25",
+        "quote": "Government of India 2,29,83,67,184 52.98",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 122,
+        "section": "Directors’ Report (Contd.)",
+        "document": "Annual Report 2024-25",
+        "quote": "The Board of Directors takes pleasure in presenting their Report on the performance of Bharat Petroleum Corporation Limited (BPCL) for the year ended March 31, 2025.",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 95,
+        "section": "Remuneration to Directors",
+        "document": "Annual Report 2024-25",
+        "quote": "TOTAL 2,11,65,774 46,56,471 1,35,79,304 2,16,01,398 6,10,02,947",
+        "citation_confidence": "high"
+      }
+    ],
+    "confidence": "high",
+    "disclaimer": "This report is based solely on the provided documents and does not constitute financial advice."
+  }
+}
