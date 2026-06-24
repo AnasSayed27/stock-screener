@@ -47,3 +47,4 @@ test_*.py
 
 # AI Temporary files
 data/ai_temp/
+data/ai_reports/
