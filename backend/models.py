@@ -161,6 +161,11 @@ class ThesisCreate(BaseModel):
     why_interested: str = ""
     what_would_make_me_wrong: str = ""
     sell_conditions: str = ""
+    sell_checklist: Optional[list[dict]] = None
+    key_assumptions: Optional[list[str]] = None
+    major_risks: Optional[list[str]] = None
+    source: Optional[str] = None
+    synthesis_id: Optional[str] = None
     governance: dict[str, bool] = Field(default_factory=dict)
     snapshot: Optional[ThesisSnapshot] = None
 
@@ -171,13 +176,20 @@ class ThesisResponse(BaseModel):
     why_interested: str = ""
     what_would_make_me_wrong: str = ""
     sell_conditions: str = ""
+    sell_checklist: Optional[list[dict]] = None
+    key_assumptions: Optional[list[str]] = None
+    major_risks: Optional[list[str]] = None
+    source: Optional[str] = None
+    synthesis_id: Optional[str] = None
     governance: dict[str, bool] = Field(default_factory=dict)
     snapshot: Optional[ThesisSnapshot] = None
     date_created: str = ""
+    date_updated: Optional[str] = ""
 
 
 class PostmortemCreate(BaseModel):
     """Payload to create a postmortem."""
+    id: Optional[str] = None
     ticker: str
     entry_date: Optional[str] = None
     entry_price: Optional[float] = None
@@ -192,6 +204,7 @@ class PostmortemCreate(BaseModel):
 
 class PostmortemResponse(BaseModel):
     """Stored postmortem (includes metadata)."""
+    id: str = ""
     ticker: str
     entry_date: Optional[str] = None
     entry_price: Optional[float] = None
@@ -203,6 +216,7 @@ class PostmortemResponse(BaseModel):
     key_lessons: str = ""
     mistakes: str = ""
     date_created: str = ""
+    date_updated: Optional[str] = ""
 
 
 # ---------------------------------------------------------------------------
@@ -290,4 +304,125 @@ class AIReportMeta(BaseModel):
     ticker: str = ""
     mode: str = ""
     report: dict = Field(default_factory=dict)  # the actual response
+
+
+# ---------------------------------------------------------------------------
+# Discovery Models
+# ---------------------------------------------------------------------------
+
+class DiscoveryCandidate(BaseModel):
+    company_name: str = ""
+    ticker: Optional[str] = None
+    connection_type: str = ""
+    confidence: str = "medium"
+    why_now: str = ""
+    reasoning: str = ""
+    self_critique: str = ""
+    disproving_evidence: str = ""
+    risks: list[str] = Field(default_factory=list)
+    what_to_verify: list[str] = Field(default_factory=list)
+    sources: list[str] = Field(default_factory=list)
+    confidence_evolution: list[str] = Field(default_factory=list)
+
+
+class DiscoverySearch(BaseModel):
+    query: str = ""
+    findings: str = ""
+    sources: list[str] = Field(default_factory=list)
+    phase: str = ""
+
+
+class DiscoveryResult(BaseModel):
+    analysis_summary: str = ""
+    candidates: list[DiscoveryCandidate] = Field(default_factory=list)
+    limitations: list[str] = Field(default_factory=list)
+    searches_performed: list[DiscoverySearch] = Field(default_factory=list)
+    disclaimer: str = "AI-generated hypotheses. Every candidate requires independent verification."
+    phases_completed: int = 0
+    total_search_count: int = 0
+
+
+class DiscoverySummary(BaseModel):
+    id: str = ""
+    strategy_name: str = ""
+    user_input_preview: str = ""
+    candidate_count: int = 0
+    created_at: str = ""
+
+
+class DiscoveryMeta(BaseModel):
+    id: str = ""
+    strategy_id: str = ""
+    strategy_name: str = ""
+    user_params: dict = Field(default_factory=dict)
+    model_name: str = ""
+    created_at: str = ""
+    result: DiscoveryResult = Field(default_factory=DiscoveryResult)
+
+
+# ---------------------------------------------------------------------------
+# Master Synthesis Models
+# ---------------------------------------------------------------------------
+
+class SynthesisCandidate(BaseModel):
+    rank: int = 0
+    company_name: str = ""
+    ticker: Optional[str] = None
+    convergence_count: int = 0
+    strategies_found_in: list[str] = Field(default_factory=list)
+    composite_conviction: str = "Medium"
+    unified_thesis: str = ""
+    key_catalysts: list = Field(default_factory=list)
+    key_risks: list[str] = Field(default_factory=list)
+    contrarian_view: str = ""
+    action_items: list[str] = Field(default_factory=list)
+    per_strategy_detail: list[dict] = Field(default_factory=list)
+
+
+class SynthesisResult(BaseModel):
+    ultimate_picks: list[SynthesisCandidate] = Field(default_factory=list)
+    market_narrative: str = ""
+    portfolio_considerations: str = ""
+    total_candidates_analyzed: int = 0
+    total_strategies_used: int = 0
+    honorable_mentions: list[dict] = Field(default_factory=list)
+    methodology_note: str = ""
+
+
+class SynthesisMeta(BaseModel):
+    id: str = ""
+    created_at: str = ""
+    model_name: str = ""
+    strategy_ids_used: list[str] = Field(default_factory=list)
+    strategy_names_used: list[str] = Field(default_factory=list)
+    result: SynthesisResult = Field(default_factory=SynthesisResult)
+
+
+class SynthesisSummary(BaseModel):
+    id: str = ""
+    created_at: str = ""
+    pick_count: int = 0
+    strategies_used: int = 0
+    top_pick_name: str = ""
+
+
+# ---------------------------------------------------------------------------
+# Synthesis Chat & Verification Models
+# ---------------------------------------------------------------------------
+
+class SynthesisChatMessage(BaseModel):
+    role: str = ""        # "user" | "assistant"
+    content: str = ""
+    timestamp: str = ""
+
+
+class SynthesisChatSession(BaseModel):
+    synthesis_id: str = ""
+    messages: list[SynthesisChatMessage] = Field(default_factory=list)
+    created_at: str = ""
+    updated_at: str = ""
+    generated_thesis: Optional[dict] = None
+
+
+
 

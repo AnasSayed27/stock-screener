@@ -1,15 +1,15 @@
 """
-Thesis & postmortem persistence — simple JSON-file storage.
+Thesis & postmortem persistence — atomic JSON-file storage.
 
 Each thesis is saved as ``data/theses/{TICKER}.json``.
-Each postmortem is saved as ``data/postmortems/{TICKER}_{timestamp}.json``.
+Each postmortem is saved as ``data/postmortems/{ID}.json``.
 """
 
 from __future__ import annotations
 
-import json
 import logging
 import os
+import uuid
 from datetime import datetime
 from typing import Optional
 
@@ -20,17 +20,10 @@ from models import (
     ThesisCreate,
     ThesisResponse,
 )
+from security_utils import safe_join, sanitize_ticker, validate_uuid
+from storage import atomic_write_json, safe_read_json
 
 logger = logging.getLogger(__name__)
-
-
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
-def _safe_ticker(ticker: str) -> str:
-    """Sanitise ticker for use in filenames."""
-    return ticker.replace(".", "_").replace("/", "_").replace("\\", "_").upper()
 
 
 # ---------------------------------------------------------------------------
@@ -39,23 +32,30 @@ def _safe_ticker(ticker: str) -> str:
 
 def save_thesis(thesis: ThesisCreate) -> ThesisResponse:
     """
-    Create or update a thesis.  Returns the persisted ``ThesisResponse``.
+    Create or update a thesis. Preserves original date_created if updating.
+    Returns the persisted ``ThesisResponse``.
     """
-    safe = _safe_ticker(thesis.ticker)
-    path = os.path.join(THESES_DIR, f"{safe}.json")
+    safe = sanitize_ticker(thesis.ticker)
+    path = safe_join(THESES_DIR, f"{safe}.json")
+
+    existing_created_at = None
+    if os.path.isfile(path):
+        existing_data = safe_read_json(path)
+        if existing_data and isinstance(existing_data, dict):
+            existing_created_at = existing_data.get("date_created") or existing_data.get("created_at")
 
     payload = thesis.model_dump()
-    payload["date_created"] = datetime.now().isoformat()
+    now_iso = datetime.now().isoformat()
+    payload["date_created"] = existing_created_at or now_iso
+    payload["date_updated"] = now_iso
 
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(payload, fh, indent=2, ensure_ascii=False)
-
-    logger.info("Thesis saved for %s", thesis.ticker)
+    atomic_write_json(path, payload)
+    logger.info("Thesis atomically saved for %s", thesis.ticker)
     return ThesisResponse(**payload)
 
 
 def get_all_theses() -> list[ThesisResponse]:
-    """Read every thesis JSON file and return a list."""
+    """Read every thesis JSON file and return a list, isolating any corrupted files."""
     results: list[ThesisResponse] = []
     if not os.path.isdir(THESES_DIR):
         return results
@@ -63,37 +63,51 @@ def get_all_theses() -> list[ThesisResponse]:
         if not fname.endswith(".json"):
             continue
         try:
-            with open(os.path.join(THESES_DIR, fname), "r", encoding="utf-8") as fh:
-                data = json.load(fh)
-            results.append(ThesisResponse(**data))
+            path = safe_join(THESES_DIR, fname)
+            data = safe_read_json(path)
+            if data and isinstance(data, dict):
+                results.append(ThesisResponse(**data))
         except Exception as exc:
-            logger.warning("Failed to load thesis %s: %s", fname, exc)
+            logger.warning("Failed to load thesis %s (skipping): %s", fname, exc)
     return results
 
 
 def get_thesis(ticker: str) -> Optional[ThesisResponse]:
-    """Load a single thesis by ticker.  Returns None if not found."""
-    safe = _safe_ticker(ticker)
-    path = os.path.join(THESES_DIR, f"{safe}.json")
+    """Load a single thesis by ticker. Returns None if not found."""
+    try:
+        safe = sanitize_ticker(ticker)
+        path = safe_join(THESES_DIR, f"{safe}.json")
+    except ValueError:
+        return None
+
     if not os.path.isfile(path):
         return None
     try:
-        with open(path, "r", encoding="utf-8") as fh:
-            data = json.load(fh)
-        return ThesisResponse(**data)
+        data = safe_read_json(path)
+        if data and isinstance(data, dict):
+            return ThesisResponse(**data)
+        return None
     except Exception as exc:
         logger.warning("Failed to load thesis for %s: %s", ticker, exc)
         return None
 
 
 def delete_thesis(ticker: str) -> bool:
-    """Delete a thesis file.  Returns True if deleted, False if not found."""
-    safe = _safe_ticker(ticker)
-    path = os.path.join(THESES_DIR, f"{safe}.json")
+    """Delete a thesis file. Returns True if deleted, False if not found."""
+    try:
+        safe = sanitize_ticker(ticker)
+        path = safe_join(THESES_DIR, f"{safe}.json")
+    except ValueError:
+        return False
+
     if os.path.isfile(path):
-        os.remove(path)
-        logger.info("Thesis deleted for %s", ticker)
-        return True
+        try:
+            os.remove(path)
+            logger.info("Thesis deleted for %s", ticker)
+            return True
+        except Exception as exc:
+            logger.error("Failed to delete thesis for %s: %s", ticker, exc)
+            return False
     return False
 
 
@@ -103,24 +117,31 @@ def delete_thesis(ticker: str) -> bool:
 
 def save_postmortem(postmortem: PostmortemCreate) -> PostmortemResponse:
     """
-    Save a new postmortem.  Returns the persisted ``PostmortemResponse``.
+    Save a new postmortem with a unique UUID. Returns the persisted ``PostmortemResponse``.
     """
-    safe = _safe_ticker(postmortem.ticker)
-    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = os.path.join(POSTMORTEMS_DIR, f"{safe}_{ts}.json")
+    postmortem_id = postmortem.id or str(uuid.uuid4())
+    safe_id = validate_uuid(postmortem_id)
+    path = safe_join(POSTMORTEMS_DIR, f"{safe_id}.json")
 
+    existing_created_at = None
+    if os.path.isfile(path):
+        existing_data = safe_read_json(path)
+        if existing_data and isinstance(existing_data, dict):
+            existing_created_at = existing_data.get("date_created") or existing_data.get("created_at")
+
+    now_iso = datetime.now().isoformat()
     payload = postmortem.model_dump()
-    payload["date_created"] = datetime.now().isoformat()
+    payload["id"] = safe_id
+    payload["date_created"] = existing_created_at or now_iso
+    payload["date_updated"] = now_iso
 
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(payload, fh, indent=2, ensure_ascii=False)
-
-    logger.info("Postmortem saved for %s", postmortem.ticker)
+    atomic_write_json(path, payload)
+    logger.info("Postmortem saved with ID %s for %s", safe_id, postmortem.ticker)
     return PostmortemResponse(**payload)
 
 
 def get_all_postmortems() -> list[PostmortemResponse]:
-    """Read every postmortem JSON file and return a list."""
+    """Read every postmortem JSON file and return a list, isolating any corrupted files."""
     results: list[PostmortemResponse] = []
     if not os.path.isdir(POSTMORTEMS_DIR):
         return results
@@ -128,9 +149,81 @@ def get_all_postmortems() -> list[PostmortemResponse]:
         if not fname.endswith(".json"):
             continue
         try:
-            with open(os.path.join(POSTMORTEMS_DIR, fname), "r", encoding="utf-8") as fh:
-                data = json.load(fh)
-            results.append(PostmortemResponse(**data))
+            path = safe_join(POSTMORTEMS_DIR, fname)
+            data = safe_read_json(path)
+            if data and isinstance(data, dict):
+                # Ensure ID is populated even for legacy files
+                if not data.get("id"):
+                    data["id"] = fname.replace(".json", "")
+                results.append(PostmortemResponse(**data))
         except Exception as exc:
-            logger.warning("Failed to load postmortem %s: %s", fname, exc)
+            logger.warning("Failed to load postmortem %s (skipping): %s", fname, exc)
     return results
+
+
+def get_postmortem(postmortem_id: str) -> Optional[PostmortemResponse]:
+    """Fetch a single postmortem by ID."""
+    if not postmortem_id:
+        return None
+    
+    # Try direct UUID file first
+    try:
+        safe_id = validate_uuid(postmortem_id)
+        path = safe_join(POSTMORTEMS_DIR, f"{safe_id}.json")
+        if os.path.isfile(path):
+            data = safe_read_json(path)
+            if data and isinstance(data, dict):
+                if not data.get("id"):
+                    data["id"] = safe_id
+                return PostmortemResponse(**data)
+    except ValueError:
+        pass
+
+    # Legacy fallback by filename
+    path = safe_join(POSTMORTEMS_DIR, f"{os.path.basename(postmortem_id)}.json")
+    if os.path.isfile(path):
+        data = safe_read_json(path)
+        if data and isinstance(data, dict):
+            if not data.get("id"):
+                data["id"] = postmortem_id
+            return PostmortemResponse(**data)
+    return None
+
+
+def update_postmortem(postmortem_id: str, postmortem: PostmortemCreate) -> Optional[PostmortemResponse]:
+    """Update an existing postmortem by ID."""
+    existing = get_postmortem(postmortem_id)
+    if not existing:
+        return None
+    postmortem.id = existing.id
+    return save_postmortem(postmortem)
+
+
+def delete_postmortem(postmortem_id: str) -> bool:
+    """Delete a postmortem file by ID."""
+    if not postmortem_id:
+        return False
+    
+    # Try UUID filename
+    try:
+        safe_id = validate_uuid(postmortem_id)
+        path = safe_join(POSTMORTEMS_DIR, f"{safe_id}.json")
+        if os.path.isfile(path):
+            os.remove(path)
+            logger.info("Postmortem %s deleted", safe_id)
+            return True
+    except ValueError:
+        pass
+
+    # Legacy filename fallback
+    path = safe_join(POSTMORTEMS_DIR, f"{os.path.basename(postmortem_id)}.json")
+    if os.path.isfile(path):
+        try:
+            os.remove(path)
+            logger.info("Legacy postmortem %s deleted", postmortem_id)
+            return True
+        except Exception as exc:
+            logger.error("Failed to delete postmortem %s: %s", postmortem_id, exc)
+            return False
+
+    return False

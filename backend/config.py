@@ -106,11 +106,17 @@ POSTMORTEMS_DIR = os.path.join(DATA_DIR, "postmortems")
 # ---------------------------------------------------------------------------
 # AI Research Module (optional — requires GEMINI_API_KEY in .env)
 # ---------------------------------------------------------------------------
-AI_ENABLED = bool(os.environ.get("GEMINI_API_KEY"))
-AI_MODEL = os.environ.get("AI_MODEL", "gemini-3.1-flash-lite")
+AI_ENABLED = bool(os.environ.get("GEMINI_API_KEY_1") or os.environ.get("GEMINI_API_KEY_2") or os.environ.get("GEMINI_API_KEY"))
+AI_MODEL = os.environ.get("AI_MODEL", "gemini-3.5-flash-lite")
+EVALUATOR_MODEL = os.environ.get("EVALUATOR_MODEL", "gemini-3.7-flash")
 AI_TEMP_DIR = os.path.join(DATA_DIR, "ai_temp")
 AI_REPORTS_DIR = os.path.join(DATA_DIR, "ai_reports")
+DISCOVERY_DIR = os.path.join(DATA_DIR, "discoveries")
+SYNTHESIS_DIR = os.path.join(DATA_DIR, "syntheses")
+SYNTHESIS_CHATS_DIR = os.path.join(DATA_DIR, "synthesis_chats")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 # Ensure directories exist at import time
-for _d in (CACHE_DIR, THESES_DIR, POSTMORTEMS_DIR, AI_TEMP_DIR, AI_REPORTS_DIR):
+for _d in (CACHE_DIR, THESES_DIR, POSTMORTEMS_DIR, AI_TEMP_DIR, AI_REPORTS_DIR, DISCOVERY_DIR, SYNTHESIS_DIR, SYNTHESIS_CHATS_DIR):
     os.makedirs(_d, exist_ok=True)
+

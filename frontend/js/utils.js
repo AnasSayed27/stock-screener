@@ -226,12 +226,32 @@ function debounce(fn, delay = 300) {
 }
 
 /**
- * Escape HTML special characters.
+ * Escape HTML special characters to prevent XSS.
  */
 function escapeHtml(text) {
     if (!text) return '';
     const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
     return String(text).replace(/[&<>"']/g, m => map[m]);
+}
+
+/**
+ * Sanitize URL to ensure it only uses safe http: or https: protocols.
+ * Returns 'about:blank' for unsafe protocols (e.g. javascript:).
+ */
+function sanitizeUrl(url) {
+    if (!url || typeof url !== 'string') return 'about:blank';
+    const trimmed = url.trim();
+    try {
+        const parsed = new URL(trimmed, window.location.origin);
+        if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+            return trimmed;
+        }
+    } catch (_) {
+        if (/^https?:\/\//i.test(trimmed)) {
+            return trimmed;
+        }
+    }
+    return 'about:blank';
 }
 
 /**

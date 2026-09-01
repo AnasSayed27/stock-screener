@@ -10,6 +10,7 @@ const routes = {
     '':          renderDashboard,
     'dashboard': renderDashboard,
     'screener':  renderScreener,
+    'discovery': renderDiscovery,
     'analyzer':  renderAnalyzer,
     'thesis':    renderThesisBoard,
 };
@@ -111,6 +112,45 @@ function _initCollapsibleSidebar() {
     }
 }
 
+async function updateAPIUsageStats() {
+    try {
+        const response = await fetch('/api/usage');
+        if (!response.ok) return;
+        const data = await response.json();
+        
+        const sumGemini = document.getElementById('api-sum-gemini');
+        const sumTavily = document.getElementById('api-sum-tavily');
+        if (sumGemini) sumGemini.textContent = data.gemini_count || 0;
+        if (sumTavily) sumTavily.textContent = data.tavily_count || 0;
+        
+        const detGemini = document.getElementById('api-det-gemini');
+        const detTavily = document.getElementById('api-det-tavily');
+        if (detGemini) detGemini.textContent = data.gemini_count || 0;
+        if (detTavily) detTavily.textContent = data.tavily_count || 0;
+    } catch (err) {
+        console.error('Error fetching API usage stats:', err);
+    }
+}
+
+function _initAPIUsage() {
+    const header = document.getElementById('api-usage-header');
+    const details = document.getElementById('api-usage-details');
+    const arrow = document.getElementById('api-usage-arrow');
+    
+    if (header && details) {
+        header.addEventListener('click', () => {
+            const isHidden = details.style.display === 'none';
+            details.style.display = isHidden ? 'flex' : 'none';
+            if (arrow) {
+                arrow.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+            }
+        });
+    }
+    
+    updateAPIUsageStats();
+    setInterval(updateAPIUsageStats, 30000);
+}
+
 /* ============================================
    INITIALIZE
    ============================================ */
@@ -119,5 +159,6 @@ window.addEventListener('hashchange', router);
 window.addEventListener('DOMContentLoaded', () => {
     _initMobileSidebar();
     _initCollapsibleSidebar();
+    _initAPIUsage();
     router();
 });

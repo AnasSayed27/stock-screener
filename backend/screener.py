@@ -133,9 +133,21 @@ def check_roic(data: dict, thresholds: dict) -> CriterionResult:
 
 
 def check_roe(data: dict, thresholds: dict) -> CriterionResult:
-    """Return on Equity — from info dict or computed."""
+    """Return on Equity — from info dict or computed from statements."""
     info = data.get("info", {})
     roe = _safe(info.get("returnOnEquity"))
+
+    # Fallback to computing from most recent statements if info is missing
+    if roe is None:
+        income = data.get("income_stmt", {})
+        balance = data.get("balance_sheet", {})
+        if income and balance:
+            latest_inc = _years_sorted(income)[-1]
+            latest_bs = _years_sorted(balance)[-1]
+            ni = _safe(income[latest_inc].get("net_income"))
+            equity = _safe(balance[latest_bs].get("total_equity"))
+            if ni is not None and equity is not None and equity > 0:
+                roe = ni / equity
 
     threshold_val = thresholds.get("roe_min", 0.15)
     passed = roe is not None and roe >= threshold_val
@@ -219,11 +231,23 @@ def check_debt_to_equity(data: dict, thresholds: dict) -> CriterionResult:
     """
     Debt-to-Equity ratio.
     yfinance returns debtToEquity as a percentage (e.g. 50 for 0.5×), so
-    we divide by 100.
+    we divide by 100. Fallback to balance sheet if missing from info.
     """
     info = data.get("info", {})
     raw = _safe(info.get("debtToEquity"))
     de = raw / 100.0 if raw is not None else None
+
+    # Fallback to computing from balance sheet
+    if de is None:
+        balance = data.get("balance_sheet", {})
+        if balance:
+            latest = _years_sorted(balance)[-1]
+            debt = _safe(balance[latest].get("total_debt"))
+            equity = _safe(balance[latest].get("total_equity"))
+            if debt is not None and equity is not None and equity > 0:
+                de = debt / equity
+            elif debt is not None and debt == 0 and equity is not None and equity > 0:
+                de = 0.0
 
     threshold_val = thresholds.get("debt_to_equity_max", 1.0)
     passed = de is not None and de <= threshold_val
@@ -285,9 +309,19 @@ def check_debt_coverage(data: dict, thresholds: dict) -> CriterionResult:
 
 
 def check_current_ratio(data: dict, thresholds: dict) -> CriterionResult:
-    """Current Ratio from info dict."""
+    """Current Ratio from info dict or computed from balance sheet."""
     info = data.get("info", {})
     cr = _safe(info.get("currentRatio"))
+
+    # Fallback to computing from balance sheet
+    if cr is None:
+        balance = data.get("balance_sheet", {})
+        if balance:
+            latest = _years_sorted(balance)[-1]
+            ca = _safe(balance[latest].get("current_assets"))
+            cl = _safe(balance[latest].get("current_liabilities"))
+            if ca is not None and cl is not None and cl > 0:
+                cr = ca / cl
 
     threshold_val = thresholds.get("current_ratio_min", 1.5)
     passed = cr is not None and cr >= threshold_val
@@ -302,9 +336,19 @@ def check_current_ratio(data: dict, thresholds: dict) -> CriterionResult:
 
 
 def check_operating_margins(data: dict, thresholds: dict) -> CriterionResult:
-    """Operating margins from info dict."""
+    """Operating margins from info dict or computed from income statement."""
     info = data.get("info", {})
     om = _safe(info.get("operatingMargins"))
+
+    # Fallback to computing from income statement
+    if om is None:
+        income = data.get("income_stmt", {})
+        if income:
+            latest = _years_sorted(income)[-1]
+            op_inc = _safe(income[latest].get("operating_income") or income[latest].get("ebit"))
+            rev = _safe(income[latest].get("revenue"))
+            if op_inc is not None and rev is not None and rev > 0:
+                om = op_inc / rev
 
     threshold_val = thresholds.get("operating_margin_min", 0.10)
     passed = om is not None and om >= threshold_val
@@ -359,6 +403,7 @@ def check_share_dilution(data: dict, thresholds: dict) -> CriterionResult:
 def check_fcf_ni_ratio(data: dict, thresholds: dict) -> CriterionResult:
     """
     Average FCF / Average Net Income should be between 0.7 and 1.5.
+    Both average FCF and average Net Income must be positive (> 0).
     This checks that reported earnings are backed by real cash flow.
     """
     cashflow = data.get("cashflow", {})
@@ -386,7 +431,12 @@ def check_fcf_ni_ratio(data: dict, thresholds: dict) -> CriterionResult:
 
     avg_fcf = sum(fcf_vals) / len(fcf_vals)
     avg_ni = sum(ni_vals) / len(ni_vals)
-    ratio = avg_fcf / avg_ni if avg_ni != 0 else None
+
+    # Loss-making or cash-burning companies must fail this check
+    if avg_fcf > 0 and avg_ni > 0:
+        ratio = avg_fcf / avg_ni
+    else:
+        ratio = None
 
     lo = thresholds.get("fcf_ni_ratio_min", 0.7)
     hi = thresholds.get("fcf_ni_ratio_max", 1.5)
@@ -402,10 +452,29 @@ def check_fcf_ni_ratio(data: dict, thresholds: dict) -> CriterionResult:
 
 
 def check_earnings_yield(data: dict, thresholds: dict) -> CriterionResult:
-    """Earnings Yield = EBIT / Enterprise Value."""
+    """Earnings Yield = EBIT (or Operating Income) / Enterprise Value."""
     info = data.get("info", {})
     ebit = _safe(info.get("ebitda"))
     ev = _safe(info.get("enterpriseValue"))
+
+    # Fallback to income statement if ebit is missing
+    if ebit is None:
+        income = data.get("income_stmt", {})
+        if income:
+            latest = _years_sorted(income)[-1]
+            ebit = _safe(income[latest].get("ebit") or income[latest].get("operating_income"))
+
+    # Fallback to approximate EV if EV is missing
+    if ev is None:
+        mcap = _safe(info.get("marketCap"))
+        balance = data.get("balance_sheet", {})
+        if mcap is not None and balance:
+            latest = _years_sorted(balance)[-1]
+            debt = _safe(balance[latest].get("total_debt")) or 0.0
+            cash = _safe(balance[latest].get("cash")) or 0.0
+            computed_ev = mcap + debt - cash
+            if computed_ev > 0:
+                ev = computed_ev
 
     if ebit is not None and ev is not None and ev > 0:
         ey = ebit / ev
@@ -492,7 +561,8 @@ def get_conviction(quality_pct: float, margin_of_safety: Optional[float]) -> tup
     Map quality percentage and margin of safety to a conviction label.
     Returns ``(label, description)`` tuple.
     """
-    mos = margin_of_safety if margin_of_safety is not None else -999
+    has_mos = margin_of_safety is not None
+    mos = margin_of_safety if has_mos else -999
 
     high_q = quality_pct >= CONVICTION["quality_high"]
     low_q = quality_pct >= CONVICTION["quality_low"]
@@ -510,6 +580,11 @@ def get_conviction(quality_pct: float, margin_of_safety: Optional[float]) -> tup
             "Quality business at a reasonable price. Monitor for better entry point.",
         )
     if high_q:
+        if not has_mos:
+            return (
+                "Watchlist",
+                "Great business with high quality score. Valuation data currently unavailable to determine Margin of Safety.",
+            )
         return (
             "Watchlist",
             "Great business but appears overvalued. Add to watchlist and wait for price pullback.",

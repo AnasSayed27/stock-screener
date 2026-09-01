@@ -81,16 +81,61 @@ async function _loadTheses() {
 function _renderThesisCard(thesis, index) {
     const snap = thesis.snapshot || {};
     const ticker = thesis.ticker || '—';
-    const date = formatDate(thesis.created_at || thesis.date);
+    const date = formatDate(thesis.created_at || thesis.date_created || thesis.date);
     const score = snap.quality_score ?? '—';
     const maxScore = snap.max_score ?? 11;
     const conviction = snap.conviction || thesis.conviction || '—';
     const mos = snap.margin_of_safety;
+    const isSynthesisVerified = thesis.source === 'synthesis_chat';
+
+    const checklist = thesis.sell_checklist || [];
+    let checklistHtml = '';
+    if (checklist.length > 0) {
+        const rows = checklist.map(item => `
+            <tr>
+                <td style="color: #ff7b72; font-weight:600;">${escapeHtml(item.condition || '')}</td>
+                <td class="text-muted">${escapeHtml(item.linked_assumption || '')}</td>
+                <td>
+                    <span class="badge ${item.severity === 'full_exit' ? 'badge-low' : 'badge-medium'}" style="font-size:10px;">
+                        ${item.severity === 'full_exit' ? '🚨 FULL EXIT' : '⚠️ PARTIAL TRIM'}
+                    </span>
+                </td>
+            </tr>
+        `).join('');
+        checklistHtml = `
+            <div class="thesis-section">
+                <div class="thesis-section-title" style="color: #ffd700;">🚨 Sell Checklist (When & Why to Sell)</div>
+                <table class="sell-checklist-table">
+                    <thead>
+                        <tr>
+                            <th>Trigger</th>
+                            <th>Breaks Assumption</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>${rows}</tbody>
+                </table>
+            </div>
+        `;
+    } else if (thesis.sell_conditions) {
+        checklistHtml = `
+            <div class="thesis-section">
+                <div class="thesis-section-title">Sell Conditions</div>
+                <div class="thesis-section-text">${escapeHtml(thesis.sell_conditions)}</div>
+            </div>
+        `;
+    }
+
+    const assumptionsList = (thesis.key_assumptions || []).map(a => `<li>${escapeHtml(a)}</li>`).join('');
+    const risksList = (thesis.major_risks || []).map(r => `<li>${escapeHtml(r)}</li>`).join('');
 
     return `
         <div class="thesis-card card-animated" onclick="_toggleThesisExpand(${index})" style="animation-delay: ${index * 0.08}s;">
             <div class="thesis-card-header">
-                <span class="thesis-ticker">${escapeHtml(ticker)}</span>
+                <div style="display:flex; align-items:center; gap: 8px;">
+                    <span class="thesis-ticker">${escapeHtml(ticker)}</span>
+                    ${isSynthesisVerified ? `<span style="background: rgba(255,215,0,0.15); color: #ffd700; font-size:10px; font-weight:700; padding: 2px 6px; border-radius: 4px;">💬 Verified Chat Thesis</span>` : ''}
+                </div>
                 <span class="thesis-date">${date}</span>
             </div>
             <div class="thesis-meta">
@@ -118,10 +163,20 @@ function _renderThesisCard(thesis, index) {
                         <div class="thesis-section-text">${escapeHtml(thesis.what_would_make_me_wrong)}</div>
                     </div>
                 ` : ''}
-                ${thesis.sell_conditions ? `
+                
+                ${checklistHtml}
+
+                ${assumptionsList ? `
                     <div class="thesis-section">
-                        <div class="thesis-section-title">Sell Conditions</div>
-                        <div class="thesis-section-text">${escapeHtml(thesis.sell_conditions)}</div>
+                        <div class="thesis-section-title">Key Assumptions</div>
+                        <ul style="margin:4px 0 0 16px; padding:0; font-size:13px;" class="text-muted">${assumptionsList}</ul>
+                    </div>
+                ` : ''}
+
+                ${risksList ? `
+                    <div class="thesis-section">
+                        <div class="thesis-section-title" style="color: #ff7b72;">Major Risks</div>
+                        <ul style="margin:4px 0 0 16px; padding:0; font-size:13px;" class="text-muted">${risksList}</ul>
                     </div>
                 ` : ''}
 
@@ -255,9 +310,31 @@ function _renderPostmortemCard(pm, index) {
                         <div class="thesis-section-text">${escapeHtml(pm.mistakes)}</div>
                     </div>
                 ` : ''}
+                <div style="margin-top: 12px; display: flex; justify-content: flex-end;">
+                    <button class="btn btn-secondary btn-sm" style="color: #ff7b72; border-color: rgba(255,123,114,0.3);" onclick="event.stopPropagation(); _deletePostmortem('${escapeHtml(pm.id || '')}', '${escapeHtml(ticker)}')">
+                        🗑️ Delete Postmortem
+                    </button>
+                </div>
             </div>
         </div>
     `;
+}
+
+async function _deletePostmortem(id, ticker) {
+    if (!id) return;
+    const confirmed = await showConfirmModal(
+        'Delete Postmortem',
+        `Are you sure you want to permanently delete the postmortem for ${ticker}?`
+    );
+    if (!confirmed) return;
+
+    try {
+        await apiFetch(`/postmortems/${encodeURIComponent(id)}`, { method: 'DELETE' });
+        showToast('Postmortem deleted successfully', 'success');
+        _loadPostmortems();
+    } catch (err) {
+        showToast('Failed to delete postmortem: ' + err.message, 'error');
+    }
 }
 
 function _togglePMExpand(index) {

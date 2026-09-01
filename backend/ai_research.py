@@ -27,6 +27,7 @@ from prompts import (
     THESIS_DRAFT_PROMPT,
     QA_PROMPT
 )
+from usage_tracker import increment_gemini
 
 # In-memory session store (single-user local app)
 # Structure:
@@ -38,18 +39,32 @@ from prompts import (
 _sessions: dict[str, dict] = {}
 
 
-def get_client() -> Optional[genai.Client]:
-    """Initialize and return the Gemini client if API key is configured."""
-    api_key = os.environ.get("GEMINI_API_KEY")
+def get_gemini_key(key_num: int = 1) -> Optional[str]:
+    """
+    Get Gemini API key 1 or 2 with fallbacks:
+    key_num=1: GEMINI_API_KEY_1 or GEMINI_API_KEY
+    key_num=2: GEMINI_API_KEY_2 or GEMINI_API_KEY_1 or GEMINI_API_KEY
+    """
+    key1 = os.environ.get("GEMINI_API_KEY_1") or os.environ.get("GEMINI_API_KEY")
+    key2 = os.environ.get("GEMINI_API_KEY_2")
+    if key_num == 2 and key2:
+        return key2
+    return key1 or key2
+
+
+def get_client(key_num: int = 1, api_key: Optional[str] = None) -> Optional[genai.Client]:
+    """Initialize and return the Gemini client for a given API key or key number."""
+    if not api_key:
+        api_key = get_gemini_key(key_num)
     if not api_key:
         return None
-    # Google GenAI client automatically uses GEMINI_API_KEY env variable,
-    # but we pass it explicitly to be sure.
     return genai.Client(api_key=api_key)
 
 
 def load_session_from_disk(ticker: str) -> dict:
-    session_file = os.path.join(AI_TEMP_DIR, ticker, "session.json")
+    from security_utils import safe_join, sanitize_ticker
+    safe_t = sanitize_ticker(ticker)
+    session_file = safe_join(AI_TEMP_DIR, safe_t, "session.json")
     if os.path.exists(session_file):
         try:
             with open(session_file, "r", encoding="utf-8") as f:
@@ -83,8 +98,11 @@ def load_session_from_disk(ticker: str) -> dict:
 
 
 def save_session_to_disk(ticker: str, session: dict):
-    os.makedirs(os.path.join(AI_TEMP_DIR, ticker), exist_ok=True)
-    session_file = os.path.join(AI_TEMP_DIR, ticker, "session.json")
+    from security_utils import safe_join, sanitize_ticker
+    safe_t = sanitize_ticker(ticker)
+    target_dir = safe_join(AI_TEMP_DIR, safe_t)
+    os.makedirs(target_dir, exist_ok=True)
+    session_file = safe_join(target_dir, "session.json")
     try:
         gemini_file_names = [f.name for f in session.get("gemini_files", [])]
         data = {
@@ -100,9 +118,11 @@ def save_session_to_disk(ticker: str, session: dict):
 
 def get_session(ticker: str) -> dict:
     """Get or initialize session for a ticker."""
-    if ticker not in _sessions:
-        _sessions[ticker] = load_session_from_disk(ticker)
-    return _sessions[ticker]
+    from security_utils import sanitize_ticker
+    safe_t = sanitize_ticker(ticker)
+    if safe_t not in _sessions:
+        _sessions[safe_t] = load_session_from_disk(safe_t)
+    return _sessions[safe_t]
 
 
 def clear_session(ticker: str, keep_temp_dir: bool = False) -> dict:
@@ -110,7 +130,9 @@ def clear_session(ticker: str, keep_temp_dir: bool = False) -> dict:
     Clears session for a ticker, including deleting files from Gemini Files API
     and removing local temp files. Saved reports are NOT deleted.
     """
-    session = _sessions.get(ticker)
+    from security_utils import safe_join, sanitize_ticker
+    safe_t = sanitize_ticker(ticker)
+    session = _sessions.get(safe_t)
     client = get_client()
 
     if session and client:
@@ -123,12 +145,12 @@ def clear_session(ticker: str, keep_temp_dir: bool = False) -> dict:
                 print(f"Error deleting file {file_ref.name} from Gemini API: {e}")
 
     # Remove in-memory session
-    if ticker in _sessions:
-        del _sessions[ticker]
+    if safe_t in _sessions:
+        del _sessions[safe_t]
 
     # Delete local temp directory for this ticker
     if not keep_temp_dir:
-        temp_dir = os.path.join(AI_TEMP_DIR, ticker)
+        temp_dir = safe_join(AI_TEMP_DIR, safe_t)
         if os.path.exists(temp_dir):
             try:
                 shutil.rmtree(temp_dir)
@@ -236,6 +258,25 @@ def analyze_documents(
     session = get_session(ticker)
     gemini_files = session.get("gemini_files", [])
 
+    # Self-healing: If Gemini files expired (48h lifecycle) but local PDFs exist, re-upload them
+    if not gemini_files:
+        from security_utils import safe_join, sanitize_ticker
+        safe_t = sanitize_ticker(ticker)
+        temp_dir = safe_join(AI_TEMP_DIR, safe_t)
+        if os.path.exists(temp_dir):
+            local_pdfs = [
+                safe_join(temp_dir, f)
+                for f in os.listdir(temp_dir)
+                if f.lower().endswith(".pdf")
+            ]
+            if local_pdfs:
+                try:
+                    upload_documents(safe_t, local_pdfs)
+                    session = get_session(safe_t)
+                    gemini_files = session.get("gemini_files", [])
+                except Exception as e:
+                    print(f"Failed to auto re-upload expired Gemini files for {safe_t}: {e}")
+
     if not gemini_files:
         raise ValueError(
             "No active session or uploaded documents found for this stock. "
@@ -293,6 +334,7 @@ def analyze_documents(
 
     for attempt in range(max_retries + 1):
         try:
+            increment_gemini()
             response = client.models.generate_content(
                 model=AI_MODEL,
                 contents=contents,
@@ -303,6 +345,7 @@ def analyze_documents(
                     temperature=0.1,
                     top_p=0.9,
                     top_k=20,
+                    thinking_config=types.ThinkingConfig(thinking_budget=-1)
                 )
             )
             break
@@ -371,9 +414,11 @@ def analyze_documents(
             report=parsed_data
         )
         
-        ticker_reports_dir = os.path.join(AI_REPORTS_DIR, ticker)
+        from security_utils import safe_join, sanitize_ticker
+        safe_t = sanitize_ticker(ticker)
+        ticker_reports_dir = safe_join(AI_REPORTS_DIR, safe_t)
         os.makedirs(ticker_reports_dir, exist_ok=True)
-        report_path = os.path.join(ticker_reports_dir, f"{mode}.json")
+        report_path = safe_join(ticker_reports_dir, f"{mode}.json")
         
         # Pydantic serialization helper supporting both v1 and v2
         if hasattr(report_meta, "model_dump"):
@@ -388,9 +433,11 @@ def analyze_documents(
 
 
 def get_saved_reports(ticker: str) -> dict:
-    """Reads all saved AI reports for a ticker from disk."""
+    """Reads all saved AI reports for a ticker from disk safely."""
+    from security_utils import safe_join, sanitize_ticker
     results = {}
-    ticker_reports_dir = os.path.join(AI_REPORTS_DIR, ticker)
+    safe_t = sanitize_ticker(ticker)
+    ticker_reports_dir = safe_join(AI_REPORTS_DIR, safe_t)
     
     if not os.path.exists(ticker_reports_dir):
         return results
@@ -398,7 +445,7 @@ def get_saved_reports(ticker: str) -> dict:
     # Valid modes
     modes = ["business", "governance", "risks", "thesis"]
     for mode in modes:
-        report_path = os.path.join(ticker_reports_dir, f"{mode}.json")
+        report_path = safe_join(ticker_reports_dir, f"{mode}.json")
         if os.path.exists(report_path):
             try:
                 with open(report_path, "r", encoding="utf-8") as f:

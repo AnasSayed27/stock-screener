@@ -13,6 +13,68 @@ let _activeTab = 'scorecard';
  */
 async function renderAnalyzer(ticker) {
     const main = document.getElementById('main-content');
+    
+    if (ticker && ticker.startsWith('search/')) {
+        const query = decodeURIComponent(ticker.substring(7));
+        _analyzerTicker = null;
+        
+        main.innerHTML = `
+            <div class="fade-in">
+                <div class="page-header">
+                    <h1 class="page-title">Searching for <span class="gradient-text">${escapeHtml(query)}</span></h1>
+                    <p class="page-subtitle">Resolving company name to a listed symbol in StockLens...</p>
+                </div>
+                ${getLoadingHTML('Searching stock database...')}
+                <div id="search-results-fallback" style="max-width: 600px; margin: 0 auto;"></div>
+            </div>
+        `;
+        
+        try {
+            const matches = await apiFetch(`/stocks/search?q=${encodeURIComponent(query)}`);
+            const fallbackArea = document.getElementById('search-results-fallback');
+            
+            if (fallbackArea) {
+                if (matches && matches.length > 0) {
+                    fallbackArea.innerHTML = `
+                        <div class="card" style="padding: 24px; border: 1px solid rgba(255,255,255,0.05);">
+                            <h3 style="margin-top:0; margin-bottom: 16px;">Matching Stocks Found</h3>
+                            <p class="text-muted" style="font-size:13px; margin-bottom: 20px;">
+                                We found the following matches for <strong>"${escapeHtml(query)}"</strong>. Select a stock to run fundamental analysis.
+                            </p>
+                            <div style="display:flex; flex-direction:column; gap:10px;">
+                                ${matches.map(m => `
+                                    <div style="display:flex; justify-content:space-between; align-items:center; padding:12px; border: 1px solid rgba(255,255,255,0.05); border-radius:var(--border-radius); background:rgba(255,255,255,0.01); hover:background:rgba(255,255,255,0.03);">
+                                        <div>
+                                            <strong style="color:var(--text-primary); font-size:15px;">${escapeHtml(m.name)}</strong>
+                                            <span style="background: rgba(138, 180, 248, 0.1); color: var(--color-accent); font-weight:600; padding: 2px 6px; border-radius: 4px; font-size:11px; margin-left: 6px;">${escapeHtml(m.symbol)}</span>
+                                            <div class="text-muted" style="font-size:11px; margin-top:2px;">Sector: ${escapeHtml(m.sector)}</div>
+                                        </div>
+                                        <button class="btn btn-secondary btn-sm" onclick="navigateTo('analyzer', '${escapeHtml(m.symbol)}')">Analyze</button>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    fallbackArea.innerHTML = `
+                        <div class="card" style="padding: 32px; text-align: center; border: 1px solid rgba(255,255,255,0.05);">
+                            <span style="font-size: 40px; display:block; margin-bottom:12px;">🔍</span>
+                            <h3 style="margin-top:0;">No matching stocks found</h3>
+                            <p class="text-muted" style="margin-bottom: 20px;">
+                                We couldn't find a listed symbol matching <strong>"${escapeHtml(query)}"</strong>. Please enter the ticker symbol manually.
+                            </p>
+                            <button class="btn btn-primary" onclick="navigateTo('analyzer')">Search Manually</button>
+                        </div>
+                    `;
+                }
+            }
+        } catch (err) {
+            showToast('Search failed: ' + err.message, 'error');
+            navigateTo('analyzer');
+        }
+        return;
+    }
+
     _analyzerTicker = ticker || null;
 
     if (!ticker) {
@@ -1215,6 +1277,9 @@ async function _runAIAnalysis(ticker, mode) {
                 titleSpan.textContent = titlesOrig[mode];
             }
         }
+        if (window.updateAPIUsageStats) {
+            window.updateAPIUsageStats();
+        }
     }
 }
 
@@ -1287,6 +1352,9 @@ async function _askAIQuestion(ticker) {
             submitBtn.textContent = 'Ask →';
         }
         historyContainer.scrollTop = historyContainer.scrollHeight;
+        if (window.updateAPIUsageStats) {
+            window.updateAPIUsageStats();
+        }
     }
 }
 
