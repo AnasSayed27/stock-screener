@@ -1,0 +1,353 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "StockLens 5-Phase Agent Discovery Workflow",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "research-pipeline",
+        "label": "Primary Research Path",
+        "focus": [
+          "user_select",
+          "stream_ui",
+          "phase1_landscape",
+          "phase2_deepdive",
+          "evaluator_gate",
+          "phase5_synthesis",
+          "final_report"
+        ],
+        "note": "Follow an investment strategy request through autonomous research to final candidate dossier."
+      },
+      {
+        "id": "evaluator-critic-loop",
+        "label": "Evaluator-Critic Verification Loop",
+        "focus": [
+          "phase2_deepdive",
+          "evaluator_gate",
+          "critic_loop",
+          "tavily_tool",
+          "yfinance_tool"
+        ],
+        "note": "Isolate the anti-hallucination verification gate and depth continuation loop."
+      },
+      {
+        "id": "master-synthesis",
+        "label": "Persistence & Master Synthesis",
+        "focus": [
+          "phase5_synthesis",
+          "atomic_persist",
+          "master_synth",
+          "final_report"
+        ],
+        "note": "See how completed discovery runs are persisted and aggregated into high-conviction portfolios."
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "ui",
+      "label": "User Interface"
+    },
+    {
+      "id": "agent",
+      "label": "Autonomous Agent Loop"
+    },
+    {
+      "id": "critic",
+      "label": "Evaluator & Quality Gate",
+      "variant": "exception"
+    },
+    {
+      "id": "tools",
+      "label": "Tool Execution & Storage"
+    }
+  ],
+  "phases": [
+    {
+      "id": "intake",
+      "label": "Intake & Initiation",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "deep_research",
+      "label": "5-Phase Deep Research",
+      "fromCol": 2,
+      "toCol": 4,
+      "variant": "emphasis"
+    },
+    {
+      "id": "delivery",
+      "label": "Synthesis & Output",
+      "fromCol": 5,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "groups": [
+    {
+      "id": "agent_loop",
+      "label": "Research Iteration",
+      "lane": "agent",
+      "fromCol": 1,
+      "toCol": 4,
+      "variant": "emphasis"
+    },
+    {
+      "id": "critic_audit",
+      "label": "Verification Audit",
+      "lane": "critic",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "security"
+    },
+    {
+      "id": "tool_calls",
+      "label": "Tools & Persistence",
+      "lane": "tools",
+      "fromCol": 2,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "user_select",
+    "stream_ui",
+    "phase1_landscape",
+    "phase2_deepdive",
+    "evaluator_gate",
+    "phase5_synthesis",
+    "final_report"
+  ],
+  "nodes": [
+    {
+      "id": "user_select",
+      "lane": "ui",
+      "col": 0,
+      "type": "external",
+      "label": "User Prompt",
+      "sublabel": "Select 1 of 10 strategies",
+      "width": 132
+    },
+    {
+      "id": "stream_ui",
+      "lane": "ui",
+      "col": 1,
+      "type": "frontend",
+      "label": "DiscoveryLens UI",
+      "sublabel": "Live NDJSON progress",
+      "width": 132
+    },
+    {
+      "id": "final_report",
+      "lane": "ui",
+      "col": 5,
+      "type": "frontend",
+      "label": "Candidate Dossier",
+      "sublabel": "Catalysts & risks JSON",
+      "width": 132
+    },
+    {
+      "id": "phase1_landscape",
+      "lane": "agent",
+      "col": 1,
+      "type": "backend",
+      "label": "Phase 1: Landscape",
+      "sublabel": "Divergent mapping",
+      "width": 132
+    },
+    {
+      "id": "phase2_deepdive",
+      "lane": "agent",
+      "col": 2,
+      "type": "backend",
+      "label": "Phase 2-3: Deep Dive",
+      "sublabel": "Forensics & concalls",
+      "width": 132
+    },
+    {
+      "id": "phase5_synthesis",
+      "lane": "agent",
+      "col": 4,
+      "type": "backend",
+      "label": "Phase 5: Synthesis",
+      "sublabel": "Thesis formulation",
+      "width": 132
+    },
+    {
+      "id": "critic_loop",
+      "lane": "critic",
+      "col": 2,
+      "type": "messagebus",
+      "label": "Depth Loop",
+      "sublabel": "Gap-fill continuation",
+      "width": 132
+    },
+    {
+      "id": "evaluator_gate",
+      "lane": "critic",
+      "col": 3,
+      "type": "security",
+      "label": "Phase 4: Evaluator",
+      "sublabel": "Hallucination audit",
+      "tag": "critic model",
+      "width": 132
+    },
+    {
+      "id": "tavily_tool",
+      "lane": "tools",
+      "col": 2,
+      "type": "cloud",
+      "label": "Tavily Search",
+      "sublabel": "Filings & news tool",
+      "tag": "web search",
+      "width": 132
+    },
+    {
+      "id": "yfinance_tool",
+      "lane": "tools",
+      "col": 3,
+      "type": "database",
+      "label": "yfinance Audit",
+      "sublabel": "Audited statements",
+      "tag": "numbers audit",
+      "width": 132
+    },
+    {
+      "id": "atomic_persist",
+      "lane": "tools",
+      "col": 4,
+      "type": "database",
+      "label": "Atomic Persist",
+      "sublabel": "Local disk storage",
+      "width": 132
+    },
+    {
+      "id": "master_synth",
+      "lane": "tools",
+      "col": 5,
+      "type": "backend",
+      "label": "Master Synthesis",
+      "sublabel": "Aggregates >=7 runs",
+      "width": 132
+    }
+  ],
+  "edges": [
+    {
+      "id": "user-to-ui",
+      "from": "user_select",
+      "to": "stream_ui",
+      "label": "submit",
+      "variant": "default"
+    },
+    {
+      "id": "ui-to-p1",
+      "from": "stream_ui",
+      "to": "phase1_landscape",
+      "label": "start",
+      "variant": "emphasis"
+    },
+    {
+      "id": "p1-to-p2",
+      "from": "phase1_landscape",
+      "to": "phase2_deepdive",
+      "label": "hypotheses",
+      "variant": "emphasis"
+    },
+    {
+      "id": "p2-to-tavily",
+      "from": "phase2_deepdive",
+      "to": "tavily_tool",
+      "label": "search web",
+      "variant": "default"
+    },
+    {
+      "id": "p2-to-yf",
+      "from": "phase2_deepdive",
+      "to": "yfinance_tool",
+      "label": "audit numbers",
+      "variant": "default"
+    },
+    {
+      "id": "p2-to-eval",
+      "from": "phase2_deepdive",
+      "to": "evaluator_gate",
+      "label": "submit draft",
+      "variant": "emphasis"
+    },
+    {
+      "id": "eval-reject",
+      "from": "evaluator_gate",
+      "to": "critic_loop",
+      "label": "gaps found",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "id": "loop-to-p2",
+      "from": "critic_loop",
+      "to": "phase2_deepdive",
+      "label": "revise gaps",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "id": "eval-pass",
+      "from": "evaluator_gate",
+      "to": "phase5_synthesis",
+      "label": "verified",
+      "variant": "emphasis"
+    },
+    {
+      "id": "p5-to-save",
+      "from": "phase5_synthesis",
+      "to": "atomic_persist",
+      "label": "save candidate",
+      "variant": "dashed"
+    },
+    {
+      "id": "p5-to-report",
+      "from": "phase5_synthesis",
+      "to": "final_report",
+      "label": "stream result",
+      "variant": "emphasis"
+    },
+    {
+      "id": "save-to-synth",
+      "from": "atomic_persist",
+      "to": "master_synth",
+      "label": "aggregate >=7",
+      "variant": "default"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "5-Phase Deep Research Loop",
+      "items": [
+        "Phase 1 Divergent Scan: Identifies 2-3 parallel hypotheses across supply chain layers",
+        "Phase 2-3 Deep Dive: Forensic audit of order books, capex filings, and capacity expansion",
+        "Real-time NDJSON streaming delivers agent reasoning steps to the browser UI"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Evaluator-Critic Anti-Hallucination Gate",
+      "items": [
+        "Phase 4 invokes an independent Critic LLM to verify all claims against primary sources",
+        "If factual gaps or unbacked claims exist, the Depth Loop re-triggers targeted searches",
+        "Prevents unverified promotional hype from contaminating the final thesis"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Multi-Tool Grounding & Synthesis",
+      "items": [
+        "Tavily Search API unearths real-time disclosures, management concalls, and news",
+        "yfinance tool verifies revenue growth, margin expansion, and debt numbers",
+        "Master Synthesis combines >=7 discovery runs to rank cross-strategy portfolio picks"
+      ]
+    }
+  ]
+}

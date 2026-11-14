@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "StockLens Investment Thesis Lifecycle",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1030,
+      630
+    ],
+    "views": [
+      {
+        "id": "main-lifecycle",
+        "label": "Investment Decision Path",
+        "focus": [
+          "universe_pool",
+          "quant_screened",
+          "qual_audit",
+          "active_thesis",
+          "postmortem"
+        ],
+        "note": "Follow a stock idea from index universe to active investment thesis and postmortem exit."
+      },
+      {
+        "id": "watchlist-and-rejection",
+        "label": "Watchlist & Governance Rejection",
+        "focus": [
+          "qual_audit",
+          "watchlist",
+          "rejected"
+        ],
+        "note": "See where candidates are paused for valuation dips or permanently rejected for governance red flags."
+      },
+      {
+        "id": "exit-and-postmortem",
+        "label": "Exit Triggers & Retrospective",
+        "focus": [
+          "active_thesis",
+          "thesis_broken",
+          "postmortem"
+        ],
+        "note": "Trace how broken theses mandate an exit postmortem review."
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "main",
+      "label": "Lifecycle phases"
+    },
+    {
+      "id": "waiting",
+      "label": "Deliberations"
+    },
+    {
+      "id": "exceptions",
+      "label": "Thesis Drift"
+    },
+    {
+      "id": "terminal",
+      "label": "Terminal Exits"
+    }
+  ],
+  "states": [
+    {
+      "id": "universe_pool",
+      "type": "start",
+      "label": "Universe Pool",
+      "sublabel": "500 NSE Equities",
+      "lane": "main",
+      "col": 0,
+      "step": "01",
+      "tag": "nselib"
+    },
+    {
+      "id": "quant_screened",
+      "type": "active",
+      "label": "Quant Screened",
+      "sublabel": "11 Criteria Passed",
+      "lane": "main",
+      "col": 1,
+      "step": "02",
+      "tag": "Q >= 60%"
+    },
+    {
+      "id": "qual_audit",
+      "type": "active",
+      "label": "Qualitative Audit",
+      "sublabel": "Governance & Filings",
+      "lane": "main",
+      "col": 2,
+      "step": "03",
+      "tag": "8 checks"
+    },
+    {
+      "id": "active_thesis",
+      "type": "decision",
+      "label": "Active Thesis",
+      "sublabel": "Journal Logged",
+      "lane": "main",
+      "col": 3,
+      "step": "04",
+      "tag": "portfolio"
+    },
+    {
+      "id": "postmortem",
+      "type": "success",
+      "label": "Postmortem Done",
+      "sublabel": "Retrospective Saved",
+      "lane": "main",
+      "col": 4,
+      "step": "05",
+      "tag": "archived"
+    },
+    {
+      "id": "watchlist",
+      "type": "waiting",
+      "label": "Watchlist",
+      "sublabel": "Awaiting MoS dip",
+      "lane": "waiting",
+      "col": 0,
+      "tag": "paused"
+    },
+    {
+      "id": "thesis_broken",
+      "type": "failure",
+      "label": "Thesis Drift",
+      "sublabel": "Falsification hit",
+      "lane": "exceptions",
+      "col": 1,
+      "yOffset": 78,
+      "tag": "sell trigger"
+    },
+    {
+      "id": "rejected",
+      "type": "failure",
+      "label": "Rejected",
+      "sublabel": "Governance red flag",
+      "lane": "terminal",
+      "col": 0,
+      "tag": "terminal"
+    },
+    {
+      "id": "expired",
+      "type": "failure",
+      "label": "Target Met",
+      "sublabel": "Profit taken",
+      "lane": "terminal",
+      "col": 1,
+      "tag": "terminal"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "audit-to-watchlist",
+      "from": "qual_audit",
+      "to": "watchlist",
+      "variant": "default",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight"
+    },
+    {
+      "id": "watchlist-to-quant",
+      "from": "watchlist",
+      "to": "quant_screened",
+      "variant": "emphasis",
+      "fromSide": "left",
+      "toSide": "bottom"
+    },
+    {
+      "id": "watchlist-to-rejected",
+      "from": "watchlist",
+      "to": "rejected",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight"
+    },
+    {
+      "id": "thesis-to-broken",
+      "from": "active_thesis",
+      "to": "thesis_broken",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight"
+    },
+    {
+      "id": "broken-to-postmortem",
+      "from": "thesis_broken",
+      "to": "postmortem",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "bottom"
+    },
+    {
+      "id": "broken-to-expired",
+      "from": "thesis_broken",
+      "to": "expired",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Disciplined Investment Pipeline",
+      "items": [
+        "Unscreened universe passes through strict quantitative quality screening (ROIC > 12%)",
+        "Qualitative governance audit verifies promoter pledging, auditor integrity, and related party loans",
+        "Formal investment thesis records why you bought and explicitly what would prove you wrong"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Pre-Committed Exit Discipline",
+      "items": [
+        "Identifies thesis drift or broken catalysts before loss aversion sets in",
+        "Failed governance checks permanently divert candidates to the Rejected state",
+        "Overvalued quality stocks wait on the Watchlist until margin of safety widens"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Mandatory Postmortem Review",
+      "items": [
+        "Every closed position (profit or loss) requires an exit postmortem in the database",
+        "Tracks decision quality independently of outcome bias to evaluate long-term process",
+        "Builds a personal investing journal and continuous feedback loop"
+      ]
+    }
+  ]
+}

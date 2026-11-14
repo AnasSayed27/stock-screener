@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "StockLens System Architecture",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "ingress-core",
+        "label": "Client Ingress & API Server",
+        "focus": [
+          "browser",
+          "gateway",
+          "api_server"
+        ],
+        "note": "Public requests pass through defensive sanitization and CORS before dispatch."
+      },
+      {
+        "id": "quant-pipeline",
+        "label": "Deterministic Quantitative Pipeline",
+        "focus": [
+          "api_server",
+          "quant_engine",
+          "disk_cache",
+          "market_feeds"
+        ],
+        "note": "Follow screener requests through the zero-hallucination mathematical engine and cache."
+      },
+      {
+        "id": "agentic-research",
+        "label": "Autonomous AI Research & Synthesis",
+        "focus": [
+          "api_server",
+          "agent_engine",
+          "gemini_api",
+          "tavily_api",
+          "synthesis_engine"
+        ],
+        "note": "Isolate the 5-phase agent loop, external web search, and cross-strategy synthesis."
+      },
+      {
+        "id": "atomic-persistence",
+        "label": "Crash-Safe Persistence Layer",
+        "focus": [
+          "synthesis_engine",
+          "atomic_storage",
+          "user_journal"
+        ],
+        "note": "Trace how theses, reports, and discoveries are atomically committed to disk."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "browser",
+      "type": "frontend",
+      "label": "Browser Client",
+      "sublabel": "Vanilla JS SPA :8000",
+      "pos": [
+        60,
+        260
+      ],
+      "size": [
+        130,
+        56
+      ]
+    },
+    {
+      "id": "gateway",
+      "type": "security",
+      "label": "Security Gateway",
+      "sublabel": "Sanitizer & CORS",
+      "pos": [
+        270,
+        260
+      ],
+      "size": [
+        130,
+        56
+      ],
+      "tag": "safe_join"
+    },
+    {
+      "id": "api_server",
+      "type": "backend",
+      "label": "FastAPI Server",
+      "sublabel": "REST & NDJSON Streams",
+      "pos": [
+        500,
+        260
+      ],
+      "size": [
+        140,
+        56
+      ],
+      "brand": "fastapi"
+    },
+    {
+      "id": "quant_engine",
+      "type": "backend",
+      "label": "Quant Screener",
+      "sublabel": "11 Gates & DCF Valuation",
+      "pos": [
+        500,
+        110
+      ],
+      "size": [
+        140,
+        56
+      ]
+    },
+    {
+      "id": "disk_cache",
+      "type": "database",
+      "label": "Market Cache",
+      "sublabel": "JSON Statements (24h TTL)",
+      "pos": [
+        740,
+        110
+      ],
+      "size": [
+        140,
+        56
+      ]
+    },
+    {
+      "id": "market_feeds",
+      "type": "external",
+      "label": "NSE & Yahoo Finance",
+      "sublabel": "nselib & yfinance",
+      "pos": [
+        980,
+        110
+      ],
+      "size": [
+        140,
+        56
+      ]
+    },
+    {
+      "id": "agent_engine",
+      "type": "backend",
+      "label": "DiscoveryLens Agent",
+      "sublabel": "5-Phase Autonomous Loop",
+      "pos": [
+        500,
+        410
+      ],
+      "size": [
+        140,
+        56
+      ]
+    },
+    {
+      "id": "gemini_api",
+      "type": "cloud",
+      "label": "Google Gemini API",
+      "sublabel": "2.5 Flash / Pro & Files",
+      "pos": [
+        740,
+        410
+      ],
+      "size": [
+        140,
+        56
+      ],
+      "brand": "google-gemini"
+    },
+    {
+      "id": "tavily_api",
+      "type": "cloud",
+      "label": "Tavily Search API",
+      "sublabel": "Web Intelligence",
+      "pos": [
+        980,
+        410
+      ],
+      "size": [
+        140,
+        56
+      ]
+    },
+    {
+      "id": "synthesis_engine",
+      "type": "backend",
+      "label": "Master Synthesis",
+      "sublabel": "Cross-Strategy Correlation",
+      "pos": [
+        500,
+        560
+      ],
+      "size": [
+        140,
+        56
+      ]
+    },
+    {
+      "id": "atomic_storage",
+      "type": "database",
+      "label": "Atomic Storage",
+      "sublabel": "mkstemp + fsync + replace",
+      "pos": [
+        740,
+        560
+      ],
+      "size": [
+        140,
+        56
+      ],
+      "tag": "crash-safe"
+    },
+    {
+      "id": "user_journal",
+      "type": "database",
+      "label": "Thesis Journal",
+      "sublabel": "Theses & Postmortems",
+      "pos": [
+        980,
+        560
+      ],
+      "size": [
+        140,
+        56
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Local Host Machine (localhost:8000)",
+      "wraps": [
+        "browser",
+        "gateway",
+        "api_server",
+        "quant_engine",
+        "disk_cache",
+        "agent_engine",
+        "synthesis_engine",
+        "atomic_storage",
+        "user_journal"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "FastAPI Execution & Calculation Core",
+      "wraps": [
+        "gateway",
+        "api_server",
+        "quant_engine",
+        "agent_engine",
+        "synthesis_engine"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "security-group",
+      "label": "Local Data Persistence (data/)",
+      "wraps": [
+        "disk_cache",
+        "atomic_storage",
+        "user_journal"
+      ],
+      "pad": 16
+    }
+  ],
+  "connections": [
+    {
+      "id": "browser-to-gateway",
+      "from": "browser",
+      "to": "gateway",
+      "label": "HTTP / NDJSON",
+      "variant": "emphasis"
+    },
+    {
+      "id": "gateway-to-api",
+      "from": "gateway",
+      "to": "api_server",
+      "label": "sanitized req",
+      "variant": "security"
+    },
+    {
+      "id": "api-to-quant",
+      "from": "api_server",
+      "to": "quant_engine",
+      "label": "/api/screen",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "quant-to-cache",
+      "from": "quant_engine",
+      "to": "disk_cache",
+      "label": "read statements"
+    },
+    {
+      "id": "cache-to-market",
+      "from": "disk_cache",
+      "to": "market_feeds",
+      "label": "fetch & cache"
+    },
+    {
+      "id": "api-to-agent",
+      "from": "api_server",
+      "to": "agent_engine",
+      "label": "/api/discovery",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 35
+    },
+    {
+      "id": "agent-to-gemini",
+      "from": "agent_engine",
+      "to": "gemini_api",
+      "label": "reasoning & critic",
+      "variant": "emphasis"
+    },
+    {
+      "id": "gemini-to-tavily",
+      "from": "gemini_api",
+      "to": "tavily_api",
+      "label": "search tool call"
+    },
+    {
+      "id": "agent-to-synthesis",
+      "from": "agent_engine",
+      "to": "synthesis_engine",
+      "label": "discovery runs",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 35
+    },
+    {
+      "id": "synthesis-to-storage",
+      "from": "synthesis_engine",
+      "to": "atomic_storage",
+      "label": "atomic write",
+      "variant": "dashed"
+    },
+    {
+      "id": "storage-to-journal",
+      "from": "atomic_storage",
+      "to": "user_journal",
+      "label": "persist state",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Dual-Engine Architecture",
+      "items": [
+        "Deterministic Quant Core: 11 criteria, Graham/DCF/MoS with zero AI hallucinations",
+        "Agentic AI Discovery: 5-phase research loop with Tavily web search & Gemini reasoning",
+        "Master Synthesis: Aggregates >=7 discovery runs into cross-strategy portfolios"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Crash-Safe Persistence",
+      "items": [
+        "Storage writes use mkstemp + os.fsync + os.replace to prevent partial corruption",
+        "24-hour financial statement disk cache prevents excessive yfinance API calls",
+        "User theses, postmortems, and discovery runs stored locally as JSON"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Defensive Security",
+      "items": [
+        "Input validation: safe_join prevents path traversal across user-provided paths",
+        "Strict ticker and UUID sanitizers block injection vectors",
+        "Active client-disconnect detection terminates background LLM threads on drop"
+      ]
+    }
+  ]
+}

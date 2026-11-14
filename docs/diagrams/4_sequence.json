@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "StockLens Streaming & Disconnect Sequence",
+    "quality_profile": "showcase",
+    "viewBox": [
+      860,
+      980
+    ],
+    "views": [
+      {
+        "id": "init-and-stream",
+        "label": "Initiation & NDJSON Streaming",
+        "focus": [
+          "browser",
+          "fastapi",
+          "queue",
+          "worker",
+          "gemini"
+        ],
+        "note": "Trace how background worker pushes progress logs through thread queue into NDJSON stream."
+      },
+      {
+        "id": "disconnect-safety",
+        "label": "Client Disconnect & Token Guard",
+        "focus": [
+          "browser",
+          "fastapi",
+          "worker",
+          "gemini",
+          "storage"
+        ],
+        "note": "See how tab closures trigger active cancellation to save Gemini tokens and Tavily credits."
+      },
+      {
+        "id": "completion-path",
+        "label": "Atomic Persistence & Completion",
+        "focus": [
+          "worker",
+          "storage",
+          "queue",
+          "fastapi",
+          "browser"
+        ],
+        "note": "Follow final dossier commit to disk via atomic swap before ending stream."
+      }
+    ],
+    "column_fit": "spread"
+  },
+  "participants": [
+    {
+      "id": "browser",
+      "type": "frontend",
+      "label": "Browser Client",
+      "sublabel": "discovery.js"
+    },
+    {
+      "id": "fastapi",
+      "type": "backend",
+      "label": "FastAPI Server",
+      "sublabel": "main.py :8000"
+    },
+    {
+      "id": "queue",
+      "type": "messagebus",
+      "label": "Thread Queue",
+      "sublabel": "queue.Queue"
+    },
+    {
+      "id": "worker",
+      "type": "backend",
+      "label": "Worker Daemon",
+      "sublabel": "discovery.py"
+    },
+    {
+      "id": "gemini",
+      "type": "cloud",
+      "label": "Gemini & Tavily",
+      "sublabel": "External APIs"
+    },
+    {
+      "id": "storage",
+      "type": "database",
+      "label": "Atomic Storage",
+      "sublabel": "storage.py"
+    }
+  ],
+  "segments": [
+    {
+      "from": 150,
+      "to": 305,
+      "label": "Thread Decoupling"
+    },
+    {
+      "from": 315,
+      "to": 500,
+      "label": "NDJSON Streaming"
+    },
+    {
+      "from": 510,
+      "to": 725,
+      "label": "Disconnect Token Guard"
+    },
+    {
+      "from": 735,
+      "to": 935,
+      "label": "Atomic Commit & Handoff"
+    }
+  ],
+  "messages": [
+    {
+      "from": "browser",
+      "to": "fastapi",
+      "y": 180,
+      "label": "POST /api/discovery/run",
+      "variant": "emphasis"
+    },
+    {
+      "from": "fastapi",
+      "to": "queue",
+      "y": 218,
+      "label": "init queue.Queue()",
+      "variant": "default"
+    },
+    {
+      "from": "fastapi",
+      "to": "worker",
+      "y": 252,
+      "label": "start worker thread",
+      "variant": "emphasis"
+    },
+    {
+      "from": "fastapi",
+      "to": "browser",
+      "y": 286,
+      "label": "200 StreamingResponse",
+      "variant": "return"
+    },
+    {
+      "from": "worker",
+      "to": "gemini",
+      "y": 335,
+      "label": "tool search queries",
+      "variant": "default"
+    },
+    {
+      "from": "gemini",
+      "to": "worker",
+      "y": 372,
+      "label": "reasoning & web facts",
+      "variant": "return"
+    },
+    {
+      "from": "worker",
+      "to": "queue",
+      "y": 408,
+      "label": "push progress event",
+      "variant": "emphasis"
+    },
+    {
+      "from": "queue",
+      "to": "fastapi",
+      "y": 444,
+      "label": "q.get_nowait()",
+      "variant": "default"
+    },
+    {
+      "from": "fastapi",
+      "to": "browser",
+      "y": 480,
+      "label": "yield NDJSON line",
+      "variant": "return"
+    },
+    {
+      "from": "browser",
+      "to": "fastapi",
+      "y": 535,
+      "label": "TCP FIN / tab closed",
+      "variant": "security"
+    },
+    {
+      "from": "fastapi",
+      "to": "worker",
+      "y": 608,
+      "label": "cancel_discovery()",
+      "variant": "security"
+    },
+    {
+      "from": "worker",
+      "to": "gemini",
+      "y": 645,
+      "label": "abort active LLM calls",
+      "variant": "security"
+    },
+    {
+      "from": "worker",
+      "to": "storage",
+      "y": 682,
+      "label": "suppress partial write",
+      "variant": "dashed"
+    },
+    {
+      "from": "worker",
+      "to": "storage",
+      "y": 755,
+      "label": "atomic_write_json()",
+      "variant": "emphasis"
+    },
+    {
+      "from": "storage",
+      "to": "worker",
+      "y": 790,
+      "label": "fsync + replace OK",
+      "variant": "return"
+    },
+    {
+      "from": "worker",
+      "to": "queue",
+      "y": 825,
+      "label": "push result + sentinel",
+      "variant": "emphasis"
+    },
+    {
+      "from": "queue",
+      "to": "fastapi",
+      "y": 860,
+      "label": "receive sentinel None",
+      "variant": "default"
+    },
+    {
+      "from": "fastapi",
+      "to": "browser",
+      "y": 895,
+      "label": "final candidate JSON",
+      "variant": "return"
+    }
+  ],
+  "activations": [
+    {
+      "participant": "fastapi",
+      "from": 175,
+      "to": 292,
+      "type": "backend"
+    },
+    {
+      "participant": "queue",
+      "from": 214,
+      "to": 866,
+      "type": "messagebus"
+    },
+    {
+      "participant": "worker",
+      "from": 248,
+      "to": 866,
+      "type": "backend"
+    },
+    {
+      "participant": "gemini",
+      "from": 330,
+      "to": 376,
+      "type": "cloud"
+    },
+    {
+      "participant": "fastapi",
+      "from": 438,
+      "to": 486,
+      "type": "backend"
+    },
+    {
+      "participant": "fastapi",
+      "from": 530,
+      "to": 614,
+      "type": "backend"
+    },
+    {
+      "participant": "gemini",
+      "from": 640,
+      "to": 650,
+      "type": "cloud"
+    },
+    {
+      "participant": "storage",
+      "from": 750,
+      "to": 796,
+      "type": "database"
+    },
+    {
+      "participant": "fastapi",
+      "from": 855,
+      "to": 902,
+      "type": "backend"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Asynchronous Thread Decoupling",
+      "items": [
+        "FastAPI endpoint spawns a daemon worker thread and immediately returns an NDJSON StreamingResponse",
+        "The event loop is never blocked by long-running LLM reasoning or Tavily searches",
+        "Thread-safe queue.Queue buffers progress updates between synchronous worker and async generator"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Client-Disconnect Token Guard",
+      "items": [
+        "The async generator actively polls request.is_disconnected() on every iteration",
+        "Detects tab closures or route switches immediately and sets the global cancellation flag",
+        "Aborts in-flight Gemini API calls to prevent wasted LLM tokens and API charges"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Crash-Safe Atomic Commit",
+      "items": [
+        "Completed discovery results are committed using temporary file swap and os.fsync",
+        "Cancelling or process death never leaves half-written or corrupted JSON dossiers",
+        "Worker pushes sentinel None to cleanly terminate the generator and HTTP connection"
+      ]
+    }
+  ]
+}

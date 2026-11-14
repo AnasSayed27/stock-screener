@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "StockLens Quantitative Data Pipeline",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1080,
+      520
+    ],
+    "views": [
+      {
+        "id": "collection-and-cache",
+        "label": "Market Ingestion & Caching",
+        "focus": [
+          "nse_feed",
+          "yf_feed",
+          "cache_gate"
+        ],
+        "note": "Pull Nifty constituents and 4-year statements into local JSON cache."
+      },
+      {
+        "id": "quality-scoring",
+        "label": "11-Criteria Fundamental Audit",
+        "focus": [
+          "cache_gate",
+          "returns_engine",
+          "solvency_engine",
+          "scorecard_store"
+        ],
+        "note": "Audit ROIC, solvency, and cash conversion without LLM hallucinations."
+      },
+      {
+        "id": "valuation-and-conviction",
+        "label": "Valuation & Conviction Classification",
+        "focus": [
+          "dcf_engine",
+          "mos_engine",
+          "conviction_output",
+          "dashboard_table"
+        ],
+        "note": "Combine conservative DCF fair value with quality score to classify conviction."
+      }
+    ]
+  },
+  "stages": [
+    {
+      "label": "Sources"
+    },
+    {
+      "label": "Ingestion"
+    },
+    {
+      "label": "Quality Audit"
+    },
+    {
+      "label": "Valuation"
+    },
+    {
+      "label": "Conviction"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "nse_feed",
+      "type": "external",
+      "label": "NSE Indices",
+      "sublabel": "Nifty 500 list",
+      "stage": 0,
+      "row": 0,
+      "tag": "nselib"
+    },
+    {
+      "id": "yf_feed",
+      "type": "external",
+      "label": "Yahoo Finance",
+      "sublabel": "4-Yr statements",
+      "stage": 0,
+      "row": 2,
+      "tag": "yfinance"
+    },
+    {
+      "id": "cache_gate",
+      "type": "database",
+      "label": "Statement Cache",
+      "sublabel": "24h disk cache",
+      "stage": 1,
+      "row": 1,
+      "tag": "disk cache"
+    },
+    {
+      "id": "returns_engine",
+      "type": "backend",
+      "label": "Capital Returns",
+      "sublabel": "ROIC & ROE gates",
+      "stage": 2,
+      "row": 0,
+      "tag": "4x / 3x wt"
+    },
+    {
+      "id": "solvency_engine",
+      "type": "backend",
+      "label": "Solvency Health",
+      "sublabel": "D/E & coverage",
+      "stage": 2,
+      "row": 2,
+      "tag": "solvency"
+    },
+    {
+      "id": "scorecard_store",
+      "type": "database",
+      "label": "Quality Score",
+      "sublabel": "0-100% score",
+      "stage": 3,
+      "row": 0,
+      "tag": "scorecard"
+    },
+    {
+      "id": "dcf_engine",
+      "type": "backend",
+      "label": "Valuation Engine",
+      "sublabel": "3-scenario DCF",
+      "stage": 3,
+      "row": 1,
+      "tag": "valuation"
+    },
+    {
+      "id": "mos_engine",
+      "type": "backend",
+      "label": "Margin of Safety",
+      "sublabel": "Fair value vs CMP",
+      "stage": 3,
+      "row": 2,
+      "tag": "MoS %"
+    },
+    {
+      "id": "conviction_output",
+      "type": "backend",
+      "label": "Conviction Engine",
+      "sublabel": "5-tier matrix",
+      "stage": 4,
+      "row": 0,
+      "tag": "matrix"
+    },
+    {
+      "id": "dashboard_table",
+      "type": "frontend",
+      "label": "Screener Table",
+      "sublabel": "Ranked filter UI",
+      "stage": 4,
+      "row": 2,
+      "tag": "dashboard"
+    }
+  ],
+  "flows": [
+    {
+      "id": "nse-to-cache",
+      "from": "nse_feed",
+      "to": "cache_gate",
+      "label": "constituent list",
+      "variant": "default"
+    },
+    {
+      "id": "yf-to-cache",
+      "from": "yf_feed",
+      "to": "cache_gate",
+      "label": "audited filings",
+      "variant": "default"
+    },
+    {
+      "id": "cache-to-returns",
+      "from": "cache_gate",
+      "to": "returns_engine",
+      "label": "operating earnings",
+      "variant": "emphasis"
+    },
+    {
+      "id": "cache-to-solvency",
+      "from": "cache_gate",
+      "to": "solvency_engine",
+      "label": "balance sheet debt",
+      "variant": "default"
+    },
+    {
+      "id": "returns-to-score",
+      "from": "returns_engine",
+      "to": "scorecard_store",
+      "label": "return points",
+      "route": "straight",
+      "variant": "emphasis"
+    },
+    {
+      "id": "solvency-to-mos",
+      "from": "solvency_engine",
+      "to": "mos_engine",
+      "label": "debt deductions",
+      "route": "straight",
+      "variant": "default"
+    },
+    {
+      "id": "returns-to-dcf",
+      "from": "returns_engine",
+      "to": "dcf_engine",
+      "label": "growth inputs",
+      "variant": "default"
+    },
+    {
+      "id": "dcf-to-mos",
+      "from": "dcf_engine",
+      "to": "mos_engine",
+      "label": "fair value estimate",
+      "variant": "emphasis",
+      "labelDy": 24
+    },
+    {
+      "id": "score-to-conviction",
+      "from": "scorecard_store",
+      "to": "conviction_output",
+      "label": "quality score %",
+      "route": "straight",
+      "variant": "emphasis"
+    },
+    {
+      "id": "mos-to-conviction",
+      "from": "mos_engine",
+      "to": "conviction_output",
+      "label": "margin of safety %",
+      "variant": "emphasis"
+    },
+    {
+      "id": "conviction-to-ui",
+      "from": "conviction_output",
+      "to": "dashboard_table",
+      "label": "ranked dataset",
+      "variant": "emphasis",
+      "labelDy": 24
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Deterministic Ingestion & Filtering",
+      "items": [
+        "Fetches Nifty 500 universe from NSE India via nselib",
+        "Pulls 4 years of balance sheets, P&L, and cash flows from Yahoo Finance",
+        "Local 24h JSON disk cache prevents repeat requests and API throttling",
+        "Pre-screening gate eliminates microcaps (< \u20b94,000 Cr) and flags banking entities"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Multi-Criteria Fundamental Audit",
+      "items": [
+        "11 weighted criteria evaluating capital returns (ROIC > 12%), solvency, and cash conversion",
+        "Calculates both Benjamin Graham Number and 3-scenario DCF (Bear/Base/Bull)",
+        "Zero AI involvement guarantees 100% reproducible, mathematically verifiable scores"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Margin of Safety & Conviction",
+      "items": [
+        "Margin of Safety computed against the most conservative fair value estimate",
+        "Rules matrix maps Quality Score and MoS into 5 conviction tiers",
+        "Emits ranked, sortable dataset directly to the interactive frontend table"
+      ]
+    }
+  ]
+}
