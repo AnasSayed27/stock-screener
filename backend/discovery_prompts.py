@@ -44,7 +44,11 @@ SYNTHESIS_SYSTEM_PROMPT = BASE_ANALYST_PERSONA + (
     "    Instead, evaluate whether the thesis — not the stock price — has been widely recognized and incorporated into consensus. "
     "    Prefer the earliest stage where the market has not yet fully incorporated the implications (which can be pre-event or post-event underreaction).\n"
     "14. ANALYST COVERAGE AS A SIGNAL: Analyst coverage is a signal for information asymmetry, not a hard filter. "
-    "    Low coverage increases probability of mispricing, but high coverage is acceptable if the consensus is anchored to outdated assumptions or ignoring a segment.\n\n"
+    "    Low coverage increases probability of mispricing, but high coverage is acceptable if the consensus is anchored to outdated assumptions or ignoring a segment.\n"
+    "15. LIQUIDITY & FLOAT GATE (AVOID PENNY/ILLIQUID TRAPS): Do not recommend micro-cap companies with market cap < ₹300 Crore "
+    "    or illiquid trading volumes. Promoter warrant conversions, preferential allotments, or price spikes in thin-float penny stocks "
+    "    are frequently promotional signals or pump-and-dump traps lacking institutional custody. Only recommend candidates where institutional "
+    "    investors can legitimately build or hold positions.\n\n"
     "OUTPUT FORMAT CONSTRAINTS:\n"
     "Return a JSON object matching the required schema. Every candidate must include:\n"
     "- company_name: Name of the company.\n"
@@ -305,6 +309,16 @@ DISCOVERY_STRATEGIES = [
             "Find sectors (focusing on {context} if provided, or generally) currently in deep cyclical "
             "distress where weak players are exiting and strong survivors will inherit a consolidated "
             "market with pricing power — focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
+            "MANDATORY DOMAIN GATE — IMPORT DUMPING & VERTICAL INSULATION:\n"
+            "Domestic competitor closures or capacity freezes alone DO NOT create pricing power if cheap foreign imports "
+            "(e.g., zero-duty imports from China, ASEAN, or FTA partners) can freely flood the Indian market, or if raw material "
+            "spread volatility crushes margins. For any candidate in a capital cycle trough (e.g. paper, textiles, chemicals, metals):\n"
+            "1. TARIFF / REGULATORY SHIELD: Verify whether the domestic market has active tariff protection (anti-dumping duties, "
+            "   countervailing duty, ALMM, or Bureau of Indian Standards mandatory certification). Reject candidates whose product "
+            "   faces unrestricted zero-duty import dumping.\n"
+            "2. COST INSULATION & FORWARD INTEGRATION: If tariff protection is absent, the survivor MUST possess defensive insulation: "
+            "   substantial captive power (>=35% renewable/thermal) or captive raw materials, PLUS downstream value-added forward "
+            "   integration (e.g., converting commodity yarn to export garments). Reject standalone, single-stage commodity processors.\n\n"
             "REASONING CHAIN (follow this step by step):\n"
             "1. IDENTIFY DISTRESSED SECTORS: Look for sectors where stock prices have crashed 40-70%, companies "
             "   are reporting losses, and capex has completely frozen.\n"
@@ -400,6 +414,15 @@ DISCOVERY_STRATEGIES = [
             "OBJECTIVE:\n"
             "Find listed Indian companies undergoing spinoffs, demergers, or restructurings "
             "where institutional selling pressure creates artificially depressed prices, focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
+            "MANDATORY DOMAIN GATE — STATUTORY TIMELINE & CATALYST AUTHORITY:\n"
+            "Differentiate clearly between two types of special situations:\n"
+            "1. CLASS A (FAST / RULE-BOUND CATALYSTS): Exchange-mandated mechanisms (e.g. SEBI special call auctions for holding "
+            "   companies, tender-offer buybacks, or Cabinet-notified incentive lists) execute on predictable, fast timelines (0-3 months).\n"
+            "2. CLASS B (MULTI-AGENCY STATUTORY RESTRUCTURINGS): Composite schemes, NCLT demergers, and capital reductions require "
+            "   sequential approvals from NCLT benches, MCA, regional directors, SEBI/exchanges, secured creditor consortia, and sectoral regulators (PNGRB, RBI, etc.). "
+            "   Under Indian corporate jurisprudence, these routinely take 12 to 24 months. DO NOT assume a '30-to-90 day forced selling mispricing' "
+            "   for a pre-NCLT or court-stage demerger. The company is likely 'dead money' or exposed to operational drag during this window. "
+            "   Only mark a demerger catalyst as near-term (0-6m) if final NCLT approval has been sealed and the formal Record Date is gazetted.\n\n"
             "REASONING CHAIN (follow this step by step):\n"
             "1. FIND RECENT CORPORATE ACTIONS: Search for demergers, spinoffs, scheme of arrangements, or NCLT exits.\n"
             "2. IDENTIFY INSTITUTIONAL SELLING: Spot new small entities dumped by mutual funds or index funds "
@@ -655,6 +678,16 @@ CRITICAL EVALUATION & STYLE CONSTRAINTS:
 
 6. AGGREGATED RISK & CONTRARIAN CHECK:
    Consolidate all risks flagged across strategies. In addition, articulate a "contrarian view" — what is a key risk or blind spot that NONE of the strategies considered?
+
+7. CONTRARIAN SPOT-COMMODITY & PEAK-CYCLE RISK PENALTY:
+   If a candidate's thesis relies on:
+   (a) Peak spot commodity rates (e.g. exceptionally high tanker charter rates, peak shipping freight, or abnormal crack spreads),
+   (b) Unhedged commodity spreads or gas allocation changes that can instantly compress margins, or
+   (c) An unapproved, multi-year court demerger/restructuring scheme subject to NCLT/creditor delays,
+   you MUST penalize its rank. NEVER rank such candidates as #1 or #2 over asset-light, net-cash monopolies or mission-critical certified suppliers with long-term order books.
+
+8. BALANCE SHEET & CASH FLOW DISCIPLINE:
+   Prioritize companies with net-cash balance sheets, positive operating cash flow, and high ROIC. Do not elevate companies burdened with heavy net debt or execution bottlenecks into top conviction tiers purely based on narrative excitement.
 
 OUTPUT JSON SCHEMA REQUIREMENT:
 Respond strictly with valid JSON conforming to the following structure:

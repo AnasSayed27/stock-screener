@@ -451,16 +451,23 @@ def tool_get_quality_scorecard(ticker: str) -> dict:
         dcf_base = valuation.dcf.scenarios.base.fair_value if valuation.dcf.scenarios.base else None
         dcf_bull = valuation.dcf.scenarios.bull.fair_value if valuation.dcf.scenarios.bull else None
 
+    mcap_cr = round(info.get("marketCap", 0) / 10_000_000, 2) if info.get("marketCap") else None
+    passed_mcap_gate = check_market_cap(raw_data, thresholds).passed
+    is_microcap_illiquid = (mcap_cr is not None and mcap_cr < 300.0)
+
     return {
         "ticker": safe_sym,
         "company_name": info.get("longName") or info.get("shortName") or safe_sym,
         "sector": sector,
+        "market_cap_cr": mcap_cr,
+        "is_microcap_illiquid": is_microcap_illiquid,
+        "liquidity_warning": "High risk of illiquid micro-cap trap / pump-and-dump (Market Cap < ₹300 Cr)." if is_microcap_illiquid else None,
         "is_financial_sector": is_financial,
         "quality_score_pct": scorecard.percentage,
         "quality_total_points": scorecard.score,
         "quality_max_points": scorecard.max_score,
         "conviction": conviction,
-        "passed_gate_market_cap": check_market_cap(raw_data, thresholds).passed,
+        "passed_gate_market_cap": passed_mcap_gate,
         "criteria_breakdown": criteria_summary,
         "valuation": {
             "current_price": valuation.current_price,
