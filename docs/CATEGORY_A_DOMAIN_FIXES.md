@@ -5,6 +5,10 @@
 **Modules Modified:**
 - `backend/discovery_prompts.py`
 - `backend/discovery_tools.py`
+- `backend/synthesis.py`
+- `backend/models.py`
+- `backend/valuator.py`
+- `tests/test_evaluation_report.py`
 
 ---
 
@@ -48,6 +52,35 @@ Empirical evaluation of the July 27, 2026 Master Synthesis and Discovery history
 - **Guardrail Added:**
   - System prompt constraint rejecting micro-caps with Market Cap $< ₹300\text{ Cr}$ or illiquid float.
   - `tool_get_quality_scorecard` now returns `is_microcap_illiquid` and a `liquidity_warning` flag when market cap is below ₹300 Cr.
+
+### E. Master Synthesis: Convergence Halving on High-Multiple Stocks
+- **File:** `backend/synthesis.py` (`apply_portfolio_guardrails`)
+- **Problem Addressed:** High convergence across multiple LLM prompts often measures media buzz and narrative crowding rather than independent fundamental edges (`AZAD` at 115.7x P/E with Convergence=4 vs under-the-radar winners like `TIMETECHNO` at 16.2x P/E with Convergence=1). Hard-capping to 1 throws away valid discovery signal, while leaving it unchecked inflates expensive stocks into Rank #1.
+- **Guardrail Added:**
+  - Implemented the deterministic **Halving Method**: If a candidate trades at **P/E $> 75\text{x}$**, Python dampens its convergence multiplier:
+    $$\text{Effective Convergence} = 1.0 + \frac{\text{Convergence} - 1.0}{2.0}$$
+  - Preserves multi-lens quality recognition while preventing unearned valuation hype from steamrolling cheaper compounders.
+
+### F. Master Synthesis: Ecosystem Cluster Cap ($\le 2$ Picks per Regulatory Body)
+- **File:** `backend/synthesis.py` (`apply_portfolio_guardrails`, `ECOSYSTEM_KEYWORDS`)
+- **Problem Addressed:** 3 of the 7 Ultimate Picks (43% of the portfolio: `KIRLPNU`, `TIMETECHNO`, `GUJGASLTD`) relied on the exact same PNGRB / City Gas Distribution regulatory ecosystem, introducing massive correlated tail risk.
+- **Guardrail Added:**
+  - Tagged core regulatory/industry ecosystems (`cgd_pngrb`, `defense_mod`, `smart_meter_rdss`, `railways_mor`).
+  - Python strictly limits exposure to **$\le 2$ picks per regulatory cluster** in the Ultimate Picks. Any 3rd candidate is automatically demoted to Honorable Mentions with an explicit portfolio diversification reason.
+
+### G. Valuator: Backlog Financing & Working Capital Health Check
+- **Files:** `backend/valuator.py` (`calculate_valuation`), `backend/models.py` (`ValuationResult`)
+- **Problem Addressed:** Discovery lenses celebrated massive order books (`HPL` ₹3,500 Cr, `GENUSPOWER` ₹28,000 Cr) without verifying how they are funded, failing to distinguish between debt-free, asset-light cash compounders (`WABAG`, `TIMETECHNO`) and debt-heavy working capital traps.
+- **Guardrail Added:**
+  - Added deterministic debt-to-equity and capital structure checks in `calculate_valuation()`.
+  - Emits a `financing_drag_warning` if $\text{D/E} > 1.2\text{x}$.
+  - Applies a 10% penalty to the Margin of Safety score if $\text{D/E} > 1.5\text{x}$, explicitly penalizing over-leveraged order backlogs.
+
+### H. Evaluation Suite: Market-Cap Tier Benchmark Mapping
+- **File:** `tests/test_evaluation_report.py`
+- **Problem Addressed:** All 7 Ultimate Picks were mid/small-caps (₹3,310 Cr to ₹46,730 Cr), yet performance was judged exclusively against the Nifty 50 (-5.24%). Because the Nifty Smallcap 250 fell -3.90%, this created a fake $+1.34\%$ alpha boost for small-caps.
+- **Guardrail Added:**
+  - Automated assertions enforcing size-appropriate benchmarking: Small-caps ($<₹25,000\text{ Cr}$) against **Nifty Smallcap 250**, Mid-caps ($₹25,000–₹80,000\text{ Cr}$) against **Nifty Midcap 150**, and Large-caps ($>₹80,000\text{ Cr}$) against **Nifty 50**.
 
 ---
 
