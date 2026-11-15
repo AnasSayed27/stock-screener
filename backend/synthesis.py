@@ -38,8 +38,115 @@ from discovery import (
     reset_run_api_keys,
     interruptible_sleep,
 )
+from data_fetcher import get_stock_data
 
 logger = logging.getLogger("discovery")
+
+# Mapping keywords to shared regulatory / ecosystem clusters for portfolio cap enforcement
+ECOSYSTEM_KEYWORDS: dict[str, list[str]] = {
+    "cgd_pngrb": [
+        "cgd", "city gas", "pngrb", "cng cascade", "gas distribution", "type-iv", "type iv",
+        "gas transmission", "gas compressor", "gujarat gas", "time techno", "kirloskar pneumatic"
+    ],
+    "defense_mod": [
+        "defense", "defence", "mod", "positive indigenization", "warship", "naval", "ordnance",
+        "ammunition", "artillery", "aerospace defense", "hal", "drdo"
+    ],
+    "smart_meter_rdss": [
+        "smart meter", "rdss", "amisp", "state discom", "prepaid meter", "energy meter"
+    ],
+    "railways_mor": [
+        "railway", "vande bharat", "wagon", "locomotive", "rail capex", "titagarh", "ircon", "rvnl"
+    ]
+}
+
+
+def _identify_ecosystem(candidate_text: str) -> Optional[str]:
+    """Helper to detect shared regulatory / customer ecosystems from candidate text."""
+    lower_text = candidate_text.lower()
+    for ecosystem, keywords in ECOSYSTEM_KEYWORDS.items():
+        if any(kw in lower_text for kw in keywords):
+            return ecosystem
+    return None
+
+
+def apply_portfolio_guardrails(
+    picks: list[SynthesisCandidate],
+    honorable_mentions: list[dict],
+    max_per_ecosystem: int = 2
+) -> tuple[list[SynthesisCandidate], list[dict]]:
+    """
+    Enforces deterministic Python portfolio construction guardrails:
+    1. Convergence Halving on High-Multiple Stocks:
+       If a candidate trades at P/E > 75x, dampens its convergence multiplier:
+       effective_convergence = 1 + (convergence - 1) / 2.0
+    2. Ecosystem Cluster Cap:
+       Limits any single regulatory body / ecosystem (e.g., CGD/PNGRB, Defense MoD, RDSS)
+       to at most max_per_ecosystem picks in Ultimate Picks. Excess picks are gracefully
+       demoted to Honorable Mentions.
+    """
+    adjusted_picks: list[tuple[SynthesisCandidate, float, Optional[str]]] = []
+
+    for p in picks:
+        # Check valuation via data_fetcher cache if ticker is present
+        pe = None
+        if p.ticker:
+            clean_sym = p.ticker.strip().upper()
+            if not clean_sym.endswith(".NS") and not clean_sym.endswith(".BO"):
+                clean_sym = f"{clean_sym}.NS"
+            stock_data = get_stock_data(clean_sym)
+            if stock_data and isinstance(stock_data, dict):
+                info = stock_data.get("info", {})
+                pe = info.get("trailingPE") or info.get("forwardPE")
+
+        orig_conv = float(p.convergence_count or len(p.strategies_found_in) or 1)
+        # Apply Halving Method if P/E > 75x
+        if pe is not None and pe > 75.0:
+            effective_conv = 1.0 + (orig_conv - 1.0) / 2.0
+            logger.info("⚡ [Convergence Halving] Applied on %s (P/E %.1fx): Conv %d -> Effective %.1f",
+                        p.company_name, pe, int(orig_conv), effective_conv)
+        else:
+            effective_conv = orig_conv
+
+        # Detect regulatory/customer ecosystem
+        combined_text = f"{p.company_name} {p.unified_thesis} {' '.join(p.strategies_found_in)}"
+        ecosystem = _identify_ecosystem(combined_text)
+
+        adjusted_picks.append((p, effective_conv, ecosystem))
+
+    # Re-sort picks by effective convergence descending while preserving relative ranking order
+    # Stable sort by effective_convergence desc, then original rank asc
+    adjusted_picks.sort(key=lambda item: (-item[1], item[0].rank))
+
+    final_ultimate_picks: list[SynthesisCandidate] = []
+    ecosystem_counts: dict[str, int] = {}
+    demoted_mentions: list[dict] = list(honorable_mentions)
+
+    for cand, eff_conv, eco in adjusted_picks:
+        if eco:
+            current_count = ecosystem_counts.get(eco, 0)
+            if current_count >= max_per_ecosystem:
+                logger.info("🛡️ [Ecosystem Cap] Demoting %s: Ecosystem '%s' reached cap of %d",
+                            cand.company_name, eco, max_per_ecosystem)
+                demoted_mentions.append({
+                    "company_name": cand.company_name,
+                    "ticker": cand.ticker,
+                    "strategy_name": cand.strategies_found_in[0] if cand.strategies_found_in else "Master Synthesis",
+                    "reason_for_watching": (
+                        f"Demoted from Ultimate Picks to respect portfolio diversification: "
+                        f"maximum exposure of {max_per_ecosystem} picks reached for regulatory ecosystem '{eco}'."
+                    )
+                })
+                continue
+            ecosystem_counts[eco] = current_count + 1
+
+        final_ultimate_picks.append(cand)
+
+    # Re-assign sequential ranks 1..N
+    for new_rank, cand in enumerate(final_ultimate_picks, 1):
+        cand.rank = new_rank
+
+    return final_ultimate_picks, demoted_mentions
 
 # Global cancellation flag for synthesis
 _synthesis_cancel_requested = False
@@ -260,13 +367,17 @@ def run_master_synthesis(
             )
         )
 
+    # Apply deterministic Python portfolio guardrails (Convergence Halving & Ecosystem Cap)
+    raw_honorable = parsed_json.get("honorable_mentions", [])
+    final_picks, final_honorable = apply_portfolio_guardrails(picks, raw_honorable, max_per_ecosystem=2)
+
     synthesis_result = SynthesisResult(
-        ultimate_picks=picks,
+        ultimate_picks=final_picks,
         market_narrative=parsed_json.get("market_narrative", ""),
         portfolio_considerations=parsed_json.get("portfolio_considerations", ""),
         total_candidates_analyzed=total_candidates,
         total_strategies_used=strategy_count,
-        honorable_mentions=parsed_json.get("honorable_mentions", []),
+        honorable_mentions=final_honorable,
         methodology_note=parsed_json.get("methodology_note", ""),
     )
 

@@ -181,11 +181,26 @@ def calculate_valuation(data: dict[str, Any]) -> ValuationResult:
     mos_graham = margin_of_safety(gn, current)
     mos_dcf_bear = margin_of_safety(dcf.get("bear"), current)
 
+    # ----- Backlog Financing & Working Capital Health Check -----
+    # Flags companies executing massive backlogs with excessive debt or stretched working capital
+    de_ratio = info.get("debtToEquity")
+    if de_ratio is not None and de_ratio > 10.0:
+        # yfinance often reports debtToEquity as a percentage (e.g. 150 for 1.5)
+        de_ratio = de_ratio / 100.0
+
+    financing_warning = None
+    if de_ratio is not None and de_ratio > 1.2:
+        financing_warning = f"High Debt-to-Equity ({de_ratio:.2f}x): order execution may require heavy debt service or working capital dilution."
+
     mos_candidates = [
         v for v in [mos_graham, mos_dcf_bear]
         if v is not None
     ]
     best_mos = min(mos_candidates) if mos_candidates else None
+
+    # Apply financing drag penalty to margin of safety if balance sheet is over-leveraged
+    if best_mos is not None and de_ratio is not None and de_ratio > 1.5:
+        best_mos = max(-1.0, best_mos - 0.10)  # 10% penalty for over-leveraged backlog risk
 
     # Let's map DCF
     dcf_val = None
@@ -211,4 +226,6 @@ def calculate_valuation(data: dict[str, Any]) -> ValuationResult:
         peg_ratio=round(peg, 2) if peg else None,
         margin_of_safety_pct=round(best_mos, 4) if best_mos is not None else None,
         dcf=dcf_val,
+        debt_to_equity=round(de_ratio, 2) if de_ratio is not None else None,
+        financing_drag_warning=financing_warning,
     )

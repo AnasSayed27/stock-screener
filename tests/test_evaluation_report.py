@@ -132,6 +132,12 @@ class TestEvaluationReport(unittest.TestCase):
         self.assertTrue("Smallcap" in self.content or "Smallcap 250" in self.content)
         self.assertIn("Alpha", self.content)
 
+        # Market-Cap Tier Benchmark Mapping Validation (Smallcap 250 for <25k Cr, Midcap 150 for 25k-80k Cr, Nifty 50 for >80k Cr)
+        self.assertTrue(
+            "Nifty Smallcap 250" in self.content and "Nifty Midcap 150" in self.content,
+            "Evaluation framework must explicitly reference size-appropriate benchmarks (Midcap 150, Smallcap 250)."
+        )
+
         # Executive Dashboard metric checks
         self.assertIn("12 / 29 (41.4%)", self.content, "Positive return stock count must be 12 / 29 (41.4%)")
         self.assertIn("18 / 29 (62.1%)", self.content, "Positive alpha stock count must be 18 / 29 (62.1%)")

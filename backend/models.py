@@ -94,6 +94,8 @@ class ValuationResult(BaseModel):
     peg_ratio: Optional[float] = None
     margin_of_safety_pct: Optional[float] = None
     dcf: Optional[DCFValuation] = None
+    debt_to_equity: Optional[float] = None
+    financing_drag_warning: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------
