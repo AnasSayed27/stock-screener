@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Cross-Strategy Master Synthesis Module.
-Aggregates user-selected discovery results (minimum 7) and uses the Master Synthesizer
+Aggregates user-selected discovery results (minimum 5) and uses the Master Synthesizer
 LLM to generate a ranked portfolio of Ultimate Picks.
 """
 
@@ -190,8 +190,8 @@ def prepare_synthesis_input(discovery_ids: list[str]) -> tuple[str, int, int, li
             strategy_names.append(disc.strategy_name)
             total_candidates += len(disc.result.candidates)
 
-    if len(discoveries) < 7:
-        raise ValueError(f"Master Synthesis requires at least 7 strategy results. Got {len(discoveries)}.")
+    if len(discoveries) < 5:
+        raise ValueError(f"Master Synthesis requires at least 5 strategy results. Got {len(discoveries)}.")
 
     # Format candidates into structured text
     blocks = []

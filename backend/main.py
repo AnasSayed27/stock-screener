@@ -519,6 +519,7 @@ async def api_get_strategies():
     for s in DISCOVERY_STRATEGIES:
         cleaned_strategies.append({
             "id": s["id"],
+            "category": s.get("category", "core"),
             "name": s["name"],
             "description": s["description"],
             "input_label": s["input_label"],
@@ -651,8 +652,8 @@ async def api_run_synthesis(request: Request):
     body = await request.json()
     raw_ids = body.get("discovery_ids", [])
 
-    if not raw_ids or len(raw_ids) < 7:
-        raise HTTPException(status_code=400, detail="Master Synthesis requires at least 7 selected strategy results.")
+    if not raw_ids or len(raw_ids) < 5:
+        raise HTTPException(status_code=400, detail="Master Synthesis requires at least 5 selected strategy results.")
 
     try:
         discovery_ids = [validate_uuid(did) for did in raw_ids]

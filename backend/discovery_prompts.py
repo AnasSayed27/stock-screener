@@ -69,71 +69,57 @@ COMMON_SYSTEM_PROMPT = RESEARCH_SYSTEM_PROMPT
 
 DISCOVERY_STRATEGIES = [
     {
-        "id": "government_policy",
-        "name": "Government Policy → Beneficiary Mapping",
-        "description": "Identify listed Indian companies that will benefit from a specific policy, subsidy, or regulation.",
-        "input_label": "Describe the policy, scheme, or regulation (Optional, e.g., FAME-III scheme, chemical anti-dumping duty)",
+        "id": "policy_import_substitution",
+        "category": "core",
+        "name": "Policy & Domestic Replacement",
+        "description": "Identify listed Indian companies benefiting from sovereign policy allocations, PLI/regulatory mandates, or tariff-protected import substitution.",
+        "input_label": "Describe a policy, scheme, regulation, or imported product category (Optional, e.g., PLI electronics, solar wafers, defense indigenization)",
         "input_type": "textarea",
         "required": False,
         "prompt_template": (
-            "STRATEGY: Government Policy → Beneficiary Mapping\n\n"
-            "USER INPUT (Context/Policy Details - optional):\n{context}\n\n"
+            "STRATEGY: Policy & Domestic Replacement Mapping\n\n"
+            "USER INPUT (Policy, Scheme, or Product Category - optional):\n{context}\n\n"
             "OBJECTIVE:\n"
-            "Identify listed Indian companies that will disproportionately benefit from government policy, budget allocation, or regulatory mandate — focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
+            "Identify listed Indian companies disproportionately capturing a policy-created or tariff-protected domestic Total Addressable Market (TAM) — whether via government budget/PLI allocations, regulatory mandates, or domestic manufacturing replacing large-volume imports — focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
             "PROACTIVE INSTRUCTIONS (If the USER INPUT above is empty or whitespace):\n"
-            "1. Search for and discover recent (last 12-24 months) high-impact government policies, schemes, or major budget allocations in India (e.g., PLI schemes, FAME-III, green hydrogen, railway modernization, defense indigenization, etc.).\n"
-            "2. Rank these policies by their likely investment significance and total addressable market (TAM) impact on listed companies.\n"
-            "3. Select the top 1-2 most significant policies and perform a deep-dive investigation into them as outlined below.\n\n"
+            "1. Search for and discover recent (last 12-24 months) high-impact government policies, budget allocations, regulatory mandates, and large-scale import-substitution opportunities in India (e.g., PLI schemes, green hydrogen, railway modernization, defense indigenization, APIs, electronics/semiconductors, solar wafers/ingots, specialty chemicals, high-end machinery).\n"
+            "2. Rank these opportunities by TAM / import-bill size, presence of supportive tariff or regulatory protection (anti-dumping duties, BIS/ALMM mandates, PLI), and investment significance for listed companies.\n"
+            "3. Select the top 1-2 most significant opportunities and perform a deep-dive investigation into listed Indian companies addressing them.\n\n"
             "FOCUSED INSTRUCTIONS (If the USER INPUT above is provided):\n"
-            "1. Directly investigate the user's specified policy, scheme, or regulation. Do not choose other policies.\n\n"
-            "REASONING CHAIN (follow this step by step for the chosen policies):\n"
-            "1. UNDERSTAND THE POLICY: Search for the specific government policy, scheme, or "
-            "   budget allocation. Understand the exact mechanism — what is being mandated, "
-            "   funded, or incentivized?\n"
-            "2. CALCULATE THE TAM: What is the Total Addressable Market created by this policy? "
-            "   How much money has the government allocated? Is funding placed in escrow "
-            "   (eliminating receivable risk) or dependent on annual budget approvals?\n"
-            "3. MAP THE VALUE CHAIN: Who are the direct beneficiaries? Then go deeper:\n"
-            "   - Who supplies raw materials to the direct beneficiaries?\n"
-            "   - Who supplies equipment or components?\n"
-            "   - Who provides services (testing, certification, logistics)?\n"
+            "1. Directly investigate the user's specified policy, regulation, or import-substitution product category. Do not choose other themes.\n\n"
+            "REASONING CHAIN (follow this step by step for the chosen themes):\n"
+            "1. UNDERSTAND THE MECHANISM & IMPORT DEPENDENCY: Identify what is being mandated, funded, incentivized, or tariff-protected, along with the total import bill and current domestic manufacturing share.\n"
+            "2. CALCULATE THE TAM & FUNDING QUALITY: Quantify the addressable market and runway versus domestic capacity. Verify whether government funding is placed in escrow upfront (eliminating receivable risk) or dependent on annual budget approvals and slow PLI disbursements.\n"
+            "3. MAP THE VALUE CHAIN & DOMESTIC MANUFACTURERS: Identify direct beneficiaries and Indian manufacturers scaling domestic production, then go deeper:\n"
+            "   - Who supplies raw materials, equipment, or components to direct beneficiaries?\n"
+            "   - Who provides testing, certification, or specialized logistics?\n"
             "   - Which companies are SOLE suppliers or have limited competition?\n"
-            "4. FIND THE HIDDEN BENEFICIARIES: The obvious large-cap beneficiary is already "
-            "   priced in. Search for small/micro-cap companies in the supply chain or those whose "
-            "   revenue is about to inflect because of this policy.\n"
-            "5. CHECK FOR STRUCTURAL ADVANTAGES: Among the beneficiaries, which ones have existing "
-            "   capacity competitors lack, or certifications/approvals that take years to obtain?\n"
-            "6. SEARCH DIRECTION — LEADING INDICATORS: Do not focus on companies that have already "
-            "   received orders or approvals. Instead look for companies that have the certifications, "
-            "   manufacturing capacity, and supplier relationships that would make them the most likely "
-            "   future allocation winners — but have not yet received meaningful orders. The question is "
-            "   not 'who won?' but 'who is best positioned to win and hasn't been recognized yet?'\n\n"
+            "4. FIND THE HIDDEN BENEFICIARIES & STRUCTURAL ADVANTAGES: Look past already-priced large caps toward small/mid-cap suppliers whose revenue is about to inflect. Verify existing capacity, cost competitiveness without subsidies, and multi-year certifications/customer qualifications.\n"
+            "5. VERIFY CASH CONVERSION ON ORDER BOOKS: Where candidates boast large policy or government order books (Order-Book-to-Bill > 1.5x), verify healthy operating cash flow conversion (CFO/PAT > 0.8x) to avoid receivable-heavy fake-growth traps.\n"
+            "6. SEARCH DIRECTION — LEADING INDICATORS: Do not focus only on companies that have already announced major orders or approvals. Prioritize companies that have achieved quality certification parity with imports, completed capacity expansion, or passed customer qualification audits — and are best positioned to win upcoming allocations before meaningful revenue arrives.\n\n"
             "KEY QUESTIONS TO INVESTIGATE:\n"
-            "- How much of the policy's TAM has already been captured vs. what remains?\n"
-            "- Are subsidies placed in escrow upfront, or are they dependent on disbursement?\n"
-            "- Who gets paid FIRST in the execution chain?\n"
-            "- Is there a PLI (Production-Linked Incentive) or similar scheme specifically targeting this?\n"
-            "- What happens if the policy is delayed or scaled back?\n"
-            "- WRONG MARKET ASSUMPTION: Is the market assuming policy implementation will be slow/delayed "
-            "  when actual disbursement timelines suggest otherwise? Is the market assuming the obvious "
-            "  large-cap wins when the mechanism actually favors smaller, specialized suppliers? Is the market "
-            "  assuming one-cycle (election-dependent) spending when structural demand makes this multi-decade?\n\n"
+            "- How much of the policy TAM or import bill remains uncaptured vs. domestically manufactured?\n"
+            "- Are subsidies placed in escrow upfront, or dependent on delayed government/PLI disbursement?\n"
+            "- Are tariff protections, anti-dumping duties, or BIS/ALMM mandates structural and permanent?\n"
+            "- Is the Indian manufacturer cost-competitive without subsidies, and who gets paid FIRST in the execution chain?\n"
+            "- What happens if the policy is delayed, scaled back, or subsidies expire?\n"
+            "- WRONG MARKET ASSUMPTION: Is the market assuming policy implementation will be delayed or that domestic quality cannot match imports when certification and disbursement evidence shows otherwise? Is the market pricing tariff protection as temporary or assuming the obvious large-cap wins when the mechanism actually favors smaller, specialized, pre-qualified suppliers?\n\n"
             "FAILURE MODES (flag these as risks):\n"
-            "- Government execution delays — policy announced but funds not released\n"
-            "- Too many beneficiaries — if 50 companies compete, no one gets meaningful share\n"
-            "- Policy reversal after election cycle\n"
-            "- Company wins orders but lacks capacity to execute\n"
-            "- B2G (business-to-government) receivable risk if no escrow mechanism\n\n"
+            "- Government execution delays or PLI disbursement lag — policy announced but funds not released\n"
+            "- B2G (business-to-government) receivable risk if no escrow mechanism exists\n"
+            "- Indian product quality fails to match imports or becomes uncompetitive once subsidies expire\n"
+            "- Too many domestic players enter simultaneously or global oversupply crashes prices, destroying margins\n"
+            "- Policy reversal after election cycle, or company wins orders but lacks capacity to execute\n\n"
             "SEARCH GUIDANCE (Examples):\n"
             "- Search for \"[specific policy/scheme name] beneficiary companies listed India\"\n"
             "- Search for \"PLI scheme [sector] approved companies list India\"\n"
-            "- Search for recent order winners or contract awards related to \"[policy name]\"\n"
-            "- Search for \"[sector] companies with PLI eligibility criteria capacity certification India not yet approved\"\n"
-            "- Search for \"[policy sector] supplier positioning upcoming allocation India small cap\""
+            "- Search for \"import substitution [product name] India PLI tariff anti-dumping listed NSE BSE\"\n"
+            "- Search for \"[product/sector] domestic manufacturer India BIS certification approved capacity commissioned upcoming\""
         )
     },
     {
         "id": "supply_chain",
+        "category": "core",
         "name": "Supply Chain Dependency Mapper",
         "description": "Given a booming end-product or sector, map backward to find indispensable suppliers.",
         "input_label": "Enter a booming end-product, company, or sector (Optional, e.g., Electric Vehicles, Data Centers, Solar Panels)",
@@ -192,6 +178,7 @@ DISCOVERY_STRATEGIES = [
     },
     {
         "id": "hidden_monopoly",
+        "category": "core",
         "name": "Hidden Monopoly / Toll Road Finder",
         "description": "Find listed Indian companies holding monopoly positions in small niche markets.",
         "input_label": "Sector or industry focus (optional, e.g., Railways, Defense, Niche Chemicals)",
@@ -241,62 +228,53 @@ DISCOVERY_STRATEGIES = [
         )
     },
     {
-        "id": "import_substitution",
-        "name": "Import Substitution Opportunity",
-        "description": "Find domestic companies manufacturing products India currently imports in large volumes.",
-        "input_label": "Product or material category (Optional, e.g., solar wafers, active pharmaceutical ingredients)",
+        "id": "forensic_anomalies",
+        "category": "core",
+        "name": "Forensic Earnings & Behavioral Anomalies",
+        "description": "Find companies where conservative accounting, balance sheet contradictions, or neglected promoter buying mask true cash earnings.",
+        "input_label": "Focus anomaly or keywords (optional, e.g., capex cycle peak, customer advances, promoter creeping acquisition)",
         "input_type": "text",
         "required": False,
         "prompt_template": (
-            "STRATEGY: Import Substitution Discovery\n\n"
-            "USER INPUT (Product/material category - optional):\n{context}\n\n"
+            "STRATEGY: Forensic Earnings & Behavioral Anomalies Discovery\n\n"
+            "USER INPUT (Focus anomaly/keywords - optional):\n{context}\n\n"
             "OBJECTIVE:\n"
-            "Find Indian companies that are beginning to domestically manufacture products currently imported "
-            "in large quantities — capturing a pre-existing, guaranteed local market, focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
-            "PROACTIVE INSTRUCTIONS (If the USER INPUT above is empty or whitespace):\n"
-            "1. Search for and identify major import-substitution opportunities in India where the domestic "
-            "   manufacturing ecosystem is aggressively expanding (e.g., active pharmaceutical ingredients (APIs), "
-            "   electronics/semiconductors, solar wafers/ingots, specialty chemicals, defense hardware, high-end machinery).\n"
-            "2. Rank these opportunities by the size of the import bill and the presence of supportive government incentives (like tariff hikes or PLI).\n"
-            "3. Select the top 1-2 opportunities and perform a deep-dive investigation into listed Indian companies addressing them.\n\n"
-            "FOCUSED INSTRUCTIONS (If the USER INPUT above is provided):\n"
-            "1. Directly investigate the user's specified product or material category. Do not choose other products.\n\n"
-            "REASONING CHAIN (follow this step by step for the chosen products):\n"
-            "1. IDENTIFY IMPORT DEPENDENCIES: Find import value and details for the product.\n"
-            "2. FIND DOMESTIC MANUFACTURERS: Search for Indian companies starting or scaling domestic "
-            "   production, PLI scheme approvals, or capacity expansion announcements.\n"
-            "3. ASSESS THE RUNWAY: Compare import value to domestic capacity, and look for tariff protections.\n"
-            "4. FIND THE INFLECTION POINT: Is the company winning first major domestic orders or experiencing "
-            "   regulatory mandates?\n"
-            "5. SEARCH DIRECTION — LEADING INDICATORS: Prioritize companies that have achieved quality "
-            "   certification parity with imports, completed capacity expansion, or passed customer "
-            "   qualification audits — but have not yet won meaningful domestic orders. The capability "
-            "   exists; the revenue hasn't arrived. That gap is the opportunity.\n\n"
+            "Find listed Indian companies (focusing on {context} if provided, or generally) where reported financials or market perception contradict underlying reality — such as conservative accounting or peaking investment cycles suppressing PAT while cash flow grows, balance-sheet anomalies misunderstood as liabilities, or genuine insider conviction in neglected stocks — focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
+            "MANDATORY FORENSIC SAFETY GATES:\n"
+            "- CASH CONVERSION GATE: Verify operating cash flow quality (CFO/PAT > 0.8x on normalized/operating basis, or growing CFO diverging positively from suppressed PAT). Reject companies with deteriorating fundamentals, persistent negative cash flow, or working-capital manipulation.\n"
+            "- PROMOTER PLEDGE DISQUALIFIER: Disqualify any candidate where promoter pledge exceeds 20% of promoter holding, or where insider buying is merely ESOP exercise, thin-float warrant conversion, or promotional price propping.\n"
+            "- NEGLECT FILTER FOR INSIDER SIGNALS: Treat promoter creeping acquisition (>1% open-market buying in a quarter, consistent 2+ quarter buying, buying at a premium, or pledge reduction toward <5%) as high-signal primarily in neglected stocks (<3 analysts / low institutional ownership) backed by solid core cash flows.\n\n"
+            "REASONING CHAIN (follow this step by step):\n"
+            "1. SPOT THE FORENSIC OR BEHAVIORAL CONTRADICTION: Search raw filings and disclosures for situations where \"something doesn't make sense\" on the surface:\n"
+            "   - Heavy capex, R&D expensing, accelerated depreciation, goodwill write-offs, or deferred revenue artificially suppressing PAT while cash flow from operations (CFO) grows.\n"
+            "   - Balance-sheet anomalies such as a sudden spike in current liabilities that is actually interest-free customer advances (e.g., Caplin Point), structural margin divergence misunderstood as temporary, or net cash exceeding 50% of market capitalization for an active operating business.\n"
+            "   - High-conviction insider anomalies: promoter open-market creeping acquisition, purchases at a significant premium to market price, or rapid pledge reduction backed by operating cash flows (not expensive debt) in stocks with near-zero analyst coverage.\n"
+            "2. RECONCILE THE CONTRADICTION & VERIFY CASH FLOW: Investigate earnings call transcripts, annual reports, and cash flow statements to confirm why the gap exists and verify healthy, growing operating cash flow (CFO/PAT > 0.8x) and downside protection.\n"
+            "3. EVALUATE UNDERLYING QUALITY & CATALYST: Confirm the core business is solid and identify what precedes the inflection — capex cycle peaking within 6-18 months, commercial plant commissioning, asset capitalization completing, new order book conversion, or balance-sheet clarity.\n"
+            "4. PROJECT THE INFLECTION POINT: Estimate normalized margins/earnings once the investment phase ends or the anomaly becomes obvious to mainstream screeners.\n"
+            "5. SEARCH DIRECTION — LEADING INDICATORS: Focus on setups NOT yet flagged by screeners, financial media, or sell-side notes — capex cycles within 6-18 months of peaking while PAT is still suppressed, raw filing contradictions not yet widely interpreted, and very recent open-market insider buying (last 1-3 months) in neglected companies (<3 analysts).\n\n"
             "KEY QUESTIONS TO INVESTIGATE:\n"
-            "- What is the total import bill for this product category?\n"
-            "- What percentage is currently being domestically manufactured?\n"
-            "- Does the government have a stated target for domestic production?\n"
-            "- Are there tariff protections or anti-dumping duties in place?\n"
-            "- Is the Indian manufacturer cost-competitive without subsidies?\n"
-            "- WRONG MARKET ASSUMPTION: Is the market assuming domestic quality can't match imports when "
-            "  certification evidence shows parity has been achieved? Is the market pricing in tariff protection "
-            "  as temporary when structural policy signals show permanence? Is the market assuming capacity is "
-            "  the bottleneck when the bottleneck is actually customer qualification (which this company has already done)?\n\n"
+            "- What looks bad or expensive on the surface (headline PAT, P/E, liabilities) that is actually strong underneath?\n"
+            "- Is operating cash flow growing (CFO/PAT > 0.8x) even as net income is flat or depressed by depreciation, R&D expensing, or capex?\n"
+            "- When does the current capex cycle or R&D phase peak, and what will normalized margins look like?\n"
+            "- Is a liability spike actually interest-free customer advances, or is net cash truly usable (not trapped in subsidiaries)?\n"
+            "- For insider signals: is it genuine open-market buying (not ESOP/warrants), consistent over 2+ quarters or at a premium, with promoter pledge <20% and minimal analyst coverage?\n"
+            "- WRONG MARKET ASSUMPTION: Is the market reading headline PAT literally or confusing accounting conservatism / balance-sheet anomalies with business weakness? Is the market assuming capex-driven earnings suppression is permanent, or ignoring asymmetric promoter open-market buying because zero analyst coverage exists to amplify the signal?\n\n"
             "FAILURE MODES:\n"
-            "- Indian product quality doesn't match imports — customers won't switch\n"
-            "- PLI subsidies expire and the company becomes uncompetitive\n"
-            "- Global oversupply crashes prices, making domestic production unviable\n"
-            "- Technology changes faster than the company can adapt\n"
-            "- Multiple domestic players all enter simultaneously, destroying margins\n\n"
+            "- Capex represents poor capital allocation, waste, or an endless capital treadmill\n"
+            "- The anomaly is actually a red flag of fraud, accounting manipulation, or working-capital distortion\n"
+            "- High cash is trapped in subsidiaries and cannot be distributed\n"
+            "- Insider buying is promotional propping, related-party bulk deal, ESOP/warrant noise, or pledge reduction funded by expensive debt while fundamentals deteriorate\n\n"
             "SEARCH GUIDANCE (Examples):\n"
-            "- Search for \"import substitution [product name] India PLI listed\"\n"
-            "- Search for \"[product name] domestic manufacturing India NSE BSE\"\n"
-            "- Search for \"[product name] domestic manufacturer India BIS certification approved not yet commercial orders\"\n"
-            "- Search for \"[product] import substitution India capacity commissioned ramp up upcoming\""
+            "- Search for \"Indian companies capex cycle peak completion commissioning 2025 2026\"\n"
+            "- Search for \"operating cash flow PAT divergence Indian small cap NSE BSE\"\n"
+            "- Search for \"customer advances small cap companies India balance sheet anomaly filing disclosure\"\n"
+            "- Search for \"promoter creeping acquisition open market purchase premium SEBI disclosure NSE BSE zero analyst coverage\""
         )
     },
     {
         "id": "capital_cycle",
+        "category": "core",
         "name": "Capital Cycle / Trough Survivor",
         "description": "Find consolidated industries in deep cyclical troughs where capacity expansions have frozen.",
         "input_label": "Sector or industry focus (optional, e.g., Textiles, Sugar, Paper, Real Estate)",
@@ -355,54 +333,8 @@ DISCOVERY_STRATEGIES = [
         )
     },
     {
-        "id": "hidden_earnings",
-        "name": "Hidden Earnings (Conservative Accounting)",
-        "description": "Find companies where heavy investment or conservative accounting suppresses reported PAT.",
-        "input_label": "Sector or keywords (optional, e.g., R&D-heavy, high capex, brand investment)",
-        "input_type": "text",
-        "required": False,
-        "prompt_template": (
-            "STRATEGY: Hidden Earnings Discovery\n\n"
-            "USER INPUT (Focus keywords - optional):\n{context}\n\n"
-            "OBJECTIVE:\n"
-            "Find Indian companies where conservative accounting practices or heavy investment phases "
-            "artificially suppress reported earnings — making the stock look expensive while true cash "
-            "earnings are extremely strong, focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
-            "REASONING CHAIN (follow this step by step):\n"
-            "1. IDENTIFY HEAVY INVESTMENT PHASES: Search for companies aggressively investing in capex, R&D, "
-            "   or brand-building, showing flat PAT but growing cash flow.\n"
-            "2. ANALYZE THE GAP: Find suppressed items (heavy depreciation policies, fully expensed R&D, "
-            "   goodwill write-offs, deferred revenue).\n"
-            "3. PROJECT THE INFLECTION: When capex cycle peaks, margins expand, and PAT explodes.\n"
-            "4. VERIFY CASH FLOW: Ensure cash flow from operations (CFO) is healthy and growing, showing PAT is real.\n"
-            "5. SEARCH DIRECTION — LEADING INDICATORS: The highest-value candidate is one where the "
-            "   capex cycle is within 6-18 months of peaking but PAT is still at its most suppressed. "
-            "   Look for companies that are commencing commercial production, completing asset "
-            "   capitalization, or approaching the end of a stated investment cycle. Revenue and cash "
-            "   flow evidence should lag the setup by 1-2 quarters.\n\n"
-            "KEY QUESTIONS TO INVESTIGATE:\n"
-            "- Is operating cash flow growing even as net income is flat or declining?\n"
-            "- What specific line items are depressing earnings?\n"
-            "- When does the current capex cycle or R&D phase peak?\n"
-            "- What will normalized margins look like once investment phase ends?\n"
-            "- Is management expensing things that competitors capitalize?\n"
-            "- WRONG MARKET ASSUMPTION: Is the market reading PAT literally when cash flows tell a completely "
-            "  different story? Is the market assuming the capex-driven earnings suppression is permanent when the "
-            "  asset base being built will generate returns for decades? Is the market applying the wrong peer group "
-            "  for valuation, missing that this company's normalized margins are structurally higher?\n\n"
-            "FAILURE MODES:\n"
-            "- Capex represents poor capital allocation or waste\n"
-            "- Capex cycle never ends (capital treadmill)\n"
-            "- Working capital manipulation explains cash flow gap\n"
-            "- Competitors replicate the investment, neutralizing the advantage\n\n"
-            "SEARCH GUIDANCE (Examples):\n"
-            "- Search for \"Indian companies capex cycle peak 2025 2026\"\n"
-            "- Search for \"operating cash flow PAT divergence Indian small cap BSE\"\n"
-            "- Search for \"[company/sector] India capex cycle completion upcoming plant commissioning 2025 2026\""
-        )
-    },
-    {
         "id": "corporate_restructuring",
+        "category": "core",
         "name": "Corporate Restructuring / Special Situations",
         "description": "Find spinoffs, demergers, or restructurings creating forced institutional selling.",
         "input_label": "Demerger/Restructuring focus keywords (optional)",
@@ -456,107 +388,8 @@ DISCOVERY_STRATEGIES = [
         )
     },
     {
-        "id": "scuttlebutt",
-        "name": "Scuttlebutt / Consumer Discovery [EXPERIMENTAL]",
-        "description": "Discover listed companies whose products are gaining massive grassroots traction.",
-        "input_label": "Trending product, consumer category, or brand (Optional, e.g., premium home decor, specialty retail)",
-        "input_type": "text",
-        "required": False,
-        "prompt_template": (
-            "STRATEGY: Scuttlebutt and Consumer Product Discovery [EXPERIMENTAL]\n\n"
-            "USER INPUT (Product/Brand/Category - optional):\n{context}\n\n"
-            "NOTE: Web search cannot fully replicate on-the-ground observation or walking into a workshop. "
-            "This strategy is experimental and focuses on surfacing product reviews, industry discussions, "
-            "and professional forums.\n\n"
-            "OBJECTIVE:\n"
-            "Discover listed Indian companies whose products are gaining massive grassroots traction "
-            "— loved by consumers or recommended by tradespeople/professionals — but not yet recognized by the stock market, focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
-            "PROACTIVE INSTRUCTIONS (If the USER INPUT above is empty or whitespace):\n"
-            "1. Search for emerging grassroots signals, consumer trends, or high-growth brand conversations in India from publicly available sources (e.g., product review aggregators, industry/trade forums, distributor insights, premiumization trends, rising adoption of new categories like electric two-wheelers, premium home appliances, specialty foods, or niche building materials).\n"
-            "2. Identify the strongest consumer adoption signals or brand preferences.\n"
-            "3. Investigate the company/companies behind the most promising products.\n\n"
-            "FOCUSED INSTRUCTIONS (If the USER INPUT above is provided):\n"
-            "1. Perform a focused scuttlebutt investigation on the user's specified category, brand, or product.\n\n"
-            "REASONING CHAIN (follow this step by step for the chosen products/brands):\n"
-            "1. IDENTIFY TRENDING PRODUCTS: Search consumer forums, social media, and professional trade channels.\n"
-            "2. TRACE TO LISTED COMPANIES: Find who manufactures the trending brands and if the parent/subsidiary is listed.\n"
-            "3. ASSESS PRODUCT-MARKET FIT: Is the product indispensable? Word-of-mouth growth? Highly sticky?\n"
-            "4. CHECK COMPETITIVE RESPONSE: Defensibility and target for acquisitions by larger FMCG/industrial firms.\n"
-            "5. SEARCH DIRECTION — LEADING INDICATORS: The best signal is trade/professional-channel "
-            "   traction BEFORE it appears in mainstream media, investor presentations, or stock "
-            "   screener metrics. Look for products being discussed in B2B procurement groups, distributor "
-            "   forums, or trade communities — but where the manufacturer has zero stock market coverage.\n\n"
-            "KEY QUESTIONS TO INVESTIGATE:\n"
-            "- What products are professionals (plumbers, builders, mechanics) recommending to each other?\n"
-            "- Which brand does the professional specifier insist on using?\n"
-            "- Is the product being recommended through trade channels, not advertising?\n"
-            "- What is the repeat purchase rate?\n"
-            "- Is the company behind it a micro/small-cap that the market ignores?\n"
-            "- WRONG MARKET ASSUMPTION: Is the market dismissing grassroots demand as anecdotal when "
-            "  distribution channel data suggests it is structural and scaling? Is the market assuming this "
-            "  is a fad when professional/trade channel adoption (not consumer buzz) is the actual signal? "
-            "  Is the market unaware of the manufacturer behind the brand because the parent is classified in "
-            "  a different sector?\n\n"
-            "FAILURE MODES:\n"
-            "- Product is a fad, not a trend\n"
-            "- Larger competitor copies the product with bigger distribution\n"
-            "- Company can't scale production to meet demand\n"
-            "- Product loyalty is price-sensitive\n\n"
-            "SEARCH GUIDANCE (Examples):\n"
-            "- Search for \"best [product category] reviews professionals India\"\n"
-            "- Search for \"[product brand name] manufacturer listed India NSE BSE\"\n"
-            "- Search for \"[product category] India distributor forum contractor recommendation brand\""
-        )
-    },
-    {
-        "id": "smart_money",
-        "name": "Smart Money / Insider Behavior",
-        "description": "Find stocks with promoter creeping acquisition or pledge reductions and no analyst coverage.",
-        "input_label": "Focus sector or market cap (optional, e.g., small cap promoter pledge reduction)",
-        "input_type": "text",
-        "required": False,
-        "prompt_template": (
-            "STRATEGY: Smart Money and Insider Behavior Detection\n\n"
-            "USER INPUT (Focus/Sector - optional):\n{context}\n\n"
-            "OBJECTIVE:\n"
-            "Find listed Indian companies (focusing on {context} if provided, or generally) where promoters or "
-            "insiders are aggressively buying shares or reducing pledges — especially in stocks with zero "
-            "analyst coverage and negligible institutional interest, focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
-            "REASONING CHAIN (follow this step by step):\n"
-            "1. FIND UNUSUAL INSIDER ACTIVITY: Search for promoter creeping acquisitions, pledge reductions, "
-            "   or block/bulk deals at a premium with no news catalyst.\n"
-            "2. ASSESS THE ANOMALY: Look for purchases at a premium, consistent buying over 2+ quarters, "
-            "   or buying weakness (not chasing strength).\n"
-            "3. INVESTIGATE THE WHY: What catalyst (capex peak, new order, spin-off) is preceding this insider buying?\n"
-            "4. CHECK FOR NEGLECT: Ensure the company has zero analyst coverage and low institutional holdings.\n"
-            "5. SEARCH DIRECTION — LEADING INDICATORS: Focus on very recent insider buying (last 1-3 "
-            "   months) in companies with no analyst coverage. The market hasn't had time to notice "
-            "   or interpret the signal. Older insider purchases (12+ months ago) are likely already "
-            "   researched and priced in by smart money trackers.\n\n"
-            "KEY QUESTIONS TO INVESTIGATE:\n"
-            "- Are insiders buying shares or is this just ESOP exercise?\n"
-            "- Is the purchase at market price or at a significant premium?\n"
-            "- Has buying been consistent over 2+ quarters?\n"
-            "- What is the promoter's track record — have past purchases preceded rallies?\n"
-            "- Is the company in a \"quiet period\" before results announcement?\n"
-            "- WRONG MARKET ASSUMPTION: Is the market ignoring promoter buying because there is no analyst "
-            "  coverage to amplify the signal? Is the market assuming the promoter knows no more than the public "
-            "  when the context of the buying (open market, at premium) suggests significant asymmetric information? "
-            "  Is the market's valuation model using the wrong base-year earnings when the promoter is buying "
-            "  ahead of a known inflection?\n\n"
-            "FAILURE MODES:\n"
-            "- Insider buying is used to prop up the stock price artificially\n"
-            "- Promoter buying but company fundamentals are deteriorating\n"
-            "- Pledge reduction funded by other expensive debt\n"
-            "- Bulk deal is a related-party transaction disguised as open-market purchase\n\n"
-            "SEARCH GUIDANCE (Examples):\n"
-            "- Search for \"promoter creeping acquisition SEBI disclosure NSE BSE recent months\"\n"
-            "- Search for \"promoter pledge reduction small cap India recent\"\n"
-            "- Search for \"promoter open market purchase India last 3 months zero analyst coverage\""
-        )
-    },
-    {
         "id": "freeform",
+        "category": "custom",
         "name": "Free-form Discovery",
         "description": "Run a customized discovery query or test an investment hypothesis.",
         "input_label": "Enter your specific query, sector, or investment hypothesis",
@@ -597,53 +430,6 @@ DISCOVERY_STRATEGIES = [
             "SEARCH GUIDANCE (Examples):\n"
             "- Adapt your searches directly to search for listed companies matching the user's observation.\n"
             "- Search at least 2-3 times from different angles to cross-verify findings."
-        )
-    },
-    {
-        "id": "anomaly_discovery",
-        "name": "Anomaly Discovery",
-        "description": "Find listed Indian companies presenting financial, behavioral, or operational anomalies.",
-        "input_label": "Focus search/anomaly type (optional, e.g., promoter premium buying, customer advances liability spike)",
-        "input_type": "text",
-        "required": False,
-        "prompt_template": (
-            "STRATEGY: Anomaly Discovery\n\n"
-            "USER INPUT (Anomaly focus - optional):\n{context}\n\n"
-            "OBJECTIVE:\n"
-            "Find listed Indian companies presenting financial, behavioral, or operational anomalies (focusing on "
-            "{context} if provided, or generally) where \"something doesn't make sense\" on the surface, "
-            "but deeper analysis reveals a significant, mispriced investment opportunity, focusing on the earliest stage where the market has not yet fully priced in the implications.\n\n"
-            "REASONING CHAIN (follow this step by step):\n"
-            "1. SPOT THE ANOMALY: Look for contradictions in disclosures or filings:\n"
-            "   - Insider/promoter buying shares at a significant premium to market price (e.g. Heran Drug).\n"
-            "   - Sudden spike in current liabilities that is actually interest-free customer advances (e.g. Caplin Point).\n"
-            "   - Sudden margins/earnings divergence due to structural change misunderstood as temporary.\n"
-            "   - Net cash exceeding 50% of market capitalization for an active, operating business.\n"
-            "2. RECONCILE THE CONTRADICTION: Search for why this exists (earnings call transcripts, director reports).\n"
-            "3. EVALUATE THE UNDERLYING QUALITY: Is the core business solid? Downside protected?\n"
-            "4. DEFINE THE INFLECTION POINT: What catalyst will make the financial statements clear to average screeners?\n"
-            "5. SEARCH DIRECTION — LEADING INDICATORS: Focus on anomalies that have NOT yet been "
-            "   flagged by screeners, financial media, or small-cap analyst notes. If the anomaly is "
-            "   already in a Substack post or MoneyControl article, it is likely no longer a true "
-            "   information gap. Search for contradictions in raw filings that haven't been interpreted.\n\n"
-            "KEY QUESTIONS TO INVESTIGATE:\n"
-            "- What looks bad on the surface but is actually good?\n"
-            "- Why is the promoter buying at a premium to the market price?\n"
-            "- Is a liability spike actually interest-free customer advances?\n"
-            "- Is there a sudden divergence between cash generation and reported profitability?\n"
-            "- WRONG MARKET ASSUMPTION: Is the market confusing accounting conservatism with business weakness? "
-            "  Is the market misreading the anomaly as a risk when it is actually evidence of a structural advantage? "
-            "  Has the market anchored to an outdated mental model that a specific piece of data contradicts "
-            "  — but the contradiction hasn't been noticed yet?\n\n"
-            "FAILURE MODES:\n"
-            "- The anomaly is actually a red flag of fraud or accounting manipulation.\n"
-            "- Promoter buying at a premium was a regulatory anomaly or tax-planning structure, not conviction.\n"
-            "- High cash is trapped in subsidiaries and cannot be distributed.\n\n"
-            "SEARCH GUIDANCE (Examples):\n"
-            "- Search for \"promoter buying premium to market price India BSE NSE\"\n"
-            "- Search for \"customer advances small cap companies India balance sheet anomaly\"\n"
-            "- Search for \"promoter buying premium to market price India BSE NSE\"\n"
-            "- Search for \"customer advances small cap companies India balance sheet anomaly filing disclosure misunderstood\""
         )
     }
 ]

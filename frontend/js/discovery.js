@@ -4,7 +4,7 @@
 
 // Module-level state
 let _discoveryStrategies = [];
-let _selectedStrategyId = 'government_policy';
+let _selectedStrategyId = 'policy_import_substitution';
 let _savedDiscoveries = [];
 let _activeDiscovery = null;
 let _discoveryRunning = false;
@@ -34,15 +34,15 @@ async function renderDiscovery(param) {
 
             <!-- Discovery Dashboard Grid -->
             <div class="discovery-grid" style="display: grid; grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px;">
-                <!-- Main Control Panel -->
+                <!-- Main Control Panel (6 Core Strategies) -->
                 <div class="card" style="padding: 24px;">
                     <h3 style="margin-top: 0; margin-bottom: 20px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;">
-                        <span>◈</span> Run AI Discovery Strategy
+                        <span>◈</span> Run Core Discovery Strategy
                     </h3>
                     
                     <div style="display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 20px;">
                         <div class="select-container" style="max-width: 100%;">
-                            <label class="select-label">Select Discovery Strategy</label>
+                            <label class="select-label">Select Core Discovery Strategy</label>
                             <select id="discovery-strategy-select" class="select-input" onchange="onDiscoveryStrategyChanged(this.value)">
                                 <option value="" disabled>Loading strategies...</option>
                             </select>
@@ -62,6 +62,39 @@ async function renderDiscovery(param) {
                         </button>
                         <span id="tavily-notice" class="text-muted" style="font-size: 12px;">
                             Requires TAVILY_API_KEY in .env · Scans NSE/BSE listed equities
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Separated Custom Research Workbench (Free-form Discovery) -->
+                <div id="custom-research-card" class="card custom-research-panel" style="padding: 24px; border: 1px solid rgba(168, 85, 247, 0.28); background: linear-gradient(135deg, rgba(168, 85, 247, 0.04) 0%, rgba(17, 24, 39, 0) 100%);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 14px;">
+                        <div>
+                            <h3 style="margin: 0; color: #c084fc; display: flex; align-items: center; gap: 8px;">
+                                <span>✦</span> Custom Research
+                            </h3>
+                            <p id="custom-research-desc" class="text-muted" style="font-size: 13px; margin: 4px 0 0 0;">
+                                Test an ad-hoc investment hypothesis, sector observation, or custom query outside the 6 systematic core strategies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                        <label id="custom-research-label" class="select-label" style="font-weight: 500;" for="custom-research-input">
+                            Enter your specific query, sector, or investment hypothesis <span style="color: var(--color-danger);">*</span>
+                        </label>
+                        <textarea id="custom-research-input" class="textarea-input" rows="3" placeholder="e.g. Which listed Indian suppliers benefit from high-voltage grid transformer upgrades or railway kavach deployment?" style="width:100%; border-radius: var(--border-radius); border: 1px solid rgba(168, 85, 247, 0.25); background: rgba(0,0,0,0.25); padding: 12px; color: var(--text-primary); font-family: inherit; font-size:14px; resize:vertical;"></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                        <button id="custom-research-run-btn" class="btn btn-secondary btn-lg" onclick="startCustomResearch()" style="border-color: rgba(168, 85, 247, 0.45); color: #e9d5ff; background: rgba(168, 85, 247, 0.14);">
+                            <span class="btn-icon">✦</span> Run Custom Research
+                        </button>
+                        <button id="custom-research-stop-btn" class="btn btn-danger btn-lg" onclick="stopDiscovery()" style="display: none; background: #ef4444; color: #ffffff; border: none; padding: 10px 20px; border-radius: var(--radius-md); cursor: pointer; font-weight: 600; align-items: center; gap: 8px;">
+                            <span class="btn-icon">🛑</span> Stop Process
+                        </button>
+                        <span class="text-muted" style="font-size: 12px;">
+                            Runs Free-form 5-phase agent · Saved results can also be included in Master Synthesis
                         </span>
                     </div>
                 </div>
@@ -109,7 +142,7 @@ async function renderDiscovery(param) {
                                 <span>🏆</span> Master Cross-Strategy Synthesis
                             </h3>
                             <p class="text-muted" style="font-size: 13px; margin: 4px 0 0 0;">
-                                Select at least 7 strategy results from history to aggregate and discover Ultimate Picks using Master AI reasoning.
+                                Select at least 5 strategy results from history to aggregate and discover Ultimate Picks using Master AI reasoning.
                             </p>
                         </div>
                         <button id="synthesis-toggle-btn" class="btn btn-secondary" onclick="toggleSynthesisPanel()" style="display: flex; align-items: center; gap: 6px; border-color: rgba(255,215,0,0.3); color: #ffd700;">
@@ -124,7 +157,7 @@ async function renderDiscovery(param) {
                                 <button class="btn btn-secondary btn-sm" onclick="toggleAllSynthesisSelections(true)">Select All</button>
                                 <button class="btn btn-secondary btn-sm" onclick="toggleAllSynthesisSelections(false)">Deselect All</button>
                                 <span id="synthesis-selection-count" style="font-size: 13px; font-weight: 600; color: var(--accent-cyan); margin-left: 6px;">
-                                    Selected: 0/0 (Min 7 required)
+                                    Selected: 0/0 (Min 5 required)
                                 </span>
                             </div>
                             <div style="display: flex; gap: 8px; align-items: center;">
@@ -194,14 +227,35 @@ async function loadDiscoveryStrategies() {
     try {
         const data = await apiFetch('/discovery/strategies');
         _discoveryStrategies = data;
-        
-        const select = document.getElementById('discovery-strategy-select');
-        if (!select) return;
 
-        select.innerHTML = data.map(s => {
-            const isExp = s.id === 'scuttlebutt' ? ' [EXPERIMENTAL]' : '';
-            return `<option value="${s.id}" ${s.id === _selectedStrategyId ? 'selected' : ''}>${escapeHtml(s.name)}${isExp}</option>`;
-        }).join('');
+        const coreStrategies = data.filter(
+            s => (s.category || (s.id === 'freeform' ? 'custom' : 'core')) === 'core'
+        );
+        const customStrategy = data.find(
+            s => s.category === 'custom' || s.id === 'freeform'
+        );
+
+        if (coreStrategies.length > 0 && !coreStrategies.some(s => s.id === _selectedStrategyId)) {
+            _selectedStrategyId = coreStrategies[0].id;
+        }
+
+        const select = document.getElementById('discovery-strategy-select');
+        if (select) {
+            select.innerHTML = coreStrategies.map(s => {
+                return `<option value="${s.id}" ${s.id === _selectedStrategyId ? 'selected' : ''}>${escapeHtml(s.name)}</option>`;
+            }).join('');
+        }
+
+        if (customStrategy) {
+            const labelEl = document.getElementById('custom-research-label');
+            const descEl = document.getElementById('custom-research-desc');
+            if (labelEl) {
+                labelEl.innerHTML = `${escapeHtml(customStrategy.input_label)} <span style="color: var(--color-danger);">*</span>`;
+            }
+            if (descEl && customStrategy.description) {
+                descEl.textContent = customStrategy.description;
+            }
+        }
 
         renderDiscoveryInput();
     } catch (err) {
@@ -232,11 +286,11 @@ function renderDiscoveryInput() {
         return;
     }
 
-    const placeholder = strategy.id === 'government_policy' 
-        ? 'e.g. India Government raises PLI scheme budget for electric components by 50% or anti-dumping duty on imports of chemicals.'
-        : strategy.id === 'freeform'
-        ? 'e.g. What companies are positioned to supply components for the upgradation of Indian railways?'
-        : 'Enter keywords, sector, or brand...';
+    const placeholder = strategy.id === 'policy_import_substitution'
+        ? 'e.g. PLI electronics budget expansion, solar wafer domestic manufacturing, or chemical anti-dumping duty.'
+        : strategy.id === 'forensic_anomalies'
+        ? 'e.g. Capex cycle peak, interest-free customer advances, or neglected promoter creeping acquisition.'
+        : 'Enter keywords, sector, or focus area...';
 
     const inputHtml = strategy.input_type === 'textarea'
         ? `<textarea id="discovery-context-input" class="textarea-input" rows="4" placeholder="${placeholder}" style="width:100%; border-radius: var(--border-radius); border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); padding: 12px; color: var(--text-primary); font-family: inherit; font-size:14px; resize:vertical;"></textarea>`
@@ -281,11 +335,11 @@ async function stopDiscovery() {
 }
 
 /**
- * Starts the agentic discovery run
+ * Starts a core discovery strategy run
  */
 async function startDiscovery() {
     if (_discoveryRunning) return;
-    
+
     const strategy = _discoveryStrategies.find(s => s.id === _selectedStrategyId);
     const inputEl = document.getElementById('discovery-context-input');
     const contextVal = inputEl ? inputEl.value.trim() : '';
@@ -296,8 +350,38 @@ async function startDiscovery() {
         return;
     }
 
+    await executeDiscoveryRun(_selectedStrategyId, contextVal, 'core');
+}
+
+/**
+ * Starts a Custom Research (freeform) discovery run
+ */
+async function startCustomResearch() {
+    if (_discoveryRunning) return;
+
+    const inputEl = document.getElementById('custom-research-input');
+    const contextVal = inputEl ? inputEl.value.trim() : '';
+
+    if (!contextVal) {
+        showToast('Please enter a specific query, sector, or investment hypothesis for Custom Research.', 'warning');
+        if (inputEl) inputEl.focus();
+        return;
+    }
+
+    await executeDiscoveryRun('freeform', contextVal, 'custom');
+}
+
+/**
+ * Shared agentic discovery runner for Core Strategies and Custom Research
+ */
+async function executeDiscoveryRun(strategyId, contextVal, source) {
+    if (_discoveryRunning) return;
+
+    const strategy = _discoveryStrategies.find(s => s.id === strategyId);
     const runBtn = document.getElementById('discovery-run-btn');
     const stopBtn = document.getElementById('discovery-stop-btn');
+    const customRunBtn = document.getElementById('custom-research-run-btn');
+    const customStopBtn = document.getElementById('custom-research-stop-btn');
     const cardStopBtn = document.getElementById('discovery-card-stop-btn');
     const logCard = document.getElementById('discovery-progress-card');
     const logArea = document.getElementById('discovery-search-log');
@@ -306,11 +390,14 @@ async function startDiscovery() {
     _discoveryRunning = true;
     _discoveryAbortController = new AbortController();
 
-    if (runBtn) {
-        runBtn.style.display = 'none';
-    }
-    if (stopBtn) {
-        stopBtn.style.display = 'inline-flex';
+    if (source === 'custom') {
+        if (runBtn) runBtn.disabled = true;
+        if (customRunBtn) customRunBtn.style.display = 'none';
+        if (customStopBtn) customStopBtn.style.display = 'inline-flex';
+    } else {
+        if (runBtn) runBtn.style.display = 'none';
+        if (stopBtn) stopBtn.style.display = 'inline-flex';
+        if (customRunBtn) customRunBtn.disabled = true;
     }
     if (cardStopBtn) {
         cardStopBtn.style.display = 'inline-flex';
@@ -321,6 +408,7 @@ async function startDiscovery() {
         if (titleEl) {
             titleEl.innerHTML = '<span class="spinner" style="width: 16px; height: 16px; border-width: 2px;"></span> AI Agent is researching...';
         }
+        logCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
     
     // Reset phase step styles
@@ -334,14 +422,14 @@ async function startDiscovery() {
         }
     }
     
-    if (logArea) logArea.innerHTML = `<div class="log-line" style="color: var(--accent-cyan);">[System] Initializing Gemini Agent with ${escapeHtml(strategy ? strategy.name : '')} strategy...</div>`;
+    if (logArea) logArea.innerHTML = `<div class="log-line" style="color: var(--accent-cyan);">[System] Initializing Gemini Agent with ${escapeHtml(strategy ? strategy.name : strategyId)} strategy...</div>`;
     if (resultsArea) resultsArea.innerHTML = '';
 
     try {
         const response = await fetch('/api/discovery/run', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ strategy_id: _selectedStrategyId, context: contextVal }),
+            body: JSON.stringify({ strategy_id: strategyId, context: contextVal }),
             signal: _discoveryAbortController.signal
         });
 
@@ -376,7 +464,7 @@ async function startDiscovery() {
                         showToast('Discovery completed successfully!', 'success');
                         renderDiscoveryResult(event.data);
                         await loadDiscoveryHistory();
-    await loadSynthesisHistory(); // reload history
+                        await loadSynthesisHistory();
                     } else if (event.type === 'cancelled') {
                         showToast('Discovery process stopped.', 'info');
                         appendSearchLog("🛑 Process cancelled by user.");
@@ -398,13 +486,14 @@ async function startDiscovery() {
             }
         } else {
             showToast('Discovery run failed: ' + err.message, 'error');
+            const retryAction = source === 'custom' ? 'startCustomResearch()' : 'startDiscovery()';
             if (resultsArea) {
                 resultsArea.innerHTML = `
                     <div class="card" style="text-align: center; padding: 40px; border: 1px solid rgba(239, 68, 68, 0.2);">
                         <span style="font-size: 40px; display: block; margin-bottom: 12px;">⚠️</span>
                         <h3 style="color: var(--color-danger); margin-top:0; margin-bottom: 8px;">Discovery Failed</h3>
                         <p class="text-muted" style="margin-bottom: 16px;">${escapeHtml(err.message)}</p>
-                        <button class="btn btn-secondary" onclick="startDiscovery()">Try Again</button>
+                        <button class="btn btn-secondary" onclick="${retryAction}">Try Again</button>
                     </div>
                 `;
             }
@@ -419,6 +508,13 @@ async function startDiscovery() {
         }
         if (stopBtn) {
             stopBtn.style.display = 'none';
+        }
+        if (customRunBtn) {
+            customRunBtn.style.display = 'inline-flex';
+            customRunBtn.disabled = false;
+        }
+        if (customStopBtn) {
+            customStopBtn.style.display = 'none';
         }
         if (cardStopBtn) {
             cardStopBtn.style.display = 'none';
@@ -568,14 +664,22 @@ async function loadSavedDiscovery(id) {
         const data = await apiFetch(`/discovery/saved/${id}`);
         _activeDiscovery = data;
         
-        // Match selection UI
-        const select = document.getElementById('discovery-strategy-select');
-        if (select) {
-            select.value = data.strategy_id;
-            _selectedStrategyId = data.strategy_id;
-            renderDiscoveryInput();
-            const inputEl = document.getElementById('discovery-context-input');
-            if (inputEl) inputEl.value = data.user_params?.context || '';
+        // Match selection UI (preserving compatibility for freeform & legacy saved runs)
+        if (data.strategy_id === 'freeform') {
+            const customInput = document.getElementById('custom-research-input');
+            if (customInput) customInput.value = data.user_params?.context || '';
+        } else {
+            const select = document.getElementById('discovery-strategy-select');
+            const isActiveCore = _discoveryStrategies.some(
+                s => s.id === data.strategy_id && (s.category || 'core') === 'core'
+            );
+            if (select && isActiveCore) {
+                select.value = data.strategy_id;
+                _selectedStrategyId = data.strategy_id;
+                renderDiscoveryInput();
+                const inputEl = document.getElementById('discovery-context-input');
+                if (inputEl) inputEl.value = data.user_params?.context || '';
+            }
         }
         
         // Hide running logs card if visible
@@ -992,13 +1096,13 @@ function updateSynthesisSelectionCount() {
     const selectedCount = checked.length;
 
     if (countEl) {
-        countEl.textContent = `Selected: ${selectedCount}/${total} (Min 7 required)`;
-        countEl.style.color = selectedCount >= 7 ? '#00d4ff' : '#ff7b72';
+        countEl.textContent = `Selected: ${selectedCount}/${total} (Min 5 required)`;
+        countEl.style.color = selectedCount >= 5 ? '#00d4ff' : '#ff7b72';
     }
 
     if (runBtn) {
-        runBtn.disabled = selectedCount < 7 || _synthesisRunning;
-        runBtn.style.opacity = (selectedCount >= 7 && !_synthesisRunning) ? '1' : '0.5';
+        runBtn.disabled = selectedCount < 5 || _synthesisRunning;
+        runBtn.style.opacity = (selectedCount >= 5 && !_synthesisRunning) ? '1' : '0.5';
     }
 }
 
@@ -1014,8 +1118,8 @@ async function startSynthesis() {
     const checkboxes = document.querySelectorAll('.synthesis-disc-checkbox');
     const selectedIds = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
 
-    if (selectedIds.length < 7) {
-        showToast('Please select at least 7 strategy results for Master Synthesis.', 'warning');
+    if (selectedIds.length < 5) {
+        showToast('Please select at least 5 strategy results for Master Synthesis.', 'warning');
         return;
     }
 

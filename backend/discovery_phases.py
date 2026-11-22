@@ -277,18 +277,16 @@ OUTPUT (JSON):
 """
 
 STRATEGY_COVERAGE_CHECKLISTS = {
-    "government_policy": """
-    - [ ] BREADTH GATE (Phase 1): At least 4 distinct sub-sectors, value chain layers, or policy impact areas were explored and named
-    - [ ] Policy mechanism details (what is mandated/funded/incentivized)
-    - [ ] Total Addressable Market (TAM) with specific numbers
-    - [ ] Direct beneficiary companies (with names)
-    - [ ] Supply chain mapping (raw material → component → equipment → service providers)
-    - [ ] Second/third-order beneficiaries
-    - [ ] Funding mechanism (escrow vs annual budget)
-    - [ ] Timeline and implementation status
-    - [ ] Competitive landscape among beneficiaries
-    - [ ] Failure modes and policy reversal risks
-    - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
+    "policy_import_substitution": """
+    - [ ] BREADTH GATE (Phase 1): At least 4 distinct sub-sectors, policy mechanisms, or import-substitution categories were explored and named (covering both sovereign capex/PLI mandates and domestic import-replacement angles where relevant)
+    - [ ] Policy mechanism or import-bill size quantified with specific numbers and current domestic manufacturing share
+    - [ ] Total Addressable Market (TAM), government targets, and implementation/capacity expansion timelines
+    - [ ] Funding mechanism quality (escrow vs annual budget / PLI disbursement lag) and tariff/anti-dumping/BIS/ALMM protection permanence
+    - [ ] Direct beneficiaries and domestic manufacturer companies (with names) plus backward supply chain mapping (raw material → component → equipment → service providers)
+    - [ ] Cost competitiveness without subsidies and quality/certification parity with imports
+    - [ ] Cash-flow conversion check on order-book claims (CFO/PAT > 0.8x to filter B2G receivable traps)
+    - [ ] Competitive landscape among domestic players and failure modes / policy reversal risks
+    - [ ] At least one candidate identified where preconditions exist (capacity/certification) but confirming commercial orders have not yet arrived (leading indicator, not lagging)
     """,
     "supply_chain": """
     - [ ] BREADTH GATE (Phase 1): At least 4 distinct sub-sectors, value chain layers, or supplier categories were explored and named
@@ -315,18 +313,14 @@ STRATEGY_COVERAGE_CHECKLISTS = {
     - [ ] Customer concentration
     - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
     """,
-    "import_substitution": """
-    - [ ] BREADTH GATE (Phase 1): At least 4 distinct import categories or sub-sectors were explored and named
-    - [ ] Import bill size with specific numbers
-    - [ ] Current domestic manufacturing percentage
-    - [ ] Government targets for domestic production
-    - [ ] Tariff/anti-dumping protection details
-    - [ ] Domestic manufacturer companies (with names)
-    - [ ] Cost competitiveness without subsidies
-    - [ ] Quality parity with imports
-    - [ ] PLI scheme details and approval status
-    - [ ] Capacity expansion timelines
-    - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
+    "forensic_anomalies": """
+    - [ ] BREADTH GATE (Phase 1): At least 4 distinct earnings-suppression, balance-sheet anomaly, or neglected insider-buying setups were explored and named
+    - [ ] Cash-flow vs reported-PAT divergence verified (CFO > PAT / CFO/PAT > 0.8x) with specific suppressing items (depreciation, R&D expensing, capex cycle peak timeline)
+    - [ ] Structural balance-sheet or operational anomaly reconciled with specific filing data (e.g., interest-free customer advances, net cash > 50% mcap, misunderstood margin divergence)
+    - [ ] Insider/promoter behavior audited where relevant (open-market creeping acquisition >1%, premium buying, or pledge reduction toward <5% in low-coverage stocks — not ESOP/warrant noise)
+    - [ ] Mandatory safety checks applied: promoter pledge >20% disqualified, working-capital manipulation or fraud red flags ruled out
+    - [ ] Underlying business quality, normalized margin projection, and clear inflection catalyst defined
+    - [ ] At least one candidate identified where preconditions exist but the anomaly or capex inflection is not yet recognized by mainstream screeners (leading indicator, not lagging)
     """,
     "capital_cycle": """
     - [ ] BREADTH GATE (Phase 1): At least 4 distinct distressed industries or cyclical sub-sectors were explored and named
@@ -340,17 +334,6 @@ STRATEGY_COVERAGE_CHECKLISTS = {
     - [ ] Duration risk (how long can survivor survive)
     - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
     """,
-    "hidden_earnings": """
-    - [ ] BREADTH GATE (Phase 1): At least 4 distinct earnings suppression mechanisms or company types were explored and named
-    - [ ] Companies with CFO > PAT divergence identified
-    - [ ] Specific suppressing line items (depreciation, R&D expensing, write-offs)
-    - [ ] Capex cycle timeline (when does it peak?)
-    - [ ] Normalized margin projection
-    - [ ] Cash flow quality verification
-    - [ ] Comparison with competitor accounting policies
-    - [ ] Working capital manipulation check
-    - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
-    """,
     "corporate_restructuring": """
     - [ ] BREADTH GATE (Phase 1): At least 4 distinct restructuring types or demerger categories were explored and named
     - [ ] Recent demergers/spinoffs/NCLT exits identified
@@ -360,39 +343,6 @@ STRATEGY_COVERAGE_CHECKLISTS = {
     - [ ] Sum-of-parts valuation
     - [ ] Analyst coverage vacuum confirmation
     - [ ] Regulatory/legal risks to the restructuring
-    - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
-    """,
-    "scuttlebutt": """
-    - [ ] BREADTH GATE (Phase 1): At least 4 distinct consumer trends or product categories were explored and named
-    - [ ] Trending product/brand identification with evidence
-    - [ ] Manufacturer/parent company traced (listed status confirmed)
-    - [ ] Product-market fit indicators (repeat purchase, word-of-mouth, professional recommendation)
-    - [ ] Competitive moat assessment
-    - [ ] Distribution channel analysis
-    - [ ] Scalability of production
-    - [ ] Fad vs trend distinction
-    - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
-    """,
-    "smart_money": """
-    - [ ] BREADTH GATE (Phase 1): At least 4 distinct promoter buying clusters or insider accumulation sectors were explored and named
-    - [ ] Promoter buying events identified (with dates, volumes)
-    - [ ] Purchase price vs market price analysis (premium buying?)
-    - [ ] Consistency check (2+ quarters of buying)
-    - [ ] Catalyst investigation (why are insiders buying?)
-    - [ ] Analyst coverage check (zero coverage = higher signal)
-    - [ ] Institutional holding levels
-    - [ ] Related-party transaction screening
-    - [ ] Promoter track record (past buying → stock performance)
-    - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
-    """,
-    "anomaly_discovery": """
-    - [ ] BREADTH GATE (Phase 1): At least 4 distinct financial/operational anomaly patterns were explored and named
-    - [ ] Anomaly identified with specific data points
-    - [ ] Contradiction reconciled (why does this exist?)
-    - [ ] Underlying business quality assessed
-    - [ ] Inflection point/catalyst defined
-    - [ ] Fraud/manipulation ruled out or flagged
-    - [ ] Comparable anomalies in other companies
     - [ ] At least one candidate identified where preconditions exist but confirming event has not yet occurred (leading indicator, not lagging)
     """,
     "freeform": """
