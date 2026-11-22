@@ -1,0 +1,113 @@
+{
+  "prompt_version": "business_prompt_v2",
+  "model_name": "gemini-3.1-flash-lite",
+  "generation_config": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "top_k": 20
+  },
+  "timestamp": "2026-06-16T11:06:31.060064",
+  "generated_at": "2026-06-16T11:06:31.060116",
+  "documents_used": [
+    "1.-AnnualReport202514082025.pdf"
+  ],
+  "ticker": "JAYNECOIND",
+  "mode": "business",
+  "report": {
+    "company_overview": "Jayaswal Neco Industries Limited (JNIL) is a fully integrated manufacturer of alloy steel, sponge iron, pellet, and pig iron, supported by captive mining and power generation. It also manufactures iron and steel castings for the automotive and construction sectors. The company operates with a focus on operational excellence, product quality, and customer satisfaction, serving a broad mix of industries including automotive, engineering, railways, infrastructure, oil and gas, power, defence, and agriculture.",
+    "revenue_segments": [
+      {
+        "segment_name": "Billets/ Rolled Products/ Pellet/ Pig Iron & Skull/ Sponge Iron",
+        "revenue_share": "90.68%"
+      },
+      {
+        "segment_name": "Iron & Steel Castings",
+        "revenue_share": "9.32%"
+      }
+    ],
+    "products_services": [
+      "Alloy steel bars",
+      "Wire rods",
+      "Bright bars",
+      "Sponge iron",
+      "Pellets",
+      "Pig iron",
+      "Precision castings",
+      "Hubless pipes",
+      "Manhole covers"
+    ],
+    "mgmt_priorities": [
+      "Employ integrated operations",
+      "Emphasis on superior quality",
+      "Sustained reduction in financial leverage",
+      "Focus on sustainability"
+    ],
+    "competitive_advantages": [
+      "Self-reliance in raw material (100% iron ore requirement met through captive mines)",
+      "Advanced manufacturing setup with energy-efficient blast furnace and captive power plants",
+      "Comprehensive product offerings catering to a wide spectrum of end-use industries",
+      "Proximity to demand hubs and multi-modal logistics network",
+      "Five decades of experience with seasoned leadership"
+    ],
+    "growth_drivers": [
+      "Infrastructure development (roads, bridges, housing)",
+      "Sustainability-driven demand (green infrastructure, electric vehicles)",
+      "Increasing preference for alloy and flat steel in auto and energy sectors",
+      "Digitalisation and Industry 4.0 adoption",
+      "Strategic consolidation and partnerships"
+    ],
+    "recent_developments": [
+      "Completed Category One capital repairs and upgradation of the Blast Furnace in FY 2024-25",
+      "Significant reduction in secured net debt outstanding by 16% in FY 2024-25",
+      "Revamped company website to improve stakeholder experience",
+      "Proposed brownfield pellet plant with 1.5 MnTPA capacity at Raipur",
+      "Received crucial Ammunition Manufacturing Licence"
+    ],
+    "citations": [
+      {
+        "page": 45,
+        "section": "Company Overview",
+        "document": "Annual Report 2024-25",
+        "quote": "Jayaswal Neco Industries Limited (JNIL) is a fully integrated manufacturer of alloy steel, sponge iron, pellet and pig iron, supported by captive mining, power generation and manufacturer of iron and steel castings for Automotive and Construction Sectors.",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 71,
+        "section": "II. Products/Services",
+        "document": "Annual Report 2024-25",
+        "quote": "Billets/ Rolled Products/ Pellet/ Pig Iron & Skull/ Sponge Iron: 90.68%; Iron & Steel Castings: 9.32%",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 29,
+        "section": "Strategic Priorities",
+        "document": "Annual Report 2024-25",
+        "quote": "Employ integrated operations; Emphasis on superior quality; Sustained reduction in financial leverage; Focus on sustainability",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 19,
+        "section": "Competitive Advantages",
+        "document": "Annual Report 2024-25",
+        "quote": "100% of the iron ore requirement is met through captive mines, supported by a beneficiation plant. These mines are among the lowest-cost producers in the industry, providing both quality and cost advantages.",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 27,
+        "section": "Key Trends & Growth Drivers",
+        "document": "Annual Report 2024-25",
+        "quote": "Urbanisation & Infrastructure Push; Sustainability Driven Demand; Focus on Alloy and Flat Steel; Digitalisation & Industry 4.0; Strategic Consolidation & Partnerships",
+        "citation_confidence": "high"
+      },
+      {
+        "page": 8,
+        "section": "FY 2024-25 Highlights",
+        "document": "Annual Report 2024-25",
+        "quote": "Significant reduction in secured net debt outstanding by 16%; Revamped our Company's website to improve stakeholder experience and accessibility; Augmented blast furnace capacity with latest technology",
+        "citation_confidence": "high"
+      }
+    ],
+    "confidence": "high",
+    "disclaimer": "This analysis is based solely on the provided documents and does not constitute financial advice."
+  }
+}

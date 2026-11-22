@@ -1,0 +1,527 @@
+{
+  "id": "dba97c72-9f3c-4815-81b5-2d7bd5e18333",
+  "strategy_id": "anomaly_discovery",
+  "strategy_name": "Anomaly Discovery",
+  "user_params": {
+    "context": ""
+  },
+  "model_name": "gemini-3.5-flash-lite",
+  "created_at": "2026-07-24T06:38:25.920245",
+  "result": {
+    "analysis_summary": "This synthesis identifies a critical market mispricing in the Indian precision engineering and capital goods sectors. Standard financial screening tools systematically penalize companies with high working capital days and elevated current liabilities, misinterpreting these metrics as operational inefficiency or liquidity stress. Deeper forensic analysis of statutory filings reveals that for high-barrier businesses like Azad Engineering and Titagarh Rail Systems, these 'anomalies' are actually structural advantages. In Azad's case, elevated inventory represents contractually mandated 'qualification inventory' that acts as an unassailable entry barrier against competitors. In Titagarh's case, the current liability spike is driven by interest-free customer advances from sovereign entities, providing non-dilutive, interest-free working capital. As these companies transition from pre-production/prototype phases to serialized mass production, these balance sheet anomalies will resolve, unlocking massive operating cash flow leverage that is not yet priced into consensus estimates.",
+    "candidates": [
+      {
+        "company_name": "Azad Engineering Limited",
+        "ticker": "AZAD",
+        "connection_type": "Precision Aerospace & Defense Forgings / Machining Ancillary",
+        "confidence": "high",
+        "why_now": "(a) What changed: The company is transitioning from multi-year pre-production qualification gates to high-margin serialized mass production under long-term Master Supply Agreements (MSAs) with global OEMs. (b) Estimated catalyst window: Medium-term (6-18 months) as newly commissioned capacity begins serial delivery, leading to rapid working capital compression. (c) Confirming milestone: A sharp positive swing in Operating Cash Flow (CFO) and compression of inventory days in the upcoming semi-annual/annual balance sheet disclosures.",
+        "reasoning": "TYPE A (WRONG CONSENSUS): The market currently assumes Azad's high working capital days (~380+ days) and negative operating cash flows represent operational inefficiency and inventory clogging, but evidence shows this is actually mandatory 'qualification inventory' required by global OEMs (GE, Siemens, Mitsubishi) that acts as an unassailable economic moat. [OBSERVED FACTS] Azad's working capital days stood at 384 days in FY25, with inventory days ranging from 155 to 229 days. Operating cash flow was negative at -₹6.9 Crores in FY24 but turned positive to ₹53.7 Crores in FY25. Promoter holding is stable at 55.84% with zero shares pledged. [STRONG INFERENCE] The high inventory is not slow-moving stock but 'qualification inventory' mandated under MSAs with global OEMs to guarantee on-time delivery (OTD) during multi-year pre-production qualification gates. This creates a massive entry barrier because competitors cannot replicate this without years of testing and heavy capital lockup. [HYPOTHESIS] As these qualification phases conclude and serialized mass production ramps up, working capital days will structurally compress, unlocking massive operating cash leverage and driving a rapid downward re-rating of the forward P/E multiple.",
+        "self_critique": "The hypothesis could be wrong if global OEMs delay the transition from qualification to serialized production, or if there is a structural shift in OEM procurement policies away from sole-source MSAs. Additionally, if raw material prices (titanium, superalloys) spike beyond the Price Variation Clause (PVC) limits, margins could compress despite volume growth.",
+        "disproving_evidence": "A persistent rise in inventory days beyond 450 days accompanied by a return to negative Operating Cash Flow (CFO) in FY26/FY27, indicating that the 'qualification inventory' is actually obsolete or slow-moving stock rather than a temporary pre-production buffer.",
+        "risks": [
+          "High customer concentration with top global OEMs (GE, Siemens, Honeywell)",
+          "Extended working capital cycle dragging near-term liquidity",
+          "Raw material price volatility exceeding contract escalation clauses"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: The assumption that the elevated inventory is indeed contractually mandated 'qualification inventory' that will structurally liquidate/monetize upon transition to serialized production.",
+          "Verify the exact timeline of qualification gates for major OEM contracts.",
+          "Monitor the quarterly trend of unbilled contract assets vs. actual billed receivables."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.nseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: N/A",
+          "Phase 2: 70%",
+          "Phase 3: 82%",
+          "Phase 4: 85%",
+          "Phase 5: High"
+        ]
+      },
+      {
+        "company_name": "Titagarh Rail Systems Limited",
+        "ticker": "TITAGARH",
+        "connection_type": "Precision Railway Sub-Systems & Rolling Stock Manufacturer",
+        "confidence": "medium",
+        "why_now": "(a) What changed: Execution of the massive ₹24,526 Crore order book (including Vande Bharat and metro coaches) is transitioning from prototype/design phase to active manufacturing. (b) Estimated catalyst window: Near-term (0-6 months) as the railway wheelset JV with Ramkrishna Forgings commences operations, substituting expensive imports. (c) Confirming milestone: Quarterly revenue execution crossing ₹1,000 Crores with stable or expanding EBITDA margins.",
+        "reasoning": "TYPE A (WRONG CONSENSUS): The market currently assumes Titagarh's rising current liabilities and large contract assets represent standard short-term trade debt and delayed cash realization, but evidence shows they are interest-free customer advances and secure milestone-based contract assets backed by sovereign counter-parties. [OBSERVED FACTS] Standalone unbilled revenue/contract assets exceed ₹200 Crores, and current liabilities scaled to ₹1,187 Crores in FY25. Standalone debt is minimal with borrowings down to ~₹25 Crores. Standalone and JV order book stands at ₹24,526 Crores. [STRONG INFERENCE] The spike in current liabilities is driven by interest-free customer advances from Indian Railways and metro authorities, which act as free working capital funding. The contract assets have a historical credit loss rate of near 0.00% to 0.02% because they are backed by sovereign/quasi-sovereign counter-parties. [HYPOTHESIS] Once prototype approvals and milestone certifications are signed off by railway authorities, these contract assets will rapidly convert to cash, allowing Titagarh to execute its massive order book with virtually zero interest drag, outperforming peers who rely on expensive working capital debt.",
+        "self_critique": "The hypothesis could be wrong if bureaucratic delays in PSU milestone inspections and prototype approvals extend indefinitely, trapping liquidity in unbilled contract assets and forcing the company to draw down expensive cash credit lines to pay GST and operational overheads.",
+        "disproving_evidence": "A significant drawdown of working capital demand loans (WCDL) or cash credit limits exceeding ₹500 Crores, indicating that trapped liquidity in unbilled contract assets has forced the company to take on expensive debt despite high customer advances.",
+        "risks": [
+          "High dependence on public sector procurement and Indian Railways capital outlay",
+          "Execution delays in complex metro and Vande Bharat coach manufacturing",
+          "Margin pressure from raw material price escalation if PVC clauses have lag effects"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: The assumption that unbilled contract assets will convert to billed receivables within a reasonable timeframe (under 180 days) without triggering significant working capital debt drawdowns.",
+          "Verify the progress and commercial production timeline of the railway wheelset JV.",
+          "Monitor the ratio of contract assets to total revenues on a semi-annual basis."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.nseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: N/A",
+          "Phase 2: 60%",
+          "Phase 3: 72%",
+          "Phase 4: 78%",
+          "Phase 5: Medium-High"
+        ]
+      }
+    ],
+    "limitations": [
+      "Analysis is based on historical statutory filings and public disclosures up to the latest reporting periods.",
+      "No direct access to private contract terms or OEM master service agreements was available.",
+      "Macroeconomic factors such as government capex slowdowns or global supply chain disruptions could alter execution timelines."
+    ],
+    "searches_performed": [
+      {
+        "query": "promoter buying shares at premium to market price India NSE BSE filings",
+        "findings": "[1] When every investor is selling in the Stockmarket, promoters ...\nURL: https://www.instagram.com/reel/DGkpausySFt?hl=en\nContent: So, promoter buying is definitely a sign of confidence and shows value in these stocks. To get the full list, go to NSE India insider trading,\n\n[2] Corporate Filings Regulation 27 (Promoter) - Equity, SME - NSE India\nURL: https://www.nseindia.com/companies-listing/corporate-filings-regulation-29-promoters\nContent: + For Transaction type “Purchase / SIP” and Category type “Liquid” cut off time is 13:00 and for Category Type “Non-Liquid” cut off time is 14:30\n  + For Transaction type ”Redemption & SWITCH” cut off time is 15:00\n Instrument type in Equity includes fully paid equity shares/ETFs, units of REITs/INVITs and partly paid equity shares\n Average Trade Value = Total Traded Value / Total Number of Trades [...] Financial Results\n Financial Results Comparision\n + Further Issues XBRL Fillings\n  + American Depository Receipt\n  + Global Depository Receipt\n  ...",
+        "sources": [
+          "https://www.instagram.com/reel/DGkpausySFt?hl=en",
+          "https://www.nseindia.com/companies-listing/corporate-filings-regulation-29-promoters",
+          "https://economictimes.indiatimes.com/stocks/marketstats-technicals/bought-by-promoter",
+          "https://www.screener.in/screens/390677/promoter-buying-shares",
+          "https://trendlyne.com/fundamentals/stock-screener/317525/promoters-buying-stake"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "customer advances small cap companies India balance sheet anomaly",
+        "findings": "[1] Accruals and cash flows anomalies: Evidence from the Indian stock market\nURL: https://www.researchgate.net/publication/279700277_Accruals_and_cash_flows_anomalies_Evidence_from_the_Indian_stock_market\nContent: The cash flow anomaly which is not absorbed by CAPM is explained by the size and value factors of the Fama French model. Hence accruals and cash flow anomalies\n\n[2] Sloan’s Accrual Anomaly: The 1996 Accounting Review Discovery That High-Accrual Stocks Underperform — And Why the Cash-Backed Earnings Test Is the Single Most Powerful Forensic Filter for Indian Long-Term Investors | Manish Goel Stocks\nURL: https://www.manishgoelstocks.com/sloan-accrual-anomaly-cash-backed-earnings-test-forensic-filter\nContent: While retail India chases the next 0DTE Nifty option, a quieter, slower, far more profitable discipline is sitting unused in every public company’s annual report: the ability to verify whether the “profit” reported on the income statement is actually backed by hard cash — o...",
+        "sources": [
+          "https://www.researchgate.net/publication/279700277_Accruals_and_cash_flows_anomalies_Evidence_from_the_Indian_stock_market",
+          "https://www.manishgoelstocks.com/sloan-accrual-anomaly-cash-backed-earnings-test-forensic-filter",
+          "https://www.pwc.in/assets/pdfs/anomaly-detection-platform.pdf",
+          "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2025.1628652/full",
+          "https://journals.sagepub.com/doi/10.1177/23197145211016894"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "net cash greater than market cap Indian micro cap small cap stocks",
+        "findings": "[1] Investment and cash more than market cap\nURL: https://www.screener.in/screens/537829/investment-and-cash-more-than-market-cap\nContent: # Investment and cash more than market cap. | Union Bank (I) | 170.75 | 6.31 | 130343.79 | 2.87 | 5641.52 | 27.41 | 27427.10 | 1.21 | 6.30 | 346737.69 | 43255.93 |. | Bank of Baroda | 244.90 | 6.36 | 126646.71 | 3.42 | 5871.79 | 7.03 | 34513.73 | 5.16 | 5.63 | 435777.60 | 60184.67 |. | Bank of India | 143.15 | 6.24 | 65171.44 | 3.20 | 3088.90 | 18.67 | 19573.37 | 5.92 | 5.93 | 279083.73 | 45919.70 |. | Central Bank | 31.27 | 6.23 | 28303.75 | 3.81 | 1324.61 | 8.00 | 9725.90 | 12.79 | 5.64 | 154862.65 | 18080.94 |. | JSW Holdings | 10926.75 | 81.62 | 12128.69 | 0.00 | 13.54 | 37.24 | 33.14 | 12.49 | 0.59 | 35849.47 | 2.59 |. | DCB Bank | 189.00 | 8.34 | 6087.30 | 0.75 | 205.65 | 16.14 | 1907.27 | 9.49 | 7.40 | 20378.00 | 3079.25 |.\n\n[2] Micro Cap Stocks - List of Micro Cap Companies, MCap 500-1000 Cr | Dhan\nURL: https://dhan.co/stocks/market/micro-ca...",
+        "sources": [
+          "https://www.screener.in/screens/537829/investment-and-cash-more-than-market-cap",
+          "https://dhan.co/stocks/market/micro-cap-stocks",
+          "https://www.bajajbroking.in/blog/micro-cap-stocks",
+          "https://www.smallcase.com/blog/what-is-a-micro-cap-stock-which-are-the-best-micro-cap-stocks-in-india-in-2023",
+          "https://www.tickertape.in/stocks/collections/small-cap-stocks"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "capitalized development costs vs expensed R&D Indian companies balance sheet anomaly",
+        "findings": "[1] Research and Development Costs: Treatment and Challenges — Vintti\nURL: https://www.vintti.com/blog/research-and-development-costs-treatment-and-challenges\nContent: Under the new IFRS accounting standards, research and development (R&D) costs must now be capitalized and amortized rather than expensed. This means that R&D expenditures will be recorded as assets on the balance sheet and allocated over their useful lives via amortization expenses.\n\nThere are a few key reasons behind this change: [...] Under IFRS standards, R&D expenses are categorized into a research phase and a development phase. Research costs are expensed as incurred, while development costs may be capitalized as intangible assets on the balance sheet under certain conditions.\n\n### The Strategic Importance of R&D Expense Management [...] In summary, while research costs are expensed, some development costs may be capitalized if specific accounting rules are satisfied. Understanding the distinction between the two is...",
+        "sources": [
+          "https://www.vintti.com/blog/research-and-development-costs-treatment-and-challenges",
+          "https://business.columbia.edu/sites/default/files-efs/imce-uploads/ADP/2023-2024/Baber%20Kang%20Lee%20Park_100123.pdf",
+          "https://corporatefinanceinstitute.com/resources/accounting/capitalizing-rd-expenses",
+          "http://archives.cpajournal.com/2003/0903/dept/d095003.htm",
+          "https://akfpartners.com/growth-blog/capitalizing-rd"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "demerger special situations Indian stock market hidden value filings",
+        "findings": "[1] Unlock Hidden Investment Opportunities: Special ...\nURL: https://www.soic.in/blog-page/unlock-hidden-investment-opportunities-special-situations-explained\nContent: Special situations in the Indian market, such as mergers, demergers, buybacks, and stock splits, can offer unique opportunities for investors.\n\n[2] Latest Special Situations topics - ValuePickr Forum\nURL: https://forum.valuepickr.com/c/stock-opportunities/special-situations/37\nContent: Stock Opportunities Special Situations ; Zuari Industries - HoldCo; Value Unlocking Bet. 5 ; NMDC Steel ( NSL ) - A Unique Demerger Opportunity. 47 ; Nava Bharat\n\n[3] Inox Green - First Principles Investing\nURL: https://www.firstprinciplesinvesting.in/insights/inox-green-another-special-situation\nContent: Most demergers spin out the hidden gem. While the demerger story has been playing out, the stock has largely been in a downtrend, with current\n\n[4] Upcoming Demergers to Watch in the Indian Stock Market ...\nURL: https://www.instagram.com/...",
+        "sources": [
+          "https://www.soic.in/blog-page/unlock-hidden-investment-opportunities-special-situations-explained",
+          "https://forum.valuepickr.com/c/stock-opportunities/special-situations/37",
+          "https://www.firstprinciplesinvesting.in/insights/inox-green-another-special-situation",
+          "https://www.instagram.com/p/Daec3gRAdp9",
+          "https://ahlawataandassociates.medium.com/strategic-demergers-unlocking-value-in-conglomerates-through-corporate-restructuring-dbaa7013d10a"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "contingent liabilities asset recovery Indian companies legal arbitration filings",
+        "findings": "[1] contingent | Wex | US Law | LII / Legal Information Institute\nURL: https://www.law.cornell.edu/wex/contingent\nContent: Please help us improve our site! Cornell University insignia  Cornell Law School Search Cornell. # contingent. Contingent means that an event may or may not occur in the future, depending on the fulfillment of some condition that is uncertain. This term is often used in contracts where the event will not take effect until the specified condition occurs. The opposite term is vested, which means that an event is definite and unconditional. * Contingent ownership refers to ownership that the owner can only enjoy when a certain condition occurs. * Contingent legacy is an inheritance that can only be inherited when a certain condition is fulfilled. * A contingent fee refers to a payment received by an attorney only after successful representation of a client as a condition, such as achieving a desired result. Last reviewed in July of 2022 by the [Wex Definitions Team].\n...",
+        "sources": [
+          "https://www.law.cornell.edu/wex/contingent",
+          "https://www.youtube.com/watch?v=XznGbgQOSUU",
+          "https://www.merriam-webster.com/dictionary/contingent",
+          "https://www.dictionary.com/browse/contingent",
+          "https://www.vocabulary.com/dictionary/contingent"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "inventory holding period working capital anomaly Indian manufacturing companies",
+        "findings": "[1] Inventory\nURL: https://en.wikipedia.org/wiki/Inventory\nContent: # Inventory. **Inventory** (British English) or **stock** (American English) is a quantity of the goods and materials that a business holds for the ultimate goal of resale, production or utilisation. It is required at different locations within a facility or within many locations of a supply network to precede the regular and planned course of production and stock of materials. The concept of inventory, stock or work in process (or work in progress) has been extended from manufacturing systems to service businesses and projects, by generalizing the definition to be \"all work within the process of production—all work that is or has occurred prior to the completion of production\". In the context of a manufacturing production system, inventory refers to all work that has occurred—raw materials, partially finished products, finished products prior to sale and departure from the manufacturing system. 5. Appreciation in valu...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Inventory",
+          "https://www.netsuite.com/portal/resource/articles/inventory-management/inventory.shtml",
+          "https://www.investopedia.com/terms/i/inventory.asp",
+          "https://www.mecalux.com/blog/what-is-an-inventory",
+          "https://www.becker.com/accounting-terms/inventory"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "subsidiary cash generation inter corporate loans Indian corporate groups anomaly filings",
+        "findings": "[1] Subsidiary\nURL: https://en.wikipedia.org/wiki/Subsidiary\nContent: Company owned or controlled by another company. A **subsidiary**, **subsidiary company**, or **daughter company** is a company \"Company (law)\") completely or partially owned or controlled by another company, called the parent company or holding company, which has legal and financial control over the subsidiary company. A first-tier subsidiary is a subsidiary/child company of the ultimate parent company, while a second-tier subsidiary is a subsidiary of a first-tier subsidiary: a \"grandchild\" of the main parent company. * has the right to appoint or remove a majority of the members of the administrative, management or supervisory body of another undertaking (a subsidiary undertaking) and is at the same time a shareholder in or member of that undertaking;. * is a member of it and controls alone, pursuant to an agreement with other members, a majority of the voting rights in it, or if it is a subsidiary of a company tha...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Subsidiary",
+          "https://www.law.cornell.edu/wex/subsidiary",
+          "https://www.indeed.com/career-advice/career-development/subsidiary",
+          "https://www.investopedia.com/terms/s/subsidiary.asp",
+          "https://www.diligent.com/resources/blog/what-is-a-subsidiary-company"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "\"customer advances\" balance sheet small cap india stock analysis",
+        "findings": "[1] Explore Promising Smallcap Stocks with Low Market Cap\nURL: https://www.tickertape.in/screener/equity/user/balance-sheet-aYA5n0fHz-PSSUqi\nContent: Discover smallcap stocks with a market cap less than ₹32319.88 Cr. Take a tour of the most comprehensive stock screening tool in India.\n\n[2] Cash Rich Smallcap Stocks | Equitymaster\nURL: https://www.equitymaster.com/stock-screener/cash-rich-smallcap-stocks\nContent: # Cash Rich Smallcap Stocks. Cash rich small-cap stocks are small companies that have accumulated a significant amount of cash on their balance sheets. Despite their smaller market capitalization, these stocks possess a strong financial position, which can be an indicator of potential growth and stability. | ANMOL INDIA | 10.3 | 583 | 12,743 | 1,376.0 | 235.9% |. ###### Stocks Recently Bought by Foreign Institutional Investors (FIIs) in India. ###### Stocks Recently Bought by Mutual Funds in India. ###### Undervalued Stocks in India. ###### High Profit Margin Stocks in India. #...",
+        "sources": [
+          "https://www.tickertape.in/screener/equity/user/balance-sheet-aYA5n0fHz-PSSUqi",
+          "https://www.equitymaster.com/stock-screener/cash-rich-smallcap-stocks",
+          "https://www.screener.in/screens/381100/balance-sheet",
+          "https://www.screener.in/screens/368187/strong-balance-sheet-with-good-roe",
+          "https://ticker.finology.in"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "site:screener.in customer advances trade payables capital goods B2B engineering",
+        "findings": "[1] 2 - Zomato\nURL: https://cdn-media.screener.in/concalls/a3108d54-56a1-42be-9771-961b9571d40e.pdf\nContent: capital Movements in working capital: - (Increase) in trade receivables - (Increase) / Decrease in financial assets - Decrease in other assets - (Decrease) in other financial liabilities • Increase in provisions · • Decrease / (Increase) in other liabilities - Increase in trade payables Cash (used in) operations Income taxes refund/ (paid) (net) Net cash (used in) operating activities (A) B) Investing activities Purchase of property, plant and equipment (including capital work-in-progress, capital advances and capital creditors) Proceeds from sale of property, plant and equipment Investment in bank deposits (having maturity of more than 3 months) Proceeds from maturity of bank deposits (having maturity of more than 3 months) Proceeds from redemption of mutual fund units Investment in [...] financial assets - Decrease in other assets - (Increase) in inventory - Increase/ (Decreas...",
+        "sources": [
+          "https://cdn-media.screener.in/concalls/a3108d54-56a1-42be-9771-961b9571d40e.pdf",
+          "https://www.screener.in/market/IN07/IN0702",
+          "https://cdn-media.screener.in/concalls/6155bba5-0ed3-432f-91a1-fbc721d0c1d1.pdf",
+          "https://cdn-media.screener.in/concalls/1656690447.pdf",
+          "https://www.screener.in/company/512149/consolidated"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "NSE BSE promoter preferential allotment premium market price recent disclosures",
+        "findings": "[1] 3rd June, 2026 National Stock Exchange of India Limited Listing ...\nURL: https://chini.com/wp-content/uploads/2026/06/Announcement-under-Regulation-30-LODR-Allotment.pdf\nContent: 2026.06.03 19:15:22 +05'30' Annexure A1 Sr. No. Name of the Allottees Category No. of Shares subscribed in preferential allotment 1. Vivek Saraogi Promoter 24,00,000 2. Sumedha Saraogi Promoter 3,45,864 3. Meenakshi Mercantiles Limited Promoter Group 12,50,000 4. TATA Small Cap Fund (Scheme of TATA Mutual Fund) Non-Promoter 20,70,393 5. IKIGAI Emerging Equity Fund (Scheme of IKIGAI Asset Holdings Investment Trust, Category III AIF) Non-Promoter 4,55,485 6. Alchemy Long Term Ventures Fund, Series 2 (Scheme of Alchemy Alternative Investment Trust, Category III AIF) Non-Promoter 1,86,335 7. Alchemy Long Term Ventures Fund, Series 3 (Scheme of Alchemy Alternative Investment Trust, Category III AIF) Non-Promoter 62,111 8. 360 One Pipe Fund (Scheme of 360 One Opportunities Fund, Category III [...] price of Rs. 4...",
+        "sources": [
+          "https://chini.com/wp-content/uploads/2026/06/Announcement-under-Regulation-30-LODR-Allotment.pdf",
+          "https://lloyds.in/wp-content/uploads/2025/10/Intimation-of-Allotment-of-Equity-Shares-under-Preferential-Allotment-dated-21st-October-2025-.pdf",
+          "https://nsearchives.nseindia.com/corporate/IPSL_08082025133539_corrigendum.pdf",
+          "https://www.rushil.com/admin/uploads/2/41/Intimation-of-Allotment-of-Equity-Shares-on-Preferential-Basis-24-06-2025.pdf",
+          "https://www.icsi.edu/media/webmodules/CSJ/August-2025/20.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Indian micro caps net cash liquid investments exceeding market capitalization",
+        "findings": "[1] Investment and cash more than market cap\nURL: https://www.screener.in/screens/537829/investment-and-cash-more-than-market-cap\nContent: | S.No. | Name | CMP Rs. | P/E | Mar Cap Rs.Cr. | Div Yld % | NP Qtr Rs.Cr. | Qtr Profit Var % | Sales Qtr Rs.Cr. | Qtr Sales Var % | ROCE % | Investments Rs.Cr. | Cash Rs.Cr. |\n ---  ---  ---  ---  ---  --- \n| 1. | Union Bank (I) | 170.75 | 6.31 | 130343.79 | 2.87 | 5641.52 | 27.41 | 27427.10 | 1.21 | 6.30 | 346737.69 | 43255.93 |\n| 2. | Punjab Natl.Bank | 110.50 | 5.69 | 126997.03 | 2.71 | 5834.77 | 174.29 | 33589.17 | 3.12 | 6.13 | 518312.71 | 71273.23 |\n| 3. | Bank of Baroda | 244.90 | 6.36 | 126646.71 | 3.42 | 5871.79 | 7.03 | 34513.73 | 5.16 | 5.63 | 435777.60 | 60184.67 |\n| 4. | Canara Bank | 126.40 | 6.40 | 114653.03 | 3.26 | 4575.11 | -9.78 | 31838.54 | 1.09 | 6.52 | 407388.93 | 50762.44 | [...] | 5. | Bank of India | 143.15 | 6.24 | 65171.44 | 3.20 | 3088.90 | 18.67 | 19573.37 | 5.92 | 5.93 | 279083.73 | 45919.70 |\n| 6. | General Insuranc ...",
+        "sources": [
+          "https://www.screener.in/screens/537829/investment-and-cash-more-than-market-cap",
+          "https://www.etmoney.com/stocks/market-data/micro-cap-stocks/31",
+          "https://www.bajajbroking.in/blog/micro-cap-stocks",
+          "https://www.smallcase.com/lists/micro-cap-stocks",
+          "https://www.youtube.com/watch?v=TasQSPIhg08&vl=en"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"preferential issue\" \"premium\" promoters NSE BSE small cap 2024 2025",
+        "findings": "[1] Preferential Allotment in India Explained | SEBI Rules & ...\nURL: https://www.mnclgroup.com/preferential-allotment-india\nContent: Preferential allotments surged in FY2024–25, especially in mid/small caps due to easier execution compared to FPOs. (Source: NSE/BSE filings,\n\n[2] services provided under preferential equity issues\nURL: https://www.primedatabase.com/pref_demo.asp\nContent: This database covers all Preferential Equity Issues listed on NSE from April,2000 to May,2026 and on BSE from April,2022 to May,2026. 2024-25 80,325 986 2025-26\n\n[3] BSE SmallCap stock in focus as board to discuss Rs ...\nURL: https://www.indiatvnews.com/business/markets/bse-smallcap-stock-in-focus-as-board-to-discuss-rs-114-69-crore-preferential-issue-check-details-2025-12-12-1021450\nContent: a preferential issue of up to 4,06,00,000 fully convertible warrants to entities in both promoter and non-promoter categories.\n\n[4] September 01, 2025\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/bc0...",
+        "sources": [
+          "https://www.mnclgroup.com/preferential-allotment-india",
+          "https://www.primedatabase.com/pref_demo.asp",
+          "https://www.indiatvnews.com/business/markets/bse-smallcap-stock-in-focus-as-board-to-discuss-rs-114-69-crore-preferential-issue-check-details-2025-12-12-1021450",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/bc0f3361-bb30-4cdd-9142-780b374494db.pdf",
+          "https://www.nseindia.com/companies-listing/corporate-filings-PREF"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "\"customer advances\" balance sheet small cap India \"current liabilities\" 2024 2025",
+        "findings": "[1] Consolidated Balance Sheet As At 31st March 2025 - SBI Bank\nURL: https://sbi.bank.in/corporate/SBIAR2425/pdf/SBI-AR-2025-Consolidated%20Financial.pdf\nContent: Investments outside India: (i) Gross Value of Investments 80152,56,94 73239,42,67 (ii) Less: Aggregate of Provisions / Depreciation 23,03,35 1147,25,78 (iii) Net Investments (vide II above) 80129,53,59 72092,16,89 GRAND TOTAL (III and IV) 2205601,10,83 2110548,22,59 # Investment in Associates (In India and Outside India) Equity Investment in Associates 10283,52,70 10185,83,24 Add : Goodwill on acquisition of Associates 95,83,73 172,55,25 Less : Capital reserve on acquisition of Associates 1047,68,27 937,59,94 Less : Provision for diminution 9,09,68 -Cost of Investment in Associates 9322,58,48 9420,78,55 Add : Post-acquisition profit/(loss) and Reserve of Associates (Equity Method) 8522,29,00 8250,79,18 TOTAL 17844,87,48 17671,57,73 261 Annual Report 2024-25 Financial Statements Statutory Reports Governance Responsible Approac...",
+        "sources": [
+          "https://sbi.bank.in/corporate/SBIAR2425/pdf/SBI-AR-2025-Consolidated%20Financial.pdf",
+          "https://www.anz.com/content/dam/anzcom/pdf/institutional/markets/india/disclosures/financial-disclosures/annual-financial-statement/anz-india-financial-statement-2024-25.pdf",
+          "https://www.ril.com/sites/default/files/2025-08/Star_India_Private_Limited.pdf",
+          "https://www.honeywell.com/content/dam/honeywellbt/en/documents/downloads/india-hail/financials/annual-reports/hon-corp-hail-annual-report-2024-25.pdf",
+          "https://incapcorp.com/storage/2026/02/Incap-Financial-Statements-Release-2025.pdf"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "small cap valve manufacturers India order book customer advances 2024",
+        "findings": "[1] India Industrial Valves Market Report 2031 Size, Growth\nURL: https://www.mordorintelligence.com/industry-reports/india-industrial-valves-market\nContent: Jal Jeevan Mission and AMRUT 2.0 continue to fund household tap connections, sewage treatment plants, and water-recycling facilities. The USD 50 billion allocation through 2024 created rolling tenders for gate, globe, and butterfly valves across treatment trains, distribution mains, and sludge lines. States now extend procurement schedules to 2028 to meet both rural service and urban reuse targets. Projects specify stainless-steel trims, epoxy coatings, and actuator-ready flanges, boosting the ticket size per valve. Suppliers that secure BIS certification and deploy regional service teams win repeat orders, as municipalities insist on local support for preventive maintenanceMinistry of Jal Shakti, “Jal Jeevan Mission,” jaljeevanmission.gov.in. [...] ## India Industrial Valves Industry Leaders\n\n1. AVK Valves India Pvt Ltd\n2. Emerson...",
+        "sources": [
+          "https://www.mordorintelligence.com/industry-reports/india-industrial-valves-market",
+          "https://www.techsciresearch.com/report/india-industrial-valves-market/3549.html",
+          "https://novelvalves.com",
+          "https://www.novelvalves.com",
+          "https://www.mordorintelligence.com/industry-reports/control-valve-market"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "precision railway subsystem manufacturers India backlog to bill ratio",
+        "findings": "[1] IMPROVING RAIL EFFICIENCY and SHARE IN INDIA'S ...\nURL: https://www.niti.gov.in/sites/default/files/2025-03/Efficiency%20and%20competitiveness%20of%20Indian%20Railways.pdf\nContent:  Operating Ratio: Operating Ratio indicates how efficiently railways can earn with every rupee spent on the development. 21 It is calculated as the ratio of working expenses to gross earnings. A lower operating ratio is regarded as better and indicates the system’s sound financial health. In FY19, Indian Railway’s operating ratio was 97.3%, which means that Railways is spending 97.3 paise to earn 100 paisa - indicating minimal surplus. A high operating ratio has created a vast investment gap for capacity expansion. [...] Operating Ratio Comparison (Percent), 2019 \n\n120 100 80 61 US Canada India 63 97 60 40 20 0Source: Statista. Operating Ratio for US is Union Pacific Railroad and Canada - Canadian National Railways shipments, quality of logistics services, ability to track and trace consignments, and fr...",
+        "sources": [
+          "https://www.niti.gov.in/sites/default/files/2025-03/Efficiency%20and%20competitiveness%20of%20Indian%20Railways.pdf",
+          "https://infra.economictimes.indiatimes.com/news/railways/indian-railway-equipment-manufacturers-aim-for-7-8-share-of-360-billion-global-market-by-fy26/124541510",
+          "https://www.thestatesman.com/business/firms-dealing-with-indian-railway-sector-to-gain-from-robust-order-book-report-1503420286.html",
+          "https://indianrailways.gov.in/railwayboard/uploads/directorate/stat_econ/2026/INDIAN%20RAILWAYS%20ANNUAL%20REPORT%20%20ACCOUNTS%2C%202024-25%20(ENGLISH)%20(1).pdf",
+          "https://m.economictimes.com/industry/transportation/railways/revenue-of-railway-sector-companies-expected-to-grow-at-moderate-pace-of-5-in-fy26-icra/articleshow/120297110.cms"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "defense aerospace forging ancillary companies India inventory advance from customers",
+        "findings": "[1] Forging Product for Defense Industry, Manufacturers and suppliers India\nURL: https://www.uniqueforge.com/defense-forging-manufacturers.html\nContent: ### Customer-Centric Approach\n\nWe prioritize customer satisfaction, tailoring our services to meet your specific requirements and ensuring seamless communication and support at every step of the forging process.\n\n### Industry Expertise\n\nWith years of experience in the defense forging industry, Unique Forge boasts unparalleled expertise and understanding of the unique challenges and requirements of defense manufacturing.\n\n### Continuous Improvement\n\nWe are dedicated to continuous improvement, investing in the latest technologies and methodologies to stay ahead of the curve and deliver cutting-edge solutions to our customers\n\nimages\n\n## Defense Forging Supplier\n\n### Why Choose Unique Forge as your Defense Forging Supplier [...] # Defense Forging Manufacturers\n\n## Welcome to Unique Forge: Your Trusted Defense Forging Partner\n\nIn the realm...",
+        "sources": [
+          "https://www.uniqueforge.com/defense-forging-manufacturers.html",
+          "https://www.bharatforge.com/company/about-us",
+          "https://www.lusha.com/company-search/defense-and-space-manufacturing/c4e098ac98/india/137",
+          "https://www.bharatforge.com",
+          "https://defenseindustry.in/top-private-sector-players"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering Limited order book revenue financials expansion BSE NSE",
+        "findings": "[1] MACHINIST.IN »   Azad Engineering reports INR 65 billion order book; eyes 25 percent-plus growth after capacity expansion\nURL: https://machinist.in/2026/02/azad-engineering-reports-inr-65-billion-order-book-eyes-25-percent-plus-growth-after-capacity-expansion\nContent: Revenue for Q3 FY ’26 stood at INR 1,558 million, compared with the corresponding period a year earlier. Earnings before interest, tax, depreciation and amortisation (EBITDA) rose more than 40 percent year-on-year to INR 601 million, while profit after tax increased over 40 percent to INR 340 million. For the first nine months of FY ’26, revenue grew nearly 32 percent year-on-year, and profitability exceeded the full-year FY ’25 level.\n\nThe company has capitalised new plants dedicated to programmes for GE, Mitsubishi and Siemens. Management said the facilities are at different stages of qualification and certification, reflecting the stringent validation processes required for aerospace and energy components. [...] MA...",
+        "sources": [
+          "https://machinist.in/2026/02/azad-engineering-reports-inr-65-billion-order-book-eyes-25-percent-plus-growth-after-capacity-expansion",
+          "https://finance.yahoo.com/quote/AZAD.NS",
+          "https://www.bajajfinserv.in/investments/azad-share-price",
+          "https://trendlyne.com/fundamentals/financials/1840438/AZAD/azad-engineering-ltd",
+          "https://www.azad.in/wp-content/uploads/2024/02/2022-2023-Annual-Report.pdf",
+          "https://www.sahi.com/news/azad-engineering-targets-25-growth-and-35-ebitda-margins-with-190-cr-capex-plan-5575-PE1_COR",
+          "https://finance.yahoo.com/quote/AZAD.BO"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Titagarh Rail Systems order book financials revenue capacity expansion BSE NSE",
+        "findings": "[1] Titagarh Rail Systems Share Price, Stock Price, LIVE NSE/BSE - Groww\nURL: https://groww.in/stocks/titagarh-wagons-ltd\nContent: CNBC TV18•\n\nTitagarh Rail expects passenger business to surpass freight by FY28, driven by metro and Vande Bharat orders. Passenger coach production to rise in FY27; JV with Ramkrishna Forgings to cut wheel imports, adding ₹2,000 Cr revenue.\n\nScoutQuest•\n\nTitagarh Rail plans to grow capacity through planned capex investments. Long-term outlook of Titagarh Rail highlights its growth-focused strategy.\n\nLivesquawk•\n\nTitagarh Rail anticipates its passenger wagon business to grow 3x. This reflects rising demand for high-margin rolling stock and capacity expansion.\n\nLivesquawk•\n\nTitagarh Rail is fully booked with metro contracts until FY28, ensuring revenue stability. This order book supports production visibility and reduces near-term revenue uncertainty.\n\nLivesquawk• [...] \\The above information is sourced from Refinitiv. It is on a consolidated balance sheet b...",
+        "sources": [
+          "https://groww.in/stocks/titagarh-wagons-ltd",
+          "https://www.titagarh.in/storage/report/actual/annual-report(2024-25).pdf",
+          "https://en.wikipedia.org/wiki/Titagarh_Rail_Systems",
+          "https://www.titagarh.in/storage/report/actual/investor-presentation-q2-and-h1fy25-26.10.2024.pdf",
+          "https://finance.yahoo.com/quote/TITAGARH.NS",
+          "https://ticker.finology.in/company/TITAGARH",
+          "https://www.titagarh.in"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Azad Engineering promoter shareholding pledge percentage forensic audit report",
+        "findings": "[1] Azad Engineering Ltd. shareholding: Promoter, FII, DII and mutual fund\nURL: https://www.tijorifinance.com/company/azad-engineering-ltd/shareholding\nContent: | in % | Mar'24 | Jun'24 | Sep'24 | Dec'24 | Mar'25 | Jun'25 | Sep'25 | Dec'25 | Mar'26 | Jun'26 |\n ---  ---  ---  ---  --- \n| Promoter | 65.90 | 65.90 | 65.90 | 65.90 | 60.32 | 55.42 | 55.42 | 55.84 | 55.84 | 55.84 |\n| Indian Promoters | 65.90 | 65.90 | 65.90 | 65.90 | 60.32 | 55.42 | 55.42 | 55.84 | 55.84 | 55.84 |\n| RAKESH CHOPDAR | — | 64.84 | — | — | — | — | 54.45 | 54.88 | 54.88 | 54.88 |\n| JYOTI CHOPDAR | — | 0.24 | — | — | — | — | 0.22 | 0.22 | 0.68 | 0.68 |\n| SATWIK CHOPDAR | 0.25 | 0.25 | 0.25 | 0.25 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 |\n| BABITA SHRIPALSINGH SULHYAN | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 |\n| AMIT WALIA | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | [...] | DEEPAK CHOPDAR | — | — | — | — | — | — | — | 0.01 | — | 0.01 |\n| ELLA WALIA | 0.01 |...",
+        "sources": [
+          "https://www.tijorifinance.com/company/azad-engineering-ltd/shareholding",
+          "https://www.icicisecurities.com/Upload/ArticleAttachments/Azad%20Engineering%20Limited%20-%20RHP.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_azadengineering_q2fy26.pdf",
+          "https://choiceindia.com/stocks/azad-engineering-ltd-shareholding-pattern",
+          "https://scanx.trade/stock-market-news/companies/azad-engineering-promoter-declares-no-encumbrance-on-shares-for-fy-2025-2026/39652366"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering valuation multiples PE EV EBITDA Bloomberg consensus FY26",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Titagarh Rail Systems promoter shareholding pledging corporate governance checks",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering top customer concentration GE Siemens Mitsubishi revenue share",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Titagarh Rail Systems promoter shareholding pledging corporate governance checks BSE NSE",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering top customer concentration GE Siemens Mitsubishi revenue share percentage",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering Limited order book revenue financials expansion BSE NSE",
+        "findings": "[1] MACHINIST.IN »   Azad Engineering reports INR 65 billion order book; eyes 25 percent-plus growth after capacity expansion\nURL: https://machinist.in/2026/02/azad-engineering-reports-inr-65-billion-order-book-eyes-25-percent-plus-growth-after-capacity-expansion\nContent: Revenue for Q3 FY ’26 stood at INR 1,558 million, compared with the corresponding period a year earlier. Earnings before interest, tax, depreciation and amortisation (EBITDA) rose more than 40 percent year-on-year to INR 601 million, while profit after tax increased over 40 percent to INR 340 million. For the first nine months of FY ’26, revenue grew nearly 32 percent year-on-year, and profitability exceeded the full-year FY ’25 level.\n\nThe company has capitalised new plants dedicated to programmes for GE, Mitsubishi and Siemens. Management said the facilities are at different stages of qualification and certification, reflecting the stringent validation processes required for aerospace and energy components. [...] MA...",
+        "sources": [
+          "https://machinist.in/2026/02/azad-engineering-reports-inr-65-billion-order-book-eyes-25-percent-plus-growth-after-capacity-expansion",
+          "https://finance.yahoo.com/quote/AZAD.NS",
+          "https://www.bajajfinserv.in/investments/azad-share-price",
+          "https://trendlyne.com/fundamentals/financials/1840438/AZAD/azad-engineering-ltd",
+          "https://www.azad.in/wp-content/uploads/2024/02/2022-2023-Annual-Report.pdf",
+          "https://www.sahi.com/news/azad-engineering-targets-25-growth-and-35-ebitda-margins-with-190-cr-capex-plan-5575-PE1_COR",
+          "https://finance.yahoo.com/quote/AZAD.BO"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Titagarh Rail Systems order book financials revenue capacity expansion BSE NSE",
+        "findings": "[1] Titagarh Rail Systems Share Price, Stock Price, LIVE NSE/BSE - Groww\nURL: https://groww.in/stocks/titagarh-wagons-ltd\nContent: CNBC TV18•\n\nTitagarh Rail expects passenger business to surpass freight by FY28, driven by metro and Vande Bharat orders. Passenger coach production to rise in FY27; JV with Ramkrishna Forgings to cut wheel imports, adding ₹2,000 Cr revenue.\n\nScoutQuest•\n\nTitagarh Rail plans to grow capacity through planned capex investments. Long-term outlook of Titagarh Rail highlights its growth-focused strategy.\n\nLivesquawk•\n\nTitagarh Rail anticipates its passenger wagon business to grow 3x. This reflects rising demand for high-margin rolling stock and capacity expansion.\n\nLivesquawk•\n\nTitagarh Rail is fully booked with metro contracts until FY28, ensuring revenue stability. This order book supports production visibility and reduces near-term revenue uncertainty.\n\nLivesquawk• [...] \\The above information is sourced from Refinitiv. It is on a consolidated balance sheet b...",
+        "sources": [
+          "https://groww.in/stocks/titagarh-wagons-ltd",
+          "https://www.titagarh.in/storage/report/actual/annual-report(2024-25).pdf",
+          "https://en.wikipedia.org/wiki/Titagarh_Rail_Systems",
+          "https://www.titagarh.in/storage/report/actual/investor-presentation-q2-and-h1fy25-26.10.2024.pdf",
+          "https://finance.yahoo.com/quote/TITAGARH.NS",
+          "https://ticker.finology.in/company/TITAGARH",
+          "https://www.titagarh.in"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Azad Engineering promoter shareholding pledge percentage forensic audit report",
+        "findings": "[1] Azad Engineering Ltd. shareholding: Promoter, FII, DII and mutual fund\nURL: https://www.tijorifinance.com/company/azad-engineering-ltd/shareholding\nContent: | in % | Mar'24 | Jun'24 | Sep'24 | Dec'24 | Mar'25 | Jun'25 | Sep'25 | Dec'25 | Mar'26 | Jun'26 |\n ---  ---  ---  ---  --- \n| Promoter | 65.90 | 65.90 | 65.90 | 65.90 | 60.32 | 55.42 | 55.42 | 55.84 | 55.84 | 55.84 |\n| Indian Promoters | 65.90 | 65.90 | 65.90 | 65.90 | 60.32 | 55.42 | 55.42 | 55.84 | 55.84 | 55.84 |\n| RAKESH CHOPDAR | — | 64.84 | — | — | — | — | 54.45 | 54.88 | 54.88 | 54.88 |\n| JYOTI CHOPDAR | — | 0.24 | — | — | — | — | 0.22 | 0.22 | 0.68 | 0.68 |\n| SATWIK CHOPDAR | 0.25 | 0.25 | 0.25 | 0.25 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 | 0.23 |\n| BABITA SHRIPALSINGH SULHYAN | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 | 0.02 |\n| AMIT WALIA | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | [...] | DEEPAK CHOPDAR | — | — | — | — | — | — | — | 0.01 | — | 0.01 |\n| ELLA WALIA | 0.01 |...",
+        "sources": [
+          "https://www.tijorifinance.com/company/azad-engineering-ltd/shareholding",
+          "https://www.icicisecurities.com/Upload/ArticleAttachments/Azad%20Engineering%20Limited%20-%20RHP.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_azadengineering_q2fy26.pdf",
+          "https://choiceindia.com/stocks/azad-engineering-ltd-shareholding-pattern",
+          "https://scanx.trade/stock-market-news/companies/azad-engineering-promoter-declares-no-encumbrance-on-shares-for-fy-2025-2026/39652366"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering valuation multiples PE EV EBITDA Bloomberg consensus FY26",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Titagarh Rail Systems promoter shareholding pledging corporate governance checks",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering top customer concentration GE Siemens Mitsubishi revenue share",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Titagarh Rail Systems promoter shareholding pledging corporate governance checks BSE NSE",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering top customer concentration GE Siemens Mitsubishi revenue share percentage",
+        "findings": "Web search failed due to error: HTTP Error 432: ",
+        "sources": [],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering cash flow from operations working capital days inventory receivables FY24 FY25",
+        "findings": "[1] Azad Engineering Ltd - Exencial Research Partners\nURL: https://exencialrp.substack.com/p/azad-engineering-ltd\nContent: The actual trajectory diverged: FY23 working capital days were 104, FY24 increased to 142 days, and FY25 further increased to 158 days. The improvement to 140-150 days did not materialize—instead, days worsened. Management acknowledged the driver in Q4 FY24-25 commentary citing “qualification inventory for long-term contracts” and new facility ramp-up, but no formal revision of the 130-140 day target was located in retrieved context.\n\nThis represents [MED — magnitude\\_mismatch]—actual working capital days moved in the opposite direction of guidance. The divergence appears tied to the capacity expansion cycle rather than operational deterioration, but the lack of formal target revision when the trajectory clearly diverged warrants scrutiny. [...] The actual working capital days per presentations moved from 104 days in FY23 to 142 days in FY24 to 158 days in FY25—a 5...",
+        "sources": [
+          "https://exencialrp.substack.com/p/azad-engineering-ltd",
+          "https://azad.in/wp-content/uploads/2025/05/earning-call.pdf",
+          "https://www.alphaspread.com/security/nse/azad/investor-relations/earnings-call/q4-2025",
+          "https://azad.in/wp-content/uploads/2025/09/Annual-Report.pdf",
+          "https://www.way2wealth.com/Reports/RR300320261c4c6.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Titagarh Rail Systems cash conversion cycle CFO EBITDA ratio working capital balance sheet",
+        "findings": "[1] Titagarh Rail Systems Financial Statements - Check Balance Sheet & EBITDA\nURL: https://groww.in/stocks/titagarh-wagons-ltd/company-financial\nContent: # Titagarh Rail Systems\n\nquarterly\n\nyearly\n\n| Particulars | Mar '25 | Jun '25 | Sep '25 | Dec '25 | Mar '26 |\n ---  ---  --- |\n| Revenue | 1,035 | 690.95 | 813.47 | 842.84 | 887.00 |\n| Expenses | 934.34 | 633.96 | 746.07 | 770.34 | 809.28 |\n| EBITDA | 131.58 | 86.75 | 98.07 | 102.82 | 108.80 |\n| Operating Profit | -117.79 | 63.80 | 75.56 | 78.37 | 89.61 |\n| Profit Before Tax | -140.17 | 45.41 | 57.28 | 60.49 | 74.67 |\n| Net Profit | -123.86 | 30.94 | 37.00 | 45.28 | 53.50 |\n| Financial Ratios |\n| Operating Profit Margin | -10.91% | 11.07% | 11.01% | 10.91% | 12.08% |\n| Net Profit Margin | 1.53% | 4.62% | 4.62% | 6.33% | 5.94% |\n| Earning Per Share (Diluted) | -9.18 | 2.30 | 2.73 | 3.58 | 3.97 |\n| Dividends Per Share | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |\n\nOverview\n\nCharts [...] Overview\n\nCharts\n\nCompany financials\n\nPeer comparison\n\nShar...",
+        "sources": [
+          "https://groww.in/stocks/titagarh-wagons-ltd/company-financial",
+          "https://www.kotakneo.com/stocks/titagarh-rail-systems-share-price/company-financial",
+          "https://www.titagarh.in/storage/report/actual/annual-report-(2023-24).pdf",
+          "https://www.titagarh.in/storage/report/actual/annual-report(2024-25).pdf",
+          "https://ticker.finology.in/company/TITAGARH"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Jupiter Wagons MTAR Technologies historical margin inflection order book execution peer benchmark",
+        "findings": "[1] Jupiter Wagons Limited (JWL.NS) Stock Historical Prices & Data - Yahoo Finance\nURL: https://finance.yahoo.com/quote/JWL.NS/history\nContent: | Dec 19, 2025 | 257.00 | 262.85 | 253.05 | 260.25 | 260.25 | 761,147 |\n| Dec 18, 2025 | 257.15 | 257.30 | 252.65 | 253.95 | 253.95 | 494,384 |\n| Dec 17, 2025 | 262.80 | 263.20 | 257.00 | 257.70 | 257.70 | 451,671 |\n| Dec 16, 2025 | 267.00 | 267.00 | 262.10 | 262.75 | 262.75 | 460,629 |\n| Dec 15, 2025 | 260.80 | 273.40 | 257.50 | 267.90 | 267.90 | 1,971,834 |\n| Dec 12, 2025 | 257.70 | 262.30 | 255.50 | 260.80 | 260.80 | 809,063 |\n| Dec 11, 2025 | 253.05 | 258.95 | 250.35 | 257.50 | 257.50 | 884,571 |\n| Dec 10, 2025 | 260.85 | 262.35 | 250.65 | 252.70 | 252.70 | 746,908 |\n| Dec 9, 2025 | 254.65 | 262.50 | 247.15 | 260.85 | 260.85 | 1,741,860 |\n| Dec 8, 2025 | 267.05 | 268.95 | 253.00 | 254.45 | 254.45 | 1,203,856 |\n| Dec 5, 2025 | 275.25 | 275.45 | 266.10 | 267.05 | 267.05 | 711,321 | [...] | Oct 16, 2025 | 324.00 | 328.00 | 321.75 | 322.65 | 32...",
+        "sources": [
+          "https://finance.yahoo.com/quote/JWL.NS/history",
+          "https://trendlyne.com/fundamentals/peer-group/245/JWL/jupiter-wagons-ltd",
+          "https://www.screener.in/company/JWL/consolidated",
+          "https://simplywall.st/stocks/in/capital-goods/nse-jwl/jupiter-wagons-shares/past",
+          "https://trendlyne.com/equity/245/JWL/jupiter-wagons-ltd"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering Limited news governance audit pledge tax dispute",
+        "findings": "[1] AZAD ENGINEERING LIMITED\nURL: https://www.icicisecurities.com/Upload/ArticleAttachments/Azad%20Engineering%20Limited%20-%20RHP.pdf\nContent: October 12, 2023 from the Centralised Processing Centre, Income Tax Department under Section 154 of the Income Tax Act, 1961, alleging incorrect computation of total income by our Company for the assessment year 2021-2022. The total amount involved in this matter is ₹3.96 million, including interest accrued. The matter is currently pending. Indirect tax matters 1. Our Company has received a show cause notice dated July 20, 2023 (“Show Cause Notice”) from the Assistant Commissioner of Central Tax, Circle VI, Audit II Commissionerate, Hyderabad, Telangana, demanding payment of tax aggregating to a sum of ₹17.97 million under the provisions of the Central Goods and Services Act, 2017, the Integrated Goods and Services Tax Act, 2017 and the Telangana Goods and Services Act, 2017. The Show [...] With respect to above dispute with the supplier, an am...",
+        "sources": [
+          "https://www.icicisecurities.com/Upload/ArticleAttachments/Azad%20Engineering%20Limited%20-%20RHP.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/06092024/f527ae6b-b03f-4358-900e-77b0f32113b7.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/68cf46ed-84f7-4b8d-8917-7c2f9a5cdcb7.pdf",
+          "https://azad.in/wp-content/uploads/2025/09/Annual-Report.pdf",
+          "https://azad.in/wp-content/uploads/2025/02/Covering_Signed-IP_Q3-1.pdf"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Titagarh Rail Systems Limited news governance audit pledge tax dispute",
+        "findings": "[1] T·TAGA.RH\nURL: https://www.titagarh.in/storage/report/actual/outcome-of-bm_11.08.2025.pdf\nContent: December, 2024 in regard to the items No. 1 & 6 are given hereinbelow whereas the same for Item No. 2 shall be communicated in due course. The meeting commenced at 4.45 P.M. and concluded at 8.45 P.M. The said disclosure is also being made available on the website of the Company at www.titagarh.in. Please take the above on record. Thanking you, yours faithfully, For TITAGARH RAIL SYSTEMS LIMITED Aditya Purohit Company Secretary & Compliance Officer M. No. 27825 Encl. as above T·ITAGA.RH RAIL SYSTEMS L I MITED Aditya Purohit Digitally signed by Aditya Purohit Date: 2025.08.11 21:10:37 +05'30' CIN: L27320WB1997PLC084819 Registered Office: Poddar Point, 10th Floor, 113 Park Street, Kolkata 700016, India Corporate Office: Titagarh Towers, 756 Anandapur, E.M Bypass, Kolkata 700107, India [...] based on their interim financial information, which have not been reviewed by their auditors. Acc...",
+        "sources": [
+          "https://www.titagarh.in/storage/report/actual/outcome-of-bm_11.08.2025.pdf",
+          "https://www.indiainfoline.com/company/titagarh-rail-systems-ltd/reports/auditors-report",
+          "https://finance.yahoo.com/quote/TITAGARH.NS",
+          "https://scanx.trade/stock-market-news/companies/titagarh-rail-systems-confirms-no-new-encumbrance-on-promoter-shares-in-fy26/42269867",
+          "https://economictimes.indiatimes.com/titagarh-rail-systems-ltd/stocksupdate/companyid-21076.cms"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "\"Azad Engineering\" \"unbilled revenue\" OR \"contract assets\" Ind AS 115",
+        "findings": "[1] Ind AS 115: Revenue from Contracts with Customers\nURL: https://www.rsm.global/india/sites/default/files/media/RSM%20India/Publications/2018/ind_as_115_revenue_from_contracts_with_customers_overview_and_impact_on.pdf\nContent: AS 7 for combining contracts. Ind AS 115 provides guidance for combining the contracts entered into, at or around the same time with the same customer (negotiated as a package, consideration to be paid in one contract depends on the price and performance of the other contract, the goods and services promised in a contract are a single performance obligation). Indian GAAP treatment Ind AS 18/Ind AS 11 Ind AS 115 Under AS 7, construction of additional asset is treated as a separate contract if the assets differs significantly in design, technology, or function, or the price of the asset is negotiated without regard to the original contract price. Variation and claims are part of the original contract revenue, unless the above treatment of construction of the addi...",
+        "sources": [
+          "https://www.rsm.global/india/sites/default/files/media/RSM%20India/Publications/2018/ind_as_115_revenue_from_contracts_with_customers_overview_and_impact_on.pdf",
+          "https://enterslice.com/learning/ind-as-115-revenue-recognition-contracts-with-customers",
+          "https://www.linkedin.com/pulse/ind-115-revenue-recognition-ca-sumit-agrawal-b3pef",
+          "https://ca2013.com/indian-accounting-standard-ind-115",
+          "https://treelife.in/finance/ind-as-115-revenue-recognition-for-saas-and-subscription-businesses"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "\"Titagarh Rail Systems\" \"unbilled\" \"contract assets\" annual report",
+        "findings": "[1] Annual Report (2023-24)\nURL: https://www.titagarh.in/storage/report/actual/annual-report-(2023-24).pdf\nContent: Notes to Consolidated Financial Statements as at and for the year ended March 31, 2024 Titagarh Rail Systems Limited (Formerly Titagarh Wagons Limited) March 31, 2024 Particulars Unbilled Not Due Less than 6 months 6 months - 1 year 1-2 years 2-3 years More than 3 years Total Gross Debtors --88.80 -1,958.91 313.59 665.45 3,026.75 Contract Assets 2,458.09 136.72 -----2,594.81 Historical Loss Rates 0.00% 0.00% 0.02% 0.00% 0.13% 3.81% 100.00% Loss Allowance 0.22 -0.02 -2.63 11.95 665.45 680.27 March 31, 2023 Particulars Unbilled Not Due Less than 6 months 6 months - 1 year 1-2 years 2-3 years More than 3 years Total Gross Debtors --3,280.49 78.61 454.22 659.22 97.83 4,570.37 Contract Assets 2,709.44 87.38 -----2,796.82 Historical Loss Rates 0.00% 0.00% 0.01% 0.04% 0.09% 0.51% 100.00% Loss [...] (a) Trade receivables and contract assets Customer credit risk is managed by the ...",
+        "sources": [
+          "https://www.titagarh.in/storage/report/actual/annual-report-(2023-24).pdf",
+          "https://www.titagarh.in/storage/report/actual/annual-report(2024-25).pdf",
+          "https://www.bseindia.com/corporates/download/9632/QIP%20Open/PD_Tita_20231212235530.pdf",
+          "https://www.titagarh.in/storage/report/actual/outcome_of_bm_30.05.2025.pdf",
+          "https://www.kotakneo.com/stocks/titagarh-rail-systems-share-price/company-financial"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "\"Azad Engineering\" \"related party\" transaction",
+        "findings": "[1] policy for determining materiality of related party transactions and ...\nURL: https://www.azad.in/wp-content/uploads/2024/02/RPT-Policy.pdf\nContent: 1 POLICY FOR DETERMINING MATERIALITY OF RELATED PARTY TRANSACTIONS AND DEALING WITH RELATED PARTY TRANSACTION AZAD ENGINEERING LIMITED (Formerly Azad Engineering Private Limited) CIN: U74210TG1983PLC004132 Regd. Office: 90/C,90/D Phase 1 I.D.A, Jeedimetla Hyderabad-500055 Telangana, India Email: cs@azad.in Phone: +91-40-2309 7007 2 1. Scope This Policy is intended to ensure the proper approval and reporting of transactions between Azad Engineering Limited (Formerly known as “Azad Engineering Private Limited”) (“Company”) and any of its Related Parties. This Policy shall apply to all transactions entered into by the Company with its Related Parties as per the applicable laws and regulations, including the Companies Act, 2013 (the “Companies Act”) read with the rules framed thereunder and [...] beyond which prior approval of the sharehol...",
+        "sources": [
+          "https://www.azad.in/wp-content/uploads/2024/02/RPT-Policy.pdf",
+          "https://www.icicisecurities.com/Upload/ArticleAttachments/Azad%20Engineering%20Limited%20-%20RHP.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/68cf46ed-84f7-4b8d-8917-7c2f9a5cdcb7.pdf",
+          "https://azad.in/wp-content/uploads/2024/11/Covering-1.pdf",
+          "https://www.azad.in/wp-content/uploads/2024/02/2022-2023-Annual-Report.pdf"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      }
+    ],
+    "disclaimer": "This document is generated strictly for exploratory portfolio hypothesis generation and investment research. It does not constitute a recommendation to buy or sell any security.",
+    "phases_completed": 5,
+    "total_search_count": 41
+  }
+}

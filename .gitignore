@@ -16,25 +16,13 @@ venv.bak/
 
 # Project-specific caches & runtime state
 data/cache/
-data/api_usage.json
 data/ai_temp/
-data/ai_reports/
-data/discoveries/
-data/syntheses/
-data/synthesis_chats/
+*.pdf
 
 # Testing & Coverage (ignore test caches, but track tests/)
 .pytest_cache/
 .coverage
 htmlcov/
-
-# Legacy manual test scripts at root
-/test_api.py
-/test_thesis.py
-
-# Node/Frontend
-node_modules/
-dist/
 
 # IDEs/Editors & OS files
 .vscode/
@@ -46,5 +34,3 @@ dist/
 *.swp
 .DS_Store
 Thumbs.db
-Misc/
-UPDATE_HISTORY.md

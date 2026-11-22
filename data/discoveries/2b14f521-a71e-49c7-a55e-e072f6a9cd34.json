@@ -1,0 +1,1164 @@
+{
+  "id": "2b14f521-a71e-49c7-a55e-e072f6a9cd34",
+  "strategy_id": "corporate_restructuring",
+  "strategy_name": "Corporate Restructuring / Special Situations",
+  "user_params": {
+    "context": ""
+  },
+  "model_name": "gemini-3.5-flash-lite",
+  "created_at": "2026-07-27T10:35:51.280331",
+  "result": {
+    "analysis_summary": "This analysis synthesizes high-conviction corporate restructuring and special situation opportunities in the Indian equity market. The core thesis exploits the 'transition window' friction—the 30-to-90 day gap between a demerger's record date and the listing of the new entity—where passive index trackers and mandate-constrained mutual funds are forced to dump unlisted entitlements, creating non-fundamental price dislocations. Additionally, regulatory catalysts such as SEBI's Special Call Auctions for holding companies and RBI's Scale-Based Regulations for NBFCs act as powerful leading indicators for structural value unlocking before sell-side analyst coverage initiates.",
+    "candidates": [
+      {
+        "company_name": "Gujarat Gas Ltd / GSPL Transmission",
+        "ticker": "GUJGASLTD",
+        "connection_type": "Demerged Regulated Utility Entity",
+        "confidence": "high",
+        "why_now": "(a) What changed: The MCA has issued its final approval for the composite scheme of arrangement, setting the stage for immediate execution. (b) Estimated catalyst window: Near-term (0-6 months) because the record date is imminent, which will trigger the ex-demerger trading and subsequent listing of GTL. (c) Confirming milestone: The formal listing of GSPL Transmission Limited (GTL) on the NSE/BSE and the subsequent volume spike representing the institutional exit flush.",
+        "reasoning": "TYPE B (INVISIBLE TO MARKET): This company is invisible because GSPL Transmission Limited (GTL) is currently an unlisted entitlement with zero standalone sell-side analyst coverage, and passive index funds face mandate-driven forced selling during the transition window. The market will notice it when GTL lists on the exchanges and independent infrastructure funds begin absorbing the float post-forced-selling flush. [OBSERVED FACTS] MCA approved the composite scheme of arrangement. GSPC, GSPL, and GSPC Energy are amalgamating into Gujarat Gas, and the gas transmission business is demerging into GTL. Share entitlement ratio is 1 share of GTL for every 3 shares of Gujarat Energy. [STRONG INFERENCE] Passive index funds (FTSE/MSCI/Nifty) holding GSPL/GGL will receive unlisted GTL entitlements which they are legally or mandate-bound to sell upon listing, creating a massive non-fundamental supply overhang. [HYPOTHESIS] GTL's regulated pipeline transmission assets, operating under PNGRB's 12% post-tax RoE framework, will be severely mispriced during this forced-selling window, offering a high-margin, stable annuity utility at a distressed entry multiple.",
+        "self_critique": "Why might this specific hypothesis be wrong? The PNGRB could revise tariffs downward for GTL's major pipelines, or the volume of gas transmitted could drop significantly if major industrial consumers shift to alternative fuels, compressing the regulated asset base.",
+        "disproving_evidence": "A formal PNGRB tariff order slashing GTL's transmission tariffs by more than 20%, or a prolonged delay of more than 6 months in listing GTL post-record date that traps capital.",
+        "risks": [
+          "Regulatory tariff cuts by PNGRB",
+          "Volume risk from LNG price spikes",
+          "Prolonged listing delays by exchanges"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: The assumption that passive index funds and domestic mutual funds will be forced to dump GTL shares immediately upon listing due to mandate constraints, rather than holding them in transition portfolios.",
+          "Verify the exact timeline of exchange listing approvals for GTL post-record date.",
+          "Verify the final debt allocation between Gujarat Energy and GTL in the approved MCA order."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.pngrb.gov.in"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 68%",
+          "Phase 2: 80%",
+          "Phase 3: 80%",
+          "Phase 4: 85%",
+          "Final: 85%"
+        ]
+      },
+      {
+        "company_name": "Vedanta Limited",
+        "ticker": "VEDL",
+        "connection_type": "Parent Conglomerate Undergoing 5-Way Demerger",
+        "confidence": "high",
+        "why_now": "(a) What changed: The NCLT has formally sanctioned the 5-way demerger scheme with overwhelming creditor and shareholder approvals, establishing a firm timeline for implementation. (b) Estimated catalyst window: Near-term (0-6 months) as the record date of May 1, 2026, triggers the split of the parent stock. (c) Confirming milestone: The ex-date trading of Vedanta Ltd and the subsequent listing of the four new stubs on the exchanges.",
+        "reasoning": "TYPE A (WRONG CONSENSUS): The market currently assumes that Vedanta's massive debt load and complex corporate structure create an existential refinancing risk across all stubs, but evidence shows that the 5-way demerger ring-fences cash flows, allocates debt proportionally to asset book values, and unlocks pure-play commodity multiples that eliminate the conglomerate discount. [OBSERVED FACTS] NCLT sanctioned the demerger scheme. Debt is allocated in proportion to the book value of assets assigned to each resulting entity. Shareholders approved the scheme by 99.99%. [STRONG INFERENCE] By separating the high-margin Aluminium and Oil & Gas businesses from the parent, each entity can be valued on its standalone cash-generation capability, allowing the Aluminium business to command a pure-play multiple (6.0x-7.0x EV/EBITDA) similar to global peers, rather than being dragged down by holding company debt. [HYPOTHESIS] The elimination of the 25-35% conglomerate discount will more than offset the frictional costs of the demerger, leading to a combined SOTP value of INR 820 per share compared to the pre-demerger base.",
+        "self_critique": "Why might this specific hypothesis be wrong? The promoter group (Vedanta Resources) has massive debt maturities at the parent level; if they are forced to upstream cash aggressively via high dividend payouts from the newly listed stubs, it could starve the operating entities of capital expenditure needed for expansion.",
+        "disproving_evidence": "A sharp decline in global LME aluminium prices below $1,900 per tonne, or a credit rating downgrade of the newly listed stubs due to aggressive dividend upstreaming.",
+        "risks": [
+          "Commodity price downturn",
+          "Aggressive promoter dividend demands",
+          "High debt servicing costs at the individual stub level"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: The assumption that lenders will not invoke cross-default clauses or demand immediate acceleration of debt repayment upon the formal split of the entities.",
+          "Verify the final debt allocation figures filed with the exchanges post-NCLT sanction.",
+          "Verify the bauxite linkage progress for Vedanta Aluminium's Sijimali mines."
+        ],
+        "sources": [
+          "https://www.nclt.gov.in",
+          "https://www.bseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 70%",
+          "Phase 2: 80%",
+          "Phase 3: 80%",
+          "Phase 4: 80%",
+          "Final: 80%"
+        ]
+      },
+      {
+        "company_name": "Kalyani Investment Company Limited",
+        "ticker": "KALYANIINV",
+        "connection_type": "Holding Company Discount Play",
+        "confidence": "medium",
+        "why_now": "(a) What changed: SEBI's successful implementation of the special call auction framework for other deep-discount holding companies has established a clear regulatory precedent for price discovery. (b) Estimated catalyst window: Medium-term (6-18 months) as the market and regulators push for structural simplification of holding companies with high promoter lock-ins. (c) Confirming milestone: The announcement of a special call auction session by the exchanges or a promoter-led voluntary amalgamation/buyback proposal.",
+        "reasoning": "TYPE B (INVISIBLE TO MARKET): This company is invisible because it has zero mutual fund ownership, zero sell-side analyst coverage, and extremely low daily trading volume. The market will notice it when SEBI's special call auction framework or a formal promoter-led corporate simplification forces price discovery toward its underlying Net Asset Value. [OBSERVED FACTS] Promoters hold 74.97% of the equity, with Sundaram Trading holding 60.94%. Mutual fund holding is 0.00%. The stock trades at an 80% discount to the market value of its listed holdings (primarily Bharat Forge). [STRONG INFERENCE] The extreme illiquidity and high promoter concentration prevent active institutional arbitrage, keeping the discount wide. However, SEBI's special call auction framework removes price bands, allowing a single-session clearing price to bridge the valuation gap. [HYPOTHESIS] Any regulatory action or promoter restructuring will force the market to price Kalyani Investment closer to its underlying asset value, leading to a non-linear re-rating of the stock.",
+        "self_critique": "Why might this specific hypothesis be wrong? Promoters may choose to maintain the status quo indefinitely, ignoring the call auction framework, and the stock could remain an illiquid value trap with no cash-flow realization for minority shareholders.",
+        "disproving_evidence": "A formal regulatory amendment exempting companies with more than 74% promoter holding from the special call auction framework, or a major decline in the stock price of Bharat Forge.",
+        "risks": [
+          "Permanent value trap risk",
+          "Extreme illiquidity",
+          "Lack of promoter intent to simplify the structure"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: The assumption that SEBI's special call auction framework will be actively applied to Kalyani Investment and will successfully attract institutional buying interest despite the 74.97% promoter lock-in.",
+          "Verify the exact market value of Kalyani Investment's listed holdings on a weekly basis.",
+          "Verify if there are any regulatory filings regarding promoter creeping acquisitions."
+        ],
+        "sources": [
+          "https://www.sebi.gov.in",
+          "https://www.bseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 81%",
+          "Phase 2: N/A",
+          "Phase 3: 65%",
+          "Phase 4: 72%",
+          "Final: 75%"
+        ]
+      },
+      {
+        "company_name": "Piramal Enterprises Limited",
+        "ticker": "PEL",
+        "connection_type": "NBFC Undergoing Regulatory Restructuring",
+        "confidence": "medium",
+        "why_now": "(a) What changed: PEL has completed its HFC-to-NBFC-ICC license conversion and is actively restructuring its corporate subsidiaries to comply with RBI's Scale-Based Regulations. (b) Estimated catalyst window: Medium-term (6-18 months) as the retail lending book scales and legacy wholesale provisions are fully written off. (c) Confirming milestone: A sustained improvement in Return",
+        "reasoning": "",
+        "self_critique": "",
+        "disproving_evidence": "",
+        "risks": [],
+        "what_to_verify": [],
+        "sources": [],
+        "confidence_evolution": []
+      }
+    ],
+    "limitations": [],
+    "searches_performed": [
+      {
+        "query": "Financial services NBFC demerger India 2024 2025 listed company",
+        "findings": "[1] Top NBFCs in India by Market Capitalization: Bajaj Finance Leads | Rohit Singh posted on the topic | LinkedIn\nURL: https://www.linkedin.com/posts/rohit-singh-65a791202_top-nbfcs-in-india-by-market-capitalization-activity-7390333571221233664-mQbd\nContent: Top NBFCs in India by Market Capitalization (2025) Non-Banking Financial Companies (NBFCs) play a major role in driving India’s financial growth — offering credit access, financing solutions, and wealth management services to millions. Here are the Top 7 NBFCs by Net Profit (TTM): 1️⃣ SBI Card – ₹1,918 Cr 2️⃣ L&T Finance – ₹2,697 Cr 3️⃣ Tata Capital – ₹3,655 Cr 4️⃣ Cholamandalam Investment and Finance Company Limited – ₹4,453 Cr 5️⃣ MUTHOOT FINANCE LTD – ₹6,131 Cr 6️⃣ Shriram Finance Limited – ₹9,866 Cr 7️⃣ Bajaj Finserv – ₹17,633 Cr 💡 As banks face margin pressure, NBFCs continue expanding deeper into retail credit, MSME loans, and rural financing—driving India’s next lending cycle. Top NBFCs in India by Market Capitalization (202...",
+        "sources": [
+          "https://www.linkedin.com/posts/rohit-singh-65a791202_top-nbfcs-in-india-by-market-capitalization-activity-7390333571221233664-mQbd",
+          "https://www.sharescart.com/industry/finance-nbfc",
+          "https://www.dnb.co.in/files/reports/indias-leading-bfsi-and-fintech-companies-2025.pdf",
+          "https://decentro.tech/blog/list-of-top-upcoming-nbfcs-india",
+          "https://indianexpress.com/article/business/rbi-releases-nbfc-upper-layer-list-for-year-2024-25-9783297"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "specialty chemicals pharma demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] National Stock Exchange of India - Circular\nURL: https://www.steelcitynettrade.com/Circulars/Listing%20of%20Equity%20Shares%20of%20Chembond%20Chemical%20Limited.pdf\nContent: April 7, 2025. The scheme of arrangement inter alia provides for: Demerger of CC & WT Business (Demerged Undertaking) of Chembond Material Technologies Limited (formerly known as Chembond Chemicals Limited) and vesting the same into Chembond Chemicals Limited (formerly known as Chembond Chemical Specialties Limited), an unlisted wholly owned subsidiary (WOS) of Chembond Material Technologies Limited. For every 1 (One) fully paid-up equity share having face value of Rs. 5/- each held in the [...] National Stock Exchange of India Circular Department: LISTING Download Ref. No.: NSE/CML/69233 Date: July 21, 2025 Circular Ref. No.: 1335/2025 To All Members, Sub: Listing of Equity Shares of Chembond Chemical Limited (Formerly known as Chembond Chemical Specialties Limited) pursuant to the Scheme of Arrangement In pur...",
+        "sources": [
+          "https://www.steelcitynettrade.com/Circulars/Listing%20of%20Equity%20Shares%20of%20Chembond%20Chemical%20Limited.pdf",
+          "https://www.indiaglycols.com/wp-content/uploads/Scheme-of-Arrangement.pdf",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v",
+          "https://privi.com/investor-relations/scheme-of-amalgamation-2025",
+          "https://www.sanofi.com/en/india/investors/scheme-of-arrangement"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "power infrastructure green energy demerger India listing 2024 2025",
+        "findings": "[1] Siemens to demerge and list its energy business | Company Business News\nURL: https://www.livemint.com/companies/news/siemens-to-demerge-and-list-its-energy-business-11715690600167.html\nContent: # Siemens to demerge and list its energy business. Siemens Ltd has earlier faced shareholder ire in India when the company proposed to sell its low-voltage motors. New Delhi/Mumbai: Siemens Ltd on Tuesday said it will demerge and list its energy business, on the lines of a global carve-out by its German parent three years ago. The new company will mirror the shareholding of Siemens Ltd, and shareholders will receive one share of Siemens Energy India Ltd for every share of Siemens Ltd. The demerger and listing are expected to be completed by 2025. Earlier, ABB India Ltd had structured the demerger of its power transmission business similarly, mirroring the shareholding of investors in the new entity before selling its stake to Hitachi. Siemens Ltd has earlier faced shareholder ire in India wh...",
+        "sources": [
+          "https://www.livemint.com/companies/news/siemens-to-demerge-and-list-its-energy-business-11715690600167.html",
+          "https://www.siemens-energy.com/global/en/home/press-releases/Energy_business_in_India_successfully_listed.html",
+          "https://groww.in/blog/siemens-energy-india-begins-trading-on-bse-nse-post-demerger",
+          "https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5",
+          "https://press.siemens.com/global/en/pressrelease/siemens-successfully-lists-energy-business-india"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "retail consumer goods demerger spinoff India listing 2024 2025",
+        "findings": "[1] Retail\nURL: https://en.wikipedia.org/wiki/Retail\nContent: | Rank | Company | Headquarters | 2024 total revenue (US$ billion) | Business foundation | Total worldwide store count |\n| 1 | Walmart | United States | $676 | Hypermarket/supercenter/superstore | 10,692 |\n| 2 | Amazon | United States | $393 | Ecommerce | 605 |\n| 3 | Schwarz Gruppe (Lidl) | Germany | $182 | Discount grocery store | 14,244 |\n| 4 | Aldi | Germany | $155 | Discount grocery store | 13,877 |\n| 5 | Costco | United States | $246 | Cash & carry/warehouse club | 890 | [...] | By product \"Product (business)\") |  Agricultural supplies  Alcohol  Antiques  Automotive fuel  Automotive parts  Beauty products  Books  Cannabis  Catering   + Mobile  Chocolate  Clothes  Comics  Confectionery  Consumer electronics  Cycles  Doujin shop  Dry goods  Equestrian supplies  Eyewear  Fish  Flowers  Food  Food service  Fruit stand  Furniture  Garden centre  Gardening supplies  General merchandise  Gold  Greengrocer  Grocery   + Public g...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Retail",
+          "https://www.cnbc.com/retail",
+          "https://fluentcart.com/blog/what-is-retail",
+          "https://www.shopify.com/blog/what-is-retail",
+          "https://erply.com/what-is-retail"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Aditya Birla Fashion Madura demerger Raymond lifestyle demerger India 2024 2025",
+        "findings": "[1] Aditya Birla Group Reshapes Fashion with ABFRL Demerger - The Luxury clothing brands\nURL: https://www.adityabirla.com/media/stories/the-abfrl-demerger-two-paths-one-vision\nContent: # The ABFRL demerger: Two paths, one vision. In a strategic move, India’s largest fashion player Aditya Birla Fashion and Retail Ltd. FY2025 was a landmark year for Aditya Birla Fashion and Retail Ltd., a fashion behemoth that had grown into not just a house but a mansion of great fashion brands -- which together had pooled in nearly Rs. 14,000 crore the previous year, all from retailing peak fashion in over 900 cities and towns of India. Having built this unprecedented size and scale in the fashion space, Aditya Birla Group took a strategic decision to demerge ABFRL’s erstwhile Madura business into Aditya Birla Lifestyle Brands Limited (ABLBL) . The new entity Aditya Birla Lifestyle Brands Ltd. now holds some of India’s best-known brands in its kitty. ### **ABFRL’s portfolio of brands**. ### **A legacy ...",
+        "sources": [
+          "https://www.adityabirla.com/media/stories/the-abfrl-demerger-two-paths-one-vision",
+          "https://sg.finance.yahoo.com/news/aditya-birla-fashion-list-flagship-143956161.html",
+          "https://www.linkedin.com/pulse/aditya-birla-fashion-retail-abfrl-demerges-ewurc",
+          "https://www.findoc.com/blog/abfrl-demerges-madura-unit-to-unlock-shareholder-value",
+          "https://www.livemint.com/companies/news/abrfl-board-approves-demerger-of-madura-to-aditya-birla-lifestyle-brands/amp-11713530093283.html"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "real estate hospitality demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] DILIP N VAIDYA\nURL: https://deltacorp.in/pdf/Announcements/2024-2025/DCL-Outcome-of-Board-Meeting-06-12-2024.pdf\nContent: (iii) The proposed reorganisation pursuant to this Scheme is expected, inter alia, to result in the following benefits: a) unlocking of value and create enhanced value for shareholders and allow a focused strategy in operations; b) provide better flexibility in accessing capital and attract business specific partners and investors; c) focused management approach for pursuing revenue growth and expansion opportunities in the respective business verticals; DILIP N VAIDYA Digitally signed by DILIP N VAIDYA Date: 2024.12.06 15:53:50 +05'30' d) de-risking the businesses for the stakeholders of DCL through an independent market driven valuation of their shares in DPPL which will be listed pursuant to the Scheme; e) streamlining of the corporate structure by elimination of legal entities; and f) reduction of legal and regulatory compliances and cost savings through leg...",
+        "sources": [
+          "https://deltacorp.in/pdf/Announcements/2024-2025/DCL-Outcome-of-Board-Meeting-06-12-2024.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/37e919f2-6685-4cb2-9c2b-72fcb6c99bba.pdf",
+          "https://forum.valuepickr.com/uploads/short-url/ecoqZZPB15pAvU1dR3gnqylZ3GQ.pdf",
+          "https://elitewealth.in/valor-estates-demerged-unit-advent-hotels-to-list-on-bse-and-nse-on-november-13",
+          "https://scanx.trade/stock-market-news/corporate-actions/valor-estate-announces-listing-of-advent-hotels-shares-following-nclt-approved-demerger/24477528"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "engineering capital goods manufacturing demerger India listing 2024 2025",
+        "findings": "[1] India's Engineering & Capital Goods Manufacturers Industry | IBEF\nURL: https://www.ibef.org/industry/engineering-india\nContent: # Engineering Industry in India. In FY24, exports of engineering goods stood at US$ 109.32 billion, reflecting a marginal growth of 2.1% of YoY growth. \\*Market size for the Indian Construction Equipment Market stood at US$ 7.2 billion in FY23 and is forecasted to grow at a CAGR of 15% for next 5 years, as per the estimates of CII. \\*The National Capital Goods Policy (2016) aims to boost India’s capital goods sector by raising its manufacturing share from 12% in 2016 to 20% by 2025, doubling production, increasing exports to 40% of output, and advancing technology capabilities to global standards. The engineering sector is the largest of the industrial sectors in India. India’s foundry and casting market size reached Rs. 1,980.00 billion (US$ 22.0 billion) in 2025 and is projected to reach Rs. 5,211.00 billion (US$ 57.9 billion) by 2034, registering a CAGR...",
+        "sources": [
+          "https://www.ibef.org/industry/engineering-india",
+          "https://zerodha.com/markets/sector/engineering-capital-goods",
+          "https://www.indmoney.com/stocks/sectors/capital-goods",
+          "https://portal.tradebrains.in/corporateactions/Merger-Demerger",
+          "https://mind2markets.com/6-best-capital-goods-stocks-in-india-to-follow-up"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "engineering manufacturing demerger scheme arrangement India 2024 2025",
+        "findings": "[1] Engineering\nURL: https://en.wikipedia.org/wiki/Engineering\nContent: | | Secondary sector or ′Industrial sector′ (goods manufacturing) |  | |  |  |  |  |  |  |  |  |  |  |  |  |  ---  ---  ---  ---  ---  --- | | Manufacturing | |  |  |  --- | | Light industry |  Food   + Animal feed   + Baking   + Canning   + Dairy products   + Flour   + Meat   + Prepared   + Preserved   + Sweets   + Vegetable oils  Beverages   + Beer   + Bottled water   + Liquor   + Soft drinks   + Wine  Textiles   + Carding   + Dyeing   + Prints   + Spinning \"Spinning (textiles)\")   + Weaving [...] is now assisted with computer software, from design to testing and manufacturing. At larger scales, this process is normally funded by a company, multiple investors, or the government, so a knowledge of economics and business practices is needed. [...] 16, 2025 – via Google Books.\n\n[2] Engineering | Definition, History, Functions, & Facts\nURL: https://www.britannica.com/technology/engineering\nContent: Engineering applie...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Engineering",
+          "https://www.britannica.com/technology/engineering",
+          "https://discovere.org/engineering-careers",
+          "https://www.snhu.edu/about-us/newsroom/stem/what-is-engineering",
+          "https://www.twi-global.com/technical-knowledge/faqs/what-is-engineering"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "NCLT demerger engineering manufacturing India 2024 2025",
+        "findings": "[1] RL/SE/25-26/31 July 4, 2025 To The Department of Corporate Services\nURL: https://api.raymond.in/uploads/investor/1752057797520NCLT%20Order%20-%20Engineering%20Business%20-%20July%2004,%202025.pdf\nContent: Demerger Business (Post Demerger and Merger under Part B and D) Second Petitioner Company/ Demerged Company 2 JK Maini Precision Technology Limited i. Engineering Business- Manufacturing of steel files, cutting tools, market hands tools and a key supplier in tool dans hardware supply chain market; ii. Engineering business- Business of manufacturing and selling ring gears, flexplates, water pump bearings, machined components, both for auto component and engineering products; and Engineering and [...] rationalization, standardization and C.P.(CAA)/03/MB-III/2025 IN C.A.(CAA)/152/MB-III/2024 Page 13 of 52 simplification of business processes, elimination of duplication, reduction in multiplicity of legal and regulatory compliances and rationalization of administration expenses. 12. D...",
+        "sources": [
+          "https://api.raymond.in/uploads/investor/1752057797520NCLT%20Order%20-%20Engineering%20Business%20-%20July%2004,%202025.pdf",
+          "https://www.jswenergy.in/wp-content/uploads/2026/01/Annexure-1-Scheme.pdf",
+          "https://cdn.skfmediahub.skf.com/api/public/095ca43795517146/pdf_preview_medium/Information_Memorandum_pdf_preview_medium.pdf",
+          "https://nclt.gov.in/gen_pdf.php?filepath=%2FEfile_Document%2Fncltdoc%2Fcasedoc%2F3305118009582025%2F04%2FOrder-Challenge%2F04_order-Challange_004_175973004117558501468e3597905287.pdf",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "IT software tech services demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] It (novel)\nURL: https://en.wikipedia.org/wiki/It_(novel)\nContent: Edit links\n\n Article \"View the content page [c]\")\n Talk \"Discuss improvements to the content page [t]\")\n\n Read)\n View source&action=edit \"This page is protected.\n  You can view its source [e]\")\n View history&action=history \"Past revisions of this page [h]\")\n\nTools\n\nActions\n\n Read)\n View source&action=edit)\n View history&action=history)\n\nGeneral [...] ## Background [...] Hidden categories:\n\n Articles with short description\n Short description matches Wikidata\n Wikipedia indefinitely semi-protected pages\n Use mdy dates from October 2025\n\nIt (novel)\n\nAdd topic\n\n[2] It (2017)\nURL: https://www.imdb.com/title/tt1396484\nContent: 7.3\n702.9K\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n#### Summary [...] version, thought of the story. [...] Reviewers say 'It' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/It_(novel)",
+          "https://www.imdb.com/title/tt1396484",
+          "https://en.wikipedia.org/wiki/It_(2017_film)",
+          "https://www.amazon.com/BD-Blu-ray-Chase-Palmer/dp/B074ZMJZ6P",
+          "https://www.merriam-webster.com/dictionary/it"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "software technology services company demerger India 2024 2025",
+        "findings": "[1] Top Software Development Technologies and Tools picked ...\nURL: https://www.muchskills.com/blog/top-software-technical-tools-muchskills\nContent: 21. GitHub Copilot - AI Development: The incumbent AI coding assistant, built into VS Code and JetBrains. Improved significantly in 2024-2025.\n22. Slack - Collaboration: Still the preferred communication tool for teams that choose their own stack.\n23. Notion - Productivity: Has become the default for knowledge management, internal wikis, and lightweight project tracking in smaller and mid-size teams. [...] tool of choice for founders running demos with investors or testing ideas with users before committing to a proper build. Lovable Cloud (their own backend service) launched in 2025 and reduces some of the Supabase dependency for simpler use cases. [...] ChatGPT is still the most widely recognised AI assistant in the world, and by most counts, the one most people reach for first. OpenAI hit a billion users in early 2025, which is a number...",
+        "sources": [
+          "https://www.muchskills.com/blog/top-software-technical-tools-muchskills",
+          "https://en.wikipedia.org/wiki/Software",
+          "https://www.lenovo.com/us/en/glossary/what-is-software",
+          "https://www.geeksforgeeks.org/software-engineering/what-is-a-computer-software",
+          "https://www.ebsco.com/research-starters/computer-science/computer-software"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Coforge Persistent Tech Mahindra sonata software demerger India",
+        "findings": "[1] IT mid-caps take the inorganic route to trump larger rivals in new biz - Mint\nURL: https://www.livemint.com/companies/indian-it-services-acquisitions-coforge-persistent-systems-mphasis-hexaware-infosys-wipro-tcs-hcltech-tech-mahindra/amp-11782745821453.html\nContent: IT services companies—including Coforge Ltd, The other firms in the $1-2 billion revenue space are Persistent Systems Ltd, Sonata Software Ltd.\n\n[2] IT mid-caps tap M&A for new biz, take on big rivals | Mint Ahmedabad\nURL: https://www.pressreader.com/india/mint-ahmedabad/20260701/281586657328249\nContent: Tech Mahindra India · Sonata Software India's mid-sized information technology (IT) services firms, earning $1-2 billion in revenue, Persistent\n\n[3] IT Firms Spend $7.1B on Acquisitions to Drive Growth\nURL: https://www.linkedin.com/posts/linkedin-news-india_ai-acquisitions-mergers-activity-7467830273192321025-1w9r\nContent: Coforge, Cyient and Persistent Systems have all made significant acquisitions in 2026. The common ...",
+        "sources": [
+          "https://www.livemint.com/companies/indian-it-services-acquisitions-coforge-persistent-systems-mphasis-hexaware-infosys-wipro-tcs-hcltech-tech-mahindra/amp-11782745821453.html",
+          "https://www.pressreader.com/india/mint-ahmedabad/20260701/281586657328249",
+          "https://www.linkedin.com/posts/linkedin-news-india_ai-acquisitions-mergers-activity-7467830273192321025-1w9r",
+          "https://finstor85.substack.com/p/coforge-and-persistent-are-rewriting",
+          "https://www.facebook.com/61571735969172/posts/-indias-biggest-demerger-pipeline-stocks-to-watch-corporate-demergers-can-reshap/122166541310724532"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "pharma healthcare hospitals demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] Apollo Hospitals $3B Demerger: India Healthcare Transformation\nURL: https://abhisho7.substack.com/p/apollo-hospitals-master-play\nContent: In a move that’s sending ripples across India’s pharmaceutical and healthcare sectors, Apollo Hospitals Enterprise Limited (‘AHEL’) has secured a critical approval from the Competition Commission of India (CCI) for its ambitious restructuring plan. CCI approved on 23 Sep 2025 Apollo Hospitals’ composite scheme merging Apollo Health Co limited (‘AHL’ or ‘ Apollo Health’) and Keimed Private Limited (‘Keimed’) into new company, marking a pivotal moment in what promises to be one of India’s most [...] Tranche 1: INR 1,732 crore completed in September 2024\n Tranche 2: INR 743 crore completed in March 2025\n Strategic Acquisition: AHL acquired 11.2% stake in Keimed in March 2025, ahead of the original timeline\n\nThis phased approach allowed for careful integration planning while maintaining operational continuity.\n\n### June 2025: The Composite Scheme Unv...",
+        "sources": [
+          "https://abhisho7.substack.com/p/apollo-hospitals-master-play",
+          "https://www.apollohospitals.com/sites/default/files/2025-06/se_communication_30062025.pdf",
+          "https://www.sanofi.com/assets/countries/india/docs/consumer-healthcare/investors/disclosures-under-reg-46-of-the-listing-regulations/disclosures-under-reg-30-of-the-listing-regulations/information-memorandum.pdf",
+          "https://nsearchives.nseindia.com/corporate/APOLLOHOSP_21052026222159_SE_equity_shareholders_notice-ocr.pdf",
+          "https://www.linkedin.com/posts/ramesh-balasubramanian-b218277_apollo-hospitals-demerger-simple-guide-for-activity-7347470192144277504-vMOI"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Siemens Energy India institutional holding selling price discovery demerger",
+        "findings": "[1] Siemens Energy’s Demerged India Unit In Stock Exchange Debut, Falls 5%\nURL: https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5\nContent: Siemens Energy’s demerged Indian unit - Siemens Energy India Limited or ‘SEIL’ - made its stock exchange debut on Thursday, in a keenly watched emerging market move by the German vendor.\n\nThe lucrative unit’s demerger from its parent company saw it debut at a listing price of ₹2,840 ($32.85) per share on the National Stock Exchange of India, already up 14% on its stated discovery price of ₹2,478. Its demerger price was in the region of ₹2,350. [...] Siemens Energy India\n\nGuilherme Mendonca, managing director and chief executive officer of SEIL, said: \"With this listing we reaffirm our long-standing commitment to India’s energy future. As India advances toward becoming a $7 trillion economy, a strong and resilient energy system will be essential.\n\n\"Siemens Energy India Limited wit...",
+        "sources": [
+          "https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5",
+          "https://groww.in/blog/siemens-energy-india-begins-trading-on-bse-nse-post-demerger",
+          "https://www.reuters.com/business/energy/siemens-india-arm-list-energy-business-into-separate-entity-2024-05-14",
+          "https://www.siemens-energy.com/global/en/home/press-releases/Energy_business_in_India_successfully_listed.html",
+          "https://press.siemens.com/global/en/pressrelease/siemens-successfully-lists-energy-business-india"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "BASF India agricultural solutions demerger valuation institutional selling",
+        "findings": "[1] 🔄 BASF India Approves Demerger of Agri Biz 👉🏻 BASF Board okays ...\nURL: https://x.com/aoiventures/status/1922586647809421763\nContent: BASF Board okays demerger of its ₹2,064 Cr Agri Solutions unit into a new listed entity 👉🏻 Demerger to unlock value & enhance strategic focus\n\n[2] BASF India shareholders approve demerger of agri-business\nURL: https://scanx.trade/stock-market-news/companies/basf-india-shareholders-approve-scheme-of-arrangement/43856243\nContent: The demerger, supported by sales of INR 1944cr in the agri-business for 2025-26, is scheduled for completion in FY 26-27 with a share\n\n[3] BASF India Ltd., Mumbai\nURL: https://nsearchives.nseindia.com/corporate/BASFIL_14052025145340_Demerger14052025.pdf\nContent: We now wish to inform you that based on the recommendations of the Committee of Independent Directors and Audit Committee, the Board of Directors of the Company, at its meeting held today, has approved a Scheme of Arrangement (“Scheme”) amongst BASF India Ltd (Demerged...",
+        "sources": [
+          "https://x.com/aoiventures/status/1922586647809421763",
+          "https://scanx.trade/stock-market-news/companies/basf-india-shareholders-approve-scheme-of-arrangement/43856243",
+          "https://nsearchives.nseindia.com/corporate/BASFIL_14052025145340_Demerger14052025.pdf",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece/amp",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Apollo HealthCo demerger listing timeline valuation NCLT",
+        "findings": "[1] Apollo HealthCo demerger: Q4 FY27 listing timeline\nURL: https://www.multibagg.ai/market-pulse/articles/apollo-healthco-demerger-q4fy27-listing-cmpxuuh8n1tfxnz0jitqy88y0\nContent: Apollo HealthCo demerger is on schedule, with shareholder approval due on June 24, 2026, The National Company Law Tribunal (NCLT) the demerger\n\n[2] Apollo Hospitals Targets ₹25000 Crore HealthCo Revenue and Q4 ...\nURL: https://www.sahi.com/news/apollo-hospitals-targets-25-000-crore-healthco-revenue-and-q4-fy27-demerger-listing-326-PE1_CORP\nContent: Listing Timeline: Now solidified for Q4 FY27 (Dec 2026 - Mar 2027) following NCLT order dated May 5, 2026. Digital Profitability: Apollo 24/7\n\n[3] Apollo sets June 24 meetings for demerger scheme\nURL: https://scanx.trade/stock-market-news/companies/apollo-hospitals-sets-june-24-meeting-for-demerger-scheme/40998834\nContent: Apollo Hospitals Enterprise Limited has scheduled NCLT-convened meetings on June 24, 2026, available from June 20 to June 23, 2026.\n\n[4] Apoll...",
+        "sources": [
+          "https://www.multibagg.ai/market-pulse/articles/apollo-healthco-demerger-q4fy27-listing-cmpxuuh8n1tfxnz0jitqy88y0",
+          "https://www.sahi.com/news/apollo-hospitals-targets-25-000-crore-healthco-revenue-and-q4-fy27-demerger-listing-326-PE1_CORP",
+          "https://scanx.trade/stock-market-news/companies/apollo-hospitals-sets-june-24-meeting-for-demerger-scheme/40998834",
+          "https://www.financialexpress.com/business/news/apollo-eyes-december-listing-for-apollo-healthco/4247380/lite",
+          "https://www.multibagg.ai/market-pulse/articles/apollo-healthco-demerger-q4fy27-listing-cmpxutgq51tfwnz0jr37xo69b"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "\"Siemens Energy India\" shareholding pattern promoter stake BSE",
+        "findings": "[1] Shareholding Pattern under Regulation 31 of SEBI (Listing ...\nURL: https://www.siemens-energy-india.com/pdf/statement-showing-holding-of-securities-and-shareholding-pattern-june-13-2025.pdf\nContent: ( as a percenta ge of diluted share capital) Siemens Energy India Limited - Shareholding pattern as on June 13, 2025 Table II - Statement showing shareholding pattern of the Promoter and Promoter Group (XIII) Number of Shares pledged or otherwise encumbered No. (a) As a % of total Shares held(b) (XIV) (XII) Number of Locked in shares No. (a) As a % of total Shares held(b) (X) (XI)= Category & Name of the shareholders Page 3 of 8 1 Institutions (Domestic) (a) Mutual Fund 29 1,25,11,160 0 0 1,25,11,160 4 1,25,11,160 0 1,25,11,160 3.51 0 3.51 0 0 NA NA 1,25,11,160 0 0 0 (b) Venture Capital Funds 0 0 0 0 0 0.00 0 0 0 0.00 0 0.00 0 0 NA NA 0 (c) Alternate Investment Funds 20 1,83,647 0 0 1,83,647 0.05 1,83,647 0 1,83,647 0.05 0 0.05 0 0 NA NA 1,83,647 0 0 0 (d) Banks 7 2,24,363 0 0 2,24,363 ...",
+        "sources": [
+          "https://www.siemens-energy-india.com/pdf/statement-showing-holding-of-securities-and-shareholding-pattern-june-13-2025.pdf",
+          "https://www.siemens-energy-india.com/pdf/seil-information-memorandum.pdf",
+          "https://trendlyne.com/equity/share-holding/1237/SIEMENS/latest/siemens-ltd",
+          "https://www.screener.in/company/ENRIN",
+          "https://www.moneycontrol.com/india/stockpricequote/electric-equipment/siemensenergyindia/SEI11"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"BASF India\" agricultural solutions demerger NCLT status objections",
+        "findings": "[1] BASF INDIA LIMITED\nURL: https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v\nContent: amongst BASF India Ltd (‘Demerged Company”), BASF Agricultural Solutions India Limited (‘Resulting Company”) and their respective shareholders, providing for the demerger of the BIL's Agricultural Sofutions Business into the Company, in compliance with Sections 230 to 232 and other applicable provisions of the Companies Act. 2013, Subsequent to the approval, BASF India Limited has received “no objection” letters from BSE Limited and the National Stock Exchange of India Limited in January 2026 and February 2026, sespectively. Fusther, the National Company Law Tribunal (NCLT), by its order dated April 2026, dispensed with the requirement of convening meetings of secured and unsecured creditors of both the ...",
+        "sources": [
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v",
+          "https://scanx.trade/stock-market-news/companies/basf-india-shareholders-approve-scheme-of-arrangement/43856243",
+          "https://www.basf.com/dam/jcr:c7ccb0e6-abd0-4ace-8bba-0c7dba2418c3/basf/www/in/documents/en/investor-relations/announcements/2025/Approval-for-Demerger-of-Company-s-Agricultural-Solutions-Business.pdf",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece/amp",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"Apollo HealthCo\" \"Keimed\" merger valuation report share exchange ratio",
+        "findings": "[1] [PDF] Apollo Healthco Ltd\nURL: https://www.apollohospitals.com/apollo_pdf/Investors-Presentation-12th-july-2024.pdf\nContent: ratio for proposed merger is capped at 0.81 shares of AHL for every 1 share of Keimed # Valuation as on April 26, 2024 @ On pre-Ind AS EBITDA basis ; 1 # of shares outstanding and price per share are based on the current ESOP pool of 2.5% and would change accordingly once ESOP pool is increased to 5% prior to investment in Advent; Equity value will change on account of preferential allotment of shares to AHEL 28 Combined Financial Metrics | Snapshot (FY24) + = + = INR Cr 6,927 900 7,827 10,578 13,770 506 103 609 352 961 7.3% 11.4% 7.8% 3.3% 7.0% --619 -619 --619 --89 -89 --89 -605 -99 352 253 7.3% --1.8% Adjusted For I nter Com pany Sales( Keim ed & AHL) 1 P re 24/ 7 Operating Cost and ESOP Non-Cash Charge 506 3.3% Balance Sheet position – Mar’24 | Stronger post the transaction  Keimed is [...] Apollo Hospitals Enterprise Ltd’s (“AHEL”) related-party transact...",
+        "sources": [
+          "https://www.apollohospitals.com/apollo_pdf/Investors-Presentation-12th-july-2024.pdf",
+          "https://www.adventinternational.com/news/apollo-247-to-raise-inr-2475-crores-from-advent-international-merge-keimed-with-apollo-247",
+          "https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/BrokerRecommendation/Apollo%20Hospitals%20Enterprise02Jul25.pdf",
+          "https://images.assettype.com/bloombergquint/2024-04/fd4df4fb-7365-4ad9-b0df-951a4c5823d8/Prabhudas_Lilladher_Apollo_Hospitals_Update.pdf",
+          "https://www.apollohospitals.com/sites/default/files/2025-06/se_communication_30062025.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"Siemens\" demerger analyst coverage \"initiating coverage\" India",
+        "findings": "[1] Press - Digital Asset Management - Siemens\nURL: https://assets.new.siemens.com/siemens/assets/api/uuid:fca34622-b9d9-44f6-bb69-44b68945e5fe/HQCOPR202311146816EN.pdf\nContent: will further sharpen the portfolio focus of Siemens. It also simplifies and strengthens our corporate structure in India, a fast-growing and strategically important market.” Proposal to initiate demerger procedures in India As part of the spin-off in 2020, Siemens and Siemens Energy did not separate their businesses in India as it was not feasible at that time. As a next step, Siemens and Siemens Energy have agreed to propose to the Board of Directors of Siemens Ltd. India a demerger of the energy business. Siemens Energy is to ultimately acquire a controlling stake in the demerged energy business. The aim is to complete the demerger in 2025 – significantly earlier than previously planned. Measures to facilitate Siemens Energy customer guarantees Siemens has agreed with Siemens Energy [...] to Siemens Energy. “...",
+        "sources": [
+          "https://assets.new.siemens.com/siemens/assets/api/uuid:fca34622-b9d9-44f6-bb69-44b68945e5fe/HQCOPR202311146816EN.pdf",
+          "https://images.moneycontrol.com/static-mcnews/2025/08/20250806093622_Siemens-Energy-India_06082025_ICICI-Securities.pdf",
+          "https://www.plindia.com/ResReport/SIEM-7-4-25-PL.pdf",
+          "https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5",
+          "https://www.scribd.com/document/878313798/Siemens-Energy-Analyst-Report"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "recent announced demergers India 2026 record date pending NCLT",
+        "findings": "[1] Vedanta demerger: Deadline pushed to March 2026; NCLT and government approvals pending - The Times of India\nURL: https://timesofindia.indiatimes.com/business/india-business/vedanta-demerger-deadline-pushed-to-march-2026-nclt-and-government-approvals-pending/articleshow/124315936.cms\nContent: Vedanta Ltd, led by Anil Agarwal, has postponed the completion of its demerger to March 31, 2026 due to pending approvals from the National Company Law Tribunal (NCLT) and government authorities.The company made the announcement in a filing this week.“Given that the conditions precedent in the Scheme, including approval of the National Company Law Tribunal, Mumbai Bench (NCLT) and approvals from certain government authorities are in the process of being completed, the board of the company and the resulting companies...have decided to extend the timeline for fulfilment of the conditions precedent from September 30, 2025 to March 31, 2026,” Vedanta said.This is not the first extension as the dead...",
+        "sources": [
+          "https://timesofindia.indiatimes.com/business/india-business/vedanta-demerger-deadline-pushed-to-march-2026-nclt-and-government-approvals-pending/articleshow/124315936.cms",
+          "https://www.sahi.com/blogs/vedanta-shares-hit-record-high-as-demerger-date-nears-what-is-driving-the-rally",
+          "https://www.alcircle.com/news/vedanta-delays-demerger-deadline-to-june-2026-amid-pending-regulatory-approvals-117867",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v",
+          "https://www.instagram.com/p/DX05ydbm223"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Financial services NBFC demerger India 2024 2025 listed company",
+        "findings": "[1] Top NBFCs in India by Market Capitalization: Bajaj Finance Leads | Rohit Singh posted on the topic | LinkedIn\nURL: https://www.linkedin.com/posts/rohit-singh-65a791202_top-nbfcs-in-india-by-market-capitalization-activity-7390333571221233664-mQbd\nContent: Top NBFCs in India by Market Capitalization (2025) Non-Banking Financial Companies (NBFCs) play a major role in driving India’s financial growth — offering credit access, financing solutions, and wealth management services to millions. Here are the Top 7 NBFCs by Net Profit (TTM): 1️⃣ SBI Card – ₹1,918 Cr 2️⃣ L&T Finance – ₹2,697 Cr 3️⃣ Tata Capital – ₹3,655 Cr 4️⃣ Cholamandalam Investment and Finance Company Limited – ₹4,453 Cr 5️⃣ MUTHOOT FINANCE LTD – ₹6,131 Cr 6️⃣ Shriram Finance Limited – ₹9,866 Cr 7️⃣ Bajaj Finserv – ₹17,633 Cr 💡 As banks face margin pressure, NBFCs continue expanding deeper into retail credit, MSME loans, and rural financing—driving India’s next lending cycle. Top NBFCs in India by Market Capitalization (202...",
+        "sources": [
+          "https://www.linkedin.com/posts/rohit-singh-65a791202_top-nbfcs-in-india-by-market-capitalization-activity-7390333571221233664-mQbd",
+          "https://www.sharescart.com/industry/finance-nbfc",
+          "https://www.dnb.co.in/files/reports/indias-leading-bfsi-and-fintech-companies-2025.pdf",
+          "https://decentro.tech/blog/list-of-top-upcoming-nbfcs-india",
+          "https://indianexpress.com/article/business/rbi-releases-nbfc-upper-layer-list-for-year-2024-25-9783297"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "specialty chemicals pharma demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] National Stock Exchange of India - Circular\nURL: https://www.steelcitynettrade.com/Circulars/Listing%20of%20Equity%20Shares%20of%20Chembond%20Chemical%20Limited.pdf\nContent: April 7, 2025. The scheme of arrangement inter alia provides for: Demerger of CC & WT Business (Demerged Undertaking) of Chembond Material Technologies Limited (formerly known as Chembond Chemicals Limited) and vesting the same into Chembond Chemicals Limited (formerly known as Chembond Chemical Specialties Limited), an unlisted wholly owned subsidiary (WOS) of Chembond Material Technologies Limited. For every 1 (One) fully paid-up equity share having face value of Rs. 5/- each held in the [...] National Stock Exchange of India Circular Department: LISTING Download Ref. No.: NSE/CML/69233 Date: July 21, 2025 Circular Ref. No.: 1335/2025 To All Members, Sub: Listing of Equity Shares of Chembond Chemical Limited (Formerly known as Chembond Chemical Specialties Limited) pursuant to the Scheme of Arrangement In pur...",
+        "sources": [
+          "https://www.steelcitynettrade.com/Circulars/Listing%20of%20Equity%20Shares%20of%20Chembond%20Chemical%20Limited.pdf",
+          "https://www.indiaglycols.com/wp-content/uploads/Scheme-of-Arrangement.pdf",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v",
+          "https://privi.com/investor-relations/scheme-of-amalgamation-2025",
+          "https://www.sanofi.com/en/india/investors/scheme-of-arrangement"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "power infrastructure green energy demerger India listing 2024 2025",
+        "findings": "[1] Siemens to demerge and list its energy business | Company Business News\nURL: https://www.livemint.com/companies/news/siemens-to-demerge-and-list-its-energy-business-11715690600167.html\nContent: # Siemens to demerge and list its energy business. Siemens Ltd has earlier faced shareholder ire in India when the company proposed to sell its low-voltage motors. New Delhi/Mumbai: Siemens Ltd on Tuesday said it will demerge and list its energy business, on the lines of a global carve-out by its German parent three years ago. The new company will mirror the shareholding of Siemens Ltd, and shareholders will receive one share of Siemens Energy India Ltd for every share of Siemens Ltd. The demerger and listing are expected to be completed by 2025. Earlier, ABB India Ltd had structured the demerger of its power transmission business similarly, mirroring the shareholding of investors in the new entity before selling its stake to Hitachi. Siemens Ltd has earlier faced shareholder ire in India wh...",
+        "sources": [
+          "https://www.livemint.com/companies/news/siemens-to-demerge-and-list-its-energy-business-11715690600167.html",
+          "https://www.siemens-energy.com/global/en/home/press-releases/Energy_business_in_India_successfully_listed.html",
+          "https://groww.in/blog/siemens-energy-india-begins-trading-on-bse-nse-post-demerger",
+          "https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5",
+          "https://press.siemens.com/global/en/pressrelease/siemens-successfully-lists-energy-business-india"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "retail consumer goods demerger spinoff India listing 2024 2025",
+        "findings": "[1] Retail\nURL: https://en.wikipedia.org/wiki/Retail\nContent: | Rank | Company | Headquarters | 2024 total revenue (US$ billion) | Business foundation | Total worldwide store count |\n| 1 | Walmart | United States | $676 | Hypermarket/supercenter/superstore | 10,692 |\n| 2 | Amazon | United States | $393 | Ecommerce | 605 |\n| 3 | Schwarz Gruppe (Lidl) | Germany | $182 | Discount grocery store | 14,244 |\n| 4 | Aldi | Germany | $155 | Discount grocery store | 13,877 |\n| 5 | Costco | United States | $246 | Cash & carry/warehouse club | 890 | [...] | By product \"Product (business)\") |  Agricultural supplies  Alcohol  Antiques  Automotive fuel  Automotive parts  Beauty products  Books  Cannabis  Catering   + Mobile  Chocolate  Clothes  Comics  Confectionery  Consumer electronics  Cycles  Doujin shop  Dry goods  Equestrian supplies  Eyewear  Fish  Flowers  Food  Food service  Fruit stand  Furniture  Garden centre  Gardening supplies  General merchandise  Gold  Greengrocer  Grocery   + Public g...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Retail",
+          "https://www.cnbc.com/retail",
+          "https://fluentcart.com/blog/what-is-retail",
+          "https://www.shopify.com/blog/what-is-retail",
+          "https://erply.com/what-is-retail"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Aditya Birla Fashion Madura demerger Raymond lifestyle demerger India 2024 2025",
+        "findings": "[1] Aditya Birla Group Reshapes Fashion with ABFRL Demerger - The Luxury clothing brands\nURL: https://www.adityabirla.com/media/stories/the-abfrl-demerger-two-paths-one-vision\nContent: # The ABFRL demerger: Two paths, one vision. In a strategic move, India’s largest fashion player Aditya Birla Fashion and Retail Ltd. FY2025 was a landmark year for Aditya Birla Fashion and Retail Ltd., a fashion behemoth that had grown into not just a house but a mansion of great fashion brands -- which together had pooled in nearly Rs. 14,000 crore the previous year, all from retailing peak fashion in over 900 cities and towns of India. Having built this unprecedented size and scale in the fashion space, Aditya Birla Group took a strategic decision to demerge ABFRL’s erstwhile Madura business into Aditya Birla Lifestyle Brands Limited (ABLBL) . The new entity Aditya Birla Lifestyle Brands Ltd. now holds some of India’s best-known brands in its kitty. ### **ABFRL’s portfolio of brands**. ### **A legacy ...",
+        "sources": [
+          "https://www.adityabirla.com/media/stories/the-abfrl-demerger-two-paths-one-vision",
+          "https://sg.finance.yahoo.com/news/aditya-birla-fashion-list-flagship-143956161.html",
+          "https://www.linkedin.com/pulse/aditya-birla-fashion-retail-abfrl-demerges-ewurc",
+          "https://www.findoc.com/blog/abfrl-demerges-madura-unit-to-unlock-shareholder-value",
+          "https://www.livemint.com/companies/news/abrfl-board-approves-demerger-of-madura-to-aditya-birla-lifestyle-brands/amp-11713530093283.html"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "real estate hospitality demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] DILIP N VAIDYA\nURL: https://deltacorp.in/pdf/Announcements/2024-2025/DCL-Outcome-of-Board-Meeting-06-12-2024.pdf\nContent: (iii) The proposed reorganisation pursuant to this Scheme is expected, inter alia, to result in the following benefits: a) unlocking of value and create enhanced value for shareholders and allow a focused strategy in operations; b) provide better flexibility in accessing capital and attract business specific partners and investors; c) focused management approach for pursuing revenue growth and expansion opportunities in the respective business verticals; DILIP N VAIDYA Digitally signed by DILIP N VAIDYA Date: 2024.12.06 15:53:50 +05'30' d) de-risking the businesses for the stakeholders of DCL through an independent market driven valuation of their shares in DPPL which will be listed pursuant to the Scheme; e) streamlining of the corporate structure by elimination of legal entities; and f) reduction of legal and regulatory compliances and cost savings through leg...",
+        "sources": [
+          "https://deltacorp.in/pdf/Announcements/2024-2025/DCL-Outcome-of-Board-Meeting-06-12-2024.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/37e919f2-6685-4cb2-9c2b-72fcb6c99bba.pdf",
+          "https://forum.valuepickr.com/uploads/short-url/ecoqZZPB15pAvU1dR3gnqylZ3GQ.pdf",
+          "https://elitewealth.in/valor-estates-demerged-unit-advent-hotels-to-list-on-bse-and-nse-on-november-13",
+          "https://scanx.trade/stock-market-news/corporate-actions/valor-estate-announces-listing-of-advent-hotels-shares-following-nclt-approved-demerger/24477528"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "engineering capital goods manufacturing demerger India listing 2024 2025",
+        "findings": "[1] India's Engineering & Capital Goods Manufacturers Industry | IBEF\nURL: https://www.ibef.org/industry/engineering-india\nContent: # Engineering Industry in India. In FY24, exports of engineering goods stood at US$ 109.32 billion, reflecting a marginal growth of 2.1% of YoY growth. \\*Market size for the Indian Construction Equipment Market stood at US$ 7.2 billion in FY23 and is forecasted to grow at a CAGR of 15% for next 5 years, as per the estimates of CII. \\*The National Capital Goods Policy (2016) aims to boost India’s capital goods sector by raising its manufacturing share from 12% in 2016 to 20% by 2025, doubling production, increasing exports to 40% of output, and advancing technology capabilities to global standards. The engineering sector is the largest of the industrial sectors in India. India’s foundry and casting market size reached Rs. 1,980.00 billion (US$ 22.0 billion) in 2025 and is projected to reach Rs. 5,211.00 billion (US$ 57.9 billion) by 2034, registering a CAGR...",
+        "sources": [
+          "https://www.ibef.org/industry/engineering-india",
+          "https://zerodha.com/markets/sector/engineering-capital-goods",
+          "https://www.indmoney.com/stocks/sectors/capital-goods",
+          "https://portal.tradebrains.in/corporateactions/Merger-Demerger",
+          "https://mind2markets.com/6-best-capital-goods-stocks-in-india-to-follow-up"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "engineering manufacturing demerger scheme arrangement India 2024 2025",
+        "findings": "[1] Engineering\nURL: https://en.wikipedia.org/wiki/Engineering\nContent: | | Secondary sector or ′Industrial sector′ (goods manufacturing) |  | |  |  |  |  |  |  |  |  |  |  |  |  |  ---  ---  ---  ---  ---  --- | | Manufacturing | |  |  |  --- | | Light industry |  Food   + Animal feed   + Baking   + Canning   + Dairy products   + Flour   + Meat   + Prepared   + Preserved   + Sweets   + Vegetable oils  Beverages   + Beer   + Bottled water   + Liquor   + Soft drinks   + Wine  Textiles   + Carding   + Dyeing   + Prints   + Spinning \"Spinning (textiles)\")   + Weaving [...] is now assisted with computer software, from design to testing and manufacturing. At larger scales, this process is normally funded by a company, multiple investors, or the government, so a knowledge of economics and business practices is needed. [...] 16, 2025 – via Google Books.\n\n[2] Engineering | Definition, History, Functions, & Facts\nURL: https://www.britannica.com/technology/engineering\nContent: Engineering applie...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Engineering",
+          "https://www.britannica.com/technology/engineering",
+          "https://discovere.org/engineering-careers",
+          "https://www.snhu.edu/about-us/newsroom/stem/what-is-engineering",
+          "https://www.twi-global.com/technical-knowledge/faqs/what-is-engineering"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "NCLT demerger engineering manufacturing India 2024 2025",
+        "findings": "[1] RL/SE/25-26/31 July 4, 2025 To The Department of Corporate Services\nURL: https://api.raymond.in/uploads/investor/1752057797520NCLT%20Order%20-%20Engineering%20Business%20-%20July%2004,%202025.pdf\nContent: Demerger Business (Post Demerger and Merger under Part B and D) Second Petitioner Company/ Demerged Company 2 JK Maini Precision Technology Limited i. Engineering Business- Manufacturing of steel files, cutting tools, market hands tools and a key supplier in tool dans hardware supply chain market; ii. Engineering business- Business of manufacturing and selling ring gears, flexplates, water pump bearings, machined components, both for auto component and engineering products; and Engineering and [...] rationalization, standardization and C.P.(CAA)/03/MB-III/2025 IN C.A.(CAA)/152/MB-III/2024 Page 13 of 52 simplification of business processes, elimination of duplication, reduction in multiplicity of legal and regulatory compliances and rationalization of administration expenses. 12. D...",
+        "sources": [
+          "https://api.raymond.in/uploads/investor/1752057797520NCLT%20Order%20-%20Engineering%20Business%20-%20July%2004,%202025.pdf",
+          "https://www.jswenergy.in/wp-content/uploads/2026/01/Annexure-1-Scheme.pdf",
+          "https://cdn.skfmediahub.skf.com/api/public/095ca43795517146/pdf_preview_medium/Information_Memorandum_pdf_preview_medium.pdf",
+          "https://nclt.gov.in/gen_pdf.php?filepath=%2FEfile_Document%2Fncltdoc%2Fcasedoc%2F3305118009582025%2F04%2FOrder-Challenge%2F04_order-Challange_004_175973004117558501468e3597905287.pdf",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "IT software tech services demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] It (novel)\nURL: https://en.wikipedia.org/wiki/It_(novel)\nContent: Edit links\n\n Article \"View the content page [c]\")\n Talk \"Discuss improvements to the content page [t]\")\n\n Read)\n View source&action=edit \"This page is protected.\n  You can view its source [e]\")\n View history&action=history \"Past revisions of this page [h]\")\n\nTools\n\nActions\n\n Read)\n View source&action=edit)\n View history&action=history)\n\nGeneral [...] ## Background [...] Hidden categories:\n\n Articles with short description\n Short description matches Wikidata\n Wikipedia indefinitely semi-protected pages\n Use mdy dates from October 2025\n\nIt (novel)\n\nAdd topic\n\n[2] It (2017)\nURL: https://www.imdb.com/title/tt1396484\nContent: 7.3\n702.9K\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n#### Summary [...] version, thought of the story. [...] Reviewers say 'It' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/It_(novel)",
+          "https://www.imdb.com/title/tt1396484",
+          "https://en.wikipedia.org/wiki/It_(2017_film)",
+          "https://www.amazon.com/BD-Blu-ray-Chase-Palmer/dp/B074ZMJZ6P",
+          "https://www.merriam-webster.com/dictionary/it"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "software technology services company demerger India 2024 2025",
+        "findings": "[1] Top Software Development Technologies and Tools picked ...\nURL: https://www.muchskills.com/blog/top-software-technical-tools-muchskills\nContent: 21. GitHub Copilot - AI Development: The incumbent AI coding assistant, built into VS Code and JetBrains. Improved significantly in 2024-2025.\n22. Slack - Collaboration: Still the preferred communication tool for teams that choose their own stack.\n23. Notion - Productivity: Has become the default for knowledge management, internal wikis, and lightweight project tracking in smaller and mid-size teams. [...] tool of choice for founders running demos with investors or testing ideas with users before committing to a proper build. Lovable Cloud (their own backend service) launched in 2025 and reduces some of the Supabase dependency for simpler use cases. [...] ChatGPT is still the most widely recognised AI assistant in the world, and by most counts, the one most people reach for first. OpenAI hit a billion users in early 2025, which is a number...",
+        "sources": [
+          "https://www.muchskills.com/blog/top-software-technical-tools-muchskills",
+          "https://en.wikipedia.org/wiki/Software",
+          "https://www.lenovo.com/us/en/glossary/what-is-software",
+          "https://www.geeksforgeeks.org/software-engineering/what-is-a-computer-software",
+          "https://www.ebsco.com/research-starters/computer-science/computer-software"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Coforge Persistent Tech Mahindra sonata software demerger India",
+        "findings": "[1] IT mid-caps take the inorganic route to trump larger rivals in new biz - Mint\nURL: https://www.livemint.com/companies/indian-it-services-acquisitions-coforge-persistent-systems-mphasis-hexaware-infosys-wipro-tcs-hcltech-tech-mahindra/amp-11782745821453.html\nContent: IT services companies—including Coforge Ltd, The other firms in the $1-2 billion revenue space are Persistent Systems Ltd, Sonata Software Ltd.\n\n[2] IT mid-caps tap M&A for new biz, take on big rivals | Mint Ahmedabad\nURL: https://www.pressreader.com/india/mint-ahmedabad/20260701/281586657328249\nContent: Tech Mahindra India · Sonata Software India's mid-sized information technology (IT) services firms, earning $1-2 billion in revenue, Persistent\n\n[3] IT Firms Spend $7.1B on Acquisitions to Drive Growth\nURL: https://www.linkedin.com/posts/linkedin-news-india_ai-acquisitions-mergers-activity-7467830273192321025-1w9r\nContent: Coforge, Cyient and Persistent Systems have all made significant acquisitions in 2026. The common ...",
+        "sources": [
+          "https://www.livemint.com/companies/indian-it-services-acquisitions-coforge-persistent-systems-mphasis-hexaware-infosys-wipro-tcs-hcltech-tech-mahindra/amp-11782745821453.html",
+          "https://www.pressreader.com/india/mint-ahmedabad/20260701/281586657328249",
+          "https://www.linkedin.com/posts/linkedin-news-india_ai-acquisitions-mergers-activity-7467830273192321025-1w9r",
+          "https://finstor85.substack.com/p/coforge-and-persistent-are-rewriting",
+          "https://www.facebook.com/61571735969172/posts/-indias-biggest-demerger-pipeline-stocks-to-watch-corporate-demergers-can-reshap/122166541310724532"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "pharma healthcare hospitals demerger India listing 2024 2025 scheme arrangement",
+        "findings": "[1] Apollo Hospitals $3B Demerger: India Healthcare Transformation\nURL: https://abhisho7.substack.com/p/apollo-hospitals-master-play\nContent: In a move that’s sending ripples across India’s pharmaceutical and healthcare sectors, Apollo Hospitals Enterprise Limited (‘AHEL’) has secured a critical approval from the Competition Commission of India (CCI) for its ambitious restructuring plan. CCI approved on 23 Sep 2025 Apollo Hospitals’ composite scheme merging Apollo Health Co limited (‘AHL’ or ‘ Apollo Health’) and Keimed Private Limited (‘Keimed’) into new company, marking a pivotal moment in what promises to be one of India’s most [...] Tranche 1: INR 1,732 crore completed in September 2024\n Tranche 2: INR 743 crore completed in March 2025\n Strategic Acquisition: AHL acquired 11.2% stake in Keimed in March 2025, ahead of the original timeline\n\nThis phased approach allowed for careful integration planning while maintaining operational continuity.\n\n### June 2025: The Composite Scheme Unv...",
+        "sources": [
+          "https://abhisho7.substack.com/p/apollo-hospitals-master-play",
+          "https://www.apollohospitals.com/sites/default/files/2025-06/se_communication_30062025.pdf",
+          "https://www.sanofi.com/assets/countries/india/docs/consumer-healthcare/investors/disclosures-under-reg-46-of-the-listing-regulations/disclosures-under-reg-30-of-the-listing-regulations/information-memorandum.pdf",
+          "https://nsearchives.nseindia.com/corporate/APOLLOHOSP_21052026222159_SE_equity_shareholders_notice-ocr.pdf",
+          "https://www.linkedin.com/posts/ramesh-balasubramanian-b218277_apollo-hospitals-demerger-simple-guide-for-activity-7347470192144277504-vMOI"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Siemens Energy India institutional holding selling price discovery demerger",
+        "findings": "[1] Siemens Energy’s Demerged India Unit In Stock Exchange Debut, Falls 5%\nURL: https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5\nContent: Siemens Energy’s demerged Indian unit - Siemens Energy India Limited or ‘SEIL’ - made its stock exchange debut on Thursday, in a keenly watched emerging market move by the German vendor.\n\nThe lucrative unit’s demerger from its parent company saw it debut at a listing price of ₹2,840 ($32.85) per share on the National Stock Exchange of India, already up 14% on its stated discovery price of ₹2,478. Its demerger price was in the region of ₹2,350. [...] Siemens Energy India\n\nGuilherme Mendonca, managing director and chief executive officer of SEIL, said: \"With this listing we reaffirm our long-standing commitment to India’s energy future. As India advances toward becoming a $7 trillion economy, a strong and resilient energy system will be essential.\n\n\"Siemens Energy India Limited wit...",
+        "sources": [
+          "https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5",
+          "https://groww.in/blog/siemens-energy-india-begins-trading-on-bse-nse-post-demerger",
+          "https://www.reuters.com/business/energy/siemens-india-arm-list-energy-business-into-separate-entity-2024-05-14",
+          "https://www.siemens-energy.com/global/en/home/press-releases/Energy_business_in_India_successfully_listed.html",
+          "https://press.siemens.com/global/en/pressrelease/siemens-successfully-lists-energy-business-india"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "BASF India agricultural solutions demerger valuation institutional selling",
+        "findings": "[1] 🔄 BASF India Approves Demerger of Agri Biz 👉🏻 BASF Board okays ...\nURL: https://x.com/aoiventures/status/1922586647809421763\nContent: BASF Board okays demerger of its ₹2,064 Cr Agri Solutions unit into a new listed entity 👉🏻 Demerger to unlock value & enhance strategic focus\n\n[2] BASF India shareholders approve demerger of agri-business\nURL: https://scanx.trade/stock-market-news/companies/basf-india-shareholders-approve-scheme-of-arrangement/43856243\nContent: The demerger, supported by sales of INR 1944cr in the agri-business for 2025-26, is scheduled for completion in FY 26-27 with a share\n\n[3] BASF India Ltd., Mumbai\nURL: https://nsearchives.nseindia.com/corporate/BASFIL_14052025145340_Demerger14052025.pdf\nContent: We now wish to inform you that based on the recommendations of the Committee of Independent Directors and Audit Committee, the Board of Directors of the Company, at its meeting held today, has approved a Scheme of Arrangement (“Scheme”) amongst BASF India Ltd (Demerged...",
+        "sources": [
+          "https://x.com/aoiventures/status/1922586647809421763",
+          "https://scanx.trade/stock-market-news/companies/basf-india-shareholders-approve-scheme-of-arrangement/43856243",
+          "https://nsearchives.nseindia.com/corporate/BASFIL_14052025145340_Demerger14052025.pdf",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece/amp",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Apollo HealthCo demerger listing timeline valuation NCLT",
+        "findings": "[1] Apollo HealthCo demerger: Q4 FY27 listing timeline\nURL: https://www.multibagg.ai/market-pulse/articles/apollo-healthco-demerger-q4fy27-listing-cmpxuuh8n1tfxnz0jitqy88y0\nContent: Apollo HealthCo demerger is on schedule, with shareholder approval due on June 24, 2026, The National Company Law Tribunal (NCLT) the demerger\n\n[2] Apollo Hospitals Targets ₹25000 Crore HealthCo Revenue and Q4 ...\nURL: https://www.sahi.com/news/apollo-hospitals-targets-25-000-crore-healthco-revenue-and-q4-fy27-demerger-listing-326-PE1_CORP\nContent: Listing Timeline: Now solidified for Q4 FY27 (Dec 2026 - Mar 2027) following NCLT order dated May 5, 2026. Digital Profitability: Apollo 24/7\n\n[3] Apollo sets June 24 meetings for demerger scheme\nURL: https://scanx.trade/stock-market-news/companies/apollo-hospitals-sets-june-24-meeting-for-demerger-scheme/40998834\nContent: Apollo Hospitals Enterprise Limited has scheduled NCLT-convened meetings on June 24, 2026, available from June 20 to June 23, 2026.\n\n[4] Apoll...",
+        "sources": [
+          "https://www.multibagg.ai/market-pulse/articles/apollo-healthco-demerger-q4fy27-listing-cmpxuuh8n1tfxnz0jitqy88y0",
+          "https://www.sahi.com/news/apollo-hospitals-targets-25-000-crore-healthco-revenue-and-q4-fy27-demerger-listing-326-PE1_CORP",
+          "https://scanx.trade/stock-market-news/companies/apollo-hospitals-sets-june-24-meeting-for-demerger-scheme/40998834",
+          "https://www.financialexpress.com/business/news/apollo-eyes-december-listing-for-apollo-healthco/4247380/lite",
+          "https://www.multibagg.ai/market-pulse/articles/apollo-healthco-demerger-q4fy27-listing-cmpxutgq51tfwnz0jr37xo69b"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "\"Siemens Energy India\" shareholding pattern promoter stake BSE",
+        "findings": "[1] Shareholding Pattern under Regulation 31 of SEBI (Listing ...\nURL: https://www.siemens-energy-india.com/pdf/statement-showing-holding-of-securities-and-shareholding-pattern-june-13-2025.pdf\nContent: ( as a percenta ge of diluted share capital) Siemens Energy India Limited - Shareholding pattern as on June 13, 2025 Table II - Statement showing shareholding pattern of the Promoter and Promoter Group (XIII) Number of Shares pledged or otherwise encumbered No. (a) As a % of total Shares held(b) (XIV) (XII) Number of Locked in shares No. (a) As a % of total Shares held(b) (X) (XI)= Category & Name of the shareholders Page 3 of 8 1 Institutions (Domestic) (a) Mutual Fund 29 1,25,11,160 0 0 1,25,11,160 4 1,25,11,160 0 1,25,11,160 3.51 0 3.51 0 0 NA NA 1,25,11,160 0 0 0 (b) Venture Capital Funds 0 0 0 0 0 0.00 0 0 0 0.00 0 0.00 0 0 NA NA 0 (c) Alternate Investment Funds 20 1,83,647 0 0 1,83,647 0.05 1,83,647 0 1,83,647 0.05 0 0.05 0 0 NA NA 1,83,647 0 0 0 (d) Banks 7 2,24,363 0 0 2,24,363 ...",
+        "sources": [
+          "https://www.siemens-energy-india.com/pdf/statement-showing-holding-of-securities-and-shareholding-pattern-june-13-2025.pdf",
+          "https://www.siemens-energy-india.com/pdf/seil-information-memorandum.pdf",
+          "https://trendlyne.com/equity/share-holding/1237/SIEMENS/latest/siemens-ltd",
+          "https://www.screener.in/company/ENRIN",
+          "https://www.moneycontrol.com/india/stockpricequote/electric-equipment/siemensenergyindia/SEI11"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"BASF India\" agricultural solutions demerger NCLT status objections",
+        "findings": "[1] BASF INDIA LIMITED\nURL: https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v\nContent: amongst BASF India Ltd (‘Demerged Company”), BASF Agricultural Solutions India Limited (‘Resulting Company”) and their respective shareholders, providing for the demerger of the BIL's Agricultural Sofutions Business into the Company, in compliance with Sections 230 to 232 and other applicable provisions of the Companies Act. 2013, Subsequent to the approval, BASF India Limited has received “no objection” letters from BSE Limited and the National Stock Exchange of India Limited in January 2026 and February 2026, sespectively. Fusther, the National Company Law Tribunal (NCLT), by its order dated April 2026, dispensed with the requirement of convening meetings of secured and unsecured creditors of both the ...",
+        "sources": [
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v",
+          "https://scanx.trade/stock-market-news/companies/basf-india-shareholders-approve-scheme-of-arrangement/43856243",
+          "https://www.basf.com/dam/jcr:c7ccb0e6-abd0-4ace-8bba-0c7dba2418c3/basf/www/in/documents/en/investor-relations/announcements/2025/Approval-for-Demerger-of-Company-s-Agricultural-Solutions-Business.pdf",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece/amp",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"Apollo HealthCo\" \"Keimed\" merger valuation report share exchange ratio",
+        "findings": "[1] [PDF] Apollo Healthco Ltd\nURL: https://www.apollohospitals.com/apollo_pdf/Investors-Presentation-12th-july-2024.pdf\nContent: ratio for proposed merger is capped at 0.81 shares of AHL for every 1 share of Keimed # Valuation as on April 26, 2024 @ On pre-Ind AS EBITDA basis ; 1 # of shares outstanding and price per share are based on the current ESOP pool of 2.5% and would change accordingly once ESOP pool is increased to 5% prior to investment in Advent; Equity value will change on account of preferential allotment of shares to AHEL 28 Combined Financial Metrics | Snapshot (FY24) + = + = INR Cr 6,927 900 7,827 10,578 13,770 506 103 609 352 961 7.3% 11.4% 7.8% 3.3% 7.0% --619 -619 --619 --89 -89 --89 -605 -99 352 253 7.3% --1.8% Adjusted For I nter Com pany Sales( Keim ed & AHL) 1 P re 24/ 7 Operating Cost and ESOP Non-Cash Charge 506 3.3% Balance Sheet position – Mar’24 | Stronger post the transaction  Keimed is [...] Apollo Hospitals Enterprise Ltd’s (“AHEL”) related-party transact...",
+        "sources": [
+          "https://www.apollohospitals.com/apollo_pdf/Investors-Presentation-12th-july-2024.pdf",
+          "https://www.adventinternational.com/news/apollo-247-to-raise-inr-2475-crores-from-advent-international-merge-keimed-with-apollo-247",
+          "https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/BrokerRecommendation/Apollo%20Hospitals%20Enterprise02Jul25.pdf",
+          "https://images.assettype.com/bloombergquint/2024-04/fd4df4fb-7365-4ad9-b0df-951a4c5823d8/Prabhudas_Lilladher_Apollo_Hospitals_Update.pdf",
+          "https://www.apollohospitals.com/sites/default/files/2025-06/se_communication_30062025.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"Siemens\" demerger analyst coverage \"initiating coverage\" India",
+        "findings": "[1] Press - Digital Asset Management - Siemens\nURL: https://assets.new.siemens.com/siemens/assets/api/uuid:fca34622-b9d9-44f6-bb69-44b68945e5fe/HQCOPR202311146816EN.pdf\nContent: will further sharpen the portfolio focus of Siemens. It also simplifies and strengthens our corporate structure in India, a fast-growing and strategically important market.” Proposal to initiate demerger procedures in India As part of the spin-off in 2020, Siemens and Siemens Energy did not separate their businesses in India as it was not feasible at that time. As a next step, Siemens and Siemens Energy have agreed to propose to the Board of Directors of Siemens Ltd. India a demerger of the energy business. Siemens Energy is to ultimately acquire a controlling stake in the demerged energy business. The aim is to complete the demerger in 2025 – significantly earlier than previously planned. Measures to facilitate Siemens Energy customer guarantees Siemens has agreed with Siemens Energy [...] to Siemens Energy. “...",
+        "sources": [
+          "https://assets.new.siemens.com/siemens/assets/api/uuid:fca34622-b9d9-44f6-bb69-44b68945e5fe/HQCOPR202311146816EN.pdf",
+          "https://images.moneycontrol.com/static-mcnews/2025/08/20250806093622_Siemens-Energy-India_06082025_ICICI-Securities.pdf",
+          "https://www.plindia.com/ResReport/SIEM-7-4-25-PL.pdf",
+          "https://www.forbes.com/sites/gauravsharma/2025/06/19/siemens-energys-demerged-india-unit-in-stock-exchange-debut-falls-5",
+          "https://www.scribd.com/document/878313798/Siemens-Energy-Analyst-Report"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "recent announced demergers India 2026 record date pending NCLT",
+        "findings": "[1] Vedanta demerger: Deadline pushed to March 2026; NCLT and government approvals pending - The Times of India\nURL: https://timesofindia.indiatimes.com/business/india-business/vedanta-demerger-deadline-pushed-to-march-2026-nclt-and-government-approvals-pending/articleshow/124315936.cms\nContent: Vedanta Ltd, led by Anil Agarwal, has postponed the completion of its demerger to March 31, 2026 due to pending approvals from the National Company Law Tribunal (NCLT) and government authorities.The company made the announcement in a filing this week.“Given that the conditions precedent in the Scheme, including approval of the National Company Law Tribunal, Mumbai Bench (NCLT) and approvals from certain government authorities are in the process of being completed, the board of the company and the resulting companies...have decided to extend the timeline for fulfilment of the conditions precedent from September 30, 2025 to March 31, 2026,” Vedanta said.This is not the first extension as the dead...",
+        "sources": [
+          "https://timesofindia.indiatimes.com/business/india-business/vedanta-demerger-deadline-pushed-to-march-2026-nclt-and-government-approvals-pending/articleshow/124315936.cms",
+          "https://www.sahi.com/blogs/vedanta-shares-hit-record-high-as-demerger-date-nears-what-is-driving-the-rally",
+          "https://www.alcircle.com/news/vedanta-delays-demerger-deadline-to-june-2026-amid-pending-regulatory-approvals-117867",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v",
+          "https://www.instagram.com/p/DX05ydbm223"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Vedanta demerger scheme of arrangement promoter shareholding pattern post split",
+        "findings": "[1] Vedanta - Demerger Company Update\nURL: https://www.icicidirect.com/mailcontent/idirect_vedanta_coupdate_apr26.pdf\nContent: 55.3 88.9 P/E 23.1 14.2 25.3 63.2 18.8 13.0 8.1 RoNW (%) 19.6 29.6 27.2 10.4 32.9 43.5 55.7 RoCE (%) 13.8 24.5 18.7 18.8 21.3 28.5 41.0 Particulars Particulars ₹ crore Market capitalisation 2,81,520 Total Debt (FY25) 73,853 Cash & Investment (FY25) 20,749 EV (₹ crore) 3,34,624 52 week H/L (₹) 795 / 399 Equity capital (₹ crore) 391 Face value (₹) 1 Shareholding pattern Jun-25 Sep-25 Dec-25 Mar-26 Promoter 56.4 56.4 56.4 56.4 FII 10.6 11.1 12.2 13.9 DII 16.5 16.3 15.3 13.4 Other 16.6 16.3 16.2 16.3 Price Chart Recent event & key risk • Announces 1st May 2026 as the record date for demerger. • Key Risk: (i) higher than built in metal realisations amid volatile geopolitical scenario (ii) delay in ramping up of new capacities and mines, impacting volumes. Research Analyst Shashank Kanodia, CFA [...] date for its long-awaited demerger (announced in September 2023). T...",
+        "sources": [
+          "https://www.icicidirect.com/mailcontent/idirect_vedanta_coupdate_apr26.pdf",
+          "https://www.vedantalimited.com/public/uploads/12520/Vedanta-promoters-to-maintain-stake-in-each-of-demerged-entities.pdf",
+          "https://www.vedantaresources.com/uploads/media_pdf/press_release/vrl/2025/PressRelease_VedantaDemerger_16Dec2025.pdf",
+          "https://support.zerodha.com/category/console/corporate-actions/ca-others/articles/vedanta-demergers",
+          "https://trendlyne.com/equity/share-holding/1289/VEDL/latest/vedanta-ltd"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "BASF India agricultural solutions demerger share swap ratio and promoter holding",
+        "findings": "[1] [PDF] Approval-for-Demerger-of-Company-s-Agricultural-Solutions ... - BASF\nURL: https://www.basf.com/dam/jcr:c7ccb0e6-abd0-4ace-8bba-0c7dba2418c3/basf/www/in/documents/en/investor-relations/announcements/2025/Approval-for-Demerger-of-Company-s-Agricultural-Solutions-Business.pdf\nContent: Ltd: Upon the Scheme becoming effective, BASF Agricultural Solutions India Ltd will issue and allot 1 (One) fully paid-up equity shares having face value of Rs. 10/- (Rupees Ten only) to the eligible shareholders of the Company, in accordance with the Scheme and based on the share entitlement ratio. Brief details of change in shareholding patternof BASF Agricultural Solutions is provided below: Details as on 14 May 2025 Pre-Scheme Post-Scheme (Indicative) Shareholding (%) Shareholding (%) Promoters 100 73.33 Public - 26.67 Total 100 100 5. In case of cash consideration – amount or otherwise share exchange ratio There is no cash consideration being discharged under the Scheme. Upon the Scheme becomi...",
+        "sources": [
+          "https://www.basf.com/dam/jcr:c7ccb0e6-abd0-4ace-8bba-0c7dba2418c3/basf/www/in/documents/en/investor-relations/announcements/2025/Approval-for-Demerger-of-Company-s-Agricultural-Solutions-Business.pdf",
+          "https://www.basf.com/dam/jcr:4bc698b3-f0e9-456b-abc4-f92f9787bb38/basf/www/in/documents/en/investor-relations/scheme-of-arrangement/BASF-India-Ltd_Shareholders-Notice-for-NCLT-Convened-Meeting-on-24-June-2026.pdf?vid=sSCncPXaELU2EOCGHtTVRK15cE8JuR8v",
+          "https://scanx.trade/stock-market-news/companies/basf-india-shareholders-approve-demerger-of-agri-solutions/44531223",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece/amp",
+          "https://www.thehindu.com/business/basf-india-to-demerge-agri-solutions-business-to-issue-shares-11-ratio-in-new-entity/article69630218.ece"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Siemens Energy India brokerage SOTP valuation target price post listing",
+        "findings": "[1] What Led To Siemens Energy's Strong Listing On NSE | Siemens Energy Stock Analysis\nURL: https://www.youtube.com/watch?v=54jnVkncC5c\nContent: basis of the pipeline that the company has along with its order prospects as well. Along with that we also had HDFC securities antique initiating buy calls on the stock. They remain positive on the company's order prospect pipeline going forward. In fact, HDFC models are 30% of a CAGR growth between FY25 to 27 P uh period that we are looking at. So that's on antique on HDFC as well. They have a target price in the range of 3,000 to 3,179 that we are looking at. If you look at Motil, they also remain constructive on the counter initiating a buy call over here as well. They expect the AIDA margin to be in the range of 21.4. 4% by FI27. So that is what the key expectation year is and a strong addressable market that we're looking in terms of the power TND business is considered. Now what [...] Go across to the stock of the day. Anushi standing by...",
+        "sources": [
+          "https://www.youtube.com/watch?v=54jnVkncC5c",
+          "https://www.indmoney.com/blog/stocks/siemens-energy-india-listing-growth-story",
+          "https://www.screener.in/company/ENRIN",
+          "https://trendlyne.com/research-reports/stock/3145560/ENRIN/siemens-energy-india-ltd",
+          "https://en.wikipedia.org/wiki/Siemens"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "potential demerger candidates Indian stock market conglomerate discount",
+        "findings": "[1] Vedanta Demerger: Market Price Discovery and Inefficiencies | Rushabh Shah posted on the topic | LinkedIn\nURL: https://www.linkedin.com/posts/rushabh1712_vedanta-demerger-stockmarketindia-activity-7456207803922219008-DP0G\nContent: • Mirae Asset Sharekhan notes the split \"substantially reduces\" leverage concerns by aligning debt with actual earning capacity\n• Net Debt/EBITDA is entering this transition at a healthier 0.95x\n⚠️ But the risks are real too:\n• How ₹81,000 crore in gross debt gets allocated will define investor sentiment\n• Commodity price swings could pressure individual entities\n• Short-term volatility post-listing is expected\n🔑 The bigger picture:\nFor too long, Vedanta traded at a conglomerate discount. Investors undervalued world-class businesses aluminium, zinc, oil & gas because they were bundled together. This demerger is a direct answer to that.\nThe five new entities are expected to list by mid-June 2026. The real value unlock begins then. [...] And this is where i...",
+        "sources": [
+          "https://www.linkedin.com/posts/rushabh1712_vedanta-demerger-stockmarketindia-activity-7456207803922219008-DP0G",
+          "https://www.instagram.com/p/Daec3gRAdp9",
+          "https://www.equitymaster.com/detail.asp?date=09%2F02%2F2025&story=1&title=Will-These-5-Indian-Companies-Unlock-Value-Through-Demergers-in-2026",
+          "https://www.investopedia.com/terms/c/conglomeratediscount.asp",
+          "https://www.screener.in/screens/2608/undervalued-stocks"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "RBI CIC listing mandate restructuring candidates Tata Sons",
+        "findings": "[1] Tata Sons working on restructuring plans to comply with RBI rules: Report\nURL: https://www.moneycontrol.com/news/business/tata-sons-working-on-restructuring-plans-to-comply-with-rbi-rules-report-12422981.html/amp\nContent: According to the RBI rules, if a 'core investment company' has assets worth less than Rs 100 crore and does not raise public funds, it can avoid being classified as a CIC or an 'upper layer' NBFC and is not required to go for a public listing. This exemption allows such companies to neatly sidestep the regulations.\n\nRead Our Analysis Here |NBFC crackdown: RBI ko gussa kyon aata hai?\n\nTata Sons, on the other hand, is registered as a CIC with the RBI and has been classified as an 'upper layer' NBFC, which mandates the company to follow a strict regulatory structure and requires it to list on the public market within three years of being notified. The RBI issued a notification to this effect for Tata Sons in September 2020. [...] Tata Sons, the holding company of the...",
+        "sources": [
+          "https://www.moneycontrol.com/news/business/tata-sons-working-on-restructuring-plans-to-comply-with-rbi-rules-report-12422981.html/amp",
+          "https://www.linkedin.com/posts/ujwal-thakar-65b1951_is-the-fairness-brand-reputation-of-tatas-activity-7456169936579821568-3o7J",
+          "https://timesofindia.indiatimes.com/business/india-business/one-line-rbi-tweak-erases-tata-sons-scope-to-bypass-listing/articleshow/132130617.cms",
+          "https://en.wikipedia.org/wiki/Reserve_Bank_of_India",
+          "https://www.rbi.org.in"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "promoter share purchase before demerger announcement India NSE BSE",
+        "findings": "[1] ITC Limited\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/f0a3be4b-0590-453c-9678-1252edcad2ce.pdf\nContent: Ms. Pushpa Subrahmanyam (01894076) Independent Director Flat No. 5154, Tower 5, Floor 15 Prestige High Fields, Nanakramguda Hyderabad 500 032 The Demerged Company does not have any Promoter.\n(h) The Ordinary Shares of the Demerged Company are listed on the National Stock Exchange of India Limited (‘NSE’), BSE Limited (‘BSE’) and The Calcutta Stock Exchange Limited (‘CSE’) (hereinafter collectively referred to as ‘Stock Exchanges’). The Global Depository Receipts of the Demerged Company are listed on the Luxembourg Stock Exchange. [...] are enclosed as Annexure 7. NSE and BSE by their respective Observation Letters dated 19th January, 2024 and CSE by its Observation Letter dated 22nd January, 2024 have given their no-objection to the Scheme. Copies of the said Observation Letters issued by the Stock Exchanges to the Demerged Company are enclosed as Annexure 8. Th...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f0a3be4b-0590-453c-9678-1252edcad2ce.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_vedanta_coupdate_apr26.pdf",
+          "https://economictimes.indiatimes.com/stocks/marketstats-technicals/bought-by-promoter",
+          "https://www.screener.in/screens/390677/promoter-buying-shares",
+          "https://www.nseindia.com/companies-listing/corporate-filings-regulation-29-promoters"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "SEBI special call auction investment holding companies discount",
+        "findings": "[1] Holding company shares jump after Sebi's special auction plan | Stock Market News\nURL: https://www.livemint.com/market/stock-market-news/holding-company-shares-jump-after-sebis-special-auction-plan/amp-11719239317345.html\nContent: Holding companies typically hold various investments, including shares of other listed companies, but have no daily operations. They also trade at a steep discount to their book value due to low trading volumes and limited float. On Thursday, the Securities and Exchange Board of India (Sebi) proposed special call auctions with no price bands to check this anomaly.\n\nShares of Pilani Investment, Kalyani Investment, Nalwa Sons Investments, Vardhman Holdings, Bombay Burmah Trading Corp, Summit Securities, Maharashtra Scooters and JSW Holdings hit their all-time highs during the day's trading.\n\n## Read more: Office leasing: Slow and steady wins the race? [...] “What was once a challenge for these companies, such as low float, has now turned a key lever driving...",
+        "sources": [
+          "https://www.livemint.com/market/stock-market-news/holding-company-shares-jump-after-sebis-special-auction-plan/amp-11719239317345.html",
+          "https://tradingqna.com/t/sebi-introduces-special-call-auction-for-price-discovery-in-investment-holding-companies/175129",
+          "https://cfasocietyindia.org/wp-content/uploads/2024/05/CFA-Society-India-Response-Consultation-Paper-on-Framework-for-Price-Discovery-of-Shares-of-listed-Investment-Companies-listed-Investment-Holding-Companies.xlsx.pdf",
+          "https://www.linkedin.com/pulse/awaiting-special-call-auction-listed-ihc-neelam-maheshwari--krjwf",
+          "https://www.mehta-mehta.com/sebi-update-introduction-of-a-special-call-auction-mechanism-for-price-discovery-of-scrips-of-listed-investment-companies-ics-and-listed-investment-holding-companies-ihcs"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "NCLT resolution plan listed companies exit turnaround India",
+        "findings": "[1] List of Resolution Plan approved during FY 2022-23 of the Companies under Insolvency – IBC Laws\nURL: https://ibclaw.in/list-of-resolution-plan-approved-during-fy-2022-23-of-the-companies-under-insolvency\nContent: |  |  |  |  |  |  |  |  |  |\n ---  ---  ---  --- \n| S. No. | Corporate Debtor | NCLT Bench | Date of NCLT Order approving Resolution | Total Admitted Claims | Liquidation Value | Total Realisation(FC+OC) | Total Realisation in % of Admitted Claim | Total Realisation in % of Liquidation Value |\n| 1 | Jaypee Infratech Ltd. | Allahabad | 07-03-2023 | 23,083.27 | 17,766.76 | 20,363.22 | 88.22% | 114.61% |\n| 2 | Reliance Naval & Engineering Ltd. | Ahmedabad | 23-12-2022 | 12,883.81 | 1,350.82 | 2,043.08 | 15.86% | 151.25% |\n| 3 | Uttam Galva Steels Ltd. | Mumbai | 14-10-2022 | 11,532.56 | 2,114.79 | 3,700.00 | 32.08% | 174.96% |\n| 4 | JBF Petrochemicals Ltd. | Ahmedabad | 13-03-2023 | 5,628.04 | 1,616.63 | 2,049.64 | 36.42% | 126.78% | [...] | 75 | Vaishno Devi Food Products Pv...",
+        "sources": [
+          "https://ibclaw.in/list-of-resolution-plan-approved-during-fy-2022-23-of-the-companies-under-insolvency",
+          "https://ibbi.gov.in/uploads/whatsnew/9f9dc60d2f3d49b5ab5aed5dfad2ba1a.pdf",
+          "https://nclt.gov.in/gen_pdf.php?filepath=%2FEfile_Document%2Fncltdoc%2Fcasedoc%2F3607130047862023%2F04%2FOrder-Challenge%2F04_order-Challange_004_1708432217185564905165d49b59e2792.pdf",
+          "https://www.journalijar.com/uploads/2026/04/69ef2f1ad8402_IJAR-57202.pdf",
+          "https://nsearchives.nseindia.com/corporate/SEJALLTD_22042022185843_Clarification.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "demerger record date NSE BSE 2025 2026",
+        "findings": "[1] Vedanta Demerger 2026: Record High & May 1 Record Date\nURL: https://www.sahi.com/blogs/vedanta-shares-hit-record-high-as-demerger-date-nears-what-is-driving-the-rally\nContent: 5 min read\n\nVedanta Ltd has once again grabbed market attention after its shares climbed to a fresh all-time high of ₹795 on the NSE (₹794.90 on BSE) on April 21, 2026, gaining over 3% in intraday trade. The rally came after the company officially fixed May 1, 2026, as both the record date and effective date for its much-awaited demerger plan, marking a major milestone in one of India's biggest corporate restructuring exercises in the metals and mining sector. [...] The stock has been on a strong run. In April alone, Vedanta shares surged around 26%. Since the beginning of calendar year 2026, the stock has risen roughly 13% (as of April 21, 2026), significantly outperforming the broader market. During the same period, the BSE Sensex declined approximately 7%, while the BSE Metal Index gained around 14%.\n\n## W...",
+        "sources": [
+          "https://www.sahi.com/blogs/vedanta-shares-hit-record-high-as-demerger-date-nears-what-is-driving-the-rally",
+          "https://notifications.geojit.com/corporate-actions/demerger",
+          "https://www.facebook.com/insightssuccess/posts/vedanta-shares-rise-to-record-high-after-demerger-date-announcementshares-of-ved/1583556517105142",
+          "https://www.kotakneo.com/news/market-news/tata-motors-demerger-2025-guide",
+          "https://www.nseindia.com/companies-listing/corporate-filings-actions"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "Gujarat Gas demerger 2026 record date",
+        "findings": "[1] GSPL Transmission Limited\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachLive/6e123e66-6b6a-4a97-bd27-ddcfa9b1cd7f.pdf\nContent: !Tel. No.: +91-79-23268500/600 Email Id: investors.gspl@gspc.in I Website: www.gspcgroup.com Date: 30\" April 2026 Name of the Holder Ref: Folio Number/ DP ID & Client ID Number Subject: Announcement of Record Date for issue and allotment of equity shares by Gujarat Gas limited to the Shareholders of Gujarat State Petronet limited pursuant to the Composite Scheme of Amalgamation and Arrangement. Dear Sir/ Madam, The Hon'ble Ministry of Corporate Affairs, New Delhi (\"Hon'ble MCA\") vide an order [...] (\"Demerger\"). Further, the Board of Directors of GGL in consultation with the Board of Directors of GSPC and GSPL has fixed Tuesday, May 12, 2026 as the Record Date (being Record Date 1 and Record Date 2) for determining the shareholders of GSPC and GSPL who shall be issued and allotted the shares of GGL under the Scheme. GGL will, without any further a...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6e123e66-6b6a-4a97-bd27-ddcfa9b1cd7f.pdf",
+          "https://www.tipranks.com/news/company-announcements/gujarat-gas-sets-record-date-for-share-allotment-in-group-restructuring",
+          "https://nsearchives.nseindia.com/corporate/GUJGASLTD_05062026230023_1579SEITRANSCRIPTQ4FY252601062026.pdf",
+          "https://www.gujaratgas.com/resources/downloads/press-release-01-05-2026.pdf",
+          "https://www.gujaratgas.com/resources/downloads/revised-scheme-of-amalgamation-and-arrangement-23-01-2026.pdf"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "RBI scale based regulation upper layer NBFC restructuring candidates India",
+        "findings": "[1] RBI names 15 NBFCs to upper layer | Asian Banking & Finance\nURL: https://asianbankingandfinance.net/lending-credit/news/rbi-names-15-nbfcs-upper-layer\nContent: Foreign Exchange\n\nInformation Technology\n\nInsurance\n\nInvestment Banking\n\nIslamic Banking\n\nLending & Credit\n\nMarkets\n\nRetail Banking\n\nTrade Finance\n\nWealth Management\n\nWholesale Banking\n\nAsian Banking & Finance and Insurance Asia Summit - Hong Kong - November 5, 2026\n\nNews\n\nLending & Credit\n\nStaff Reporter\n\n,   India\n\nPublished:\n\n4096 views\n\nPhoto by Tara Winstead via Pexels.\n\n# RBI names 15 NBFCs to upper layer\n\nThey are subject to enhanced regulatory requirements for a 5-year period.\n\nThe Reserve Bank of India (RBI) named 15 non-bank financial companies (NBFCs) to the “upper layer” under its Scale Based Regulation (SBR) regulatory framework for categorizing NBFCs. [...] NBFCs in the upper layer comprise of NBFCs specifically identified by the RBI as warranting enhanced regulatory requirement based on a set of parameters and...",
+        "sources": [
+          "https://asianbankingandfinance.net/lending-credit/news/rbi-names-15-nbfcs-upper-layer",
+          "https://avantiscdnprodstorage.blob.core.windows.net/legalupdatedocs/38640/RBI-released-the-list-of-NBFCs-in-the-Upper-Layer-NBFCUL-under-Scale-Based-Regulation-for-NBFCs-Jan162025.pdf",
+          "https://fidcindia.org.in/wp-content/uploads/2021/10/RBI-SCALE-BASED-REGULATIONS-22-10-21.pdf",
+          "https://www.youtube.com/watch?v=DqCUNbJu2t4",
+          "https://www.youtube.com/watch?v=EJoRl51rXdE"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "GSPL Transmission Limited analyst coverage institutional holding",
+        "findings": "[1] Institutional Equities\nURL: https://images.assettype.com/bloombergquint/2024-09-04/39myqatx/Nirmal_Bang_OIL_and_Gas_Sector_CORPORATE_ACTION_UPDATE.pdf\nContent: Institutional Equities Initiating Coverage Oil & Gas Sector CORPORATE ACTION UPDATE Ramesh Sankaranarayanan Research Analyst ramesh.s@nirmalbang.com +91-22-6273 8145 GGL GSPL GSPC GROUP RESTRUCTURING Stock TP Rs RATING EPS change TP change Rating change GGL 702 BUY Upward Upward Upward GSPL 512 BUY No Change Upward Upward Source: Nirmal Bang Institutional Equities Research Source: Bloomberg; Nirmal Bang Institutional Equities Research Link: GGL GSPL GSPC Merger PPT The Group merger/demerger summary Merging entity Merged with Shares Exchange Phase 1 Merger GSPC ( Gas trading, E&P, plus power ) GGL 10 GGL shares for 305 GSPC shares GSPL Gas transmission GGL 10 GGL sh for 13 GSPL sh GEL (gas trading outside Gujarat) GGL na Phase II Demerger (after phase 1 mergers) GSPL transmission Ltd (GTL) [...] (after phase 1 mergers) GSPL t...",
+        "sources": [
+          "https://images.assettype.com/bloombergquint/2024-09-04/39myqatx/Nirmal_Bang_OIL_and_Gas_Sector_CORPORATE_ACTION_UPDATE.pdf",
+          "https://nsearchives.nseindia.com/corporate/GSPL_30082024190400_OutcomeofBM30082024.pdf",
+          "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/1671221/gspl-sets-record-date-as-mca-clears-major-group-restructuring",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis//b7c2ebde-1b24-49c6-8b39-a107957f50cf.pdf",
+          "https://guides.newman.baruch.cuny.edu/c.php?g=188192&p=1243485"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Gujarat Gas GSPL promoter stake change insider trading disclosures",
+        "findings": "[1] Gujarat Energy - Disclosures under Insider Trades & Substantial Acquisition of Shares and Takeovers\nURL: https://trendlyne.com/equity/insider-trading-sast/all/GUJGASLTD/515/gujarat-gas-ltd\nContent: | Gujarat State Petronet Ltd | Promoter | Acquisition | 28 Mar 2018 | 14,439,414 | 74,574,799 (54.16%) | 10.49% | 83.6 | 1,207,490,000 | 28 Mar 2018   28 Mar 2018 | Insider Trading | Equity Shares | Inter-se Transfer |\n| Gujarat State Petronet Ltd | Promoter | Acquisition | 28 Mar 2018 | 24,666,914 | 60,135,385 (43.67%) | 17.92% | 83.1 | 2,049,200,000 | 26 Mar 2018   26 Mar 2018 | Insider Trading | Equity Shares | Inter-se Transfer |\n| Gujarat State Petroleum Corporation Ltd | Promoter | Disposal | 28 Mar 2018 | 14,439,414  10.49% | 83.6 | 1,207,490,000 | 28 Mar 2018   28 Mar 2018 | Insider Trading | Equity Shares | Inter-se Transfer | [...] | Gujarat State Petronet Ltd | Other | Acquisition | 28 Mar 2018 | 14,439,414  10.49% |   28 Mar 2018   28 Mar 2018 | SAST (10(6))  - |\n| Gujarat St...",
+        "sources": [
+          "https://trendlyne.com/equity/insider-trading-sast/all/GUJGASLTD/515/gujarat-gas-ltd",
+          "https://nsearchives.nseindia.com/corporate/GSPL_06092024212258_NSEBSEReg30TranscriptsofAudiorecording.pdf",
+          "https://trendlyne.com/equity/insider-trading-sast/all/GIPCL/458/gujarat-industries-power-company-ltd",
+          "https://www.sebi.gov.in/sebi_data/commondocs/ggcldps_p.pdf",
+          "https://www.gujaratgas.com/resources/downloads/gujarat-gas-investor-presentation-the-scheme-of-arrangement-30-08-2024.pdf"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Gujarat Gas GSPL merger scheme tax neutrality Income Tax Act Section 47",
+        "findings": "[1] Reshaping Gujarat’s Gas Ecosystem: A Comprehensive Analysis of the GSPC–GSPL–GGL Restructuring - Acuity Law\nURL: https://acuitylaw.co.in/reshaping-gujarats-gas-ecosystem-a-comprehensive-analysis-of-the-gspc-gspl-ggl-restructuring\nContent: As per the provisions of Income Tax Act, any transfer: (i) in a scheme of amalgamation14, of a capital asset15  by the amalgamating company to the amalgamated company if the amalgamated company is an Indian company; and (ii) in a demerger16, of a capital asset by the demerged company to the resulting company, if the resulting company is an Indian company, is exempted from the provisions of Capital Gains Tax.\n\nHence, the transfer of assets from GSPC, GSPL and GEL to GGL and the demerger of the transmission business into GTL qualifies as a tax-neutral treatment.17 [...] In addition, GSPC’s accumulated tax losses of approximately USD 857.9 million are eligible to be carried forward to GGL under Section 72A, subject to the prescribed continuity and as...",
+        "sources": [
+          "https://acuitylaw.co.in/reshaping-gujarats-gas-ecosystem-a-comprehensive-analysis-of-the-gspc-gspl-ggl-restructuring",
+          "https://www.gujaratgas.com/resources/downloads/additional-information-submitted-by-gspl-ggl-to-stock-exchange.pdf",
+          "https://www.nishithdesai.com/fileadmin/user_upload/pdfs/Research%20Papers/Tax_Issues_in_M_A.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/23012026/e9c6ed20-2554-405c-84c0-8e20295e23bf.pdf",
+          "https://www.gujaratgas.com/resources/downloads/scheme-of-amalgamation1.pdf"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "Vedanta demerger creditor approval debt covenants NCLT filings",
+        "findings": "[1] Vedanta Receives NCLT Approval for Demerger into Independent, Pure- ...\nURL: https://www.vedantaresources.com/uploads/media_pdf/press_release/vrl/2025/PressRelease_VedantaDemerger_16Dec2025.pdf\nContent: Vedanta Receives NCLT Approval for Demerger into Independent, Pure-play Companies • NCLT approval marks a key milestone in Vedanta’s transformation into focused, sector-leading companies • Paves way for creation of four independent listed entities positioned to pursue accelerated growth • Unlocks value through sharper strategic focus, independent capital allocation, and governance Mumbai, December 16, 2025: Vedanta Limited, the world’s leading critical minerals, energy transition, metals, oil & gas, power, and technology conglomerate, today announced that the Mumbai Bench of the National Company Law Tribunal (NCLT) has sanctioned the Scheme of Arrangement for the Company’s demerger into four independent, pure-play businesses by an order dated December 16, 2025. With this approval an...",
+        "sources": [
+          "https://www.vedantaresources.com/uploads/media_pdf/press_release/vrl/2025/PressRelease_VedantaDemerger_16Dec2025.pdf",
+          "https://www.vedantalimited.com/uploads/debt-compliances/VEDLSEIntimationOutcomeofBM31July2025FinancialResultssigned.pdf",
+          "https://images.assettype.com/barandbench/2025-12-17/00sn840p/Vedanta_demerger_order.pdf",
+          "https://www.vedantalimited.com/uploads/shareholder-information/scheme-arrangement/VEDL_CSA_NCLT_Order_21112024.pdf",
+          "https://nclt.gov.in/gen_pdf.php?filepath=%2FEfile_Document%2Fncltdoc%2Fcasedoc%2F2709138148642024%2F04%2FOrder-Challenge%2F04_order-Challange_004_1741090109157927344067c6ed3dd388b.pdf"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "GSPL Transmission Limited PNGRB tariff order pipeline return on equity",
+        "findings": "[1] of 34 Petroleum and Natural Gas Regulatory Board New Delhi Tariff ...\nURL: https://pngrb.gov.in/pdf/orders/LP_TO_23062023.pdf\nContent: Tariff Order dated 27.09.2018 i.e. Rs.120.56 Crore, along with reconciliation. GSPL provided that in current tariff filing, the opening NFA includes the NFA for Mora Kribhco (Rs.5.07 Crore) and Mora NTPC (Rs.3.34 Crore) pipeline sections which were inadvertently considered as part of dedicated network in previous Tariff order. Further, there is change in allocation of common assets due to revised GFA ratios. 5.3.1.2 PNGRB Conclusion In view of the above explanations and deliberations, the NFA of Mora- Kribhco and Mora NTPC amounting to Rs.8.41 Crore, as claimed by GSPL in its tariff submission, has been considered as part of opening NFA of LP Gas Grid. Further, allowing IDC as well as return on capital employed which includes CWIP from the date of cash outflow will amount to duplication. [...] Terminal Value is considered as cash inflow at the end o...",
+        "sources": [
+          "https://pngrb.gov.in/pdf/orders/LP_TO_23062023.pdf",
+          "https://pngrb.gov.in/pdf/orders/20251127_TariffOrder.pdf",
+          "https://pngrb.gov.in/pdf/orders/20260213_TariffOrder_UFT.pdf",
+          "https://www.pngrb.gov.in/pdf/orders/20260330_TariffOrder_UFT.pdf",
+          "https://pngrb.gov.in/pdf/confluence/SESSION-9-COMMERCIAL.pdf"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "Gujarat State Petronet SLB liquidity borrow fees",
+        "findings": "[1] Gujarat State Petronet Ltd.\nURL: https://nsearchives.nseindia.com/corporate/GSPL_29082019183145_NSEBSEReg30AR1819_305.pdf\nContent: Particulars 31st March, 2019 31st March, 2018 Floating rate Expiring within one year (bank overdraft and other facilities) - 74,900.00 Total - 74,900.00 Financing arrangement The Company had access to the following undrawn borrowing facilities at the end of the reporting period: Further, the Company has also tied-up additional sources of liquidity to meet the liabilities during the respective annual years which has ensured that the Company has a clean track record with no adverse events pertaining to liquidity risk. [...] costs of loan to the extent that it is probable that some or all the facility will be drawn down. In this case, the fee is deferred until the draw down occurs. To the extent there is no evidence that it is probable that some or all of the facility will be drawn down, the fee is deferred as a payment for liquidity services and amortised...",
+        "sources": [
+          "https://nsearchives.nseindia.com/corporate/GSPL_29082019183145_NSEBSEReg30AR1819_305.pdf",
+          "http://www.cmlinks.com/pub/dp/dp24065.pdf",
+          "https://www.careratings.com/upload/CompanyFiles/PR/202409140921_Gujarat_State_Petronet_Limited.pdf",
+          "https://www.careratings.com/upload/CompanyFiles/PR/202310121012_Gujarat_State_Petronet_Limited.pdf",
+          "https://groww.in/stocks/gujarat-state-petronet-ltd"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Section 72A tax loss carry forward amalgamation litigation precedents India",
+        "findings": "[1] Set-off of Losses Following Demerger Disallowed by Indian Tax Tribunal\nURL: https://news.bloombergtax.com/daily-tax-report-international/set-off-of-losses-following-demerger-disallowed-by-indian-tax-tribunal\nContent: The tribunal noted that, in the context of amalgamations, it had previously been held by the Delhi High Court in IEL Ltd v Union of India 195 ITR 232 (Delhi) and the Bombay High Court in Ballarpur Industries Ltd v Commissioner of Income Tax 398 ITR 145 (Bombay) that the benefit of section 72A cannot be claimed where the sole purpose of the amalgamation was to benefit from brought-forward losses. [...] Section 72A of India’s Income Tax Act 1961 is a beneficial provision which allows a taxpayer to carry forward and set off accumulated losses and unabsorbed depreciation pursuant to an amalgamation or demerger, subject to satisfying certain conditions. While section 72A(2) prescribes specific conditions which need to be fulfilled before such set-off can be claimed in respe...",
+        "sources": [
+          "https://news.bloombergtax.com/daily-tax-report-international/set-off-of-losses-following-demerger-disallowed-by-indian-tax-tribunal",
+          "https://www.linkedin.com/posts/dramarmehta_mergers-amalgamations-indiatax-activity-7325694764022923264-88HH",
+          "https://indiacorplaw.in/2025/04/18/restricting-carry-forward-of-losses-analysing-reforms-to-the-income-tax-act",
+          "https://www.casemine.com/search/in/section%2B72a%2Bof%2Bincome%2Btax%2Bact",
+          "https://www.incometaxindia.gov.in/w/section-72a-15"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Gujarat Gas GSPL demerger record date 2026 NCLT",
+        "findings": "[1] Gujarat Gas Sets Record Date for Share Allotment in Group Restructuring - TipRanks.com\nURL: https://www.tipranks.com/news/company-announcements/gujarat-gas-sets-record-date-for-share-allotment-in-group-restructuring\nContent: Gujarat Gas Limited announced that it has published newspaper advertisements giving public notice to shareholders of Gujarat State Petroleum Corporation and Gujarat State Petronet about the fixation of a record date under a composite scheme of amalgamation and arrangement. The record date, set for 11 May 2026, will determine the eligible shareholders of these transferor companies for issuance and allotment of Gujarat Gas shares, marking a key step in implementing the approved merger and demerger structure. [...] The scheme involves the amalgamation of GSPC, GSPL and GSPC Energy into Gujarat Gas, as well as the demerger of the gas transmission business from Gujarat Gas into GSPL Transmission, reshaping the group’s corporate and operational structure. This move i...",
+        "sources": [
+          "https://www.tipranks.com/news/company-announcements/gujarat-gas-sets-record-date-for-share-allotment-in-group-restructuring",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6e123e66-6b6a-4a97-bd27-ddcfa9b1cd7f.pdf",
+          "https://www.business-standard.com/markets/capital-market-news/gujarat-gas-update-on-scheme-of-arrangement-126050200818_1.html",
+          "https://indianexpress.com/article/cities/ahmedabad/gspc-gspl-merge-into-gujarat-gas-entity-to-be-renamed-gujarat-energy-limited-10667472",
+          "https://nsearchives.nseindia.com/corporate/GUJGASLTD_05062026230023_1579SEITRANSCRIPTQ4FY252601062026.pdf",
+          "https://www.gujaratgas.com/resources/downloads/press-release-01-05-2026.pdf",
+          "https://energy.economictimes.indiatimes.com/amp/news/oil-and-gas/board-of-gujarat-gas-approves-merger/demerger-plans-involving-gspl-and-gspc/112986876"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Vedanta demerger status NCLT 2025 2026",
+        "findings": "[1] Vedanta Demerger Gets NCLT Approval, Executive Expects Completion by March 2026\nURL: https://scanx.trade/stock-market-news/corporate-actions/nclt-approves-vedanta-s-corporate-demerger-plan/27422064\nContent: ## Official NCLT Order Confirmation\n\nThe company confirmed that the Hon'ble NCLT pronounced its order at 2:30 PM IST sanctioning the scheme of demerger. This represents a significant milestone in Vedanta's corporate restructuring initiative, removing a crucial regulatory hurdle for the planned business separation.\n\n| Development Details: | Information |\n --- |\n| Order Pronouncement Time: | 2:30 PM IST |\n| Tribunal: | National Company Law Tribunal (NCLT) |\n| Decision: | Demerger scheme sanctioned |\n| Official Copy Status: | Awaited |\n| Expected Completion: | March-April 2026 |\n\n## Regulatory Compliance and Next Steps [...] scanX\n\nScanXarrNewsarrVedanta Demerger Gets NCLT Approval, Executive Expects Completion by March 2026\n\n# Vedanta Demerger Gets NCLT Approval, Executive Expects...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/corporate-actions/nclt-approves-vedanta-s-corporate-demerger-plan/27422064",
+          "https://timesofindia.indiatimes.com/business/india-business/vedanta-demerger-deadline-pushed-to-march-2026-nclt-and-government-approvals-pending/articleshow/124315936.cms",
+          "https://www.facebook.com/thefinancialexpress/posts/vedanta-ltds-proposed-demerger-approved-by-the-nclt-is-targeted-for-completion-b/1304308618391394",
+          "https://www.alcircle.com/news/vedanta-delays-demerger-deadline-to-june-2026-amid-pending-regulatory-approvals-117867",
+          "https://www.vedantaresources.com/uploads/media_pdf/press_release/vrl/2025/PressRelease_VedantaDemerger_16Dec2025.pdf",
+          "https://timesofindia.indiatimes.com/business/india-business/vedanta-demerger-deadline-pushed-to-march-2026-nclt-and-government-approvals-pending/amp_articleshow/124315936.cms",
+          "https://www.plindia.com/news/vedanta-nclt-approval-whats-next-after-demerger-nod-pl-capital"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Vedanta demerger debt allocation scheme of arrangement NCLT filings",
+        "findings": "[1] Prerna Halwasiya\nURL: https://nsearchives.nseindia.com/corporate/VEDL_16122025225750_VEDLSEIntimationNCLTOrder16Dec_2025signed.pdf\nContent: 16, 2025: Vedanta Limited, the world’s leading critical minerals, energy transition, metals, oil & gas, power, and technology conglomerate, today announced that the Mumbai Bench of the National Company Law Tribunal (NCLT) has sanctioned the Scheme of Arrangement for the Company’s demerger into four independent, pure-play businesses by an order dated December 16, 2025. With this approval and subject to receipt of certain government, regulatory approvals and other stakeholder clearances, Vedanta enters the execution phase of a transformational demerger that will result in five separate listed companies1 (including already listed Vedanta Limited), each with a clear strategic mandate, focused management teams, and dedicated capital structures. The demerger is designed to unlock long-term [...] Sections 230-232 and other applicable provisions of the...",
+        "sources": [
+          "https://nsearchives.nseindia.com/corporate/VEDL_16122025225750_VEDLSEIntimationNCLTOrder16Dec_2025signed.pdf",
+          "https://www.vedantaresources.com/uploads/media_pdf/press_release/vrl/2025/PressRelease_VedantaDemerger_16Dec2025.pdf",
+          "https://www.vedantalimited.com/public/uploads/17361/SEIntimationNCLTOrder09Jan2026signed.pdf",
+          "https://images.assettype.com/barandbench/2025-12-17/00sn840p/Vedanta_demerger_order.pdf",
+          "https://www.linkedin.com/posts/chethancb_mnawithchethan-vedanta-demerger-activity-7349751605946142721-b-Ir"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Gujarat Gas GSPL Transmission share allotment ratio SOTP valuation analyst reports",
+        "findings": "[1] gujarat gas\nURL: https://www.gujaratgas.com/resources/downloads/additional-information-submitted-by-gspl-ggl-to-stock-exchange.pdf\nContent: Sir I Madam, This is with reference our report dated 30 August 2024 on \"Recommendation of fair equity share exchange ratio for the proposed amalgamation of Gujarat State Petroleum Corporation Limited (\"GSPC\") and Gujarat State Petronet Limited (\"GSPL\") with Gujarat Gas Limited (\"GGL\") and share entitlement ratio for demerger of gas transmission business of the merged entity into GSPL Transmission Limited (\"GTL\")\" (the \"Report\"). As desired by you, we have given working of our valuation analysis herein. GSPC, GSPL and GGL are hereinafter jointly referred to as \"Companies\" or \"Clients\". The fair equity share exchange ratio (\"Share Exchange Ratio\") have been arrived at based on a relative equity valuation of the Companies based on various qualitative and quantitative factors relevant to each [...] Directors, GSPC Energy Limited, GSPC Bhavan, Behin...",
+        "sources": [
+          "https://www.gujaratgas.com/resources/downloads/additional-information-submitted-by-gspl-ggl-to-stock-exchange.pdf",
+          "https://images.assettype.com/bloombergquint/2024-09-04/39myqatx/Nirmal_Bang_OIL_and_Gas_Sector_CORPORATE_ACTION_UPDATE.pdf",
+          "https://www.gujaratgas.com/resources/downloads/valuation-report-dated-30-08-2024.pdf",
+          "https://scanx.trade/stock-market-news/companies/gujarat-gas-credits-shares-following-gspc-and-gspl-merger/43863546",
+          "https://acuitylaw.co.in/reshaping-gujarats-gas-ecosystem-a-comprehensive-analysis-of-the-gspc-gspl-ggl-restructuring"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Piramal Enterprises promoter share acquisition insider trading disclosures BSE",
+        "findings": "[1] Piramal Pharma - Disclosures under Insider Trades & Substantial Acquisition of Shares and Takeovers\nURL: https://trendlyne.com/equity/insider-trading-sast/all/PPLPHARMA/1093348/piramal-pharma-ltd\nContent: ###### 45.16% Gain from 52W Low\n\n###### High volume+gain today\n\nNSE\n27 Jul, 2026 3:55 PM (IST)\n\nWatchlist\n\nPortfolio\n\nAlert\n\nMy Notes\n\n# Insider Trading & SAST disclosures for Piramal Pharma\n\n## There were no Insider Trade disclosures made for Piramal Pharma\n\n## The latest disclosures under SEBI SAST(Substantial Acquisition of Shares and Takeovers) Regulations, 2011 transaction was made by HDFC Mutual Fund in Piramal Pharma where Acquisition of 26,548,576 shares done was reported to the exchange on June 27, 2025.\n\n#### Insider trades are disclosures under SEBI (Prohibition of Insider Trading) Regulations, 2015 ([Regulation 7 (2) with 6(2)] made by corporate insiders: promoters, officers, directors, employees and large shareholders who are buying and selling stock in their own comp...",
+        "sources": [
+          "https://trendlyne.com/equity/insider-trading-sast/all/PPLPHARMA/1093348/piramal-pharma-ltd",
+          "https://www.piramalenterprises.com/Assets/download/CompositeArrangement/PEL_Final_Secured%20Creditors%20Notice_NCLT_Meeting_4.7.2025.pdf",
+          "https://www.piramal.com/wp-content/uploads/2022/05/NCLT-Notice-%E2%80%93-Equity-Shareholders.pdf",
+          "https://beta.bseindia.com/corporates/Insider_Trading_new.aspx",
+          "https://www.insiderscreener.com/en/india/insider-trading"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Vedanta Resources liability management exercise bondholder consent solicitations 2025 2026",
+        "findings": "[1] not for release, publication or distribution (a) in or into ...\nURL: https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/Vedanta_CST3.pdf\nContent: and as provided herein. If the applicable Early Consent Deadline and/or the applicable Voting Deadline for the Consent Solicitations is extended, the Company will publicly announce such extension, as soon as reasonably practicable after the applicable deadline, in accordance with the terms of this Consent Solicitation Memorandum. Concurrent with these Consent Solicitations, the Company and VRF II are also seeking the approval of the holders of the 2026 Bonds (as defined herein) by way of an extraordinary resolution at a meeting of the holders of the 2026 Bonds to make certain amendments and waivers relating to the 2026 Bonds (the “Concurrent Consent Solicitation”). A relevant Extraordinary Resolution that is duly passed at the relevant Meeting or, as the case may be, adjourned Meeting, in [...] Revenue Code of 1986, as amen...",
+        "sources": [
+          "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/Vedanta_CST3.pdf",
+          "https://www.linklaters.com/about-us/news-and-deals/deals/2026/july/linklaters-advises-on-vedanta-resources-bond-issuance-concurrent-tender-offers-consent-solicitations",
+          "https://vedantaresources.com/uploads/stock-exchange-filing/vedanta-announcement-extension-of-early-consent-deadline-22-dec-2023.pdf",
+          "https://octus.com/resources/articles/vedanta-resources-considers-par-call-for-upcoming-bonds",
+          "https://www.cliffordchance.com/news/news/2026/07/clifford-chance-advises-vedanta-resources-on-us-1-75-billion-bon.html"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Vedanta demerger investor presentation EBITDA debt allocation per entity",
+        "findings": "[1] EARNINGS PRESENTATION - 4Q and Full Year FY26\nURL: https://www.vedantalimited.com/uploads/investor-overview/financial-results/Q4FY26_Earnings_Presentation_final.pdf\nContent: Proforma Net Debt across Demerged Entities Vedanta Limited Consolidated Total Vedanta Aluminium Vedanta Limited Vedanta Power Vedanta Iron & Steel Vedanta Oil & Gas EBITDA 6.3 2.9 2.6 0.2 0.14 0.5 Gross Debt 8.7 4.0 2.7 0.9 0.5 0.6 Cash & Cash Equivalent (Including ICL proceeds) 3.2 0.5 1.7 0.1 0.3 0.6 Net Debt 5.5 3.5 1.0 0.8 0.2 0.0 Net Debt/ EBITDA 0.91x 1.3x 0.4x 4.7x 1.4x -Post Demerger Capital allocation is sharpened with a focus on maintaining healthy leverage, ensuring debt servicing discipline, and reinvesting free cash flows into scalable growth Pre Demerger in $bn Vedanta Limited Standalone Total Vedanta Aluminium Vedanta Limited Vedanta Power Vedanta Iron & Steel Vedanta Oil & Gas Net Debt 4.7 3.4 1.0 0.2 0.1 0.0 26 Vedanta Limited 4QFY26 Investor Presentation 0.95x Group Net [...] (30) Sensitivity:...",
+        "sources": [
+          "https://www.vedantalimited.com/uploads/investor-overview/financial-results/Q4FY26_Earnings_Presentation_final.pdf",
+          "https://www.businesstoday.in/amp/markets/stocks/story/vedanta-demerger-entities-listing-valuations-debt-allocation-expert-views-fair-values-536747-2026-06-14",
+          "https://m.economictimes.com/markets/expert-view/vedantas-historic-year-strong-margins-and-deleveraging-path-management-on-post-demerger-strategy-listing-timeline-and-capital-allocation/articleshow/130625376.cms",
+          "https://m.economictimes.com/markets/expert-view/vedantas-historic-year-strong-margins-and-deleveraging-path-management-on-post-demerger-strategy-listing-timeline-and-capital-allocation/amp_articleshow/130625376.cms",
+          "https://www.linkedin.com/posts/business-today-india_vedanta-vedantademerger-stockmarket-activity-7455478421813374976-of0k"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "GSPL Transmission Limited shareholding pattern promoter stake post-merger",
+        "findings": "[1] GSPL/S&L/2024-25 6th September, 2024 To The Manager ...\nURL: https://nsearchives.nseindia.com/corporate/GSPL_06092024212258_NSEBSEReg30TranscriptsofAudiorecording.pdf\nContent: shares by after the transmission business is demerged? Management: It's close to 93. 82 crores that's the number. Moderator: Thank you. The next question is from the line of Hitendra Gupta from Systematix. Please go ahead. Hitendra Gupta: Good afternoon management my question is related to the slide number 12 wherein we are talking about the promoter's stake in GSPC being 55.65% and they have a holding of 37.63% on GSPL and 54% in GGL. But if you see in the slide number 14 we are directly saying the promoter's stake is 24.86, but what I understand the economic interest of Gujarat government should be around 11% plus 6% around 17%. So can you please help me with the math of this from 17% to 25% how it has increased? Gujarat Gas Limited & Gujarat State Petronet Limited 31st August,2024 Page [...] Hazarika: Okay...",
+        "sources": [
+          "https://nsearchives.nseindia.com/corporate/GSPL_06092024212258_NSEBSEReg30TranscriptsofAudiorecording.pdf",
+          "https://mnacritique.mergersindia.com/news/reverse-merger-likely-to-improve-profit-of-gujarat-gas-stock-up-11",
+          "https://www.gujaratgas.com/resources/downloads/additional-information-submitted-by-gspl-ggl-to-stock-exchange.pdf",
+          "https://nsearchives.nseindia.com/corporate/GSPL_30082024190400_OutcomeofBM30082024.pdf",
+          "https://www.gujaratgas.com/resources/downloads/fairness-opinion-13-09-2024.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "India holding company discount restructuring candidates potential demergers 2026",
+        "findings": "[1] Will These 5 Indian Companies Unlock Value Through Demergers in 2026?\nURL: https://www.equitymaster.com/detail.asp?date=09%2F02%2F2025&story=1&title=Will-These-5-Indian-Companies-Unlock-Value-Through-Demergers-in-2026\nContent: ### #3 JSW Energy\n\nThird on our list is JSW Energy.\n\nJSW Energy has rapidly scaled into one of India's largest private power producers. From a 4.6 GW base in FY22, its portfolio now spans 12.8 GW of operational capacity across thermal, hydro, solar, and wind, with another 17 GW under construction.\n\nIts ownership remains concentrated with the JSW Group, which has been the driving force behind its bold bets on renewables and storage.\n\nThe candidate for a future carve-out is JSW Neo Energy, the renewables and new-energy arm. It houses wind, solar, hydro, battery storage, and green hydrogen.\n\nWith 5.2 GW of renewable assets operational, 20.8 GW locked in, and 29.3 GWh of energy storage capacity in the pipeline, Neo Energy is already large enough to stand alone. [...",
+        "sources": [
+          "https://www.equitymaster.com/detail.asp?date=09%2F02%2F2025&story=1&title=Will-These-5-Indian-Companies-Unlock-Value-Through-Demergers-in-2026",
+          "https://discoveryalert.com.au/corporate-simplification-value-creation-2026",
+          "https://notifications.geojit.com/corporate-actions/demerger",
+          "https://www.strike.money/sectors/holding-company-stocks",
+          "https://www.samco.in/knowledge-center/articles/best-low-price-shares-to-buy"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "Piramal Enterprises RBI scale based regulation restructuring plan financials",
+        "findings": "[1] Annual\nURL: https://www.piramalenterprises.com/Assets/download/Annual-Reports/2024-2025/PEL_AR_FY2024-25.pdf\nContent: 62 \u0007 DISCLOSURES IN TERMS OF RBI/DOR/2023-24/106 DOR.FIN.REC.NO.45/03.10.119 /2023-24 - MASTER DIRECTION – RESERVE BANK OF INDIA (NON-BANKING FINANCIAL COMPANY – SCALE BASED REGULATION) DIRECTIONS, 2023 DATED OCTOBER 19, 2023 (AS UPDATED). (Contd.) 340 Piramal Enterprises Limited NOTES To Standalone Financial Statements for the year ended March 31, 2025 (H in Crores, unless otherwise stated) (xliii) Disclosure of Restructured Accounts As at March 31, 2025 Sr. No. [...] Mumbai Place: Mumbai Date: May 06, 2025 Date: May 06, 2025 Date: May 06, 2025 Statutory Reports Financial Statements Company Overview Value Creation 373 Integrated Annual Report 2024-25 Integrated Annual Report 2024-25 Notice NOTES To Consolidated Financial Statements for the year ended March 31, 2025 1A CORPORATE INFORMATION \u0007 Piramal Enterprises Limited (‘the Company', 'Holding Company’, or ‘PEL’), ...",
+        "sources": [
+          "https://www.piramalenterprises.com/Assets/download/Annual-Reports/2024-2025/PEL_AR_FY2024-25.pdf",
+          "https://www.piramal.com/wp-content/uploads/2023/06/PEL-Annual-Report-FY-2022-23.pdf",
+          "https://www.piramalfinance.com/content/dam/piramalfinance/pdf/stakeholder/annual-reports/piramal-finance-ltd-annual-report-2024-2025.pdf",
+          "https://nsearchives.nseindia.com/corporate/Piramalcapital_27042026160343_PFL_Outcome_27042026_signed.pdf",
+          "https://en.wikipedia.org/wiki/Piramal_Finance"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Vedanta demerger SOTP valuation target multiples broker reports",
+        "findings": "[1] Vedanta Ltd - Demerger - Profits Growing beyond Expectations\nURL: https://simplehai.axisdirect.in/app/index.php/insights/reports/downloadReport/file/Vedanta+Ltd+-+Company+Update+-+Demerger+-+10032025_10-03-2025_14.pdf/type/fundamental\nContent: ACE Equity, Axis Securities Aditya Welekar Sr. Research Analyst Email: aditya.welekar@axissecurities.in 2 Demerger to Unlock Value Exhibit 1: SoTP Pre demerger Pre-Demerger FY27 EBITDA Multiple (x) EV Rs Cr Net Debt Rs Cr VED Stake % Hold Co Dis % Equity Rs/sh HZL 20,451 9.0x 1,84,057 4,117 63.4% 20% 233 BALCO 7,715 6.5x 50,145 1,409 51.0% 20% 51 Vedanta Aluminium 16,476 Power 1,396 O&G 4,983 Steel 525 Iron ore 1,899 Copper -49 Zn International 2,153 EBITDA VED Excl HZL & BALCO 27,383 6.0x 1,64,301 51,832 100% 288 Total VEDL 55,549 3,98,502 57,358 572 CMP 445 % Potential Upside 29% Source: Bloomberg Consensus EBITDA, Axis Securities Exhibit 2: SoTP Post demerger Post Demerger FY27 EBITDA Multiple (x) EV Rs Cr Net Debt Rs Cr VEDL Stake % Hold ...",
+        "sources": [
+          "https://simplehai.axisdirect.in/app/index.php/insights/reports/downloadReport/file/Vedanta+Ltd+-+Company+Update+-+Demerger+-+10032025_10-03-2025_14.pdf/type/fundamental",
+          "https://www.icicidirect.com/mailcontent/idirect_vedanta_coupdate_apr26.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_vedanta_q3fy26.pdf",
+          "https://www.icicidirect.com/research/equity/finace/all-about-vedanta-demerger",
+          "https://www.businesstoday.in/amp/markets/stocks/story/vedanta-demerger-entities-listing-valuations-debt-allocation-expert-views-fair-values-536747-2026-06-14"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Gujarat Gas GSPL demerger passive index outflow estimation MSCI FTSE",
+        "findings": "[1] Gujarat Energy (India): Demerger of GSPL Transmission (India)\nURL: https://research.ftserussell.com/products/index-notices/home/getnotice?id=2621200\nContent: CORPORATE Gujarat Energy (India): Demerger of GSPL Transmission (India) Changes in FTSE Indexes 25 June 2026 Subject to the completion of the demerger of GSPL Transmission (India) from Gujarat Energy (India, constituent), please see details of affected indexes and effective dates below: Index Effective From Start of Trading FTSE All-World Index 02 July 2026 FTSE MPF All-World Index 02 July 2026 FTSE Global Mid Cap Index 02 July 2026 FTSE Emerging Index 02 July 2026 Please note: 1. The listing date of GSPL Transmission has not yet been announced therefore it will remain in the index at a static estimated price until trading commences on the exchange. If the trading date remains unknown after 20 business days, FTSE Russell will review the company in accordance with the FTSE Russell Spin-offs [...] the company in accordance with ...",
+        "sources": [
+          "https://research.ftserussell.com/products/index-notices/home/getnotice?id=2621200",
+          "https://images.assettype.com/bloombergquint/2024-09-04/39myqatx/Nirmal_Bang_OIL_and_Gas_Sector_CORPORATE_ACTION_UPDATE.pdf",
+          "https://www.gujaratgas.com/resources/downloads/valuation-report-dated-30-08-2024.pdf",
+          "https://tradebetter.5paisa.com/t/what-does-the-gujarat-gas-demerger-mean-for-shareholders/932",
+          "https://www.gujaratgas.com/resources/downloads/additional-information-submitted-by-gspl-ggl-to-stock-exchange.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Kalyani Investment Company analyst coverage Bloomberg Trendlyne",
+        "findings": "[1] Kalyani Invest Co Ltd Share Price Today Live NSE/BSE\nURL: https://www.bajajfinserv.in/investments/kicl-share-price\nContent: 5 Day5,462.9\n\n10 Day5,476.1\n\n12 Day5,471.8\n\n20 Day5,432.5\n\n26 Day5,395.2\n\n50 Day5,252.9\n\n100 Day5,094.4\n\n200 Day5,038.5\n\n5 Day5,491.4\n\n10 Day5,516.8\n\n12 Day5,502.8\n\n20 Day5,454.7\n\n26 Day5,422.1\n\n50 Day5,210.9\n\n100 Day4,894.3\n\n200 Day4,991.5\n\n## 5402.5\n\n### PIVOT\n\nFirst support\n\n₹0.00\n\nFirst resistance\n\n₹0.00\n\nSecond support\n\n₹0.00\n\nSecond resistance\n\n₹0.00\n\nThird support\n\n₹0.00\n\nThird resistance\n\n₹0.00\n\nRSI\n\n48.79\n\nADX\n\n35.46\n\nMACD\n\n76.63\n\nWilliams % R\n\n-90.37\n\nCommodity Channel Index (CCI)\n\n-53.13\n\nDate\n\n23 Jul 2026\n\nSame day\n\n580\n\nWeek\n\n982\n\nMonth\n\n1,506\n\n1 year\n\n1.33\n\n3 years\n\n1.28\n\nOver 1 month\n\n-1.91%▼\n\nOver 1 year\n\n7.14%▲\n\nOver 3 months\n\n10.48%▲\n\nOver 3 years\n\n44.2%▲\n\nOver 6 months\n\n12.89%▲\n\nOver 6 years\n\n21.22%▲\n\n## Investment Returns\n\nOver 1 Month1.91%▼\n\nOver 3 Months10.48%▲ [...] BHEL\n\nRail Tel\n\nPunjab National Bank\n\nReliance Industries\n\nBharat Wire\n\n...",
+        "sources": [
+          "https://www.bajajfinserv.in/investments/kicl-share-price",
+          "https://www.kotakneo.com/stocks/kalyani-investment-share-price",
+          "https://professional.bloomberg.com/products/bloomberg-terminal/research/bloomberg-intelligence",
+          "https://libguides.nypl.org/c.php?g=1084166&p=8024533",
+          "https://gsb-research-help.stanford.edu/library/faq/264037"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Vedanta demerger record date 2026 NCLT",
+        "findings": "[1] Vedanta demerger 2026: May 1 record date, 1:1 shares | Market News & Analysis\nURL: https://www.multibagg.ai/market-pulse/articles/vedanta-demerger-record-date-2026-cmoelr5zqkxsjpl0j9enf333k\nContent: ## Conclusion\n\nVedanta’s May 1, 2026 record date is a key marker for the group’s five-way restructuring, with eligible shareholders set to receive 1:1 shares in each resulting listed entity. The demerger, first proposed in 2023 and approved by the NCLT in December 2025, has been presented as a simplification and debt-support exercise as much as a value-unlocking move. The next concrete milestones on the market’s checklist are the completion steps under the scheme and the listing timeline that management has indicated could fall around mid-May 2026.\n\n## Frequently Asked Questions\n\nVedanta’s board fixed May 1, 2026 as both the record date and the effective date for implementing the demerger. [...] ## Key facts at a glance\n\n| Item | Detail (as reported) |\n --- |\n| Board approval for implem...",
+        "sources": [
+          "https://www.multibagg.ai/market-pulse/articles/vedanta-demerger-record-date-2026-cmoelr5zqkxsjpl0j9enf333k",
+          "https://www.alcircle.com/news/vedanta-delays-demerger-deadline-to-june-2026-amid-pending-regulatory-approvals-117867",
+          "https://scanx.trade/stock-market-news/orders-deals/vedanta-receives-nclt-approval-for-demerger-scheme-with-talwandi-sabo-power/29565458",
+          "https://timesofindia.indiatimes.com/business/india-business/vedanta-demerger-deadline-pushed-to-march-2026-nclt-and-government-approvals-pending/amp_articleshow/124315936.cms",
+          "https://scanx.trade/stock-market-news/corporate-actions/nclt-approves-vedanta-s-corporate-demerger-plan/27422064"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Gujarat Gas GSPL demerger amalgamation 2025 2026 record date",
+        "findings": "[1] GSPL Transmission Limited\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachLive/6e123e66-6b6a-4a97-bd27-ddcfa9b1cd7f.pdf\nContent: investors.gspl@gspc.in I Website: www.gspcgroup.com Date: 30\" April 2026 Name of the Holder Ref: Folio Number/ DP ID & Client ID Number Subject: Announcement of Record Date for issue and allotment of equity shares by Gujarat Gas limited to the Shareholders of Gujarat State Petronet limited pursuant to the Composite Scheme of Amalgamation and Arrangement. Dear Sir/ Madam, The Hon'ble Ministry of Corporate Affairs, New Delhi (\"Hon'ble MCA\") vide an order dated April 08, 2026 (\"Order\") had approved the Composite Scheme of Amalgamation and Arrangement amongst Gujarat State Petroleum Corporation Limited (\"GSPC\"/ \"Transferor Company 1\"), Gujarat State Petronet Limited (\"GSPL\"/ \"Transferor Company 2\"/\"Company\"), GSPC Energy Limited (\"GEL\"/ \"Transferor Company 3\"), Gujarat Gas Limited (\"GGL\"/ [...] to the shareholders regarding Record Date for issue and a...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6e123e66-6b6a-4a97-bd27-ddcfa9b1cd7f.pdf",
+          "https://www.tipranks.com/news/company-announcements/gujarat-gas-sets-record-date-for-share-allotment-in-group-restructuring",
+          "https://www.business-standard.com/markets/capital-market-news/gujarat-gas-update-on-scheme-of-arrangement-126050200818_1.html",
+          "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/1671221/gspl-sets-record-date-as-mca-clears-major-group-restructuring",
+          "https://indianexpress.com/article/cities/ahmedabad/gspc-gspl-merge-into-gujarat-gas-entity-to-be-renamed-gujarat-energy-limited-10667472"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Piramal Enterprises news regulatory RBI 2025 2026",
+        "findings": "[1] Piramal Pharma Limited Press Releases | Official News & Announcements\nURL: https://www.piramalpharma.com/news-and-media/press-releases\nContent: 09-January-2026Read More\n\nPPS\n\nPiramal Pharma Solutions Demonstrates Commitment to Excellence with Outstanding Net Promoter Score\n\n15-December-2025Read More\n\nPPS\n\nPiramal Pharma Solutions Achieves Regulatory Compliance for Nitrosamine Impurities\n\n26-November-2025Read More\n\nPPS\n\nPiramal Pharma Solutions’ Bioconjugates Facility in Grangemouth, UK Receives Updated MHRA GMP Certificates\n\n20-November-2025Read More\n\nPPL\n\nPiramal Pharma Limited Announces Results for Q2 and H1 FY26\n\n05-November-2025Read More\n\nPPS\n\nPiramal Pharma Solutions Formalizes Partnership with IntoCell,Expanding its Payload-Linker Platform and Bioconjugate Capabilities\n\n30-October-2025Read More\n\nPPS\n\nRiverview, Michigan and Digwal, India Facilities with the Annual Excellence in Patient Centricity Award [...] Home\n About Us\n\n  + Overview\n  + Values\n  + Board Of Directors\n  + M...",
+        "sources": [
+          "https://www.piramalpharma.com/news-and-media/press-releases",
+          "https://mmjc.in/a-listing-without-an-ipopiramal-finance-and-piramal-enterprises-merger",
+          "https://en.wikipedia.org/wiki/Piramal_Finance",
+          "https://scanx.trade/stock-market-news/corporate-actions/piramal-enterprises-subsidiary-secures-rbi-approval-for-nbfc-icc-operations/5553149",
+          "https://nirmanbroking.com/blog/piramal-enterprises-pel-merger-with-piramal-finance-complete-analysis-/2063"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Kalyani Investment Company promoter shareholding pattern changes BSE filings",
+        "findings": "[1] KALYANI INVESTMENT\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/61a994c9-f218-4156-a27d-4a8a94a36551.pdf\nContent: (e) Details of Shares held by Promoter and Promoter Group Name of the Promoter / Promoter Group Member March 31, 2025 March 31, 2024 % Change during the year No. of Shares % of total shares No. of Shares % of total shares Mr.B.N. Kalyani (Promoter) 111 — 111 — — Mrs.Sunita B. Kalyani 5,464 0.13 5,464 0.13 — Mr.Amit B. Kalyani 3,119 0.07 3,119 0.07 — Mrs.Deeksha A. Kalyani 50 — 50 — — Mrs.Sugandha Hiremath & Mr.Jai Hiremath 779 0.02 779 0.02 — Ajinkya Investment & Trading Company 595,998 13.65 595,998 13.65 — Sundaram Trading & Investment Private Limited 2,660,074 60.94 2,660,074 60.94 — Ajinkyatara Trading Company Limited 256 — 256 — — Lohgaon Trading Company Private Limited — — 7,000 0.16 (0.16) KSMS Technologies Solutions Private Limited 7,000 0.16 — — 0.16 Total 3,272,851 74.97 [...] Date : May 27, 2025 Chairman PATTERN OF SHAREHOLDING BY OWNERSHIP AS ...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/61a994c9-f218-4156-a27d-4a8a94a36551.pdf",
+          "https://trendlyne.com/equity/share-holding/740/KICL/latest/kalyani-investment-company-ltd",
+          "https://www.etmoney.com/stocks/kalyani-investment-company-ltd/shareholding/567",
+          "https://www.sharekhan.com/stock/kalyani-investment-company-ltd",
+          "https://www.bajajfinserv.in/investments/kicl-share-price"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "Gujarat Gas GSPL composite scheme tax neutrality income tax",
+        "findings": "[1] A Comprehensive Analysis of the GSPC–GSPL–GGL ...\nURL: https://acuitylaw.co.in/reshaping-gujarats-gas-ecosystem-a-comprehensive-analysis-of-the-gspc-gspl-ggl-restructuring\nContent: As per the provisions of Income Tax Act, any transfer: (i) in a scheme of amalgamation14, of a capital asset15  by the amalgamating company to the amalgamated company if the amalgamated company is an Indian company; and (ii) in a demerger16, of a capital asset by the demerged company to the resulting company, if the resulting company is an Indian company, is exempted from the provisions of Capital Gains Tax.\n\nHence, the transfer of assets from GSPC, GSPL and GEL to GGL and the demerger of the transmission business into GTL qualifies as a tax-neutral treatment.17 [...] In addition, GSPC’s accumulated tax losses of approximately USD 857.9 million are eligible to be carried forward to GGL under Section 72A, subject to the prescribed continuity and asset-holding conditions. As confirmed by management, these ...",
+        "sources": [
+          "https://acuitylaw.co.in/reshaping-gujarats-gas-ecosystem-a-comprehensive-analysis-of-the-gspc-gspl-ggl-restructuring",
+          "https://www.gujaratgas.com/resources/downloads/scheme-of-amalgamation1.pdf",
+          "https://www.gujaratgas.com/resources/downloads/additional-information-submitted-by-gspl-ggl-to-stock-exchange.pdf",
+          "https://www.gujaratgas.com/resources/downloads/draft-scheme-of-amalgamation-and-arrangement-13-09-2024.pdf",
+          "https://images.assettype.com/bloombergquint/2024-09-04/39myqatx/Nirmal_Bang_OIL_and_Gas_Sector_CORPORATE_ACTION_UPDATE.pdf"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "Vedanta demerger scheme NCLT tax implications Section 47",
+        "findings": "[1] Tax Issues in M&A Transactions\nURL: https://www.nishithdesai.com/fileadmin/user_upload/pdfs/Research%20Papers/Tax_Issues_in_M_A.pdf\nContent: context of a demerger, Section 47 of the ITA specifically exempts the following transfers from capital gains tax liability: i. Transfer of capital assets in a scheme of demerger from the demerged company to the resulting company, if the resulting company is an Indian company.34 The cost of acquisition of the capital assets for the resulting company will be deemed to be the cost for which the demerged company had acquired such assets, increased by any cost of improvement incurred by the demerged company,35 and the period of holding of 32. No conditions have been notified as on date. [...] scheme in this ruling explicitly contained a split of consideration between the shareholders of the demerged / transferor company and the demerged / transferor company itself. Interestingly, since the case pertained to an earlier assessment year, the Delhi Hig...",
+        "sources": [
+          "https://www.nishithdesai.com/fileadmin/user_upload/pdfs/Research%20Papers/Tax_Issues_in_M_A.pdf",
+          "https://www.corporateprofessionals.com/wp-content/uploads/2024/08/unlocking-the-value-through-demerger-and-hive-offs.pdf",
+          "https://www.bajajbroking.in/share-market-news/nclt-approves-vedanta-demerger-into-five-listed-companies",
+          "https://www.vedantaresources.com/uploads/media_pdf/press_release/vrl/2025/PressRelease_VedantaDemerger_16Dec2025.pdf",
+          "https://www.vedantalimited.com/public/uploads/17361/SEIntimationNCLTOrder09Jan2026signed.pdf"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "Indian holding companies restructuring candidates high NAV discount 2026",
+        "findings": "[1] Best Holding Company Stocks to Invest in Jul, 2026\nURL: https://www.strike.money/sectors/holding-company-stocks\nContent: Valuation Overhang: Persistent NAV discounts (sometimes over 50%) can limit upside potential despite underlying asset performance. Bajaj Holdings and Kalyani Investment Company often trade at steep discounts to the combined value of their stakes in Bajaj Finserv or Bharat Forge, respectively.\n Governance Issues: Opaque structures, inter-company transactions, or a lack of professional management can reduce transparency and investor confidence.Aditya Birla Capital has faced concerns in the past over intra-group dealings and capital deployment. These governance red flags can erode shareholder trust and compress valuations. [...] Despite offering diversified exposure, holding company stocks carry structural and valuation risks that can cloud true worth. Hindustan Media Ventures trades at a significant discount due to its dependence on parent HT Media’s fortunes.\n\nBom...",
+        "sources": [
+          "https://www.strike.money/sectors/holding-company-stocks",
+          "https://www.equitymaster.com/detail.asp?date=09%2F02%2F2025&story=1&title=Will-These-5-Indian-Companies-Unlock-Value-Through-Demergers-in-2026",
+          "https://brusselsmorning.com/india-corporate-restructuring-news-2026/97632",
+          "https://www.hdfcsec.com/hsl.docs/Holdcos%20for%20portfolio%20diversification%20-%20HSIE-202112021525595803421.pdf",
+          "https://indianexpress.com/article/smart-stocks/bluechip-stocks-india-discount-holding-companies-markets-opportunity-value-trap-9966788"
+        ],
+        "phase": "Cross-Verification (Depth 2)"
+      },
+      {
+        "query": "Kalyani Investment Company market value of listed holdings Bharat Forge BF Investment",
+        "findings": "[1] [PDF] KALYANI INVESTMENT COMPANY LTD - AUM Capital\nURL: http://www.aumcap.com/Admin/researchreports/976_AUM%20%E2%80%93%20Kalyani%20Investment%20Ltd.pdf\nContent: products for enhancing its own product portfolio in pharma. Registrations continue to come through in regulated markets such as EU, Japan and Australia. The SEBI Circular on introduction of a special call auction mechanism for price discovery of scrips of listed Investment Companies and listed Investment Holding Companies in June 2024 is a positive move leading to efficient price discovery. Recommendation Kalyani Investment Ltd derives majority of its investment value from its strategic investment in Bharat Forge, Hikal and BF Utilities which is ~Rs 9,571 Cr out of its total investment of ~Rs 10,434 Cr. The CMP 5,045.45 trades at a Discount of 78.92% to its NAV Per Share of ~Rs 23,931. Bharat Forge is undertaking strategic diversifications to mitigate the risk posed by the announced [...] to mitigate the risk posed by the...",
+        "sources": [
+          "http://www.aumcap.com/Admin/researchreports/976_AUM%20%E2%80%93%20Kalyani%20Investment%20Ltd.pdf",
+          "https://trendlyne.com/portfolio/superstar-shareholders/custom?query=kalyani+investment+company+limited",
+          "https://trendlyne.com/portfolio/superstar-shareholders/custom?query=bf+investment+limited",
+          "https://www.screener.in/company/KICL/consolidated",
+          "https://www.kotakneo.com/stocks/kalyani-investment-share-price"
+        ],
+        "phase": "Cross-Verification (Depth 2)"
+      },
+      {
+        "query": "Tata Chemicals Tata Sons ownership restructuring preconditions",
+        "findings": "[1] Sustainable Growth\nURL: https://www.tatachemicals.com/AnnualReportFY2026.pdf\nContent: when the Group has approved a detailed and formal restructuring plan, and the restructuring either has commenced or has been announced publicly. f) Liability for sales return In making estimate for liability for sales return, the management considered the detailed criteria for the recognition of revenue from the sale of goods set out in Ind AS 115 and in particular, whether the Group had transferred to the buyer the significant risk and rewards of ownership of the goods. Following the detailed quantification of the Group`s liability towards sales return, the management is satisfied that significant risk and rew ards have been transferred and that recognition of the revenue in the current year is appropriate, in conjunction with the recognition of an appropriate liability for sales return. [...] ii British Salt Limited (transferred from Cheshire Salt Holdings Limited on restructuring) Term loan lim...",
+        "sources": [
+          "https://www.tatachemicals.com/AnnualReportFY2026.pdf",
+          "https://www.tatachemicals.com/upload/content_pdf/related-party-transactions-q4-fy24..pdf",
+          "https://www.scribd.com/document/172975192/Tata-Case-Solution",
+          "https://en.wikipedia.org/wiki/Tata_Sons",
+          "https://www.tata.com/business/tata-sons"
+        ],
+        "phase": "Cross-Verification (Depth 2)"
+      },
+      {
+        "query": "Gujarat Gas GSPL composite scheme of arrangement restructuring structure details",
+        "findings": "[1] GSPL Sets Record Date as MCA Clears Major Group ...\nURL: https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/1671221/gspl-sets-record-date-as-mca-clears-major-group-restructuring\nContent: ## \n\n## Latest in\n\n## More\n\n# GSPL Sets Record Date as MCA Clears Major Group Restructuring\n\n### Claim 55% Off TipRanks\n\nGujarat State Petronet Limited ( (IN:GSPL) ) has shared an announcement.\n\nGujarat State Petronet Limited has informed shareholders that India’s Ministry of Corporate Affairs has approved a composite scheme of amalgamation and arrangement involving Gujarat State Petroleum Corporation, Gujarat State Petronet, GSPC Energy, Gujarat Gas and GSPL Transmission. The scheme includes the amalgamation of the three transferor companies into Gujarat Gas and the subsequent demerger of the gas transmission business into GSPL Transmission, reshaping the group’s corporate and operational structure.\n\n[2] honable-mca-final-order-17-04-2026.pdf\nURL: https://www.gujaratgas.com/re...",
+        "sources": [
+          "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/1671221/gspl-sets-record-date-as-mca-clears-major-group-restructuring",
+          "https://www.gujaratgas.com/resources/downloads/honable-mca-final-order-17-04-2026.pdf",
+          "https://mnacritique.mergersindia.com/gujrat-gas-petroleum-consolidation-arrangement",
+          "https://www.gujaratgas.com/resources/downloads/disclosure-under-regu-30-press-release-on-scheme-of-arrangement.pdf",
+          "https://www.gujaratgas.com/resources/downloads/additional-information-submitted-by-gspl-ggl-to-stock-exchange.pdf"
+        ],
+        "phase": "Cross-Verification (Depth 3)"
+      },
+      {
+        "query": "SEBI index maintenance guidelines demerger forced selling passive funds",
+        "findings": "[1] Aggressive for Passive: A Deep Dive into SEBI’s New MF Lite Regulations – IndiaCorpLaw\nURL: https://indiacorplaw.in/2024/08/06/aggressive-for-passive-a-deep-dive-into-sebis-new-mf-lite-regulations\nContent: d. Investments by Passive Schemes\n\nThe paper also addresses the investment norms for passive schemes, proposing more flexible investment guidelines that allow passive funds to invest in a broader range of securities while maintaining their index-tracking mandate.\n\nImplementation\n\nThe SEBI Working Group proposed two approaches for passive schemes under the MF Lite Regulations. Approach 1 involves phased implementation, initially allowing only domestic equity passive indices with Assets under Management (“AUM”) of over Rs. 10,000 crores or Rs. 5,000 crores and specific overseas indices. This would encourage serious players and prevent index proliferation but limit MF Lite to certain passive schemes while others remain under the current regulations. [...] Passive mutual funds are in...",
+        "sources": [
+          "https://indiacorplaw.in/2024/08/06/aggressive-for-passive-a-deep-dive-into-sebis-new-mf-lite-regulations",
+          "https://www.morningstar.in/posts/68444/sebi-issues-new-norms-for-passive-funds.aspx",
+          "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2026/1774024028162.pdf",
+          "https://fimmda.org/LinkFiles/VIII_SEBI_MCMF.pdf",
+          "https://corporate.cyrilamarchandblogs.com/2025/03/sebis-mutual-funds-lite-framework-a-regulatory-inflection-point-for-passive-funds-in-india"
+        ],
+        "phase": "Cross-Verification (Depth 3)"
+      },
+      {
+        "query": "Kalyani Investment Company promoter shareholding change SEBI disclosures",
+        "findings": "[1] KALYANI INVESTMENT\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/61a994c9-f218-4156-a27d-4a8a94a36551.pdf\nContent: (e) Details of Shares held by Promoter and Promoter Group Name of the Promoter / Promoter Group Member March 31, 2025 March 31, 2024 % Change during the year No. of Shares % of total shares No. of Shares % of total shares Mr.B.N. Kalyani (Promoter) 111 — 111 — — Mrs.Sunita B. Kalyani 5,464 0.13 5,464 0.13 — Mr.Amit B. Kalyani 3,119 0.07 3,119 0.07 — Mrs.Deeksha A. Kalyani 50 — 50 — — Mrs.Sugandha Hiremath & Mr.Jai Hiremath 779 0.02 779 0.02 — Ajinkya Investment & Trading Company 595,998 13.65 595,998 13.65 — Sundaram Trading & Investment Private Limited 2,660,074 60.94 2,660,074 60.94 — Ajinkyatara Trading Company Limited 256 — 256 — — Lohgaon Trading Company Private Limited — — 7,000 0.16 (0.16) KSMS Technologies Solutions Private Limited 7,000 0.16 — — 0.16 Total 3,272,851 74.97 [...] Date : May 27, 2025 Chairman PATTERN OF SHAREHOLDING BY OWNERSHIP AS ...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/61a994c9-f218-4156-a27d-4a8a94a36551.pdf",
+          "https://upstox.com/stocks/kalyani-invest-co-ltd-shareholding",
+          "https://trendlyne.com/equity/share-holding/740/KICL/latest/kalyani-investment-company-ltd",
+          "https://www.sharekhan.com/stock/kalyani-investment-company-ltd",
+          "https://trendlyne.com/equity/insider-trading-sast/all/KICL/740/kalyani-investment-company-ltd"
+        ],
+        "phase": "Cross-Verification (Depth 3)"
+      },
+      {
+        "query": "Vedanta demerger debt allocation bondholder approval status",
+        "findings": "[1] Vedanta demerger receives approval from shareholders and creditors\nURL: https://www.vedantaresources.com/img/media_mentions/interviews-articles/pdf/2025/economictimes-indiatimes-feb-2025.pdf\nContent: ANI As part of the demerger scheme, each Vedanta shareholder will receive one additional share in all four newly demerged companies upon completion.\nVedanta’s proposal to demerge into five independent, sector-focused companies has received overwhelming approval from its shareholders and creditors. According to the company’s stock exchange filing, the demerger was approved by 99.9987% of shareholders, 99.5900% of secured creditors, and 99.9588% of unsecured creditors who voted in favour of the proposal. [...] 1/2 Vedanta demerger receives approval from shareholders and creditors economictimes.indiatimes.com/markets/stocks/news/vedanta-demerger-receives-approval-from-shareholders-and-creditors/articleshow/118416512.cms SECTIONS Vedanta demerger receives approval from shareholders and cre...",
+        "sources": [
+          "https://www.vedantaresources.com/img/media_mentions/interviews-articles/pdf/2025/economictimes-indiatimes-feb-2025.pdf",
+          "https://www.business-standard.com/amp/companies/news/vedanta-debt-to-be-divided-among-demerged-companies-in-ratio-of-assets-124032800879_1.html",
+          "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/Vedanta_CST3.pdf",
+          "https://www.linkedin.com/posts/chethancb_mnawithchethan-vedanta-demerger-activity-7349751605946142721-b-Ir",
+          "https://ticker.finology.in/discover/market-update/vedanta-demerger-explained"
+        ],
+        "phase": "Cross-Verification (Depth 3)"
+      }
+    ],
+    "disclaimer": "AI-generated hypotheses. Every candidate requires independent verification.",
+    "phases_completed": 5,
+    "total_search_count": 86
+  }
+}

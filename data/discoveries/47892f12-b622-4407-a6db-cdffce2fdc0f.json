@@ -1,0 +1,752 @@
+{
+  "id": "47892f12-b622-4407-a6db-cdffce2fdc0f",
+  "strategy_id": "smart_money",
+  "strategy_name": "Smart Money / Insider Behavior",
+  "user_params": {
+    "context": ""
+  },
+  "model_name": "gemini-3.5-flash-lite",
+  "created_at": "2026-07-27T10:56:42.003770",
+  "result": {
+    "analysis_summary": "This synthesis focuses on identifying asymmetric investment opportunities in the Indian micro-cap space by tracking smart money and insider behavior. Specifically, we target companies with zero sell-side analyst coverage, negligible institutional holdings, and clean balance sheets (0% promoter pledge) where promoters are aggressively committing capital via preferential warrants or creeping acquisitions. Two high-conviction candidates, Vivo Bio Tech Limited and Ambo Agritec Limited, have been identified and subjected to rigorous forensic audits. Vivo Bio Tech exhibits a strategic pivot into a high-margin pre-clinical CRO, though it carries systemic audit risks due to its Hyderabad-based promoter network and shared auditor. Ambo Agritec shows significant promoter equity consolidation at a premium to the market price, indicating strong asymmetric conviction despite operating in a low-profile commodity sector. Both represent classic Type B mispricings where structural inflections are ignored or invisible to the broader market.",
+    "candidates": [
+      {
+        "company_name": "Vivo Bio Tech Limited",
+        "ticker": "511509",
+        "connection_type": "Insider warrant subscription and CRO operational pivot",
+        "confidence": "medium",
+        "why_now": "(a) What changed: Promoters and strategic corporate bodies have locked in capital via preferential warrants at Rs 28 and conversions at Rs 45, while the company secured a major Rs 10.75 crore pre-clinical safety study contract, signaling a pivot to a high-margin CRO. (b) Estimated catalyst window: Medium-term (6-18 months) as commercial revenues from the newly scaled Siddipet and Gajwel pre-clinical testing facilities begin to reflect in the quarterly P&L. (c) Confirming milestone: First quarterly filing showing >30% YoY revenue growth in the CRO segment with sustained OPM above 35%.",
+        "reasoning": "[INVISIBLE TO MARKET] This company is invisible because it has zero sell-side analyst coverage, negligible institutional holdings (<1%), and is misclassified as a low-value animal breeder rather than an advanced pre-clinical CRO. The market will notice it when commercial revenues from the scaled Siddipet pre-clinical testing facilities reflect in the quarterly P&L and major international CRO contracts are disclosed. [OBSERVED FACTS] Promoters and strategic corporate bodies (Vira Systems, Antique Infotech) subscribed to preferential warrants at Rs 28 and converted tranches at Rs 45 per share. Promoter pledge stands at 0.00%. Statutory auditor is P. Murali & Co. Vivo Bio Tech acquired a 15.59% strategic stake in Virinchi Limited through Rs 20.72 crore convertible warrant allotments in January 2026. [STRONG INFERENCE] The promoter's willingness to lock up capital at Rs 28 and Rs 45 per share, combined with zero pledging, indicates strong internal conviction. The strategic cross-holding with Virinchi suggests a coordinated Hyderabad-based promoter ecosystem. [HYPOTHESIS] The company is successfully transitioning from basic animal breeding to a high-margin, full-service pre-clinical CRO, and the market is completely ignoring this operational inflection due to its micro-cap status and auditor-related skepticism.",
+        "self_critique": "Why might this specific hypothesis be wrong? The strategic cross-holding with Virinchi Limited and the shared statutory auditor (P. Murali & Co., which has faced regulatory scrutiny from SEBI/NFRA in other engagements like Brightcom) could indicate that the warrant transactions are part of a circular funding or balance-sheet dressing exercise within the Hyderabad promoter network rather than genuine operational capital expenditure. If the capital is being round-tripped or used to support sister-company valuations, the expected CRO operational scaling will fail to materialize.",
+        "disproving_evidence": "A regulatory sanction or adverse finding by NFRA/SEBI against the statutory auditor P. Murali & Co. regarding Vivo Bio Tech's accounts, or a failure to report commercial revenue growth from the Siddipet facility over the next three quarters, or a default/write-down on the Virinchi investment.",
+        "risks": [
+          "Systemic audit risk due to regulatory history of statutory auditor P. Murali & Co.",
+          "Inter-corporate cross-holdings and capital diversion to Virinchi Limited",
+          "Extremely low daily trading liquidity leading to high price volatility",
+          "Execution risk in scaling high-margin pre-clinical CRO services"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: The capital raised from preferential warrants is being fully deployed into physical CRO infrastructure (Siddipet/Gajwel facilities) and not round-tripped or diverted to support Virinchi Limited or other promoter group entities.",
+          "Actual cash flow statements in the upcoming Annual Report to verify that the 25% and 75% warrant payments were backed by real cash inflows and not book entries.",
+          "The progress of GLP certification and international contract wins for the pre-clinical testing facilities."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.vivobiotech.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 75%",
+          "Phase 2: 70%",
+          "Phase 3: 80%",
+          "Phase 4: 70%",
+          "Final: 70%"
+        ]
+      },
+      {
+        "company_name": "Ambo Agritec Limited",
+        "ticker": "543678",
+        "connection_type": "Promoter creeping acquisition and warrant conversion",
+        "confidence": "medium",
+        "why_now": "(a) What changed: Promoter Umesh Kumar Agarwal has steadily consolidated his stake from 48.78% to 49.90% via open market purchases and converted 38,50,000 warrants at Rs 30 per share, following a formal SEBI Informal Guidance clarification. (b) Estimated catalyst window: Near-term (0-6 months) as the market realizes the promoter's aggressive consolidation at a premium to the current market price (~Rs 9.20) and the utilization of Rs 42.90 crore preferential funds for Ranigunj operational scaling. (c) Confirming milestone: Disclosure of Q3/Q4 FY26 earnings showing margin expansion in the value-added FMCG and biscuit distribution segments.",
+        "reasoning": "[INVISIBLE TO MARKET] This company is invisible because it is a micro-cap (~Rs 20 Crore) with zero sell-side analyst coverage, negligible institutional holdings (0.02%), and operates in the low-profile agro-processing sector. The market will notice it when the value-added FMCG distribution margins scale up and the promoter's equity consolidation is recognized. [OBSERVED FACTS] Promoter Umesh Kumar Agarwal increased his stake from 48.78% to 49.90% in June 2026. Warrants were converted at Rs 30 per share (well above the current market price of ~Rs 9.20). Promoter pledge is 0.00%. SEBI Informal Guidance was sought and obtained in December 2025 regarding warrant conversions. [STRONG INFERENCE] The promoter's willingness to convert warrants at Rs 30 per share when the market price is significantly lower (~Rs 9.20) represents an extraordinary asymmetric commitment of real cash (Rs 30 per share) to the company's balance sheet, indicating that the promoter views the current market price as severely depressed. [HYPOTHESIS] The market is mispricing Ambo Agritec as a struggling, illiquid commodity agro-processor, ignoring the promoter's aggressive equity consolidation and the transition toward higher-margin value-added food products.",
+        "self_critique": "Why might this specific hypothesis be wrong? The warrant conversion at Rs 30 might have been legally binding under the original terms of the warrant issue, forcing the promoter to convert or forfeit the 25% upfront money. If the promoter converted merely to avoid losing the upfront deposit, it may not represent forward-looking optimism but rather a sunk-cost salvage. Furthermore, commodity price volatility in edible oils could wipe out any margin gains from the biscuit/FMCG expansion.",
+        "disproving_evidence": "A continuous decline in operating margins below 2% over the next two quarters, or a failure to scale the value-added food segment, or any evidence of promoter share pledging or fund diversion to unlisted group companies.",
+        "risks": [
+          "High sensitivity to agricultural commodity price fluctuations (edible oils)",
+          "Extremely low trading volume and liquidity risk",
+          "Execution risk in scaling the value-added biscuit and FMCG distribution network in Eastern India",
+          "Sunk-cost fallacy driving promoter warrant conversions rather than genuine growth outlook"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: The promoter's warrant conversion at Rs 30 per share represents a genuine long-term capital commitment based on business growth, rather than a forced conversion to prevent the forfeiture of the 25% upfront deposit.",
+          "The exact margin profile of the newly scaled Ranigunj facility and biscuit distribution segment.",
+          "Quarterly cash flow statements to ensure working capital requirements are not draining cash reserves."
+        ],
+        "sources": [
+          "https://www.bseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 70%",
+          "Phase 2: 70%",
+          "Phase 3: 75%",
+          "Phase 4: 75%",
+          "Final: 75%"
+        ]
+      }
+    ],
+    "limitations": [
+      "Analysis is based on historical public disclosures up to mid-2026.",
+      "Micro-cap companies carry inherently high liquidity and governance risks that may not be fully captured in public filings.",
+      "No direct management access was available to verify operational timelines."
+    ],
+    "searches_performed": [
+      {
+        "query": "promoter pledge reduction small cap India recent NSE BSE",
+        "findings": "[1] 3 Stocks With Reduced Promoter Pledge in 2026\nURL: https://univest.in/blogs/stocks-reduced-promoter-pledge-2026\nContent: ## Conclusion\n\nVedanta, Adani Enterprises and Piramal Enterprises represent the stocks with reduced promoter pledge in 2026, each capturing different aspects of India’s sustained promoter pledge reduction financial health signal growth story. Historically, this structural theme has offered diversified exposure across multiple companies, though execution risk and valuation considerations remain important factors. Consult a SEBI-registered advisor before making investment decisions. [...] Vedanta is among the stocks with reduced promoter pledge in 2026, its diversified commodity production business, working through promoter-level deleveraging alongside broader corporate balance sheet improvement.\n\nVedanta’s cash flow generation has supported both corporate and promoter-level debt reduction efforts over recent periods.\n\n### Adani Enterprises: Diversified conglomerat...",
+        "sources": [
+          "https://univest.in/blogs/stocks-reduced-promoter-pledge-2026",
+          "https://www.angelone.in/news/share-market/list-of-companies-where-promoters-pledge-decreased-in-q4-fy24",
+          "https://www.screener.in/screens/3513/promoter-pledges",
+          "https://www.bseindia.com/corporates/pledge_new?expandable=5",
+          "https://www.nseindia.com/companies-listing/corporate-filings-pledged-data"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "promoter open market purchase micro cap India zero analyst coverage",
+        "findings": "[1] Indian Promoters Turning Buyers Via Open Market ...\nURL: https://www.youtube.com/watch?v=Fyms0P-578M&vl=en-US\nContent: Indian promoters are now reversing course—investing over $4 billion back into their own companies in 2026.\n\n[2] [PDF] The role of insider trading in the market reaction to news releases\nURL: https://www.stern.nyu.edu/sites/default/files/assets/documents/Brochet%20Lee%20Srinivasan%202017%20-%20The%20Role%20of%20Insider%20Trading%20in%20the%20Market%20Reaction%20to%20Earnings%20News.pdf\nContent: firms as possible (i.e., without requiring analyst coverage). It assumes a random walk model for earnings, so that the expectations for current year’s earnings are last year’s earnings. To reduce noise in SUE, we replace it with its decile ranking based on 14 annual distributions.4 If earnings announcements have information content, we should observe a positive β1 (a.k.a. the ERC). IT is an indicator variable equal to one if there is any open-market insider purchase or sale r...",
+        "sources": [
+          "https://www.youtube.com/watch?v=Fyms0P-578M&vl=en-US",
+          "https://www.stern.nyu.edu/sites/default/files/assets/documents/Brochet%20Lee%20Srinivasan%202017%20-%20The%20Role%20of%20Insider%20Trading%20in%20the%20Market%20Reaction%20to%20Earnings%20News.pdf",
+          "https://www.linkedin.com/posts/ramanchandna_investing-stockmarkets-assetallocation-activity-7452977852058095616-tn8C",
+          "https://www.instagram.com/reel/DZNNs8sTFc5",
+          "https://www.youtube.com/watch?v=IHv8Vh1xM38&vl=en"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "creeping acquisition promoter buying engineering manufacturing stock India",
+        "findings": "[1] Limits on creeping acquisition by promoters increased during COVID-19 crises – Vinod Kothari Consultants\nURL: https://vinodkothari.com/2020/06/limits-on-creeping-acquisition-by-promoters-increased-during-covid-19-crises\nContent: Creeping acquisition, governed by Regulation 3(2) of the Takeover Code, refers to the process through which the acquirer together with PAC holding more than 25% but less than 75%, to gradually increase their stake in the target company by buying up to 5% of the voting rights of the company in one financial year. Any acquisition of further shares or voting rights beyond 5% shall require the acquirer to make an open offer. Further, for the purpose of creeping acquisition, SEBI considers gross [...] The relaxation allows creeping acquisition upto 10% instead of the existing 5%, for acquisition by promoters of a listed company for the financial year 2020-21. The relaxation is specific and limited to acquisition by way of a preferential issue of equity shares an...",
+        "sources": [
+          "https://vinodkothari.com/2020/06/limits-on-creeping-acquisition-by-promoters-increased-during-covid-19-crises",
+          "https://www.venturasecurities.com/share-market-glossary/creeping-acquisition",
+          "https://www.researchgate.net/publication/276028383_Rights_Issues_and_Creeping_Acquisitions_in_India",
+          "https://law.asia/creeping-acquisition-and-shareholders",
+          "https://www.emerald.com/ijoa/article/31/4/889/139573/Investor-protection-effects-of-takeover"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "promoter buying shares bulk deal block deal specialty chemicals India",
+        "findings": "[1] Privi Specialty Chemicals to witness block deal worth ₹700 Crore\nURL: https://www.indiainfoline.com/news/companies/privi-specialty-chemicals-to-witness-block-deal-worth-700-crore\nContent: Earlier in June this year, four promoter companies of Privi Specialty Chemicals offloaded aggregate 4.09% stake through open market transactions. The combined value of this deal stood at ₹330 Crore.\n\nAs per the bulk deal data disclosed by NSE, Privi Speciality Chemicals’ promoters — Bhaktavatsala Rao Doppalapudi, Vijaykumar Doppalapudi, Vinaykumar Doppalapudi Rao and Vivira Investment and Trading were the identified sellers in this deal. [...] .\n\nThe brokerages stated that Privi Specialty Chemicals is in a suitable position to benefit from growth in the global aroma chemicals market. This is expected to reach $9.2 Billion by 2030.\n\nPlanned expansion and the stated merger with Privi Fine Sciences bolster its green chemistry and high-margin product portfolio. Motilal Oswal expects strong revenue and...",
+        "sources": [
+          "https://www.indiainfoline.com/news/companies/privi-specialty-chemicals-to-witness-block-deal-worth-700-crore",
+          "https://www.5paisa.com/share-market-today/bulk-block-deals",
+          "https://www.tickertape.in/market-movers",
+          "https://trendlyne.com/portfolio/bulk-block-deals",
+          "https://www.geojit.com/equity/bulk-deals"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "promoter reducing pledge textile apparel small cap India",
+        "findings": "[1] Small Cap Stocks with Most Pledged Promoter Shares - India\nURL: https://www.smart-investing.in/screener.php?p=most-pledged-small-cap-stocks\nContent: Increase-MidCap🔒 Pro/PlusFII Increase-SmallCap🔒 ProFII Decrease-LargeCapFII Decrease-MidCap🔒 Pro/PlusFII Decrease-SmallCap🔒 ProPromoter Increase-LargeCapPromoter Increase-MidCap🔒 Pro/PlusPromoter Increase-SmallCap🔒 ProPromoter Decrease-LargeCapPromoter Decrease-MidCap🔒 Pro/PlusPromoter Decrease-SmallCap🔒 ProPRESETGood Fundamentals & Valuation🔒 Pro/PlusUndervalued-3 models🔒 Pro/Plus>25% Discount to FairValue🔒 Pro/Plus [...] | ORIENT GREEN POWER COMPANY LTD | Power Generation/Distribution | 10.03 | 1198.58 |\n| STEEL EXCHANGE INDIA LTD | Steel/Sponge Iron/Pig Iron | 11.57 | 1475.75 |\n| JAYASWAL NECO INDUSTRIES LTD | Steel & Iron Products | 86.93 | 8440.9 |\n| A2Z INFRA ENGINEERING LTD | Engineering - Construction | 12.45 | 220.988 | [...] | Company | Industry | Price (EOD) (Rs.) | MarketCap  (Rs.Cr) |\n ---  --- |\n| BAJAJ HINDUSTHAN SUGAR L...",
+        "sources": [
+          "https://www.smart-investing.in/screener.php?p=most-pledged-small-cap-stocks",
+          "https://m.economictimes.com/markets/stocks/news/promoter-share-pledges-at-6-year-low-in-june/articleshow/70338542.cms",
+          "https://www.linkedin.com/posts/arnab-mitra-999416172_learningwithagm-bse-nse-activity-7395661865579745280-4uKg",
+          "https://www.samco.in/knowledge-center/articles/ashish-kacholia-portfolio-small-cap-textile-stock-jumps-47-in-just-three-sessions",
+          "https://www.youtube.com/watch?v=acj1OgMAgB8"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "pharma healthcare micro cap insider buying BSE NSE",
+        "findings": "[1] 10 Micro-Cap Healthcare Stocks Insiders Are Buying\nURL: https://finance.yahoo.com/news/10-micro-cap-healthcare-stocks-190028194.html\nContent: Developmental stage biopharma company Silo Pharma Inc (NASDAQ:SILO) is working on treatments for PTSD, stress-induced psychiatric disorders, chronic pain conditions, and central nervous system (CNS) diseases. Silo Pharma Inc's (NASDAQ:SILO) CEO Eric Weisblum on March 28 bought 4,508 shares of Silo Pharma Inc (NASDAQ:SILO) at $1.93 per share. The total value of this transaction was $8,713. Since March 28 through April 12 the stock has gained about 1%.\n\n### 9. Flora Growth Corp (NASDAQ:FLGC) [...] Palatin Technologies, Inc (NYSE:PTN) ranks sixth in our list of the micro-cap stocks with latest insider purchases. Palatin Technologies, Inc (NYSE:PTN) is working on treatments by harnessing melanocortin system. Palatin Technologies, Inc (NYSE:PTN) saw insider buying activity earlier this month when Robert Deveer Jr., one of its board directors, pile...",
+        "sources": [
+          "https://finance.yahoo.com/news/10-micro-cap-healthcare-stocks-190028194.html",
+          "https://www.insiderscreener.com/en/companies/marketcap/micro",
+          "https://www.secform4.com/insider-buying-top-gainers",
+          "https://www.kotakneo.com/stocks/sectors/pharma-stocks",
+          "https://dhan.co/stocks/market/micro-cap-stocks"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "agri commodities sugar food processing promoter buying India stock",
+        "findings": "[1] Best 50 Agriculture Stocks To Buy In India 2026 - Top Picks For Growth And Dividends\nURL: https://www.samco.in/knowledge-center/articles/best-agriculture-stocks-to-buy-in-india\nContent: Our Research Products;) Pricing Partners. ## Indian Stocks. * Stocks to Buy for a Week. * Stocks to Buy for 6 Months. * Bluechips to Buy for a Year. * Stocks to Trade for 5 Days. * Stock Options to Buy for 5 Days. * Index Options to Buy for 5 Days. * Stocks to Invest for a Year. Home/Best Stocks to Buy/Best Agriculture stocks to buy in India 2026: Complete Guide for Investors. # Best Agriculture stocks to buy in India 2026: Complete Guide for Investors. Agriculture stocks offer you a unique way to invest in India’s food production and agribusiness growth. If you buy or sell agriculture stocks, you face the challenge of picking winners from dozens of companies with different business models, financial strength, and growth prospects. The P/E ratio of 59.95 reflects quality premium, while the low debt-...",
+        "sources": [
+          "https://www.samco.in/knowledge-center/articles/best-agriculture-stocks-to-buy-in-india",
+          "https://choiceindia.com/stocks/agriculture-sector",
+          "https://www.tickertape.in/stocks/collections/food-stocks",
+          "https://enrichmoney.in/blog/top-3-agriculture-stocks-in-india",
+          "https://www.indmoney.com/stocks/category/processed-foods-stocks"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "infrastructure real estate ancillary insider accumulation India",
+        "findings": "[1] India's new real estate and infrastructure trusts\nURL: https://www.pwc.com/sg/en/publications/assets/aprea-in-realestate-infra-trusts.pdf\nContent: Real estate investment trusts (REITs) and infrastructure investment trusts (InvITs) are investment vehicles that can be used to attract private investment in the infrastructure and real estate sectors, and also relieve the burden on formal banking institutions. Regulations governing REITs and InvITs were introduced in India as recently as 2014. [...] India’s REITs and InvITs can also help to drive smart urbanisation, underpinned by economic and social infrastructure. They can capitalise roads, vital community utilities, data centres, logistic facilities and transport systems, to name a few. Furthermore, they are efficient platforms for implementation of social infrastructure, including child care, senior living, health facilities and students’ accommodation. [...] The coming era of securitisation in India is also likely to foster rural i...",
+        "sources": [
+          "https://www.pwc.com/sg/en/publications/assets/aprea-in-realestate-infra-trusts.pdf",
+          "https://www.prnewswire.com/in/news-releases/rapid-infrastructure-development-driven-by-nodal-authorities-is-fuelling-the-growth-of-satellite-townships-across-india-colliers-302325941.html",
+          "https://www.instagram.com/p/DZoN2ByAZ1G",
+          "https://www.youtube.com/watch?v=d5wLYsV9cic",
+          "https://www.venturasecurities.com/blog/top-real-estate-stocks-in-india-for-the-next-infrastructure-cycle"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "specialty chemicals promoter buying open market small cap India 2026",
+        "findings": "[1] 10 Smallcap Stocks Where Promoters Increased Stakes\nURL: https://www.sahi.com/blogs/top-10-smallcap-stocks-where-promoters-increased-stake\nContent: May 20, 2026 — Companies like Religare Enterprises, PC Jeweller, Websol Energy, and JB Chemicals saw promoter buying, even as several of these stocks saw sharp ...Read more\n\n[2] Best Specialty Chemical Stocks India 2026 | PI Industries SRF Navin Aarti Vinati\nURL: https://univest.in/blogs/best-specialty-chemical-stocks-in-india-2026-2\nContent: # Best Specialty Chemical Stocks in India 2026: Top 6 Chemical Sector Picks With Analyst Targets. The best specialty chemical stocks in India 2026 are among India’s highest quality manufacturing businesses, combining global supply chain indispensability, proprietary process chemistry and significant China Plus One sourcing tailwinds. India’s specialty chemicals sector targets USD 100 billion by 2030 growing at 12 to 15 percent annually. PI Industries Ltd at Rs 60,000 crore is India’s premier Custom...",
+        "sources": [
+          "https://www.sahi.com/blogs/top-10-smallcap-stocks-where-promoters-increased-stake",
+          "https://univest.in/blogs/best-specialty-chemical-stocks-in-india-2026-2",
+          "https://www.equitymaster.com/detail.asp?date=12%2F08%2F2025&story=2&title=5-Smallcap-Specialty-Chemical-Stocks-to-Add-to-Your-2026-Watchlist",
+          "https://www.scribd.com/document/991279208/top-3-smallcaps-for-2026",
+          "https://m.economictimes.com/markets/stocks/news/3-industries-where-managers-of-smallcap-mutual-funds-went-looking-for-treasure/articleshow/100740248.cms"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "small cap textile food processing promoter stake increase India recent",
+        "findings": "[1] #MukulAgrawal raises stake in this microcap NBFC, smallcap textile ...\nURL: https://www.facebook.com/ETMarkets/posts/mukulagrawal-raises-stake-in-this-microcap-nbfc-smallcap-textile-player-in-q1-do/1491484909680023\nContent: MukulAgrawal raises stake in this microcap NBFC, Century Textiles and Industries shares surged over 7% to a record Rs 2,689 on the NSE. Rs 28,\n\n[2] Impact of Change in Promoters' Shareholding Pattern on the ...\nURL: https://www.mdpi.com/1911-8074/16/1/32\nContent: index measures the performance of companies that have a small market capitalization. The main objective of the paper is to examine the impact of promoter shareholding on the performance of small-cap companies listed on the National Stock Exchange of India. The study could help in the decision-making process of investors looking to invest in small-cap companies in India It could guide the potential investors as to the change in risk with an increase or a decrease in the promoter holding in a [...] This s...",
+        "sources": [
+          "https://www.facebook.com/ETMarkets/posts/mukulagrawal-raises-stake-in-this-microcap-nbfc-smallcap-textile-player-in-q1-do/1491484909680023",
+          "https://www.mdpi.com/1911-8074/16/1/32",
+          "https://www.wrightresearch.in/blog/best-textile-stocks-india",
+          "https://www.tickertape.in/stocks/collections/textile-stocks",
+          "https://www.youtube.com/watch?v=OmT4TTIM4Sk"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "micro cap capital goods infrastructure engineering promoter stake increase India",
+        "findings": "[1] Microcap Promoter increasing stakes\nURL: https://www.screener.in/screens/1329428/microcap-promoter-increasing-stakes\nContent: Microcap Promoter increasing stakes ; 2. Dhara Rail Pro. 131.95 ; 3. Premier Polyfilm, 75.41 ; 4. Shine Fashions, 25.00 ; 5. Chemkart India, 183.00 ...Read more\n\n[2] Micro Cap Stocks: Best Micro Cap Shares in India (2026)\nURL: https://www.tickertape.in/stocks/collections/micro-cap-stocks\nContent: Promoter Activity: Changes in promoter shareholding or pledging can heavily sway micro cap prices. Speculative Demand: Investor ...Read more\n\n[3] The Rise and Rise of Small-caps Why are India's small-cap ...\nURL: https://www.instagram.com/reel/DZsBuDoNuF5\nContent: many small-cap and micro-cap businesses are delivering strong sales, profit growth, and expanding order books. Capital goods, engineering and\n\n[4] List of the Top Microcap Stocks in NSE India (2026)\nURL: https://www.smallcase.com/lists/micro-cap-stocks\nContent: Micro cap stocks in India offer affordability...",
+        "sources": [
+          "https://www.screener.in/screens/1329428/microcap-promoter-increasing-stakes",
+          "https://www.tickertape.in/stocks/collections/micro-cap-stocks",
+          "https://www.instagram.com/reel/DZsBuDoNuF5",
+          "https://www.smallcase.com/lists/micro-cap-stocks",
+          "https://www.bajajbroking.in/blog/micro-cap-stocks"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Indo Borax Chemicals promoter buying SAST disclosures BSE NSE",
+        "findings": "[1] Indo Borax  - Disclosures under Insider Trades & Substantial Acquisition of Shares and Takeovers\nURL: https://trendlyne.com/equity/insider-trading-sast/all/INDOBORAX/3018/indo-borax-chemicals-ltd\nContent: | Client Name | Client Category | Action\\ | Reported To/By Exchange | Quantity | Post Transaction Holding | Traded % | Avg. Price | Value | Period | Regulation (Insider/SAST) | Security Type | Mode |\n ---  ---  ---  ---  ---  --- \n| Zenrock Chemicals Pvt Ltd & PACs | Promoter | Acquisition | 02 Jun 2026 | 2,444,534 | 18,744,764 (58.41%) | 7.62% |   30 Apr 2026   30 Apr 2026 | SAST (29(2))  Open Offer |\n| Zenrock Chemicals Private Limited | Promoter | Acquisition | 04 May 2026 | 2,444,534 | 12,326,764 (38%) | 7.62% | 0.0 | 8 | 30 Apr 2026   30 Apr 2026 | Insider Trading | Equity Shares | Others | [...] ###### 81.52% Gain from 52W Low\n\n###### High vol.+loss this week\n\nNSE\n27 Jul, 2026 3:51 PM (IST)\n\nWatchlist\n\nPortfolio\n\nAlert\n\nMy Notes\n\n# Insider Trading & SAST disclosures for Indo...",
+        "sources": [
+          "https://trendlyne.com/equity/insider-trading-sast/all/INDOBORAX/3018/indo-borax-chemicals-ltd",
+          "https://www.sebi.gov.in/sebi_data/commondocs/jan-2026/Indo%20Borax%20and%20Chemicals%20Limited-DPS_p.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/30122025/49f0f511-11da-4d76-b36a-54cff63f206e.pdf",
+          "https://scanx.trade/stock-market-news/corporate-actions/indo-borax-chemicals-ltd-completes-major-ownership-transfer-and-board-restructuring/30727516",
+          "https://nsearchives.nseindia.com/corporate/INDOBORAX_23012026220246_Reg_31A_HO.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Privi Specialty Chemicals insider trading disclosures bulk deals",
+        "findings": "[1] Privi Specialty Chemicals to witness block deal worth ₹700 Crore\nURL: https://www.indiainfoline.com/news/companies/privi-specialty-chemicals-to-witness-block-deal-worth-700-crore\nContent: As per the bulk deal data disclosed by NSE, Privi Speciality Chemicals’ promoters — Bhaktavatsala Rao Doppalapudi, Vijaykumar Doppalapudi, Vinaykumar Doppalapudi Rao and Vivira Investment and Trading were the identified sellers in this deal.\n\n_For feedback and suggestions, write to us at editorial@iiflcapital.com_\n\nRelated Tags\n\n   #blockdeal\n   #PriviSpeciallty\n   stocks\n\nImage 10: Download App\n\n## BLOGS AND PERSONAL FINANCE\n\nImage 11: Images\n\n### IBM's Biggest Stock Fall in Decades: How an AI Spending Shift Hurt the Tech Giant\n\nImage 12: Whatsapp\n\nImage 13: Facebook\n\nImage 14: Twitter\n\nImage 15: LinkedIn\n\nCopy Link\n\n15 Jul 2026|02:31 PM\n\nImage 16: Images\n\n### Indian Rupee's Road Back: Recovery, Relapse, and the War That Refuses to End\n\nImage 17: Whatsapp\n\nImage 18: Facebook [...] Image 8: Downlo...",
+        "sources": [
+          "https://www.indiainfoline.com/news/companies/privi-specialty-chemicals-to-witness-block-deal-worth-700-crore",
+          "https://www.multibagg.ai/market-pulse/articles/privi-chemicals-block-deal-stake-sale-cmjuuxyb6zmtukx0jfozps8rw",
+          "https://www.moneycontrol.com/india/stockpricequote/chemicals/privispecialitychemicals/HKF",
+          "https://fairchem.in/investor-relations/Annual-Reports/Annual-Report-35th-Final.pdf",
+          "https://privi.com/investor-relations/statutory-communication/disclosures-under-sebi-regulations"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Aastha Spintex shareholding pattern quarters promoter increase",
+        "findings": "[1] Aastha Spintex Latest Shareholding Pattern – Promoter, FII, DII, Mutual Fund. Who owns, bought or sold Aastha Spintex Shares?\nURL: https://trendlyne.com/equity/share-holding/3555470/AASTHA/latest/aastha-spintex-ltd\nContent: NSE\n27 Jul, 2026 3:54 PM (IST)\n\nWatchlist\n\nPortfolio\n\nAlert\n\nMy Notes\n\n# Aastha Spintex Latest Shareholding Pattern - Promoter, FII, DII, Mutual Fund holding\n\n## Aastha Spintex shareholding pattern - Promoter holding and pledges, FII, DII, Mutual Fund holding change for the latest quarter.\n\n###### SHAREHOLDING SUMMARY\n\n###### HISTORICAL PROMOTOR HOLDING\n\n###### HISTORICAL MF HOLDING\n\n###### HISTORICAL FII HOLDING\n\n| Summary | Jul 02, 2026 |\n --- |\n| Promoter | 53.2% |\n| Holding | 53.2% |\n| Pledged | 0.0% |\n| Locked | 100.00% |\n| FII | 3.5% |\n| DII | 2.4% |\n|\n| Mutual Funds | 0.0% |\n| Banks | 0.0% |\n| Insurance | 0.0% |\n| Others | 2.38% |\n| Public | 40.9% |\n| Others | 0% |\n\n| Holding Jul 2026 | | Locked | |\n ---  --- |\n| % | shares | % | shares |\n| 53.21 | 23,486...",
+        "sources": [
+          "https://trendlyne.com/equity/share-holding/3555470/AASTHA/latest/aastha-spintex-ltd",
+          "https://trendlyne.com/equity/share-holding/3555470/AASTHA/Q1-2018/aastha-spintex-ltd",
+          "https://www.tijorifinance.com/company/aastha-spintex-ltd/shareholding",
+          "https://www.angelone.in/stocks/aastha-spintex-ltd/shareholding",
+          "https://www.moneycontrol.com/india/stockpricequote/textile-spinning/aasthaspintex/ASL15"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Indo Borax institutional holding Trendlyne Screener",
+        "findings": "[1] Indo Borax & Chemicals Ltd share price | About Indo Borax & Ch. | Key Insights - Screener\nURL: https://www.screener.in/company/INDOBORAX/consolidated\nContent: | Mar 2015 | Mar 2016 | Mar 2017 | Mar 2018 | Mar 2019 | Mar 2020 | Mar 2021 | Mar 2022 | Mar 2023 | Mar 2024 | Mar 2025 | Mar 2026 |\n ---  ---  ---  ---  ---  --- |\n| Equity Capital | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 |\n| Reserves | 75 | 84 | 91 | 101 | 118 | 135 | 170 | 204 | 252 | 290 | 332 | 383 |\n|  | 5 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |\n|  | 9 | 8 | 10 | 12 | 11 | 10 | 17 | 14 | 20 | 18 | 21 | 17 |\n| Total Liabilities | 92 | 97 | 106 | 117 | 132 | 149 | 190 | 222 | 275 | 311 | 357 | 405 |\n|  | 11 | 21 | 52 | 51 | 50 | 46 | 89 | 91 | 96 | 99 | 101 | 48 |\n| CWIP | 2 | 2 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |\n| Investments | 14 | 32 | 23 | 20 | 37 | 18 | 30 | 4 | 9 | 43 | 57 | 209 |\n|  | 65 | 43 | 29 | 45 | 44 | 84 | 70 | 126 | 169 | 169 | 198 | 147 | [...] | Mar 2017 | Mar 2018 | Mar 2019 | Mar 2...",
+        "sources": [
+          "https://www.screener.in/company/INDOBORAX/consolidated",
+          "https://trendlyne.com/equity/3018/INDOBORAX/indo-borax-chemicals-ltd",
+          "https://scanx.trade/stock-market-news/corporate-actions/indo-borax-chemicals-ltd-completes-major-ownership-transfer-and-board-restructuring/30727516",
+          "https://trendlyne.com/equity/share-holding/3018/INDOBORAX/latest/indo-borax-chemicals-ltd",
+          "https://www.angelone.in/stocks/indo-borax-chemicals-ltd/shareholding"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Indo Borax promoter buying SAST disclosures volume dates 2025 2026",
+        "findings": "[1] Indo Borax  - Disclosures under Insider Trades & Substantial Acquisition of Shares and Takeovers\nURL: https://trendlyne.com/equity/insider-trading-sast/all/INDOBORAX/3018/indo-borax-chemicals-ltd\nContent: | Client Name | Client Category | Action\\ | Reported To/By Exchange | Quantity | Post Transaction Holding | Traded % | Avg. Price | Value | Period | Regulation (Insider/SAST) | Security Type | Mode |\n ---  ---  ---  ---  ---  --- \n| Zenrock Chemicals Pvt Ltd & PACs | Promoter | Acquisition | 02 Jun 2026 | 2,444,534 | 18,744,764 (58.41%) | 7.62% |   30 Apr 2026   30 Apr 2026 | SAST (29(2))  Open Offer |\n| Zenrock Chemicals Private Limited | Promoter | Acquisition | 04 May 2026 | 2,444,534 | 12,326,764 (38%) | 7.62% | 0.0 | 8 | 30 Apr 2026   30 Apr 2026 | Insider Trading | Equity Shares | Others | [...] | Sajal Sushilkumar Jain (jointly with Sreelekha Sajal Jain | Promoter & Director | Disposal | 23 Jan 2026 | 8,455,390 | 0 (0%) | 26.35% | 256.3 | 2,167,116,457 | 23 Jan 2026   23 Ja...",
+        "sources": [
+          "https://trendlyne.com/equity/insider-trading-sast/all/INDOBORAX/3018/indo-borax-chemicals-ltd",
+          "https://scanx.trade/stock-market-news/corporate-actions/indo-borax-chemicals-ltd-completes-major-ownership-transfer-and-board-restructuring/30727516",
+          "https://nsearchives.nseindia.com/corporate/INDOBORAX_23012026220246_Reg_31A_HO.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/30122025/49f0f511-11da-4d76-b36a-54cff63f206e.pdf",
+          "https://www.sebi.gov.in/sebi_data/commondocs/jan-2026/Indo%20Borax%20and%20Chemicals%20Limited-DPS_p.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Aastha Spintex promoter shareholding pattern quarterly changes 2025 2026",
+        "findings": "[1] Aastha Spintex Ltd latest Shareholding Pattern | IIFL Capital\nURL: https://www.indiainfoline.com/company/aastha-spintex-ltd/share-holding\nContent: iifl-logo\nHome\nicon\niifl-logo\n\nAastha Spintex Ltd\n\nSeparator Img\nSeparator Img\nSeparator Img\nSeparator Img\n\n# Aastha Spintex Ltd Shareholding & Investor Pattern\n\nAdd as a Preferred Source on Google\n\nInvest wise with Expert advice\n\nBy continuing, I accept the T&C and agree to receive communication on Whatsapp\n\n## Aastha Spintex Ltd SHAREHOLDING\n\n|  | Jul-2026 | Jun-2026 | Jun-2026 | Sep-2025 |\n ---  --- \n| Promoter  -  - |\n| Foreign | 0% | 0% | 0% | 0% |\n| Indian | 53.2% | 74.22% | 53.2% | 74.22% |\n| Total Promoter  -  - |\n| Institutions | 5.89% | 25.77% | 5.89% | 25.77% |\n| Non-Institutions | 40.9% | 0% | 40.9% | 0% |\n| Total Non-Promoter | 46.79% | 25.77% | 46.79% | 25.77% |\n| Custodian | 0% | 0% | 0% | 0% |\n| Total | 100% | 100% | 100% | 100% |\n\nPromoter\n\n-\n\n-\n\n-\n\n-\n\nForeign\n\n0%\n\n0%\n\n0% [...] Promoter\n\n-\n\n-\n\n-\n\n-\n\nForeign\n\n0%\n\n0%\n\n0%\n\n...",
+        "sources": [
+          "https://www.indiainfoline.com/company/aastha-spintex-ltd/share-holding",
+          "https://trendlyne.com/equity/share-holding/3555470/AASTHA/latest/aastha-spintex-ltd",
+          "https://www.livemint.com/aastha-spintex-ltd/share-holdings/companyid-s0006881",
+          "https://www.moneycontrol.com/india/stockpricequote/textile-spinning/aasthaspintex/ASL15",
+          "https://nsearchives.nseindia.com/corporate/ADV_INE2FMX01012_03JUL2026.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "site:bseindia.com preferential allotment warrants promoter 25 percent 2025 2026",
+        "findings": "[1] Notice of Postal Ballot- April 19, 2026\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/04669cc8-6485-4e09-86cd-cdfd69d9445b.pdf\nContent: in cash. The minimum amount of Rs. 6 (Rupees Six only) per Warrant, which is equivalent to 25% (Twenty Five per cent) of the Warrants Issue Price shall be paid at the time of subscription and allotment of each Warrant to the Allottee. The Allottee will be required to make further payments of Rs. 18 (Rupees Eighteen only) for each Warrant, which is equivalent to 75% (Seventy-Five per cent) of the Warrants Issue Price at the time of exercise of the right attached to the Warrant(s), to subscribe to equity share(s) of the Company. (k) Intent of the Promoters, Directors or Key Managerial Personnel of the Company to subscribe to the Offer Pursuant to the Board resolution dated April 18, 2026, the Allottee is to be issued and allotted 4,50,00,000 (Rupees Four Crores Fifty Lakhs) Warrants on the [...] not sold or transferred any equity shares...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/04669cc8-6485-4e09-86cd-cdfd69d9445b.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/D924E5A7-756E-4FA4-A649-1740648B1F09-134734.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/98e85a83-0e53-4d27-b757-9f785a7db239.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/a272f6b6-8bc4-4097-8217-f4154812d9e6.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/b86544e2-c9e3-4255-87f6-f55c5bb8eeb3.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Indo Borax related party transactions annual report FY25 FY26",
+        "findings": "[1] INDO BORAX & CHEMICALS LTD.\nURL: https://nsearchives.nseindia.com/corporate/INDOBORAX_21052026143310_Outcome.pdf\nContent: ended 31- 03-2026. The Company has given Inter corporate Deposit in the nature of loan of Rs. 5 .09 Crs to one party, which has filed the application for corporate insolvency resolution process under The Insolvency and Bankruptcy code, 2016. Emphasis of Matter with the ethical requirements that are relevant to our audit of the financial results under the provisions of the Act and the Rules there under, and we have fulfilled our other ethical responsibilities in accordance with these requirements and the Code of Ethics issued by ICAI. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion. • • Conclude on the appropriateness of the Board of Directors' use of the going concern basis of accounting and, based on the audit evidence [...] in the audit report for the year ended 31st March, 2026 Regd. Office:...",
+        "sources": [
+          "https://nsearchives.nseindia.com/corporate/INDOBORAX_21052026143310_Outcome.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ec2f1112-ed81-40ee-9259-3e7e4484c8f1.pdf",
+          "https://www.indoborax.com/Annual-Report.php",
+          "https://www.bseindia.com/xml-data/corpfiling/Attachhis/74ffd045-b225-4f4b-9a44-bd2d614f53d9.pdf",
+          "https://www.indocount.com/Parents/financial-information"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Indo Borax historical share price January 2026",
+        "findings": "[1] Indo Borax and Chemicals Ltd,Price â‚¹420.65 (12.68%)\nURL: https://www.sharekhan.com/stock/indo-borax-and-chemicals-ltd\nContent: | From Year | To Year | Class of Share | Authorized Capital(Crores) | Issued Capital(Crores) | Paid Up Shares(NOS) | Paid Up Face Value | Paid Up Capital(Crores) |\n ---  ---  ---  --- |\n| 2025 | 2026 | Equity Share | 6.00 | 3.23 | 32090000.00 | 1 | 3.21 |\n| 2024 | 2025 | Equity Share | 6.00 | 3.23 | 32090000.00 | 1 | 3.21 |\n| 2023 | 2024 | Equity Share | 6.00 | 3.21 | 32090000.00 | 1 | 3.21 |\n| 2022 | 2023 | Equity Share | 6.00 | 3.23 | 32090000.00 | 1 | 3.21 |\n| 2021 | 2022 | Equity Share | 6.00 | 3.21 | 3209000.00 | 10 | 3.21 |\n| 2020 | 2021 | Equity Share | 6.00 | 3.50 | 3209000.00 | 10 | 3.21 |\n| 2019 | 2020 | Equity Share | 6.00 | 3.50 | 3209000.00 | 10 | 3.21 |\n| 2018 | 2019 | Equity Share | 6.00 | 3.50 | 3209000.00 | 10 | 3.21 | [...] Mirae Asset Sharekhan\n\n clickDOWNLOAD SHAREKHAN APP\n\nMirae Asset Sharekhan\n\n Become A Franchise\n Help\n Refer & Earn...",
+        "sources": [
+          "https://www.sharekhan.com/stock/indo-borax-and-chemicals-ltd",
+          "https://www.indmoney.com/stocks/indo-borax-and-chemicals-ltd-share-price",
+          "https://www.investing.com/equities/indo-borax-and-chemicals-bo-historical-data",
+          "https://nsearchives.nseindia.com/corporate/INDOBORAX_21052026143310_Outcome.pdf",
+          "https://www.facebook.com/61579857772146/posts/indo-borax-chemicals-ltd-indoborax-is-trading-at-39940-nse-as-of-july-2026-the-s/122148743294995259"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "NSE BSE promoter buying consecutive quarters small cap 2025 2026",
+        "findings": "[1] 10 Smallcap Stocks Where Promoters Increased Stakes\nURL: https://www.sahi.com/blogs/top-10-smallcap-stocks-where-promoters-increased-stake\nContent: |  |  |  |  |\n ---  --- |\n| Company | Promoter Holding (Dec 2025) | Promoter Holding (Mar 2026) | Increase in Promoter Holding |\n| Websol Energy | 27.71% | 29.72% | +2.0% |\n| Raymond Lifestyle | 58.22% | 59.52% | +1.3% |\n| Inox Green | 54.82% | 56.12% | +1.3% |\n| JB Chemicals & Pharmaceuticals | 47.55% | 48.80% | +1.25% |\n| Gujarat Alkalies & Chemicals | 46.28% | 47.28% | +1.0% |\n| Midwest Gold | 57.91% | 58.78% | +0.9% |\n| Vardhman Textile | 64.44% | 65.09% | +0.65% |\n| NCC | 22.25% | 22.81% | +0.6% |\n| OneSource Specialty Pharma | 29.93% | 30.48% | +0.55% |\n| Star Cement | 57.62% | 58.12% | +0.5% |\n| RateGain Travel | 48.55% | 48.77% | +0.22% |\n\nSource: Screener, JM Financial, ET.\n\nThis blog is for informational purposes only.\n\n## Stocks That Saw Strong Promoter Buying [...] ## Stocks That Saw Strong Promoter Buying\n\n### Religare Ente...",
+        "sources": [
+          "https://www.sahi.com/blogs/top-10-smallcap-stocks-where-promoters-increased-stake",
+          "https://www.5paisa.com/share-market-today/small-cap-stocks",
+          "https://www.indmoney.com/stocks/screens/small-cap",
+          "https://www.smallcase.com/lists/smallcap-stocks",
+          "https://www.samco.in/knowledge-center/articles/best-small-cap-stocks-to-buy-now-in-india"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "Pennar Industries promoter buying history and shareholding pattern 2025 2026",
+        "findings": "[1] PENNAR INDUSTRIES LIMITED\nURL: https://www.pennarindia.com/investors/buy-back/public-announcement-buy-back-pennar.pdf\nContent: 19.3 Pursuant to Regulation 16(ii) of the SEBI Buy-back Regulations, the Promoters are not entitled to participate under the Buy-back. The Buy-back of Equity Shares will not result in a change in control or otherwise affect the existing management structure of the Company.\n19.4 Consequent to the Buy-back and based on the number of Equity Shares bought back from the shareholders excluding the promoters, the shareholding pattern of the Company would undergo a change, however public shareholding shall not fall below 25% of the total fully paid-up equity share capital of the Company. [...] No Name of the Promoters / Promoter Group / Directors of Corporate Promoters / Persons in control Number of Equity Shares % Equity Shareholding in the Company A.\nPromoters 1 Joginapally Nrupender Rao HUF 6,60,114 0.43 2 J. Rajyalakshmi 69,33,038 4.55 3 Joginapally Venkata Nru...",
+        "sources": [
+          "https://www.pennarindia.com/investors/buy-back/public-announcement-buy-back-pennar.pdf",
+          "https://www.pennarindia.com/investors/sp/Shareholding%20Pattern%20for%20the%20quarter%20ended%2030-06-2025.pdf",
+          "https://www.pennarindia.com/investors/buy-back/Public%20Announcement%20Buy%20Back%20Pennar.pdf",
+          "https://www.icicidirect.com/stocks/pennar-industries-ltd-share-price",
+          "https://www.nseindia.com/companies-listing/corporate-filings-shareholding-pattern"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "promoter open market purchase micro cap NSE BSE last 3 months",
+        "findings": "[1] Promoter Buying - Scanners by Upsurge.club\nURL: https://scanner.upsurge.club/promoter-buying\nContent: ### Example Trade\n\n This scanner gave the name on stock Zydus Wellness Ltd. on 1st April 2024 as promoters increased their stakes for two consecutive quarters. From 1st April 2024 to 25th June 2024 this stock gave a return of more than 34% in just 3 months.\n\nZydus Wellness Ltd. rally after promoter buying \n\nZydus Wellness Ltd. gave a positive return of ~32% after the promoter increased their stake in it for two consecutive quarters.\n\n### Don’t forget [...] By using the above filters for the scanner, we have obtained a list of large and mid-cap Indian stocks where promoters have increased their stakes for two consecutive quarters, suggesting a potentially new leg of growth in the company and stock price. [...] Skip to content\n\n[](\n\n# Promoter Buying\n\nStocks where promoters are increasing their stakes for two consecutive quarters.\n\nView Stocks\n\n## How to use the Promoter Buying scann...",
+        "sources": [
+          "https://scanner.upsurge.club/promoter-buying",
+          "https://trendlyne.com/equity/group-insider-trading-sast",
+          "https://www.screener.in/screens/390677/promoter-buying-shares",
+          "https://dhan.co/stocks/market/micro-cap-stocks",
+          "https://www.tickertape.in/stocks/collections/micro-cap-stocks"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "\"pledge reduction\" promoter NSE BSE 2026 small cap",
+        "findings": "[1] NRB Bearings promoter pledge falls to 37.84% by April 2026\nURL: https://scanx.trade/stock-market-news/companies/nrb-bearings-promoter-releases-1-96-cr-shares/42874477\nContent: # NRB Bearings promoter pledge falls to 37.84% by April 2026. NRB Bearings Limited disclosed a reduction in promoter pledged shares to 37.84% of total share capital as on April 7, 2026, down from 39.80% as on March 31, 2026. The company reported FY26 revenue growth of 11% and an EBITDA margin of 19.5%. NRB Bearings Limited has reported a reduction in its promoter pledge percentage to 37.84% of the total share capital as on April 7, 2026. The reduction in pledged shares follows the completion of pledge and unpledge transactions on April 7, 2026, which were delayed due to multiple trading holidays between March 31 and April 5, 2026. The filing confirms that the total pledged shares of the promoters stood at 3,85,76,384 shares as on March 31, 2026. The disclosure was made on behalf of the promoters and persons a...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/companies/nrb-bearings-promoter-releases-1-96-cr-shares/42874477",
+          "https://univest.in/blogs/stocks-reduced-promoter-pledge-2026",
+          "https://trendlyne.com/fundamentals/stock-screener/36321/companies-with-zero-promoter-pledge/index/BSESMALLCAP/bse-small-cap",
+          "https://economictimes.indiatimes.com/markets/stock-screener/screens/scrid-6352",
+          "https://www.livemint.com/market/stock-market-news/nse-bse-step-up-scrutiny-of-stocks-with-higher-pledging/amp-11572029349248.html"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "site:bseindia.com preferential issue warrants promoter micro cap 2025 2026",
+        "findings": "[1] BSE (formerly Bombay Stock Exchange)\nURL: https://www.bseindia.com/stockinfo/annpdfopen.aspx?pname=e55d6141-fab4-429a-8a9c-a25f849b01ab.pdf\nContent: Date: November 17, 2025 To, The Manager, The Corporate Relations Department, BSE Limited, Phiroze Jeejeebhoy Towers,Dalal Street, Floor 25, M Samachar Marg, Fort Mumbai- 400001 Dear Sir/Madam, Scrip Code: 530745 Sub.: Intimation of receipt of the In-Principal approval from BSE Limited for issue warrants to promoter and non-promoter category on a preferential basis. Ref: Intimation under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 Pursuant to Regulation 30 of the SEBI (Listing Obligation and Disclosure Requirements) Regulations, 2015, we would like to inform that ACS Technologies Limited (“the Company”) has received the In-principal approval for warrants issue from vide letter LOD/PREF/KD/FIP/1176/2025-26 dated November 17, 2025 from BSE [...] dated November 17, 2025 from BSE Limited to ...",
+        "sources": [
+          "https://www.bseindia.com/stockinfo/annpdfopen.aspx?pname=e55d6141-fab4-429a-8a9c-a25f849b01ab.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e4c274d8-3c8f-4288-9470-e32282b342f3.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3de65ee6-74c1-4daf-bde1-bce4e6016880.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachLive/28f1082a-8b36-48ff-bfb5-774fb8a2890a.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/9729ee6d-93d4-4f64-b5d9-f7294df8a8e9.pdf"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Indian micro cap promoter creeping acquisition SAST disclosures 2025 2026",
+        "findings": "[1] Informal Guidance: SEBI Clarifies Position on LODR Governance Compliance and SAST Creeping Acquisition Limits\nURL: https://sarafpartners.com/informal-guidance-sebi-clarifies-position-on-lodr-governance-compliance-and-sast-creeping-acquisition-limits\nContent: + Background: Ambo Agritec had issued 1,43,00,000 equity share warrants on a preferential basis in FY 2024–25, of which 90,00,000 were allotted to the promoter (Acquirer) and 53,00,000 to public allottees, with their tenure under Regulation 162(1) of the SEBI (Issue of Capital and Disclosure Requirements) Regulations, 2018 (ICDR Regulations) expiring on December 19, 2025. While public allottees fully exercised their conversion rights, the Acquirer had, during FY 2025–26, converted only 51,50,000 warrants, resulting in a gross acquisition of 4.95% in Ambo Agritec. The Acquirer proposed to convert the remaining 38,50,000 warrants, which would increase his holding from 54.65% to 62.02% (i.e., an increase of 7.37%). [...] Takeaway:...",
+        "sources": [
+          "https://sarafpartners.com/informal-guidance-sebi-clarifies-position-on-lodr-governance-compliance-and-sast-creeping-acquisition-limits",
+          "https://trendlyne.com/equity/group-insider-trading-sast",
+          "https://assets.kpmg.com/content/dam/kpmgsites/in/pdf/2026/04/chapter-3-regulatory-updates-april-2026.pdf.coredownload.inline.pdf",
+          "https://www.screener.in/screens/1329428/microcap-promoter-increasing-stakes",
+          "https://www.tickertape.in/stocks/collections/micro-cap-stocks"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"Vivo Bio Tech\" \"warrants\" allotment price BSE disclosures",
+        "findings": "[1] October 15, 2025 To, BSE Limited Phiroze Jeejeebhoy Towers, Dalal ...\nURL: https://www.virinchi.com/governance-I/outcomeBoardMetting-15OCT2025.pdf\nContent: aggregating up to Rs. 56,00,00,000/- (Rupees Fifty Six Crore only) 4. Name and number of the Investor(s) S.No. Names of the Proposed Allottees Category Maximum no. of Warrants for the respective Allottee 1. Vivo Bio Tech Limited Promoter Group 1,60,00,000 2. IT Peer Technologies LLC Public 40,00,000 Total 2,00,00,000 5. Issue price Rs. 28/- (Rupees Twenty-Eight only) 6. Post allotment of securities - outcome of the subscription. Category Pre preferential issue Post preferential issue No of Shares % No of Shares % Promoters and Promoter Group (A) 3,85,05,538 37.51 5,45,05,538 44.44 Public (B) 6,41,41,358 62.49 6,81,41,358 55.56 Non-Promoter- Non Public Shareholding (C) 0 0 0 0 Total (A) + (B)+(C) 10,26,46,896 100 12,26,46,896 100.00 The pre issue paid-up capital is arrived without taking [...] payable in cash for an amount aggreg...",
+        "sources": [
+          "https://www.virinchi.com/governance-I/outcomeBoardMetting-15OCT2025.pdf",
+          "http://www.vivobio.com/vivo/investor_relations/finacialdata?page=submission_under_regulations",
+          "https://www.bseindia.com/xml-data/corpfiling/CorpAttachment/2017/9/e12b7629-b894-4f83-a206-474bb180962d.pdf",
+          "https://finance.yahoo.com/quote/VIVOBIOT.BO/history",
+          "https://www.investing.com/equities/vivo-bio-tech"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "\"Ambo Agritec\" warrant conversion SEBI informal guidance details",
+        "findings": "[1] SEBI Clarifies Open Offer Requirement on Warrant Conversion by Promoters\nURL: https://taxguru.in/sebi/sebi-clarifies-open-offer-requirement-on-warrant-conversion-by-promoters.html\nContent: Ref: Your Letter dated October 18, 2025.\n\n1. This has reference to your letter dated October 18, 2025 (Application), seeking guidance by way of an interpretive letter under SEBI Informal Guidance Scheme with respect to Regulation 3(2) of SEBI (Substantial Acquisitions and Takeover) Regulations, 2011 (SAST)\n\n2. Vide the said application, inter alia, following facts have been represented:\n\n2.1. Ambo Agritec Limited (Target Company/TC) had issued 1,43,00,000 {One Crore Forty-Three Lakh) equity share warrants (warrants) on a preferential basis, in FY 2024-25 (FY 24). Out of the aforesaid warrants, 90,00,000 (Ninety Lakh) warrants were allotted to promoter, i.e., Mr. Umesh Kumar Agarwal (Acquirer/Promoter) and 53,00,000 (Fifty-Three Lakh) warrants were allotted to the public category. [...] Securities...",
+        "sources": [
+          "https://taxguru.in/sebi/sebi-clarifies-open-offer-requirement-on-warrant-conversion-by-promoters.html",
+          "https://sarafpartners.com/informal-guidance-sebi-clarifies-position-on-lodr-governance-compliance-and-sast-creeping-acquisition-limits",
+          "https://www.icsi.edu/media/webmodules/Academics/SAST/SAST_Informal_Guidance.pdf",
+          "https://www.sebi.gov.in/enforcement/informal-guidance/mar-2026/informal-guidance-request-received-from-ambo-agritec-limited-with-respect-to-regulation-3-2-of-the-securities-and-exchange-board-of-india-substantial-acquisition-of-shares-and-takeover-regulations-_100405.html",
+          "http://www.amboagritec.com/DP_AMBO_BSE_14092022.pdf"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "\"Vivo Bio Tech\" promoter shareholding changes historical",
+        "findings": "[1] Vivo Bio Tech Limited (VIVOBIOT.BO) Stock Historical Prices & Data\nURL: https://finance.yahoo.com/quote/VIVOBIOT.BO/history\nContent: | Aug 29, 2025 | 37.60 | 37.60 | 36.35 | 36.80 | 36.80 | 9,427 |\n| Aug 28, 2025 | 37.15 | 38.25 | 36.26 | 37.40 | 37.40 | 5,375 |\n| Aug 26, 2025 | 37.30 | 37.98 | 36.52 | 37.10 | 37.10 | 23,540 |\n| Aug 25, 2025 | 37.51 | 38.90 | 37.00 | 37.74 | 37.74 | 22,500 |\n| Aug 22, 2025 | 38.32 | 39.46 | 37.12 | 38.45 | 38.45 | 33,411 |\n| Aug 21, 2025 | 42.05 | 43.35 | 36.99 | 38.32 | 38.32 | 246,362 |\n| Aug 20, 2025 | 38.00 | 43.30 | 37.00 | 41.18 | 41.18 | 270,006 |\n| Aug 19, 2025 | 36.71 | 37.50 | 36.11 | 37.26 | 37.26 | 20,042 |\n| Aug 18, 2025 | 37.09 | 38.40 | 36.30 | 36.71 | 36.71 | 16,525 |\n| Aug 14, 2025 | 37.44 | 38.47 | 36.15 | 37.09 | 37.09 | 48,265 |\n| Aug 13, 2025 | 36.90 | 38.49 | 36.12 | 37.44 | 37.44 | 70,107 |\n| Aug 12, 2025 | 35.60 | 37.50 | 33.15 | 35.55 | 35.55 | 58,907 | [...] | Dec 11, 2025 | 27.94 | 29.95 | 27.05 | 29.27 | 29.27 | 27,404 |...",
+        "sources": [
+          "https://finance.yahoo.com/quote/VIVOBIOT.BO/history",
+          "http://vivobio.com/static/pdf/Vivo%20Annual%20Report%202024-2025-06092025.pdf",
+          "https://www.icicidirect.com/stocks/vivo-bio-tech-ltd-share-price",
+          "https://tracxn.com/d/companies/vivo-bio-tech/__ApJ3fETxkOXYc2Sc_9jjFl134moK3djjl2PeF7mQXD0",
+          "http://www.vivobio.com/vivo/investor_relations/finacialdata?page=submission_under_regulations"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "Vivo Bio Tech promoter pledge shareholding pattern BSE",
+        "findings": "[1] Vivo Bio Tech Latest Shareholding Pattern – Promoter, FII, DII, Mutual Fund. Who owns, bought or sold Vivo Bio Tech Shares?\nURL: https://trendlyne.com/equity/share-holding/2458/VIVOBIOT/latest/vivo-bio-tech-ltd\nContent: ###### 47.34% Fall from 52W High\n\nBSE\n27 Jul, 2026 4:01 PM (IST)\n\nWatchlist\n\nPortfolio\n\nAlert\n\nMy Notes\n\n# Vivo Bio Tech Latest Shareholding Pattern - Promoter, FII, DII, Mutual Fund holding\n\n## Vivo Bio Tech shareholding pattern - Promoter holding and pledges, FII, DII, Mutual Fund holding change for the latest quarter.\n\n###### SHAREHOLDING SUMMARY\n\n###### HISTORICAL PROMOTOR HOLDING\n\n###### HISTORICAL MF HOLDING\n\n###### HISTORICAL FII HOLDING\n\n### Promoters have decreased holdings from 35.43% to 30.62% in Jun 2026 qtr [...] | Summary | Jun 2026 | Mar 2026 | Dec 2025 | Sep 2025 | Sep 24, 2025 | Aug 12, 2025 | Jun 2025 | Jun 25, 2025 | Jun 18, 2025 | May 28, 2025 | Apr 17, 2025 | Mar 2025 |\n ---  ---  ---  ---  ---  --- \n| Promoter | 30.6% | 35.4% | 35.2% | 35.2% | ...",
+        "sources": [
+          "https://trendlyne.com/equity/share-holding/2458/VIVOBIOT/latest/vivo-bio-tech-ltd",
+          "https://www.bullrun.co.in/stock/vivo-bio-tech-ltd-share-price/shareholding",
+          "https://www.tijorifinance.com/company/vivo-bio-tech-ltd/shareholding",
+          "https://www.nirmalbang.com/company/vivo-bio-tech/111509",
+          "https://www.icicidirect.com/stocks/vivo-bio-tech-ltd-share-price"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Ambo Agritec promoter pledge shareholding pattern BSE",
+        "findings": "[1] Ambo Agritec Latest Shareholding Pattern – Promoter, FII, DII, Mutual Fund. Who owns, bought or sold Ambo Agritec Shares?\nURL: https://trendlyne.com/equity/share-holding/1144856/11290627/latest/ambo-agritec-ltd\nContent: ###### New 52W Low today\n\nBSE\n27 Jul, 2026 4:01 PM (IST)\n\nWatchlist\n\nPortfolio\n\nAlert\n\nMy Notes\n\n# Ambo Agritec Latest Shareholding Pattern - Promoter, FII, DII, Mutual Fund holding\n\n## Ambo Agritec shareholding pattern - Promoter holding and pledges, FII, DII, Mutual Fund holding change for the latest quarter.\n\n###### SHAREHOLDING SUMMARY\n\n###### HISTORICAL PROMOTOR HOLDING\n\n###### HISTORICAL MF HOLDING\n\n###### HISTORICAL FII HOLDING\n\n### Promoters have increased holdings from 48.78% to 49.90% in Jun 2026 qtr.\n\n### Institutional Investors holding remains unchanged at 0.02% in Jun 2026 qtr [...] | Name | Holding Jun 2026 | | No of holders | History |\n ---  --- \n| % | shares |\n| Resident Individuals holding nominal share capital in excess of Rs. 2 lakhs | 35.26 | 6,9...",
+        "sources": [
+          "https://trendlyne.com/equity/share-holding/1144856/11290627/latest/ambo-agritec-ltd",
+          "https://choiceindia.com/stocks/ambo-agritec-ltd-shareholding-pattern",
+          "https://www.icicidirect.com/stocks/ambo-agritec-ltd-share-price",
+          "https://www.bseindia.com/downloads/UploadDocs/Notices/20260429-12/20260429-12.pdf",
+          "https://www.bseindia.com/corporates/pledge_new?expandable=5"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Vivo Bio Tech related party transactions loans advances annual report FY24 FY25",
+        "findings": "[1] ENHANCED BY AI TO DISCOVER CURES.\nURL: http://vivobio.com/static/pdf/Vivo%20Annual%20Report%202024-2025-06092025.pdf\nContent: For P. Murali & Co., Chartered Accountants FRN: 007257S Mukund Vijayrao Joshi Partner M.No:024784 UDIN: 25024784BMIXTP4449 Place: Hyderabad Date: 19.05.2025 VIVO BIO TECH LIMITED ANNUAL REPORT 2024-25 132 Consolidated Balance Sheet as At March 31 (H In Lakhs) Particulars Note No 2025 2024 ASSETS 1) NON CURRENT ASSETS Property, Plant and Equipment 1 6,437.93 7,225.21 Capital Work-In-Progress 1 1,284.49 921.24 Other Intangible Assets 1 2,385.66 812.10 Other Non-Current assets 2 21.37 31.56 Total Non Current Assets 10,129.45 8,990.12 2) CURRENT ASSETS Inventories 3 779.05 877.40 Financial assets Trade Receivables 4 1,125.08 1,179.50 Cash and Cash Equivalents 5 128.06 138.96 Loans and Advances 6 2,085.75 2,421.57 Other Current Assets 7 75.72 105.79 Total Current Assets 4,193.65 4,723.22 Total [...] ------(iv) Disputed Trade Receivables–considered good ------(v) ...",
+        "sources": [
+          "http://vivobio.com/static/pdf/Vivo%20Annual%20Report%202024-2025-06092025.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/08092025/c3aab3f6-e0c1-4745-93f5-3f8273b1a186.pdf",
+          "https://www.vivobarefoot.com/media/wysiwyg/pdf/LR_Vivo25_ImpactReport_111125.pdf",
+          "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0424/2025042400580.pdf",
+          "https://archives.nseindia.com/annual_reports/SME_AR_25509_VIVO_2023_2024_0309202412185.pdf"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Vivo Bio Tech Limited financial results 2025 2026 revenue profit",
+        "findings": "[1] Vivo Bio Tech Ltd Results 2026: Vivo Bio Tech Ltd Q1 Results & Revenue\nURL: https://www.indmoney.com/stocks/vivo-bio-tech-ltd-share-price/results\nContent: INDmoney Logo\n\nINDmoney\n\nVivo Bio Tech Ltd logo\n\n511509\n\n# Vivo Bio Tech Ltd Results\n\n₹23.18\n\n### Vivo Bio Tech Ltd Q1 FY2026-2027 Results: Summary\n\n|  |  |\n --- |\n| Revenue | ₹14.34Cr |\n| Net Profits | ₹0.19Cr |\n| Net Profit Margins | 1.32% |\n\nVivo Bio Tech Ltd’s revenue jumped 13.36% since last year same period to ₹14.34Cr in the Q1 2026-2027. On a quarterly growth basis, Vivo Bio Tech Ltd has generated 0.77% jump in its revenue since last 3-months.\n\nVivo Bio Tech Ltd’s net profit fell -85.82% since last year same period to ₹0.19Cr in the Q1 2026-2027. On a quarterly growth basis, Vivo Bio Tech Ltd has generated 103.68% jump in its net profits since last 3-months. [...] The revenue for Vivo Bio Tech Ltd in the Q1 results 2025 was ₹12.65Cr.\n\n### What was the net profit for Vivo Bio Tech Ltd in Q1 results 2025?\n\nThe net profit fo...",
+        "sources": [
+          "https://www.indmoney.com/stocks/vivo-bio-tech-ltd-share-price/results",
+          "https://x.com/_Investor_Feed_/status/2076671741410312627",
+          "https://trendlyne.com/fundamentals/financials/2458/VIVOBIOT/vivo-bio-tech-ltd",
+          "https://tracxn.com/d/companies/vivo-bio-tech/__ApJ3fETxkOXYc2Sc_9jjFl134moK3djjl2PeF7mQXD0",
+          "https://www.screener.in/company/511509/consolidated",
+          "http://www.vivobio.com/vivo/investor_relations/finacialdata?page=annual_report",
+          "https://indiaadvantage.co.in/company-profile/vivo-bio-tech"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Ambo Agritec Limited financial results 2025 2026 revenue profit",
+        "findings": "[1] Ambo Agritec reports net profit of ₹251.44 lakh in FY26\nURL: https://scanx.trade/stock-market-news/companies/ambo-agritec-board-to-consider-fy26-audited-results-on-may-30/41331286\nContent: Ambo Agritec Limited has reported a net profit of ₹251.44 lakh for the financial year ended March 31, 2026, compared to ₹190.74 lakh in the\n\n[2] Ambo Agritec (BSE:543678) - Stock Analysis\nURL: https://simplywall.st/stocks/in/food-beverage-tobacco/bse-543678/ambo-agritec-shares\nContent: FY 2025) Full year 2026 results: EPS: ₹0.27 (down from ₹1.11 in FY 2025). Revenue: ₹1.30b (up 9.1% from by 18% per year. Profit margin: 1.0% (down from 1.4% in\n\n[3] AMBO AGRITEC LIMITED - 2026 Company Profile & Financials - Tracxn\nURL: https://tracxn.com/d/legal-entities/india/ambo-agritec-limited/__WGzRF7VsxEyo-B16SfyIqDbqWBLu2nO0hRwuaWb_yIY\nContent: ### Detailed Financials (Income Statement, Balance Sheet, Cashflow Statement)\n\n### Compounded Annual Growth Rate of AMBO AGRITEC LIMITED\n\n| Revenue CAGR | Growth |\n -...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/companies/ambo-agritec-board-to-consider-fy26-audited-results-on-may-30/41331286",
+          "https://simplywall.st/stocks/in/food-beverage-tobacco/bse-543678/ambo-agritec-shares",
+          "https://tracxn.com/d/legal-entities/india/ambo-agritec-limited/__WGzRF7VsxEyo-B16SfyIqDbqWBLu2nO0hRwuaWb_yIY",
+          "https://trendlyne.com/equity/1144856/11290627/ambo-agritec-ltd",
+          "http://www.amboagritec.com/2024-25%20Ambo%20Agritec%20Ltd%20Annual%20Report.pdf",
+          "https://www.screener.in/company/543678/consolidated",
+          "https://indiaadvantage.co.in/company-profile/ambo-agritec"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Vivo Bio Tech preferential warrant price market price BSE announcement 2025 2026",
+        "findings": "[1] Vivo Bio Tech Limited Acquires 15.59% Stake in Virinchi Limited Through Convertible Equity Warrants\nURL: https://scanx.trade/stock-market-news/orders-deals/vivo-bio-tech-limited-acquires-15-59-stake-in-virinchi-limited-through-convertible-equity-warrants/29755171\nContent: | Parameter | Details |\n --- |\n| Total Warrants Acquired | 1,60,00,000 |\n| Allotment Date 1 | January 08, 2026 (86,00,000 warrants) |\n| Allotment Date 2 | January 09, 2026 (74,00,000 warrants) |\n| Mode of Acquisition | Preferential Allotment |\n| Issue Price | ₹28.00 per warrant |\n\n## Shareholding Impact\n\nThe acquisition significantly enhances Vivo Bio Tech's position in Virinchi Limited, representing a substantial stake in the target company's equity structure.\n\n| Shareholding Metric | Number/Percentage |\n --- |\n| Percentage of Total Share Capital | 15.59% |\n| Percentage of Diluted Share Capital | 12.69% |\n| Virinchi's Current Equity Shares | 10,26,46,896 shares |\n| Face Value per Share | ₹10.00 |\n| Current Equity...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/orders-deals/vivo-bio-tech-limited-acquires-15-59-stake-in-virinchi-limited-through-convertible-equity-warrants/29755171",
+          "https://finance.yahoo.com/quote/VIVOBIOT.BO/history",
+          "https://www.stockopedia.com/share-prices/vivo-bio-tech-BOM:511509/news/brief-vivo-bio-tech-approves-preferential-issue-of-warrants-upto-450-million-rupees-019e6dc5-cd2e-75e1-b379-d0fcbc998ab9",
+          "https://www.icicidirect.com/stocks/vivo-bio-tech-ltd-share-price",
+          "https://trendlyne.com/latest-news/BSE-Announcements/2458/VIVOBIOT/vivo-bio-tech-ltd"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Ambo Agritec warrant conversion price promoter shareholding BSE filings",
+        "findings": "[1] Ambo Agritec (BSE:543678) - Stock Analysis - Simply Wall St\nURL: https://simplywall.st/stocks/in/food-beverage-tobacco/bse-543678/ambo-agritec-shares\nContent: Ambo Agritec Limited announced a private placement to issue 15,000,000 convertible warrants at an issuer price of INR 7.5 per warrant for the gross proceeds of INR 112,500,000 on May 9, 2024. The transaction will include participation from individual investors Umesh Kumar Agarwal, Ravi Ashok Kothari, Garima Suhas Khabiya, Joy Banerjee, Kalidas Vijay Magar, Rajesh Tripathi, Dilip Keshrimal Sanklecha, Ashok Dilipkumar Jain, Amit Ramanlal Lodha, Pushpa Bhaju, Santa Ghosh, Venumuddala Vivek Reddy HUF, Bibi Hajira, Preetam Bhat S, Rakesh Sethia and Rosy Sethia. The transaction has been approved by the shareholders of the company and is subject to general shareholders to be held on June 3, 2024.\n\n[2] Listing of New Securities of AMBO AGRITEC LIMITED\nURL: https://www.bseindia.com/downloads/UploadDocs/Notices/20260429-12/20260429-12....",
+        "sources": [
+          "https://simplywall.st/stocks/in/food-beverage-tobacco/bse-543678/ambo-agritec-shares",
+          "https://www.bseindia.com/downloads/UploadDocs/Notices/20260429-12/20260429-12.pdf",
+          "http://www.amboagritec.com/Prospectus_Ambo_15112022_BSE.pdf",
+          "https://choiceindia.com/stocks/ambo-agritec-ltd-shareholding-pattern",
+          "https://trendlyne.com/equity/share-holding/1144856/11290627/latest/ambo-agritec-ltd"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Vivo Bio Tech promoter shareholding history historical buying",
+        "findings": "[1] Vivo Bio Tech Latest Shareholding Pattern – Promoter, FII, DII, Mutual ...\nURL: https://trendlyne.com/equity/share-holding/2458/VIVOBIOT/latest/vivo-bio-tech-ltd\nContent: ###### 47.34% Fall from 52W High\n\nBSE\n27 Jul, 2026 4:01 PM (IST)\n\nWatchlist\n\nPortfolio\n\nAlert\n\nMy Notes\n\n# Vivo Bio Tech Latest Shareholding Pattern - Promoter, FII, DII, Mutual Fund holding\n\n## Vivo Bio Tech shareholding pattern - Promoter holding and pledges, FII, DII, Mutual Fund holding change for the latest quarter.\n\n###### SHAREHOLDING SUMMARY\n\n###### HISTORICAL PROMOTOR HOLDING\n\n###### HISTORICAL MF HOLDING\n\n###### HISTORICAL FII HOLDING\n\n### Promoters have decreased holdings from 35.43% to 30.62% in Jun 2026 qtr [...] | Summary | Jun 2026 | Mar 2026 | Dec 2025 | Sep 2025 | Sep 24, 2025 | Aug 12, 2025 | Jun 2025 | Jun 25, 2025 | Jun 18, 2025 | May 28, 2025 | Apr 17, 2025 | Mar 2025 |\n ---  ---  ---  ---  ---  --- \n| Promoter | 30.6% | 35.4% | 35.2% | 35.2% | 35.2% | 36.4% | 39.1% | 39.1% | 40.7% | 42.3% | 4...",
+        "sources": [
+          "https://trendlyne.com/equity/share-holding/2458/VIVOBIOT/latest/vivo-bio-tech-ltd",
+          "https://www.tijorifinance.com/company/vivo-bio-tech-ltd/shareholding",
+          "https://finance.yahoo.com/quote/VIVOBIOT.BO/history",
+          "https://www.tickertape.in/stocks/vivo-bio-tech-VIVO",
+          "https://www.icicidirect.com/stocks/vivo-bio-tech-ltd-share-price"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Ambo Agritec related party transactions annual report BSE",
+        "findings": "[1] ANNUAL REPORT\nURL: http://www.amboagritec.com/2024-25%20Ambo%20Agritec%20Ltd%20Annual%20Report.pdf\nContent: Share Application Money Paid - 4.88 Receipt of Expenditure Paid - 3.99 Amount Outstanding - - Sales Trade Goods 167.51 - Amount Received 24.21 - Amount Outstanding Receivable 143.29 - Directors and Key Management Personnel AMBO AGRITEC LIMITED NOTES FORMING A PART OF FINANCIAL STATEMENTS Disclosure of transactions with related parties: (INR in Lacs) Relatives of Key Management Personnel:-Enterprises owned or significantly influenced by key management personnel or their relatives:-53 38 Particulars Units Numerator Denominator 2024-25 2023-24 Change in Ratios Reason for Movements (if movement is more than 25%) a) Current Ratio Times Current Assets Current Liabilities (Excluding Current Maturities of Long Term Borrowings) 3.04 1.91 58.76% Increase in Trade Receivables & Advances. [...] Directors and Key Management Personnel AMBO AGRITEC LIMITED NOTES FORMING A PART OF CONSOLIDAT...",
+        "sources": [
+          "http://www.amboagritec.com/2024-25%20Ambo%20Agritec%20Ltd%20Annual%20Report.pdf",
+          "http://www.amboagritec.com/annual-report/2023-24%20Annual%20Report%20%20AMBO%20Agritec.pdf",
+          "https://tracxn.com/d/legal-entities/india/ambo-agritec-limited/__WGzRF7VsxEyo-B16SfyIqDbqWBLu2nO0hRwuaWb_yIY",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6b51a5a1-5bbf-4044-89d9-e8ded2abde67.pdf",
+          "https://simplywall.st/stocks/in/food-beverage-tobacco/bse-543678/ambo-agritec-shares"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "Ambo Agritec promoter shareholding history BSE filing",
+        "findings": "[1] AMBO Agritec Limited Files Annual Promoter Declaration Confirming No Share Encumbrance for FY26\nURL: https://scanx.trade/stock-market-news/companies/ambo-agritec-limited-files-annual-promoter-declaration-confirming-no-share-encumbrance-for-fy26/37030202\nContent: powered bylight_fuzz_icon\n\n37030202\n\n\\this image is generated using AI for illustrative purposes only.\n\nAmbo agritec  Limited has filed its annual regulatory declaration with BSE Limited, confirming that promoters and promoter group members have maintained clean shareholding without any encumbrance during the financial year 2025-26. The disclosure was submitted on April 6, 2026, ensuring compliance with mandatory regulatory requirements.\n\n## Regulatory Compliance Declaration [...] | Category | Name | Shares Held |\n --- \n| Promoter | Umesh Kumar Agarwal | 97,82,160 |\n| Promoter Group | Geetanjali Sabrewal Agarwal | 1,200 |\n\nThe promoter group collectively holds 97,83,360 shares in the company, with Managing Director Umesh Ku...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/companies/ambo-agritec-limited-files-annual-promoter-declaration-confirming-no-share-encumbrance-for-fy26/37030202",
+          "https://www.emkayglobal.com/company-info/shareholding/ambo-agritec-ltd",
+          "https://www.tijorifinance.com/company/ambo-agritec-ltd/shareholding",
+          "https://www.bajajfinserv.in/investments/amboagri-share-price",
+          "https://upstox.com/stocks/ambo-agritec-limited-shareholding"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "Ambo Agritec preferential issue warrants board meeting outcome 2026",
+        "findings": "[1] Date: June 04, 2026 To, Listing Compliance Department National ...\nURL: https://satincreditcare.com/wp-content/uploads/2026/06/SCNL-Outcome.pdf\nContent: Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 as amended from time to time (“SEBI Listing Regulations”), we wish to inform that the Board of Directors of the Company at their meeting held today i.e., Thursday, June 04, 2026, has, inter alia, considered and approved/ taken on record the following: I. Issue and allotment of up to 38,50,000 (Thirty-Eight Lakh and Fifty Thousand) Fully Convertible Warrants (“Warrants”), to entity belonging to “Promoter & Promoter Group” category, on a preferential basis, aggregating up to INR 100,10,00,000 (Indian Rupees One Hundred Crore and Ten Lakh Only), at an issue price of INR 260 (Indian Rupees Two Hundred and Sixty Only) each, determined by the Board of Directors in accordance with provisions of Chapter V of [...] A Details on Preferential Allotment i...",
+        "sources": [
+          "https://satincreditcare.com/wp-content/uploads/2026/06/SCNL-Outcome.pdf",
+          "https://onida.com/wp-content/uploads/2026/05/Outcome-of-Board-Meeting-16.05.2026.pdf",
+          "https://www.noblepolymers.in/assets/images/pdf/BM%20Outcome_Noble.pdf",
+          "https://inveniatech.com/wp-content/uploads/2026/04/Outcome-of-Board-Meeting-April-182026.pdf",
+          "https://nsearchives.nseindia.com/corporate/RULKA_08072026213734_Board_meeting_outcome_signed.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "Vivo Bio Tech preferential warrant allotment BSE disclosures dates prices allottees",
+        "findings": "[1] Virinchi Limited Allots 86 Lakh Convertible Equity Warrants to Vivo Bio Tech\nURL: https://scanx.trade/stock-market-news/orders-deals/vivo-bio-tech-limited-subscribes-to-6-02-crore-convertible-equity-warrants-of-virinchi-limited/29408160\nContent: Vivo Bio Tech  Limited has successfully completed the allotment of 90,000 equity shares through the conversion of warrants issued on a preferential basis. The pharmaceutical company announced this development in its regulatory filing dated January 06, 2026.\n\n## Share Allotment Details\n\nThe company allotted 90,000 equity shares of ₹10 each at an issue price of ₹45 per share, which includes a premium of ₹35 on each equity share. The allotment was made upon receipt of application money totaling ₹30,37,500, representing 75% of the total issue price.\n\n| Parameter: | Details |\n --- |\n| Number of Shares: | 90,000 |\n| Face Value: | ₹10 per share |\n| Issue Price: | ₹45 per share |\n| Premium: | ₹35 per share |\n| Application Money Received: | ₹30,37,5...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/orders-deals/vivo-bio-tech-limited-subscribes-to-6-02-crore-convertible-equity-warrants-of-virinchi-limited/29408160",
+          "https://scanx.trade/stock-market-news/orders-deals/vivo-bio-tech-limited-acquires-15-59-stake-in-virinchi-limited-through-convertible-equity-warrants/29755171",
+          "https://www.bseindia.com/xml-data/corpfiling/CorpAttachment/2017/9/e12b7629-b894-4f83-a206-474bb180962d.pdf",
+          "https://finance.yahoo.com/quote/VIVOBIOT.BO/history",
+          "https://www.stockopedia.com/share-prices/vivo-bio-tech-BOM:511509/news/brief-vivo-bio-tech-approves-preferential-issue-of-warrants-upto-450-million-rupees-019e6dc5-cd2e-75e1-b379-d0fcbc998ab9"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Vivo Bio Tech promoter shareholding pattern quarterly changes June 2025 to June 2026",
+        "findings": "[1] Vivo Bio Tech Shareholding Pattern for Mar 2026 - Promoter, FII, DII, Mutual Fund. Who owns, bought or sold Vivo Bio Tech Shares?\nURL: https://trendlyne.com/equity/share-holding/2458/VIVOBIOT/Q1-2026/vivo-bio-tech-ltd\nContent: | Name | Holding Mar 2026 | | No of holders | Locked | | History |\n ---  ---  --- \n| % | shares | % | shares |\n| Resident Individuals holding nominal share capital in excess of Rs. 2 lakhs | 10.40 | 2,306,981 | 45 | 0.00 | 0 |  |\n| Pinapala anilkumar | 1.08 | 240,000  0.00 | 0 |  |\n| Individual share capital upto Rs. 2 Lacs | 21.98 | 4,876,402 | 21,219 | 0.00 | 0 |  |\n| Any Others (Specify) | 0.00 | 100 | 1 | 0.00 | 0 |  |\n| Clearing members | 0.00 | 100  0.00 | 0 |  |\n| Bodies Corporate | 24.37 | 5,408,253 | 50 | 38.84 | 2,100,739 |  |\n| Antique infotech private limited | 11.71 | 2,599,517  26.22 | 681,481 |  |\n| Dwight technologies private limited | 8.44 | 1,872,591  75.79 | 1,419,258 |  |\n| Every wear import and export private limited | 1.61 | 356,865  0.0...",
+        "sources": [
+          "https://trendlyne.com/equity/share-holding/2458/VIVOBIOT/Q1-2026/vivo-bio-tech-ltd",
+          "https://trendlyne.com/equity/share-holding/2458/VIVOBIOT/latest/vivo-bio-tech-ltd",
+          "https://www.tickertape.in/stocks/vivo-bio-tech-VIVO",
+          "http://www.vivobio.com/vivo/investor_relations/finacialdata?page=share_holding_pattern",
+          "https://choiceindia.com/stocks/vivo-bio-tech-ltd-shareholding-pattern"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Vira Systems Maxcell Phones Antique Infotech corporate registry India directors",
+        "findings": "[1] VIRA INFOTECH INDIA PRIVATE LIMITED | U46512PN2025PTC236958\nURL: https://www.indiafilings.com/search/vira-infotech-india-private-limited-cin-U46512PN2025PTC236958\nContent: ## Directors / Signatory Details\n\n| DIN / PAN | Name | Begin Date |\n --- \n| 10899929 | VIDHYARANI RAHUL KUMBHAR | 08-01-2025 |\n| 10899930 | HANUMANT MAHADEV KUMBHAR | 08-01-2025 |\n\n## MCA Public Document\n\nGet quick access to authentic MCA financials for informed business decisions.\n\n### What's included:\n\nIndiaFilings\n\nIndia's Largest Digital Corporate Services Provider & Compliance Platform.\n\n#### IndiaFilings\n\n#### Platforms\n\n#### Usage\n\n#### Legal\n\n© 2026 IndiaFilings. All rights reserved. [...] # VIRA INFOTECH INDIA PRIVATE LIMITED\n\n|  |  |\n --- |\n| CIN | U46512PN2025PTC236958 |\n| Company Name | VIRA INFOTECH INDIA PRIVATE LIMITED |\n| ROC Code | RoC-Pune |\n| Registration Number | 236958 |\n| Company Category | Company limited by shares |\n| Company SubCategory | Non-government company |\n| Class of Company | Priv...",
+        "sources": [
+          "https://www.indiafilings.com/search/vira-infotech-india-private-limited-cin-U46512PN2025PTC236958",
+          "https://tracxn.com/d/legal-entities/india/vira-infotech-india-private-limited/__36sSje5vfaRrtldBD63TjYKmM0Mtpii6hkNkbCnfCes",
+          "https://tracxn.com/d/legal-entities/india/vira-systems-private-limited/__nr-QI9Y0xZ9lQGC4xxF4ay3G9TN4KDT__ypLRox7Ar0",
+          "https://www.tradeindia.com/vira-infotech-36963744",
+          "https://www.vira-technologies.com/abouten-us.php"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Ambo Agritec promoter shareholding pattern quarterly changes June 2025 to June 2026",
+        "findings": "[1] Ambo Agritec Ltd.\nURL: https://www.emkayglobal.com/company-info/shareholding/ambo-agritec-ltd\nContent: | Share Holding Pattern as on : | 30/06/2026 | | 31/03/2026 | | 31/12/2025 | |\n ---  ---  --- \n| Face Value ( Rs. ) | 10 | | 10 | | 10 | |\n|  | 30/06/2026 | No. Of Shares | % Holding | 31/03/2026 | No. Of Shares | % Holding | 31/12/2025 | No. Of Shares | % Holding |\n| PROMOTER'S HOLDING | | | | | | |\n| Indian Promoters | 30/06/2026 | 9902360 | 49.90 | 31/03/2026 | 9583360 | 48.78 | 31/12/2025 | 9583360 | 48.78 |\n| Sub Total | 30/06/2026 | 9902360 | 49.90 | 31/03/2026 | 9583360 | 48.78 | 31/12/2025 | 9583360 | 48.78 |\n| NON PROMOTER'S HOLDING | | | | | | |\n| Institutional Investors | | | | | | |\n| Banks Fin. Inst. and Insurance | 30/06/2026 | 4000 | 0.02 | 31/03/2026 | 4000 | 0.02 | 31/12/2025 | 4000 | 0.02 | [...] | Sub Total | 30/06/2026 | 4000 | 0.02 | 31/03/2026 | 4000 | 0.02 | 31/12/2025 | 4000 | 0.02 |\n| Other Investors | | | | | | |\n| Others | 30/06/2026 | 1233000 | 6.21 | 3...",
+        "sources": [
+          "https://www.emkayglobal.com/company-info/shareholding/ambo-agritec-ltd",
+          "https://upstox.com/stocks/ambo-agritec-limited-shareholding",
+          "https://www.tijorifinance.com/company/ambo-agritec-ltd/shareholding",
+          "https://www.tickertape.in/stocks/ambo-agritec-AMBO",
+          "https://trendlyne.com/equity/share-holding/1144856/11290627/latest/ambo-agritec-ltd"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Vivo Bio Tech Limited red flags auditor resignation SEBI news",
+        "findings": "[1] Auditor quits amid SEBI probe: A red flag for CFOs and controllers | Rushabh Shah posted on the topic | LinkedIn\nURL: https://www.linkedin.com/posts/rushabh-shah-267aab137_fraud-corporategovernance-audit-activity-7395634610325327872-fZD_\nContent: NATURE OF IRREGULARITIES:\n1.The probe revealed the company overstated its profits by an estimated ₹1,280 crore  over FY 2018-19 and FY 2019-20 through improper accounting practices, such as incorrect capitalization of R&D costs and delayed recognition of impairment losses.\n2.SEBI observed that the directors failed to exercise adequate oversight over the company’s financial reporting and governance practices, particularly in relation to material misstatements and lapses in disclosure.\n3.They were found to have failed to identify misrepresented financial statements by inflating profits, thereby depriving investors of a true, fair, and timely assessment of the company’s financial position.\nLOSS OF INDEPENDENCE BY ONE INDEPENDENT DIRECTOR [......",
+        "sources": [
+          "https://www.linkedin.com/posts/rushabh-shah-267aab137_fraud-corporategovernance-audit-activity-7395634610325327872-fZD_",
+          "http://vivobio.com/static/pdf/Vivo%20Annual%20Report%202024-2025-06092025.pdf",
+          "https://economictimes.indiatimes.com/vivo-bio-tech-ltd/stocksupdate/companyid-8813.cms",
+          "http://vivobio.com/static/pdf/Vivo%20IG%2012.08.2025.pdf",
+          "https://pioneerlegal.com/sebi-circular-resignation-of-statutory-auditors-to-be-regulated"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Ambo Agritec Limited red flags auditor resignation SEBI news",
+        "findings": "[1] AMBO AGRITEC LIMITED Announcements | Whalesbook\nURL: https://www.whalesbook.com/company/announcements/AMBOAGRI\nContent: The news pertains to a board meeting of Ambo Agritec Limited held on August 21, 2025. Key outcomes included the appointment of Mrs. Sneha Agarwal, a Practicing Company Secretary, as the Secretarial Auditor for a five-year term starting from FY2025-26 until FY2029-30, subject to shareholder approval at the ensuing Annual General Meeting. Additionally, M/s. Komandoor & Co. LLP, a firm of Chartered Accountants, was appointed as the Internal Auditor for the financial year 2025-26. The board also noted and accepted the resignation of Mrs. Konika Poddar as the Company Secretary and Compliance Officer, effective August 5, 2025. Furthermore, Mrs. Geetanjali Sabrewal Agarwal resigned as a Non-Executive Non-Independent Director, with her cessation effective August 21, 2025. Mr. Mihir Kumar Dutta [...] Ambo Agritec Limited held a board meeting on August 21, 2025, during whic...",
+        "sources": [
+          "https://www.whalesbook.com/company/announcements/AMBOAGRI",
+          "https://trendlyne.com/latest-news/1144856/11290627/ambo-agritec-ltd?page=14&qstime=1784516510",
+          "https://simplywall.st/stocks/in/food-beverage-tobacco/bse-543678/ambo-agritec-shares",
+          "http://www.amboagritec.com/2024-25%20Ambo%20Agritec%20Ltd%20Annual%20Report.pdf",
+          "https://www.amsshardul.com/insight/sebi-consultative-paper-on-resignation-of-statutory-auditors-from-listed-entities"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "\"Vivo Bio Tech\" stock exchange fine SEBI warning 2025 2026",
+        "findings": "[1] Vivo Bio Tech Limited (VIVOBIOT.BO) Stock Historical Prices & Data\nURL: https://finance.yahoo.com/quote/VIVOBIOT.BO/history\nContent: | Dec 30, 2025 | 32.25 | 33.00 | 31.25 | 31.38 | 31.38 | 15,083 |\n| Dec 29, 2025 | 32.65 | 33.50 | 31.76 | 32.11 | 32.11 | 21,795 |\n| Dec 26, 2025 | 32.06 | 33.50 | 31.50 | 32.60 | 32.60 | 13,811 |\n| Dec 24, 2025 | 32.99 | 32.99 | 31.10 | 32.06 | 32.06 | 39,731 |\n| Dec 23, 2025 | 33.19 | 33.88 | 31.99 | 32.41 | 32.41 | 48,785 |\n| Dec 22, 2025 | 29.84 | 34.20 | 28.72 | 33.19 | 33.19 | 201,059 |\n| Dec 19, 2025 | 29.70 | 29.70 | 28.29 | 28.56 | 28.56 | 6,393 |\n| Dec 18, 2025 | 27.61 | 28.34 | 27.15 | 28.20 | 28.20 | 8,581 |\n| Dec 17, 2025 | 29.95 | 29.95 | 27.22 | 27.61 | 27.61 | 24,716 |\n| Dec 16, 2025 | 29.45 | 29.90 | 28.16 | 29.21 | 29.21 | 6,468 |\n| Dec 15, 2025 | 29.30 | 30.21 | 29.30 | 29.64 | 29.64 | 5,090 |\n| Dec 12, 2025 | 29.84 | 29.99 | 28.50 | 29.20 | 29.20 | 8,584 | [...] | Jan 16, 2026 | 30.60 | 31.47 | 30.10 | 30.65 | 30.65 | 7,508 |\n| Ja...",
+        "sources": [
+          "https://finance.yahoo.com/quote/VIVOBIOT.BO/history",
+          "https://www.screener.in/company/511509/consolidated",
+          "https://indiaadvantage.co.in/company-profile/vivo-bio-tech",
+          "https://economictimes.indiatimes.com/vivo-bio-tech-ltd/stocksupdate/companyid-8813.cms",
+          "https://www.indiainfoline.com/company/vivo-bio-tech-ltd/corporate-action/board-meeting"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "\"Ambo Agritec\" stock exchange fine SEBI warning 2025 2026",
+        "findings": "[1] May 4th, 2026\nURL: https://www.linkedin.com/pulse/may-4th-2026-vipan-kumar-phd-hxj6f\nContent: IAs and RAs must enrol by August 3, 2026, to continue sharing performance data. By May 2028, only PaRRVA-verified data will be permitted in client communications.\n\nFor investors, this means a safer, more informed decision-making process. For professionals, it’s an opportunity to build credibility through rigorous, third-party validation.\n\n## [A.2] Conversion of Warrants into Equity Shares by its Promoters can Trigger Open Offer Obligation under Takeover Code\n\nSEBI issued an interpretative letter dated December 12, 2025, addressing a request from Ambo Agritec Limited regarding the conversion of equity share warrants by its promoter, Mr. Umesh Kumar Agarwal, and the resulting implications under the SAST (Substantial Acquisition of Shares and Takeovers) Regulations. [...] This judgement is a stern warning for corporate boards that shareholder approval is not an exemption card for misusing rai...",
+        "sources": [
+          "https://www.linkedin.com/pulse/may-4th-2026-vipan-kumar-phd-hxj6f",
+          "https://www.sebi.gov.in/enforcement/informal-guidance/mar-2026/informal-guidance-request-received-from-ambo-agritec-limited-with-respect-to-regulation-3-2-of-the-securities-and-exchange-board-of-india-substantial-acquisition-of-shares-and-takeover-regulations-_100405.html",
+          "http://www.amboagritec.com/Prospectus_Ambo_15112022_BSE.pdf",
+          "https://www.icicidirect.com/stocks/ambo-agritec-ltd-share-price",
+          "https://www.ipoplatform.com/ipo/ambo-agritec-ipo/2217"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Vivo Bio Tech warrant allotment list of allottees BSE disclosures",
+        "findings": "[1] Allotment of Convertible Equity Warrants\nURL: https://www.virinchi.com/pdfDocPrtTwo/Allotment_Convertible_Equity_Warrants_09thJanuary2026.pdf\nContent: Crore only) convertible equity warrants and pursuant to the in-principle approval given by BSE vide their letter LOD/PREF/KS/FIP/1456/2025-26 dated December 31, 2025; and by NSE vide their letter NSE/LIST/51564 dated December 31, 2025, the Stakeholders Relationship Committee at its meeting held today i.e. Friday, January 09, 2026 has approved the allotment of 74,00,000 (Seventy Four Lakh only) convertible equity warrants at an Issue Price of Rs.28/- (Face Value of Rs.10/- and Premium of Rs.18/-) on preferential basis in accordance with SEBI (ICDR) Regulations, 2018, to the following persons on receipt of the subscription amount equivalent to 25% of the Issue Price: S.No Name of Allottees Category No. of Warrants Allotted 1 Vivo Bio Tech Limited Promoter Group 74,00,000 TOTAL 74,00,000 We [...] 2. Type of issuance Preferential Issue 3...",
+        "sources": [
+          "https://www.virinchi.com/pdfDocPrtTwo/Allotment_Convertible_Equity_Warrants_09thJanuary2026.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/CorpAttachment/2017/9/e12b7629-b894-4f83-a206-474bb180962d.pdf",
+          "https://www.virinchi.com/governance-I/outcomeBoardMetting-15OCT2025.pdf",
+          "https://scanx.trade/stock-market-news/orders-deals/vivo-bio-tech-limited-acquires-15-59-stake-in-virinchi-limited-through-convertible-equity-warrants/29755171",
+          "http://www.vivobio.com/vivo/investor_relations/finacialdata?page=submission_under_regulations"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "Ambo Agritec SEBI informal guidance SAST Umesh Kumar Agarwal",
+        "findings": "[1] SEBI Clarifies Open Offer Requirement on Warrant ...\nURL: https://taxguru.in/sebi/sebi-clarifies-open-offer-requirement-on-warrant-conversion-by-promoters.html\nContent: Ref: Your Letter dated October 18, 2025.\n\n1. This has reference to your letter dated October 18, 2025 (Application), seeking guidance by way of an interpretive letter under SEBI Informal Guidance Scheme with respect to Regulation 3(2) of SEBI (Substantial Acquisitions and Takeover) Regulations, 2011 (SAST)\n\n2. Vide the said application, inter alia, following facts have been represented:\n\n2.1. Ambo Agritec Limited (Target Company/TC) had issued 1,43,00,000 {One Crore Forty-Three Lakh) equity share warrants (warrants) on a preferential basis, in FY 2024-25 (FY 24). Out of the aforesaid warrants, 90,00,000 (Ninety Lakh) warrants were allotted to promoter, i.e., Mr. Umesh Kumar Agarwal (Acquirer/Promoter) and 53,00,000 (Fifty-Three Lakh) warrants were allotted to the public category. [...] Securities and Exchange Board ...",
+        "sources": [
+          "https://taxguru.in/sebi/sebi-clarifies-open-offer-requirement-on-warrant-conversion-by-promoters.html",
+          "https://scanx.trade/stock-market-news/companies/ambo-agritec-limited-files-annual-promoter-declaration-confirming-no-share-encumbrance-for-fy26/37030202",
+          "https://ai.vidur.in/share/xwqJ75DYYcruAeaZjESq",
+          "https://www.scribd.com/document/1014293173/Ambo-Agritec-Informal-Guidance",
+          "https://indiaadvantage.co.in/company-profile/ambo-agritec"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "\"Ambo Agritec\" \"informal guidance\" \"Umesh Kumar Agarwal\" SEBI response",
+        "findings": "[1] SEBI Clarifies Open Offer Requirement on Warrant ...\nURL: https://taxguru.in/sebi/sebi-clarifies-open-offer-requirement-on-warrant-conversion-by-promoters.html\nContent: Securities and Exchange Board of India\n\nDeputy General Manager  \n Corporation Finance Department  \n Policy and Development — 2  \n vimalb@Lebi.gov.in  \n 022-26449386\n\nSEBI/HO/CFD/PoD VOW/P/2025/ 31126/1 Dated: December 12, 2025\n\nTo  \n Ambo Agritec Limited  \n 3, Pretoris Street,  \n Chandrakunj Building  \n Kolkata, West Bengal – 700071\n\nKind attention: Mr. Umesh Kumar Agarwal\n\nSub: Request for Interpretive Letter under the Securities and Exchange Board of India (Informal Guidance) Scheme, 2003 (SEBI Informal Guidance Scheme)\n\nRef: Your Letter dated October 18, 2025. [...] Ref: Your Letter dated October 18, 2025.\n\n1. This has reference to your letter dated October 18, 2025 (Application), seeking guidance by way of an interpretive letter under SEBI Informal Guidance Scheme with respect to Regulation 3(2) of SEBI (Substan...",
+        "sources": [
+          "https://taxguru.in/sebi/sebi-clarifies-open-offer-requirement-on-warrant-conversion-by-promoters.html",
+          "http://www.amboagritec.com/pdf/2024.06.03%20Proceedings%20of%20the%20Extra-Ordinary%20General%20Meeting%20(%E2%80%9CEGM%E2%80%9D)%20held%20on%20Monday,%20June%203,%202024.pdf",
+          "https://sarafpartners.com/informal-guidance-sebi-clarifies-position-on-lodr-governance-compliance-and-sast-creeping-acquisition-limits",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/b7fc194a-d47f-47d5-ad62-53cba88b91fb.pdf",
+          "http://www.amboagritec.com/pdf/Board%20Meeting%20Outcome_Revised-%2011.05.2024.pdf"
+        ],
+        "phase": "Cross-Verification (Depth 1)"
+      },
+      {
+        "query": "NFRA order P Murali Co Hyderabad Virinchi",
+        "findings": "[1] virinchi\nURL: https://nsearchives.nseindia.com/corporate/VIRINCHI1303_28082025152945_SE_intimanation_searchable.pdf\nContent: Private Limited), in which interim financial results and other financial information before eliminations reflect total revenue is (NIL) and total net Loss after tax of Rs. (81.16) Lakhs and Total Comprehensive loss of Rs. (81.16) Lakhs for the quarter ended 30t June, 2025, as considered in the Statement whose interim financial results and other financial information have not been reviewed by their auditors; INDIA P. MURALI & CO., CHARTERED ACCOUNTANTS 6-3-655/2/3, SOMAJIGUDA, HYDERABAD - 500 082. T.G, INDIA Tel. Email : (91-40) 2332 6666, 2331 2554 (91-40) 2339 3967, (91-40) 2332 2119, 2331 7032 : pmurali.co@gmail.com pmurali.tax@gmail.com info@pmurali.com Website : www.pmurali.com These unaudited interim financial results and other unaudited financial information have been approved and [...] Rao / Whole Time Director & CFO \\\\/// DIN: 00816334 Virinchi Limite...",
+        "sources": [
+          "https://nsearchives.nseindia.com/corporate/VIRINCHI1303_28082025152945_SE_intimanation_searchable.pdf",
+          "https://virinchi.com/pdf/subsidaries/Virinchi_Infra_Final-2023-24.pdf",
+          "https://nclt.gov.in/gen_pdf.php?filepath=%2FEfile_Document%2Fncltdoc%2Fcasedoc%2F3607130004522019%2F04%2FOrder-Challenge%2F04_order-Challange_004_1728018672183404536566ff78f0f1f21.pdf",
+          "https://indiankanoon.org/doc/22831649",
+          "https://www.virinchi.com/pdf/QR-reports/31st_December_2023.pdf"
+        ],
+        "phase": "Cross-Verification (Depth 2)"
+      },
+      {
+        "query": "SEBI order P Murali and Co",
+        "findings": "[1] SEBI stops Brightcom’s statutory auditors from engaging with company; bars CMD and CFO from Board positions\nURL: https://www.moneycontrol.com/news/business/markets/sebi-stops-brightcoms-statutory-auditors-from-engaging-with-company-bars-cmd-and-cfo-from-board-positions-11239151.html/amp\nContent: The Securities and Exchange Board of India (Sebi) also stopped 22 entities from disposing off shares of BGL held by them, directly or indirectly.\n\nThe market regulator ordered Brightcom Group (BGL) to ensure that statutory auditors of the company P. Murali & Co. and PCN & Associates, including their past and present partners, are not engaged with BGL or its subsidiaries in any capacity or manner whatsoever, until further orders. [...] According to the order, summons issued by the investigating authority were not answered by the company or its directors, and the company and its CMD submitted forged and fabricated bank documents as late as July 2023 to mislead Sebi. For the submission of thes...",
+        "sources": [
+          "https://www.moneycontrol.com/news/business/markets/sebi-stops-brightcoms-statutory-auditors-from-engaging-with-company-bars-cmd-and-cfo-from-board-positions-11239151.html/amp",
+          "https://www.msei.in/SX-Content/Circulars/2025/February/Circular-16732.pdf",
+          "https://regstreetlaw.com/wp-content/uploads/2025/01/1736322218211.pdf",
+          "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&ssid=9&smid=2",
+          "https://www.scribd.com/document/643404673/1681383604739-8-pdf"
+        ],
+        "phase": "Cross-Verification (Depth 2)"
+      },
+      {
+        "query": "Ambo Agritec warrant allotment price conversion price 2024 2025",
+        "findings": "[1] AMBO AGRITEC LIMITED Announcements\nURL: https://www.whalesbook.com/company/announcements/AMBOAGRI\nContent: AMBO AGRITEC LIMITED, on August 12, 2025, announced a significant corporate action: the board's approval for the conversion of 2,00,000 warrants into equity shares. These shares were allotted to promoter Umesh Kumar Agarwal, with the company receiving ₹45,00,000, representing 75% of the issue price per warrant. The effective conversion price was ₹30 per share, comprising a face value of ₹10 and a premium of ₹20. This transaction has consequently increased AMBO Agritec's total paid-up equity share capital to ₹19,84,51,600, represented by 1,98,45,160 fully paid-up equity shares of ₹10 each, which will rank pari-passu with existing shares. The company also highlighted that 38,50,000 promoter warrants remain pending for conversion, while non-promoter warrants are nil. The conversion was [...] AMBO AGRITEC LIMITED, vide its disclosure on August 12, 2025, informed the BSE about the ...",
+        "sources": [
+          "https://www.whalesbook.com/company/announcements/AMBOAGRI",
+          "http://www.amboagritec.com/pdf/Board%20Meeting%20Outcome%20-%2009.05.2024.pdf",
+          "https://www.bseindia.com/downloads/UploadDocs/Notices/20260429-12/20260429-12.pdf",
+          "https://simplywall.st/stocks/in/food-beverage-tobacco/bse-543678/ambo-agritec-shares",
+          "http://www.amboagritec.com/pdf/Board%20Meeting%20Outcome_Revised-%2011.05.2024.pdf"
+        ],
+        "phase": "Cross-Verification (Depth 2)"
+      },
+      {
+        "query": "Vivo Bio Tech warrant allotment price PKI Solutions Mallemkonda",
+        "findings": "[1] Vivo Bio Tech Ltd.\nURL: https://www.bseindia.com/xml-data/corpfiling/CorpAttachment/2017/9/e12b7629-b894-4f83-a206-474bb180962d.pdf\nContent: IV) Identity of the natural persons who are the ultimate beneficial owners of the convertible warrants proposed to be allotted and/or who ultimately control; the proposed allottees and percentage or pre and post preferential issue capital that may be held by them: All the proposed allottees as furnished in the table are the ultimate beneficial owners of the warrants/shares.\nList of allottees : S.No Identity of Proposed Category Convertible Preferential Allottee to be allotted warrants proposed 1 Satyajet Prasad Public & Strategic Investor 2,00,000 2 Vishal Ranjan Public & Strategic Investor 2,00,000 3 PKI Solutions Private Limited Promoter 12,00,000 4 Mallemkonda Realities Public & Strategic Investor 11,00,000 Private Limited 5. [...] More Agri Supplies & Services Public & Strategic Investor 9,00,000 Private Limited Total 45,00,000 14 Vivo Bio...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/CorpAttachment/2017/9/e12b7629-b894-4f83-a206-474bb180962d.pdf",
+          "https://scanx.trade/stock-market-news/orders-deals/vivo-bio-tech-limited-acquires-15-59-stake-in-virinchi-limited-through-convertible-equity-warrants/29755171",
+          "https://scanx.trade/stock-market-news/corporate-actions/vivo-bio-tech-limited-allots-90-000-equity-shares-through-warrant-conversion/29230205",
+          "http://vivobio.com/static/pdf/Vivo%20Annual%20Report%202024-2025-06092025.pdf",
+          "https://www.stockopedia.com/share-prices/vivo-bio-tech-BOM:511509/news/brief-vivo-bio-tech-approves-preferential-issue-of-warrants-upto-450-million-rupees-019e6dc5-cd2e-75e1-b379-d0fcbc998ab9"
+        ],
+        "phase": "Cross-Verification (Depth 2)"
+      }
+    ],
+    "disclaimer": "This analysis is strictly for informational and hypothesis-generation purposes. It does not constitute investment advice or a recommendation to buy or sell any security. The user must perform independent due diligence before making any investment decisions.",
+    "phases_completed": 5,
+    "total_search_count": 55
+  }
+}

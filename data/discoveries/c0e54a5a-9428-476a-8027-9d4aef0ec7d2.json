@@ -1,0 +1,639 @@
+{
+  "id": "c0e54a5a-9428-476a-8027-9d4aef0ec7d2",
+  "strategy_id": "hidden_earnings",
+  "strategy_name": "Hidden Earnings (Conservative Accounting)",
+  "user_params": {
+    "context": ""
+  },
+  "model_name": "gemini-3.5-flash-lite",
+  "created_at": "2026-07-26T13:00:08.469687",
+  "result": {
+    "analysis_summary": "This analysis synthesizes five high-conviction Indian mid- and small-cap companies where conservative accounting practices, upfront R&D expensing, and heavy greenfield/brownfield capex cycles temporarily suppress reported Net Profit (PAT), masking robust underlying Operating Cash Flows (CFO) and true economic earning power. By analyzing the gap between CFO and PAT, and identifying the peak of the capex cycle, we pinpoint the earliest stage where the market has not yet fully priced in the non-linear operating leverage and margin expansion that will occur as these assets are commercialized.",
+    "candidates": [
+      {
+        "company_name": "Azad Engineering Limited",
+        "ticker": "AZAD",
+        "connection_type": "Precision components for global energy and aerospace OEMs",
+        "confidence": "high",
+        "why_now": "(a) Commercialization of dedicated manufacturing blocks for Mitsubishi Heavy Industries, GE Vernova, and Siemens Energy is concluding in FY26. (b) Catalyst window: medium-term (6-18 months) as asset capitalization transitions to active revenue generation and operating leverage kicks in. (c) Confirming milestone: Q1/Q2 FY27 asset turnover ratio rising above 0.5x alongside EBITDA margin expansion above 35%.",
+        "reasoning": "[WRONG ASSUMPTION] The market currently assumes Azad's near-term earnings are weak due to high depreciation and low asset turnover, but evidence shows these are front-loaded non-cash charges on newly capitalized blocks built for long-term global OEM contracts that will drive non-linear operating leverage in FY",
+        "self_critique": "",
+        "disproving_evidence": "",
+        "risks": [],
+        "what_to_verify": [],
+        "sources": [],
+        "confidence_evolution": []
+      }
+    ],
+    "limitations": [],
+    "searches_performed": [
+      {
+        "query": "Specialty chemicals India capex cycle peak 2025 2026 commissioning",
+        "findings": "[1] India Specialty Chemicals: The ₹18,000 Cr Capex Cycle Is Finally ...\nURL: https://www.bicresearch.in/reports/indian-specialty-chemicals-us-tariff-relief-cdmo-capex-hangover-fy27-reckoning\nContent: Aarti Industries completed commissioning of its nitrotoluene derivatives complex at Dahej in March 2026 — ₹1,400 Cr capex, 18 months\n\n[2] Specialty Chemicals Capex Cycle in India | CA Sruti Rathi posted on the topic\nURL: https://www.linkedin.com/posts/casrutirathi_equity-equityresearch-specialitychemicals-activity-7456359104597520385-n8k4\nContent: The specialty chemicals industry is currently in a capex-intensive phase, rising demand for high-value chemicals, 🗓 14–15 May 2026\n\n[3] Indian Specialty Chemical Sector Faces Margin Pressure, Caps ...\nURL: https://insights.tridge.com/speaker-product-news-reports/KJLyFXpzJzgKuB1Gqsm5QUKHGgR43AVdqLCGPdpmTByPmZSFkM6KMBoc\nContent: India's specialty chemical manufacturers are expected to reduce capital expenditure to around Rs 16,500 crore in the fis...",
+        "sources": [
+          "https://www.bicresearch.in/reports/indian-specialty-chemicals-us-tariff-relief-cdmo-capex-hangover-fy27-reckoning",
+          "https://www.linkedin.com/posts/casrutirathi_equity-equityresearch-specialitychemicals-activity-7456359104597520385-n8k4",
+          "https://insights.tridge.com/speaker-product-news-reports/KJLyFXpzJzgKuB1Gqsm5QUKHGgR43AVdqLCGPdpmTByPmZSFkM6KMBoc",
+          "https://www.pwc.in/ghost-templates/unlocking-indias-specialty-chemicals-opportunity.html",
+          "https://www.businesstoday.in/amp/industry/story/specialty-chemical-firms-pare-capex-as-margins-come-under-pressure-540640-2026-07-02"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Indian EMS electronics manufacturing capex expansion capacity utilization",
+        "findings": "[1] Electronics Manufacturing Capacity in India: A Case Study for EMS Sector\nURL: https://www.linkedin.com/posts/rahul-rajan-b9925a1b_electronicsmanufacturing-smt-pcba-activity-7481369433798647808-LWwj\nContent: approximately 60% of incremental capacity may need to come from the expansion and capability upgrading of existing Indian EMS companies.\n\n[2] Capex-light growth for electronics manufacturers\nURL: https://www.praxisga.com/insights/next-gen-industrials/capex-light-growth-for-electronics-manufacturers\nContent: ,EMS in India is projected to grow a CAGR of 27%, reaching INR 6L Cr by FY 27, driven by reduced capital requirements, faster scalability, and\n\n[3] India's electronics manufacturing journey is gaining momentum. ...\nURL: https://www.facebook.com/KotakMF/posts/indias-electronics-manufacturing-journey-is-gaining-momentum-with-rising-demand-/1447247200765673\nContent: Estimated capex for top EMS players will rise 55%, from ₹58,000 Cr (FY23–25) to ₹90,000 Cr (FY26–28). This is Indi...",
+        "sources": [
+          "https://www.linkedin.com/posts/rahul-rajan-b9925a1b_electronicsmanufacturing-smt-pcba-activity-7481369433798647808-LWwj",
+          "https://www.praxisga.com/insights/next-gen-industrials/capex-light-growth-for-electronics-manufacturers",
+          "https://www.facebook.com/KotakMF/posts/indias-electronics-manufacturing-journey-is-gaining-momentum-with-rising-demand-/1447247200765673",
+          "https://www.facebook.com/InvestYadnya/posts/indias-electronics-ecosystem-is-evolving-rapidlyseveral-structural-factors-are-s/1364414735706268",
+          "https://www.hdfcsec.com/hsl.docs/EMS%20-%20Sector%20Thematic%20-%20Apr26%20-%20HSIE-202604061046234471873.pdf"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Renewable energy component manufacturing India capex phase completion",
+        "findings": "[1] [PDF] PWc Manufacturing for India and the World Artwork\nURL: https://ciire.in/pdf/PWc-Manufacturing-for-India-and-the-World-Artwork.pdf\nContent: for accurate financial modelling and strategic decision-making. • Capital Expenditure (CAPEX): The upfront investment to establish a manufacturing plant is substantial and is heavily influenced by the chosen technology and the desired level of vertical integration. The estimated CAPEX requirements based on land requirement, plant & machinery, and EPC costs in India are in range of 31 to 38 million USD per GW for PERC, and between 38 to 46 million USD per GW for TOPCon. About 90% of Indian solar [...] 90% of Indian solar module manufacturers are producing PERC modules whilst rest have upgraded their existing facilities to TOPCon. The key particulars of CAPEX are explained as follows: 1. Plant & Machinery: This constitutes the single largest component of the initial CAPEX. The cost is contingent on the scale of the production line (measured ...",
+        "sources": [
+          "https://ciire.in/pdf/PWc-Manufacturing-for-India-and-the-World-Artwork.pdf",
+          "https://www.eqmagpro.com/power-sector-manufacturers-plan-%E2%82%B932000-crore-capex-to-expand-capacity-and-support-energy-transition-eq",
+          "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/sep/doc2023915253001.pdf",
+          "https://www.ceew.in/renewable-energy-equipment-manufacturing",
+          "https://zerocarbon-analytics.org/insights/briefings/renewable-energy-in-india-manufacturing-and-recycling-require-sustained-support"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Defense manufacturing India heavy capex order book execution 2025",
+        "findings": "[1] India's defence production reached a record high of Rs ...\nURL: https://www.facebook.com/growwapp/posts/indias-defence-production-reached-a-record-high-of-rs-127-lakh-crore-in-2023-24-/857124013173942\nContent: Books in FY 2025. India's defence sector is booming with record-breaking order books for major companies like HAL, BEL, Mazagon Dock, Bharat\n\n[2] In the Union Budget 2025–26, the Ministry of Defence ...\nURL: https://www.instagram.com/p/DT5gaHWD4IV\nContent: Order books show execution … fresh ₹52,000 crore defence procurement. Big order books are real. Market cap as of 30 Jun 2026.\n\n[3] India’s defence sector boom risks execution bottleneck; order backlogs could take up to a decade to clear, says PwC’s latest study\nURL: https://www.pwc.in/press-releases/2026/indias-defence-sector-boom-risks-execution-bottleneck-order-backlogs-could-take-up-to-a-decade-to-clear-says-pwcs-latest-study.html\nContent: [Skip to content](https://www.pwc.in/press-releases/2026/indias-defence-sector-boo...",
+        "sources": [
+          "https://www.facebook.com/growwapp/posts/indias-defence-production-reached-a-record-high-of-rs-127-lakh-crore-in-2023-24-/857124013173942",
+          "https://www.instagram.com/p/DT5gaHWD4IV",
+          "https://www.pwc.in/press-releases/2026/indias-defence-sector-boom-risks-execution-bottleneck-order-backlogs-could-take-up-to-a-decade-to-clear-says-pwcs-latest-study.html",
+          "https://www.facebook.com/BusinessToday/posts/indias-defence-sector-continues-to-enjoy-strong-momentum-driven-by-massive-domes/1490365166471190",
+          "https://www.linkedin.com/posts/financeprofvinitmehta_indias-79000-crore-defence-push-activity-7387473002424057856-ag4Y"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Data center infrastructure India capex depreciation operating cash flow",
+        "findings": "[1] FEB 2026\nURL: https://www.mufgamericas.com/sites/default/files/document/mufgamericas_com/2026-02/Volume_1_The_Most_Transformative_Infrastructure_Project_in_History_Final_0.pdf\nContent: 12% 34% 2023 2026E Capex to operating cash flow 41% 83% 2023 2026E Business model transformation • GPT infrastructure investment precedes returns • The ROI gap is real in early stages • Capex intensity approaching 100% of OCF is higher risk • Business model transformation • Cash to debt financing • “Asset light” is over • No longer software economics (higher margin, low capital intensity, infinitely scalable) • Higher risk infrastructure economics (high fixed costs, depreciation cycles, ROI [...] Source: (1) McKinsey, “The cost of compute – a $7 trillion dollar race to scale data centers.” McKinsey Data Center Capex TAM model. McKinsey Data Center Demand Model. Data center infrastructure excludes IT services and software (e.g. operating system, data center infrastructure management), since they requi...",
+        "sources": [
+          "https://www.mufgamericas.com/sites/default/files/document/mufgamericas_com/2026-02/Volume_1_The_Most_Transformative_Infrastructure_Project_in_History_Final_0.pdf",
+          "https://publicenterprise.org/wp-content/uploads/Bubble-or-Nothing.pdf",
+          "https://allfinancialmodels.com/data-centre-finance-model",
+          "https://business.columbia.edu/sites/default/files-efs/imce-uploads/Research/Research_Papers/Datacenters-Slide-deck%20v9.pdf",
+          "https://deepquarry.substack.com/p/part-2-ai-data-center-construction"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Auto ancillary EV transition RD capex India companies",
+        "findings": "[1] Auto Ancillary Stocks India 2026: Best Picks, EV Transition ...\nURL: https://univest.in/blogs/auto-ancillary-stocks-india-2026-best-picks-ev-transition-amp-complete-sector-guide\nContent: Best auto ancillary stocks India 2026: Bosch, Samvardhana Motherson, Minda, Schaeffler, Endurance. The EV transition creates winners and losers\n\n[2] Component makers line up capex, scout for land parcels as business booms, ETAuto\nURL: https://auto.economictimes.indiatimes.com/news/auto-components/component-makers-line-up-capex-scout-for-land-parcels-as-business-booms/111224837\nContent: eyeing at least a growth of 25% in topline, with a large part of growth coming from industry wide new model launches. Joint MD Anmol Jain said recently that Lumax will be supplying lighting products for the new Maruti EV and its new SUV platform, the new EV from Mahindra & Mahindra and three models of Volkswagen. Capex for FY25 is INR 250-300 crore. [...] For FY25, ICRA has projected that its sample of 45 auto ancill...",
+        "sources": [
+          "https://univest.in/blogs/auto-ancillary-stocks-india-2026-best-picks-ev-transition-amp-complete-sector-guide",
+          "https://auto.economictimes.indiatimes.com/news/auto-components/component-makers-line-up-capex-scout-for-land-parcels-as-business-booms/111224837",
+          "https://www.smallcase.com/lists/auto-ancillary-stocks",
+          "https://www.tickertape.in/stocks/collections/auto-ancillary-stocks",
+          "https://www.youtube.com/watch?v=VAghK_k0EXM"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Specialty steel forging India capacity expansion capex 2025",
+        "findings": "[1] India’s JSW Steel hikes capex by 19 percent for FY 2025-26\nURL: https://www.steelorbis.com/steel-news/latest-news/indias-jsw-steel-hikes-capex-by-19-percent-for-fy-2025-26-1401444.htm\nContent: # India’s JSW Steel hikes capex by 19 percent for FY 2025-26\n\nIndia’s JSW Limited has planned a capital expenditure of an estimated $2.6 billion in the fiscal year 2025-26, a significant portion of which would go to the expansion of its Dolvi mill in the western state of Maharashtra, company deputy managing director Jayant Acharya said in a statement on Tuesday, July 22. [...] The capex for the Dolvi mill will be used to ramp up its template capacity to 15 million mt per year from 10 million mt per year at present, with the project expected to be completed by September 2027. [...] ### India’s JSW Group plans INR 1 trillion investment in 25 million mt greenfield steel mill in Maharashtra\n\n10 Feb | Steel News\n\n### India’s JSW Steel to invest $60 million to expand coated alloy steel product capa...",
+        "sources": [
+          "https://www.steelorbis.com/steel-news/latest-news/indias-jsw-steel-hikes-capex-by-19-percent-for-fy-2025-26-1401444.htm",
+          "https://gmk.center/en/news/jsw-steel-has-planned-capital-expenditures-of-2-4-billion-for-fy2025-2026",
+          "https://infra.economictimes.indiatimes.com/news/construction/indian-steelmakers-to-begin-multi-year-capex-cycle-as-capacity-target-rises-to-300-mt-sp-global/131628852",
+          "https://infra.economictimes.indiatimes.com/news/construction/sail-boosts-capital-expenditure-by-25-for-major-expansion-ahead-of-2030-goals/123019204",
+          "https://www.fortuneindia.com/business-news/global-steelmakers-line-up-ambitious-3-lakh-crore-worth-of-projects-in-india/128655"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Pharma CDMO India greenfield expansion capex commercial production 2025",
+        "findings": "[1] The Great Reshoring: How $24.86 Billion Reshaped CDMO Manufacturing in 2025 - PharmaSource\nURL: https://pharmasource.global/content/news/cdmo-news/the-great-reshoring-how-24-86-billion-reshaped-cdmo-manufacturing-in-2025\nContent: Toshihisa “Toshi” Iida, Chairman of FUJIFILM Biotechnologies, explained their growth strategy on the PharmaSource podcast:\n\n“Current revenue scale is $1.3 billion. We anticipate it will grow to $5 billion, just in five years’ time. We’ve committed to invest about two-thirds of Fujifilm’s entire annual capex in this business.” [...] The regulatory news reflects the maturing of newly built capacity, with many facilities announced in 2022-2023 now achieving operational approval in 2025.\n\n### What 2025 Reveals\n\n2025 will be remembered as the year the CDMO industry’s geographic center of gravity decisively shifted westward. The $24.66 billion in disclosed investment, 301 partnerships consistently dominating the news cycle, and 154 facility expansions signal an ...",
+        "sources": [
+          "https://pharmasource.global/content/news/cdmo-news/the-great-reshoring-how-24-86-billion-reshaped-cdmo-manufacturing-in-2025",
+          "https://www.mordorintelligence.com/industry-reports/india-contract-manufacturing-organization-market",
+          "https://www.linkedin.com/posts/saravjit-singh-kahlon-47146a2_chemical-pharma-capex-in-mahad-2025-and-activity-7349281273376378880-84he",
+          "https://www.marketsandmarkets.com/Market-Reports/pharmaceutical-contract-manufacturing-market-201524381.html",
+          "https://intuitionlabs.ai/articles/new-drug-manufacturing-plants-2025"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Ami Organics Acutaas operating cash flow net profit FY25 FY26",
+        "findings": "[1] Acutaas Chemicals (ACUTAAS) Q1 25/26 earnings summary\nURL: https://quartr.com/events/acutaas-chemicals-limited-acutaas-q1-25-26_FR4uL6MO\nContent: Net cash and cash equivalents stood at INR 270 crore; operating cash flow was INR 94.6 crore. Basic and diluted EPS (consolidated) for Q1 FY26 was ₹5.41, up\n\n[2] Acutaas Chemicals Limited (Formerly Ami Organics) – Q4 FY26 Results – Innovacia Insights\nURL: https://innovacia.in/acutaas-chemicals-limited-formerly-ami-organics-q4-fy26-results\nContent: Skip to content\n\ninnovacia logo\n\ninnovacia logo\n\nApril 30, 2026\n\nQuarter Ended: March 2026\n\n# Acutaas Chemicals Limited (Formerly Ami Organics) – Q4 FY26 Results\n\n###### NSE\n\n###### BSE\n\n543349\n\nAcutaas delivered a sharp improvement in profitability and operating cash flows, indicating strong execution, though heavy capex and working capital absorption remain key themes.\n\n###### key financial highlights [...] Characteristics:\n\n High entry barriers\n Strong client stickiness\n Export-driven revenue...",
+        "sources": [
+          "https://quartr.com/events/acutaas-chemicals-limited-acutaas-q1-25-26_FR4uL6MO",
+          "https://innovacia.in/acutaas-chemicals-limited-formerly-ami-organics-q4-fy26-results",
+          "https://www.careratings.com/upload/CompanyFiles/PR/202512121248_Acutaas_Chemicals_Limited.pdf",
+          "https://alphastreet.com/india/acutaas-chemicals-q2-fy26-earnings-results/amp",
+          "https://www.tijorifinance.com/company/ami-organics-ltd"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Syrma SGS Technology capex operating cash flow FY25 FY26",
+        "findings": "[1] Syrma SGS Technology\nURL: https://www.icicidirect.com/mailcontent/idirect_syrmasgs_q4fy26.pdf\nContent: with Auto (~29%), Consumer (~30%) and Industrial (~24%) being key contributors, Healthcare (~5%) and balance from IT & Railways. • ODM revenue increased sharply from ₹453 crore in FY25 to ₹825 crore in FY26, contributing ~17% of revenues, supported by strong traction in MedTech and industrial products. • IT & Railways business grew 74% YoY in FY26 and 182% YoY in Q4, driven by laptop, motherboard and memory-related business. • Healthcare/MedTech business grew from ₹291 crore to ₹395 crore in [...] Premier Energies mutually terminated KSolare acquisition due to unmet conditions precedent. However, the management remains committed for evaluating alternative opportunities in the space of solar inverter and renewable energy electronics segment. Strong balance sheet position • Company reported operating cash flow of ₹290 crore+ in FY26 (~53% of operating EBITDA). It moved from net debt...",
+        "sources": [
+          "https://www.icicidirect.com/mailcontent/idirect_syrmasgs_q4fy26.pdf",
+          "https://www.plindia.com/ResReport/SYRMA-24-7-25-PL.pdf",
+          "https://www.linkedin.com/posts/financewith-saurabh-91880a314_syrmasgstech-q1earnings-financialanalysis-activity-7354206749547003904-2Yl0",
+          "https://finance.yahoo.com/news/syrma-sgs-technology-ltd-bom-010255425.html",
+          "https://syrmasgs.com/wp-content/uploads/2023/12/Syrma-SGS-Technology-Limited_Annual-Report-2022-23.pdf"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Endurance Technologies capital expenditure operating cash flow EV RD expense",
+        "findings": "[1] Endurance Technologies Ltd.: Balance Sheet, Profit & Loss and cash flow\nURL: https://www.tijorifinance.com/company/endurance-technologies-limited/financials\nContent: ✦ ✦ ✦ ✦\n\nSign In TRACKING TOOLS\n\n  Timeline Portfolio Watchlist Alerts Results\n\n  RESEARCH TOOLS\n\n  Ideas Dashboard Companies & Sectors Stock Screener Market Monitor Raw Materials Macro Indicators\n\n  What's New\n\n  Features\n\n  Plans\n\n  Contact Us\n\n  Sign In\n\n  Create an account\n\nMid   Auto Ancillary\n\n# Endurance Technologies Ltd.\n\nENDURANCE\n\n₹2738.2\n\n-0.5% (-13.8)\n\nMarket Cap\n\n₹38,418 Cr.\n\nP/E\n\n40.37\n\nEMAIL VERIFICATION REQUIRED\n\nAlerts will be sent to your verified email\n\n Verify Email [...] ## Has the share price of Endurance Tech. grown faster than its competition?\n\nEndurance Tech. has given lower returns compared to its competitors.  \nEndurance Tech. has grown at ~13.0% over the last 9yrs while peers have grown at a median rate of 20.7%\n\n## Is Endurance Tech. stock expensive?\n\nEndurance Tech. is not expensive.  \nLat...",
+        "sources": [
+          "https://www.tijorifinance.com/company/endurance-technologies-limited/financials",
+          "https://pages.stern.nyu.edu/~adamodar/podcasts/valspr21/session8slides.pdf",
+          "https://www.investopedia.com/terms/r/research-and-development-expenses.asp",
+          "https://www.sec.gov/Archives/edgar/data/845818/000119312510147073/dex993.htm",
+          "https://viewpoint.pwc.com/dt/us/en/pwc/accounting_guides/property_plant_equip/property_plant_equip_US/chapter_7_other_asse_US/73_research_and_deve_US.html"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Ami Organics competitor depreciation policy R&D capitalization",
+        "findings": "[1] AMI ORGANICS LIMITED\nURL: https://www.axiscapital.co.in/public/contents/Ami-Organics-Limited-Prospectus-1.pdf\nContent: well as increments in salary and wages. Finance costs Our finance costs in Fiscal 2020 was ₹55.87 million, which represented an increase of 17.54% from our finance costs in Fiscal 2019 of ₹47.53 million. The increase was primarily due to increase in bank borrowing for the purpose of working capital requirements in Fiscal 2020 of our Company and term loan availed for the purposes of expansion of our Sachin Facility and the R&D Facility. Depreciation and amortisation expense Our depreciation and amortisation expense in Fiscal 2020 was ₹35.18 million, which represented an increase of 35.31% over our depreciation and amortisation expense in Fiscal 2019 of ₹26.00 million. The increase was primarily due to additional capex done at existing production facility. Other expenses Our other expenses [...] the cost of employee benefit expenses reduced to 6.14% in Fiscal 2021 fr...",
+        "sources": [
+          "https://www.axiscapital.co.in/public/contents/Ami-Organics-Limited-Prospectus-1.pdf",
+          "https://www.linkedin.com/pulse/deep-dive-ami-organics-business-model-financials-risks-valuation-qhsmc",
+          "https://images.moneycontrol.com/static-mcnews/2022/01/Ami-Organics-kr-07012022.pdf",
+          "https://rsmus.com/insights/services/business-tax/faq-capitalization-and-amortization-of-r-d-costs-under-new-section-174-rules.html",
+          "https://www.youtube.com/watch?v=8wD9cNoou-E"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Syrma SGS Kaynes Technology Dixon Technologies accounting policy comparison depreciation",
+        "findings": "[1] Dixon Technologies, Kaynes Technology, Syrma SGS: How semiconductor stocks performed in 2025\nURL: https://upstox.com/news/market-news/stocks/dixon-technologies-kaynes-technology-cg-power-how-semiconductor-stocks-performed-in-2025/article-186533\nContent: | Company | YTD return\\ | 3Y returns | Market cap | H1FY26 revenue | H1FY26 net profit |\n ---  ---  --- |\n| CG Power and Industrial | ▼7.7% | +161% | ₹1.05 lakh crore | ₹5,801 crore | ₹551 crore |\n| Kaynes Technology | ▼43.5% | +495% | ₹28,033 crore | ₹1,579 crore | ₹196 crore |\n| Bharat Electronics | ▲34.2% | +300% | ₹2.87 lakh crore | ₹10,232 crore | ₹2,256 crore |\n| Dixon Technologies | ▼26.3% | +241% | ₹80,353 crore | ₹27,691 crore | ₹1,026 crore |\n| Syrma SGS | ▲23.6% | +174% | ₹14,192 crore | ₹2,090 crore | ₹116 crore |\n| SPEL Semiconductor | ▼15.9% | +165% | ₹684 crore | ₹21.08 crore | Loss of ₹0.85 crore |\n| MosChip Technologies | ▼1.3% | +151% | ₹3,876 crore | ₹283 crore | ₹23 crore |\n\n\\YTD return as on December 19 closing ...",
+        "sources": [
+          "https://upstox.com/news/market-news/stocks/dixon-technologies-kaynes-technology-cg-power-how-semiconductor-stocks-performed-in-2025/article-186533",
+          "https://www.thehindubusinessline.com/portfolio/dixon-technologies-kaynes-technology-syrma-sgs-and-amber-enterprises-is-ems-indias-big-leap-or-a-dot-com-d%C3%A9j%C3%A0-vu/article69901119.ece",
+          "https://www.livemint.com/market/stock-market-news/dixon-kaynes-tech-syrma-are-poised-for-growth-but-beware-rich-valuations-11717043352111.html",
+          "https://www.cnbctv18.com/market/dixon-tech-kaynes-syrma-sgs-amber-share-price-customs-duty-exemption-positive-reaction-benefit-19941557.htm",
+          "https://www.linkedin.com/company/syrma-technology"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Endurance Technologies R&D expenses capitalization vs expensing peer comparison",
+        "findings": "[1] [PDF] EXPANDING - Endurance Technologies\nURL: https://www.endurancegroup.com/wp-content/uploads/2025/07/annual-report-for-FY-2024-25.pdf\nContent: For the year ended 31st March, 2025 For the year ended 31st March, 2024 Repairs and maintenance: Plant and machinery 990.10 857.68 Building 69.27 84.13 General 304.89 268.60 Insurance 98.69 93.62 Rates and taxes 19.20 28.66 Travelling and conveyance 341.76 301.19 Freight 1,110.07 980.82 Advertisement 4.94 7.02 Payment to auditors (Refer note 23.01) 11.52 11.24 Directors fees and travelling expenses 37.43 38.05 Warranty claims 78.41 101.35 Expenditure on corporate social responsibility (Refer note 37) 125.00 110.10 Miscellaneous expenses 933.87 692.21 Total 15,371.88 13,492.75 Expenses capitalised (63.19) (54.16) Total 15,308.69 13,438.59 H in million Particulars For the year ended 31st March, 2025 For the year ended 31st March, 2024 As auditor Audit fee 10.02 9.38 Expenses reimbursed 0.63 [...] Repairs and maintenance: Plant and machinery...",
+        "sources": [
+          "https://www.endurancegroup.com/wp-content/uploads/2025/07/annual-report-for-FY-2024-25.pdf",
+          "https://corporatefinanceinstitute.com/resources/accounting/capitalizing-rd-expenses",
+          "https://www.wallstreetmojo.com/capitalization-vs-expensing",
+          "https://business.columbia.edu/sites/default/files-efs/imce-uploads/ADP/2023-2024/Baber%20Kang%20Lee%20Park_100123.pdf",
+          "https://redmonk.com/rstephens/2016/07/05/research-and-development-vs-capital-investments"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Syrma SGS Technology EBITDA margin projection FY25 FY26 post capex",
+        "findings": "[1] Syrma SGS Technology24Jul25\nURL: https://www.plindia.com/ResReport/SYRMA-24-7-25-PL.pdf\nContent: revenue growth of 30% with EBITDA margin of 8.5-9.0% for FY26, revenue will be mainly driven by auto/industrial segment. Syrma SGS has formed a JV with Shinhyup Electronics Co. Ltd. to set up a multi/double-layer PCB manufacturing plant with a planned capacity of 1.5–2mn sqm with planned capex of USD 91mn over 3-5years. Company received PLI benefit of Rs40-60mn in Q1FY26. We have revised our FY26/FY27E EPS estimates upward by 9.5%/12.9%, with improvement in margin mainly with segment mix change. We estimate FY25-27E revenue/EBITDA/PAT CAGR of 31.7%/31.7%/34.3%. Maintain “HOLD.” Revenues declined by 18.6%, Adj. PAT grew by 145%: Sales declined by 18.6% YoY to Rs 9.4bn (PLe: Rs 9.9bn). Auto/Industrials/Healthcare segment grew by 18.0/33.5%/14.4% YoY, whereas Consumer/IT & Railway segment [...] July 24, 2025 1 Rating: HOLD | CMP: Rs706 | TP: Rs705 Focus on high margin segment continuous Sy...",
+        "sources": [
+          "https://www.plindia.com/ResReport/SYRMA-24-7-25-PL.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_syrmasgs_q4fy26.pdf",
+          "https://www.plindia.com/ResReport/SYRMA-15-5-25-PL.pdf",
+          "https://finance.yahoo.com/news/syrma-sgs-technology-ltd-bom-010255425.html",
+          "https://images.assettype.com/bloombergquint/2024-06/86a36fab-aa1a-4596-8d72-2ef5824fb6a5/ICICI_Securities_Syrma_Company_Update.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Syrma SGS capex peak timeline Andhra Pradesh plant",
+        "findings": "[1] Syrma SGS Technology Clarifies Rs 1,595 Crore Investment in Andhra Pradesh Manufacturing Facilities\nURL: https://scanx.trade/stock-market-news/companies/syrma-sgs-technology-clarifies-rs-1-595-crore-investment-in-andhra-pradesh-manufacturing-facilities/36594461\nContent: © 2025 - 2026 Raise Securities Pvt. Ltd. All rights reserved.\n\nPart of Raise Financial Services\n\nSEBI Stock Broker Registration No: INZ000006031 | Depository Participant (CDSL) ID: IN-DP-289-2016 | SEBI Research Analyst Registration No: INH000023357 Exchange Membership No. : NSE: 90133 | BSE: 6593 | MCX: 56320\n\nRegistered Office: Unit No. 2201, 22nd Floor, Gold Medal Avenue, S.V. Road, Beside Patel Petrol Pump, Piramal Nagar, Goregaon West, Mumbai - 400104 [...] Syrma SGS  Technology Limited has issued a regulatory clarification following media reports about its significant investment plans in Andhra Pradesh. The company responded to exchange queries regarding news coverage of its Rs 1,595 crore manufacturing projec...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/companies/syrma-sgs-technology-clarifies-rs-1-595-crore-investment-in-andhra-pradesh-manufacturing-facilities/36594461",
+          "https://www.syrmasgs.com/investor-relations/wp-content/uploads/2026/04/Reply01042026.pdf",
+          "https://www.syrmasgs.com/investor-relations/wp-content/uploads/2025/12/Syrma-SGS-Begins-Groundwork-for-New-PCB-Manufacturing-Plant-in-Andhra-Pradesh.pdf",
+          "https://www.syrmasgs.com/investor-relations/wp-content/uploads/2025/09/SyrmaReg30PCBAndhraGovt.pdf",
+          "https://www.linkedin.com/posts/themachinemaker_syrma-pcb-syrmasgs-activity-7401517974752395264-s8JU"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Endurance Technologies capex cycle peak timeline EV platform",
+        "findings": "[1] Endurance Technologies Ltd. is setting up a new manufacturing facility for lithium-ion battery packs with a capex outlay of 𝐈𝐍𝐑 𝟒𝟕.𝟑 𝐜𝐫𝐨𝐫𝐞𝐬 at Taluka Maval, District 𝐏𝐮𝐧𝐞… | EVreporter | 58 comments\nURL: https://www.linkedin.com/posts/evreporter_endurance-technologies-ltd-is-setting-up-activity-7323224649343868928-kAxh\nContent: Like Reply  1 Reaction\n\nAmit Mamulkar   8mo \n\n Report this comment\n\nCongrats endurance team 👏\n\nLike Reply  1 Reaction\n\nTanuja Chakurkar   8mo \n\n Report this comment\n\nWow\n\nLike Reply  1 Reaction\n\n See more comments \n\nTo view or add a comment, sign in\n\n## More Relevant Posts\n\n EVOLVE Technologies\n\n  131 followers\n\n  + Report this post [...] # EVreporter’s Post\n\n88,907 followers\n\n Report this post\n\nEndurance Technologies Ltd. is setting up a new manufacturing facility for lithium-ion battery packs with a capex outlay of 𝐈𝐍𝐑 𝟒𝟕.𝟑 𝐜𝐫𝐨𝐫𝐞𝐬 at Taluka Maval, District 𝐏𝐮𝐧𝐞, Maharashtra. The facility will have a production capacity of nearly 𝟑𝟓,𝟎𝟎𝟎 𝐩𝐚𝐜𝐤𝐬 𝐩𝐞𝐫 𝐦𝐨𝐧𝐭𝐡. The...",
+        "sources": [
+          "https://www.linkedin.com/posts/evreporter_endurance-technologies-ltd-is-setting-up-activity-7323224649343868928-kAxh",
+          "https://www.linkedin.com/posts/et-now-live_onetnow-activity-7364347449940889600-_8d0",
+          "https://www.endurancegroup.com/wp-content/uploads/2025/07/annual-report-for-FY-2024-25.pdf",
+          "https://www.maxwellenergy.co/blog/endurance-technologies-acquires-ion-energys-bms-business-unit-for-40m",
+          "https://www.trustpilot.com/review/endurancewarranty.com"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Indian industrial manufacturing companies high R&D expensing conservative accounting",
+        "findings": "[1] Microsoft Word - V7 Report on R&D Expenditure by top 1000 listed Companies\nURL: https://iica.nic.in/Images/Fothcoming_Program-24/Research_RD_Expenditure.pdf\nContent: 95 The Indian Hotels Company Limited 0 0 2,152.42 3,704.24 - - 0 0 Tourism & Hospitality- Hotels Standalone \n\n96 PI Industries Limited 137.40 185.60 5,076.90 6,429.20 2.71 2.89 13 23 Agrochemical Standalone \n\n97 Indian Railway Catering and Tourism \n\nCorporation Limited - - 1879.48 3541.57 - - 0 0 Tourism & Hospitality- Services Standalone \n\n98 CG Power and Industrial Solutions Limited 30.33 34.43 5,159.18 6,579.63 0.59 0.52 100 100 Heavy Electrical Equipment Standalone \n\n99 Union Bank of India - - 27786 32765 - - 0 0 BFSI- Fintech & Financial Services Standalone \n\n100 Cummins India Limited 65.44 26.47 6025.56 7,612.32 1.09 0.35 5 34 IP- Compressors, Pumps & Diesel Engines Standalone \n\n101 Schaeffler India Limited 97.22 99.47 5,560.51 6,867.42 1.75 1.45 NA NA Auto Components Standalone [...] (2022-23) \n\nIndustry type BR...",
+        "sources": [
+          "https://iica.nic.in/Images/Fothcoming_Program-24/Research_RD_Expenditure.pdf",
+          "https://isid.org.in/wp-content/uploads/2025/02/WP285.pdf",
+          "https://erpublications.com/uploaded_files/download/ms-hetal-k-soni_mQzRt.pdf",
+          "https://the-ken.com/the-collection/indian-companies-slept-on-rd-for-years-some-are-finally-waking-up",
+          "https://urbanomics.substack.com/p/indias-private-sector-and-r-and-d"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Indian small cap companies completing capex cycle 2025 2026 operating cash flow positive",
+        "findings": "[1] 4 Small Cap Stocks for 2026 You Need to Watch NOW\nURL: https://www.youtube.com/watch?v=sKQbE5BC-HI\nContent: 4 Small Cap Stocks for 2026 You Need to Watch NOW\nTABD by Tarun Dokania\n102000 subscribers\n200 likes\n9254 views\n25 Jan 2026\nFinding the best Small Cap Stocks for 2026 requires looking beyond simple\nearnings growth. You need to find companies undergoing a \"Structural\nTransformation\"—pivoting from low-margin businesses to high-tech sectors like\nSemiconductors, 6G, and Nuclear Energy.\nIn this video, I break down 4 high-growth small caps that are doing exactly that. We\nanalyze a massive EPC player in the Solar/Telecom space, a Tata Group company leading India's 6G mission, an electronics manufacturer moving into\nsemiconductors, and a heavy engineering firm building India's nuclear future.\nTimestamps:\n00:00 - Transformation in Small Caps\n00:10 - Stock 1: The Solar & Telecom EPC Giant\n01:41 - Stock 2: Tata's 6G & Optical Network Powerhouse\n03:12 - Stock 3: The Semiconductor & OSAT ...",
+        "sources": [
+          "https://www.youtube.com/watch?v=sKQbE5BC-HI",
+          "https://thewaya.com/blog/newsletter_q3_2025_26.html",
+          "https://www.instagram.com/reel/DaU2WFWxA-F",
+          "https://www.robeco.com/en-int/insights/2025/09/india-the-ascent-of-small-and-mid-cap-stocks",
+          "https://www.investopedia.com/terms/c/capitalexpenditure.asp"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "Indian industrial valves companies capex cycle completion operating cash flow",
+        "findings": "[1] ATI Capex-to-Operating-Cash-Flow: 0.29 — 60% Below Median\nURL: https://www.gurufocus.com/term/capex-to-operating-cash-flow/ATI\nContent: Title: ATI Capex-to-Operating-Cash-Flow: 0.29 — 60% Below Median\n# ATI (ATI) Capex-to-Operating-Cash-Flow: 0.29 (As of Dec. 2025) — 60% Below Median. ## What is ATI Capex-to-Operating-Cash-Flow? ATI ATI +0.81% 75 Capex-to-Operating-Cash-Flow is 0.29 as of Dec. 2025, which is 60% below its 10-year median of 0.73. Hence, ATI's Capex-to-Operating-Cash-Flow for the. ATI  (NYSE:ATI) Capex-to-Operating-Cash-Flow Explanation. Capex-to-Operating-Cash-Flow ratio assesses how much of a company’s Cash Flow from Operations is being devoted to Capital Expenditure. In general, a high Capex-to-Operating-Cash-Flow ratio indicates that the company is investing more in physical assets and is focused on growth and expansion. ## ATI Capex-to-Operating-Cash-Flow Related Terms. ## ATI Capex-to-Operating-Cash-Flow Historical Data. The historical data trend for ATI's Cape...",
+        "sources": [
+          "https://www.gurufocus.com/term/capex-to-operating-cash-flow/ATI",
+          "https://www.gurufocus.com/term/capex_to_operating_cash_flow/IEX",
+          "https://www.gurufocus.com/term/capex-to-operating-cash-flow/STU:ABJA",
+          "https://www.gurufocus.com/term/capex_to_operating_cash_flow/ENS",
+          "https://www.gurufocus.com/term/capex-to-operating-cash-flow/ETN"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "Indian specialty chemicals EMS capex risks margin pressure 2025 2026",
+        "findings": "[1] Specialty chemical makers tighten capital spending as global and domestic pressures squeeze margins, ETChemicals\nURL: https://chemicals.economictimes.indiatimes.com/news/specialty-chemicals/specialty-chemical-makers-tighten-capital-spending-as-global-and-domestic-pressures-squeeze-margins/132157557\nContent: # Specialty chemical makers tighten capital spending as global and domestic pressures squeeze margins. India’s specialty chemical sector is scaling back capex as squeezed margins from weak exports, volatile input costs, and Chinese competition prompt a strategic investment rethink. India’s specialty chemical industry, once a magnet for bold capital expenditure, is reassessing its investment strategies as a mix of global headwinds and cost pressures constrict profit margins. Recent findings from Crisil Ratings reveal that manufacturers in the specialty chemicals space are set to curtail capital expenditure to approximately Rs 16,500 crore for the current fiscal year. While India’...",
+        "sources": [
+          "https://chemicals.economictimes.indiatimes.com/news/specialty-chemicals/specialty-chemical-makers-tighten-capital-spending-as-global-and-domestic-pressures-squeeze-margins/132157557",
+          "https://m.economictimes.com/wealth/invest/crude-awakening-chemical-companies-face-margin-pressure-as-oil-linked-costs-surge-amid-geopolitical-tensions/articleshow/131270921.cms",
+          "https://www.linkedin.com/posts/crisil_indias-specialty-chemicals-industry-is-at-activity-7484845890046869506-w797",
+          "https://www.specchemonline.com/news/feature-article-2026-chemical-industry-outlook-operational-resilience-strategic-discipline",
+          "https://www.pwc.in/ghost-templates/unlocking-indias-specialty-chemicals-opportunity.html"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "precision engineering OR valves OR flow control listed companies India nuclear defense hydrogen",
+        "findings": "[1] Best Precision Engineering Companies in India | Top CNC Manufacturers Review\nURL: https://www.schilthornprecision.com/blog/best-precision-engineering-companies-in-india\nContent: MTAR Technologies Ltd.: Manufactures high-precision components for nuclear, space, defense and clean energy sectors. The company supports critical engineering programs requiring tight dimensional control and adherence to strict performance standards. Its machining capabilities address complex geometries used in regulated environments. MTAR’s production systems are aligned with compliance intensive industries where reliability and traceability are mandatory.\n\n## How to Choose the Right Precision Engineering Company [...] ### Schilthorn Precision Engineering Pvt. Ltd.\n\nSchilthorn Precision Engineering, is one of India’s leading precision parts manufacturing company with advanced machining infrastructure, supporting Aerospace, HVAC, Automotive, and Industrial Equipment. Schilthorn’s manufacturing process is st...",
+        "sources": [
+          "https://www.schilthornprecision.com/blog/best-precision-engineering-companies-in-india",
+          "https://www.strategicmarketresearch.com/market-report/high-pressure-valve-market",
+          "https://processautomation.imiplc.com/industries/power/nuclear-power",
+          "https://www.instagram.com/reel/DawgLdlTH-g",
+          "https://www.craneco.com/business-segments/process-flow-technologies"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"electronic components\" OR \"semiconductor\" suppliers listed companies India tooling R&D",
+        "findings": "[1] List of Popular Electronics Components Stocks in India 2026\nURL: https://www.bajajfinserv.in/electronics-components-stocks-india\nContent: ### 1. Kaynes technology India ltd\n\nKaynes Technology India Ltd is one of the leading players in the electronics components sector, providing a wide range of products such as printed circuit boards (PCBs), and semiconductor components. The company has established itself as a key supplier to several industries, including automotive, consumer electronics, and industrial sectors. With its strong R&D capabilities and focus on innovation, Kaynes Technology has seen consistent growth in recent years. The company’s commitment to providing high-quality, cost-effective solutions has made it a preferred partner for many domestic and international clients.  \n  \nMarket Cap: Rs. 10,000 crore\n\n  \n\n### 2. Syrma SGS technology ltd [...] ### 6. Avalon technologies ltd\n\nAvalon Technologies Ltd is a key player in the Indian electronics manufacturing industry, provi...",
+        "sources": [
+          "https://www.bajajfinserv.in/electronics-components-stocks-india",
+          "https://www.linkedin.com/posts/jahagirdar-sanjeev-55a09118_the-semiconductor-industry-in-india-has-seen-activity-7221870516079349760-tUN_",
+          "https://www.india-briefing.com/news/india-emerging-semiconductor-ecosystem-key-players-34506.html",
+          "https://builtin.com/articles/semiconductor-companies-in-india",
+          "https://www.scribd.com/document/885534719/List-of-Semiconductor-Companies-in-India-2025-An"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"Syrma SGS\" vs \"Kaynes Technology\" vs \"Dixon Technologies\" R&D expensing accounting policy",
+        "findings": "[1] Kaynes Tech, Syrma Top Jefferies Picks Over Dixon Tech In EMS Space On PLI Component Push\nURL: https://www.ndtvprofit.com/markets/kaynes-tech-syrma-top-jefferies-picks-over-dixon-tech-as-pli-shifts-ems-focus-to-components-11736559\nContent: Kaynes Technology India Ltd. and Syrma SGS Technology Ltd. are Jefferies' preferred picks in India's electronics manufacturing services space as the brokerage expects the next phase of the government's production-linked incentive, or PLI, programme to benefit component manufacturers more than assembly-led players. It retained a Hold rating on Dixon Technologies (India) Ltd.\n\nThe brokerage said its review of the PLI programme showed the government's focus has shifted towards backward integration through the Electronics Components Manufacturing Scheme, or ECMS. It expects the scheme to support domestic production of high-value components, creating stronger growth opportunities for companies with a larger presence in electronics components. [...] Je...",
+        "sources": [
+          "https://www.ndtvprofit.com/markets/kaynes-tech-syrma-top-jefferies-picks-over-dixon-tech-as-pli-shifts-ems-focus-to-components-11736559",
+          "https://images.assettype.com/bloombergquint/2022-11/26392e09-0a82-4b42-9543-c1981e580cf7/ICICI_Securities_Syrma_SGS_Technology_Initiating_Coverage_Note.pdf",
+          "https://www.syrmasgs.com/investor-relations/wp-content/uploads/2024/08/SYRMA-SGS_AR-2023-24-2.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_syrmasgs_jul25.pdf",
+          "https://syrmasgs.com/wp-content/uploads/2022/08/16.51-Syrma-SGS_Prospectus.pdf"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering capex peak timeline commissioning FY25 FY26",
+        "findings": "[1] LNPR Capital on X: \"🚀 Azad Engineering is powering ahead with massive capex expansion, new aerospace & defense contracts (Safran, MHI ₹1,387 cr), 25–30% growth guidance, and key role in India’s first jet engine (DRDO GTR) — FY27 to mark nonlinear growth! ✈️⚙️ #Aerospace #Defense #makeinindia11 → Incorporated in 1983, Azad Engineering Limited manufactures aerospace components and turbines for OEMs across aerospace, defense, energy, and oil & gas sectors. → The company is aggressively advancing its capex plans to support long-term growth and capacity expansion. → Azad recently inaugurated a new lean manufacturing facility dedicated to its client, Seamless Energies. → This state-of-the-art facility supports complex strategic stationary airfoils for power generation and industrial applications. → With this, the company now operates three dedicated plants at the new site. → The scale of expansion is significant, covering nearly 500,000–600,000 sq. ft., about 10x the size of its existing...",
+        "sources": [
+          "https://x.com/LnprCapital/status/1985242425627951234",
+          "https://exencialrp.substack.com/p/azad-engineering-ltd",
+          "https://azad.in/wp-content/uploads/2025/09/Annual-Report.pdf",
+          "https://www.way2wealth.com/Reports/RR300320261c4c6.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_azadengineering_q3fy26.pdf"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "Kaynes Technology semiconductor OSAT plant commissioning timeline capex",
+        "findings": "[1] Kaynes Technology | Hareesh Jampani\nURL: https://hareeshjampani.wordpress.com/2024/12/28/kaynes-technology\nContent: 👉 Kaynes is building core infra for the next decade or decades, backed by demand & supported by much needed subsidies. OSAT facility in Sanand (₹3,400 Cr) is being built for chip packaging and will go live with customer trials by Q3FY26, with commercial revenues expected in Q4FY26\n\n 👉 HDI Printed Circuit Board (PCB) Manufacturing\n  + The HDI PCB factory (₹1,400 Cr) is expected to be validated by FY27, giving Kaynes a position in deep-tech printed circuit boards.\n\n Project on track with revenue expected to begin by FY2026. || Phase one capex expected to be INR 730 Cr. Capex will be increased further.\n  + Projected revenue of INR 1000-1500Cr BY 2030.\n\n All this OSAT and PCB capex is under the central semiconductor PLI scheme, with subsidy support covering 65–70% of project cost. [...] > Over all Capex plans and status as of Q2FY26\n\n Big multi-year capex plan: ₹8,500 cr....",
+        "sources": [
+          "https://hareeshjampani.wordpress.com/2024/12/28/kaynes-technology",
+          "https://www.crnasia.com/india/news/2026/kaynes-semicon-starts-production-at-sanand-osat-facility-marking-india-s-second-chip-unit",
+          "https://www.bisinfotech.com/kaynes-sanand-osat-facility-launching-by-december-2025",
+          "https://www.linkedin.com/posts/suraksha-p-91a2aa24_kaynes-sanand-osat-set-to-go-live-by-december-activity-7359093198167707650-UZ6Q",
+          "https://www.sahi.com/news/kaynes-technology-secures-finmin-nod-for-3-300-crore-semiconductor-plant-under-ism-scheme-5226-PE1_COR"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "\"Syrma SGS\" \"Kaynes Technology\" R&D capitalization policy depreciation rates",
+        "findings": "[1] [PDF] Kaynes Technology - Execution superiority in a favourable ecosystem\nURL: https://www.hdfcsec.com/hsl.docs/Kaynes%20Tech%20-%20IC%20--%20HSIE-202311281514256154123.pdf\nContent: 750bps to a healthy 11% in FY23. Indexing of cost structure Particulars FY19 FY20 FY21 FY22 FY23 CAGR (%) Revenue 100 100 100 100 100 33% RM 66 66 68 69 69 34% Gross Profit 34 34 32 31 31 30% Employee Cost 12 11 11 9 7 15% Power & fuel 1 1 1 1 0 15% Repairs 1 1 1 1 0 8% Travelling and conveyance 1 1 0 0 0 9% Legal and professional fee 0 0 0 0 0 26% Consumption of stores & spares 2 3 2 2 3 50% R&D expense 0 - 0 0 0 70% Contract wages 2 3 2 2 1 21% Others 5 3 4 3 2 13% Total expenses 90 89 90 87 85 31% EBITDA 10 11 10 13 15 48% Depreciation 1 2 2 2 2 38% EBIT 8 9 7 11 13 50% Other Income 1 1 1 1 1 48% Interest 5 6 6 4 3 17% PBT 4 4 3 8 11 75% Tax 1 1 0 2 3 68% PAT 3 3 2 6 8 77% Margin trend (%) GPM (%) 34% 34% 32% 31% 31% EBITDA margin (%) 10% 11% 10% 13% 15% EBIT margin (%) 8% 9% 7% 11% [...] cost at % o...",
+        "sources": [
+          "https://www.hdfcsec.com/hsl.docs/Kaynes%20Tech%20-%20IC%20--%20HSIE-202311281514256154123.pdf",
+          "https://www.youtube.com/watch?v=nqLDvfiGHEg",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7332228",
+          "https://www.facebook.com/NDTVProfit/posts/as-kaynes-tech-falls-after-q3-earnings-is-syrma-sgs-a-better-optionread-more/935091062381070",
+          "https://www.livemint.com/market/stock-market-news/syrma-sgs-to-kaynes-tech-ems-stocks-jump-up-to-7-5-as-centre-waives-customs-duty-on-key-electronic-components-11783587314816.html"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "\"MTAR Technologies\" order book execution timeline nuclear space FY25",
+        "findings": "[1] MTAR Technologies\nURL: https://images.assettype.com/bloombergquint/2024-08-16/5sxsqh11/Motilal_Oswal_MTAR_Technologies_Q1_FY25_results_review.pdf\nContent: to 8% growth estimated for the US electrical industry.  The company is back on track with Bloom and hoping to do much better going ahead with increasing its wallet share. MTAR Technologies 14 August 2024 6 Clean Energy - Nuclear  The company was building systems in 1Q to be dispatched in subsequent quarter, leading to marginal sales of INR13m.  The management expects ~INR6b worth of orders from KAIGA 5 & 6 reactor to be received mostly in 2HFY25.  The closing order book as of FY25 will be INR7b, including refurbishment orders for Tarapur and other reactors. Space and Aerospace  The company expects 3x revenue growth in FY25 vs. FY24, backed by strong client addition and order flows.  The company expects to execute INR120m of ISRO orders and INR250m of MNC orders in 2Q, as the company [...] by higher revenue and operating lev...",
+        "sources": [
+          "https://images.assettype.com/bloombergquint/2024-08-16/5sxsqh11/Motilal_Oswal_MTAR_Technologies_Q1_FY25_results_review.pdf",
+          "https://mtar.in/wp-content/uploads/2025/03/Orient-MTAR-Aug14-2024-21-Aug.pdf",
+          "https://blog.sid.business/p/q1fy25-update-mtar-tech-hal-and-paras",
+          "https://karanshah137.substack.com/p/mtar-technologies-the-order-book",
+          "https://mtar.in/wp-content/uploads/2025/08/Investor-Presentation-Q4-FY25.pdf"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "MTAR Technologies unbilled revenue debtor days inventory trend FY21 to FY25",
+        "findings": "[1] MTAR Technologies\nURL: https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/BrokerRecommendation/MTARTECH-20260130-MOSL-RU-PG012.pdf\nContent: 15.5 17.9 9.7 8.1 12.2 17.8 21.9 Working Capital Ratios Fixed Asset Turnover (x) 0.9 1.1 1.1 1.2 1.5 1.3 1.2 1.3 1.7 2.2 Asset Turnover (x) 0.7 0.8 0.5 0.5 0.7 0.7 0.7 0.8 1.0 1.2 Inventory (Days) 82 129 152 193 246 218 187 190 180 170 Debtor (Days) 100 105 114 154 133 92 113 110 90 90 Creditor (Days) 12 52 55 65 139 45 57 60 60 60 Leverage Ratio (x) Current Ratio 3.3 2.1 5.1 4.4 2.4 5.0 3.2 3.2 3.0 2.9 Interest Cover Ratio 9.5 9.6 10.1 12.0 9.3 4.0 4.0 6.1 9.2 14.5 Net Debt/Equity 0.1 0.0 -0.4 -0.1 0.1 0.2 0.2 0.3 0.3 0.2 Consolidated - Cash Flow Statement (INR m) Y/E March FY19 FY20 FY21 FY22 FY23 FY24 FY25 FY26E FY27E FY28E OP/(Loss) before Tax 416 455 648 822 1,402 730 716 1,391 2,578 3,974 Depreciation 112 121 126 143 187 232 322 358 397 440 Interest & Finance Charges 38 38 57 66 146 [...] 6,982 7,993 9,922 12,896 Net Worth 2,35...",
+        "sources": [
+          "https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/BrokerRecommendation/MTARTECH-20260130-MOSL-RU-PG012.pdf",
+          "https://mtar.in/wp-content/uploads/2025/09/Annual-Report-FY-2025-26-Aug-2025-11-Sept.pdf",
+          "https://mtar.in/wp-content/uploads/2025/05/Press-Release-Q4-FY25.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/bd67d128-0d8a-444b-80f7-7a1c27893136.pdf",
+          "https://mtar.in/financial-information"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Kaynes Technology cash flow from operations vs PAT reconciliation historical",
+        "findings": "[1] Kaynes Technology India (KAYNES IN)\nURL: https://plindia.com/ResReport/KAYNES-14-5-26-PL.pdf\nContent: -22.1 1,193 62.3 5,741 4,109 39.7 Margin (%) 15.6 17.1 -1.46 15.8 -0.25 14.8 15.8 15.1 Depreciation 544 169 221.3 297 83.5 204 166.7 1,071 447 139.3 EBIT 1,393 1,509 -7.7 2,191 -36.4 989 40.8 4,670 3,662 27.5 Other income 419 205 104.5 200 109.0 448 -6.6 1,568 1,070 46.6 Interest 409 295 38.7 348 17.3 249 64.4 1,169 1,013 15.4 PBT 1,403 1,419 -1.2 2,043 -31.3 1,189 18.0 5,069 3,718 36.3 Total Taxes 490 257 90.5 518 -5.4 397 23.5 1,404 781 79.7 ETR (%) 34.9 18.1 25.3 33.4 27.7 21.0 Adj. PAT 913 1,162 -21.5 1,525 -40.2 792 15.3 3,665 2,937 24.8 Exceptional Items - - (25) (26) - Reported PAT 912 1,162 (21.5) 1,525 (40.2) 766 19.0 3,639 2,937 23.9 Source: Company, PL Exhibit 2 : Segmental breakup: Automotive & Industrials contributed ~78% to the Topline in Q4FY26 Y/e March (INR mn) Q4FY26 [...] FY27E FY28E Net Revenues 27,218 36,264 49,353 70,080 YoY gr. (%) 50.8 33.2 36.1 42.0 Cost of...",
+        "sources": [
+          "https://plindia.com/ResReport/KAYNES-14-5-26-PL.pdf",
+          "https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/BrokerRecommendation/20251210063338_Kaynes-Technology-India-10122025-prabhu.pdf",
+          "https://www.icra.in/Rating/GetRationalReportFilePdf?Id=139599",
+          "https://www.kaynestechnology.co.in/doc/company-financials/Financial%20Statement-%20FY%202024-25%20(Standalone).pdf",
+          "https://www.kaynestechnology.co.in/doc/company-financials/KTIL%20SFS%20FY2023-24.pdf"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Azad Engineering capitalized R&D vs expensed R&D under Ind AS 38",
+        "findings": "[1] R&D Capitalisation Under IFRS: IAS 38 (Guide) | Opagio\nURL: https://opag.io/insights/rd-capitalisation-ifrs-ias-38-guide\nContent: ### Phase 3 — Development (months 4–11, £1.18m)\n\n| Cost category | Total | Treatment | Authority |\n ---  --- |\n| Engineering labour (loaded) | £820k | Capitalise | IAS 38 §66 |\n| Externally contracted ML specialists | £210k | Capitalise | IAS 38 §66 |\n| Cloud compute and tooling (project-attributable) | £95k | Capitalise | IAS 38 §66 |\n| Project-management overhead (directly attributable portion) | £55k | Capitalise | IAS 38 §66 |\n| General CTO-office overhead | £25k | Expense | IAS 38 §67 |\n| Training (pre-launch) | £18k | Expense | IAS 38 §67 |\n| Sales prep and marketing | £62k | Expense | IAS 38 §67 |\n\nOf the £1.18m gross, £1.18m × (820+210+95+55)/(820+210+95+55+25+18+62) = £1.08m capitalised; £105k expensed.\n\n### Phase 4 — Testing and pre-launch (month 12, £210k) [...] ## The Binary Distinction at the Heart of IAS 38\n\nUnder IAS 38, every pound of res...",
+        "sources": [
+          "https://opag.io/insights/rd-capitalisation-ifrs-ias-38-guide",
+          "https://www.datastudios.org/post/accounting-for-research-and-development-costs-capitalization-vs-expense",
+          "https://corporatefinanceinstitute.com/resources/accounting/capitalizing-rd-expenses",
+          "https://kpmg.com/us/en/articles/2025/rd-costs-ifrs-accounting-standards-us-gaap.html",
+          "https://www.accaglobal.com/us/en/student/exam-support-resources/fundamentals-exams-study-resources/f7/technical-articles/rd.html"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Azad Engineering financial results order book 2024 2025",
+        "findings": "[1] [PDF] D*-- AZAD ENGINEERING LIMITED - BSE\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/68cf46ed-84f7-4b8d-8917-7c2f9a5cdcb7.pdf\nContent: 10 Annual Report FY 2024-25 Azad Engineering Limited Strong Order Wins Bolster Visibility Azad closed FY25 with a robust order book which includes long-term contracts exceeding ₹60,000 million, providing strong visibility into future revenues and underlining its growing embeddedness in global supply chains. During the year, the company secured several significant long-term agreements and contracts across its core verticals: GE Vernova Two multi-year agreements totaling USD 165.5 Million, covering advanced gas, nuclear, and industrial turbine components.\nSiemens Energy Multiple contracts valued at € 90.1 million for combustion commodities, cold blades, and critical rotating parts.\nMitsubishi Heavy Industries A five-year LTCPA worth USD 83 Million for turbine airfoils. [...] Growth Metrics & Performance Snapshot Product and Process Ca...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/68cf46ed-84f7-4b8d-8917-7c2f9a5cdcb7.pdf",
+          "https://azad.in/wp-content/uploads/2025/09/Annual-Report.pdf",
+          "https://www.indmoney.com/stocks/azad-engineering-ltd-share-price/results",
+          "https://www.moneylife.in/article/azad-engineering-profit-jumps-75-percentage-rs6000-crore-orderbook-fuels-aggressive-expansion/77977.html",
+          "https://azad.in/quarterly-financial-results",
+          "https://www.youtube.com/watch?v=LXQXY-SfNMA",
+          "https://azad.in/annual-report"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Kaynes Technology financial results semiconductor OSAT 2024 2025",
+        "findings": "[1] Annual Report for FY 2024-25\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/d52aa183-1714-43c2-86fa-26c06bec250a.pdf\nContent: “Kaynes’ upcoming OSAT facility in Sanand is designed to handle 6.3 Mn chips per day, making it one of India’s most ambitious backend semiconductor projects under the PLI scheme.” Through its greenfield OSAT facility in Sanand, Kaynes is bridging a key ecosystem gap, becoming the only Indian player offering an integrated platform spanning EMS, bareboard PCB, and OSAT. This strategic expansion not only advances the Make in India vision but also strengthens the nation’s semiconductor self-reliance in a globally constrained market. [...] Our improved working capital management also contributed to this performance, helping reduce financing costs and increase cash efficiency. These outcomes reaffirm our ability to execute financially sound growth even as we diversify our portfolio and scale up investments.\nCapital Allocation Strategy During FY 2024–2...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d52aa183-1714-43c2-86fa-26c06bec250a.pdf",
+          "https://www.way2wealth.com/Reports/RR11032025011cd.pdf",
+          "https://hareeshjampani.wordpress.com/2024/12/28/kaynes-technology",
+          "https://www.icicidirect.com/mailcontent/idirect_kaynestechnology_convictionidea_oct25.pdf",
+          "https://www.kaynestechnology.co.in/investors.html",
+          "https://www.screener.in/company/KAYNES/consolidated",
+          "https://www.stockscans.in/company/NSE:KAYNES"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Azad Engineering depreciation policy vs peers MTAR Ind AS 38",
+        "findings": "[1] [PDF] IPO Note - AZAD ENGINEERING LIMITED - GEPL Capital\nURL: https://geplcapital.com/ipo/65828162e1010.1703051618.Azad-Engereening-Ltd_Iponote.pdf\nContent: customers by entering into new component lines.  Augment manufacturing capabilities, including by way of inorganic acquisitions, to better serve their customers and to build scale, while delivering state of the art execution  Strengthening core capabilities across their focus industries.  Focused expansion of its product portfolio to become a men’s lifestyle brand.  Further reduce operating costs, improve operating efficiencies and deploy new technologies. Financial Highlights Valuations and Recommendation:  Based on annualized FY24 earnings to post-IPO paid-up equity capital of the company, The issue is priced at a P/E of 57.59 . Thus the issue appears reasonably priced compared to peers.  zad Engineering (AEL) stands as a prominent player within its sector, having cultivated [...] | Equity | India 3 Objective of IPO  F...",
+        "sources": [
+          "https://geplcapital.com/ipo/65828162e1010.1703051618.Azad-Engereening-Ltd_Iponote.pdf",
+          "https://www.nexdigm.com/insights_post/ind-as-38-intangible-assets",
+          "https://ca2013.com/indian-accounting-standard-ind-38",
+          "https://mtar.in/wp-content/uploads/2025/03/MTAR-Annual-Report-FY-2020-21.pdf",
+          "https://live.icai.org/bos/vcc/pdf/17032022_CA__Alok_Garg_Ind_AS_38_Intangible_Assets_1647842763.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Kaynes Technology Sanand capex timeline peak FY25 FY26 FY27",
+        "findings": "[1] Kaynes Technology | Hareesh Jampani\nURL: https://hareeshjampani.wordpress.com/2024/12/28/kaynes-technology\nContent: 👉 Kaynes is building core infra for the next decade or decades, backed by demand & supported by much needed subsidies. OSAT facility in Sanand (₹3,400 Cr) is being built for chip packaging and will go live with customer trials by Q3FY26, with commercial revenues expected in Q4FY26\n\n 👉 HDI Printed Circuit Board (PCB) Manufacturing\n  + The HDI PCB factory (₹1,400 Cr) is expected to be validated by FY27, giving Kaynes a position in deep-tech printed circuit boards.\n\n Project on track with revenue expected to begin by FY2026. || Phase one capex expected to be INR 730 Cr. Capex will be increased further.\n  + Projected revenue of INR 1000-1500Cr BY 2030.\n\n All this OSAT and PCB capex is under the central semiconductor PLI scheme, with subsidy support covering 65–70% of project cost. [...] > Over all Capex plans and status as of Q2FY26\n\n Big multi-year capex plan: ₹8,500 cr....",
+        "sources": [
+          "https://hareeshjampani.wordpress.com/2024/12/28/kaynes-technology",
+          "https://www.moneymuscle.in/p/kaynes-technology-q1-fy26-results",
+          "https://bsmedia.business-standard.com/_media/bs/data/market-reports/equity-brokertips/2025-11/17641480780.69371900.pdf",
+          "https://www.multibagg.ai/deep-dive/blogs/91423-kaynes-growth-q3fy26_KAYNES_Q3_FY26_MBEQU345",
+          "https://www.multibagg.ai/market-pulse/articles/kaynes-tech-fy27-growth-margin-cmp5ed6og00muqv0jh0zt6hbj"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering Kaynes Technology MTAR CFO PAT reconciliation FY24 FY25",
+        "findings": "[1] KAYNES TECHNOLOGY 2024-25 Annual Report Analysis\nURL: https://www.equitymaster.com/research-it/annual-results-analysis/KAYN/KAYNES-TECHNOLOGY-2024-25-Annual-Report-Analysis/12954\nContent: The cash flow statement of KAYNES TECHNOLOGY reveals:\n\n Cash flow from operations decreased in FY25 and stood at Rs -823 m as compared to Rs 877 m in FY24.\n Cash flow from investments increased in FY25 and stood at Rs -3,547 m as compared to Rs -15,228 m in FY24.\n Cash flow from financial activity decreased in FY25 and stood at Rs 4,650 m as compared to Rs 14,286 m in FY24.\n\nHere's the cash flow statement of KAYNES TECHNOLOGY for the past 5 years.\n\n| (Rs m) | FY21 | FY22 | FY23 | FY24 | FY25 |\n ---  ---  --- |\n| From Operations | 277 | 211 | -416 | 877 | -823 |\n| From Investments | -241 | -445 | -4,937 | -15,228 | -3,547 |\n| From Financial Activity | -13 | 272 | 5,543 | 14,286 | 4,650 |\n| Net Cashflow | 23 | 38 | 191 | -65 | 280 | [...] ### KAYNES TECHNOLOGY Cash Flow Statement Analysis\n\n KAYNES T...",
+        "sources": [
+          "https://www.equitymaster.com/research-it/annual-results-analysis/KAYN/KAYNES-TECHNOLOGY-2024-25-Annual-Report-Analysis/12954",
+          "https://www.kaynestechnology.co.in/doc/Stock-Exchange-Disclosures/Press%20release%20Q4%20FY%202024-25.pdf",
+          "https://alphastreet.com/india/kaynes-technology-india-ltd-q3fy25-47-rise-in-profits",
+          "https://www.outlookbusiness.com/markets/kaynes-tech-shares-rally-after-posting-stellar-q4-earnings-and-robust-growth-in-orderbook",
+          "https://www.kotakneo.com/financial-results/kaynes-technology-india-share-price-q4fy2025-26-results"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Kaynes Technology consensus earnings expectations vs OSAT margin expansion",
+        "findings": "[1] Kaynes Technology - Conviction Idea\nURL: https://www.icicidirect.com/mailcontent/idirect_kaynestechnology_convictionidea_oct25.pdf\nContent: mix: Kaynes consistently earns industry leading gross margin of 30%+ (41%+ in Q1FY26) as it focuses on select high margin segments like industrial, automotive, railways, Aerospace & defence, medical, etc. Similarly, Kaynes earns EBITDA margin of 15%+ and is slated to increase further (16.8% in Q1FY26) owing to operating leverage and increasing proportion of high margin verticals including industrials, railways and aerospace. Over medium term, PCB manufacturing and OSAT are expected to be further margin accretive. Rating and Target Price: • Kaynes is making aggressive investments in India EMS and chip manufacturing space. Government support measures in various forms including capital subsidy, PLI incentives, anti-dumping duty, and its vision to increase India’s domestic manufacturing makes [...] (AOS). d) Financial details • Revenue from OSAT bu...",
+        "sources": [
+          "https://www.icicidirect.com/mailcontent/idirect_kaynestechnology_convictionidea_oct25.pdf",
+          "https://www.cnbctv18.com/market/earnings/kaynes-technology-targets-1-billion-revenue-by-early-fy28-osat-business-set-to-cross-rs-1000-crore-in-fy27-q2-earnings-results-boardroom-19765085.htm/amp",
+          "https://www.youtube.com/watch?v=pWjRgFXGW-k",
+          "https://scanx.trade/stock-market-news/earnings/kaynes-technology-reports-strong-q2-fy26-growth-advances-in-osat-and-pcb-manufacturing/24152859",
+          "https://www.youtube.com/watch?v=IhbyvTAGB3c"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering promoter shareholding pledging corporate governance",
+        "findings": "[1] AZAD ENGINEERING LIMITED\nURL: https://www.icicisecurities.com/Upload/ArticleAttachments/Azad%20Engineering%20Limited%20-%20RHP.pdf\nContent: of operations, financial condition, cash flows and future prospects. 19. Our Promoter will continue to retain significant shareholding in our Company after the Offer, which will allow it to exercise control over us. After the completion of the Offer, our Promoter will hold [●]% of our Equity Shares. Accordingly, post completion of the Offer, our Promoter is expected to retain majority shareholding in our Company will continue to exercise control over our business and all matters requiring Shareholders’ approval, including the composition of our Board of Directors, the adoption of amendments to our charter documents, the approval of mergers, strategic acquisitions or joint ventures or the sales of substantially all of our assets, and the policies for dividends, lending, investments and [...] our Company” on page 80. (2) Transfers made by way of ...",
+        "sources": [
+          "https://www.icicisecurities.com/Upload/ArticleAttachments/Azad%20Engineering%20Limited%20-%20RHP.pdf",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/68cf46ed-84f7-4b8d-8917-7c2f9a5cdcb7.pdf",
+          "https://trendlyne.com/equity/share-holding/1840438/AZAD/latest/azad-engineering-ltd",
+          "https://www.tijorifinance.com/company/azad-engineering-ltd/shareholding",
+          "https://www.angelone.in/stocks/azad-engineering-ltd/shareholding"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Azad Engineering depreciation capex FY25 FY26 investor presentation",
+        "findings": "[1] Investor Presentation.\nURL: https://www.bseindia.com/xml-data/corpfiling/AttachHis/0c506fb7-1560-43d9-80fb-9e3b58690301.pdf\nContent: ▪Record quarterly and annual performance across all segments ▪Aerospace & Defence has surpassed a mark of Rs. 1,000 Mn first time in Azad’s history ▪Depreciation has increased over the period because of capacity additions ▪Finance cost has increased due to additional term loans and working capital loans availed to support business growth ▪Other income was higher on account of net gain on foreign currency transactions and translations Standalone Profit & Loss Account 10 Particulars (Rs. Mn) Q4FY26 Q4FY25 YoY Q3FY26 QoQ FY26 FY25 YoY Revenue from Operations 1,573.9 1,245.2 26.4% 1,558.0 1.0% 5,903.8 4,529.3 30.3% Consumption 98.4 156.5 132.0 570.4 627.2 Employee expenses 371.0 245.7 330.4 1,310.2 909.9 Other Expenses 526.8 388.6 479.9 1,828.1 1,346.4 Non - Recurring Expenses 0.0 0.0 14.87 [...] at the beginning of the period year 403.8 281.9 Cash and ca...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/0c506fb7-1560-43d9-80fb-9e3b58690301.pdf",
+          "https://azad.in/wp-content/uploads/2025/11/Investor-Presentation.pdf",
+          "https://exencialrp.substack.com/p/azad-engineering-ltd",
+          "https://azad.in/wp-content/uploads/2026/02/investorpresentation-2526.pdf",
+          "https://www.icicidirect.com/mailcontent/idirect_azadengineering_q3fy26.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "MTAR Technologies CFO PAT operating cash flow FY24 FY25",
+        "findings": "[1] MTAR TECHNOLOGIES 2024-25 Annual Report Analysis\nURL: https://www.equitymaster.com/research-it/annual-results-analysis/MTAR/MTAR-TECHNOLOGIES-2024-25-Annual-Report-Analysis/13100\nContent: ### MTAR TECHNOLOGIES Cash Flow Statement Analysis\n\n MTAR TECHNOLOGIES's cash flow from operating activities (CFO) during FY25 stood at Rs 1 billion, an improvement of 77.4% on a YoY basis.\n Cash flow from investing activities (CFI) during FY25 stood at Rs -1 billion, an improvement of 86.9% on a YoY basis.\n Cash flow from financial activities (CFF) during FY25 stood at Rs -351 million on a YoY basis.\n Overall, net cash flows for the company during FY25 stood at Rs -374 million from the Rs 270 million net cash flows seen during FY24.\n\n#### MTAR TECHNOLOGIES Cash Flow Statement 2024-25 [...] The cash flow statement is the financial statement that presents the cash inflows and outflows of a company during a given period of time.\n\nThis statement is one of the most useful tools for judging a company's...",
+        "sources": [
+          "https://www.equitymaster.com/research-it/annual-results-analysis/MTAR/MTAR-TECHNOLOGIES-2024-25-Annual-Report-Analysis/13100",
+          "https://mtar.in/wp-content/uploads/2025/09/Annual-Report-FY-2025-26-Aug-2025-11-Sept.pdf",
+          "https://mtar.in/wp-content/uploads/2025/03/Investor-Presentation-13-08-2024.pdf",
+          "https://stockdiscovery.s3.amazonaws.com/india/company/42101/8652/IP-Nov25.pdf",
+          "https://images.assettype.com/bloombergquint/2024-05/0ea871d9-58d7-42ce-96a8-61ad5a820c1d/Motilal_Oswal_MTar_Tech_Q4FY24_Results_Review.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "Kaynes Technology OSAT margin guidance normalized FY26 FY27",
+        "findings": "[1] Kaynes Tech eyes 30% FY27 growth, 17% margin by FY27\nURL: https://www.multibagg.ai/market-pulse/articles/kaynes-tech-fy27-growth-margin-cmp5ed6og00muqv0jh0zt6hbj\nContent: ## Why the FY27 guide will be judged on cash conversion\n\nKaynes’ FY27 guidance of 30% revenue growth and ~17% EBITDA margin sets a clear operational bar, but the market’s immediate attention is on execution and cash conversion. The FY26 operating cash flow was negative, and receivables and inventories expanded sharply, both of which can dilute the benefits of revenue growth.\n\nThe ramp-up of the Sanand OSAT facility and the upcoming PCB Unit 1 start in July 2026 are critical milestones because they can influence the revenue mix, depreciation load, and working capital needs. Brokerages have also indicated they want clearer evidence of stable execution and guidance delivery.\n\n## Conclusion [...] This guidance comes after FY26 delivered an EBITDA margin of 15.8% on a consolidated basis, while Q4 margins were lower at ...",
+        "sources": [
+          "https://www.multibagg.ai/market-pulse/articles/kaynes-tech-fy27-growth-margin-cmp5ed6og00muqv0jh0zt6hbj",
+          "https://www.moneymuscle.in/p/kaynes-technology-q1-fy26-results",
+          "https://www.icicidirect.com/mailcontent/idirect_kaynestech_q4fy26.pdf",
+          "https://www.youtube.com/watch?v=IhbyvTAGB3c",
+          "https://scanx.trade/stock-market-news/earnings/kaynes-technology-reports-strong-q2-fy26-growth-advances-in-osat-and-pcb-manufacturing/24152859"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "Azad Engineering accounting policy depreciation useful life peers Craftsman Dynamatic",
+        "findings": "[1] Appendix B: Useful Life and Depreciation Policy\nURL: https://www.dartmouth.edu/finance/documents/financial_management_tab_documents/ppe_appendix_b_useful_life_and_depreciation.pdf\nContent: the current fiscal year regardless of the month placed in service. Assets purchased or in use after 12/31 do not begin depreciation until the following fiscal year. Note: Depreciation does not change how a department’s expense is recorded for the purchase of capital assets. The expense is recorded when the invoice is processed by Accounts Payable, or the manual fixed asset journal entry is processed by the Financial Reporting – Financial Analyst responsible for fixed assets. Schedule of Useful lives Capital Moveable Equipment ($25,000 and greater) Computers - Three (3) Years Furniture - Ten (10) Years Software and Technology - Five (5) Years (servers) Vehicles - Five (5) Years Other Equipment - Seven (7) Years (anything not in a specific category listed above) Non-Capital Moveable [...] in a spec...",
+        "sources": [
+          "https://www.dartmouth.edu/finance/documents/financial_management_tab_documents/ppe_appendix_b_useful_life_and_depreciation.pdf",
+          "https://www.ncosc.gov/state-agency-resources/statewide-policy-directory/10205-statewide-accounting-policy-depreciation",
+          "https://deepdivecaps.substack.com/p/azad-engineering-indias-precision",
+          "https://www.instead.com/resources/blog/asset-depreciation-methods-comparison",
+          "https://www.linkedin.com/company/azad-technology-partners"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "Syrma SGS capex CFO PAT operating cash flow FY25 FY26",
+        "findings": "[1] Dhawal Doshi 🇮🇳 on X: \"Syrma SGS Technology Q4FY26 Concall Analysis 🔷FY26 Performance vs Management's Starting-Year Targets Management began FY26 with four key targets: 🔹Revenue → Target of 30-35% → Achieved - 27% reported; ~38% ex-consumer 🔹EBITDA → Target Rs. 400+ CR → Achieved Rs. 545 CR 🔹Exports → Target Rs. 1,100 CR → Achieved Rs. 1,200+ CR 🔹Cash Flow → Positive → Rs. 290 CR + OCF 🔹Working Capital → Improve from 69 → 63 days Management repeatedly highlighted that FY26 exceeded almost every target they had set at the beginning of the year. EBITDA came in ~36% ahead of original guidance while exports crossed guidance by over ₹100 Cr. Operating cash flow reached 53% of EBITDA despite strong growth. Management emphasized that the growth was not driven by low-margin consumer electronics. Ex-consumer: Revenue growth = 38% EBITDA growth = 68% PAT growth = 87% Export growth = 41% 👉This suggests the company's strategy of shifting toward higher-value EMS/ODM verticals is working. 🔷Busin...",
+        "sources": [
+          "https://x.com/DhawalDoshi5/status/2068564096430293304",
+          "https://www.syrmasgs.com/investor-relations/wp-content/uploads/2026/05/OutcomeQ4.pdf",
+          "https://plindia.com/ResReport/SYRMA-30-1-26-PL.pdf",
+          "https://www.alphaspread.com/security/nse/syrma/investor-relations/earnings-call/q3-2026",
+          "https://www.venturasecurities.com/news/stocks/syrma-sgs-technology-share-price-jumps-over-10-after-posting-blockbuster-q3-fy26-results"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "\"Azad Engineering\" \"CFO\" \"PAT\" FY24 FY25 historical cash flow",
+        "findings": "[1] Precision Powers Progress\nURL: https://azad.in/wp-content/uploads/2025/09/Annual-Report.pdf\nContent: stated) 192 Annual Report FY 2024-25 Azad Engineering Limited Consolidated Statement of Cash Flows for the year ended March 31, 2025 (All amounts are ₹ in millions, unless otherwise stated) Particulars For the year ended March 31, 2025 For the year ended March 31, 2024 A. Cash flow from operating activities Profit before tax 1,240.26 807.86 A d j u s t m e n t s f o r : Depreciation expenses 294.85 205.30 Finance costs 183.89 472.65 Unrealized foreign exchange gain (net) (15.72) (6.24) Provision for credit impaired trade receivable 35.76 21.39 Interest income (52.40) (14.02) Profit on sale of property plant and equipment - (42.00) Gain on derecognition of financial liabilities - 175.62 Gain on sale of investment in subsidiary - (56.03) Operating profit before working capital changes [...] i m i t e d ( F o r m e r l y A z a d E n g i n e e r i n g P r i v a t e L i m i t e d ) ICAI ...",
+        "sources": [
+          "https://azad.in/wp-content/uploads/2025/09/Annual-Report.pdf",
+          "https://exencialrp.substack.com/p/azad-engineering-ltd",
+          "https://www.icicidirect.com/mailcontent/idirect_azadengineering_q4fy26.pdf",
+          "https://ticker.finology.in/company/AZAD",
+          "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4af39d06-867c-47aa-8853-8d19d2b59803.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "\"Ami Organics\" \"CFO\" \"PAT\" FY24 FY25 historical cash flow",
+        "findings": "[1] @ Ami Organics Limited\nURL: https://nsearchives.nseindia.com/annual_reports/AR_25294_AMIORG_2023_2024_29082024185446.pdf\nContent: 4.8% from ₹1227 million in the previous year, resulting in an EBITDA margin of 17.9%. Adjusted PAT was ₹808 million, with margins of 11.3%, excluding the one-time full impairment of our investment the joint venture, Ami Oncotheranositics LLC. Exports contributed 56% of our revenue, while the domestic market accounted for 44%. Despite challenges throughout the year, we maintained strong cash generation from operations, amounting to ₹1252 million. Shaping a Greener Tomorrow: As we pursue operational excellence, we remain committed to building a sustainable future for generations to come. Our relentless efforts in environmental stewardship have earned us a ‘Gold Medal’ accreditation from EcoVadis. Our focus on green chemistry and eco-friendly initiatives continues to guide our responsible [...] Chartered Accountants FRN: 105834W Vikas Asawa Nareshkumar R. P...",
+        "sources": [
+          "https://nsearchives.nseindia.com/annual_reports/AR_25294_AMIORG_2023_2024_29082024185446.pdf",
+          "https://www.careratings.com/upload/CompanyFiles/PR/202412151225_Ami_Organics_Limited.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/market-reports/equity-brokertips/2025-03/17416736170.91004600.pdf",
+          "https://www.hdfcsec.com/hsl.docs//Ami%20Organics%20-%20Update%20-%20Aug24%20-%20HSIE-202408271511354052008.pdf",
+          "https://www.indianpharmapost.com/news/ami-organics-reports-q1fy25-pat-lower-34-at-rs-147-cr-16020"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "\"Kaynes Technology\" vs \"Dixon Technologies\" accounting policies depreciation R&D",
+        "findings": "[1] Dixon Technologies vs Kaynes Technology: India’s electronics manufacturing boom is entering a tougher phase. Dixon Technologies and Kaynes Technology delivered very different signals in FY26, cash… | Financial Express (India)\nURL: https://www.linkedin.com/posts/the-financial-express-india_dixon-technologies-vs-kaynes-technology-activity-7464559561106972672-Vwfu\nContent: India’s EMS (Electronics Manufacturing Services) industry is entering a new phase.\nFor years, most Indian EMS firms operated as low-margin assembly businesses, manufacturing products designed and branded by others. But that model is slowly changing.\nCompanies like Dixon, Kaynes, and Syrma SGS are now moving toward higher-complexity electronics across defence, industrial systems, railways, EVs, and healthcare. And that shift matters because complexity drives margins.\nThe contrast is already visible:\n• Dixon operates at ~4% EBITDA margins in mass-market electronics.\n• Kaynes earns ~15.6% by focusing on specialised, hi...",
+        "sources": [
+          "https://www.linkedin.com/posts/the-financial-express-india_dixon-technologies-vs-kaynes-technology-activity-7464559561106972672-Vwfu",
+          "https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/BrokerRecommendation/20251210063338_Kaynes-Technology-India-10122025-prabhu.pdf",
+          "https://www.kaynestechnology.co.in/doc/subsidiary/KaynesInternationalDesign&ManufacturingPrivateLimited-FY20-21.pdf",
+          "https://www.kaynestechnology.co.in/doc/company-financials/Financial%20Statement-%20FY%202024-25%20(Consolidated).pdf",
+          "https://equitybypiyush.substack.com/p/why-kaynes-growing-pains-is-the-ideal"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "\"Ami Organics\" capex timeline Sachin Ankleshwar expansion peak",
+        "findings": "[1] ho Ami Organics Limited\nURL: https://nsearchives.nseindia.com/corporate/AMIORG_16052022171549_Investorfinal.pdf\nContent: 9 01 02 03 04 Capacity & Clearances The Ankleshwar site has received the necessary environmental clearance and the new facility will have ~90 reactors taking the total reactor capacity to 436KL. The current capacity utilisation at the Sachin unit in Surat, Gujarat which manufactures the majority of the pharmaceutical intermediates is at ~65%. CAPEX – INR 190cr On 29th April, BOD approved the Capex plan of INR 190cr to build a brownfield plant in Ankleshwar, Gujarat, to support the future business growth in the company’s advanced pharmaceutical intermediates segment. Timeline & Other details The plant is expected to start commercial operations from Q4FY24. The production at the Ankleshwar unit was successfully transferred to the Jhagadia unit during the last quarter without losing any [...] ✓ During the year, we have commercialized 2 products using continuous flow...",
+        "sources": [
+          "https://nsearchives.nseindia.com/corporate/AMIORG_16052022171549_Investorfinal.pdf",
+          "https://www.indianpharmapost.com/news/ami-organics-earmarks-rs-190-cr-to-expand-api-production-in-ankleshwar-12093",
+          "https://forum.valuepickr.com/t/acutaas-chemicals-ltd-erst-ami-organics-ltd-pharma-intermediates-specialty-chemicals/70483",
+          "https://www.youtube.com/watch?v=8wD9cNoou-E",
+          "https://www.indianchemicalnews.com/chemical/ami-organics-bets-big-on-strategic-acquisitions-diversified-portfolio-10376"
+        ],
+        "phase": "Candidate Deep Dive (Depth 3)"
+      },
+      {
+        "query": "Azad Engineering red flags auditor tax dispute negative news 2024 2025 2026",
+        "findings": "[1] Auditor raises red flags: Lafayette school finances can’t be verified\nURL: https://www.katc.com/lafayette-parish/auditor-raises-red-flags-lafayette-school-finances-cant-be-verified\nContent: Given findings of public bid law violations in Kolder, Slaven’s 2024 audit — determinations LPSS leadership disputed — and a separate but related indictment against a top official accused of forgery, as well as an ongoing public corruption investigation by the Louisiana Attorney General’s Office, the 2025 audit is likely to have both repeat and new negative findings.\n\nTo read The Current's full story with all the details, click here.\n\nScripps News Group [...] KATC Acadiana's News Channel\nKATC Acadiana's News Channel\n\n## Actions\n\n# Auditor raises red flags: Lafayette school finances can’t be verified\n\nLPSS \nLPSS \nLPSS \n\nAuditors could not determine the financial condition of Lafayette’s public school system, likely because records were incomplete or couldn’t be verified, The Current reports.\n\nHer...",
+        "sources": [
+          "https://www.katc.com/lafayette-parish/auditor-raises-red-flags-lafayette-school-finances-cant-be-verified",
+          "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2024/2024-ohio-3130.pdf",
+          "https://defensetax.com/irs-audit-red-flags-triggers",
+          "https://defensetax.com/blog/tag/tax-audit-red-flags",
+          "https://defensetax.com/blog/tag/tax-return-audit-red-flags"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "\"Azad Engineering\" NSE controversy governance penalty OR dispute",
+        "findings": "[1] [PDF] NSE SCAM: ADMONITION FOR CORPORATE GOVERNANCE\nURL: https://ijirl.com/wp-content/uploads/2022/05/NSE-SCAM-ADMONITION-FOR-CORPORATE-GOVERNANCE.pdf\nContent: chief is accused of financial misleading, concealing of information and improper conduct. Today, the NSE is India’s largest financial market as well as the world’s largest derivatives exchange. However, the exchange, which was established to make stock trading more transparent, is now mired in controversy. SEBI ordered NSE to pay ₹ 6224.89 crores to SEBI’s Investor protection and education fund, along with the 12 per cent annual interest rate, in the co-location scam case in 2019. Narain and Ramkrishna were asked to deposit 25 per cent of the salary drawn for specific years to the fund. And Ms Ramakrishna was barred from dealing in stocks, depositories intermediaries or clearing corporations for three years and was penalized ₹ 3 crores for the next three years, Mr Subramanian is not [...] ₹ 3 crores for the next three years,...",
+        "sources": [
+          "https://ijirl.com/wp-content/uploads/2022/05/NSE-SCAM-ADMONITION-FOR-CORPORATE-GOVERNANCE.pdf",
+          "https://en.wikipedia.org/wiki/NSE_co-location_scam",
+          "https://www.youtube.com/watch?v=JufmDTZzk1Y",
+          "https://www.business-standard.com/markets/news/sebi-imposes-rs-5-2-crore-penalty-on-opg-securities-in-nse-co-location-case-125040201006_1.html",
+          "https://timesofindia.indiatimes.com/business/india-business/sebi-fines-nse-rs-1100-crore-bans-two-ex-mds-in-brokers-scam/articleshow/69121635.cms"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "\"Kaynes Technology\" OR \"MTAR Technologies\" OR \"Ami Organics\" OR \"Syrma SGS\" auditor resignation OR tax raid OR controversy 2024 2025",
+        "findings": "[1] Kaynes Tech Vs Syrma SGS: One Has Crashed, One Is Near Highs But Where Should Investors Look?\nURL: https://tradebrains.in/kaynes-tech-vs-syrma-sgs-one-has-crashed-one-is-near-highs-but-where-should-investors-look\nContent: India’s electronics manufacturing story is creating two very different stock market outcomes. Kaynes Technology India has corrected nearly 60 percent from its October 2025 high of Rs. 7,700, while Syrma SGS Technology is trading close to its all-time high of Rs. 1,188. The big question for investors is simple: is the crashed stock a better recovery bet, or is the stock near highs still the cleaner story?\n\n companies, with more than 45 years of experience in the electronics industry. The company serves over 270 customers across more than 20 countries and has built a pan-India manufacturing network with facilities in Chennai, Bengaluru, Manesar, Gurugram, Pune and Baddi, along with research and development centres in Chennai, Pune, Bengaluru and Stuttgart, Germany. ...",
+        "sources": [
+          "https://tradebrains.in/kaynes-tech-vs-syrma-sgs-one-has-crashed-one-is-near-highs-but-where-should-investors-look",
+          "https://univest.in/blogs/syrma-sgs-technology-vs-kaynes-technology-business-model-2026",
+          "https://www.livemint.com/market/stock-market-news/syrma-sgs-to-kaynes-tech-ems-stocks-jump-up-to-7-5-as-centre-waives-customs-duty-on-key-electronic-components-11783587314816.html",
+          "https://www.disclosureinsight.com/sec-investigation-alerts-2",
+          "https://www.ktmc.com/files/53850_ktmc_bulletin_fall_25_l_1.pdf"
+        ],
+        "phase": "Cross-Verification"
+      }
+    ],
+    "disclaimer": "AI-generated hypotheses. Every candidate requires independent verification.",
+    "phases_completed": 5,
+    "total_search_count": 50
+  }
+}

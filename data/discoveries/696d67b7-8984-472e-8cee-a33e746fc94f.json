@@ -1,0 +1,766 @@
+{
+  "id": "696d67b7-8984-472e-8cee-a33e746fc94f",
+  "strategy_id": "capital_cycle",
+  "strategy_name": "Capital Cycle / Trough Survivor",
+  "user_params": {
+    "context": ""
+  },
+  "model_name": "gemini-3.5-flash-lite",
+  "created_at": "2026-07-26T12:40:39.677856",
+  "result": {
+    "analysis_summary": "The Indian capital-intensive sectors of Paper & Paperboard and Textile Spinning are currently experiencing classic capital cycle distress. Sub-scale, unorganized, and highly leveraged players are permanently shutting down capacity due to strict environmental regulations (Zero Liquid Discharge in paper) and punishing power tariff hikes (TANGEDCO in Tamil Nadu). This supply-side destruction is creating a massive volume vacuum. Tier-1 survivors with pristine, debt-free balance sheets, captive power moats, and integrated raw material sourcing are positioned to inherit consolidated market share and experience explosive earnings growth due to operating leverage when demand normalizes. The market is currently mispricing these survivors by applying depressed trough-era multiples and grouping them with failing peers (guilt-by-association).",
+    "candidates": [
+      {
+        "company_name": "JK Paper Ltd.",
+        "ticker": "JKPAPER",
+        "connection_type": "Integrated Paper & Packaging Board Survivor",
+        "confidence": "high",
+        "why_now": "(a) What changed: Acceleration of unorganized mill closures due to ZLD norms and the initiation of DGTR anti-dumping investigations on paperboard. (b) Catalyst window: Near-term (0-6 months) as anti-dumping duties are finalized and timber prices stabilize. (c) Confirming milestone: Sequential expansion in EBITDA margins and volume growth in upcoming quarterly filings.",
+        "reasoning": "[WRONG CONSENSUS] The market currently assumes JK Paper is structurally impaired by digital substitution and high pulpwood costs, but evidence shows it is gaining massive market share from 350+ closed unorganized mills while its captive farm-forestry protects its margins. [OBSERVED FACTS] JK Paper achieved record sales volume of 8.19 Lac MT in FY26, with Q4 FY26 revenue up 16.36% YoY. Debt-to-equity is low at 0.25x-0.30x. Over 350 out of 900 paper mills in India are currently unoperational. [STRONG INFERENCE] The permanent exit of sub-scale competitors reduces domestic supply, allowing integrated players like JK Paper to regain pricing power as soon as demand stabilizes. [HYPOTHESIS] Anti-dumping duties on imports will act as a massive pricing catalyst, allowing JK Paper's operating leverage to expand EBITDA by 35-40% on a modest 5% realization increase.",
+        "self_critique": "The hypothesis could be wrong if ASEAN imports continue to flood the market despite anti-dumping duties, or if domestic wood costs spike further due to local supply disruptions, offsetting the benefits of captive plantations.",
+        "disproving_evidence": "A continuous decline in JK Paper's EBITDA margins below 12% over the next two quarters, accompanied by a failure of the DGTR to implement anti-dumping duties on multi-layer paperboards.",
+        "risks": [
+          "Sustained high wood pulp and timber costs",
+          "Failure of anti-dumping duty implementation",
+          "Slower-than-expected recovery in domestic writing and printing paper demand"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: That the closure of unorganized mills is permanent and they will not restart capacity if paper prices rise by 10%.",
+          "Verify the progress of DGTR anti-dumping investigations.",
+          "Monitor monthly wood/timber price trends in Gujarat and Odisha."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.nseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 80%",
+          "Phase 2: 80%",
+          "Phase 3: 80%",
+          "Phase 4: 80%",
+          "Final: 80%"
+        ]
+      },
+      {
+        "company_name": "Seshasayee Paper & Boards Ltd.",
+        "ticker": "SESHAPAPER",
+        "connection_type": "Debt-Free Regional Paper Consolidator",
+        "confidence": "high",
+        "why_now": "(a) What changed: Acquisition of Servalakshmi Paper assets under NCLT at distressed valuations, expanding capacity at a fraction of replacement cost. (b) Catalyst window: Medium-term (6-18 months) as the acquired capacity is integrated and operationalized. (c) Confirming milestone: Announcement of commercial production or trial runs at the newly acquired Servalakshmi plant.",
+        "reasoning": "[WRONG CONSENSUS] The market currently assumes Seshasayee Paper is a legacy regional player vulnerable to pulpwood volatility and digital substitution, but evidence shows its debt-free balance sheet, captive power, and bagasse linkages allow it to absorb market share from bankrupt regional competitors at distressed valuations. [OBSERVED FACTS] Seshasayee reported Q4 FY26 revenue growth of 17.5% YoY to ~₹590 crore. It holds over ₹500 crore in bank fixed deposits with near-zero net debt. It acquired Servalakshmi Paper assets through NCLT liquidation. [STRONG INFERENCE] Seshasayee's massive cash cushion allows it to act as a consolidator during the trough, acquiring assets at deep discounts while peers are liquidated. [HYPOTHESIS] The integration of Servalakshmi Paper will drive non-linear volume growth and market share gains in Southern India once the cycle turns, with zero dilution risk.",
+        "self_critique": "The hypothesis could be wrong if the integration of Servalakshmi Paper takes significantly longer than expected or requires massive unplanned capital expenditure to make it operational, draining Seshasayee's cash reserves.",
+        "disproving_evidence": "A write-down or significant impairment charge related to the Servalakshmi acquisition, or cash reserves falling below ₹300 crore without a corresponding increase in operational capacity.",
+        "risks": [
+          "Integration delays of acquired assets",
+          "High coal prices impacting the captive power plant efficiency",
+          "Intense competition from larger players like ITC in the southern market"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: That the Servalakshmi Paper plant can be operationalized economically without capital expenditure exceeding the original acquisition cost.",
+          "Verify the exact cash balance and interest income in upcoming quarterly filings.",
+          "Monitor regional writing and printing paper demand in Tamil Nadu and Kerala."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.nseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 65%",
+          "Phase 2: 70%",
+          "Phase 3: 75%",
+          "Phase 4: 75%",
+          "Final: 75%"
+        ]
+      },
+      {
+        "company_name": "K.P.R. Mill Ltd.",
+        "ticker": "KPRMILL",
+        "connection_type": "Vertically Integrated Textile & Garmenting Giant",
+        "confidence": "high",
+        "why_now": "(a) What changed: Political instability in Bangladesh driving global fashion brands to shift sourcing to vertically integrated Indian players. (b) Catalyst window: Near-term (0-6 months) as order books for the upcoming festive and winter seasons are locked in. (c) Confirming milestone: Double-digit growth in garment export volumes and order book disclosures in quarterly investor presentations.",
+        "reasoning": "[INVISIBLE TO MARKET] This company is invisible to the market's cyclical recovery thesis because the market misclassifies it as a generic commodity textile spinner vulnerable to cotton volatility. The market will notice it when its high-margin garment exports and 40%+ captive green energy insulation drive an explosive earnings recovery while competitors remain shut. [OBSERVED FACTS] KPR Mill reported FY26 net sales of ₹4,306.37 crore and Net Profit of ₹606.02 crore. It has negative net debt (-₹115 crore) and ~₹580 crore in cash. Over 300 spinning mills in Tamil Nadu have shut down. [STRONG INFERENCE] KPR's captive green energy (wind, solar, co-gen) completely insulates it from TANGEDCO's high power tariffs, which are destroying unorganized competitors. [HYPOTHESIS] KPR will capture a disproportionate share of both domestic yarn demand and global garment orders as buyers seek stable, ESG-compliant, vertically integrated partners.",
+        "self_critique": "The hypothesis could be wrong if global retail demand in the US and Europe experiences a severe recession, causing garment order cancellations that offset any market share gains from domestic competitor shutdowns.",
+        "disproving_evidence": "A decline in garment export segment revenues by more than 10% YoY, or a sharp contraction in garment EBIT margins below 15%.",
+        "risks": [
+          "Global consumer slowdown in key export markets",
+          "Sharp appreciation of the Indian Rupee against the USD",
+          "Volatility in domestic cotton prices impacting working capital"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: That global fashion brands are actively shifting orders from Bangladesh to India, rather than to other low-cost destinations like Vietnam or Cambodia.",
+          "Verify the utilization levels of KPR's garmenting facilities.",
+          "Monitor cotton-yarn spreads on a weekly basis."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.nseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 85%",
+          "Phase 2: 85%",
+          "Phase 3: 85%",
+          "Phase 4: 85%",
+          "Final: 85%"
+        ]
+      },
+      {
+        "company_name": "Ambika Cotton Mills Ltd.",
+        "ticker": "AMBIKCO",
+        "connection_type": "Niche Premium Cotton Yarn Survivor",
+        "confidence": "high",
+        "why_now": "(a) What changed: Promoters initiating open-market share purchases at trough valuations, signaling absolute confidence in the cycle bottom. (b) Catalyst window: Near-term (0-6 months) as yarn spreads begin to widen from historic lows. (c) Confirming milestone: Continued open-market buying by promoters and sequential expansion of EBITDA margins.",
+        "reasoning": "[WRONG CONSENSUS] The market currently assumes Ambika Cotton is a distressed, sub-scale textile processor facing terminal decline, but evidence shows its massive cash cushion (>₹168 cr), zero debt, and niche monopoly in contamination-free fine-count yarn allow it to outlast the trough while promoters actively buy shares in the open market. [OBSERVED FACTS] Ambika reported FY26 revenue of ₹780.95 crore and holds ₹168.41 crore in cash and bank balances with zero debt. Promoter P.V. Chandran made open-market purchases of shares in mid-2025. [STRONG INFERENCE] Ambika's cash reserves are sufficient to cover all fixed operating costs for over 6 years even at zero profitability, making bankruptcy risk non-existent. [HYPOTHESIS] As leveraged spinners liquidate, Ambika's premium positioning in contamination-free yarn will allow it to command immediate pricing power and capture high-margin export market share when demand returns.",
+        "self_critique": "The hypothesis could be wrong if the shift towards synthetic blends permanently reduces the demand for premium, fine-count cotton yarn, rendering Ambika's niche obsolete.",
+        "disproving_evidence": "Promoters halting share purchases and starting to sell or pledge shares, or cash reserves declining by more than 30% without any capital expenditure.",
+        "risks": [
+          "Niche market concentration in fine-count cotton yarn",
+          "Lack of liquidity in the stock due to low free float",
+          "Slow adoption of premium yarn by domestic weavers"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: That the demand for premium, contamination-free fine-count cotton yarn is cyclical and not undergoing a structural decline due to synthetic alternatives.",
+          "Verify any further promoter share acquisitions via exchange disclosures.",
+          "Monitor the cash and bank balance levels in the upcoming half-yearly balance sheet."
+        ],
+        "sources": [
+          "https://www.bseindia.com",
+          "https://www.nseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 75%",
+          "Phase 2: 80%",
+          "Phase 3: 80%",
+          "Phase 4: 80%",
+          "Final: 80%"
+        ]
+      }
+    ],
+    "limitations": [
+      "This analysis relies on historical financial filings up to FY26 and public disclosures. Real-time changes in promoter holdings or sudden regulatory shifts may not be fully captured.",
+      "The capital cycle turn is highly dependent on macroeconomic factors such as global demand recovery and raw material price stabilization, which are inherently difficult to predict with absolute certainty."
+    ],
+    "searches_performed": [
+      {
+        "query": "Specialty chemicals industry distress capacity utilization India 2024 2025",
+        "findings": "[1] Chemical industry's downturn to persist through 2026 amid overcapacity and soft demand: Deloitte\nURL: https://www.indianchemicalnews.com/general/chemical-industrys-downturn-to-persist-through-2026-amid-overcapacity-and-soft-demand-deloitte-28528\nContent: Home » General » Chemical industry's downturn to persist through 2026 amid overcapacity and soft demand: Deloitte. ## Chemical industry's downturn to persist through 2026 amid overcapacity and soft demand: Deloitte. Key end-markets such as construction, automotive, and consumer goods are experiencing soft demand, with only the semiconductor market showing strong growth. Beginning 2025, the chemical industry expected a gradual recovery, with global chemical production projected to grow 3.5%. Instead, the sector has entered a prolonged downcycle, with forecasts now at just 1.9% for 2025 and 2% for 2026. “Instead of stability, 2025 ushered in uncertainty and volatility,” driven by three key factors: weakened economic growth, geopoliti...",
+        "sources": [
+          "https://www.indianchemicalnews.com/general/chemical-industrys-downturn-to-persist-through-2026-amid-overcapacity-and-soft-demand-deloitte-28528",
+          "https://manufacturing.economictimes.indiatimes.com/news/chemicals/chemical-industry-to-see-gradual-demand-recovery-in-2025-report/121113567",
+          "https://www.icra.in/Rating/DownloadResearchSummaryReport?id=5604",
+          "https://virtuemarketresearch.com/report/india-specialty-chemicals-market",
+          "https://chemindia.chemicals.gov.in/Publicationspdf/Statistics-at-a-Glance-2024.pdf"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Paper industry capacity shutdown price pressure India listed companies",
+        "findings": "[1] Top Paper Companies 2025: A Year of Contrasts - Papermart\nURL: https://papermart.in/top-paper-companies-2025\nContent: ### Trident Group Strengthens Paper Portfolio with Fresh Investment. ### Seshasayee Paper & Boards: From Being “Efficient” to…. ### International Paper Acquires NORPAC to Expand Packaging Paper…. #### *India’s top paper companies saw steady production but weaker financials in FY 2024–25, as strong operational performance contrasted with falling prices, higher costs, and intense import-driven pressure.*. For an industry that has demonstrated resilience through cycles of demand volatility and raw-material disruptions, FY 2024–25 tested every dimension of the Indian paper and paperboard industry. The year unfolded under the shadow of surging imports, suppressed realisations, and sharply rising wood costs, pressures that adversely affected balance sheets even for some of the country’s most established producers. From ITC’s premium paperboards to integrated mills like TN...",
+        "sources": [
+          "https://papermart.in/top-paper-companies-2025",
+          "https://ticker.finology.in/discover/market-update/west-asia-crisis-impact-indian-paper-industry",
+          "https://theconiferous.com/charting-the-bottom-can-indias-paper-industry-recover",
+          "https://www.facebook.com/pwindia/posts/indian-paper-industry-in-crisis-only-550-of-900-mills-operationalthe-indian-pape/1176881131120665",
+          "https://m.economictimes.com/industry/indl-goods/svs/paper-/-wood-/-glass/-plastic/-marbles/west-asia-crisis-indian-paper-industry-faces-rising-energy-cost-export-disruption/articleshow/129512464.cms"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Textile spinning mills closure crisis India 2024 2025",
+        "findings": "[1] BTMA seeks Government decision within 72 hours to ...\nURL: https://apparelresources.com/business-news/retail/btma-seeks-government-decision-within-72-hours-rescue-crisis-hit-textile-sector\nContent: Dec 29, 2025 — approximately 50 textile mills across the country have already shut down due to multiple challenges, leading to the loss of around 20,000 jobs.\n\n[2] Textile millers seek safeguard duties and incentives as 58 ...\nURL: https://www.textiletoday.com.bd/textile-millers-seek-safeguard-duties-and-incentives-as-58-mills-shut-down\nContent: Dec 20, 2025 — “These mills are shutting down because production costs have risen by nearly 20%, while policy support has steadily declined,” said Russell, ...Read more\n\n[3] Over 300 textile mills shut in Tamil Nadu in last few years, says report - The Hindu\nURL: https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece\nContent: The data released by the Union Mini...",
+        "sources": [
+          "https://apparelresources.com/business-news/retail/btma-seeks-government-decision-within-72-hours-rescue-crisis-hit-textile-sector",
+          "https://www.textiletoday.com.bd/textile-millers-seek-safeguard-duties-and-incentives-as-58-mills-shut-down",
+          "https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece",
+          "https://www.instagram.com/p/DT70LafF1uc?hl=en",
+          "https://www.facebook.com/purnimahazra0/posts/the-bangladesh-textile-mills-association-btma-has-announced-the-indefinite-closu/1950265985529623"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Sugar industry consolidation ethanol transition India companies",
+        "findings": "[1] India's sugar industry likely to exit exports and exist for ethanol\nURL: https://asia.nikkei.com/business/food-beverage/india-s-sugar-industry-likely-to-exit-exports-and-exist-for-ethanol\nContent: India's major integrated companies are expanding beyond sugar into ethanol, cogeneration and sustainable aviation fuel, fundamentally changing\n\n[2] India's Sugar Industry Shifts to Ethanol and Bioenergy - LinkedIn\nURL: https://www.linkedin.com/posts/uppal-shah_sugarindustry-sugarcane-ethanol-activity-7482429736368103424-q45G\nContent: India's sugar industry is evolving beyond sugar production driving the nation's energy transition through ethanol, Sustainable Aviation Fuel\n\n[3] India’s Sugar Industry & Ethanol Blending: Key Insights\nURL: https://www.ibef.org/blogs/from-fields-to-fuel-the-indian-sugar-industry-s-role-in-advancing-ethanol-blending\nContent: # From Fields to Fuel: The Indian Sugar Industry’s Role in Advancing Ethanol Blending. The Indian sugar industry is undergoing a transfor...",
+        "sources": [
+          "https://asia.nikkei.com/business/food-beverage/india-s-sugar-industry-likely-to-exit-exports-and-exist-for-ethanol",
+          "https://www.linkedin.com/posts/uppal-shah_sugarindustry-sugarcane-ethanol-activity-7482429736368103424-q45G",
+          "https://www.ibef.org/blogs/from-fields-to-fuel-the-indian-sugar-industry-s-role-in-advancing-ethanol-blending",
+          "https://www.instagram.com/p/DZucgHEk9lv?hl=en",
+          "https://www.spglobal.com/energy/en/news-research/latest-news/agriculture/031626-interview-indias-sugar-mills-call-for-higher-ethanol-blending-amid-oil-supply-risk"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Secondary steel sponge iron induction furnace distress India",
+        "findings": "[1] India Secondary Steel Regional Demand and Production Forecast 2026\nURL: https://lohaa.co.in/blog/strategic-evolution-of-india-secondary-steel-sector-2026\nContent: # India Secondary Steel Regional Demand and Production Forecast 2026. The secondary steel sector is no longer just a \"supplement\" to India’s massive integrated steel plants; it is the vital backbone of the nation's construction and infrastructure narrative. Comprising over 1,000 units including Induction Furnaces (IF) and Electric Arc Furnaces (EAF), this sector accounts for approximately 40% of India’s total crude steel production. As India marches toward its ambitious goal of 300 million tonnes (MT) of steel capacity by 2030, the secondary sector provides the agility, regional reach, and recycled material focus necessary to meet localized demand. This blog explores the sector’s performance in 2024 and 2025, provides a granular regional forecast for 2026, and analyses the shift toward technology-led profitability. The ye...",
+        "sources": [
+          "https://lohaa.co.in/blog/strategic-evolution-of-india-secondary-steel-sector-2026",
+          "https://www.linkedin.com/posts/amit-shankar-choudhary-56285019_induction-furnaces-are-widely-used-in-india-activity-7371126998716407808-RkV4",
+          "https://www.quickcompany.in/patents/a-process-for-refining-steel-in-induction-furnace",
+          "https://www.teriin.org/sites/default/files/2023-12/SNAPFI%20Steel%20Report%202023.pdf",
+          "https://megatherm.com/secondary-steel-conclave-kolkata-2023"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Cement industry regional price war consolidation small players India",
+        "findings": "[1] India's Cement Industry Shifts to Speed and Scale\nURL: https://www.linkedin.com/posts/abinashleader_cement-buildingmaterials-infrastructure-activity-7460332780107874304-Prg2\nContent: India's next cement war may not be fought on price. ₹50,000 crore. Smaller regional players could face serious pressure ・ longer just\n\n[2] India cement sector 2026: consolidation, capex, oversupply risk | Market News & Analysis\nURL: https://www.multibagg.ai/market-pulse/articles/india-cement-consolidation-capex-oversupply-risk-cmowiv246h0brmt0jrtg0lomm\nContent: After years of fragmentation and excess capacity, India’s cement sector is consolidating at a faster clip. The top four players now control nearly 58% of total industry capacity, up from 48% three years ago. That shift matters because cement is a high fixed-cost business where scale and distribution density often decide pricing power and profitability. The consolidation trend is also visible in the capacity mix of the largest listed names. Ultra...",
+        "sources": [
+          "https://www.linkedin.com/posts/abinashleader_cement-buildingmaterials-infrastructure-activity-7460332780107874304-Prg2",
+          "https://www.multibagg.ai/market-pulse/articles/india-cement-consolidation-capex-oversupply-risk-cmowiv246h0brmt0jrtg0lomm",
+          "https://www.mordorintelligence.com/industry-reports/india-cement-market",
+          "https://www.facebook.com/01indiapo/posts/indias-cement-sector-continues-to-consolidate-with-the-top-players-commanding-mu/899660006319567",
+          "https://www.youtube.com/watch?v=RsnlLR_ZpEE"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Auto ancillaries legacy components distress India 2024 2025",
+        "findings": "[1] INDIAN AUTO COMPONENT INDUSTRY\nURL: https://www.icra.in/Rating/DownloadResearchSummaryReport?id=5787\nContent: Domestic OEM revenues for auto ancillaries are expected to grow at a moderate pace of 5- 7% in FY2025. A confluence of factors, including healthy personal\n\n[2] India's Auto Ancillaries Sector Recovery in 2025\nURL: https://www.wrightresearch.in/blog/indias-auto-ancillaries-sector-recovery-in-2025\nContent: India's auto ancillaries are poised to capture an unprecedented 8% of global automotive component trade, up from the current 3%, shipments\n\n[3] India Auto Ancillary Market Report 2024-2029: India's Emerging Position as an Auto Hub and De-risking of the Supply Chain by Global OEMs Driving Opportunities\nURL: https://uk.finance.yahoo.com/news/india-auto-ancillary-market-report-122300990.html\nContent: # India Auto Ancillary Market Report 2024-2029: India's Emerging Position as an Auto Hub and De-risking of the Supply Chain by Global OEMs Driving Opportunities. The faster growth...",
+        "sources": [
+          "https://www.icra.in/Rating/DownloadResearchSummaryReport?id=5787",
+          "https://www.wrightresearch.in/blog/indias-auto-ancillaries-sector-recovery-in-2025",
+          "https://uk.finance.yahoo.com/news/india-auto-ancillary-market-report-122300990.html",
+          "https://www.researchandmarkets.com/report/india-automotive-ancillary-market",
+          "https://www.acma.in/pdf/acma-report-sep-25.pdf"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Bulk drugs API pharma industry Chinese dumping distress India",
+        "findings": "[1] India imposes anti-dumping duty on certain APIs from China | The Pharmaletter\nURL: https://www.thepharmaletter.com/generics-news/india-imposes-anti-dumping-duty-on-certain-apis-from-china\nContent: india_flag_big\n\nIt was not so very long ago that Indian drugmakers were facing headwinds due to the spike in prices of active pharmaceutical ingredients (APIs) and intermediates being imported from China. From being dependent on China for APIs in the past, India has now swung to the opposite end of the spectrum and is imposing anti-dumping duties on several APIs and key starting materials that come from China, reports The Pharma Letter’s India correspondent. [...] For example, ofloxacin, a treatment for certain infections imported from China, is now subject to an anti-dumping duty by India's commerce ministry for a period of five years in an effort to protect the domestic industry against the cheap imports from the Asian neighbor. [...] # India imposes anti-dumping duty on certain APIs fr...",
+        "sources": [
+          "https://www.thepharmaletter.com/generics-news/india-imposes-anti-dumping-duty-on-certain-apis-from-china",
+          "https://prosperousamerica.org/china-now-producing-dozens-of-drugs-below-market-price-dumping-them-globally-is-next-move",
+          "https://advancepharmachem.in/uncategorized/why-global-pharma-companies-are-moving-api-sourcing-from-china-to-india",
+          "https://www.brookings.edu/articles/us-drug-supply-chain-exposure-to-china",
+          "https://www.youtube.com/watch?v=I8_vfKCC8x0"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "JK Paper financial performance capacity utilization 2025 2026",
+        "findings": "[1] STX_PR_Dec2025.pdf\nURL: https://www.jkpaper.com/pdf/intimation-to-stock-exchanges/STX_PR_Dec2025.pdf\nContent: Please find enclosed herewith Press Release issued by the Company on its financial results for the quarter and nine months ended 31st December 2025. # Unaudited Results for Quarter ended December,2025. ## Q3 Consolidated Turnover at Rs.1,878 Cr. JK Paper Ltd., (JKPL) one of India’s largest Paper & Packaging Solutions Companies,. recorded a consolidated Turnover of Rs. 1,877.62 Cr, EBITDA of Rs.195.87 Cr and Profit. after Tax (PAT) of Rs.27.40 Cr, for the quarter ended December,2025. ended December,2025, the Consolidated Turnover, EBITDA and PAT stood at Rs.5,532.84. adversely impacted primarily due to planned annual shut at two major plants of JK Paper Ltd. in Odisha and Gujarat leading to lower production. “The Board approved a Rs. 500 Cr Hybrid Power Project which will result in power cost. JK Paper’s focus on social farm forestry continued around all plant locations to s...",
+        "sources": [
+          "https://www.jkpaper.com/pdf/intimation-to-stock-exchanges/STX_PR_Dec2025.pdf",
+          "https://www.tijorifinance.com/company/jk-paper-limited",
+          "https://www.indmoney.com/stocks/jk-paper-ltd-share-price/results",
+          "https://www.moneycontrol.com/news/business/earnings/jk-paper-consolidated-march-2026-net-sales-at-rs-1965-95-crore-up-16-36-y-o-y-13923056.html/amp",
+          "https://www.jkpaper.com/pdf/quarterly-results/quarterly-results-may-26.pdf"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "textile spinning mills listed companies Tamil Nadu low debt survivor",
+        "findings": "[1] Textile - Wikipedia\nURL: https://en.wikipedia.org/wiki/Textile\nContent: After the oil industry, the fashion industry is the second biggest polluter of agricultural land, which has several harmful impacts on the environment. As the industry grows, the effect on the environment is worsening. Textile manufacturing is one of the oldest and most technologically complicated industries. This industry's fundamental strength stems from its solid manufacturing base of a diverse range of fibres/yarns ranging from natural fibres such as jute, silk, wool, and cotton, to [...] The textile industry grew out of art and craft and was kept going by craft guilds. In the 18th and 19th centuries, during the Industrial Revolution, it became increasingly mechanized. In 1765, when a machine for spinning wool or cotton called the spinning jenny was invented in the United Kingdom, textile production became the first economic activity to be industrialized. In the 20th century, science and technology were dri...",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Textile",
+          "https://www.britannica.com/topic/textile",
+          "https://artsandculture.google.com/entity/textile/m0dnr7?hl=en",
+          "https://revolutionfabrics.com/blogs/gotcha-covered/what-are-textiles",
+          "https://www.youtube.com/watch?v=rBdzSZzWoTw"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "sponge iron secondary steel listed companies India stock analysis 2025 2026",
+        "findings": "[1] List of Iron & Steel Sector Stocks in India 2026 – Top Metal Shares\nURL: https://univest.in/sectors/iron-steel/steel-sponge-pig-iron\nContent: Iron steel - Steel sponge pig iron ; Steel Exchange India Ltd. 12.03, -0.03 ; SAL Steel Ltd. 53.12, -1.64 ; Vraj Iron & Steel Ltd. 135.16, -10.99 ; Suraj Products\n\n[2] India Steel Market Share, Growth Drivers & Forecast 2026 ...\nURL: https://www.marknteladvisors.com/research-library/india-steel-market-report.html\nContent: # India Steel Market Research Report: Growth Drivers & Forecast (2026-2032). Refining / Ladle Metallurgy), By Product Type (Crude Steel, Finished Steel, Semi-Finished Steel, Flat Steel (Hot Rolled Coil (HRC), Cold Rolled Coil (CRC), Galvanized Steel, Color Coated Steel, Electrical Steel, Tinplate), Long Steel (Bars, Rods, Wire Rods, Rails, Beams & Sections, TMT Bars), Structural Steel, Specialty Steel, Stainless Steel, Alloy Steel), By Raw Material (Iron Ore-Based Steel, Scrap-Based Steel, Pellet-Based Steel, Coking Coal-Bas...",
+        "sources": [
+          "https://univest.in/sectors/iron-steel/steel-sponge-pig-iron",
+          "https://www.marknteladvisors.com/research-library/india-steel-market-report.html",
+          "https://lohaa.co.in/blog/india-secondary-steel-outlook-2026-to-2030",
+          "https://www.marketresearchfuture.com/reports/india-iron-steel-market-21393",
+          "https://trendlyne.com/equity/4159/CHENFERRO/chennai-ferrous-industries-ltd"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "JK Paper Seshasayee Paper promoter buying insider trade shareholding pattern BSE NSE",
+        "findings": "[1] JK Paper Share Price Today - Live NSE/BSE | ICICI Direct\nURL: https://www.icicidirect.com/stocks/jk-paper-ltd-share-price\nContent: The company’s shareholding pattern on 30 June 2022 indicated a promoter stake of 49.63%, public stake of 41.06%, foreign institutional investor stake of 3.43%, and domestic institutional investor stake of 5.86%. Bengal & Assam Co. Ltd. was the leading promoter with a 47% share. The mutual fund holdings increased from 1.72% to 4.09% during this quarter.\n\nJK Paper Ltd.’s top management comprises Mr Bharat Hari Singhania as chairman and Mr Harsh Pati Singhania as vice chairman and managing director. The other directors include Mr Dhirendra Kumar, Mr S K Roongta, Mr M H Dalmia, Ms Deepa Gopalan Wadhwa, Mr Sandip Somany, Ms Vinita Singhania, Mr Shailendra Swarup, Mr R V Kanoria, and Mr Arun Bharat Ram. [...] The company’s shareholding pattern on 30 June 2022 indicated a promoter stake of 49.63%, public stake of 41.06%, foreign institutional investor stake of...",
+        "sources": [
+          "https://www.icicidirect.com/stocks/jk-paper-ltd-share-price",
+          "https://trendlyne.com/equity/insider-trading-sast/all/SESHAPAPER/1204/seshasayee-paper-boards-ltd",
+          "https://www.sharekhan.com/stock/seshasayee-paper-and-boards-ltd",
+          "https://www.moneycontrol.com/india/stockpricequote/paper/jkpaper/JKP01",
+          "https://www.screener.in/company/JKPAPER/consolidated"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "textile mills Tamil Nadu bankruptcy liquidation NCLT list spinning mills",
+        "findings": "[1] Over 300 textile mills shut in Tamil Nadu in last few years ...\nURL: https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece\nContent: July 19, 2026e-Paper\n\nThe Hindu Logo\n\n# Over 300 textile mills shut in Tamil Nadu in last few years, says report\n\n## Many small-scale mills have shut due to rising input costs, steep hike in power tariff, and high cost of borrowing, says spinning mills association\n\nPublished - February 23, 2026 12:35 am IST - COIMBATORE\n\nM  Soundariya Preetha\nThe textile mills in Tamil Nadu lost heavily on the raw material front, say industry sources.\n\nThe textile mills in Tamil Nadu lost heavily on the raw material front, say industry sources.\n| Photo Credit: M. PERIASAMY\n\nOver 300 textile mills went out of operation in Tamil Nadu between 2021-22 and 2023-24, according to the Annual Survey of Industries. [...] A host of factors have hit the textile industry in the State, they say. ...",
+        "sources": [
+          "https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece",
+          "https://nclt.gov.in/gen_pdf.php?filepath=%2FEfile_Document%2Fncltdoc%2Fcasedoc%2F3607130018152023%2F04%2FOrder-Challenge%2F04_order-Challange_004_17067886272562815465bb87138b5c5.pdf",
+          "https://apparelresources.com/business-news/manufacturing/300-textile-mills-shut-tamil-nadu-two-years-says-industry-survey",
+          "https://insolvencyandbankruptcy.in/public-announcement",
+          "https://ibbi.gov.in/liquidation-auction-notices/lists?page=2"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "JK Paper Seshasayee Paper Vraj Iron debt to equity interest coverage ratio FY24 FY25",
+        "findings": "[1] JK_Paper_Annual_Report_24_25.pdf\nURL: https://www.jkpaper.com/pdf/agm/JK_Paper_Annual_Report_24_25.pdf\nContent: undertook business-strengthening initiatives. It focused on enhancing the product mix towards value-added segments, helping support margins and overall performance. The Company’s counter-initiatives helped maintain healthy liquidity and strengthen fundamentals. Interest cover remained strong at 5.83x—well above industry average. Net worth rose from Rs. 5,212 crores to Rs. 5,655 crores, and long-term debt declined from Rs. 1,995.86 crores to Rs. 1,626.78 crores, reflecting improved financial strength even in a challenging environment. JK Paper continued to invest in packaging conversion business during the year. To further diversify its portfolio and pursue growth in new areas, the Company acquired Quadragen Vethealth Private Limited, marking its entry into the animal health, nutrition, [...] Rs. 1,490 crores in net worth across the last two years and Rs. 443 crores in the...",
+        "sources": [
+          "https://www.jkpaper.com/pdf/agm/JK_Paper_Annual_Report_24_25.pdf",
+          "https://www.spbltd.com/wp-content/uploads/2025/05/AR2024-25.pdf",
+          "https://ticker.finology.in/company/SESHAPAPER",
+          "https://www.ijfmr.com/papers/2025/4/52744.pdf",
+          "https://open.spotify.com/artist/11Xy8a1ZCxUYJOy3hUrRPN"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "paper industry India capacity shutdown insolvency competitor exit",
+        "findings": "[1] PrintWeek - Indian paper industry in crisis: Only 550 of...\nURL: https://www.facebook.com/pwindia/posts/indian-paper-industry-in-crisis-only-550-of-900-mills-operationalthe-indian-pape/1176881131120665\nContent: ## PrintWeek's post\n\n### PrintWeek\n\n16 June 2025  ·\n\nIndian paper industry in crisis: Only 550 of 900 mills operational\n\nThe Indian paper industry is facing a downturn, with closures and operational disruptions reported across the country. Recent data indicates that around 550 of the nation's 850-900 paper mills are operational, according to the Indian Paper Manufacturers Association (IPMA). This decline is attributed to a combination of factors, including raw material scarcity, increased import competition, and economic pressures.\n\nRead more: \n\n#IndustrialSlowdown #PaperSector\n\nIndian paper industry in crisis: Only 550 of 900 mills operational | PrintWeekIndia\n\nprintweek.in\n\nIndian paper industry in crisis: Only 550 of 900 mills operational | PrintWeekIndia [...] '/%3E%3Cpa...",
+        "sources": [
+          "https://www.facebook.com/pwindia/posts/indian-paper-industry-in-crisis-only-550-of-900-mills-operationalthe-indian-pape/1176881131120665",
+          "https://www.resourcewise.com/blog/forest-products-blog/exploring-wave-mill-closures-india-industry-status",
+          "https://www.kenresearch.com/industry-reports/india-paper-industry",
+          "https://www.youtube.com/watch?v=LWyD_tlvVl0",
+          "https://worldpapermill.com/news/paper-mill-closures-industry-restructuring-2026"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "KPR Mill OR Vardhman Textiles OR Ambika Cotton debt equity captive power wind solar",
+        "findings": "[1] Vardhman Textiles Invests in Renewable Energy | Apparel Resources posted on the topic | LinkedIn\nURL: https://www.linkedin.com/posts/apparel-resources_sustainability-greenenergy-renewableenergy-activity-7453425385968537600-E35P\nContent: 𝐕𝐚𝐫𝐝𝐡𝐦𝐚𝐧 𝐓𝐞𝐱𝐭𝐢𝐥𝐞𝐬 𝐈𝐧𝐯𝐞𝐬𝐭𝐬 𝐑𝐬. 𝟐𝟒.𝟐𝟗 𝐂𝐫𝐨𝐫𝐞 𝐢𝐧 𝐆𝐫𝐞𝐞𝐧 𝐄𝐧𝐞𝐫𝐠𝐲\nThe company expects its renewable energy share to reach around 60% next year, driven by bio-based boilers and solar hybrid systems, while also advancing textile-to-textile recycling through its Renova brand.\n👉 Vardhman Textiles aims to secure captive renewable power through this investment, improving energy resilience and reducing long-term costs.\n👉 Competitors are also accelerating in renewable energy. For instance, KPR MILL LIMITED. has built around 100 MW of wind and solar capacity in Coimbatore, Tamil Nadu, meeting nearly 75% of its power needs. [...] 𝗢𝘂𝗿 𝘀𝘂𝘀𝘁𝗮𝗶𝗻𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗿𝗼𝗮𝗱𝗺𝗮𝗽 𝗶𝘀 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝗶𝗻𝗴 𝗺𝗲𝗮𝘀𝘂𝗿𝗮𝗯𝗹𝗲 𝗶𝗺𝗽𝗮𝗰𝘁 𝗮𝗰𝗿𝗼𝘀𝘀 𝗯𝗼𝘁𝗵 𝗼𝘂𝗿 𝗡𝗮𝗻𝗱𝗲𝘀𝗮𝗿𝗶 𝗮𝗻𝗱 𝗘𝗱𝗮𝘆𝗮𝗿 𝘂𝗻𝗶𝘁𝘀.\nAt the Nandesari (Vadodara, Gujarat)...",
+        "sources": [
+          "https://www.linkedin.com/posts/apparel-resources_sustainability-greenenergy-renewableenergy-activity-7453425385968537600-E35P",
+          "https://www.indiantextilemagazine.in/kpr-mill-maintains-growth-momentum-in-fy25-strengthens-vertically-integrated-operations-eyes-expansion",
+          "https://www.hdfcsec.com/hsl.research.pdf/Stock%20Update%20-%20KPR%20Mills%20Ltd.%20-%20HSLRR140823.pdf",
+          "https://bkend.kprmilllimited.com/media/documents/CONCALLTRANSCRIPT-MAY-2023.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/market-reports/equity-brokertips/2023-03/16802311560.85702800.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Specialty chemicals India capacity shutdown OR NCLT OR insolvency 2025 2026",
+        "findings": "[1] Chemical industry's downturn to persist through 2026 amid ...\nURL: https://www.indianchemicalnews.com/general/chemical-industrys-downturn-to-persist-through-2026-amid-overcapacity-and-soft-demand-deloitte-28528\nContent: ##### Indian chemical industry of tomorrow — A big picture: Aashish Kasad, Senior Partner and National Leader for the Chemicals and Agriculture Sector, Ernst & Young, India\n\n# Interviews\n\nScaling specialty chemicals through innovation and capacity expansion: Surya Prakas MP, Executive Director, Pon Pure Chemicals\n\n##### Scaling specialty chemicals through innovation and capacity expansion: Surya Prakas MP, Executive Director, Pon Pure Chemicals\n\nSurya Prakas MP  Executive Director, Pon Pure Chemicals\n\nBuilding long-term partnerships with formulators and manufacturers: Samir Sarvaiya, Chairman & CEO, Salicylates and Chemicals\n\n##### Building long-term partnerships with formulators and manufacturers: Samir Sarvaiya, Chairman & CEO, Salicylates and Chemicals [...] Mean...",
+        "sources": [
+          "https://www.indianchemicalnews.com/general/chemical-industrys-downturn-to-persist-through-2026-amid-overcapacity-and-soft-demand-deloitte-28528",
+          "https://cen.acs.org/business/Indian-chemical-sectors-aspirations-face/104/web/2026/01",
+          "https://nclt.gov.in/sites/default/files/pdf_cause_list/C-IV%20Final%20Cause%20List%2001.05.2025.pdf",
+          "https://www.pwc.in/ghost-templates/unlocking-indias-specialty-chemicals-opportunity.html",
+          "https://www.cornerofficejournal.com/latest_news.php"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "Seshasayee Paper OR JK Paper fixed costs OR depreciation OR employee cost percentage of sales operating leverage",
+        "findings": "[1] Seshasayee Paper & Boards Ltd share price | About Seshasayee Paper | Key Insights - Screener\nURL: https://www.screener.in/company/SESHAPAPER/consolidated\nContent: | Mar 2023 | Jun 2023 | Sep 2023 | Dec 2023 | Mar 2024 | Jun 2024 | Sep 2024 | Dec 2024 | Mar 2025 | Jun 2025 | Sep 2025 | Dec 2025 | Mar 2026 |\n ---  ---  ---  ---  ---  --- \n|  | 573 | 427 | 362 | 473 | 539 | 422 | 398 | 431 | 502 | 385 | 346 | 387 | 592 |\n|  | 416 | 331 | 273 | 386 | 472 | 374 | 368 | 424 | 477 | 365 | 320 | 362 | 568 |\n| Operating Profit | 157 | 95 | 89 | 88 | 68 | 48 | 31 | 8 | 25 | 20 | 26 | 25 | 24 |\n| OPM % | 27% | 22% | 25% | 19% | 13% | 11% | 8% | 2% | 5% | 5% | 8% | 6% | 4% |\n|  | 10 | 13 | 18 | 15 | 17 | 15 | 19 | 21 | 20 | 14 | 18 | 13 | 20 |\n| Interest | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 2 | 4 | 1 | 4 | 3 | 1 |\n| Depreciation | 10 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 12 | 11 | 11 | 11 | [...] | Mar 2015 | Mar 2016 | Mar 2017 | Mar 2018 | Mar 2019 | Mar 2020 | Mar 2021 | Mar 2022 | Mar 2023 | ...",
+        "sources": [
+          "https://www.screener.in/company/SESHAPAPER/consolidated",
+          "https://forum.valuepickr.com/t/seshasayee-papers-ltd/18654",
+          "https://www.icra.in/Rating/ShowRationalReportFilePdfViewer/140674",
+          "https://scanx.trade/stock-market-news/companies/seshasayee-paper-q1-results-net-profit-surges-97-yoy-to-33-6-crore/46514035",
+          "https://shop.igpinstitute.org/insight/wp-content/uploads/2024/12/Chapter-6-Financing-Decisions-%E2%80%93-Leverages.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "textile spinning mills Tamil Nadu losses OR frozen capex CRISIL OR ICRA report",
+        "findings": "[1] Over 300 textile mills shut in Tamil Nadu in last few years ...\nURL: https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece\nContent: July 19, 2026e-Paper\n\nThe Hindu Logo\n\n# Over 300 textile mills shut in Tamil Nadu in last few years, says report\n\n## Many small-scale mills have shut due to rising input costs, steep hike in power tariff, and high cost of borrowing, says spinning mills association\n\nPublished - February 23, 2026 12:35 am IST - COIMBATORE\n\nM  Soundariya Preetha\nThe textile mills in Tamil Nadu lost heavily on the raw material front, say industry sources.\n\nThe textile mills in Tamil Nadu lost heavily on the raw material front, say industry sources.\n| Photo Credit: M. PERIASAMY\n\nOver 300 textile mills went out of operation in Tamil Nadu between 2021-22 and 2023-24, according to the Annual Survey of Industries. [...] “Tamil Nadu textile industry is finding it increasingly difficult to rem...",
+        "sources": [
+          "https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece",
+          "https://www.sanathan.com/static/media/CRISIL_Report_on_Yarn_Manufacturing_in_India.1ee0ade5.pdf",
+          "https://sitra.org.in/wp-content/uploads/2023/01/Annual-Report-Full-2022.pdf",
+          "https://www.somo.nl/international-companies-linked-to-forced-labour-in-indian-spinning-mills",
+          "https://apparelresources.com/business-news/manufacturing/300-textile-mills-shut-tamil-nadu-two-years-says-industry-survey"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "JK Paper Seshasayee Paper KPR Mill Vardhman Textiles promoter buying insider trading 2024 2025",
+        "findings": "[1] JK_Paper_Annual_Report_24_25.pdf\nURL: https://www.jkpaper.com/pdf/agm/JK_Paper_Annual_Report_24_25.pdf\nContent: Concentration of Purchases a. Purchases from trading houses as % of total purchases 68% 71% b. Number of trading houses where purchases are made from 326 192 c. Purchases from top 10 trading houses as % of total purchases from trading houses 38% 35% Concentration of Sales a. Sales to dealers/distributors as % of total sales 92% 93% b. Number of dealers / distributors to whom sales are made 371 346 c. Sales to top 10 dealers / distributors as % of total sales to dealers / distributors 27% 22% Shares of RPTs in a. Purchases (Purchases with related parties / total purchases) 21% 24.7% b. Sales (Sales to related parties / Total Sales) 0.45% 0.16% c. Loans & advances (Loans & advances given to related parties /Total loans & advances) 24% 25% d. Investments (Investments in related parties / [...] (ICC) at its work place(s) to redress the complaints of women employees. During th...",
+        "sources": [
+          "https://www.jkpaper.com/pdf/agm/JK_Paper_Annual_Report_24_25.pdf",
+          "https://www.jkpaper.com/pdf/annual-reports/JK_Paper_AReport_24_25.pdf",
+          "https://trendlyne.com/equity/insider-trading-sast/all/SIPAPER/2738/south-india-paper-mills-ltd",
+          "https://www.tijorifinance.com/company/jk-paper-limited",
+          "https://www.jkpaper.com/recent-acquisitions"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "Tamil Nadu spinning mills liquidation NCLT bankrupt names 2024 2025",
+        "findings": "[1] 02.05.2025 Cause List Court 1 Nclt.xlsx\nURL: https://nclt.gov.in/sites/default/files/pdf_cause_list/02.05.2025%20%20Cause%20list%20Court%201%20NCLT%20Hyderabad.pdf\nContent: Liquidator IA (IBC) 2354/2024 For Hearing To punish the R1 to 6 for the transactions defrauding creditors u/s. 66 of IBC M/s. Atlantic Spinning and Weaving Mills Ltd Vs M/s GARG Industries -R 1, M/s. Lakshmi Fibrelok Pvt Ltd., - R2, M/s. Sansar Investment & Finance Co., Pvt Ltd., - R3, Ms. Meenakshi Jain - R4, Mr. Rythym Jain - R5, Mr. Sachin Saigal - R6, M/s. National Highway Authority of India - R7 Mr. V V Siva Kumar Mr. Ankur Goel for R1 to R6 Mr. Rohit Pogula for R5 IA (IBC) 794/2025 New Admission To Extend Liquidation Period by 06 months from 14.04.2022 to 14.10.2025 Regulation 44 of IBBI (Liquidation) , 2016 Ms. Sujata Chattopadhyay Liquidator IA (IBC) (Liq.,) (Progress Report) 103/2025 New Admission 21st Progress Report as on 31.03.2025 Reg 15 of IBBI (Liq.,) , 2016 Ms. Sujata [...] process for P G), 2019...",
+        "sources": [
+          "https://nclt.gov.in/sites/default/files/pdf_cause_list/02.05.2025%20%20Cause%20list%20Court%201%20NCLT%20Hyderabad.pdf",
+          "https://nclt.gov.in/sites/default/files/pdf_cause_list/Causelist%2015.04.2025_0.pdf",
+          "https://nclt.gov.in/sites/default/files/pdf_cause_list/Causelist%2025.02.2025.pdf",
+          "https://ibbi.gov.in/uploads/order/2026-04-10-181423-53ju4-80cedabd506f7d0a4295b9561b17fa2b.pdf",
+          "https://elplaw.in/wp-content/uploads/2025/07/IBC-Half-Yearly-Digest-Jan%E2%80%93June-2025-Judicial-Trends-Key-Developments.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "\"Excel Industries\" OR \"Aarti Industries\" specialty chemicals inventory destocking cycle turn leading indicators 2025",
+        "findings": "[1] Excel Industries completes 5-year specialty chemical supply project - AlchemPro\nURL: https://www.fibre2fashion.com/news/chemicals-news/excel-industries-completes-5-year-specialty-chemical-supply-project-312050-newsdetails.htm\nContent: On November 13, 2025, Excel Industries had announced the signing of a binding term sheet with a leading Indian speciality chemicals company for supply of a speciality chemical. The supply period is 5 years. The indicated income net of Raw Material Costs was ₹350–400 million (~$4.1–4.7 million) per annum.\n\nThe Company had mentioned at that time, that it would be commissioning a dedicated setup for effecting the above supplies with an estimated capital expenditure (CAPEX) of ~₹400 million (~$4.7 million). It was also mentioned that the Company would receive a trade advance of ₹250 million (~$2.9 million) from the customer. [...] Excel Industries has completed a project for speciality chemical supplies under a five-year agreement with a leading Indian bu...",
+        "sources": [
+          "https://www.fibre2fashion.com/news/chemicals-news/excel-industries-completes-5-year-specialty-chemical-supply-project-312050-newsdetails.htm",
+          "https://nsearchives.nseindia.com/corporate/EXCELINDUS_22052025125646_Transcript_Intimation_signed.pdf",
+          "https://scanx.trade/stock-market-news/companies/excel-industries-completes-40-cr-specialty-chemicals-capex-project/46365176",
+          "https://www.linkedin.com/posts/jitesh-singh-83642926a_chemicalsector-chemicaloutlook-chemicalindustry-activity-7333756820848562176-TqfE",
+          "https://www.linkedin.com/posts/indian-chemical-news_excel-industries-inks-supply-arrangement-activity-7395344953117179904-LDcH"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "India paper industry import duty ASEAN FTA impact 2024 2025",
+        "findings": "[1] Rise of Paper Imports in India - Shittla Paper Global Private Limited\nURL: https://shitlapapers.com/rise-of-paper-imports-in-india\nContent: Skip to content\n\n +91 99100 12852\n enquiry@sheetlapapers.com\n\nRequest Sample\n\nEnquire Now\n\nCompany Profile\n\nProduct Catalog\n\n has emerged as the primary source of imported paper, benefiting from zero-import duty under the ASEAN-India free trade agreement.\n Value Increase: The value of paper imports has doubled in the last three years, reaching an all-time high of ₹13,248 crore in FY24, as reported by The Times of India.\n\n## Impact on Domestic Industry: [...] Competitive Pressure: The influx of imports, particularly from ASEAN countries, has undermined the commercial competitiveness of domestic paper mills.\n Mill Closures: Many paper mills have faced closure due to the price pressure exerted by duty-free imports.\n Investment Risks: Domestic industry investments in technology and sustainability are now at risk due to the competitive landscape.\n\n#...",
+        "sources": [
+          "https://shitlapapers.com/rise-of-paper-imports-in-india",
+          "https://www.youtube.com/watch?v=RZh30dHH1nM",
+          "https://www.theindustryoutlook.com/services-and-consulting/news/paper-and-paperboard-imports-increase-due-to-india-asean-fta-nwid-8404.html",
+          "https://papermart.in/ipma-expresses-concern-over-paper-imports",
+          "https://www.resourcewise.com/blog/the-continuing-effects-of-trade-tensions-on-pulp-and-paper-markets"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "KPR Mill valuation PE ratio 2024 2025",
+        "findings": "[1] KPR Mill Ltd\nURL: https://www.sharekhan.com/MediaGalary/docs/KPR_Mill-Nov14_2025-202511142008573382925.pdf\nContent: November 14, 2025 1 Valuation (Consolidated) Rs cr Particulars FY24 FY25 FY26E FY27E FY28E Revenue 6,060 6,388 7,322 8,153 9,080 EBITDA Margin (%) 20.4 19.5 21.8 22.9 23.2 Adjusted PAT 805 815 1,081 1,296 1,485 % Y-o-Y growth -1.1 1.2 32.6 19.9 14.6 Adjusted EPS (Rs.) 23.6 23.8 31.6 37.9 43.4 P/E (x) 45.8 45.2 34.1 28.4 24.8 P/B (x) 8.5 7.4 6.1 5.0 4.2 EV/EBIDTA (x) 30.6 29.5 22.6 18.9 16.3 RoNW (%) 20.0 17.4 19.6 19.4 18.5 RoCE (%) 20.7 19.8 24.3 24.8 24.1 Source: Company; Mirae Asset Sharekhan [...] 16.2 11.6 12.1 12.5 16.6 KPR Mill 45.2 34.1 28.4 29.5 22.6 18.9 19.8 24.3 24.8 Source: Company; Mirae Asset Sharekhan Research November 14, 2025 5 Investor’s Eye Stock Update About company KPR Mills is one of the largest vertically integrated textile manufacturing companies in India present across the value chain from ‘fibre-to-fashion.’ KPR has 12 technology-oriented ma...",
+        "sources": [
+          "https://www.sharekhan.com/MediaGalary/docs/KPR_Mill-Nov14_2025-202511142008573382925.pdf",
+          "https://www.stockopedia.com/share-prices/kpr-mill-NSI:KPRMILL",
+          "https://ticker.finology.in/company/KPRMILL",
+          "https://simplywall.st/stocks/in/consumer-durables/nse-kprmill/kpr-mill-shares/news/is-kpr-mill-limiteds-nsekprmill-recent-performance-tethered/amp",
+          "https://www.screener.in/company/KPRMILL/consolidated"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "Ambika Cotton Mills annual report fixed costs OR power costs OR cash equivalents 2024",
+        "findings": "[1] [PDF] annual report 2024 - 2025 ambika cotton mills limited\nURL: https://www.acmills.in/wp-content/uploads/2025/08/acm-annual-2425.pdf\nContent: Borrowing Costs 1.28 3.00 1619.73 1907.05 Particulars 26. FINANCE COSTS Year Ended 31st March 2025 Year Ended 31st March 2024 90 AMBIKA COTTON MILLS LIMITED st NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025 (Rs. in Lakhs) Depreciation of property, plant and equipment 2244.14 2770.33 Amortisation expense 0.00 0.00 Total depreciation and amortisation expense 2244.14 2770.33 Particulars 27. DEPRECIATION AND AMORTISATION EXPENSE (Rs. in Lakhs) Particulars 28. OTHER EXPENSES Stores Consumed 828.44 941.77 Power & Fuel 3264.10 3667.35 Materials Sizing & Fabrication 1213.82 279.72 Freight Inwards 40.16 34.93 Machinery Maintenance 94.43 93.45 Building Maintenance 21.82 25.97 Vehicle Maintenance 306.73 275.42 Printing & Stationary 15.78 15.58 Postage & Telephone 24.41 23.36 [...] activities (A) 12905.04 -13775.47 73 AMBIKA COTTON ...",
+        "sources": [
+          "https://www.acmills.in/wp-content/uploads/2025/08/acm-annual-2425.pdf",
+          "https://www.acmills.in/2025/08/acml-annual-report-for-the-year-2024-2025",
+          "https://s29.q4cdn.com/993087495/files/doc_financials/2024/ar/2024-Annual-Report.pdf",
+          "https://en.wikipedia.org/wiki/Ambika_Mod",
+          "https://shop.ambikajapan.com"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"Seshasayee Paper\" OR \"JK Paper\" \"wood prices\" OR \"pulpwood\" procurement cost inflation 2024",
+        "findings": "[1] A Look at the Market Pulp Landscape in 2024\nURL: https://www.resourcewise.com/blog/forest-products-blog/a-look-at-the-market-pulp-landscape-in-2024\nContent: However, there are concerns about NBSK wood supply as Canadian producers face strikes and many paper mills grapple with rising pulpwood costs.\n\nThis is widening the gap between NBSK and BEKP prices, which was $160 in August. This trend may push producers to optimize their fiber usage and, where possible, increase the proportion of BEKP in their fiber mix.\n\nIt's important to note that China remains a major player in influencing global fiber prices. Chinese companies are expected to use their upcoming in-house pulp production to limit price hikes in the market.\n\n## Factors Impacting the Market Pulp Sector\n\nSeveral factors influence market pulp prices and trends. Understanding these factors is crucial for navigating the complexities of the market. [...] Market pulp serves as the backbone of the pulp and paper industry. It is used ...",
+        "sources": [
+          "https://www.resourcewise.com/blog/forest-products-blog/a-look-at-the-market-pulp-landscape-in-2024",
+          "https://www.linkedin.com/posts/gagansethii_paper-manufacturers-implement-phased-price-activity-7422129482414669824-0uuX",
+          "https://www.maximizemarketresearch.com/market-report/indian-paper-pulp-market/29044",
+          "https://www.fastmarkets.com/insights/woodfree-paper-prices-increase-slightly-in-q2",
+          "https://www.cepi.org/press-release-europes-pulp-and-paper-sector-has-shown-resilience-in-2024-but-high-energy-prices-and-macro-economic-uncertainties-remain-an-issue"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"Seshasayee Paper\" OR \"JK Paper\" wood price increase pulpwood 2024 OR 2025",
+        "findings": "[1] Seshasayee Paper & Boards Ltd\nURL: https://www.screener.in/company/SESHAPAPER/consolidated\nContent: | Sep 2023 | Dec 2023 | Mar 2024 | Jun 2024 | Sep 2024 | Dec 2024 | Mar 2025 | Jun 2025 | Sep 2025 | Dec 2025 | Mar 2026 | Jun 2026 |\n ---  ---  ---  ---  ---  --- |\n|  | 42.78% | 42.78% | 42.78% | 42.78% | 42.78% | 42.81% | 42.90% | 42.90% | 42.90% | 43.03% | 43.11% | 43.27% |\n|  | 12.86% | 12.98% | 12.97% | 13.01% | 13.11% | 13.05% | 13.06% | 13.03% | 13.02% | 12.99% | 12.94% | 12.60% |\n|  | 0.03% | 0.02% | 0.02% | 0.06% | 0.08% | 0.08% | 0.10% | 0.10% | 0.10% | 0.10% | 0.10% | 0.09% |\n|  | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% |\n|  | 30.05% | 29.96% | 29.96% | 29.88% | 29.77% | 29.78% | 29.68% | 29.70% | 29.69% | 29.61% | 29.59% | 29.76% | [...] | Mar 2017 | Mar 2018 | Mar 2019 | Mar 2020 | Mar 2021 | Mar 2022 | Mar 2023 | Mar 2024 | Mar 2025 | Mar 2026 | Jun 2026 |\n ---  ---  ---  ---  --- \n|  | 42.65% | 42.65% |...",
+        "sources": [
+          "https://www.screener.in/company/SESHAPAPER/consolidated",
+          "https://www.sharekhan.com/stock/seshasayee-paper-and-boards-ltd",
+          "https://forum.valuepickr.com/t/seshasayee-papers-ltd/18654",
+          "https://www.icicidirect.com/stocks/seshasayee-paper-and-boards-ltd-share-price",
+          "https://www.tijorifinance.com/company/seshasayee-paper-and-boards-limited"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Indian paper industry \"import parity\" freight rates ASEAN imports 2024",
+        "findings": "[1] Rise of Paper Imports in India\nURL: https://shitlapapers.com/rise-of-paper-imports-in-india\nContent: Skip to content\n\n +91 99100 12852\n enquiry@sheetlapapers.com\n\nRequest Sample\n\nEnquire Now\n\nCompany Profile\n\nProduct Catalog\n\n has emerged as the primary source of imported paper, benefiting from zero-import duty under the ASEAN-India free trade agreement.\n Value Increase: The value of paper imports has doubled in the last three years, reaching an all-time high of ₹13,248 crore in FY24, as reported by The Times of India.\n\n## Impact on Domestic Industry:\n\n[2] Introduction India ranks as the 15th largest paper producer ...\nURL: https://infomericstorage.blob.core.windows.net/uploads/paper_industry_apr25_a74da7bdf5.pdf\nContent: hinder domestic production, as the industry faces intense competition from imports, especially from ASEAN countries and China. Free trade agreements (FTAs) and import concessions have disadvantaged the domestic paper sector. The surge in imports appears to be caus...",
+        "sources": [
+          "https://shitlapapers.com/rise-of-paper-imports-in-india",
+          "https://infomericstorage.blob.core.windows.net/uploads/paper_industry_apr25_a74da7bdf5.pdf",
+          "https://www.theindustryoutlook.com/services-and-consulting/news/paper-and-paperboard-imports-increase-due-to-india-asean-fta-nwid-8404.html",
+          "https://www.brickworkratings.com/Research/Pulp%20&%20Paper%20Industry_Final.pdf",
+          "https://www.mdpi.com/2227-7099/11/1/8"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "India paper industry import duty ASEAN FTA impact 2024 2025",
+        "findings": "[1] Rise of Paper Imports in India - Shittla Paper Global Private Limited\nURL: https://shitlapapers.com/rise-of-paper-imports-in-india\nContent: Skip to content\n\n +91 99100 12852\n enquiry@sheetlapapers.com\n\nRequest Sample\n\nEnquire Now\n\nCompany Profile\n\nProduct Catalog\n\n has emerged as the primary source of imported paper, benefiting from zero-import duty under the ASEAN-India free trade agreement.\n Value Increase: The value of paper imports has doubled in the last three years, reaching an all-time high of ₹13,248 crore in FY24, as reported by The Times of India.\n\n## Impact on Domestic Industry: [...] Competitive Pressure: The influx of imports, particularly from ASEAN countries, has undermined the commercial competitiveness of domestic paper mills.\n Mill Closures: Many paper mills have faced closure due to the price pressure exerted by duty-free imports.\n Investment Risks: Domestic industry investments in technology and sustainability are now at risk due to the competitive landscape.\n\n#...",
+        "sources": [
+          "https://shitlapapers.com/rise-of-paper-imports-in-india",
+          "https://www.youtube.com/watch?v=RZh30dHH1nM",
+          "https://www.theindustryoutlook.com/services-and-consulting/news/paper-and-paperboard-imports-increase-due-to-india-asean-fta-nwid-8404.html",
+          "https://papermart.in/ipma-expresses-concern-over-paper-imports",
+          "https://www.resourcewise.com/blog/the-continuing-effects-of-trade-tensions-on-pulp-and-paper-markets"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "KPR Mill valuation PE ratio 2024 2025",
+        "findings": "[1] KPR Mill Ltd\nURL: https://www.sharekhan.com/MediaGalary/docs/KPR_Mill-Nov14_2025-202511142008573382925.pdf\nContent: November 14, 2025 1 Valuation (Consolidated) Rs cr Particulars FY24 FY25 FY26E FY27E FY28E Revenue 6,060 6,388 7,322 8,153 9,080 EBITDA Margin (%) 20.4 19.5 21.8 22.9 23.2 Adjusted PAT 805 815 1,081 1,296 1,485 % Y-o-Y growth -1.1 1.2 32.6 19.9 14.6 Adjusted EPS (Rs.) 23.6 23.8 31.6 37.9 43.4 P/E (x) 45.8 45.2 34.1 28.4 24.8 P/B (x) 8.5 7.4 6.1 5.0 4.2 EV/EBIDTA (x) 30.6 29.5 22.6 18.9 16.3 RoNW (%) 20.0 17.4 19.6 19.4 18.5 RoCE (%) 20.7 19.8 24.3 24.8 24.1 Source: Company; Mirae Asset Sharekhan [...] 16.2 11.6 12.1 12.5 16.6 KPR Mill 45.2 34.1 28.4 29.5 22.6 18.9 19.8 24.3 24.8 Source: Company; Mirae Asset Sharekhan Research November 14, 2025 5 Investor’s Eye Stock Update About company KPR Mills is one of the largest vertically integrated textile manufacturing companies in India present across the value chain from ‘fibre-to-fashion.’ KPR has 12 technology-oriented ma...",
+        "sources": [
+          "https://www.sharekhan.com/MediaGalary/docs/KPR_Mill-Nov14_2025-202511142008573382925.pdf",
+          "https://www.stockopedia.com/share-prices/kpr-mill-NSI:KPRMILL",
+          "https://ticker.finology.in/company/KPRMILL",
+          "https://simplywall.st/stocks/in/consumer-durables/nse-kprmill/kpr-mill-shares/news/is-kpr-mill-limiteds-nsekprmill-recent-performance-tethered/amp",
+          "https://www.screener.in/company/KPRMILL/consolidated"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "Ambika Cotton Mills annual report fixed costs OR power costs OR cash equivalents 2024",
+        "findings": "[1] [PDF] annual report 2024 - 2025 ambika cotton mills limited\nURL: https://www.acmills.in/wp-content/uploads/2025/08/acm-annual-2425.pdf\nContent: Borrowing Costs 1.28 3.00 1619.73 1907.05 Particulars 26. FINANCE COSTS Year Ended 31st March 2025 Year Ended 31st March 2024 90 AMBIKA COTTON MILLS LIMITED st NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025 (Rs. in Lakhs) Depreciation of property, plant and equipment 2244.14 2770.33 Amortisation expense 0.00 0.00 Total depreciation and amortisation expense 2244.14 2770.33 Particulars 27. DEPRECIATION AND AMORTISATION EXPENSE (Rs. in Lakhs) Particulars 28. OTHER EXPENSES Stores Consumed 828.44 941.77 Power & Fuel 3264.10 3667.35 Materials Sizing & Fabrication 1213.82 279.72 Freight Inwards 40.16 34.93 Machinery Maintenance 94.43 93.45 Building Maintenance 21.82 25.97 Vehicle Maintenance 306.73 275.42 Printing & Stationary 15.78 15.58 Postage & Telephone 24.41 23.36 [...] activities (A) 12905.04 -13775.47 73 AMBIKA COTTON ...",
+        "sources": [
+          "https://www.acmills.in/wp-content/uploads/2025/08/acm-annual-2425.pdf",
+          "https://www.acmills.in/2025/08/acml-annual-report-for-the-year-2024-2025",
+          "https://s29.q4cdn.com/993087495/files/doc_financials/2024/ar/2024-Annual-Report.pdf",
+          "https://en.wikipedia.org/wiki/Ambika_Mod",
+          "https://shop.ambikajapan.com"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"Seshasayee Paper\" OR \"JK Paper\" \"wood prices\" OR \"pulpwood\" procurement cost inflation 2024",
+        "findings": "[1] A Look at the Market Pulp Landscape in 2024\nURL: https://www.resourcewise.com/blog/forest-products-blog/a-look-at-the-market-pulp-landscape-in-2024\nContent: However, there are concerns about NBSK wood supply as Canadian producers face strikes and many paper mills grapple with rising pulpwood costs.\n\nThis is widening the gap between NBSK and BEKP prices, which was $160 in August. This trend may push producers to optimize their fiber usage and, where possible, increase the proportion of BEKP in their fiber mix.\n\nIt's important to note that China remains a major player in influencing global fiber prices. Chinese companies are expected to use their upcoming in-house pulp production to limit price hikes in the market.\n\n## Factors Impacting the Market Pulp Sector\n\nSeveral factors influence market pulp prices and trends. Understanding these factors is crucial for navigating the complexities of the market. [...] Market pulp serves as the backbone of the pulp and paper industry. It is used ...",
+        "sources": [
+          "https://www.resourcewise.com/blog/forest-products-blog/a-look-at-the-market-pulp-landscape-in-2024",
+          "https://www.linkedin.com/posts/gagansethii_paper-manufacturers-implement-phased-price-activity-7422129482414669824-0uuX",
+          "https://www.maximizemarketresearch.com/market-report/indian-paper-pulp-market/29044",
+          "https://www.fastmarkets.com/insights/woodfree-paper-prices-increase-slightly-in-q2",
+          "https://www.cepi.org/press-release-europes-pulp-and-paper-sector-has-shown-resilience-in-2024-but-high-energy-prices-and-macro-economic-uncertainties-remain-an-issue"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"Seshasayee Paper\" OR \"JK Paper\" wood price increase pulpwood 2024 OR 2025",
+        "findings": "[1] Seshasayee Paper & Boards Ltd\nURL: https://www.screener.in/company/SESHAPAPER/consolidated\nContent: | Sep 2023 | Dec 2023 | Mar 2024 | Jun 2024 | Sep 2024 | Dec 2024 | Mar 2025 | Jun 2025 | Sep 2025 | Dec 2025 | Mar 2026 | Jun 2026 |\n ---  ---  ---  ---  ---  --- |\n|  | 42.78% | 42.78% | 42.78% | 42.78% | 42.78% | 42.81% | 42.90% | 42.90% | 42.90% | 43.03% | 43.11% | 43.27% |\n|  | 12.86% | 12.98% | 12.97% | 13.01% | 13.11% | 13.05% | 13.06% | 13.03% | 13.02% | 12.99% | 12.94% | 12.60% |\n|  | 0.03% | 0.02% | 0.02% | 0.06% | 0.08% | 0.08% | 0.10% | 0.10% | 0.10% | 0.10% | 0.10% | 0.09% |\n|  | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% | 14.27% |\n|  | 30.05% | 29.96% | 29.96% | 29.88% | 29.77% | 29.78% | 29.68% | 29.70% | 29.69% | 29.61% | 29.59% | 29.76% | [...] | Mar 2017 | Mar 2018 | Mar 2019 | Mar 2020 | Mar 2021 | Mar 2022 | Mar 2023 | Mar 2024 | Mar 2025 | Mar 2026 | Jun 2026 |\n ---  ---  ---  ---  --- \n|  | 42.65% | 42.65% |...",
+        "sources": [
+          "https://www.screener.in/company/SESHAPAPER/consolidated",
+          "https://www.sharekhan.com/stock/seshasayee-paper-and-boards-ltd",
+          "https://forum.valuepickr.com/t/seshasayee-papers-ltd/18654",
+          "https://www.icicidirect.com/stocks/seshasayee-paper-and-boards-ltd-share-price",
+          "https://www.tijorifinance.com/company/seshasayee-paper-and-boards-limited"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Indian paper industry \"import parity\" freight rates ASEAN imports 2024",
+        "findings": "[1] Rise of Paper Imports in India\nURL: https://shitlapapers.com/rise-of-paper-imports-in-india\nContent: Skip to content\n\n +91 99100 12852\n enquiry@sheetlapapers.com\n\nRequest Sample\n\nEnquire Now\n\nCompany Profile\n\nProduct Catalog\n\n has emerged as the primary source of imported paper, benefiting from zero-import duty under the ASEAN-India free trade agreement.\n Value Increase: The value of paper imports has doubled in the last three years, reaching an all-time high of ₹13,248 crore in FY24, as reported by The Times of India.\n\n## Impact on Domestic Industry:\n\n[2] Introduction India ranks as the 15th largest paper producer ...\nURL: https://infomericstorage.blob.core.windows.net/uploads/paper_industry_apr25_a74da7bdf5.pdf\nContent: hinder domestic production, as the industry faces intense competition from imports, especially from ASEAN countries and China. Free trade agreements (FTAs) and import concessions have disadvantaged the domestic paper sector. The surge in imports appears to be caus...",
+        "sources": [
+          "https://shitlapapers.com/rise-of-paper-imports-in-india",
+          "https://infomericstorage.blob.core.windows.net/uploads/paper_industry_apr25_a74da7bdf5.pdf",
+          "https://www.theindustryoutlook.com/services-and-consulting/news/paper-and-paperboard-imports-increase-due-to-india-asean-fta-nwid-8404.html",
+          "https://www.brickworkratings.com/Research/Pulp%20&%20Paper%20Industry_Final.pdf",
+          "https://www.mdpi.com/2227-7099/11/1/8"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Ambika Cotton Mills promoter buying OR insider trading OR shareholding pattern 2024 2025",
+        "findings": "[1] Ambika Cotton Mills Latest Shareholding Pattern – Promoter, FII, DII, Mutual Fund. Who owns, bought or sold Ambika Cotton Mills Shares?\nURL: https://trendlyne.com/equity/share-holding/70/AMBIKCO/latest/ambika-cotton-mills-ltd\nContent: | Summary | Jun 2026 | Mar 2026 | Dec 2025 | Sep 2025 | Jun 2025 | Mar 2025 | Dec 2024 | Sep 2024 | Jun 2024 | Mar 2024 | Dec 2023 | Sep 2023 |\n ---  ---  ---  ---  ---  --- \n| Promoter | 50.4% | 50.4% | 50.4% | 50.4% | 50.4% | 50.2% | 50.2% | 50.2% | 50.2% | 50.2% | 50.2% | 50.2% |\n| Holding | 50.4% | 50.4% | 50.4% | 50.4% | 50.4% | 50.2% | 50.2% | 50.2% | 50.2% | 50.2% | 50.2% | 50.2% |\n| Pledged | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |\n| Locked | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |\n| FII | 0.5% | 0.3% | 0.4% | 0.4% | 0.4% | 0.4% | 0.4% | 0.4% | 0.5% | 0.4% | 0.5% | 0.9% |\n| DII | 1.7% | 1.7% | 1.6% | 1.6% | 1.6% | 1.1% | 1.3% | 1.2% | 0.0% | 0.0% | 0.1% | 0...",
+        "sources": [
+          "https://trendlyne.com/equity/share-holding/70/AMBIKCO/latest/ambika-cotton-mills-ltd",
+          "https://www.acmills.in/investors",
+          "https://www.acmills.in/2025/08/acml-annual-report-for-the-year-2024-2025",
+          "https://www.nseindia.com/companies-listing/corporate-filings-shareholding-pattern",
+          "https://www.nseindia.com/companies-listing/corporate-filings-insider-trading"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Excel Industries promoter acquisition OR insider transaction BSE NSE 2024 2025",
+        "findings": "[1] Excel Industries Ltd.\nURL: https://nsearchives.nseindia.com/annual_reports/AR_27127_EXCELINDUS_2024_2025_A_28072025151609.pdf\nContent: / promoter group Number of shares % of total number of shares % of change during the year Promoters Ashwin Champraj Shroff 1,03,070 0.82% 0.00% Atul Govindji Shroff 59,784 0.48% 0.00% Abhay Sunil Saraiya 2,332 0.02% 0.00% NOTE 20 - EQUITY SHARE CAPITAL (continued) NOTES TO THE STANDALONE FINANCIAL STATEMENTS AS AT AND FOR THE YEAR ENDED MARCH 31, 2025 (All amounts in INR lakhs, unless otherwise stated) CORPORATE OVERVIEW STATUTORY REPORTS FINANCIAL SECTIONS 64th ANNUAL REPORT 2024-25 195 As at March 31, 2024 Name of the promoter / promoter group Number of shares % of total number of shares % of change during the year Ravi Ashwin Shroff 47,670 0.38% 0.00% Hrishit Ashwin Shroff 47,669 0.38% 0.00% Ami Kantisen Shroff 44,382 0.35% 0.00% Shruti Atul Shroff 22,018 0.18% 0.00% Anshul Amrish [...] Private Limited (w.e.f. March 28, 2025) Divakar Techno Speci...",
+        "sources": [
+          "https://nsearchives.nseindia.com/annual_reports/AR_27127_EXCELINDUS_2024_2025_A_28072025151609.pdf",
+          "https://www.bseindia.com/bseplus/AnnualReport/500650/75044500650.pdf",
+          "https://nsearchives.nseindia.com/annual_reports/AR_29097_LINDEINDIA_2024_2025_A_5338253_16092025143624.pdf",
+          "https://archives.nseindia.com/annual_reports/SME_AR_28789_BAWEJA_2024_2025_A_6602505_06092025174127.pdf",
+          "https://archives.nseindia.com/annual_reports/SME_AR_27992_GOYALSALT_2024_2025_A_5727185_31082025124223.pdf"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Tamil Nadu spinning mills insolvency NCLT OR closed OR shut down 2024 2025",
+        "findings": "[1] Annual Report 2024-2025\nURL: https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf\nContent: Opening Balance (as on 01.04. 2024) Transferred from High Courts Freshly Filed Total Disposed Percentage of Disposal (Old and New Cases) Closing Balance (as on 31.03.2025) Companies Act 7,082 4 2,240 9,326 2,441 6,885 26.17% 2 M&A 1,034 0 1,697 2,731 1,643 1,088 60.16% 3 11,677 5,128 17,054 10,066 6,988 59.02% IBC 249 NCLT’s performance under Insolvency and Bankruptcy Code (IBC), Companies Act and matters pertaining to Merger & Amalgamation (M&A). The data as above explains the efficacy of NCLT in adjudicating IBC cases in a time bound manner and showing better results in CIRP process. While the focus is on judicious adjudication of cases taking inputs from all stake holders, NCLT has been able to achieve a greater disposal of cases than what is freshly ﬁled. It is the old cases that are [...] 54 No. of Plans Approved in NCLT Benches 350 300 250 200 150 100 50 0 Approved ...",
+        "sources": [
+          "https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf",
+          "https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece/amp",
+          "https://www.thehindu.com/news/national/tamil-nadu/over-300-textile-mills-shut-in-tamil-nadu-in-last-few-years-says-report/article70664034.ece",
+          "https://ibbi.gov.in/uploads/order/2026-04-10-181423-53ju4-80cedabd506f7d0a4295b9561b17fa2b.pdf",
+          "https://nclt.gov.in/sites/default/files/pdf_cause_list/Causelist%2015.04.2025_0.pdf"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "India specialty chemical plant closures insolvency NCLT 2024 2025",
+        "findings": "[1] Annual Report 2024-2025\nURL: https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf\nContent: Considering the concept of ease of doing business in India the NCLT has been focusing on mergers, demergers and Amalgamation in a time bound manner and this target has been achieved with strength of 47 Members out of sanctioned strength of 62. The number of disposed of cases during the period 01.04.2024 to 31.03.2025 is higher than or almost same as freshly ﬁled cases.\nCategory 50 The Tribunal dealt with a total of 9,817 cases under Sections 7, 9 and 10 of the IBC during FY 2024–2025, comprising an opening balance of 7,440 matters and 2,377 freshly ﬁled cases. A total of 7,074 cases were disposed during the year, resulting in an overall disposal rate of 72.1 percent, reﬂecting efficient handling of insolvency applications. [...] The event saw the participation of more than sixty-one Hon’ble Members of the NCLT, along with senior officials from the Ministry of Corporate Af...",
+        "sources": [
+          "https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf",
+          "https://ibbi.gov.in/uploads/cdsum/2025-07-30%2016:45:39-2f9407c2aa0865db1cd130bf661d9dbd.pdf",
+          "https://nclt.gov.in/sites/default/files/pdf_cause_list/17.10.2025%20Cause%20list_1.pdf",
+          "https://globalrestructuringreview.com/review/asia-pacific-restructuring-review/2026/article/evolving-jurisprudence-and-regulatory-reforms-review-of-indias-insolvency-landscape-2024-2025",
+          "https://www.multibagg.ai/market-pulse/articles/omkar-speciality-chemicals-exits-cirp-cmqbo8bey01hps60jgvfzm71d"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "\"JK Paper\" financial results FY25 Q3 FY26 revenue profit debt",
+        "findings": "[1] JK Paper Financial Statements - Check Balance Sheet & EBITDA\nURL: https://groww.in/stocks/jk-paper-ltd/company-financial\nContent: # JK Paper\n\n| Particulars | Mar '25 | Jun '25 | Sep '25 | Dec '25 | Mar '26 |\n ---  ---  --- |\n| Revenue | 1,689 | 1,699 | 1,768 | 1,734 | 1,969 |\n| Expenses | 1,596 | 1,583 | 1,667 | 1,685 | 1,849 |\n| EBITDA | 229.11 | 272.20 | 243.66 | 193.18 | 279.07 |\n| Operating Profit | 142.69 | 183.14 | 152.45 | 81.83 | 176.33 |\n| Profit Before Tax | 92.55 | 116.00 | 101.20 | 34.41 | 116.80 |\n| Net Profit | 66.14 | 85.43 | 77.88 | 22.68 | 90.19 |\n| Financial Ratios |\n| Operating Profit Margin | 13.66% | 16.26% | 13.94% | 10.41% | 14.04% |\n| Net Profit Margin | 4.04% | 4.85% | 4.28% | 1.68% | 4.78% |\n| Earning Per Share (Diluted) | 3.74 | 4.80 | 4.42 | 1.61 | 5.07 |\n| Dividends Per Share | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |\n\n[2] quarterly-results-may-26.pdf\nURL: https://www.jkpaper.com/pdf/quarterly-results/quarterly-results-may-26.pdf\nContent: @i q 5 l qJ:-=3 Et ;...",
+        "sources": [
+          "https://groww.in/stocks/jk-paper-ltd/company-financial",
+          "https://www.jkpaper.com/pdf/quarterly-results/quarterly-results-may-26.pdf",
+          "https://www.icicidirect.com/research/equity/rapid-results/jk-paper-ltd",
+          "https://scanx.trade/stock-market-news/companies/jk-paper-reports-audited-financial-results-for-q4-and-fy26-board-recommends-4-per-share-dividend/40673668",
+          "https://www.moneycontrol.com/news/business/earnings/jk-paper-consolidated-march-2026-net-sales-at-rs-1965-95-crore-up-16-36-y-o-y-13923056.html/amp",
+          "https://trendlyne.com/fundamentals/financials/686/JKPAPER/jk-paper-ltd",
+          "https://www.jkpaper.com/pdf/quarterly-results/march_25.pdf"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "\"K.P.R. Mill\" financial results FY25 FY26 revenue profit debt",
+        "findings": "[1] K.P.R. Mill Financial Statements - Check Balance Sheet & EBITDA\nURL: https://groww.in/stocks/kpr-mill-ltd/company-financial\nContent: # K.P.R. Mill\n\nquarterly\n\nyearly\n\n| Particulars | Mar '25 | Jun '25 | Sep '25 | Dec '25 | Mar '26 |\n ---  ---  --- |\n| Revenue | 1,780 | 1,802 | 1,656 | 1,501 | 1,825 |\n| Expenses | 1,499 | 1,523 | 1,384 | 1,238 | 1,505 |\n| EBITDA | 343.84 | 346.23 | 338.16 | 328.01 | 388.80 |\n| Operating Profit | 291.76 | 293.00 | 284.34 | 273.80 | 334.46 |\n| Profit Before Tax | 280.73 | 279.10 | 272.10 | 263.00 | 319.80 |\n| Net Profit | 204.55 | 212.70 | 218.03 | 208.60 | 227.17 |\n| Financial Ratios |\n| Operating Profit Margin | 20.21% | 20.53% | 21.55% | 23.32% | 22.66% |\n| Net Profit Margin | 12.03% | 12.61% | 13.90% | 14.83% | 13.24% |\n| Earning Per Share (Diluted) | 5.98 | 6.22 | 6.38 | 6.10 | 6.65 |\n| Dividends Per Share | 0.00 | 0.00 | 0.00 | 2.50 | 0.00 |\n\nOverview\n\nCharts\n\nCompany financials [...] CommodityNifty Next 50HealthcareGroww\n\nGoldSensexDefence\n\nGro...",
+        "sources": [
+          "https://groww.in/stocks/kpr-mill-ltd/company-financial",
+          "https://ticker.finology.in/company/KPRMILL",
+          "https://www.way2wealth.com/reports/RR190520256b787.pdf",
+          "https://trendlyne.com/fundamentals/financials/764/KPRMILL/kpr-mill-ltd",
+          "https://www.sharekhan.com/MediaGalary/StockIdea/KPR_Mill-Jun13_2023.pdf",
+          "https://www.kprmilllimited.com/financial-result",
+          "https://www.kprmilllimited.com/financial-result-audited-unaudited"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "\"Ambika Cotton Mills\" financial results FY25 FY26 revenue profit debt",
+        "findings": "[1] Ambika Cotton Mills Quarterly Results, Ambika Cotton Mills Financial Statement & Accounts - Moneycontrol\nURL: https://www.moneycontrol.com/markets/financials/quarterly-results/ambikacottonmills-ACM04\nContent: What is the net profit reported by Ambika Cotton Mills Ltd. in Q4 FY25-26\n\nAmbika Cotton Mills Ltd. reported a net profit of Rs 24.\n\nWhat is the Revenue Earned by Ambika Cotton Mills Ltd.?\n\nAmbika Cotton Mills Ltd. reported a revenue earned of Rs 215.\n\nWhat is the dividend declared in the current financial year?\n\nAmbika Cotton Mills Ltd. has declared a dividend of Rs 37.00 on 19 Sep, 2025.\n\nWhat was the last bonus declared by Ambika Cotton Mills Ltd.\n\nThe last bonus declared by Ambika Cotton Mills Ltd. was on --.\n\nWhat is the reported EPS & estimated EPS for Ambika Cotton Mills Ltd.\n\nThe reported EPS for Ambika Cotton Mills Ltd. is 125.00 and the estimated EPS is --.\n\ncomScore [...] Ambika Cotton Mills Ltd. reported a net profit of Rs 24.\n\nWhat is the Revenue Earned by Ambika ...",
+        "sources": [
+          "https://www.moneycontrol.com/markets/financials/quarterly-results/ambikacottonmills-ACM04",
+          "https://nsearchives.nseindia.com/corporate/AMBIKCO_26052026130100_OCRQ426Result.pdf",
+          "https://www.acmills.in",
+          "https://www.tijorifinance.com/company/ambika-cotton-mills-limited/financials",
+          "https://www.equitybulls.com/category.php?id=373460",
+          "https://www.scribd.com/document/694194811/Ambika-Cotton",
+          "https://www.acmills.in/investors"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "JK Paper promoter insider buying BSE NSE disclosures 2025 2026",
+        "findings": "[1] JK Paper - Disclosures under Insider Trades & Substantial Acquisition of Shares and Takeovers\nURL: https://trendlyne.com/equity/insider-trading-sast/all/JKPAPER/686/jk-paper-ltd\nContent: 1. MARKETS\n2. SECTOR : COMMERCIAL SERVICES & SUPPLIES\n3. INDUSTRY : PAPER & PAPER PRODUCTS\n4. JK PAPER LTD.\n\nJK Paper Ltd.\n\n NSE: JKPAPER | BSE: 532162 \n\nTurnaround Potential\n\nDownload real time\n\n401.45  9.90  (2.53%)\n\n###### 31.69% Gain from 52W Low\n\n1.1M \n\nNSE+BSE Volume\n\n###### High vol. this week\n\nNSE 24 Jul, 2026 3:31 PM (IST)\n\nWatchlist\n\n \n\nPortfolio\n\n \n\nAlert\n\n  My Notes\n\nBoard Meeting\n\nThe next board meeting for JK Paper is on 27 Jul 2026 for the purpose of Quarterly Results See details\n\n[2] JK Paper Ltd,Price â‚¹368.00 (-0.41%) | on Fri 17/07/2026,16:1:0 | Mirae Asset Sharekhan\nURL: https://www.sharekhan.com/stock/jk-paper-ltd\nContent: | HDFC Hybrid Debt RP (G) | 5.55 | 0.17 |\n| HDFC Hybrid Debt RP (I-Mont) | 5.55 | 0.17 |\n| HDFC Hybrid Debt RP (I-Quar) | 5.55 | 0.17 |\n| HDFC Hybrid Debt R...",
+        "sources": [
+          "https://trendlyne.com/equity/insider-trading-sast/all/JKPAPER/686/jk-paper-ltd",
+          "https://www.sharekhan.com/stock/jk-paper-ltd",
+          "https://www.moneycontrol.com/india/stockpricequote/paper/jkpaper/JKP01",
+          "https://www.jkpaper.com/intimation-to-stock-exchanges",
+          "https://www.icicidirect.com/stocks/jk-paper-ltd-share-price"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "KPR Mill promoter share acquisition open market 2025 2026",
+        "findings": "[1] KPR Mill - Disclosures under Insider Trades & Substantial Acquisition of Shares and Takeovers\nURL: https://trendlyne.com/equity/insider-trading-sast/all/KPRMILL/764/kpr-mill-ltd\nContent: 1. MARKETS\n2. SECTOR : TEXTILES APPARELS & ACCESSORIES\n3. INDUSTRY : TEXTILES\n4. KPR MILL LTD.\n\nKPR Mill Ltd.\n\n NSE: KPRMILL | BSE: 532889 \n\nMid-range Performer\n\n  In 2 Starfolio Baskets\n\nDownload real time\n\n1064.80  -36.10  (-3.28%)\n\n###### 33.75% Gain from 52W Low\n\n610.5K \n\nNSE+BSE Volume\n\nNSE 22 Jul, 2026 3:31 PM (IST)\n\nWatchlist\n\n \n\nPortfolio\n\n \n\nAlert\n\n  My Notes\n\n[2] KPR Mill Ltd\nURL: https://www.sharekhan.com/MediaGalary/docs/KPR_Mill-Nov14_2025-202511142008573382925.pdf\nContent: One-year forward P/E (x) band 0.0 100.0 200.0 300.0 400.0 500.0 600.0 700.0 800.0 900.0 1000.0 1100.0 1200.0 1300.0 1400.0 Oct-15 Apr-16 Oct-16 Apr-17 Oct-17 Apr-18 Oct-18 Apr-19 Oct-19 Apr-20 Oct-20 Apr-21 Oct-21 May-22 Nov-22 May-23 Nov-23 May-24 Nov-24 May-25 Nov-25 5x 15x 25x 35x Source: Company; Mirae Asset Sha...",
+        "sources": [
+          "https://trendlyne.com/equity/insider-trading-sast/all/KPRMILL/764/kpr-mill-ltd",
+          "https://www.sharekhan.com/MediaGalary/docs/KPR_Mill-Nov14_2025-202511142008573382925.pdf",
+          "https://trendlyne.com/equity/share-holding/764/KPRMILL/latest/kpr-mill-ltd",
+          "https://www.cnbctv18.com/market/kpr-mill-share-price-gains-most-in-18-years-motilal-oswal-triggers-us-india-trade-talks-tariffs-textile-19931165.htm",
+          "https://nirmanbroking.com/blog"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "India paper import anti dumping duty investigation 2025 2026",
+        "findings": "[1] TO BE PUBLISHED IN THE GAZETTE OF INDIA, ...\nURL: https://dgtr.gov.in/sites/default/files/2026-06/NCV%20FF-Virgin%20Paperboard_%20English%2025.06.26.pdf\nContent: Final Findings Non-Confidential DGTR, Department of Commerce, Government of India Page 1 of 53 TO BE PUBLISHED IN THE GAZETTE OF INDIA, Extraordinary, Part I, Section 1 F.No. 06/20/2025 – DGTR Government of India Ministry of Commerce & Industry Department of Commerce Directorate General of Trade Remedies  IV Floor, Jeevan Tara Building, Parliament Street, New Delhi Dated: 25th June, 2026 FINAL FINDINGS (Case No. – AD (OI) – 17/2025) Subject: Anti-dumping investigation concerning imports of “Virgin Multi-layer Paperboards” originating in or exported from Indonesia. 1. Having regard to the Customs Tariff Act, 1975, as amended from time to time (hereinafter referred to as the “Act”), and the Customs Tariff (Identification, Assessment and Collection of Anti-Dumping Duty on Dumped Articles and [...] for the present investigatio...",
+        "sources": [
+          "https://dgtr.gov.in/sites/default/files/2026-06/NCV%20FF-Virgin%20Paperboard_%20English%2025.06.26.pdf",
+          "https://www.trade.gov/india-initiates-antidumping-duty-investigation-thermal-paper-or-thermal-sensitive-paper-united",
+          "https://a2ztaxcorp.net/india-launches-anti-dumping-probe-into-paperboard-imports-from-indonesia",
+          "https://tpm.in/wp-content/uploads/2026/06/Adhyatan-TPM-Newsletter-June-2026.pdf",
+          "https://www.mondaq.com/pdf/1761648.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "cotton yarn spread historical trough levels India 2025 2026",
+        "findings": "[1] India Cotton Yarn Market 2026: Trends & Growth Guide\nURL: https://sdpolytech.com/blog/article/India-Cotton-Yarn-Market-2026-Trends-Growth-Drivers-Industry-Outlook\nContent: ## Cotton Yarn Production Continues to Expand\n\nThe outlook for cotton yarn production India remains positive as manufacturers continue investing in modern spinning infrastructure. Several textile clusters across Gujarat, Maharashtra, Tamil Nadu, Punjab, and Telangana have expanded production capacity to meet growing domestic and export requirements.\n\nImproved production efficiency has helped manufacturers reduce operational costs while increasing output quality. Many mills are also focusing on specialty yarns that offer higher margins compared to conventional products.\n\nAs production capabilities continue to improve, India is expected to maintain its position as one of the world's largest cotton yarn suppliers.\n\n## Export Opportunities Remain Strong [...] ## Conclusion\n\nThe India cotton yarn market is entering 20...",
+        "sources": [
+          "https://sdpolytech.com/blog/article/India-Cotton-Yarn-Market-2026-Trends-Growth-Drivers-Industry-Outlook",
+          "https://caionline.in/uploads/publications/doc/ISSUE_NO__47_17-02-2026.pdf",
+          "https://www.thebusinessresearchcompany.com/report/cotton-yarn-global-market-report",
+          "https://www.marketresearchfuture.com/reports/india-cotton-yarn-market-47925",
+          "https://www.linkedin.com/pulse/india-cotton-market-outlook-20262034-trends-analysis-dynamics-kalyan-uwi1c"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "\"Seshasayee Paper\" \"FY26\" OR \"Q4 FY26\" financial results revenue debt profit",
+        "findings": "[1] Seshasayee Paper Q4 Net Profit Falls 32% to ₹174M Despite 17.5% Revenue Growth\nURL: https://www.sahi.com/news/seshasayee-paper-q4-net-profit-falls-32-to-174m-despite-17-5-revenue-growth-254-PE1_CORP\nContent: Get Free AccountLogin\n\n# Seshasayee Paper Q4 Net Profit Falls 32% to ₹174M Despite 17.5% Revenue Growth\n\nSeshasayee Paper's Q4 results show a 17.5% YoY revenue jump to ₹5.9B, but net profit plummeted 32% to ₹174M as EBITDA margins shrank by 104 bps to 3.98%, reflecting intense raw material and energy cost pressures.\n\nAuthor Image\n\nSahi Markets\n\nPublished: 12 May 2026, 04:02 PM IST (2 months ago)\n\nLast Updated: 12 May 2026, 04:02 PM IST (2 months ago)\n\n3 min read\n\nReviewed by Arpit Seth\n\nMarket snapshot: Seshasayee Paper and Boards Ltd (SESHAPAPER) reported a divergence between its top-line expansion and bottom-line performance for the quarter ended March 2026. While consumer demand drove revenue higher, operational headwinds severely impacted profitability and margins.\n\n## Data...",
+        "sources": [
+          "https://www.sahi.com/news/seshasayee-paper-q4-net-profit-falls-32-to-174m-despite-17-5-revenue-growth-254-PE1_CORP",
+          "https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/premarketreports/Q4_FY26_Preview_090426.pdf",
+          "https://www.spbltd.com/financials/quarterly-reports/index.html",
+          "https://www.tijorifinance.com/company/seshasayee-paper-and-boards-limited",
+          "https://www.linkedin.com/posts/atul-singh-frm-487921129_result-213-september-2025-seshasayee-activity-7387849380990734336-Sz_t"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "\"JK Paper\" OR \"K.P.R. Mill\" OR \"Ambika Cotton\" insider buying SAST disclosures BSE NSE 2025 2026",
+        "findings": "[1] Insider Trading & SAST disclosures for JK Paper\nURL: https://trendlyne.com/equity/insider-trading-sast/all/JKPAPER/686/jk-paper-ltd\nContent: 1. MARKETS\n2. SECTOR : COMMERCIAL SERVICES & SUPPLIES\n3. INDUSTRY : PAPER & PAPER PRODUCTS\n4. JK PAPER LTD.\n\nJK Paper Ltd.\n\n NSE: JKPAPER | BSE: 532162 \n\nTurnaround Potential\n\nDownload real time\n\n401.45  9.90  (2.53%)\n\n###### 31.69% Gain from 52W Low\n\n1.1M \n\nNSE+BSE Volume\n\n###### High vol. this week\n\nNSE 24 Jul, 2026 3:31 PM (IST)\n\nWatchlist\n\n \n\nPortfolio\n\n \n\nAlert\n\n  My Notes\n\nBoard Meeting\n\nThe next board meeting for JK Paper is on 27 Jul 2026 for the purpose of Quarterly Results See details\n\n[2] Ambika Cotton Mills - Disclosures under Insider Trades & Substantial Acquisition of Shares and Takeovers\nURL: https://trendlyne.com/equity/insider-trading-sast/all/AMBIKCO/70/ambika-cotton-mills-ltd\nContent: ###### 55.15% Gain from 52W Low\n\nNSE\n24 Jul, 2026 3:31 PM (IST)\n\nWatchlist\n\nPortfolio\n\nAlert\n\nMy Notes\n\n# Insider Trading & SAST disclosures f...",
+        "sources": [
+          "https://trendlyne.com/equity/insider-trading-sast/all/JKPAPER/686/jk-paper-ltd",
+          "https://trendlyne.com/equity/insider-trading-sast/all/AMBIKCO/70/ambika-cotton-mills-ltd",
+          "https://trendlyne.com/equity/insider-trading-sast/all/KPRMILL/764/kpr-mill-ltd",
+          "https://finance.yahoo.com/quote/JKPAPER.NS/history",
+          "https://www.smart-investing.in/main.php?Company=JK+PAPER+LTD"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "\"Seshasayee Paper\" capacity expansion plans and captive power source",
+        "findings": "[1] Our Profile – Seshasayee Paper and Boards Limited\nURL: https://www.spbltd.com/about-us/our-profile/index.html\nContent: 1990 – 2000\n\n## 1990 – 2000\n\n SPB undertook various equipment balancing and modernisation programmes, for improving its operating efficiency, captive power generation capacity, etc., upto 1992-93.\n The Company embarked on an Expansion / Modernisation Project in the year 2000 to enhance its production capacity from 55000 tonnes per annum, to 1,15,000 tonnes per annum by addition of a pre-owned Paper Machine – PM-5 and upgradation of some of the existing facilities, in its Unit : Erode.\n The current installed capacity of Unit : Erode stands at 1,15,000 tonnes per annum while the annual production is in excess of 1,30,000 tonnes.\n\n2000 – 2010\n\n## 2000 – 2010 [...] The Company in the year 2004 had set up a 21 MW Coal Based Captive Power Plant in its Erode unit, which made the unit self sufficient in power.\n The Company embarked on a Major Mill Development Plan during 2...",
+        "sources": [
+          "https://www.spbltd.com/about-us/our-profile/index.html",
+          "https://timesofindia.indiatimes.com/business/india-business/seshasayee-paper-plans-20-mw-power-project/articleshow/128759.cms",
+          "https://www.spbltd.com/wp-content/uploads/2024/04/Q4.pdf",
+          "https://research-api.cbs.dk/ws/portalfiles/portal/67265651/adbi_wp1238.pdf",
+          "https://energyandcleanair.org/wp/wp-content/uploads/2026/02/EN-CREA_GEM_Indonesia-captive-coal-in-2025_REV.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 2)"
+      },
+      {
+        "query": "JK Paper auditor resignation tax dispute governance 2024 2025 2026",
+        "findings": "[1] JK Paper Ltd\nURL: https://www.sharekhan.com/stock/jk-paper-ltd\nContent: 9 May 2026, 4:08PM JK Paper Limited has informed the Exchange regarding Resignation of Mr Namo Narain Agarwal as Secretarial Auditor of the Company w.e.f. May 18, 2026.\n ### JK Paper - Announcement under Regulation 30 (LODR)-Change in Management\n\n  9 May 2026, 4:04PM Change in Management\\_ Resignation of Secretarial Auditor\n ### JK Paper - Board Meeting Intimation for Board Meeting To Be Held On 18Th May 2026\n\n  8 May 2026, 6:56PM JK Paper Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 18/05/2026 ,inter alia, to consider and approve\n ### JK Paper [...] 18 May 2026, 8:20PM Audited Financial Results for the quarter and financial year ended 31st March 2026\n ### JK Paper - Dividend\n\n  18 May 2026, 8:16PM JK Paper Limited has informed the Exchange that Board of Directors at its meeting held on May 18, 2026, recommended Final Dividend of Rs. 4 per equity\n ### JK Paper - ...",
+        "sources": [
+          "https://www.sharekhan.com/stock/jk-paper-ltd",
+          "https://www.jkpaper.com/pdf/annual-reports/JK_Paper_AReport_24_25.pdf",
+          "https://www.jkpaper.com/pdf/agm/JK_Paper_Annual_Report_24_25.pdf",
+          "https://www.jkpaper.com/pdf/agm/JK_Paper_Ltd_Notice_25.pdf",
+          "https://www.jkpaper.com/pdf/quarterly-results/quarterly-results-may-26.pdf"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "KPR Mill auditor resignation governance controversy 2024 2025 2026",
+        "findings": "[1] _______ K.P.R. MILL LIMITED_______\nURL: https://www.bseindia.com/xml-data/corpfiling/Attachhis/78f3d7c4-2ead-41bf-a059-97defd4374ad.pdf\nContent: EXPLANATORY STATEMENT PURSUANT TO SECTION 102OFTHECOMPANIESACT2013 Item No.4 The Board of Directors at the meeting held on 09.05.2025, based on the recommendation of the Audit Committee, appointed Mr. B. Venkateswar, B.Sc., FCMA (M.No:27622), Cost Accountant, Coimbatore, as Cost Auditor for the Financial Year ending 31st March, 2026 at a remuneration of ? 50,000/- (plus GST and other out of pocket expenses, if any). As per Rule 14 of the Companies (Audit and Auditors) Rules, 2014, the remuneration payable to the said Cost Auditor has to be ratified by the Shareholders and hence the resolution under Item no.4 is placed for your approval.\nNone of the Directors or Key Managerial Personnel or their relatives is in any way, concerned or interested, financially or otherwise, in this resolution. [...] The Nomination and Remuneration Committee of ...",
+        "sources": [
+          "https://www.bseindia.com/xml-data/corpfiling/Attachhis/78f3d7c4-2ead-41bf-a059-97defd4374ad.pdf",
+          "https://nsearchives.nseindia.com/corporate/KPRMILL_27062026114004_23RDAGMNOTICEANNUALREPORT.pdf",
+          "https://www.multibagg.ai/market-pulse/articles/pankaj-polymers-auditor-resignation-2026-cmryz4vji910h0zohmgkbxw51",
+          "https://bkend.kprmilllimited.com/media/documents/BMOutcome02052024.pdf",
+          "https://www.sharekhan.com/MediaGalary/docs/KPR_Mill-Nov14_2025-202511142008573382925.pdf"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Ambika Cotton Mills auditor resignation governance dispute 2024 2025 2026",
+        "findings": "[1] [PDF] annual report 2024 - 2025 ambika cotton mills limited\nURL: https://www.acmills.in/wp-content/uploads/2025/08/acm-annual-2425.pdf\nContent: This is to confirm that the Board and Senior Management Personnel of the Company have affirmed compliance with the Company’s Code of Conduct in respect of the Financial Year Ended 31.03.2025. Place : Coimbatore Date : 08.08.2025 By order of the Board Sd/-(P.V.CHANDRAN) Chairman and Managing Director 56 AMBIKA COTTON MILLS LIMITED CORPORATE GOVERNANCE REPORT (Contd...) E. AUDITOR’S CERTIFICATE ON COMPLIANCE OF CONDITIONS OF CORPORATE GOVERNANCE To The members of Ambika Cotton Mills Limited We have examined the compliance of conditions of Corporate Governance by Ambika Cotton Mills Limited (“the Company”) th for the year ended 31 March , 2025, as per the relevant provisions of the Securities and Exchange Board of India (Listing Obligations & Disclosure Requirements) Regulations, 2015 [...] (J) Resignation of Independent Director : Mr. N. Subr...",
+        "sources": [
+          "https://www.acmills.in/wp-content/uploads/2025/08/acm-annual-2425.pdf",
+          "https://nsearchives.nseindia.com/corporate/AMBIKCO_26052026130100_OCRQ426Result.pdf",
+          "https://modinaturals.com/wp-content/uploads/2026/05/Resignation-of-Statutory-Auditors.pdf",
+          "https://www.multibagg.ai/market-pulse/articles/pankaj-polymers-auditor-resignation-2026-cmryz4vji910h0zohmgkbxw51",
+          "https://www.acmills.in/investors"
+        ],
+        "phase": "Cross-Verification"
+      }
+    ],
+    "disclaimer": "This analysis is strictly for hypothesis generation and investigative framing by portfolio managers. It does not constitute a recommendation to buy or sell any security.",
+    "phases_completed": 5,
+    "total_search_count": 51
+  }
+}

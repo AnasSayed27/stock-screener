@@ -1,0 +1,654 @@
+{
+  "id": "f6ccbd2c-7462-4969-a044-0fda94400e2a",
+  "strategy_id": "hidden_monopoly",
+  "strategy_name": "Hidden Monopoly / Toll Road Finder",
+  "user_params": {
+    "context": ""
+  },
+  "model_name": "gemini-3.5-flash-lite",
+  "created_at": "2026-07-24T11:28:16.630334",
+  "result": {
+    "analysis_summary": "This synthesis identifies two high-conviction, listed Indian companies holding near-monopoly positions in niche markets with 'toll road' characteristics. These companies operate in segments where the cost of their product is a tiny fraction of the total project cost, but the cost of failure is catastrophic, creating high switching costs and immense pricing power. Time Technoplast is transitioning from a commodity packaging player to a high-margin Type-IV composite cylinder leader for CNG and hydrogen cascades. Modern Insulators is India's largest manufacturer of high-voltage porcelain insulators, benefiting from a multi-decade power transmission grid expansion while being ignored due to legacy corporate restructuring and micro-cap status.",
+    "candidates": [
+      {
+        "company_name": "Time Technoplast Ltd",
+        "ticker": "TIMETECHNO",
+        "connection_type": "Type-IV Composite Cylinder Toll Road for CGD and Hydrogen Cascades",
+        "confidence": "high",
+        "why_now": "(a) What changed: Time Technoplast has secured massive institutional orders (such as a recent INR 115.56 crore order) for its PESO-approved Type-IV composite CNG cascades, validating its transition to high-margin value-added products (VAP). (b) Estimated catalyst window: Near-term (0-6 months) as quarterly earnings continue to show VAP share crossing 35% of total revenue, driving EBITDA margin expansion. (c) Confirming milestone: Commercial announcements of high-pressure Green Hydrogen transport cascade orders from major energy conglomerates.",
+        "reasoning": "This company is invisible because the market misclassifies it as a low-margin commodity plastic packaging manufacturer, ignoring its high-margin technical composite cylinder business. The market will notice it when value-added products (VAP) cross 35-40% of revenue, driving a structural EBITDA margin expansion to >16% and a complete re-rating of the stock. [OBSERVED FACTS] Time Technoplast operates a dominant industrial packaging business (73% of revenue) providing steady cash flows, while its VAP segment (IBCs and Type-IV composite cylinders) operates at 18-22% EBITDA margins. The company recently won a major INR 115.56 crore order for Type-IV composite cascades. Debt-to-equity is low at 0.30, and ROCE has expanded to 18.1%. [STRONG INFERENCE] The Petroleum and Natural Gas Regulatory Board (PNGRB) mandate for thousands of new CNG stations creates a massive domestic addressable market for mobile cascades. Because high-pressure gas transport involves catastrophic failure risks, energy distributors cannot risk uncertified suppliers, giving Time Technoplast (which holds rare PESO approvals) immense pricing power and high switching costs. [HYPOTHESIS] The market is valuing the company at commodity multiples (PE ~15-18x) when its high-margin composite cylinder business behaves like an infrastructure toll road, which will drive a significant valuation re-rating as the VAP mix dominates.",
+        "self_critique": "The hypothesis could be wrong if the adoption of Type-IV composite cylinders by City Gas Distribution (CGD) companies slows down in favor of traditional, cheaper Type-I steel cylinders, or if global carbon fiber prices spike dramatically, compressing margins despite the pass-through mechanism.",
+        "disproving_evidence": "A material decline in the revenue share of Value-Added Products (VAP) below 30% over consecutive quarters, or a major safety failure/recall of a Type-IV composite cascade in the field.",
+        "risks": [
+          "Volatility in raw material prices (high-density polyethylene and carbon fiber)",
+          "Working capital lockup due to high receivable days from public sector undertaking (PSU) clients",
+          "Slowdown in the domestic City Gas Distribution network expansion"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: That CGD companies will continue to transition from heavy steel cascades to lightweight Type-IV composite cascades due to payload efficiency and lower operating costs.",
+          "The quarterly growth rate of the Value-Added Products (VAP) segment relative to the legacy packaging business.",
+          "The stability of carbon fiber sourcing contracts and the pass-through efficiency of raw material price hikes."
+        ],
+        "sources": [
+          "https://www.nseindia.com",
+          "https://www.bseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 75%",
+          "Phase 2: 82%",
+          "Phase 3: 82%",
+          "Phase 4: 82%",
+          "Final: 82%"
+        ]
+      },
+      {
+        "company_name": "Modern Insulators Ltd",
+        "ticker": "515008",
+        "connection_type": "High-Voltage Porcelain Insulators for Power Transmission Grid Infrastructure",
+        "confidence": "medium",
+        "why_now": "(a) What changed: The company is completing a major corporate restructuring (demerging its legacy yarn division and amalgamating Modern Denim) to become a clean, debt-free, high-voltage porcelain insulator pure-play. (b) Estimated catalyst window: Medium-term (6-18 months) as NCLT approvals are finalized and the clean corporate structure is reflected in reported financials. (c) Confirming milestone: Completion of the NCLT amalgamation process and the subsequent initiation of analyst coverage.",
+        "reasoning": "This company is invisible because it is a micro-cap listed only on the BSE with zero analyst coverage, historically associated with a legacy textile/yarn business. The market will notice it when the ongoing corporate restructuring (demerger of the yarn division and amalgamation of Modern Denim) is fully completed, leaving a clean, high-margin, debt-free high-voltage porcelain insulator pure-play. [OBSERVED FACTS] Modern Insulators is India's largest manufacturer and exporter of high-voltage porcelain insulators, with exports contributing ~47% of revenue across 50+ countries. Standalone revenue for Q3 FY26 jumped 60% YoY to INR 199.4 crores, and net profit surged 166.6% YoY to INR 24.66 crores. The company is virtually debt-free (debt-to-equity ~0.05) and has a promoter holding of 60.18% with zero pledge. [STRONG INFERENCE] Insulators represent less than 1% of a transmission project's total cost, but failure causes catastrophic grid blackouts. This mission-critical nature creates high switching costs and long-term relationships with utilities like PGCIL. While polymer insulators are used in distribution, high-voltage alumina porcelain remains irreplaceable for heavy-duty substations (400kV to 1200kV), ensuring steady demand. [HYPOTHESIS] The market is ignoring Modern Insulators due to its legacy conglomerate structure and micro-cap status, valuing it at a massive discount (~15x TTM PE) compared to electrical equipment peers trading at 40-60x, despite its dominant market share and surging profitability.",
+        "self_critique": "The hypothesis could be wrong if the corporate restructuring drags on indefinitely in NCLT, or if related-party transactions and legacy liabilities from the Modern Denim amalgamation negatively impact the balance sheet and cash flows.",
+        "disproving_evidence": "An adverse NCLT ruling regarding the amalgamation scheme, or a significant write-down of assets/receivables related to legacy group companies.",
+        "risks": [
+          "Delays in the NCLT approval process for corporate restructuring",
+          "High energy intensity of ceramic kiln firing, making margins sensitive to natural gas/power tariff hikes",
+          "Liquidity risk due to listing only on the BSE with low daily trading volumes"
+        ],
+        "what_to_verify": [
+          "KILLER ASSUMPTION: That the legacy liabilities of Modern Denim will not overwhelm the strong cash flows and debt-free balance sheet of the core insulator business post-amalgamation.",
+          "The progress and timeline of the NCLT scheme of arrangement.",
+          "The sustainability of the 15-16% operating profit margins in the face of rising energy costs."
+        ],
+        "sources": [
+          "https://www.bseindia.com"
+        ],
+        "confidence_evolution": [
+          "Phase 1: 0% (Not identified)",
+          "Phase 2: 75%",
+          "Phase 3: 78%",
+          "Phase 4: 78%",
+          "Final: 78%"
+        ]
+      }
+    ],
+    "limitations": [
+      "The analysis is based on publicly available financial disclosures and regulatory filings up to early 2026.",
+      "Micro-cap and small-cap companies in India are subject to higher liquidity risks and limited institutional information flow.",
+      "Corporate restructuring timelines in India (NCLT) are notoriously difficult to predict and can be subject to administrative delays."
+    ],
+    "searches_performed": [
+      {
+        "query": "Railway track components fasteners sole manufacturer India listed NSE BSE",
+        "findings": "[1] Best Railway Track Manufacturer in India\nURL: https://jekay.com/best-railway-track-manufacturer-in-india\nContent: Jekay International Track Pvt. Ltd. stands tall as the best railway track manufacturer in India. The company manufactures: Track Fastenings: Engineered for\n\n[2] Railway Components / Forged Railway Parts & Components\nURL: https://www.rattaninds.com/railway-fasteners-manufacturers-india-punjab.html\nContent: Rattan Industries India railway fasteners, railway parts manufacturers india, Railway Track Components, Production: 300 Tons capacity per month\n\n[3] Railways Fasteners Manufacturer and Supplier in India | Roll Fast\nURL: https://www.roll-fast.com/industries-served/railways.html\nContent: Indian railways have the largest rail network in the world so we have wide range of products as per requirements. Track bolts and nuts are often used as the components on rail fastening systems. High strength bolt is a typical kind of rail fastener that is made of high tensile steel. Lik...",
+        "sources": [
+          "https://jekay.com/best-railway-track-manufacturer-in-india",
+          "https://www.rattaninds.com/railway-fasteners-manufacturers-india-punjab.html",
+          "https://www.roll-fast.com/industries-served/railways.html",
+          "http://www.railway-fasteners.com/news/indian-standard-railroad-products.html",
+          "https://patilgroup.com/fasteners"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Cryogenic containers industrial gas cylinders manufacturer India listed NSE BSE monopoly",
+        "findings": "[1] 22 Monopoly Stocks in India 📊 1- IRCTC (100% ...\nURL: https://www.facebook.com/groups/431633891259420/posts/1300250251064442\nContent: Which stocks listed in the BSE and NSE are a monopoly in their business? domestic container cargo transport. India is engaged in the\n\n[2] 24/12 Cryogenic Gas Industries - Manufacturer of Industrial ...\nURL: https://www.cryogenicgas.co.in\nContent: 24/12 Cryogenic Gas Industries ; Cryocan BA 7 Liquid Nitrogen Container. Rs 13,519 / Piece. Material: ; Cryocan TA 35 Liquid Nitrogen Container. Rs 21,450 / Piece.\n\n[3] Top 30 Monopoly Stock Companies in India and Why its ...\nURL: https://www.stocksmantra.com/top-30-monopoly-stock-companies-in-india-and-why-its-monopoly\nContent: Below is the updated list of top monopoly companies in India as of 2025, Container Corporation of India Ltd 68.52%\n\n[4] 15 Indian Monopoly Stocks That Dominate Their Industries\nURL: https://www.equitymaster.com/detail.asp?date=03%2F29%2F2025&story=3&title=15-Indian-Monopoly-Stocks-Th...",
+        "sources": [
+          "https://www.facebook.com/groups/431633891259420/posts/1300250251064442",
+          "https://www.cryogenicgas.co.in",
+          "https://www.stocksmantra.com/top-30-monopoly-stock-companies-in-india-and-why-its-monopoly",
+          "https://www.equitymaster.com/detail.asp?date=03%2F29%2F2025&story=3&title=15-Indian-Monopoly-Stocks-That-Dominate-Their-Industries",
+          "https://www.tickertape.in/stocks/collections/monopoly-stocks"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "cryogenic equipment manufacturer listed India NSE BSE",
+        "findings": "[1] INOXCVA: #1 Largest Manufacturer of Cryogenic Storage Tanks\nURL: https://inoxcva.com\nContent: INOXCVA is a leading manufacturer of cryogenic equipment. India Limited at BSE … +91 (265) 6160100 / 2343125\n\n[2] 3 Industrial Cryogenic and Gas Equipment Stocks\nURL: https://univest.in/blogs/industrial-cryogenic-gas-equipment-stocks-2026\nContent: INOX India, Linde India and Elgi Equipments continue expanding cryogenic and industrial gas equipment manufacturing capacity across India. INOX India, Linde India and Elgi Equipments are among the industrial cryogenic and gas equipment stocks, each positioned within India’s cryogenic and industrial gas equipment manufacturing growth story through distinct business drivers. India’s cryogenic and industrial gas equipment manufacturing sector continues to see sustained investment and demand growth, and industrial cryogenic and gas equipment stocks reflects companies with the clearest exposure to this trend. INOX India’s cryogenic equipment manufactu...",
+        "sources": [
+          "https://inoxcva.com",
+          "https://univest.in/blogs/industrial-cryogenic-gas-equipment-stocks-2026",
+          "https://www.bajajfinserv.in/investments/cryogenic-share-price",
+          "https://ensun.io/search/cryogenic/india",
+          "https://www.plindia.com/stocks/cryogenic-ogs-ltd"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "specialized high pressure industrial valves manufacturer listed India NSE BSE",
+        "findings": "[1] Top 10 Valve Manufacturers in India (2025) | Leading Industrial Valve Companies\nURL: https://sscastvalves.com/top-10-industrial-valve-manufacturing-companies-in-india-2025\nContent: S S Cast Valves - Top Industrial Manufacturing Company India. # Top 10 Industrial Valve Manufacturing Companies in India – 2025. The Indian valve industry is one of the fastest-growing sectors, supplying to oil & gas, refineries, petrochemicals, power plants, water treatment, and global energy projects. Here is the updated list of the **Top 10 Valve Manufacturers in India (2025)**, featuring trusted names like L&T Valves, Kirloskar Brothers, Hawa Valves, and **S S Cast Valves Pvt. Ltd. **Specialties:** High-pressure Gate, Globe, Ball, and Triple Offset Butterfly Valves for refineries, nuclear power, and petrochemicals. If you are looking for **IBR-certified, ISO-certified, and foundry-backed valve manufacturing in India**, S S Cast Valves Pvt. Ltd. **Specialties:** Cryogenic valves, high-pressure forged ...",
+        "sources": [
+          "https://sscastvalves.com/top-10-industrial-valve-manufacturing-companies-in-india-2025",
+          "https://pressurevalves.in",
+          "https://www.tradeindia.com/manufacturers/high-pressure-valves.html",
+          "https://hypervalves.com",
+          "https://www.primevalvesindia.com"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "porcelain insulators lightning arresters power transmission manufacturer listed India NSE BSE",
+        "findings": "[1] Porcelain Lightning Arrester at Best Price from ...\nURL: https://www.tradeindia.com/manufacturers/porcelain-lightning-arrester.html\nContent: The top porcelain lightning arrester manufacturers are Allied Power Solutions Sg Power S.m. Innotech Private Limited Ray Electricals Quality Engineering\n\n[2] Porcelain Lightning Arrester Insulator, For Electrical ...\nURL: https://www.indiamart.com/proddetail/lightning-arrester-insulator-26448322155.html\nContent: Palican Ceramic Industries - Offering Porcelain Lightning Arrester Insulator, For Electrical Installation, Size: Standard at ₹ 250/piece in Khurja,\n\n[3] TOP 5 Electrical Insulator Manufacturers & Suppliers in India\nURL: https://www.powertelcom.com/insulator-manufacturers-india\nContent: Aditya Birla is india's largest supplier of high voltage porcelain insulators. Their products are in use all over the world by some of the world's largest ...Read more\n\n[4] jsinsulator – Leader in Power Distribution Transformers\nURL: https://jsinsulator....",
+        "sources": [
+          "https://www.tradeindia.com/manufacturers/porcelain-lightning-arrester.html",
+          "https://www.indiamart.com/proddetail/lightning-arrester-insulator-26448322155.html",
+          "https://www.powertelcom.com/insulator-manufacturers-india",
+          "https://jsinsulator.com",
+          "https://www.llselectric.com/top-porcelain-insulator-manufacturers-for-power-systems"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "fluorochemicals specialized fluorine derivatives manufacturer listed India NSE BSE",
+        "findings": "[1] Gujarat Fluorochemicals Share Price Today - Live NSE/BSE\nURL: https://www.icicidirect.com/stocks/gujarat-fluorochemicals-ltd-share-price\nContent: Gujarat Fluorochemicals Ltd. is listed on the National Stock Exchange (NSE) and the Bombay Stock Exchange (BSE). On the NSE, it has been allotted the symbol\n\n[2] Gujarat Fluorochemicals: A hidden fluorine story - ValuePickr Forum\nURL: https://forum.valuepickr.com/t/gujarat-fluorochemicals-a-hidden-fluorine-story/59521\nContent: Gujarat Fluorochemical Limited (Fluorochem) is a major player in Fluorine Chemistry in India with a major focus on PTFE, Specialty Fluorochemicals and\n\n[3] India Fluorochemicals Market Size | Global Industry Report, 2029\nURL: https://www.marknteladvisors.com/research-library/india-fluorochemicals-market.html\nContent: # India Fluorochemicals Market Research Report: Forecast (2024-2029). , Pharmaceutical, Textile, Chemicals, Others (Fire Protection, Aerospace, etc.)), By Region (East, West, North, South), By Company (...",
+        "sources": [
+          "https://www.icicidirect.com/stocks/gujarat-fluorochemicals-ltd-share-price",
+          "https://forum.valuepickr.com/t/gujarat-fluorochemicals-a-hidden-fluorine-story/59521",
+          "https://www.marknteladvisors.com/research-library/india-fluorochemicals-market.html",
+          "https://www.perplexity.ai/finance/FLUOROCHEM.NS/earnings",
+          "https://www.facebook.com/sharesbazaarindia/posts/stallion-india-fluorochemicals-limited-ipo-a-cool-investment-opportunity-invest-/1046704977471195"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "aluminum aerosol cans pharmaceutical packaging manufacturer listed India NSE BSE",
+        "findings": "[1] Aluminium Aerosol Can Manufacturer India | 85M/yr | Aneeta\nURL: https://www.aneetaindia.com/products/aluminium-aerosol-cans\nContent: Aneeta is one of the leading Aluminium Aerosol Cans manufacturer in India, with over 40+ years of experience. 85. MILLION PIECES PER ANNUM. 6. GERMAN MFG UNITS\n\n[2] About :: Koxican\nURL: https://www.koxican.com/about.html\nContent: KOXICAN is the leading producer of Aluminium Monobloc Aerosol Cans in India since 2017 with an integrated production facility at Greater Noida, Uttar Pradesh.\n\n[3] Find B2B Aerosol cans, aluminium Companies in India\nURL: https://lb.kompass.com/z/in/a/aerosol-cans-aluminium/2751010\nContent: For Pharmaceutical Companies. Supplier of: Cans, aluminium Aerosol cans, , glass, for medicines and pharmaceuticals Phone number +91 80 23304165\n\n[4] Aluminium Bottle, Aluminium Bottle Manufacturer in India\nURL: https://al-can.com\nContent: Al-Can is leading manufacturer and exporter of Aluminium Bottle, Aluminium Canister, Aluminium Cans, ...",
+        "sources": [
+          "https://www.aneetaindia.com/products/aluminium-aerosol-cans",
+          "https://www.koxican.com/about.html",
+          "https://lb.kompass.com/z/in/a/aerosol-cans-aluminium/2751010",
+          "https://al-can.com",
+          "https://www.casablancaindustries.in"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "aerospace fasteners defense connectors precision engineering manufacturer listed India NSE BSE",
+        "findings": "[1] AERO Aerospace Precision Fasteners\nURL: https://aerofpl.com\nContent: **Founded in 2012 and headquartered in Rohtak, Haryana, AERO manufactures specialty and standard fasteners and precision-machined components for the aerospace and defence industries.**. Over more than fourteen years, the company has earned the approvals and certifications that place it among the few Indian manufacturers trusted to supply flight-critical hardware. #### Poggipolini S.p.A. AERO, part of Poggipolini Group, an emerging global manufacturer of **precision fasteners and a vertical system integrator** for the aerospace and defence industries. The partnership connects AERO’s Indian manufacturing base to European engineering, materials and qualification expertise. Integrated processes mean tighter control, full traceability, and accountability for the finished part at a single source. A broad inventory of qualified raw material is held in stock, supporting lead times from 16 weeks for most material grades. P...",
+        "sources": [
+          "https://aerofpl.com",
+          "https://www.tradeindia.com/manufacturers/aerospace-fasteners.html",
+          "https://upsind.com/products/aerospace-fasteners",
+          "https://www.avdel.com/categories/1/product/0",
+          "https://www.specialityfasteners.in"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "navigational aids marine equipment port infrastructure manufacturer listed India NSE BSE",
+        "findings": "[1] Marine Port & Services Sector Stocks List on NSE & BSE | Bajaj Broking\nURL: https://www.bajajbroking.in/stock/sectors/marine-port-services\nContent: The marine port and services sector plays a crucial role in facilitating global trade, shipping and logistics. As international trade volumes grow, the demand for efficient port services and infrastructure continues to rise. Investing in marine stocks offers exposure to a sector that benefits from the expansion of port infrastructure, shipping advancements and the increasing need for global logistics solutions. Companies in this space provide essential services, including port management, cargo [...] | Company Name | LTP | Volume | %Change | 52 Week High | 52 Week Low | Market Cap |\n ---  ---  --- \n| Adani Port & Sez Ltd | 1778.5 | 2592430 | -2.24 | 1891.10 | 1290.50 | ₹409759.10 Cr. |\n| Allcargo Terminals Ltd | 22.8 | 114330 | -1.85 | 37.98 | 18.20 | ₹574.90 Cr. |\n| Gujarat Pipavav Port Ltd | 147.14 | 1186320 | -1.04 | 200.09 | 141.55 ...",
+        "sources": [
+          "https://www.bajajbroking.in/stock/sectors/marine-port-services",
+          "https://m.indiamart.com/india-navigation/profile.html",
+          "https://dhan.co/stocks/sector/marine-port-stocks",
+          "https://www.5paisa.com/stocks/sector/marine-port-services",
+          "https://www.screener.in/market/IN09/IN0901/IN090103/IN090103002"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "INOX India order book cryogenic tanks growth green hydrogen LNG TAM expansion",
+        "findings": "[1] Varun Aggarwal - INOX India Limited has secured multiple...\nURL: https://www.facebook.com/anaadiprofessor/posts/inox-india-limited-has-secured-multiple-orders-worth-939-crore-across-its-indust/1597214418630195\nContent: ## Varun Aggarwal's Post. INOX India Limited has secured multiple orders worth ₹939 crore across its Industrial Gas, Cryo-Scientific Solutions, LNG, and Beverage Keg business segments. The orders were received between May 21 and July 8, 2026, further strengthening the company's order pipeline across its core cryogenic technology businesses. The order book comprises ₹871 crore in the Industrial Gas segment, ₹44 crore in the LNG business, ₹16 crore in Cryo-Scientific Solutions, and ₹8 crore in Beverage Keg orders. The latest orders reinforce INOX India's position in the global cryogenic equipment market while expanding its presence across industrial gas, LNG, and advanced scientific applications. The new orders further strengthen INOX India's position in the cryogenic ...",
+        "sources": [
+          "https://www.facebook.com/anaadiprofessor/posts/inox-india-limited-has-secured-multiple-orders-worth-939-crore-across-its-indust/1597214418630195",
+          "https://simplywall.st/community/narratives/in/capital-goods/nse-inoxindia/inox-india-shares/4nvc233b-lng-expansion-and-cryogenic-solutions-will-shape-clean-energy-markets-va5n",
+          "https://www.instagram.com/reel/DahhubZTceL",
+          "https://www.facebook.com/insightssuccess/posts/inox-india-bags-939-crore-orders-across-key-business-segmentsinox-india-has-secu/1657325943061532",
+          "https://inoxcva.com/pdf/KAMLESHS_12022026193406_SEReg30InvestorPresentation12022026signed.pdf"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "PTC Industries aerospace defense titanium superalloy castings order book TAM expansion",
+        "findings": "[1] PTC Industries Targets 10-15x Revenue Growth, Plans Major Titanium Expansion\nURL: https://scanx.trade/stock-market-news/corporate-actions/ptc-industries-targets-10-15x-revenue-growth-plans-major-titanium-expansion/20681300\nContent: # PTC Industries Targets 10-15x Revenue Growth, Plans Major Titanium Expansion. PTC Industries, a Lucknow-based manufacturer of high-precision castings, has announced aggressive growth plans for the next 5-7 years. The company aims for a 10-15 times increase in topline growth and expects 90-100% revenue growth in FY26. The company has initiated a Rs 1,000 crore capex for its Lucknow facility and reports being fully funded for this expansion. PTC Industries , a Lucknow-based manufacturer of high-precision castings for aerospace, defense, and energy sectors, has unveiled ambitious growth plans aimed at significantly expanding its operations and revenue over the next five to seven years. In the nearer term, the company expects to achieve 90-100% revenue gro...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/corporate-actions/ptc-industries-targets-10-15x-revenue-growth-plans-major-titanium-expansion/20681300",
+          "https://www.linkedin.com/posts/anaadiprofessor_ptc-industries-ltd-a-specialised-manufacturer-activity-7365362044407083008-yFiO",
+          "https://www.sahi.com/news/ptc-industries-gets-major-order-from-brahmos-aerospace-for-strategic-missile-components-2180-PE1_COR",
+          "https://www.ptcil.com/PDF/Investors/press-releases/2026/PTC-Industries-Receives-Order-from-VSSC-(ISRO)-fo-%20Supply-of-Double-VAR-Melted-Aerospace-Grade-Titanium-Ingots.pdf",
+          "https://www.ptcil.com/Investors/PressReleases"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "Time Technoplast composite cylinders industrial packaging growth order book NSE BSE",
+        "findings": "[1] Time Technoplast Limited - ValuePickr Forum\nURL: https://forum.valuepickr.com/uploads/short-url/q7dQV695gfe4LXG9TPdKsyLfih5.pdf\nContent: Time Technoplast Limited History of the company: Time Technoplast is engaged in the business of Industrial packaging, PE pipe Manufacturing and Manufacturing of Type IV composite cylinders over the years the company has achieved market leadership in both domestic as well as in global markets. The company has changed its focus towards value added composite product from the traditional industrial packaging business which is evident from the change in it revenue mix the new composite products are high margin business which enjoys margin of 18-22% as compared to 10-12% margin traditional business. The company has an installed capacity of 1.4 million cylinders but effectively on 1 million cylinders can be made due to different sizes of cylinders are manufactured, the company has received order from IOCL to supply 7,50,000 type 4 composite cylinders an...",
+        "sources": [
+          "https://forum.valuepickr.com/uploads/short-url/q7dQV695gfe4LXG9TPdKsyLfih5.pdf",
+          "https://insights.dsij.in/dsijarticledetail/rs-185-crore-order-book-cylinder-manufacturer-bags-new-order-worth-rs-406400000-from-a-well-established-psu-id001-46290",
+          "https://www.business-standard.com/markets/news/time-technoplast-zooms-5-on-bagging-additional-order-of-rs-55-cr-from-iocl-124062600154_1.html",
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/02/order-for-supply-of-industrial-packaging-products-from-a-government-of-gujarat-undertaking.pdf",
+          "https://www.screener.in/company/TIMETECHNO/consolidated"
+        ],
+        "phase": "Landscape Scan"
+      },
+      {
+        "query": "INOX India investor presentation TAM cryogenic market size",
+        "findings": "[1] Cryogenic Equipment Market Size, Share, Trends and Outlook 2032\nURL: https://www.zionmarketresearch.com/report/cryogenic-equipment-market\nContent: | Report Attributes | Report Details |\n --- |\n|\n| Report Name | Cryogenic Equipment Market |\n| Market Size in 2023 | USD 11.24 Billion |\n| Market Forecast in 2032 | USD 19.81 Billion |\n| Growth Rate | CAGR of 6.5% |\n| Number of Pages | 150 |\n| Key Companies Covered | Praxair Inc., FIBA TECHNOLOGIES INC., INOX India Pvt. Ltd., Linde Group AG, Flowserve Corporation, Air Liquide SA, Oxford Instruments Plc., Herose GmbH, Cryoquip Llc, and Wessington Cryogenics, among others. |\n| Segments Covered | By Equipment Type, By Application, By End-User and By Region |\n| Regions Covered | North America, Europe, Asia Pacific (APAC), Latin America, Middle East, and Africa (MEA) |\n| Base Year | 2023 |\n| Historical Year | 2018 to 2022 |\n| Forecast Year | 2024 - 2032 | [...] The major players operating in the Cryogenic Equipment market are Praxair Inc., FI...",
+        "sources": [
+          "https://www.zionmarketresearch.com/report/cryogenic-equipment-market",
+          "https://www.persistencemarketresearch.com/market-research/cryogenic-equipment-market.asp",
+          "https://inoxcva.com/pdf/Industry%20Report.pdf",
+          "https://forum.valuepickr.com/t/inox-india-a-story-worth-looking/136036",
+          "https://www.marketsandmarkets.com/PressReleases/cryogenic.asp"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Time Technoplast Type IV composite cylinder market share IOCL order book",
+        "findings": "[1] Composite Cylinder Market Size, Share | Growth Report [2034]\nURL: https://www.fortunebusinessinsights.com/composite-cylinder-market-111806\nContent: In August 2020, Time Technoplast (TTL) revealed the development of Type-IV carbon fiber composite cylinders. Following this announcement, the company secured a INR 41.6 crore (USD 4.87 million) order from a gas distributor for the supply of its lightweight product to be utilized in CNG cascades. The current order book is approximately INR 53.6 crore (USD 6.27 million), which the company anticipates fulfilling in the present fiscal year. TTL is also engaged in discussions with various OEMs regarding the potential applications of the product in buses, passenger cars, and trucks. [...] ## INVESTMENT ANALYSIS AND OPPORTUNITIES\n\nInnovation in technology and advanced material use in the industry is giving companies many investment opportunities. On 22nd June 2024, after the unveiling of the type IV composite cylinder in the market, Time Techn...",
+        "sources": [
+          "https://www.fortunebusinessinsights.com/composite-cylinder-market-111806",
+          "https://forum.valuepickr.com/uploads/short-url/q7dQV695gfe4LXG9TPdKsyLfih5.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/06/corporate-presentation-june-2024.pdf",
+          "https://www.business-standard.com/markets/news/time-technoplast-zooms-5-on-bagging-additional-order-of-rs-55-cr-from-iocl-124062600154_1.html",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/11/corporate-presentation-november2024.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "PTC Industries customer concentration Safran Honeywell revenue share",
+        "findings": "[1] [PDF] Ready to Rise - PTC Industries\nURL: https://www.ptcil.com/PDF/Investors/annual-reports/62thAnnualReport.pdf\nContent: Revenue from operations As at 31 March 2025 As at 31 March 2024 Goods Other operating revenues Total Goods Other operating revenues Total Revenue by geography Domestic 4,369.95 49.71 4,419.66 4,017.99 55.35 4,073.34 Export 25,968.55 419.19 26,387.74 21,141.44 473.14 21,614.58 Total 30,338.50 468.90 30,807.40 25,159.43 528.49 25,687.92 280 PTC Industries Limited Notes to Consolidated Financial Statements for the year ended 31 March 2025 Particulars As at 31 March 2025 As at 31 March 2024 Non Current Current Non Current Current Trade receivables - 14,381.31 - 11,085.79 Revenue received in advance - 1,171.17 - 1,208.52 Total - 15,552.48 - 12,294.31 b) Assets and liabilities related to contracts with customers 49 Share based payments (a) Scheme details During the financial year 2021-22, the [...] property, plant and equipment 313.75 14,853.18 85,535.66 63,355.50 1,...",
+        "sources": [
+          "https://www.ptcil.com/PDF/Investors/annual-reports/62thAnnualReport.pdf",
+          "https://www.safran-group.com/pressroom/safran-reports-excellent-financial-performance-2025-and-raises-its-2028-ambitions-2026-02-13",
+          "https://nsearchives.nseindia.com/corporate/PTCINDUSTRIES_03062026172535_Press_release_Exchange_Q4FY26_20260602.pdf",
+          "https://www.ptcil.com/PDF/Investors/press-releases/2026/PTC-Industries-Reports-Strong-Q3-&-9M-FY26-Results.pdf",
+          "https://www.ptcil.com/PDF/Investors/investor-presentations/2025-26/Investor-presentaion-Q1-FY-2025-26.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "Time Technoplast raw material price pass through lag polymer resin",
+        "findings": "[1] Time Technoplast Reports 18% YoY Value Added Products Growth | Investing Freak posted on the topic | LinkedIn\nURL: https://www.linkedin.com/posts/investing-freak-b1a843113_time-technoplast-value-added-products-activity-7471915214116978689-l5Ur\nContent: Time Technoplast\n◦ ✅️ Value added products grew+18% YoY vs established products +10% YoY; contribution increased to 29% of sales (from 27%)\n▶✅️With 92% business B2B based, company has mutually agreed mechanisms to pass on raw material price increase to the level of 100%, with a lag of 15/30 days or a quarter.\n▶️✅️CNG composite cascades grew +22% YoY in FY26 & are targeted to grow >25% (multi-year), with composite EBITDA margin ~17-18% vs legacy products ~12-13%.\n⭐️ ROCE: FY26 18.9% vs 20% target; management attributed shortfall to “short-term impact of QIP-led automation investments,” targeting 1.5–2% annual improvement.\n⭐️ OCF at INR 156cr. Weak H2 cash conversion attributed to war-driven spikes and supply assurance. [...] –PFAS Reg...",
+        "sources": [
+          "https://www.linkedin.com/posts/investing-freak-b1a843113_time-technoplast-value-added-products-activity-7471915214116978689-l5Ur",
+          "https://ftp.motilaloswal.com/emailer/Research/TIME-20250609-MOSL-IC-PG040.pdf",
+          "https://trendlyne.com/equity/1398/TIMETECHNO/time-technoplast-ltd",
+          "https://www.icicidirect.com/research/equity/time-technoplast-ltd/6761",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/06/corporate-presentation-june-2024.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "PTCIL Lucknow capex commissioning date Safran certification timeline",
+        "findings": "[1] Aerolloy-Technologies-receives-approval-from-Safran- ...\nURL: https://www.ptcil.com/PDF/Investors/press-releases/Aerolloy-Technologies-receives-approval-from-Safran-Aircraft-Engines-to-develop-and-supply-critical-components-for-Aircraft-Engines.pdf\nContent: CIN: L27109UP1963PLC002931 Tel: +91 522 7111017 | Fax: +91 522 2265302 | Email: info@ptcil.com | Website: www.ptcil.com PTC INDUSTRIES LIMITED Advanced Manufacturing & Technology Centre NH 25A, Sarai Shahjadi, Lucknow 227 101 Uttar Pradesh, India Aerolloy Technologies receives approval from Safran Aircraft Engines to develop and supply critical components for Aircraft Engines Lucknow, 10 February 2023: Aerolloy Technologies Limited (a wholly owned subsidiary of PTC Industries Limited, herein referred to as “ATL”), a manufacturer of strategic and critical materials and high-integrity metal components, for various critical and super-critical applications in aerospace, has been approved by Safran Aircraft Engines (“SAE”), a top glo...",
+        "sources": [
+          "https://www.ptcil.com/PDF/Investors/press-releases/Aerolloy-Technologies-receives-approval-from-Safran-Aircraft-Engines-to-develop-and-supply-critical-components-for-Aircraft-Engines.pdf",
+          "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/04092025/9782614c-1c2e-43da-b920-f67ffbf1b164.pdf",
+          "https://www.ptcil.com/PDF/Investors/investor-presentations/Investor-Presentation-13-02-2024.pdf",
+          "https://www.ptcil.com/PDF/Investors/investor-presentations/2025-26/Investor-Presentation-02-06-2025.pdf",
+          "https://www.ptcil.com/PDF/Investors/press-releases/2025/PTCIL_Safran_Order_2025.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 1)"
+      },
+      {
+        "query": "\"INOX India\" customer concentration OR top 5 customers revenue share",
+        "findings": "[1] Inox India Limited - Basis of allotment\nURL: https://www.axiscapital.co.in/contents/Inox-India-Limited-Basis-of-allotment.pdf\nContent: Largest Customer 812.25 14.39 % 634.96 13.04% 1,116.60 11.56% 714.73 9.13% 704.92 11.87% Top 10 Customers 3,160.44 55.97% 2,416.84 49.65% 4,492.95 46.52% 2,826.51 36.11% 2,328.71 39.22% Top 20 Customers 4,108.46 72.77% 3,214.52 66.03% 5,848.95 60.55% 3,738.65 47.77% 3,064.13 51.60% Six months ended September 30, 2023 Particulars ₹ million Six months ended September 30, 2022 Fiscal 2023 Fiscal 2022 Fiscal 2021 % of revenue from operations ₹ million % of revenue from operations ₹ million % of revenue from operations ₹ million % of revenue from operations ₹ million % of revenue from operations Six months ended September 30, 2023 Particulars ₹ million Six months ended September 30, 2022 Fiscal 2023 Fiscal 2022 Fiscal 2021 % of revenue from operations ₹ million % of revenue from operations ₹ [...] 2. Customer concentration risk: We are dependent on a lim...",
+        "sources": [
+          "https://www.axiscapital.co.in/contents/Inox-India-Limited-Basis-of-allotment.pdf",
+          "https://nsearchives.nseindia.com/annual_reports/AR_29318_INOXINDIA_2025_2026_A_10918171_01062026150809.pdf",
+          "https://inoxcva.com/pdf/INOX_India_Investor_Presentation_Final_13.5.23.pdf",
+          "https://inoxcva.com/pdf/INOX-India-Investor-Presentation-13-02-24.pdf",
+          "https://inoxcva.com/pdf/KAMLESHS_12022026192954_SEPressRelease12022026signed.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "\"PTC Industries\" casting cost percentage total aircraft engine cost",
+        "findings": "[1] Safran and PTC Industries sign contract to provide casting parts for ...\nURL: https://www.safran-group.com/pressroom/safran-and-ptc-industries-sign-contract-provide-casting-parts-leap-engine-powering-single-aisle-jet-2023-11-13\nContent: Locations \n\nSafran Aero Boosters   Safran Aerosystems   Safran Aircraft Engines   Safran Cabin   Safran Electrical & Power   Safran Electronics & Defense   Safran Helicopter Engines   Safran Landing Systems   Safran Nacelles   Safran Seats   Safran Transmission Systems\n\nSee our companies See our companies   See our subsidiaries   See our Joint-Ventures\n\nRequest full access to our graphic guidelines\n\nCreate new account\n\nYou can download the graphic kit\n\nDownload logo (JPG/PNG)\")\n\nSAF 321.4€  -1.8%\n\n2026/07/23 At 18:00 (GMT +02:00)\n\nen fr\n\nLogin website\n\nCandidate space\n\nCustomer Portal \n\nHome\n\nSubscribe to press releases\n\nSafran logo\n\nPTC Industries\n\n# Safran and PTC Industries sign contract to provide casting parts for the LEAP engine powering singl...",
+        "sources": [
+          "https://www.safran-group.com/pressroom/safran-and-ptc-industries-sign-contract-provide-casting-parts-leap-engine-powering-single-aisle-jet-2023-11-13",
+          "https://www.linkedin.com/pulse/scaling-new-heights-how-ptc-industries-10m-safran-order-saurabh-jmxze",
+          "https://www.ptcil.com/PDF/Investors/investor-presentations/Inverstor-Presentation-2023.pdf",
+          "https://aeromorning.com/en/safran-and-ptc-industries-sign-contract-to-provide-casting-parts",
+          "https://www.techsciresearch.com/report/aircraft-engine-casting-market/22902.html"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "\"Gujarat Fluorochemicals\" fluoropolymers PTFE PVDF market size India",
+        "findings": "[1] India Fluoropolymer Market Size, Share | Report [2033]\nURL: https://www.astuteanalytica.com/industry-report/india-fluoropolymer-market\nContent: Polytetrafluoroethylene (PTFE) has established itself as the most extensively used in the India fluoropolymer market with market share of more than 46% because of its unrivaled chemical resistance and broad applicability. Domestic manufacturers, including Gujarat Fluorochemicals Limited, continue to ramp up production, with around 48,000 metric tons of annual PTFE capacity reported this year. Export data shows that Indian suppliers shipped nearly 9,000 metric tons of PTFE to markets in Southeast Asia and the Middle East during the first half of 2024, demonstrating competitive pricing and reliable quality. Automobile part factories in Pune and Chennai have observed a growing reliance on PTFE-based gaskets and seals, citing reduced downtime in high-temperature engine applications. The [...] Based on grade, industrial segment is leading the ch...",
+        "sources": [
+          "https://www.astuteanalytica.com/industry-report/india-fluoropolymer-market",
+          "https://www.indianchemicalnews.com/chemical/gujarat-fluorochemicals-to-invest-rs-2500-crore-over-next-two-years-on-expansion-in-fluoropolymers-and-battery-chemicals-icici-securities-14900",
+          "https://forum.valuepickr.com/t/gujarat-fluorochemicals-a-hidden-fluorine-story/59521?page=3",
+          "https://forum.valuepickr.com/t/gujarat-fluorochemicals-a-hidden-fluorine-story/59521",
+          "https://www.chemanalyst.com/industry-report/india-fluoropolymer-ptfe-market-18"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "\"INOX India\" market share in cryogenic tanks stationary mobile",
+        "findings": "[1] Assessment of cryogenic equipment industry\nURL: https://inoxcva.com/pdf/Industry%20Report.pdf\nContent: trailer mounted hydrogen transport tank designed jointly with Indian Space Rsearch Organisation (ISRO). Other major crygogenic tank manufacturers in India are VRV Asia pacific and Cryolor. Domestically, INOX India is the largest supplier of cryogenic equipment with a revenue of Rs. 7.84 billion (approx. USD 105 mn) in FY2022. It also designs and manufactures cryogenic equipment which can meet international norms which can be exported to US and Europe. About 34% of its sales in came from exports in FY2022. Inox India is the largest exporter of cryogenic tanks from India. In the LNG tank segment, Inox India has supplied over 60% of the tanks in both the stationary tank segment which includes all LNG applications including LCNG stations and trailer mounted mobile LNG tanks in India which [...] and trailer mounted mobile LNG tanks in India which have a valid PESO license as of 4th May...",
+        "sources": [
+          "https://inoxcva.com/pdf/Industry%20Report.pdf",
+          "https://images.assettype.com/bloombergquint/2023-12/991b61b8-7924-4846-9f96-7814757cc24d/KRChoksey_Inox_IPO_note.pdf",
+          "https://forum.valuepickr.com/t/inox-india-a-story-worth-looking/136036",
+          "https://images.assettype.com/bloombergquint/2023-12/f42c9ef7-b53f-435a-acd5-1ba3cb85b215/Anand_Rathi_Inox_India_Ltd_IPO_Note.pdf",
+          "https://www.dalalbroacha.com/ClientPortal/Reports/Research/f399f020-d5b1-4980-92c2-55b5918d0924.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 2)"
+      },
+      {
+        "query": "INOX India OR INOXCVA cryogenic equipment market size TAM India global",
+        "findings": "[1] INOX INDIA LTD\nURL: https://www.dalalbroacha.com/ClientPortal/Reports/Research/f399f020-d5b1-4980-92c2-55b5918d0924.pdf\nContent: while maintaining operating margins of 23-25%. INOX India targets 20%+ long-term revenue growth and aims to sustain margins at 21-24%. | 3 | 11th Feb.’25 INOX India Ltd DALAL & BROACHA STOCK BROKING PVT LTD Investment Argument ❖ Market leadership in Cryogenic Equipment in India with Global MS ~1% INOX India is a leading player in the cryogenic equipment manufacturing space, serving diverse industries such as LNG, industrial gases, healthcare, and aerospace. They were the largest supplier of cryogenic equipment in India in 2023 by revenue. ❖ Key beneficiary in LNG adoption, with Revenue CAGR of 30% over last 3 years With the global push for cleaner energy sources, LNG is gaining traction as a transitional fuel. INOX India is well-placed to benefit from the rising demand for LNG [...] played a pivotal role in ISRO’s infrastructure development for the second...",
+        "sources": [
+          "https://www.dalalbroacha.com/ClientPortal/Reports/Research/f399f020-d5b1-4980-92c2-55b5918d0924.pdf",
+          "https://inoxcva.com/pdf/material-contract/B_12_Industry%20Report.pdf",
+          "https://www.sharekhan.com/MediaGalary/Newsletter/INOX-India-IPO-131223.pdf",
+          "https://www.persistencemarketresearch.com/market-research/cryogenic-equipment-market.asp",
+          "https://www.zionmarketresearch.com/report/cryogenic-equipment-market"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "PTC Industries aerospace titanium castings market size TAM",
+        "findings": "[1] PTC Industries Targets 10-15x Revenue Growth, Plans ...\nURL: https://scanx.trade/stock-market-news/corporate-actions/ptc-industries-targets-10-15x-revenue-growth-plans-major-titanium-expansion/20681300\nContent: Aerolloy Technologies, a subsidiary of PTC Industries, has commissioned a Vacuum Arc Remelting (VAR) 400 Furnace at its Lucknow plant. This makes Aerolloy one of only two companies globally capable of producing large investment castings in both Titanium alloys and Superalloys. The new furnace enables manufacturing of large Titanium castings for aeroengine components, aircraft structures, submarine parts, and space platforms. This development positions Aerolloy to capture a significant share of the multi-billion dollar market for aerospace-grade Titanium and Superalloy castings. The VAR furnace, combined with a recently installed Vacuum Induction Melting furnace, creates an integrated supply chain from alloy production to large precision castings. This advancement aligns with...",
+        "sources": [
+          "https://scanx.trade/stock-market-news/corporate-actions/ptc-industries-targets-10-15x-revenue-growth-plans-major-titanium-expansion/20681300",
+          "https://www.ptcil.com/PDF/Investors/investor-presentations/Investor-Presentation-22-09-2023.pdf",
+          "https://futurecaps.com/portfolio/ptc-industries-multibagger-analysis-2026",
+          "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/18022026/83cd73c7-5ada-49f1-84c1-5c52e9979099.pdf",
+          "https://www.safran-group.com/pressroom/safran-and-ptc-industries-sign-contract-provide-casting-parts-leap-engine-powering-single-aisle-jet-2023-11-13"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "Time Technoplast composite cylinders LPG CNG market size TAM India",
+        "findings": "[1] Composite Cylinder Market Size, Share\nURL: https://www.fortunebusinessinsights.com/composite-cylinder-market-111806\nContent: In June 2024, Time Technoplast Ltd was awarded an additional contract to supply composite cylinders (LPG) with an approximate total worth of INR 55 crores (USD 6.43 million). This increased demand is due to the positive feedback from end users regarding the numerous benefits of using composite cylinders, such as being explosion-proof, lightweight, and having a translucent body. Following the successful completion of the initial order and the encouraging reception from consumers, the subsequent order has been issued. Additionally, ongoing discussions are being held with Bharat Petroleum Corporation Limited (BPCL) and Hindustan Petroleum Corporation Limited (HPCL). [...] In August 2020, Time Technoplast (TTL) revealed the development of Type-IV carbon fiber composite cylinders. Following this announcement, the company secured a INR 41.6 crore (USD 4.87 million)...",
+        "sources": [
+          "https://www.fortunebusinessinsights.com/composite-cylinder-market-111806",
+          "https://forum.valuepickr.com/uploads/short-url/q7dQV695gfe4LXG9TPdKsyLfih5.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/03/corporate-presentation-december-2023.pdf",
+          "https://www.autocarpro.in/news/time-technoplast-secures-%E2%82%B911556-crore-cng-cylinder-order-from-psu-131672",
+          "https://www.timetechnoplast.com/wp-content/uploads/2023/01/investor-presentation-june-2023.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "PTC Industries customer concentration top customers revenue share annual report",
+        "findings": "[1] 0 PTC INDUSTRIES LIMITED\nURL: https://www.ptcil.com/PDF/Investors/QIP/PDF-5.pdf\nContent: advanced engineering capabilities, ensuring stringent quality standards, and maintaining flexibility in production to meet the evolving needs of our customers in the aerospace, defence, and industrial sectors. We have low customer revenue concentration and our reliance on any single customer is limited. customer contributed to over 25% of our total revenue for the last three Fiscals and the three months ended June 30, 2024. For Fiscal 2022, 2023 and 2024, and three months ended June 30, 2024, our top 10 customers generated ₹16, 202.33 lakhs, ₹19,572.08 lakhs, ₹21,852.85 lakhs and ₹4,185.86 lakhs, of our revenue from operations, respectively and accounted for 91%, 89%, 85% and 89% respectively, of our revenue from operations in such periods. The table below sets forth details of the [...] as a partner to global aerospace manufacturers. We cater to diverse geographic locations, including India an...",
+        "sources": [
+          "https://www.ptcil.com/PDF/Investors/QIP/PDF-5.pdf",
+          "https://www.ptcil.com/PDF/Investors/annual-reports/57thAnnualReport.pdf",
+          "https://s27.q4cdn.com/610238322/files/doc_financials/2024/ar/PTC-2024-Annual-Report.pdf",
+          "https://csimarket.com/stocks/PTC-Customers",
+          "https://s27.q4cdn.com/610238322/files/doc_financials/2025/ar/2025-PTC-Annual-Report.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "Time Technoplast customer concentration major customers",
+        "findings": "[1] [PDF] Corporate Presentation November 2025 - Time Technoplast Ltd\nURL: https://www.timetechnoplast.com/wp-content/uploads/2025/11/corporate-presentation-november-2025.pdf\nContent: Major Customers 1 Maharashtra Natural Gas Limited (MNGL) 2 Adani Total Gas Limited 3 Indraprastha Gas Limited (IGL) 4 Sabarmati Gas Limited 5 Bharat Petroleum Corporation Limited (BPCL) 6 Mahanagar Gas Limited (MGL) 7 GAIL Gas Limited 8 Indian Oil Corporation Limited (IOCL) Order Book- Rs 250 Cr ($ 29 Mn) 37 Market Potential : CNG Cascades 38 New CNG stations allotted in 9th and 10th round 8,181 Number of Cascades required per station 2 Total number of cascades required 16,362 Estimated cost of one cascade (Rs. per cascade) 70,00,000 Total Value of Business in next 8 years (Rs. Cr.) 11,453 Source: Petroleum and Natural Gas Regulatory Board © 2025 Time Technoplast Limited, All Rights Reserved. Type-IV CNG Composite Cylinders – Mobile Refueling Units (MRUs) 39 India’s First Mobile Refueling [...] ▪HDPE pipe...",
+        "sources": [
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/11/corporate-presentation-november-2025.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/02/corporate-presentation-february-2025.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/06/corporate-presentation-june-2024.pdf",
+          "https://compass.finvezto.com/p/market-leader-in-industrial-packaging",
+          "https://www.icra.in/Rating/GetRationalReportFilePdf/72201~Time%20Technoplast%20-R-02082018.pdf"
+        ],
+        "phase": "Landscape Scan (Depth 3)"
+      },
+      {
+        "query": "high voltage porcelain insulators listed company India NSE BSE",
+        "findings": "[1] Modern Insulators Live Share Price Today, Share Analysis and Chart\nURL: https://trendlyne.com/equity/83570/MODINSULAT/modern-insulators-ltd\nContent: Modern Insulators Ltd. is a prominent Indian manufacturer specializing in high-voltage porcelain insulators. ... Modern Insulators is listed on BSE with ticker\n\n[2] Modern Insulators Ltd share price | About Modern Insulator | Key Insights - Screener\nURL: https://www.screener.in/company/515008/consolidated\nContent: About\n\nModern Insulators is an arm of the Modern group of Industries and was set up in 1985 in collaboration with Siemens, Germany. Modern Insulators is also India’s largest manufacturer and exporter of porcelain insulators and is closely associated with National and Regional Utilities, Indian Railways, OEMs & EPC companies worldwide.(\n\nKey Points\n\nCertification(  \n Modern is an ISO 9001, 14001 & 45001 Certified Company and also India’s largest exporter of porcelain insulators.\n\nWebsite   BSE [...] | Interest | 12 | 19 | 13 |...",
+        "sources": [
+          "https://trendlyne.com/equity/83570/MODINSULAT/modern-insulators-ltd",
+          "https://www.screener.in/company/515008/consolidated",
+          "https://www.investing.com/equities/modern-insulators",
+          "https://www.indmoney.com/stocks/modern-insulators-ltd-share-price",
+          "https://groww.in/stocks/modern-insulators-ltd"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "PTC Industries stock valuation risks capex execution",
+        "findings": "[1] PTC Industries Limited\nURL: https://www.icra.in/Rating/GetRationalReportFilePdf?id=132379\nContent: superalloys while also increasing its presence in the domestic market, with a significant contribution from the defence sector. This capex shall be funded partially through a debt of around Rs. 300 crore and partially through PTCIL’s internal accruals and available liquidity. Given the scale of the project, PTCIL remains exposed to risks associated with project execution and scale-up of operations. However, the risks are partially mitigated by the satisfactory progress of the project and [...] The company has already incurred around Rs. 250 crore till September 2024 and the remaining Rs. 450 crore is to be incurred over H2 FY2025 to FY2027. Through this project, PTCIL is seeking to enhance its operations and capabilities in recycling and re-melting titanium, producing nickel/cobalt super alloys for aerospace and defence applications and producing castings and other downstream applicat...",
+        "sources": [
+          "https://www.icra.in/Rating/GetRationalReportFilePdf?id=132379",
+          "https://earningsdecoded.com/ptc-industries-dec-2025-fall",
+          "https://www.tijorifinance.com/company/ptc-industries-limited",
+          "https://www.ptcil.com/PDF/Investors/investor-information/2025-26/Credit-Rating-2026.pdf",
+          "https://www.ptcil.com/PDF/Investors/annual-reports/62thAnnualReport.pdf"
+        ],
+        "phase": "Course Correction"
+      },
+      {
+        "query": "Time Technoplast composite cylinder cascade order book CGD expansion timeline",
+        "findings": "[1] CNG Composite Cylinders: Time Technoplast Secures ₹116 Crore Order for Composite CNG Cylinders from PSU, ETEnergyworld\nURL: https://energy.economictimes.indiatimes.com/news/oil-and-gas/time-technoplast-secures-116-crore-order-for-composite-cng-cylinders-from-psu/129625942\nContent: The company noted that its CNG composite segment generated about ₹395 crore in revenue in FY25, indicating strong demand.   \n  \nThe company added that policy support for gas-based energy and expansion of CGD networks is expected to drive growth in the composite cascade market, which it estimates at around ₹1,500 crore in India, providing a long-term growth opportunity for the business.   \n  \nThe order will be executed within one year, per the regulatory filing.  \n  \nThe company operates across 20 manufacturing locations in India.  \n  \nThe company opened a new facility in Saudi Arabia for IBC and plastic drum production in January 2025 and completed a 90 per cent acquisition of a Taiwanese polymer firm by ...",
+        "sources": [
+          "https://energy.economictimes.indiatimes.com/news/oil-and-gas/time-technoplast-secures-116-crore-order-for-composite-cng-cylinders-from-psu/129625942",
+          "https://images.moneycontrol.com/static-mcnews/2024/07/20240708070156_Time-Technoplast-08072024-ac.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2023/04/5.-Received-New-Single-Largest-Order-for-Type-IV-CNG-Cascades-and-Expansion-Status.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2023/08/TTL_Earnings_Presentation_Q1FY24.pdf",
+          "https://proinvestnirmiti.substack.com/p/time-technoplast-the-silent-giant"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Modern Insulators capacity expansion power grid capex allocation 2024 2025",
+        "findings": "[1] DFG Analysis 2024-25 : Power and New & Renewable Energy\nURL: https://prsindia.org/files/budget/budget_parliament/2024/DFG_Analysis_2024-25_Power.pdf\nContent: Analysis: Power and New & Renewable Energy PRS Legislative Research August 5, 2024 - 2 - Allocation towards grid-connected solar power project is estimated to increase by 79% over the previous year. In 2024-25, 0.1% of the total allocation towards MNRE has been allocated for capital expenditure. Trends in fund utilisation over the years Ministry of Power: Over the last decade, fund utilisation by the Ministry of Power has seen wide fluctuations (see Figure 1 on next page). In 2021-22, the actual expenditure was 41% higher than the budget estimate. This was owing to higher than budgeted expenditure on multiple schemes such as Integrated Power Development Scheme (IPDS), Deen Dayal Upadhyaya Gram Jyoti Yojana (DDUGY), and Strengthening of Power Systems. Upon the launch of RDSS scheme in [...]  Support to micro and small industri...",
+        "sources": [
+          "https://prsindia.org/files/budget/budget_parliament/2024/DFG_Analysis_2024-25_Power.pdf",
+          "https://www.eei.org/en/news/news/all/electric-companies-to-invest-nearly-$208b-in-2025-to-strengthen-grid-and-drive-economic-growth",
+          "https://powerlines.org/wp-content/uploads/2026/04/0413_PowerLines-CapEx-Report.pdf",
+          "https://www.deloitte.com/us/en/insights/industry/power-and-utilities/funding-growth-in-us-power-sector.html",
+          "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/office-of-governmental-affairs-division/reports/2025/californias-grid-modernization-report-2025--volume-i.pdf"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Modern Insulators composite polymer insulators",
+        "findings": "[1] Composite Polymer Insulator Market Research Report 2034\nURL: https://dataintelo.com/report/global-composite-polymer-insulator-market\nContent: accommodate distributed energy resources. Composite polymer insulators have emerged as the preferred choice for new installations and retrofitting projects in transmission lines, distribution lines, substations, railways, and industrial facilities, outpacing traditional ceramic alternatives due to their superior corrosion resistance, lightweight construction, and exceptional mechanical strength. Key regional markets including India, China, Brazil, and Middle Eastern nations are witnessing surge in demand driven by rapidly expanding power infrastructure, rising electrification rates, and government initiatives to strengthen electrical grids. The material science advances in polymer chemistry have enabled manufacturers to develop insulators with enhanced tracking resistance, superior [...] developed and emerging markets. Specialized composite i...",
+        "sources": [
+          "https://dataintelo.com/report/global-composite-polymer-insulator-market",
+          "https://www.sciencedirect.com/topics/engineering/composite-insulator",
+          "https://www.alyamunadensons.ae/electrical-insulators-the-role-of-polymer-composite-insulators-in-modern-power-systems.html",
+          "https://www.haivofusecutout.com/Composite-vs-Polymer-Insulators-for-Electrical-Applications-2026-What-Matters-When-You-re-Choosing-id04524855.html",
+          "https://www.appstate.edu/~clementsjs/surfaceflashover/insulatortesting.pdf"
+        ],
+        "phase": "Course Correction (Depth 1)"
+      },
+      {
+        "query": "Time Technoplast Type IV composite cylinder competitors PESO approval",
+        "findings": "[1] Time Technoplast receives approval for the manufacturing of TYPE-IV COMPOSITE CYLINDERS FOR HYDROGEN\nURL: https://plaza-busworld.expoplatform.com/newfront/news/time-technoplast-receives-approval-for-the-manufacturing-of-type-iv-composite-cylinders-for-hydrogen\nContent: ###### India\n\n##### Share this article\n\nThis announcement follows our previous communication dated March 19, 2024, wherein the Company received PROTOTYPE APPROVAL for the manufacturing of HIGH-PRESSURE TYPE-IV COMPOSITE CYLINDERS FOR HYDROGEN from the Petroleum and Explosives Safety Organisation (PESO).\n\nSubsequently, we submitted the cylinders for joint testing and inspection to the approving authority for final approval. We are pleased to announce that we have received FINAL APPROVAL from PESO for the manufacturing and supply of HIGH-PRESSURE TYPE-IV COMPOSITE CYLINDERS FOR HYDROGEN. [...] We are proud to be the FIRST COMPANY IN INDIA to receive FINAL APPROVAL for the manufacturing and supply of Type-IV Composite C...",
+        "sources": [
+          "https://plaza-busworld.expoplatform.com/newfront/news/time-technoplast-receives-approval-for-the-manufacturing-of-type-iv-composite-cylinders-for-hydrogen",
+          "https://www.timetechnoplast.com/wp-content/uploads/2022/07/Update-on-approval-from-PESO-for-Fully-Wrapped-Carbon-Fibre-Reinforced-Wrapped-Type-IV-Composite-Cylinder-for-CNG-Cascades-17.08.2020.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/11/corporate-presentation-november2024.pdf",
+          "https://www.timetechnoplast.com/business-division/composite-cylinder/high-pressure-h2-cylinder/type-4-h2-cylinder-for-storage-and-distribution-system",
+          "https://www.timetechnoplast.com/business-division/composite-cylinder/type-iv-cng-cylinder"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "Time Technoplast segment revenue composite cylinders packaging margins ROCE",
+        "findings": "[1] Time Technoplast: Betting on Composites and Packaging for a ...\nURL: https://www.soic.in/blog-page/time-technoplast-composites-and-packaging-growth-story\nContent: TTL delivered:\n\n Volume growth: +13% YoY (India +12%, overseas +15%)\n Revenue: ₹5,462 Cr (+9%)\n EBITDA: ₹790 Cr (+12%), with margins expanding to 14.5%\n PAT: ₹388 Cr (+25%)—strong operating leverage kicking in\n ROCE: Achieved 18.1%, on track for 20% in FY26\n Value-added products (VAP) grew 15%, now 27% of sales, targeted to reach 35% by FY28\n\nVAP includes:\n\n Composite CNG/LPG cascades and cylinders\n IBC containers\n Specialty MOX films\n Battery & green tech products\n\n2. Composite Cylinders: The Multi-Decade Growth Engine\n\nA. CNG Composite Cascades [...] Revenue CAGR (FY21–25): 16%, expected at 15% FY25–28.\n EBITDA Margin to expand from 14.4% to 15%+ by FY28.\n Free Cash Flow: >₹4B/year; enough to fund capex and retire debt.\n RoCE to jump from 18% to 23%+ by FY28.\n\nManagement plans to turn net cash by FY27, a rare feat in ma...",
+        "sources": [
+          "https://www.soic.in/blog-page/time-technoplast-composites-and-packaging-growth-story",
+          "https://forum.valuepickr.com/uploads/short-url/q7dQV695gfe4LXG9TPdKsyLfih5.pdf",
+          "https://ftp.motilaloswal.com/emailer/Research/TIME-20250609-MOSL-IC-PG040.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/06/corporate-presentation-june-2024.pdf",
+          "https://dsijpub.s3.ap-south-1.amazonaws.com/productAttachment/BrokerRecommendation/TIME-20251201-MOSL-CU-PG012.pdf"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "Modern Insulators customer concentration major clients power transmission",
+        "findings": "[1] Modern Insulators Ltd: A Porcelain Insulator Opportunity Insulating the Power Cycle while Riding India’s Transmission Boom - Untested - but worth a good look - ValuePickr Forum\nURL: https://forum.valuepickr.com/t/modern-insulators-ltd-a-porcelain-insulator-opportunity-insulating-the-power-cycle-while-riding-india-s-transmission-boom/220195\nContent: Company Overview Modern Insulators Limited (MIL), established in 1982 in technical collaboration with Siemens AG, Germany, is India’s largest manufacturer and exporter of porcelain insulators. The company operates primarily in the high-voltage electrical equipment space, serving national and regional utilities, Indian Railways, global original equipment manufacturers (OEMs), and EPC contractors across more than 50 countries. The company’s long-standing technical pedigree is anchored by its initial joint-sector promotion alongside the Rajasthan State Industrial Corporation (RSICO) and technical partnership with Siemens AG. MIL features a ...",
+        "sources": [
+          "https://forum.valuepickr.com/t/modern-insulators-ltd-a-porcelain-insulator-opportunity-insulating-the-power-cycle-while-riding-india-s-transmission-boom/220195",
+          "https://www.globalinsightservices.com/reports/transmission-insulator-market",
+          "https://www.marketresearchfuture.com/reports/insulator-market-3771",
+          "https://www.moderninsulators.com",
+          "https://www.strategicmarketresearch.com/market-report/transmission-insulator-market"
+        ],
+        "phase": "Course Correction (Depth 2)"
+      },
+      {
+        "query": "Time Technoplast Type IV cylinder competitors India",
+        "findings": "[1] Corporate Presentation November 2024\nURL: https://www.timetechnoplast.com/wp-content/uploads/2024/11/corporate-presentation-november2024.pdf\nContent: Manufacturer: • Nobody in India (Popular in China only) Manufacturer: • Luxfer Gas Cylinders, USA • Worthington Industries, USA • Catalina Cylinders, USA (recently acquired by Uttam Composites, LLC) • Faber Cylinders, Italy Manufacturer: • Time Technoplast Ltd., India • Indoruss Synergy Pvt. Ltd. (TK-Fujikin- South Kores) • Hexagon Agility, USA (Hexagon Group, Norway) • Luxfer Gas Cylinders, USA • Worthington Industries, USA • Faber Cylinders, Italy © 2024 Time Technoplast Limited, All Rights Reserved. Type-IV Cylinders– Sizes and Bar Pressure 30 © 2024 Time Technoplast Limited, All Rights Reserved. New CNG Business in consonance with Govt.’s policy to expand use of CNG 31 Publication by Ministry of Petroleum and Natural Gas : EmergingOpportunitiesin India for Natural Gas On – Board [...] 27 0% 2,470 Nagaland 28 0% 1,990 Sikkim 29 10...",
+        "sources": [
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/11/corporate-presentation-november2024.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/06/corporate-presentation-june-2024.pdf",
+          "https://www.linkedin.com/posts/timetechnoplast_cngsolutions-cleanmobility-typeivcylinders-activity-7338070258563317760-2zNM",
+          "https://forum.valuepickr.com/uploads/short-url/4Gx3YtdyyHQ0pg0F1Kd441HvqbP.pdf",
+          "https://proinvestnirmiti.substack.com/p/time-technoplast-the-silent-giant"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Hexagon Purus India entry OR partner OR joint venture",
+        "findings": "[1] Manufacturing zero emission mobility and infrastructure solutions\nURL: https://www.hy24partners.com/portfolio-of-our-investments/hexagon-purus\nContent: logo\n\nAbout us\n\nExpertise\n\nThe hydrogen economy\n\nAbout us\n\nExpertise\n\nThe hydrogen economy\n\nClean Hydrogen Equipment Fund\n\n# Manufacturing zero emission mobility and infrastructure solutions\n\n/\n\n/\n\n/\n\nHexagon Purus\n\nHexagon Purus is a world-leading manufacturer of zero emission mobility and infrastructure solutions. The company is a world leading provider of hydrogen Type 4 high-pressure cylinders and systems, battery systems and vehicle integration solutions for fuel cell electric and battery electric vehicles. Hexagon Purus' products are used in a variety of applications including light, medium and heavy-duty vehicles, buses, ground storage, distribution, refueling, maritime, rail and aerospace.\n\nHexagon Purus\n\nHexagon Purus\n\nType of investment [...] Links\n\nDownload the release\n\ndownload\n\nIn January 2024, Hy24’s Clean Hydrogen Equ...",
+        "sources": [
+          "https://www.hy24partners.com/portfolio-of-our-investments/hexagon-purus",
+          "https://hexagonpurus.com/news/hexagon-purus-receives-inaugural-orders-for-hydrogen-cylinders-from-reliance-industries-limited-in-india",
+          "https://hexagonpurus.com/news/financing-agreement-signed-for-cimc-hexagon-joint-venture",
+          "https://www.linkedin.com/company/hexagonpurus",
+          "https://hexagonpurus.com"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "PGCIL insulator tender porcelain vs polymer composite",
+        "findings": "[1] The advantages of polymer insulators over porcelain insulators\nURL: https://nctvietnam.com/news-view/the-advantages-of-polymer-insulators-over-porcelain-insulators_87.aspx\nContent: Safety: Porcelain insulators are susceptible to explosion & Breakages, due to high fragile properties, stone throwing etc.  \nComposite Insulators provide very high level of safety, superior flexibility and strength. Not susceptible to explosion. No breakages due to stone Throwing etc. [...] Hydrophobicity: Porcelain insulator - NON HYDROPHOBIC, Porcelain surface forms water film on the surface making easy path leading to More flash overs  \nPolymeric insulator - The Hydrophobicity properties of Silicon Rubber provides excellent insulating behavior and Resists Wetting by forming. Beads of water without the need of washing or greasing even in humid or polluted climates. Hence low failure rate combined with low overall operating and maintenance costs.  \nSelf cleaning quality: porcelain insulator cannot be us...",
+        "sources": [
+          "https://nctvietnam.com/news-view/the-advantages-of-polymer-insulators-over-porcelain-insulators_87.aspx",
+          "https://www.gotoelectrical.com/newsdetail/composite-insulators-vs-porcelain-insulators.html",
+          "https://pgc.com/the-difference-between-glass-porcelain-and-polymer-insulators",
+          "https://poinsa.com/en/porcelain-ceramic-insulators/advantages-over-polymeric-insulators",
+          "https://www.tdworld.com/overhead-transmission/article/20969241/six-utilities-share-their-perspectives-on-insulators"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "\"Modern Insulators\" PGCIL market share OR tenders",
+        "findings": "[1] Modern Insulators Ltd share price\nURL: https://www.screener.in/company/515008/consolidated\nContent: | Mar 2016 | Mar 2017 | Mar 2018 | Mar 2019 | Mar 2020 | Mar 2021 | Mar 2022 | Mar 2023 | Mar 2024 | Mar 2025 | Mar 2026 |\n ---  ---  ---  ---  --- \n|  | 54.67% | 58.48% | 58.48% | 60.20% | 60.20% | 60.28% | 60.20% | 60.20% | 60.20% | 60.20% | 60.18% |\n|  | 0.00% | 0.31% | 0.31% | 0.31% | 0.31% | 0.31% | 0.31% | 0.31% | 0.31% | 0.33% | 0.33% |\n|  | 4.61% | 10.94% | 10.94% | 10.94% | 8.01% | 8.34% | 3.59% | 2.72% | 1.94% | 1.34% | 1.19% |\n|  | 0.00% | 0.00% | 0.00% | 0.00% | 2.93% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |\n|  | 40.73% | 30.28% | 30.28% | 28.55% | 28.55% | 31.07% | 35.89% | 36.77% | 37.55% | 38.13% | 38.31% |\n| No. of Shareholders | 32,369 | 1,36,085 | 1,34,512 | 1,33,734 | 1,33,562 | 1,33,976 | 1,35,147 | 1,35,020 | 1,37,869 | 1,39,616 | 1,40,264 | [...] | Mar 2023 | Jun 2023 | Sep 2023 | Dec 2023 | Mar 2024 | Jun 2024 | Sep 2024 | Dec 2024 | Mar 2025 | Jun 202...",
+        "sources": [
+          "https://www.screener.in/company/515008/consolidated",
+          "https://www.icicidirect.com/stocks/modern-insulators-ltd-share-price",
+          "https://www.livemint.com/market/market-stats/stocks-modern-insulators-share-price-nse-bse-s0000191",
+          "https://www.tijorifinance.com/company/modern-insulators-ltd",
+          "https://www.sahi.com/news/modern-insulators-posts-170-profit-jump-to-24-6-cr-as-revenue-hits-202-cr-206-PE1_CORP"
+        ],
+        "phase": "Course Correction (Depth 3)"
+      },
+      {
+        "query": "Time Technoplast latest quarterly results financial performance order book 2024 2025",
+        "findings": "[1] TIME TECHNOPLAST LTD.\nURL: https://www.timetechnoplast.com/wp-content/uploads/2025/08/outcome.pdf\nContent: 00183629 TOMA EE DEE COMIMC3IFR LASS T LUT ELS. Bringing Polymers To Life Regd. Office: 101, 1st Floor, Centre Point, Somnath Daman Road, Somnath, Dabhel, Nani Daman,Dadra and Nagar Haveli, Daman and Diu (U.T.) 396 210 Corp. Office : 55, Corporate Avenue, Saki Vihar Road, Andheri (E), Mumbai - 400 072 CIN : L27203DD1989PLC003240 Website:www.timetechnoplast.com Email: investors@timetechnoplast.com STATEMENT OF UNAUDITED STANDALONE FINANCIAL RESULTS FOR THE QUARTER ENDED 30TH JUNE, 2025 (2 in Lakhs) Sr. |Particulars Quarter Ended Year Ended No. 30.06.2025 31.03.2025 30.06.2024 31.03.2025 (Unaudited) (Unaudited) (Unaudited) (Audited) 1 {Income a |Revenue from Operations 64,246 71,233 62,543 2,66,267 b [Other Income : 3 - 775 Total Income ( atb ) 64,246 71,236 62,543 2,67,042 2 {Expenditure [...] June 2025 Sr. | Particulars Quarter Ended Year Ended No. 30.06.2025 31.03.2025 30.06....",
+        "sources": [
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/08/outcome.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/08/earnings-presentation_Q1FY26.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/02/order-for-supply-of-industrial-packaging-products-from-a-government-of-gujarat-undertaking.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/05/ttl-earnings-presentation-q4.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/11/q2-h1fy25.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/08/TTL_Earnings_Presentation_Q1FY24.pdf",
+          "https://www.screener.in/company/TIMETECHNO/consolidated"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Modern Insulators Ltd financial results Screener BSE 515008",
+        "findings": "[1] Modern Insulators Ltd share price\nURL: https://www.screener.in/company/515008/consolidated\nContent: # Modern Insulators Ltd\n\nModern Insulator Summary  Chart Analysis Peers Quarters Profit & Loss Balance Sheet Cash Flow Ratios Investors Documents\n\n# Modern Insulators Ltd\n\n₹ 522  -1.03%\n\n16 Jul - close price\n\nmoderninsulators.com   BSE: 515008\n\nAbout\n\nModern Insulators is an arm of the Modern group of Industries and was set up in 1985 in collaboration with Siemens, Germany. Modern Insulators is also India’s largest manufacturer and exporter of porcelain insulators and is closely associated with National and Regional Utilities, Indian Railways, OEMs & EPC companies worldwide.(\n\nKey Points\n\nCertification(  \n Modern is an ISO 9001, 14001 & 45001 Certified Company and also India’s largest exporter of porcelain insulators.\n\nWebsite   BSE [...] |  | 14 | 17 | 29 | 22 | 34 | 22 | 28 | 36 | 39 | 80 |\n| EPS in Rs |  |  |  | 4.77 | 7.25 | 4.67 | 5.93 | 7.65 | 8.19 | 16.94 |\n| Dividend Payout %...",
+        "sources": [
+          "https://www.screener.in/company/515008/consolidated",
+          "https://www.indmoney.com/stocks/modern-insulators-ltd-share-price",
+          "https://www.valueresearchonline.com/stocks/43325/modern-insulators-ltd",
+          "https://groww.in/stocks/modern-insulators-ltd",
+          "https://www.emkayglobal.com/company-info/overview/modern-insulators-ltd",
+          "https://www.icicidirect.com/stocks/modern-insulators-ltd-share-price",
+          "https://trendlyne.com/fundamentals/financials/83570/MODINSULAT/modern-insulators-ltd"
+        ],
+        "phase": "Candidate Deep Dive"
+      },
+      {
+        "query": "Modern Insulators porcelain vs polymer composite insulators market shift transmission grid",
+        "findings": "[1] What is the difference between porcelain and composite Insulators?,What Is The Difference Between Porcelain And Composite Insulators,Nooa Electric Co,,Ltd,\nURL: https://www.nooaelectric.com/newsdetail/what-is-the-difference-between-porcelain-and-composite-insulators.html\nContent: Porcelain suits traditional long-term infrastructure, while composite insulators excel in modern lightweight and pollution-resistant applications.  \n   \n Porcelain insulators remain common in substations, conventional transmission systems, and regions prioritizing long historical performance data.  \n   \n Composite insulators are increasingly used for:  \n   \n 1.Ultra-high-voltage transmission lines  \n 2.Railway electrification systems  \n 3.Coastal transmission projects  \n 4.Compact transmission tower designs  \n 5.High contamination industrial zones  \n   \n Nooa Electric as a leading electrical insulator manufacturer in China, supplies both above insulator types for utilities, substations, renewable energy pr...",
+        "sources": [
+          "https://www.nooaelectric.com/newsdetail/what-is-the-difference-between-porcelain-and-composite-insulators.html",
+          "https://datahorizzonresearch.com/composite-polymer-insulator-market-17564",
+          "https://www.vptpl.com/post/post-polymer-insulator-vs-porcelain-insulator-comparison",
+          "https://globaltransmission.info/transmission-insulators-composite-insulators-witness-growing-adoption",
+          "https://ijari.org/assets/papers/3/2/10.51976ijari.321518.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Time Technoplast carbon fiber sourcing pricing power margin pass through",
+        "findings": "[1] [PDF] Corporate Presentation November 2025 - Time Technoplast Ltd\nURL: https://www.timetechnoplast.com/wp-content/uploads/2025/11/corporate-presentation-november-2025.pdf\nContent: the largest share in raw materials Polymers 76% Accessories and consumabl es 14% Metal accessories 9% Others 1% INDIA MENA SOUTEAST ASIA USA Local ONGC Petro Q-Chem, Qatar Chevron Phillips, Singapore Chevron Phillips, USA Reliance Industries Sabic Asia Pacific, KSA GS Caltex, Korea Exxon Mobil, USA Indian Oil Corporation OQ Oman PTT Global Chem, Thailand LyondellBasell, USA HPCL – Mittal Energy Ltd Haldia Petroleum GAIL Authority Borouge, Abu Dhabi Sabic Asia Pacific, Malaysia Sidi Kerir Petro, Egypt Formosa Plastics, Taiwan Lotte Chemical, Malaysia Imports Q-Chem, Qatar GS Caltex, Korea Q-Chem, Qatar Chevron Phillips LyondellBasell, USA PTT Global Chem, Thailand GS Caltex, Korea ONGC Petro, India PTT Global Chem, Thailand Borouge, Abu Dhabi Robust pass-through mechanism to manage price [...] Abu Dhabi Ro...",
+        "sources": [
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/11/corporate-presentation-november-2025.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/02/corporate-presentation-february-2025.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/08/corporate-presentation-august-2024.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2023/08/TTL_Earnings_Presentation_Q1FY24.pdf",
+          "https://forum.valuepickr.com/uploads/short-url/4Gx3YtdyyHQ0pg0F1Kd441HvqbP.pdf"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Modern Insulators customer concentration PGCIL state utilities revenue share",
+        "findings": "[1] LNPR Capital on X: \"Modern Insulators Ltd: Porcelain Insulator Leader with Grid Capex Tailwinds & Amalgamation Optionality Modern Insulators Ltd (MODINSULAT): ~23–24x PE, India’s largest manufacturer of Alumina Porcelain Insulators, currently benefiting from a sharp upcycle in domestic and global power transmission capex, while undergoing a group-level corporate restructuring to streamline assets and improve capital efficiency. The company is led by Sachin Ranka (CMD), a seasoned industrialist at the helm of the Modern Group, who has built a dominant franchise in high-voltage transmission equipment over multiple decades. In January 2026, the Board appointed Shreyans Ranka as Joint Managing Director for a five-year term, ensuring leadership continuity and gradual generational transition. Q3 FY26 marked an all-time high performance quarter. Results reported on February 10, 2026, showed a 166.6% YoY surge in standalone Net Profit to ₹24.66 Cr on a 60% YoY increase in revenue to ₹199.4...",
+        "sources": [
+          "https://x.com/LnprCapital/status/2021419197490921679",
+          "https://www.screener.in/company/515008/consolidated",
+          "https://forum.valuepickr.com/t/modern-insulators-ltd-a-porcelain-insulator-opportunity-insulating-the-power-cycle-while-riding-india-s-transmission-boom/220195?page=3",
+          "https://www.valueresearchonline.com/stocks/43325/modern-insulators-ltd",
+          "https://x.com/LnprCapital/status/2026501909251604984?lang=en"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Time Technoplast Type IV composite cylinder order pipeline CGD companies",
+        "findings": "[1] Time Technoplast bags Rs. 134 Cr order from Maharashtra Natural Gas\nURL: https://www.indianchemicalnews.com/gas/time-technoplast-bags-rs-134-cr-order-from-maharashtra-natural-gas-16428\nContent: in FY2023 with an initial outlay of Rs. 55 crore\n\n By ICN Bureau | February 16, 2023\n\nTime Technoplast Limited has received their single largest order from Maharashtra Natural Gas Limited (a joint venture of GAIL (India) and BPCL), one of the leading City Gas Distribution (CGD) company for supply of CNG Cascades made from Type - IV Composite Cylinders, for a total value of Rs. 134 crore (approximately) to be supplied within one year period.\n\nThe supply of the order will be completed within one year. Maharashtra Natural Gas Limited reserves the right to place a repeat order within six months of upto 50% of present purchase order value on the same terms and conditions (including rates). [...] In FY2022, the company had a manufacturing capacity of 180 CNG Cascades (10,800 cylinders) annually. I...",
+        "sources": [
+          "https://www.indianchemicalnews.com/gas/time-technoplast-bags-rs-134-cr-order-from-maharashtra-natural-gas-16428",
+          "https://energy.economictimes.indiatimes.com/news/oil-and-gas/time-technoplast-secures-116-crore-order-for-composite-cng-cylinders-from-psu/129625942",
+          "https://www.autocarpro.in/news/time-technoplast-secures-%E2%82%B911556-crore-cng-cylinder-order-from-psu-131672?amp=1",
+          "https://energy.economictimes.indiatimes.com/amp/news/oil-and-gas/time-technoplast-secures-116-crore-order-for-composite-cng-cylinders-from-psu/129625942",
+          "https://scanx.trade/stock-market-news/companies/time-technoplast-secures-115-56-crore-cng-cylinder-order-from-psu/35270302"
+        ],
+        "phase": "Candidate Deep Dive (Depth 1)"
+      },
+      {
+        "query": "Time Technoplast NSE ticker financial results news 2025 2026",
+        "findings": "[1] Time Technoplast (NSEI:TIMETECHNO) - Stock Analysis - Simply Wall St\nURL: https://simplywall.st/stocks/in/materials/nse-timetechno/time-technoplast-shares\nContent: First quarter 2026 results: EPS: ₹4.19 (up from ₹3.49 in 1Q 2025). Revenue: ₹13.5b (up 10.0% from 1Q 2025). Net income: ₹951.0m (up 20% from 1Q 2025). Profit margin: 7.0% (up from 6.4% in 1Q 2025). The increase in margin was driven by higher revenue. Revenue is forecast to grow 14% p.a. on average during the next 3 years, compared to a 12% growth forecast for the Packaging industry in India. Over the last 3 years on average, earnings per share has increased by 26% per year but the company’s share price has increased by 64% per year, which means it is tracking significantly ahead of earnings growth. [...] Second quarter 2026 results: EPS: ₹2.54 (up from ₹2.17 in 2Q 2025). Revenue: ₹15.1b (up 10% from 2Q 2025). Net income: ₹1.15b (up 17% from 2Q 2025). Profit margin: 7.6% (up from 7.2% in 2Q 2025). The increase in margin w...",
+        "sources": [
+          "https://simplywall.st/stocks/in/materials/nse-timetechno/time-technoplast-shares",
+          "https://finance.yahoo.com/quote/TIMETECHNO.NS/history",
+          "https://www.indmoney.com/stocks/time-technoplast-ltd-share-price/results",
+          "https://ticker.finology.in/company/TIMETECHNO",
+          "https://www.moneycontrol.com/india/stockpricequote/plastic-products/timetechnoplast/TT03"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Modern Insulators Ltd BSE 515008 financial results news 2025 2026",
+        "findings": "[1] Modern Insulators Ltd Results 2025: Modern Insulators Ltd Q2 Results & Revenue\nURL: https://www.indmoney.com/stocks/modern-insulators-ltd-share-price/results\nContent: INDmoney Logo\n\nINDmoney\n\nModern Insulators Ltd logo\n\n515008\n\n# Modern Insulators Ltd Results\n\n₹491.10\n\n### Modern Insulators Ltd Q4 FY2025-2026 Results: Summary\n\n|  |  |\n --- |\n| Revenue | ₹208.25Cr |\n| Net Profits | ₹23.84Cr |\n| Net Profit Margins | 11.45% |\n\nModern Insulators Ltd’s revenue jumped 31.14% since last year same period to ₹208.25Cr in the Q4 2025-2026. On a quarterly growth basis, Modern Insulators Ltd has generated 2.4% jump in its revenue since last 3-months.\n\nModern Insulators Ltd’s net profit jumped 174.34% since last year same period to ₹23.84Cr in the Q4 2025-2026. On a quarterly growth basis, Modern Insulators Ltd has generated -1.2% fall in its net profits since last 3-months. [...] Modern Insulators Ltd’s net profit margin jumped 109.2% since last year same period to 11.45% in the Q4 2025-2026. ...",
+        "sources": [
+          "https://www.indmoney.com/stocks/modern-insulators-ltd-share-price/results",
+          "https://simplywall.st/stocks/in/capital-goods/bse-515008/modern-insulators-shares/future",
+          "https://www.emkayglobal.com/company-info/overview/modern-insulators-ltd",
+          "https://groww.in/stocks/modern-insulators-ltd",
+          "https://anandrathi.com/stocks/modern-insulators/financial-results/115008"
+        ],
+        "phase": "Cross-Verification"
+      },
+      {
+        "query": "Time Technoplast audit resignation tax dispute red flag penalty 2025 2026",
+        "findings": "[1] Time Technoplast Ltd\nURL: https://www.timetechnoplast.com/wp-content/uploads/2026/02/outcome-12-02-26.pdf\nContent: 15,661/ 13,679 45,694 37,934 52,902 3|Segment Assets (a) Polymer Products 3,90,163 3,40,436| 3,24,251 3,90,163 3,24,251 3,30,367| (b) Composite Products 1,20,063| 1,11,190 1,07,509 1,20,063 1,07,509 1,09,509] (c) Unallocable . - R | - E Total Segment Assets 5,10,225 4,51,626 4,31,761 5,10,225| 4,31,761| 4,39,875| 4]segment Liabilities (a) Polymer Products 43,378 44,785 45,704] 43,378 45,704 44,003 (b) Composite Products 13,608 12,340 13,857 13,608 13,857 13,146 (c) Unallocable 4 . . . : i | Total Segment Lial 56,987 57,125 59,561 56,987 59,561 57,149 NOTES :- 1 The above financial results were reviewed and recommended by the Audit Committee and approved by the Board of Directors at their meeting held on 12th February 2026. The financial results have been prepared in accordance with the [...] businesses: 1. a) Considered and approved the Unaudited (Consolidated & Standa...",
+        "sources": [
+          "https://www.timetechnoplast.com/wp-content/uploads/2026/02/outcome-12-02-26.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2025/09/summary-proceedings-time.pdf",
+          "https://www.timetechnoplast.com/wp-content/uploads/2024/05/q4-outcome.pdf",
+          "https://www.journalofaccountancy.com/news/2025/nov/about-1-million-taxpayers-to-get-automatic-penalty-relief-next-year",
+          "https://www.timetechnoplast.com/investor-center/annual-report"
+        ],
+        "phase": "Cross-Verification"
+      }
+    ],
+    "disclaimer": "This analysis is for informational and educational purposes only. It does not constitute investment advice or a recommendation to buy or sell any securities. The hypotheses presented require further independent verification by a qualified portfolio manager.",
+    "phases_completed": 5,
+    "total_search_count": 47
+  }
+}
